@@ -1,0 +1,1462 @@
+{
+  "school": "UG",
+  "major": "6100",
+  "degree": "BA",
+  "year": "2025",
+  "Date": "5/14/2025",
+  "Cat_yr_start": "2021",
+  "Cat_yr": "2025",
+  "blocks": [
+    {
+      "BlockType": "CORE",
+      "BlockID": "RA000882",
+      "Title": "University Core (Major courses may apply in core)",
+      "Credits": 42,
+      "rules": [
+        {
+          "rules": [
+            {
+              "label": "English Composition ",
+              "id": "2-0-1-0",
+              "courses": [
+                {
+                  "Subj": "ENG",
+                  "Num": "1113"
+                },
+                {
+                  "Subj": "ENG",
+                  "Num": "1143"
+                },
+                {
+                  "Subj": "ENG",
+                  "Num": "1153"
+                },
+                {
+                  "Subj": "ENG",
+                  "Num": "1173"
+                },
+                {
+                  "Subj": "ENG",
+                  "Num": "1133",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "@",
+                  "Num": "@",
+                  "With": {
+                    "ATTRIBUTE": "ZCMP"
+                  },
+                  "Hide": 1
+                }
+              ],
+              "reqType": "Credits",
+              "reqCount": 3.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "English Composition and Research ",
+              "id": "2-0-1-1",
+              "courses": [
+                {
+                  "Subj": "ENG",
+                  "Num": "1213"
+                },
+                {
+                  "Subj": "ENG",
+                  "Num": "1223"
+                },
+                {
+                  "Subj": "ENG",
+                  "Num": "1233"
+                },
+                {
+                  "Subj": "ENG",
+                  "Num": "1243"
+                },
+                {
+                  "Subj": "@",
+                  "Num": "@",
+                  "With": {
+                    "ATTRIBUTE": "ZRSH"
+                  },
+                  "Hide": 1
+                }
+              ],
+              "reqType": "Credits",
+              "reqCount": 3.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Oral Communication ",
+              "id": "2-0-1-2",
+              "courses": [
+                {
+                  "Subj": "MCOM",
+                  "Num": "1113"
+                },
+                {
+                  "Subj": "@",
+                  "Num": "@",
+                  "With": {
+                    "ATTRIBUTE": "ZCOM"
+                  },
+                  "Hide": 1
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or",
+              "except": [
+                "ENG 1113",
+                "ENG 1213"
+              ]
+            }
+          ],
+          "label": "WRITTEN AND ORAL COMMUNICATION "
+        },
+        {
+          "rules": [
+            {
+              "label": "Math Requirement",
+              "id": "3-0-0",
+              "courses": [
+                {
+                  "Subj": "MATH",
+                  "Num": "1113"
+                },
+                {
+                  "Subj": "MATH",
+                  "Num": "1513"
+                },
+                {
+                  "Subj": "MATH",
+                  "Num": "1453"
+                },
+                {
+                  "Subj": "MATH",
+                  "Num": "1533"
+                },
+                {
+                  "Subj": "MATH",
+                  "Num": "1593"
+                },
+                {
+                  "Subj": "MATH",
+                  "Num": "2013"
+                },
+                {
+                  "Subj": "MATH",
+                  "Num": "2023"
+                },
+                {
+                  "Subj": "MATH",
+                  "Num": "2053"
+                },
+                {
+                  "Subj": "MATH",
+                  "Num": "2153"
+                },
+                {
+                  "Subj": "MATH",
+                  "Num": "2313"
+                },
+                {
+                  "Subj": "MATH",
+                  "Num": "2305"
+                },
+                {
+                  "Subj": "MATH",
+                  "Num": "2323",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "STAT",
+                  "Num": "2103"
+                },
+                {
+                  "Subj": "STAT",
+                  "Num": "2113"
+                },
+                {
+                  "Subj": "@",
+                  "Num": "@",
+                  "With": {
+                    "ATTRIBUTE": "ZMTH"
+                  },
+                  "Hide": 1
+                }
+              ],
+              "reqType": "Credits",
+              "reqCount": 3.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Life Science",
+              "id": "3-0-1",
+              "courses": [
+                {
+                  "Subj": "BIO",
+                  "Num": "1114"
+                },
+                {
+                  "Subj": "BIO",
+                  "Num": "1204"
+                },
+                {
+                  "Subj": "BIO",
+                  "Num": "1211"
+                },
+                {
+                  "Subj": "BIO",
+                  "Num": "1214"
+                },
+                {
+                  "Subj": "BIO",
+                  "Num": "1234"
+                },
+                {
+                  "Subj": "@",
+                  "Num": "@",
+                  "With": {
+                    "ATTRIBUTE": "ZLIF"
+                  },
+                  "Hide": 1
+                }
+              ],
+              "reqType": "Credits",
+              "reqCount": 3.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Physical Science",
+              "id": "3-0-2",
+              "courses": [
+                {
+                  "Subj": "CHEM",
+                  "Num": "1003"
+                },
+                {
+                  "Subj": "CHEM",
+                  "Num": "1014"
+                },
+                {
+                  "Subj": "CHEM",
+                  "Num": "1103"
+                },
+                {
+                  "Subj": "CHEM",
+                  "Num": "1112"
+                },
+                {
+                  "Subj": "PHY",
+                  "Num": "1003"
+                },
+                {
+                  "Subj": "PHY",
+                  "Num": "1011"
+                },
+                {
+                  "Subj": "PHY",
+                  "Num": "1014"
+                },
+                {
+                  "Subj": "PHY",
+                  "Num": "1024"
+                },
+                {
+                  "Subj": "PHY",
+                  "Num": "1101"
+                },
+                {
+                  "Subj": "PHY",
+                  "Num": "1114"
+                },
+                {
+                  "Subj": "PHY",
+                  "Num": "1304"
+                },
+                {
+                  "Subj": "PHY",
+                  "Num": "2014"
+                },
+                {
+                  "Subj": "@",
+                  "Num": "@",
+                  "With": {
+                    "ATTRIBUTE": "ZPHY"
+                  },
+                  "Hide": 1
+                }
+              ],
+              "reqType": "Credits",
+              "reqCount": 3.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "One class with Lab",
+              "id": "3-0-3",
+              "courses": [
+                {
+                  "Subj": "BIO",
+                  "Num": "1211"
+                },
+                {
+                  "Subj": "BIO",
+                  "Num": "1214"
+                },
+                {
+                  "Subj": "CHEM",
+                  "Num": "1014"
+                },
+                {
+                  "Subj": "CHEM",
+                  "Num": "1112"
+                },
+                {
+                  "Subj": "PHY",
+                  "Num": "1024"
+                },
+                {
+                  "Subj": "PHY",
+                  "Num": "1011"
+                },
+                {
+                  "Subj": "PHY",
+                  "Num": "1101"
+                },
+                {
+                  "Subj": "PHY",
+                  "Num": "1114"
+                },
+                {
+                  "Subj": "PHY",
+                  "Num": "2014"
+                },
+                {
+                  "Subj": "@",
+                  "Num": "@",
+                  "With": {
+                    "DWTRANSFER": "Y"
+                  },
+                  "Hide": 1
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            }
+          ],
+          "label": "QUANTITATIVE REASONING/SCIENTIFIC METHOD"
+        },
+        {
+          "rules": [
+            {
+              "label": "Aesthetic Analysis",
+              "id": "4-0-0",
+              "courses": [
+                {
+                  "Subj": "HUM",
+                  "Num": "2113"
+                },
+                {
+                  "Subj": "HUM",
+                  "Num": "2223"
+                },
+                {
+                  "Subj": "@",
+                  "Num": "@",
+                  "With": {
+                    "ATTRIBUTE": "ZAES"
+                  },
+                  "Hide": 1
+                }
+              ],
+              "reqType": "Credits",
+              "reqCount": 3.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Critical Inquiry",
+              "id": "4-0-1",
+              "courses": [
+                {
+                  "Subj": "PHIL",
+                  "Num": "1103"
+                },
+                {
+                  "Subj": "PHIL",
+                  "Num": "1113"
+                },
+                {
+                  "Subj": "PHIL",
+                  "Num": "1123"
+                },
+                {
+                  "Subj": "PHIL",
+                  "Num": "2073"
+                },
+                {
+                  "Subj": "@",
+                  "Num": "@",
+                  "With": {
+                    "ATTRIBUTE": "ZCRI"
+                  },
+                  "Hide": 1
+                },
+                {
+                  "Subj": "PHIL",
+                  "Num": "2000",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "PHIL",
+                  "Num": "2313",
+                  "With": {
+                    "DWTITLE": "@GINEERING ETH@"
+                  },
+                  "Hide": 1
+                }
+              ],
+              "reqType": "Credits",
+              "reqCount": 3.0,
+              "Conn": "Or"
+            }
+          ],
+          "label": "CRITICAL INQUIRY AND AESTHETIC ANALYSIS"
+        },
+        {
+          "rules": [
+            {
+              "label": "American National Government",
+              "id": "5-0-0",
+              "courses": [
+                {
+                  "Subj": "POL",
+                  "Num": "1113"
+                },
+                {
+                  "Subj": "@",
+                  "Num": "@",
+                  "With": {
+                    "ATTRIBUTE": "ZPOL"
+                  },
+                  "Hide": 1
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "History of US: To 1877 or Since 1877",
+              "id": "5-0-1",
+              "courses": [
+                {
+                  "Subj": "HIST",
+                  "Num": "1483"
+                },
+                {
+                  "Subj": "HIST",
+                  "Num": "1493"
+                },
+                {
+                  "Subj": "@",
+                  "Num": "@",
+                  "With": {
+                    "ATTRIBUTE": "ZHST"
+                  },
+                  "Hide": 1
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            }
+          ],
+          "label": "AMERICAN HISTORICAL AND POLITICAL ANALYSIS"
+        },
+        {
+          "rules": [
+            {
+              "label": "Second Language ",
+              "id": "6-0-1-0-1-0",
+              "courses": [
+                {
+                  "Subj": "CHIN",
+                  "Num": "1114"
+                },
+                {
+                  "Subj": "CHIN",
+                  "Num": "1224"
+                },
+                {
+                  "Subj": "FRCH",
+                  "Num": "1114"
+                },
+                {
+                  "Subj": "FRCH",
+                  "Num": "1224"
+                },
+                {
+                  "Subj": "GERM",
+                  "Num": "1114"
+                },
+                {
+                  "Subj": "GERM",
+                  "Num": "1224"
+                },
+                {
+                  "Subj": "GRK",
+                  "Num": "1113"
+                },
+                {
+                  "Subj": "GRK",
+                  "Num": "1223"
+                },
+                {
+                  "Subj": "JAPN",
+                  "Num": "1114"
+                },
+                {
+                  "Subj": "JAPN",
+                  "Num": "1224"
+                },
+                {
+                  "Subj": "LATN",
+                  "Num": "1114"
+                },
+                {
+                  "Subj": "LATN",
+                  "Num": "1224"
+                },
+                {
+                  "Subj": "SNSK",
+                  "Num": "1114"
+                },
+                {
+                  "Subj": "SNSK",
+                  "Num": "1224"
+                },
+                {
+                  "Subj": "SPAN",
+                  "Num": "1114"
+                },
+                {
+                  "Subj": "SPAN",
+                  "Num": "1224"
+                },
+                {
+                  "Subj": "KOR",
+                  "Num": "1114"
+                },
+                {
+                  "Subj": "KOR",
+                  "Num": "1224"
+                },
+                {
+                  "Subj": "ITAL",
+                  "Num": "1114"
+                },
+                {
+                  "Subj": "ITAL",
+                  "Num": "1224"
+                },
+                {
+                  "Subj": "ARAB",
+                  "Num": "1114"
+                },
+                {
+                  "Subj": "ARAB",
+                  "Num": "1224"
+                },
+                {
+                  "Subj": "FLGN",
+                  "Num": "@",
+                  "With": {
+                    "ATTRIBUTE": "ZFLG"
+                  },
+                  "Hide": 1
+                },
+                {
+                  "Subj": "FRCH",
+                  "Num": "2113",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "FRCH",
+                  "Num": "2223",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "GERM",
+                  "Num": "2113",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "GERM",
+                  "Num": "2223",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "JAPN",
+                  "Num": "2113",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "LATN",
+                  "Num": "2113",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "SPAN",
+                  "Num": "2113",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "SPAN",
+                  "Num": "2223",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "SPAN",
+                  "Num": "1114",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "SLP",
+                  "Num": "4522",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "SLP",
+                  "Num": "4622",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "SPAN",
+                  "Num": "2000",
+                  "With": {
+                    "DWTITLE": "Span For Law Enf@"
+                  },
+                  "Hide": 1
+                },
+                {
+                  "Subj": "SPED",
+                  "Num": "4910",
+                  "With": {
+                    "DWTITLE": "Sem: American Sign@"
+                  },
+                  "Hide": 1
+                },
+                {
+                  "Subj": "@",
+                  "Num": "@",
+                  "With": {
+                    "ATTRIBUTE": "ZFLG"
+                  },
+                  "Hide": 1
+                }
+              ],
+              "reqType": "Credits",
+              "reqCount": 3.0,
+              "Conn": "Or"
+            }
+          ],
+          "label": "CULTURAL AND LANGUAGE ANALYSIS "
+        },
+        {
+          "rules": [
+            {
+              "label": "Social and Behavioral Requirement",
+              "id": "7-0-0",
+              "courses": [
+                {
+                  "Subj": "BADM",
+                  "Num": "1103"
+                },
+                {
+                  "Subj": "ECON",
+                  "Num": "1103"
+                },
+                {
+                  "Subj": "ECON",
+                  "Num": "1203"
+                },
+                {
+                  "Subj": "ECON",
+                  "Num": "2103"
+                },
+                {
+                  "Subj": "ECON",
+                  "Num": "2203"
+                },
+                {
+                  "Subj": "FMCD",
+                  "Num": "2213"
+                },
+                {
+                  "Subj": "PSY",
+                  "Num": "1103"
+                },
+                {
+                  "Subj": "SOC",
+                  "Num": "2103"
+                },
+                {
+                  "Subj": "@",
+                  "Num": "@",
+                  "With": {
+                    "ATTRIBUTE": "ZSBA"
+                  },
+                  "Hide": 1
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            }
+          ],
+          "label": "SOCIAL AND BEHAVIORAL ANALYSIS"
+        },
+        {
+          "rules": [
+            {
+              "label": "Healthy Life Skills",
+              "id": "8-0-0",
+              "courses": [
+                {
+                  "Subj": "HLTH",
+                  "Num": "1112"
+                },
+                {
+                  "Subj": "@",
+                  "Num": "@",
+                  "With": {
+                    "ATTRIBUTE": "ZHLT"
+                  },
+                  "Hide": 1
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Life Skills Elective",
+              "id": "8-0-1",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "1053"
+                },
+                {
+                  "Subj": "CMSC",
+                  "Num": "1103"
+                },
+                {
+                  "Subj": "DES",
+                  "Num": "1063"
+                },
+                {
+                  "Subj": "ENGR",
+                  "Num": "1213"
+                },
+                {
+                  "Subj": "FACS",
+                  "Num": "3633"
+                },
+                {
+                  "Subj": "FIN",
+                  "Num": "2313"
+                },
+                {
+                  "Subj": "FMCD",
+                  "Num": "2223"
+                },
+                {
+                  "Subj": "FNRL",
+                  "Num": "3483"
+                },
+                {
+                  "Subj": "HLTH",
+                  "Num": "2212"
+                },
+                {
+                  "Subj": "IME",
+                  "Num": "3312"
+                },
+                {
+                  "Subj": "ISOM",
+                  "Num": "2013"
+                },
+                {
+                  "Subj": "LEAD",
+                  "Num": "2213"
+                },
+                {
+                  "Subj": "MUED",
+                  "Num": "3122"
+                },
+                {
+                  "Subj": "MUS",
+                  "Num": "1113"
+                },
+                {
+                  "Subj": "MUS",
+                  "Num": "2133"
+                },
+                {
+                  "Subj": "NTRN",
+                  "Num": "1483"
+                },
+                {
+                  "Subj": "NTRN",
+                  "Num": "1513"
+                },
+                {
+                  "Subj": "NTRN",
+                  "Num": "1613"
+                },
+                {
+                  "Subj": "SFTY",
+                  "Num": "2343"
+                },
+                {
+                  "Subj": "THRT",
+                  "Num": "1513"
+                },
+                {
+                  "Subj": "UNIV",
+                  "Num": "1012"
+                },
+                {
+                  "Subj": "ART",
+                  "Num": "1013"
+                },
+                {
+                  "Subj": "ART",
+                  "Num": "1223"
+                },
+                {
+                  "Subj": "ART",
+                  "Num": "3302"
+                },
+                {
+                  "Subj": "DANC",
+                  "Num": "2451"
+                },
+                {
+                  "Subj": "IME",
+                  "Num": "1102"
+                },
+                {
+                  "Subj": "MPER",
+                  "Num": "1232"
+                },
+                {
+                  "Subj": "MPER",
+                  "Num": "2101"
+                },
+                {
+                  "Subj": "MPER",
+                  "Num": "2111"
+                },
+                {
+                  "Subj": "MPER",
+                  "Num": "2141"
+                },
+                {
+                  "Subj": "MPER",
+                  "Num": "2281"
+                },
+                {
+                  "Subj": "MPER",
+                  "Num": "2381"
+                },
+                {
+                  "Subj": "MPER",
+                  "Num": "2391"
+                },
+                {
+                  "Subj": "MPER",
+                  "Num": "2461"
+                },
+                {
+                  "Subj": "MPER",
+                  "Num": "3111"
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "1141"
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "1161"
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "1221"
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "1231"
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "1311"
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "1761"
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "1771"
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "2601"
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "2000",
+                  "With": {
+                    "DWTITLE": "@Dance@"
+                  }
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "2000",
+                  "With": {
+                    "DWTITLE": "@Country Line Dancing@"
+                  }
+                },
+                {
+                  "Subj": "@",
+                  "Num": "@",
+                  "With": {
+                    "ATTRIBUTE": "ACTV"
+                  },
+                  "Hide": 1
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "1121",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "1151",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "1211",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "1241",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "1251",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "1561",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "1701",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "1711",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "2301",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "PHED",
+                  "Num": "2391",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "@",
+                  "Num": "@",
+                  "With": {
+                    "ATTRIBUTE": "ZLFS"
+                  },
+                  "Hide": 1
+                }
+              ],
+              "reqType": "Credits",
+              "reqCount": 3.0,
+              "Conn": "Or",
+              "except": [
+                "PHED 2101"
+              ]
+            }
+          ],
+          "label": "LIFE SKILLS"
+        }
+      ]
+    },
+    {
+      "BlockType": "6100",
+      "BlockID": "RA000959",
+      "Title": "Major in Computer Science",
+      "Credits": 80,
+      "rules": [
+        {
+          "rules": [
+            {
+              "label": "Programming I",
+              "id": "1-0",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "1613"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Programming I Laboratory",
+              "id": "1-1",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "1621"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Discrete Structures",
+              "id": "1-2",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "2123"
+                },
+                {
+                  "Subj": "MATH",
+                  "Num": "2123",
+                  "With": {
+                    "DWTERM": "Fall 2007"
+                  },
+                  "Hide": 1
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Programming II",
+              "id": "1-3",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "2613"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Programming II Laboratory",
+              "id": "1-4",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "2621"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Computer Organization I",
+              "id": "1-5",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "2833"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Object Oriented Software Design and Construction",
+              "id": "1-6",
+              "courses": [
+                {
+                  "Subj": "SE",
+                  "Num": "3103"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Data Structures and Algorithms",
+              "id": "1-7",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "3613"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Data Structures/Algorithms Labs",
+              "id": "1-8",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "3621"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Computer Organization II",
+              "id": "1-9",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "3833"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Applications of Database Management Systems",
+              "id": "1-10",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "4003"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Programming Languages or Translator Design",
+              "id": "1-11",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "4023"
+                },
+                {
+                  "Subj": "CMSC",
+                  "Num": "4173"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Operating Systems",
+              "id": "1-12",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "4153"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Theory of Computing",
+              "id": "1-13",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "4273"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Software Engineering I",
+              "id": "1-14",
+              "courses": [
+                {
+                  "Subj": "SE",
+                  "Num": "4283"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Computer and Network Security",
+              "id": "1-15",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "4323"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Ethics in Computing",
+              "id": "1-16",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "4401"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Software Design and Development",
+              "id": "1-17",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "4513"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "id": "1-18",
+              "Need": 1,
+              "label": "CALCULUS OPTIONS",
+              "Options": [
+                {
+                  "label": "Accelerated Calculus I and II",
+                  "id": "1-18-0",
+                  "courses": [
+                    {
+                      "Subj": "MATH",
+                      "Num": "2305"
+                    }
+                  ],
+                  "reqType": "Course",
+                  "reqCount": 1.0,
+                  "Conn": "Or"
+                },
+                {
+                  "label": "Calculus I and Calculus II",
+                  "id": "1-18-1",
+                  "courses": [
+                    {
+                      "Subj": "MATH",
+                      "Num": "2313"
+                    },
+                    {
+                      "Subj": "MATH",
+                      "Num": "2323"
+                    }
+                  ],
+                  "reqType": "Course",
+                  "reqCount": 2.0,
+                  "Conn": "Or"
+                }
+              ]
+            },
+            {
+              "label": "Calculus III",
+              "id": "1-19",
+              "courses": [
+                {
+                  "Subj": "MATH",
+                  "Num": "2333"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Linear Algebra",
+              "id": "1-20",
+              "courses": [
+                {
+                  "Subj": "MATH",
+                  "Num": "3143"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Statistical Methods, Intro Stat for Science or Math Stats 1",
+              "id": "1-21",
+              "courses": [
+                {
+                  "Subj": "STAT",
+                  "Num": "2113"
+                },
+                {
+                  "Subj": "STAT",
+                  "Num": "2103"
+                },
+                {
+                  "Subj": "STAT",
+                  "Num": "4113"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            }
+          ],
+          "label": "REQUIRED COURSES"
+        },
+        {
+          "id": "2",
+          "Need": 1,
+          "label": "Elective Science/Math courses",
+          "Options": [
+            {
+              "label": "General Physics I & Lab",
+              "id": "2-0",
+              "courses": [
+                {
+                  "Subj": "PHY",
+                  "Num": "1114"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Physics for Sci & Engineering I & Lab",
+              "id": "2-1",
+              "courses": [
+                {
+                  "Subj": "PHY",
+                  "Num": "2014"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 1.0,
+              "Conn": "Or"
+            },
+            {
+              "label": "Gen Chem I & Gen Chem I Rec/Lab",
+              "id": "2-2",
+              "courses": [
+                {
+                  "Subj": "CHEM",
+                  "Num": "1103"
+                },
+                {
+                  "Subj": "CHEM",
+                  "Num": "1112"
+                }
+              ],
+              "reqType": "Course",
+              "reqCount": 2.0,
+              "Conn": "Or"
+            }
+          ]
+        },
+        {
+          "rules": [
+            {
+              "label": "Computer Science Electives w/max 6 credits at the 2000 level",
+              "id": "3-0",
+              "courses": [
+                {
+                  "Subj": "CMSC",
+                  "Num": "3@",
+                  "With": {
+                    "ATTRIBUTE": "UPPR"
+                  }
+                },
+                {
+                  "Subj": "CMSC",
+                  "Num": "4@",
+                  "With": {
+                    "ATTRIBUTE": "UPPR"
+                  }
+                },
+                {
+                  "Subj": "SE",
+                  "Num": "3@",
+                  "With": {
+                    "ATTRIBUTE": "UPPR"
+                  }
+                },
+                {
+                  "Subj": "SE",
+                  "Num": "4@",
+                  "With": {
+                    "ATTRIBUTE": "UPPR"
+                  }
+                },
+                {
+                  "Subj": "CMSC",
+                  "Num": "2@",
+                  "Hide": 1
+                },
+                {
+                  "Subj": "SE",
+                  "Num": "2@",
+                  "Hide": 1
+                }
+              ],
+              "reqType": "Credits",
+              "reqCount": 15.0,
+              "Conn": "Or",
+              "except": [
+                "SE 4513"
+              ]
+            }
+          ],
+          "label": "ELECTIVE COURSES"
+        }
+      ]
+    }
+  ]
+}

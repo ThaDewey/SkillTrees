@@ -1,4 +1,5 @@
 {
+  "$schema": "./degreePlan.schema.json",
   "school": "UG",
   "major": "6100",
   "degree": "BA",

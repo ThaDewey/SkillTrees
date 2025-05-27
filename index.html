@@ -16,75 +16,21 @@
 
   <body>
     <h2 style="text-align:center;">Computer Science Skill Tree</h2>
+
+    <div style="text-align:center; margin-bottom: 1em;">
+      <div id="degree-info"></div>
+    </div>
+
     <div id="network"></div>
 
-    <script>
-      async function loadJSON() {
-        const response = await fetch('DegreeJSON/compSci.json');
-        const data = await response.json();
-        buildGraph(data.blocks);
-      }
+    <script type="module" src="./DegreePlanDisplay.js">
 
-      function buildGraph(blocks) {
-        let nodes = [];
-        let edges = [];
-        let nodeId = 1;
-        let idMap = {};
-        let courseOrder = [];
 
-        blocks.forEach((block, blockIndex) => {
-          const groupTitle = block.Title || `Block ${blockIndex}`;
+      window.changeLayout = function (layout) {
+        main(layout);
+      };
 
-          block.rules?.forEach(ruleGroup => {
-            ruleGroup.rules?.forEach(rule => {
-              const label = rule.label || "Unnamed Group";
-
-              rule.courses?.forEach(course => {
-                if (course.Subj !== '@') {
-                  const key = `${course.Subj} ${course.Num}`;
-                  if (!idMap[key]) {
-                    idMap[key] = nodeId++;
-                    nodes.push({
-                      id: idMap[key],
-                      label: key,
-                      group: groupTitle
-                    });
-                    courseOrder.push(key); // track order for simple edges
-                  }
-                }
-              });
-            });
-          });
-        });
-
-        // Simple sequential arrows (e.g., first course ➡️ second course ➡️ etc.)
-        for (let i = 0; i < courseOrder.length - 1; i++) {
-          const from = idMap[courseOrder[i]];
-          const to = idMap[courseOrder[i + 1]];
-          edges.push({ from, to });
-        }
-
-        const container = document.getElementById('network');
-        const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
-        const options = {
-          groups: {},
-          nodes: {
-            shape: 'box',
-            font: { size: 14 }
-          },
-          edges: {
-            arrows: 'to',
-            smooth: false
-          },
-          physics: {
-            stabilization: false
-          }
-        };
-
-        new vis.Network(container, data, options);
-      }
-
-      loadJSON();
+      window.addEventListener('DOMContentLoaded', () => main('radial'));
     </script>
   </body>
 

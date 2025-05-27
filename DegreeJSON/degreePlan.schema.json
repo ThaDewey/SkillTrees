@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Degree Plan",
+  "type": "object",
+  "properties": {
+    "school": { "type": "string" },
+    "major": { "type": "string" },
+    "degree": { "type": "string" },
+    "year": { "type": "string" },
+    "Date": { "type": "string" },
+    "Cat_yr_start": { "type": "string" },
+    "Cat_yr": { "type": "string" },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "BlockType": { "type": "string" },
+          "BlockID": { "type": "string" },
+          "Title": { "type": "string" },
+          "Credits": { "type": "number" },
+          "rules": {
+            "anyOf": [
+              { "$ref": "#/definitions/rule" },
+              {
+                "type": "array",
+                "items": { "$ref": "#/definitions/rule" }
+              }
+            ]
+          },
+          "label": { "type": "string" },
+          "id": { "type": "string" },
+          "Need": { "type": "number" },
+          "Options": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/rule" }
+          }
+        },
+        "required": ["Title"]
+      }
+    }
+  },
+  "required": ["school", "major", "degree", "blocks"],
+  "definitions": {
+    "course": {
+      "type": "object",
+      "properties": {
+        "Subj": { "type": "string" },
+        "Num": { "type": "string" },
+        "With": { "type": "object" },
+        "Hide": { "type": "number" }
+      },
+      "required": ["Subj", "Num"]
+    },
+    "rule": {
+      "type": "object",
+      "properties": {
+        "label": { "type": "string" },
+        "id": { "type": "string" },
+        "courses": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/course" }
+        },
+        "reqType": { "type": "string" },
+        "reqCount": { "type": "number" },
+        "Conn": { "type": "string" },
+        "except": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "rules": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/rule" }
+        },
+        "Options": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/rule" }
+        },
+        "Need": { "type": "number" }
+      }
+    }
+  }
+}

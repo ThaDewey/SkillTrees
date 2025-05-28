@@ -34,9 +34,16 @@ export class DegreePlanParser {
 		 */
 		function addCourse(course, labelPrefix = "", x = 0, y = 0, block = "") {
 			if (course.Hide === 1) return null;
-			let label = course.Subj === "@" ? (course.With?.ATTRIBUTE ? `ATTR: ${course.With.ATTRIBUTE}` : null) : `${course.Subj} ${course.Num}`;
+
+			// let isCourseAtSymbol = course.Subj === "@";
+			// let courseWith = course.With?.ATTRIBUTE ? `Requirement: ${attributeNames[course.With.ATTRIBUTE] || course.With.ATTRIBUTE}` : null;
+
+			let label = `${course.Subj} ${course.Num}`;
+
 			if (!label) return null;
-			label = labelPrefix ? `${labelPrefix}: ${label}` : label;
+
+			// label = labelPrefix ? `${labelPrefix}: ${label}` : label;
+
 			if (!idMap[label]) {
 				idMap[label] = nodeId++;
 				courses.push({ id: idMap[label], label, x, y, fixed: { x: true, y: true }, block });

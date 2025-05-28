@@ -33,35 +33,58 @@ export class SkillTreeRenderer {
 
 		// Group nodes by block
 		const blocks = {};
-		nodes.forEach(node => {
+		nodes.forEach((node) => {
 			const block = node.block || "Other";
 			if (!blocks[block]) blocks[block] = [];
 			blocks[block].push(node);
 		});
 
 		// For each block, create a div and render its nodes
-		Object.entries(blocks).forEach(([blockTitle, blockNodes], i) => {
-			const blockDiv = document.createElement("div");
-			blockDiv.className = "block-container";
-			blockDiv.style.marginBottom = "2em";
-			blockDiv.style.border = "1px solid #ccc";
-			blockDiv.style.padding = "1em";
-			blockDiv.style.background = "#fafbfc";
-
-			const title = document.createElement("h3");
-			title.textContent = blockTitle;
-			blockDiv.appendChild(title);
-
-			// You can render a mini-network or just list the courses
-			const list = document.createElement("ul");
-			blockNodes.forEach(node => {
-				const item = document.createElement("li");
-				item.textContent = node.label;
-				list.appendChild(item);
-			});
-			blockDiv.appendChild(list);
-
+		// Render each block in its own container
+		Object.entries(blocks).forEach(([blockTitle, blockNodes]) => {
+			const blockDiv = this._createBlockContainer(blockTitle, blockNodes);
 			container.appendChild(blockDiv);
 		});
+	}
+
+	/**
+	 * Creates a DOM element for a block, including its title and node list.
+	 * @private
+	 * @param {string} blockTitle - The title of the block.
+	 * @param {Array} blockNodes - The nodes belonging to this block.
+	 * @returns {HTMLElement} The block container element.
+	 */
+	_createBlockContainer(blockTitle, blockNodes) {
+		const blockDiv = document.createElement("div");
+		blockDiv.className = "block-container";
+		blockDiv.style.marginBottom = "2em";
+		blockDiv.style.border = "1px solid #ccc";
+		blockDiv.style.padding = "1em";
+		blockDiv.style.background = "#fafbfc";
+
+		const title = document.createElement("h3");
+		title.textContent = blockTitle;
+		blockDiv.appendChild(title);
+
+		const list = this._createNodeList(blockNodes);
+		blockDiv.appendChild(list);
+
+		return blockDiv;
+	}
+
+	/**
+	 * Creates a list element for the given nodes.
+	 * @private
+	 * @param {Array} nodes - The nodes to list.
+	 * @returns {HTMLElement} The list element.
+	 */
+	_createNodeList(nodes) {
+		const list = document.createElement("ul");
+		nodes.forEach((node) => {
+			const item = document.createElement("li");
+			item.textContent = node.label;
+			list.appendChild(item);
+		});
+		return list;
 	}
 }

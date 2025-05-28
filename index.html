@@ -15,22 +15,20 @@
   </head>
 
   <body>
-    <h2 style="text-align:center;">Computer Science Skill Tree</h2>
+    <h2 id="degree" style="text-align:center;">Computer Science Skill Tree</h2>
 
     <div style="text-align:center; margin-bottom: 1em;">
+      <button onclick="window.changeLayout('DegreeSheet')">Degree Sheet View</button>
+      <button onclick="window.changeLayout('SphereGrid')">Sphere Grid View</button>
       <div id="degree-info"></div>
     </div>
 
     <div id="network"></div>
-
     <script type="module" src="./DegreePlanDisplay.js">
-
-
-      window.changeLayout = function (layout) {
-        main(layout);
-      };
-
-      window.addEventListener('DOMContentLoaded', () => main('radial'));
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("degreeSheetBtn").addEventListener("click", () => window.changeLayout('DegreeSheet'));
+        document.getElementById("sphereGridBtn").addEventListener("click", () => window.changeLayout('SphereGrid'));
+      });
     </script>
   </body>
 

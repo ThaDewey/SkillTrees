@@ -1,36 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <head>
-    <title>Comp Sci Skill Tree</title>
-    <script src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
-    <link href="https://unpkg.com/vis-network@9.1.2/styles/vis-network.min.css" rel="stylesheet" />
-    <style>
-      #network {
-        width: 100%;
-        height: 90vh;
-        border: 1px solid #ccc;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Civilization Tech Tree</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <h2 id="degree" style="text-align:center;">Computer Science Skill Tree</h2>
-
-    <div style="text-align:center; margin-bottom: 1em;">
-      <button onclick="window.changeLayout('DegreeSheet')">Degree Sheet View</button>
-      <button onclick="window.changeLayout('SphereGrid')">Sphere Grid View</button>
-      <div id="degree-info"></div>
+    <h1>Tech Tree</h1>
+    <div id="tree-container">
+      <svg id="connections"></svg>
+      <div id="tech-grid"></div>
     </div>
-
-    <div id="network"></div>
-    <div id="sphere-network" style="width: 800px; height: 800px;"></div>
-    <script type="module" src="./DegreePlanDisplay.js">
-      document.addEventListener("DOMContentLoaded", () => {
-        document.getElementById("degreeSheetBtn").addEventListener("click", () => window.changeLayout('DegreeSheet'));
-        document.getElementById("sphereGridBtn").addEventListener("click", () => window.changeLayout('SphereGrid'));
-      });
-    </script>
+    <script type="module" src="script.js"></script>
   </body>
 
 </html>

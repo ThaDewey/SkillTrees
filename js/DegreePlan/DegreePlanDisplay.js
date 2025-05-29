@@ -2,15 +2,22 @@
 
 import { DegreePlanLoader } from "./DegreePlanLoader.js";
 import { renderStructure } from "./DegreeSheetView.js";
-import { renderSphereGrid } from "./SphereGridView.js";
+import { renderSphereGrid, renderForceLayout, renderRadialLayout, renderMindMapLayout ,renderHierarchicalLayout, renderTechTreeLayout} from "./SphereGridView.js";
+import { renderD3TechTree } from "./D3TechTree.js";
 
 let degreeTitle = "Degree Plan";
 
-// Track the current layout type
-let currentLayout = "DegreeSheet"; // default layout
+// Get initial layout from URL, default to DegreeSheet
+function getInitialLayout() {
+    const params = new URLSearchParams(window.location.search);
+    const view = params.get("view");
+    if (view === "SphereGrid" || view === "DegreeSheet") {
+        return view;
+    }
+    return "SphereGrid";
+}
 
-
-
+let currentLayout = getInitialLayout();
 
 /**
  * Switches the layout and re-renders.
@@ -35,6 +42,7 @@ async function renderDegreePlan() {
 
     const loader = new DegreePlanLoader();
     const degreePlan = await loader.load(`DegreeJSON/${key}.json`);
+    window.degreePlan = degreePlan;
 
     // Get the network container
     const networkContainer = document.getElementById("network");
@@ -44,8 +52,13 @@ async function renderDegreePlan() {
 
     // Render the appropriate layout
     if (currentLayout === "SphereGrid") {
-        renderSphereGrid(degreePlan, networkContainer); // Render directly into the network container
-        return; // Skip appending since renderSphereGrid handles rendering
+        renderSphereGrid(degreePlan, networkContainer);
+    } else if (currentLayout === "force") {
+        renderForceLayout(degreePlan, networkContainer);
+    } else if (currentLayout === "radial") {
+        renderRadialLayout(degreePlan, networkContainer);
+    } else if (currentLayout === "DegreeSheet") {
+        renderStructure(degreePlan, networkContainer);
     }
 
     let htmlTree;
@@ -243,4 +256,30 @@ function ApplyText(element, text) {
 	element.textContent = text;
 
 	return element;
+}
+
+window.setLayout = function(layoutType) {
+    const container = document.getElementById("network");
+    container.innerHTML = "";
+    if (layoutType === "force") {
+        renderForceLayout(window.degreePlan, container);
+    } else if (layoutType === "radial") {
+        renderRadialLayout(window.degreePlan, container);
+    } else if (layoutType === "mindmap") {
+        renderMindMapLayout(window.degreePlan, container);
+    } else if (layoutType === "hierarchical") {
+        renderHierarchicalLayout(window.degreePlan, container);
+    } else if (layoutType === "techtree") {
+        renderTechTreeLayout(window.degreePlan, container);
+    } else if (layoutType === "d3techtree") {
+        document.getElementById("network").style.display = "none";
+        document.getElementById("d3tree").style.display = "block";
+        renderD3TechTree(window.degreePlan);
+    }
+    // Add more layouts as needed
+};
+
+export function parseDegreePlanHierarchical(degreePlan) {
+    if (!degreePlan || !degreePlan.blocks) return [];
+    // ...rest of your code...
 }

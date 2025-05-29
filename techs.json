@@ -1,0 +1,41 @@
+[
+  {
+    "id": "agriculture",
+    "title": "Agriculture",
+    "icon": "🌾",
+    "outputs": ["🍞", "👨‍🌾"],
+    "turns": 5,
+    "x": 0,
+    "y": 2
+  },
+  {
+    "id": "pottery",
+    "title": "Pottery",
+    "icon": "🏺",
+    "outputs": ["🏠", "💧"],
+    "turns": 7,
+    "x": 1,
+    "y": 1,
+    "requires": ["agriculture"]
+  },
+  {
+    "id": "animal_husbandry",
+    "title": "Animal Husbandry",
+    "icon": "🐄",
+    "outputs": ["🥩", "🐴"],
+    "turns": 6,
+    "x": 1,
+    "y": 3,
+    "requires": ["agriculture"]
+  },
+  {
+    "id": "writing",
+    "title": "Writing",
+    "icon": "📝",
+    "outputs": ["📚"],
+    "turns": 4,
+    "x": 2,
+    "y": 2,
+    "requires": ["pottery"]
+  }
+]

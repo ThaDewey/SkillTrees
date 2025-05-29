@@ -1,0 +1,69 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #111;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+}
+
+#tree-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#connections {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 2;
+  pointer-events: all;
+}
+
+#tech-grid {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  z-index: 1;
+  display: grid;
+  pointer-events: none; /* Let SVG get mouse events */
+}
+
+.tech-node {
+  pointer-events: auto; /* Allow clicking nodes */
+  background: #222;
+  border: 2px solid #666;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #000;
+}
+
+.tech-node.locked {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.tech-node .icon {
+  font-size: 24px;
+}
+
+.tech-node .outputs {
+  margin-top: 5px;
+}
+
+.tech-node .turns {
+  font-size: 12px;
+  color: #aaa;
+}

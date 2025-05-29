@@ -1,4 +1,4 @@
-import { parseForSphereGrid } from "./SphereGridParser.js";
+import { DegreePlanParser } from "./DegreePlanParser.js";
 
 /**
  * Generates points on a sphere using spherical coordinates.
@@ -92,36 +92,34 @@ export function renderSphereGrid(degreePlan, container) {
         return null;
     }
 
-    const parsed = parseForSphereGrid(degreePlan);
+    const parser = new DegreePlanParser();
+    const { courses, edges, school, major, year, degree } = parser.parse(degreePlan);
 
     // Flatten all courses with block/category/subcategory info
-    const courses = [];
-    parsed.forEach((block, bIdx) => {
-        block.children.forEach((cat, cIdx) => {
-            cat.children.forEach((subcat, sIdx) => {
-                subcat.children.forEach((course, crsIdx) => {
-                    courses.push({
-                        ...course,
-                        blockIdx: bIdx,
-                        categoryIdx: cIdx,
-                        subcatIdx: sIdx,
-                        courseIdx: crsIdx,
-                        blockLabel: block.label,
-                        categoryLabel: cat.label,
-                        subcategoryLabel: subcat.label,
-                    });
-                });
-            });
+    const courseDetails = [];
+    courses.forEach((course, i) => {
+        const blockIdx = Math.floor(i / (courses.length / 8));
+        const categoryIdx = Math.floor((i % (courses.length / 8)) / (courses.length / 64));
+        const subcatIdx = i % (courses.length / 64);
+        courseDetails.push({
+            ...course,
+            blockIdx,
+            categoryIdx,
+            subcatIdx,
+            courseIdx: i,
+            blockLabel: `Block ${blockIdx + 1}`,
+            categoryLabel: `Category ${categoryIdx + 1}`,
+            subcategoryLabel: `Subcategory ${subcatIdx + 1}`,
         });
     });
 
     // Generate sphere points
-    const rows = Math.ceil(Math.sqrt(courses.length));
-    const cols = Math.ceil(courses.length / rows);
+    const rows = Math.ceil(Math.sqrt(courseDetails.length));
+    const cols = Math.ceil(courseDetails.length / rows);
     const points = generateSphereGrid(rows, cols, 300);
 
     // Map courses to points
-    const nodes = courses.map((course, i) => {
+    const nodes = courseDetails.map((course, i) => {
         const pt = points[i];
         const pos = project(pt, 800, 800);
         return {
@@ -139,20 +137,20 @@ export function renderSphereGrid(degreePlan, container) {
     });
 
     // Create edges to connect neighboring nodes
-    const edges = [];
+    const sphereEdges = [];
     for (let i = 0; i < nodes.length; i++) {
         if ((i + 1) % cols !== 0 && i + 1 < nodes.length) {
-            edges.push({ from: nodes[i].id, to: nodes[i + 1].id });
+            sphereEdges.push({ from: nodes[i].id, to: nodes[i + 1].id });
         }
         if (i + cols < nodes.length) {
-            edges.push({ from: nodes[i].id, to: nodes[i + cols].id });
+            sphereEdges.push({ from: nodes[i].id, to: nodes[i + cols].id });
         }
     }
 
     // Render with vis-network
     const data = {
         nodes: new vis.DataSet(nodes),
-        edges: new vis.DataSet(edges),
+        edges: new vis.DataSet(sphereEdges),
     };
     const options = {
         physics: {

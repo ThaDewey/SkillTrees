@@ -76,3 +76,33 @@ export class DegreePlanParser {
 		return { courses, edges, school, major, year, degree };
 	}
 }
+
+// Add to DegreePlanParser.js
+
+export function parseDegreePlanHierarchical(degreePlan) {
+	const blocks = degreePlan.blocks || [];
+	return blocks.map((block) => ({
+		type: block.BlockType === "CORE" ? "core" : "program",
+		label: block.Title || "Untitled Block",
+		id: block.BlockID || "",
+		credits: block.Credits || 0,
+		categories: (block.rules || []).map((category) => ({
+			label: category.label || "Category",
+			subcategories: (category.rules || []).map((subcat) => ({
+				label: subcat.label || "Subcategory",
+				id: subcat.id || "",
+				reqType: subcat.reqType,
+				reqCount: subcat.reqCount,
+				conn: subcat.Conn,
+				courses: (subcat.courses || [])
+					.filter((c) => c.Hide !== 1)
+					.map((course) => ({
+						label: course.Subj === "@" ? (course.With?.ATTRIBUTE ? `Requirement: ${course.With.ATTRIBUTE}` : "@") : `${course.Subj} ${course.Num}`,
+						subj: course.Subj,
+						num: course.Num,
+						with: course.With,
+					})),
+			})),
+		})),
+	}));
+}

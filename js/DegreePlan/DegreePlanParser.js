@@ -97,10 +97,13 @@ export function parseDegreePlanHierarchical(degreePlan) {
 				courses: (subcat.courses || [])
 					.filter((c) => c.Hide !== 1)
 					.map((course) => ({
-						label: course.Subj === "@" ? (course.With?.ATTRIBUTE ? `Requirement: ${course.With.ATTRIBUTE}` : "@") : `${course.Subj} ${course.Num}`,
+						label: course.Subj === "@"
+							? (course.With?.ATTRIBUTE ? `Requirement: ${course.With.ATTRIBUTE}` : "@")
+							: `${course.Subj} ${course.Num}`,
 						subj: course.Subj,
 						num: course.Num,
 						with: course.With,
+						completed: !!course.Completed // <-- add this line
 					})),
 			})),
 		})),
@@ -175,8 +178,9 @@ export function exportDegreePlanAsTechs(degreePlan) {
                         outputs,
                         turns,
                         x: x,
-                        y: blockIdx * 10 + catIdx * 2 + subcatIdx, // Example: spread vertically by block/category/subcat
-                        requires: []
+                        y: blockIdx * 10 + catIdx * 2 + subcatIdx,
+                        requires: [],
+                        completed: !!course.Completed // <-- add this line
                     };
 
                     techs.push(tech);
@@ -221,4 +225,20 @@ function findCourseById(degreePlan, id) {
         }
     }
     return null;
+}
+
+/**
+ * Randomly assigns Completed: true or false to every course in the degree plan.
+ * Call this before parsing for display/testing.
+ */
+export function randomlyCompleteCourses(degreePlan) {
+    for (const block of degreePlan.blocks || []) {
+        for (const category of block.rules || []) {
+            for (const subcat of category.rules || []) {
+                for (const course of subcat.courses || []) {
+                    course.Completed = Math.random() < 0.5; // 50% chance
+                }
+            }
+        }
+    }
 }

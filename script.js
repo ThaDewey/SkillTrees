@@ -4,6 +4,7 @@ fetch('./DegreeJSON/6100.json')
   .then(res => res.json())
   .then(degreePlan => {
     const techs = exportDegreePlanAsTechs(degreePlan);
+    console.log(techs);
     initTechTree(techs);
   });
 
@@ -88,8 +89,10 @@ function initTechTree(techs) {
       <div class="turns">${tech.turns} Turns</div>
     `;
 
-    el.style.gridColumn = tech.x + 1;
-    el.style.gridRow = tech.y + 1;
+    const nodeSpacingX = 180;
+    const nodeSpacingY = 120;
+    el.style.left = (tech.x * nodeSpacingX) + "px";
+    el.style.top = (tech.y * nodeSpacingY) + "px";
 
     el.addEventListener("click", () => {
       if (canUnlock(tech)) {
@@ -125,21 +128,25 @@ function initTechTree(techs) {
     techs.forEach(tech => {
       if (!tech.requires) return;
       tech.requires.forEach(reqId => {
-        const from = techMap[reqId].el.getBoundingClientRect();
-        const to = techMap[tech.id].el.getBoundingClientRect();
-        const containerRect = container.getBoundingClientRect();
+        const from = techMap[reqId].el;
+        const to = techMap[tech.id].el;
+
+        const x1 = from.offsetLeft + from.offsetWidth / 2;
+        const y1 = from.offsetTop + from.offsetHeight / 2;
+        const x2 = to.offsetLeft + to.offsetWidth / 2;
+        const y2 = to.offsetTop + to.offsetHeight / 2;
 
         // Adjust for pan/zoom
-        const x1 = (from.left + from.width / 2 - containerRect.left - panX) / zoom;
-        const y1 = (from.top + from.height / 2 - containerRect.top - panY) / zoom;
-        const x2 = (to.left + to.width / 2 - containerRect.left - panX) / zoom;
-        const y2 = (to.top + to.height / 2 - containerRect.top - panY) / zoom;
+        const adjX1 = (x1 - panX) / zoom;
+        const adjY1 = (y1 - panY) / zoom;
+        const adjX2 = (x2 - panX) / zoom;
+        const adjY2 = (y2 - panY) / zoom;
 
         const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
-        line.setAttribute("x1", x1);
-        line.setAttribute("y1", y1);
-        line.setAttribute("x2", x2);
-        line.setAttribute("y2", y2);
+        line.setAttribute("x1", adjX1);
+        line.setAttribute("y1", adjY1);
+        line.setAttribute("x2", adjX2);
+        line.setAttribute("y2", adjY2);
         line.setAttribute("stroke", "cyan");
         line.setAttribute("stroke-width", "2");
         line.setAttribute("marker-end", "url(#arrowhead)"); // Add arrowhead marker

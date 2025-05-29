@@ -2,19 +2,20 @@
 
 import { DegreePlanLoader } from "./DegreePlanLoader.js";
 import { renderStructure } from "./DegreeSheetView.js";
-import { renderSphereGrid, renderForceLayout, renderRadialLayout, renderMindMapLayout ,renderHierarchicalLayout, renderTechTreeLayout} from "./SphereGridView.js";
+import { renderSphereGrid, renderForceLayout, renderRadialLayout, renderMindMapLayout, renderHierarchicalLayout, renderTechTreeLayout } from "./SphereGridView.js";
 import { renderD3TechTree } from "./D3TechTree.js";
+import { randomlyCompleteCourses } from "./js/DegreePlan/DegreePlanParser.js";
 
 let degreeTitle = "Degree Plan";
 
 // Get initial layout from URL, default to DegreeSheet
 function getInitialLayout() {
-    const params = new URLSearchParams(window.location.search);
-    const view = params.get("view");
-    if (view === "SphereGrid" || view === "DegreeSheet") {
-        return view;
-    }
-    return "SphereGrid";
+	const params = new URLSearchParams(window.location.search);
+	const view = params.get("view");
+	if (view === "SphereGrid" || view === "DegreeSheet") {
+		return view;
+	}
+	return "DegreeSheet";
 }
 
 let currentLayout = getInitialLayout();
@@ -33,49 +34,55 @@ window.changeLayout = function (layoutType) {
  * Main render function that chooses the layout.
  */
 async function renderDegreePlan() {
-    console.log("Rendering degree plan with layout:", currentLayout);
-    const urlParams = new URLSearchParams(window.location.search);
-    let key = urlParams.get("key");
-    if (!/^\d{4}$/.test(key)) {
-        key = "5040";
-    }
+	console.log("Rendering degree plan with layout:", currentLayout);
+	const urlParams = new URLSearchParams(window.location.search);
+	let key = urlParams.get("key");
+	if (!/^\d{4}$/.test(key)) {
+		key = "5040";
+	}
 
-    const loader = new DegreePlanLoader();
-    const degreePlan = await loader.load(`DegreeJSON/${key}.json`);
-    window.degreePlan = degreePlan;
+	const loader = new DegreePlanLoader();
+	const degreePlan = await loader.load(`DegreeJSON/${key}.json`);
+	window.degreePlan = degreePlan;
 
-    // Get the network container
-    const networkContainer = document.getElementById("network");
+	// Add this line here:
+	updateCreditProgress(degreePlan);
 
-    // Clear the network container
-    if (networkContainer) networkContainer.innerHTML = "";
+	// Get the network container
+	const networkContainer = document.getElementById("network");
 
-    // Render the appropriate layout
-    if (currentLayout === "SphereGrid") {
-        renderSphereGrid(degreePlan, networkContainer);
-    } else if (currentLayout === "force") {
-        renderForceLayout(degreePlan, networkContainer);
-    } else if (currentLayout === "radial") {
-        renderRadialLayout(degreePlan, networkContainer);
-    } else if (currentLayout === "DegreeSheet") {
-        renderStructure(degreePlan, networkContainer);
-    }
+	// Clear the network container
+	if (networkContainer) networkContainer.innerHTML = "";
 
-    let htmlTree;
-    switch (currentLayout) {
-        case "raw":
-            htmlTree = renderRawJSON(degreePlan);
-            break;
-        case "tree":
-            htmlTree = renderTree(degreePlan);
-            break;
-        case "DegreeSheet":
-        default:
-            htmlTree = renderStructure(degreePlan);
-            break;
-    }
+	// Render the appropriate layout
+	if (currentLayout === "SphereGrid") {
+		renderSphereGrid(degreePlan, networkContainer);
+	} else if (currentLayout === "force") {
+		renderForceLayout(degreePlan, networkContainer);
+	} else if (currentLayout === "radial") {
+		renderRadialLayout(degreePlan, networkContainer);
+	} else if (currentLayout === "DegreeSheet") {
+		renderStructure(degreePlan, networkContainer);
+	}
 
-    networkContainer.appendChild(htmlTree);
+	let htmlTree;
+	switch (currentLayout) {
+		case "raw":
+			htmlTree = renderRawJSON(degreePlan);
+			break;
+		case "tree":
+			htmlTree = renderTree(degreePlan);
+			break;
+		case "DegreeSheet":
+		default:
+			htmlTree = renderStructure(degreePlan);
+			break;
+	}
+
+	networkContainer.appendChild(htmlTree);
+
+	// Randomly complete some courses for demonstration
+	randomlyCompleteCourses(degreePlan);
 }
 
 /**
@@ -114,9 +121,6 @@ function renderTree(obj) {
 	return walk(obj);
 }
 
-
-
-
 /**
  * Renders a list of rules as HTML elements, supporting nested rulesets.
  * @param {Array} rules - The rules to render.
@@ -141,145 +145,4 @@ function renderRules(rules) {
 }
 
 /**
- * Renders a single rule, handling nested rulesets and different rule types.
- * @param {Object|Array|string|number} rule - The rule to render.
- * @returns {HTMLElement}
- */
-function renderRule(rule) {
-	console.log("Rendering rule:" + rule.label);
-
-	const ruleDiv = BuildElement("div");
-	ruleDiv.className = "rule";
-	ruleDiv.id = getRuleId(rule);
-
-	if (isRuleObject(rule)) {
-		renderRuleObject(rule, ruleDiv);
-	} else if (Array.isArray(rule)) {
-		renderRuleArray(rule, ruleDiv);
-	} else {
-		renderRulePrimitive(rule, ruleDiv);
-	}
-
-	return ruleDiv;
-}
-
-function renderRuleObject(rule, container) {
-	console.log("Rendering rule object:" + rule.label);
-
-	Object.entries(rule).forEach(([key, value]) => {
-		if (key === "rules" && Array.isArray(value)) {
-			console.log("Rendering nested rules for key: " + key);
-			renderNestedRules(value, container);
-		} else if (Array.isArray(value)) {
-			console.log("Rendering rule array for key: " + key);
-			renderRuleArrayField(key, value, container);
-		} else {
-			console.log("Rendering course for key: " + key);
-			renderCourse(key, value, container);
-		}
-	});
-}
-
-function renderNestedRules(rulesArray, container) {
-	console.log("Rendering nested rules:" + rulesArray.label);
-
-	const nestedRules = renderRules(rulesArray);
-	container.appendChild(nestedRules);
-}
-
-function renderRuleArrayField(key, valueArray, container) {
-	const arrayTitle = BuildElement("p", `${key}:`);
-	const arrayContainer = BuildElement("div");
-	arrayContainer.className = "rule-array";
-	valueArray.forEach((item) => {
-		const itemDiv = renderRule(item);
-		arrayContainer.appendChild(itemDiv);
-	});
-	container.appendChild(arrayTitle);
-	container.appendChild(arrayContainer);
-}
-
-function renderCourse(key, value, container) {
-	const courseItem = BuildElement("p", `1 ${key}: ${value}`);
-	container.appendChild(courseItem);
-}
-
-function renderRuleArray(ruleArray, container) {
-	console.log("Rendering rule array:", ruleArray);
-	ruleArray.forEach((item) => {
-		const itemDiv = renderRule(item);
-		container.appendChild(itemDiv);
-	});
-}
-
-function renderRulePrimitive(rule, container) {
-	const ruleItem = BuildElement("p", String(rule));
-	container.appendChild(ruleItem);
-}
-
-/**
- * Generates a unique or descriptive ID for a rule element.
- * @param {Object|Array|string|number} rule
- * @returns {string}
- */
-function getRuleId(rule) {
-	if (isRuleObject(rule) && rule.id) {
-		return `rule-${rule.id}`;
-	}
-	return `rule-${Math.random().toString(36).substr(2, 9)}`;
-}
-
-/**
- * Determines if a value is a rule object (not an array, not null, is object).
- * @param {any} rule
- * @returns {boolean}
- */
-function isRuleObject(rule) {
-	return rule && typeof rule === "object" && !Array.isArray(rule);
-}
-
-
-// Render on initial page load
-window.addEventListener("DOMContentLoaded", () => renderDegreePlan());
-
-function CreateElement(elementType) {
-	return document.createElement(elementType);
-}
-
-function BuildElement(elementType, text) {
-	let element = CreateElement(elementType);
-	element = ApplyText(element, text);
-	return element;
-}
-
-function ApplyText(element, text) {
-	element.textContent = text;
-
-	return element;
-}
-
-window.setLayout = function(layoutType) {
-    const container = document.getElementById("network");
-    container.innerHTML = "";
-    if (layoutType === "force") {
-        renderForceLayout(window.degreePlan, container);
-    } else if (layoutType === "radial") {
-        renderRadialLayout(window.degreePlan, container);
-    } else if (layoutType === "mindmap") {
-        renderMindMapLayout(window.degreePlan, container);
-    } else if (layoutType === "hierarchical") {
-        renderHierarchicalLayout(window.degreePlan, container);
-    } else if (layoutType === "techtree") {
-        renderTechTreeLayout(window.degreePlan, container);
-    } else if (layoutType === "d3techtree") {
-        document.getElementById("network").style.display = "none";
-        document.getElementById("d3tree").style.display = "block";
-        renderD3TechTree(window.degreePlan);
-    }
-    // Add more layouts as needed
-};
-
-export function parseDegreePlanHierarchical(degreePlan) {
-    if (!degreePlan || !degreePlan.blocks) return [];
-    // ...rest of your code...
-}
+ * Renders a single rule, handling nested ruleset

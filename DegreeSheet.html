@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Comp Sci Skill Tree</title>
+    <script src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+    <link href="https://unpkg.com/vis-network@9.1.2/styles/vis-network.min.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+    <div id="credit-progress" style="width: 80%; margin: 1em auto; height: 30px; background: #222; border-radius: 15px; overflow: hidden;">
+      <div id="credit-progress-bar" style="height: 100%; width: 0; background: linear-gradient(90deg, #0ff, #09f); transition: width 0.5s;"></div>
+      <span id="credit-progress-label" style="position: absolute; width: 100%; text-align: center; color: #fff; line-height: 30px; font-weight: bold;"></span>
+    </div>
+    <h2 id="degree" style="text-align:center;">Computer Science Skill Tree</h2>
+    <div id="degree-info" style="text-align:center; margin-bottom: 1em;"></div>
+    <div id="network"></div>
+
+    <script type="module" src="./js/DegreePlan/DegreePlanDisplay.js">
+    </script>
+  </body>
+
+</html>

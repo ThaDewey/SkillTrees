@@ -1,48 +1,16 @@
 // DegreePlanDisplay.js
 
 import { DegreePlanLoader } from "./DegreePlanLoader.js";
-import { renderStructure } from "./DegreeSheetView.js"; // <-- Import here
+import { renderStructure } from "./DegreeSheetView.js";
+import { renderSphereGrid } from "./SphereGridView.js";
 
 let degreeTitle = "Degree Plan";
 
 // Track the current layout type
 let currentLayout = "DegreeSheet"; // default layout
 
-/**
- * Main render function that chooses the layout.
- */
-async function renderDegreePlan() {
-	const urlParams = new URLSearchParams(window.location.search);
-	let key = urlParams.get("key");
-	if (!/^\d{4}$/.test(key)) {
-		key = "5040";
-	}
 
-	const loader = new DegreePlanLoader();
-	const degreePlan = await loader.load(`DegreeJSON/${key}.json`);
 
-	const container = document.getElementById("network");
-	if (!container) return;
-	container.innerHTML = "";
-
-	let htmlTree;
-	switch (currentLayout) {
-		case "raw":
-			htmlTree = renderRawJSON(degreePlan);
-			break;
-		case "tree":
-			htmlTree = renderTree(degreePlan);
-			break;
-		case "SphereGrid":
-			htmlTree = renderSphereGrid(degreePlan);
-			break;
-		case "DegreeSheet":
-		default:
-			htmlTree = renderStructure(degreePlan);
-			break;
-	}
-	container.appendChild(htmlTree);
-}
 
 /**
  * Switches the layout and re-renders.
@@ -53,8 +21,49 @@ window.changeLayout = function (layoutType) {
 	currentLayout = layoutType;
 	renderDegreePlan(layoutType);
 };
-// Render on initial page load
-window.addEventListener("DOMContentLoaded", () => renderDegreePlan());
+
+/**
+ * Main render function that chooses the layout.
+ */
+async function renderDegreePlan() {
+    console.log("Rendering degree plan with layout:", currentLayout);
+    const urlParams = new URLSearchParams(window.location.search);
+    let key = urlParams.get("key");
+    if (!/^\d{4}$/.test(key)) {
+        key = "5040";
+    }
+
+    const loader = new DegreePlanLoader();
+    const degreePlan = await loader.load(`DegreeJSON/${key}.json`);
+
+    // Get the network container
+    const networkContainer = document.getElementById("network");
+
+    // Clear the network container
+    if (networkContainer) networkContainer.innerHTML = "";
+
+    // Render the appropriate layout
+    if (currentLayout === "SphereGrid") {
+        renderSphereGrid(degreePlan, networkContainer); // Render directly into the network container
+        return; // Skip appending since renderSphereGrid handles rendering
+    }
+
+    let htmlTree;
+    switch (currentLayout) {
+        case "raw":
+            htmlTree = renderRawJSON(degreePlan);
+            break;
+        case "tree":
+            htmlTree = renderTree(degreePlan);
+            break;
+        case "DegreeSheet":
+        default:
+            htmlTree = renderStructure(degreePlan);
+            break;
+    }
+
+    networkContainer.appendChild(htmlTree);
+}
 
 /**
  * Renders the raw JSON as formatted text.
@@ -92,116 +101,8 @@ function renderTree(obj) {
 	return walk(obj);
 }
 
-function renderDegreeInfo(degreeInfo) {
-	const infoDiv = BuildElement("div");
-	infoDiv.className = "degree-info";
-	let fire = BuildElement("p", degreeTitle);
-	infoDiv.appendChild(fire);
 
-	Object.entries(degreeInfo).forEach(([key, value]) => {
-		let el = BuildElement("p", `${key}: ${value}`);
-		infoDiv.appendChild(el);
-	});
 
-	return infoDiv;
-}
-
-function renderBlocks(blocks) {
-	const blocksContainer = BuildElement("div");
-	blocksContainer.className = "blocks-container";
-
-	if (!Array.isArray(blocks)) return blocksContainer;
-
-	blocks.forEach((block) => {
-		const blockDiv = BuildElement("div");
-		blockDiv.className = "block";
-
-		const blockType = BuildElement("h2", block.BlockType === "CORE" ? "Core" : "Program");
-		const title = BuildElement("h3", block.Title || "Untitled Block");
-		const id = BuildElement("p", `ID: ${block.BlockID || "Unknown ID"}`);
-		const credits = BuildElement("p", `Credits: ${block.Credits || 0}`);
-
-		blockDiv.appendChild(blockType);
-		blockDiv.appendChild(title);
-		blockDiv.appendChild(id);
-		blockDiv.appendChild(credits);
-
-		// Render categories (top-level rules)
-		if (Array.isArray(block.rules) && block.rules.length > 0) {
-			const categoriesContainer = renderCategories(block.rules);
-			blockDiv.appendChild(categoriesContainer);
-		}
-
-		blocksContainer.appendChild(blockDiv);
-	});
-
-	return blocksContainer;
-}
-
-/**
- * Renders categories (top-level rules) for a block.
- */
-function renderCategories(categories) {
-	const categoriesContainer = BuildElement("div");
-	categoriesContainer.className = "categories-container";
-
-	categories.forEach((category) => {
-		const categoryDiv = BuildElement("div");
-		categoryDiv.className = "category";
-		const categoryLabel = BuildElement("h4", category.label || "Category");
-		categoryDiv.appendChild(categoryLabel);
-
-		// Render subcategories (nested rules)
-		if (Array.isArray(category.rules) && category.rules.length > 0) {
-			const subcategoriesContainer = renderSubcategories(category.rules);
-			categoryDiv.appendChild(subcategoriesContainer);
-		}
-
-		categoriesContainer.appendChild(categoryDiv);
-	});
-
-	return categoriesContainer;
-}
-
-/**
- * Renders subcategories (nested rules) for a category.
- */
-function renderSubcategories(subcategories) {
-	const subcategoriesContainer = BuildElement("div");
-	subcategoriesContainer.className = "subcategories-container";
-
-	subcategories.forEach((subcat) => {
-		const subcatDiv = BuildElement("div");
-		subcatDiv.className = "subcategory";
-		const subcatLabel = BuildElement("h5", subcat.label || "Subcategory");
-		subcatDiv.appendChild(subcatLabel);
-		const categoryId = subcat.id || "unknown-category";
-
-		const categoryCoursesCount = Array.isArray(subcat.courses) ? subcat.courses.length : 0;
-
-		const Requirement = subcat.reqType || "Requirement Type";
-		const RequirementCount = subcat.reqCount || 0;
-		const connections = subcat.Conn || "null";
-		const categoryInfo = BuildElement("p", `ID: ${categoryId}, Courses: ${categoryCoursesCount}, Requirement: ${Requirement}, Count: ${RequirementCount}, Connections: ${connections}`);
-		subcatDiv.appendChild(categoryInfo);
-
-		// Render courses
-		if (Array.isArray(subcat.courses) && subcat.courses.length > 0) {
-			const courseList = BuildElement("ul");
-			subcat.courses.forEach((course) => {
-				if (course.Hide === 1) return;
-				const courseLabel = course.Subj === "@" ? (course.With?.ATTRIBUTE ? `Requirement: ${course.With.ATTRIBUTE}` : "@") : `${course.Subj} ${course.Num}`;
-				const courseItem = BuildElement("li", courseLabel);
-				courseList.appendChild(courseItem);
-			});
-			subcatDiv.appendChild(courseList);
-		}
-
-		subcategoriesContainer.appendChild(subcatDiv);
-	});
-
-	return subcategoriesContainer;
-}
 
 /**
  * Renders a list of rules as HTML elements, supporting nested rulesets.
@@ -324,39 +225,6 @@ function isRuleObject(rule) {
 	return rule && typeof rule === "object" && !Array.isArray(rule);
 }
 
-/**
- * Extracts and returns the degree information from the degree plan JSON.
- * @param {Object} degreePlan - The loaded degree plan object.
- * @returns {Object} - An object containing degree information.
- */
-function getDegreeInfo(degreePlan) {
-	if (!degreePlan || typeof degreePlan !== "object") return {};
-
-	return {
-		school: degreePlan.school || "Unknown School",
-		major: degreePlan.major || "Unknown Major",
-		degree: degreePlan.degree || "Unknown Degree",
-		year: degreePlan.year || "Unknown Year",
-	};
-}
-
-function getBlockInfo(degreePlan) {
-	if (!degreePlan || !Array.isArray(degreePlan.blocks)) return [];
-
-	return degreePlan.blocks.map((block) => ({
-		Title: block.Title || "Untitled Block",
-		BlockID: block.BlockID || "Unknown ID",
-		Credits: block.Credits || 0,
-		rules: block.rules || [],
-	}));
-}
-
-/**
- * Exposed function to trigger re-rendering of the degree plan.
- */
-window.changeLayout = function () {
-	renderDegreePlan();
-};
 
 // Render on initial page load
 window.addEventListener("DOMContentLoaded", () => renderDegreePlan());
@@ -375,11 +243,4 @@ function ApplyText(element, text) {
 	element.textContent = text;
 
 	return element;
-}
-
-function renderSphereGrid(degreePlan) {
-	// Placeholder: Replace this with your actual sphere grid rendering logic
-	const div = document.createElement("div");
-	div.textContent = "Sphere Grid View coming soon!";
-	return div;
 }

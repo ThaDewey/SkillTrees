@@ -18,6 +18,20 @@ function initTechTree(techs) {
   svg.setAttribute("width", container.offsetWidth);
   svg.setAttribute("height", container.offsetHeight);
 
+  // Add this after creating the SVG element, before creating <g>
+  let defs = document.createElementNS("http://www.w3.org/2000/svg", "defs");
+  let marker = document.createElementNS("http://www.w3.org/2000/svg", "marker");
+  marker.setAttribute("id", "arrowhead");
+  marker.setAttribute("markerWidth", "10");
+  marker.setAttribute("markerHeight", "7");
+  marker.setAttribute("refX", "10");
+  marker.setAttribute("refY", "3.5");
+  marker.setAttribute("orient", "auto");
+  marker.setAttribute("markerUnits", "strokeWidth");
+  marker.innerHTML = `<polygon points="0 0, 10 3.5, 0 7" fill="cyan"/>`;
+  defs.appendChild(marker);
+  svg.appendChild(defs);
+
   // Create a group for zoom/pan
   let g = document.createElementNS("http://www.w3.org/2000/svg", "g");
   svg.appendChild(g);
@@ -128,6 +142,7 @@ function initTechTree(techs) {
         line.setAttribute("y2", y2);
         line.setAttribute("stroke", "cyan");
         line.setAttribute("stroke-width", "2");
+        line.setAttribute("marker-end", "url(#arrowhead)"); // Add arrowhead marker
         g.appendChild(line);
       });
     });

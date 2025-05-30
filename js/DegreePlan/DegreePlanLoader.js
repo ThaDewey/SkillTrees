@@ -8,7 +8,18 @@ export class DegreePlanLoader {
    * @returns {Promise<Object>} - The parsed JSON object.
    */
   async load(url) {
-    const response = await fetch(url);
-    return await response.json();
+    console.log("Attempting to load degree plan from URL:", url);
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Failed to load degree plan: ${response.statusText}`);
+      }
+      const data = await response.json();
+      console.log("Successfully loaded degree plan:", data);
+      return data;
+    } catch (error) {
+      console.error("Error loading degree plan:", error);
+      return null;
+    }
   }
 }

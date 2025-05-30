@@ -2,20 +2,19 @@
 
 import { DegreePlanLoader } from "./DegreePlanLoader.js";
 import { renderStructure } from "./DegreeSheetView.js";
-import { renderSphereGrid, renderForceLayout, renderRadialLayout, renderMindMapLayout, renderHierarchicalLayout, renderTechTreeLayout } from "./SphereGridView.js";
-import { renderD3TechTree } from "./D3TechTree.js";
-import { randomlyCompleteCourses } from "./js/DegreePlan/DegreePlanParser.js";
+import { renderSphereGrid } from "./SphereGridView.js";
+import { calculateCreditHours, updateProgressBar } from "./DegreeSheetCreditHours.js"; // Import the functions
 
 let degreeTitle = "Degree Plan";
 
 // Get initial layout from URL, default to DegreeSheet
 function getInitialLayout() {
-	const params = new URLSearchParams(window.location.search);
-	const view = params.get("view");
-	if (view === "SphereGrid" || view === "DegreeSheet") {
-		return view;
-	}
-	return "DegreeSheet";
+    const params = new URLSearchParams(window.location.search);
+    const view = params.get("view");
+    if (view === "SphereGrid" || view === "DegreeSheet") {
+        return view;
+    }
+    return "DegreeSheet";
 }
 
 let currentLayout = getInitialLayout();
@@ -25,64 +24,83 @@ let currentLayout = getInitialLayout();
  * @param {string} layoutType - "DegreeSheet", "raw", "tree", etc.
  */
 window.changeLayout = function (layoutType) {
-	console.log("Changing layout to:", layoutType);
-	currentLayout = layoutType;
-	renderDegreePlan(layoutType);
+    console.log("Changing layout to:", layoutType);
+    currentLayout = layoutType;
+    renderDegreePlan(layoutType);
 };
 
 /**
  * Main render function that chooses the layout.
  */
 async function renderDegreePlan() {
-	console.log("Rendering degree plan with layout:", currentLayout);
-	const urlParams = new URLSearchParams(window.location.search);
-	let key = urlParams.get("key");
-	if (!/^\d{4}$/.test(key)) {
-		key = "5040";
-	}
+    console.log("Rendering degree plan with layout:", currentLayout);
 
-	const loader = new DegreePlanLoader();
-	const degreePlan = await loader.load(`DegreeJSON/${key}.json`);
-	window.degreePlan = degreePlan;
+    const urlParams = new URLSearchParams(window.location.search);
+    let key = urlParams.get("key");
+    console.log("Degree plan key:", key);
 
-	// Add this line here:
-	updateCreditProgress(degreePlan);
+    if (!/^\d{4}$/.test(key)) {
+        key = "5040"; // Default key
+        console.log("Invalid key detected. Using default key:", key);
+    }
 
-	// Get the network container
-	const networkContainer = document.getElementById("network");
+    const loader = new DegreePlanLoader();
+    console.log("Loading degree plan from:", `DegreeJSON/${key}.json`);
+    const degreePlan = await loader.load(`DegreeJSON/${key}.json`);
 
-	// Clear the network container
-	if (networkContainer) networkContainer.innerHTML = "";
+    if (!degreePlan) {
+        console.error("Failed to load degree plan!");
+        return;
+    }
+    console.log("Loaded degree plan:", degreePlan);
 
-	// Render the appropriate layout
-	if (currentLayout === "SphereGrid") {
-		renderSphereGrid(degreePlan, networkContainer);
-	} else if (currentLayout === "force") {
-		renderForceLayout(degreePlan, networkContainer);
-	} else if (currentLayout === "radial") {
-		renderRadialLayout(degreePlan, networkContainer);
-	} else if (currentLayout === "DegreeSheet") {
-		renderStructure(degreePlan, networkContainer);
-	}
+    const networkContainer = document.getElementById("network");
+    if (!networkContainer) {
+        console.error("Network container not found!");
+        return;
+    }
 
-	let htmlTree;
-	switch (currentLayout) {
-		case "raw":
-			htmlTree = renderRawJSON(degreePlan);
-			break;
-		case "tree":
-			htmlTree = renderTree(degreePlan);
-			break;
-		case "DegreeSheet":
-		default:
-			htmlTree = renderStructure(degreePlan);
-			break;
-	}
+    console.log("Clearing network container...");
+    networkContainer.innerHTML = ""; // Clear previous content
 
-	networkContainer.appendChild(htmlTree);
+    let htmlTree;
+    switch (currentLayout) {
+        case "DegreeSheet":
+            console.log("Rendering DegreeSheet layout...");
+            const {DegreeInfo, html, data } = renderStructure(degreePlan); // Extract both HTML and parsed data
+            console.log("Rendered HTML:", html);
+            console.log("Parsed Data:", data);
+            networkContainer.appendChild(html); // Append the HTML structure
 
-	// Randomly complete some courses for demonstration
-	randomlyCompleteCourses(degreePlan);
+            console.log("Calculating credit hours...");
+            const creditHours = calculateCreditHours(DegreeInfo,data); // Use parsed data for calculations
+            console.log("Credit hours after calculation:", creditHours);
+
+            console.log("Updating progress bar...");
+            updateProgressBar(creditHours); // Update the progress bar
+            return; // Skip appending since DegreeSheet handles rendering
+        case "raw":
+            console.log("Rendering raw JSON layout...");
+            htmlTree = renderRawJSON(degreePlan);
+            console.log("Rendered raw JSON:", htmlTree);
+            break;
+        case "tree":
+            console.log("Rendering tree layout...");
+            htmlTree = renderTree(degreePlan);
+            console.log("Rendered tree layout:", htmlTree);
+            break;
+        case "SphereGrid":
+            console.log("Rendering SphereGrid layout...");
+            renderSphereGrid(degreePlan, networkContainer); // Render sphere grid directly
+            console.log("Rendered SphereGrid layout.");
+            return; // Skip appending since renderSphereGrid handles rendering
+        default:
+            console.error("Unknown layout:", currentLayout);
+            return;
+    }
+
+    console.log("Appending rendered content to network container...");
+    networkContainer.appendChild(htmlTree); // Append the rendered content
 }
 
 /**
@@ -145,4 +163,66 @@ function renderRules(rules) {
 }
 
 /**
- * Renders a single rule, handling nested ruleset
+ * Renders a single rule, handling nested rulesets.
+ * @param {Object} rule - The rule object to render.
+ * @returns {HTMLElement}
+ */
+function renderRule(rule) {
+	const ruleDiv = BuildElement("div", rule.label, "rule");
+	ruleDiv.dataset.ruleId = rule.id;
+
+	// Render prerequisites
+	if (rule.prereqs && rule.prereqs.length > 0) {
+		const prereqsDiv = BuildElement("div", null, "prereqs");
+		prereqsDiv.appendChild(BuildElement("strong", "Prerequisites:"));
+		prereqsDiv.appendChild(renderRules(rule.prereqs));
+		ruleDiv.appendChild(prereqsDiv);
+	}
+
+	// Render corequisites
+	if (rule.coreqs && rule.coreqs.length > 0) {
+		const coreqsDiv = BuildElement("div", null, "coreqs");
+		coreqsDiv.appendChild(BuildElement("strong", "Corequisites:"));
+		coreqsDiv.appendChild(renderRules(rule.coreqs));
+		ruleDiv.appendChild(coreqsDiv);
+	}
+
+	// Render mutually exclusive rules
+	if (rule.mutually_exclusive && rule.mutually_exclusive.length > 0) {
+		const meDiv = BuildElement("div", null, "mutually-exclusive");
+		meDiv.appendChild(BuildElement("strong", "Mutually Exclusive:"));
+		meDiv.appendChild(renderRules(rule.mutually_exclusive));
+		ruleDiv.appendChild(meDiv);
+	}
+
+	// Render comments
+	if (rule.comments && rule.comments.length > 0) {
+		const commentsDiv = BuildElement("div", null, "comments");
+		commentsDiv.appendChild(BuildElement("strong", "Comments:"));
+		rule.comments.forEach((comment) => {
+			commentsDiv.appendChild(BuildElement("div", comment));
+		});
+		ruleDiv.appendChild(commentsDiv);
+	}
+
+	return ruleDiv;
+}
+
+/**
+ * Updates the credit progress display.
+ * @param {Object} degreePlan - The degree plan object.
+ */
+function updateCreditProgress(degreePlan) {
+	const totalCredits = degreePlan.rules.reduce((sum, rule) => sum + (rule.credits || 0), 0);
+	const completedCredits = degreePlan.rules.reduce((sum, rule) => sum + (rule.completedCredits || 0), 0);
+	const progressElement = document.getElementById("credit-progress");
+
+	if (progressElement) {
+		progressElement.textContent = `Credits: ${completedCredits} / ${totalCredits}`;
+	} else {
+		console.warn("Credit progress element not found!");
+	}
+}
+
+// Initial render
+renderDegreePlan();

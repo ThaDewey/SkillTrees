@@ -1,0 +1,1483 @@
+{
+    "degreeCodes": {
+        "A.A.S.": "Associate in Applied Science",
+        "B.A.": "Bachelor of Arts",
+        "B.A.Ed.": "Bachelor of Arts in Education",
+        "B.A.T.": "Bachelor of Applied Technology",
+        "B.B.A.": "Bachelor of Business Administration",
+        "B.F.A.": "Bachelor of Fine Arts",
+        "B.F.A.Ed.": "Bachelor of Fine Arts Education",
+        "B.M.": "Bachelor of Music",
+        "B.M.Ed.": "Bachelor of Music Education",
+        "B.S.": "Bachelor of Science",
+        "B.S.Ed.": "Bachelor of Science Education"
+    },
+    "Colleges": {
+        "COB": "College of Business",
+        "COE": "College of Education",
+        "CFAD": "College of Fine Arts and Design",
+        "CLA": "College of Liberal Arts",
+        "CMS": "College of Mathematics and Science",
+        "IDS": "Interdisciplinary Studies",
+        "CERT": "Certificates",
+        "PRE_PRP": "Pre-Professional Codes"
+    },
+    "majors": {
+        "2000": {
+            "code": "2000",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Accounting",
+            "college": "COB"
+        },
+        "2086": {
+            "code": "2086",
+            "type": "major",
+            "degree": "B.B.A.",
+            "name": "Business Administration - General Business",
+            "college": "COB"
+        },
+        "2087": {
+            "code": "2087",
+            "type": "major",
+            "degree": "B.B.A.",
+            "name": "Business Administration - International Business",
+            "college": "COB"
+        },
+        "2088": {
+            "code": "2088",
+            "type": "major",
+            "degree": "B.B.A.",
+            "name": "Business Administration - Business Law",
+            "college": "COB"
+        },
+        "2040": {
+            "code": "2040",
+            "type": "major",
+            "degree": "B.B.A.",
+            "name": "Economics",
+            "college": "COB"
+        },
+        "2042": {
+            "code": "2042",
+            "type": "major",
+            "degree": "B.B.A.",
+            "name": "Economics - Energy Economics",
+            "college": "COB"
+        },
+        "2060": {
+            "code": "2060",
+            "type": "major",
+            "degree": "B.B.A.",
+            "name": "Finance",
+            "college": "COB"
+        },
+        "2062": {
+            "code": "2062",
+            "type": "major",
+            "degree": "B.B.A.",
+            "name": "Finance - Insurance and Risk Management",
+            "college": "COB"
+        },
+        "2103": {
+            "code": "2103",
+            "type": "major",
+            "degree": "B.B.A.",
+            "name": "Information Systems and Operations Management - Management Information Systems",
+            "college": "COB"
+        },
+        "2190": {
+            "code": "2190",
+            "type": "major",
+            "degree": "B.B.A.",
+            "name": "Supply Chain Management",
+            "college": "COB"
+        },
+        "2120": {
+            "code": "2120",
+            "type": "major",
+            "degree": "B.B.A.",
+            "name": "Management",
+            "college": "COB"
+        },
+        "2122": {
+            "code": "2122",
+            "type": "major",
+            "degree": "B.B.A.",
+            "name": "Management - Human Resource Management",
+            "college": "COB"
+        },
+        "2126": {
+            "code": "2126",
+            "type": "major",
+            "degree": "B.B.A.",
+            "name": "Management - PGA Golf Management",
+            "college": "COB"
+        },
+        "2140": {
+            "code": "2140",
+            "type": "major",
+            "degree": "B.B.A.",
+            "name": "Marketing",
+            "college": "COB"
+        },
+        "2144": {
+            "code": "2144",
+            "type": "major",
+            "degree": "B.B.A.",
+            "name": "Marketing - Professional Selling",
+            "college": "COB"
+        },
+        "3000": {
+            "code": "3000",
+            "type": "major",
+            "degree": "B.S.Ed.",
+            "name": "Early Childhood Education",
+            "college": "COE"
+        },
+        "3020": {
+            "code": "3020",
+            "type": "major",
+            "degree": "B.S.Ed.",
+            "name": "Elementary Education",
+            "college": "COE"
+        },
+        "3043": {
+            "code": "3043",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Human Development and Family Sciences - Child Development",
+            "college": "COE"
+        },
+        "3046": {
+            "code": "3046",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Human Development and Family Sciences - Family and Lifespan Development",
+            "college": "COE"
+        },
+        "3060": {
+            "code": "3060",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Fashion Marketing",
+            "college": "COE"
+        },
+        "3220": {
+            "code": "3220",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "General Studies",
+            "college": "COE"
+        },
+        "3120": {
+            "code": "3120",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Kinesiology - Exercise/Fitness Management",
+            "college": "COE"
+        },
+        "3122": {
+            "code": "3122",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Kinesiology - Outdoor and Community Recreation",
+            "college": "COE"
+        },
+        "3080": {
+            "code": "3080",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Nutrition, Dietetics and Food Management",
+            "college": "COE"
+        },
+        "3261": {
+            "code": "3261",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Occupational Safety",
+            "college": "COE"
+        },
+        "3230": {
+            "code": "3230",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Organizational Leadership",
+            "college": "COE"
+        },
+        "3140": {
+            "code": "3140",
+            "type": "major",
+            "degree": "B.S.Ed.",
+            "name": "Physical Education/Health",
+            "college": "COE"
+        },
+        "3301": {
+            "code": "3301",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Psychology",
+            "college": "COE"
+        },
+        "3102": {
+            "code": "3102",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Public Health",
+            "college": "COE"
+        },
+        "3321": {
+            "code": "3321",
+            "type": "major",
+            "degree": "B.S.Ed.",
+            "name": "Special Education - Mild-Moderate Disabilities",
+            "college": "COE"
+        },
+        "3322": {
+            "code": "3322",
+            "type": "major",
+            "degree": "B.S.Ed.",
+            "name": "Special Education - Severe-Profound/Multiple Disabilities",
+            "college": "COE"
+        },
+        "3340": {
+            "code": "3340",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Speech-Language Pathology",
+            "college": "COE"
+        },
+        "1006": {
+            "code": "1006",
+            "type": "major",
+            "degree": "B.F.A.",
+            "name": "Art - Studio Art",
+            "college": "CFAD"
+        },
+        "1021": {
+            "code": "1021",
+            "type": "major",
+            "degree": "B.A.Ed.",
+            "name": "Art Education",
+            "college": "CFAD"
+        },
+        "1142": {
+            "code": "1142",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "History of Art and Visual Culture",
+            "college": "CFAD"
+        },
+        "1110": {
+            "code": "1110",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Arts Administration",
+            "college": "CFAD"
+        },
+        "1450": {
+            "code": "1450",
+            "type": "major",
+            "degree": "B.A.T.",
+            "name": "Audio Production",
+            "college": "CFAD"
+        },
+        "1460": {
+            "code": "1460",
+            "type": "major",
+            "degree": "B.A.T.",
+            "name": "Commercial Music",
+            "college": "CFAD"
+        },
+        "1430": {
+            "code": "1430",
+            "type": "major",
+            "degree": "A.A.S.",
+            "name": "Contemporary Music Business",
+            "college": "CFAD"
+        },
+        "1400": {
+            "code": "1400",
+            "type": "major",
+            "degree": "A.A.S.",
+            "name": "Contemporary Music Performance",
+            "college": "CFAD"
+        },
+        "1420": {
+            "code": "1420",
+            "type": "major",
+            "degree": "A.A.S.",
+            "name": "Contemporary Music Production",
+            "college": "CFAD"
+        },
+        "1101": {
+            "code": "1101",
+            "type": "major",
+            "degree": "B.F.A.",
+            "name": "Dance",
+            "college": "CFAD"
+        },
+        "1102": {
+            "code": "1102",
+            "type": "major",
+            "degree": "B.A.Ed.",
+            "name": "Dance Education",
+            "college": "CFAD"
+        },
+        "1040": {
+            "code": "1040",
+            "type": "major",
+            "degree": "B.F.A.",
+            "name": "Design - Graphic Design",
+            "college": "CFAD"
+        },
+        "1150": {
+            "code": "1150",
+            "type": "major",
+            "degree": "B.F.A.",
+            "name": "Interior Design",
+            "college": "CFAD"
+        },
+        "1090": {
+            "code": "1090",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Music",
+            "college": "CFAD"
+        },
+        "1160": {
+            "code": "1160",
+            "type": "major",
+            "degree": "B.M.",
+            "name": "Music - Instrumental Performance",
+            "college": "CFAD"
+        },
+        "1073": {
+            "code": "1073",
+            "type": "major",
+            "degree": "B.M.",
+            "name": "Music - Jazz Performance",
+            "college": "CFAD"
+        },
+        "1068": {
+            "code": "1068",
+            "type": "major",
+            "degree": "B.M.",
+            "name": "Music - Vocal Performance",
+            "college": "CFAD"
+        },
+        "1082": {
+            "code": "1082",
+            "type": "major",
+            "degree": "B.M.Ed.",
+            "name": "Music Education",
+            "college": "CFAD"
+        },
+        "1170": {
+            "code": "1170",
+            "type": "major",
+            "degree": "B.M.",
+            "name": "Musical Theatre",
+            "college": "CFAD"
+        },
+        "1123": {
+            "code": "1123",
+            "type": "major",
+            "degree": "B.F.A.",
+            "name": "Theatre Arts - Design and Technology",
+            "college": "CFAD"
+        },
+        "1122": {
+            "code": "1122",
+            "type": "major",
+            "degree": "B.F.A.",
+            "name": "Theatre Arts - Performance",
+            "college": "CFAD"
+        },
+        "1124": {
+            "code": "1124",
+            "type": "major",
+            "degree": "B.F.A.Ed.",
+            "name": "Theatre/Communication Education",
+            "college": "CFAD"
+        },
+        "5080": {
+            "code": "5080",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Applied Liberal Arts",
+            "college": "CLA"
+        },
+        "5320": {
+            "code": "5320",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Communication - Interpersonal Communication",
+            "college": "CLA"
+        },
+        "5282": {
+            "code": "5282",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Criminal Justice - Corrections & Transformative Justice",
+            "college": "CLA"
+        },
+        "5284": {
+            "code": "5284",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Criminal Justice - General Criminal Justice",
+            "college": "CLA"
+        },
+        "5285": {
+            "code": "5285",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Criminal Justice - Police",
+            "college": "CLA"
+        },
+        "5040": {
+            "code": "5040",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "English",
+            "college": "CLA"
+        },
+        "5042": {
+            "code": "5042",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "English - Creative Writing",
+            "college": "CLA"
+        },
+        "5060": {
+            "code": "5060",
+            "type": "major",
+            "degree": "B.A.Ed.",
+            "name": "English Education",
+            "college": "CLA"
+        },
+        "5100": {
+            "code": "5100",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Geography",
+            "college": "CLA"
+        },
+        "5122": {
+            "code": "5122",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "History",
+            "college": "CLA"
+        },
+        "5121": {
+            "code": "5121",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "History - Museum Studies",
+            "college": "CLA"
+        },
+        "5140": {
+            "code": "5140",
+            "type": "major",
+            "degree": "B.A.Ed.",
+            "name": "History Education",
+            "college": "CLA"
+        },
+        "5170": {
+            "code": "5170",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Humanities",
+            "college": "CLA"
+        },
+        "5012": {
+            "code": "5012",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Mass Communication - Professional Media",
+            "college": "CLA"
+        },
+        "5220": {
+            "code": "5220",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Modern Language - French",
+            "college": "CLA"
+        },
+        "5221": {
+            "code": "5221",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Modern Language - German",
+            "college": "CLA"
+        },
+        "5222": {
+            "code": "5222",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Modern Language - Spanish",
+            "college": "CLA"
+        },
+        "5240": {
+            "code": "5240",
+            "type": "major",
+            "degree": "B.A.Ed.",
+            "name": "Modern Language Education - French",
+            "college": "CLA"
+        },
+        "5241": {
+            "code": "5241",
+            "type": "major",
+            "degree": "B.A.Ed.",
+            "name": "Modern Language Education - German",
+            "college": "CLA"
+        },
+        "5242": {
+            "code": "5242",
+            "type": "major",
+            "degree": "B.A.Ed.",
+            "name": "Modern Language Education - Spanish",
+            "college": "CLA"
+        },
+        "5180": {
+            "code": "5180",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Philosophy",
+            "college": "CLA"
+        },
+        "5330": {
+            "code": "5330",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Photographic Arts",
+            "college": "CLA"
+        },
+        "5260": {
+            "code": "5260",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Political Science",
+            "college": "CLA"
+        },
+        "5262": {
+            "code": "5262",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Political Science - Public Service",
+            "college": "CLA"
+        },
+        "5300": {
+            "code": "5300",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Sociology",
+            "college": "CLA"
+        },
+        "5302": {
+            "code": "5302",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Sociology - Human Services",
+            "college": "CLA"
+        },
+        "5301": {
+            "code": "5301",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Sociology - Substance Abuse Studies",
+            "college": "CLA"
+        },
+        "5341": {
+            "code": "5341",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Strategic Communications - Organizational Communication",
+            "college": "CLA"
+        },
+        "5342": {
+            "code": "5342",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Strategic Communications - Advertising and Public Relations",
+            "college": "CLA"
+        },
+        "5350": {
+            "code": "5350",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Technical Writing",
+            "college": "CLA"
+        },
+        "5150": {
+            "code": "5150",
+            "type": "major",
+            "degree": "B.A.",
+            "name": "Women’s, Gender, and Sexuality Studies",
+            "college": "CLA"
+        },
+        "6140": {
+            "code": "6140",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Actuarial Science",
+            "college": "CMS"
+        },
+        "6000": {
+            "code": "6000",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Biology",
+            "college": "CMS"
+        },
+        "6001": {
+            "code": "6001",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Biology - Biomedical Science",
+            "college": "CMS"
+        },
+        "6002": {
+            "code": "6002",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Biology - Medical Laboratory Science",
+            "college": "CMS"
+        },
+        "6220": {
+            "code": "6220",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Biomedical Engineering",
+            "college": "CMS"
+        },
+        "6060": {
+            "code": "6060",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Chemistry",
+            "college": "CMS"
+        },
+        "6064": {
+            "code": "6064",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Chemistry - ACS Approved",
+            "college": "CMS"
+        },
+        "6063": {
+            "code": "6063",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Chemistry - Environmental Chemistry",
+            "college": "CMS"
+        },
+        "6062": {
+            "code": "6062",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Chemistry - Health Sciences",
+            "college": "CMS"
+        },
+        "6280": {
+            "code": "6280",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Computer Engineering",
+            "college": "CMS"
+        },
+        "6100": {
+            "code": "6100",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Computer Science",
+            "college": "CMS"
+        },
+        "6101": {
+            "code": "6101",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Computer Science - Applied",
+            "college": "CMS"
+        },
+        "6102": {
+            "code": "6102",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Computer Science - Information Science",
+            "college": "CMS"
+        },
+        "6190": {
+            "code": "6190",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Data Science",
+            "college": "CMS"
+        },
+        "6010": {
+            "code": "6010",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Ecology & Conservation Biology",
+            "college": "CMS"
+        },
+        "6260": {
+            "code": "6260",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Electrical Engineering",
+            "college": "CMS"
+        },
+        "6243": {
+            "code": "6243",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Engineering Physics - Physics",
+            "college": "CMS"
+        },
+        "6120": {
+            "code": "6120",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Funeral Service",
+            "college": "CMS"
+        },
+        "6160": {
+            "code": "6160",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Mathematics",
+            "college": "CMS"
+        },
+        "6161": {
+            "code": "6161",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Mathematics - Applied Mathematics",
+            "college": "CMS"
+        },
+        "6162": {
+            "code": "6162",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Mathematics - Statistics",
+            "college": "CMS"
+        },
+        "6180": {
+            "code": "6180",
+            "type": "major",
+            "degree": "B.S.Ed.",
+            "name": "Mathematics Education",
+            "college": "CMS"
+        },
+        "6270": {
+            "code": "6270",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Mechanical Engineering",
+            "college": "CMS"
+        },
+        "6200": {
+            "code": "6200",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Nursing",
+            "college": "CMS"
+        },
+        "6040": {
+            "code": "6040",
+            "type": "major",
+            "degree": "B.S.Ed.",
+            "name": "Science Education - Biology",
+            "college": "CMS"
+        },
+        "6041": {
+            "code": "6041",
+            "type": "major",
+            "degree": "B.S.Ed.",
+            "name": "Science Education - Chemistry",
+            "college": "CMS"
+        },
+        "6042": {
+            "code": "6042",
+            "type": "major",
+            "degree": "B.S.Ed.",
+            "name": "Science Education - General Science",
+            "college": "CMS"
+        },
+        "6043": {
+            "code": "6043",
+            "type": "major",
+            "degree": "B.S.Ed.",
+            "name": "Science Education - Physical Science",
+            "college": "CMS"
+        },
+        "6044": {
+            "code": "6044",
+            "type": "major",
+            "degree": "B.S.Ed.",
+            "name": "Science Education - Physics",
+            "college": "CMS"
+        },
+        "6110": {
+            "code": "6110",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Software Engineering",
+            "college": "CMS"
+        },
+        "7024": {
+            "code": "7024",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Forensic Science - Forensic Investigations",
+            "college": "IDS"
+        },
+        "7021": {
+            "code": "7021",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Forensic Science - Chemistry",
+            "college": "IDS"
+        },
+        "7023": {
+            "code": "7023",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Forensic Science - Digital Forensics",
+            "college": "IDS"
+        },
+        "7022": {
+            "code": "7022",
+            "type": "major",
+            "degree": "B.S.",
+            "name": "Forensic Science - Molecular Biology",
+            "college": "IDS"
+        },
+        "2019": {
+            "code": "2019",
+            "type": "minor",
+            "name": "Accounting"
+        },
+        "1019": {
+            "code": "1019",
+            "type": "minor",
+            "name": "Art"
+        },
+        "1015": {
+            "code": "1015",
+            "type": "minor",
+            "name": "Art - History of Art and Visual Culture"
+        },
+        "1119": {
+            "code": "1119",
+            "type": "minor",
+            "name": "Arts Administration"
+        },
+        "6019": {
+            "code": "6019",
+            "type": "minor",
+            "name": "Biology"
+        },
+        "2099": {
+            "code": "2099",
+            "type": "minor",
+            "name": "Business Administration"
+        },
+        "6079": {
+            "code": "6079",
+            "type": "minor",
+            "name": "Chemistry"
+        },
+        "5328": {
+            "code": "5328",
+            "type": "minor",
+            "name": "Communication - Interpersonal Communication"
+        },
+        "5329": {
+            "code": "5329",
+            "type": "minor",
+            "name": "Communication - Media Studies"
+        },
+        "6119": {
+            "code": "6119",
+            "type": "minor",
+            "name": "Computer Science"
+        },
+        "1439": {
+            "code": "1439",
+            "type": "minor",
+            "name": "Contemporary Music Business"
+        },
+        "1409": {
+            "code": "1409",
+            "type": "minor",
+            "name": "Contemporary Music Performance"
+        },
+        "1408": {
+            "code": "1408",
+            "type": "minor",
+            "name": "Contemporary Music Performance - Songwriting"
+        },
+        "1429": {
+            "code": "1429",
+            "type": "minor",
+            "name": "Contemporary Music Production"
+        },
+        "1428": {
+            "code": "1428",
+            "type": "minor",
+            "name": "Contemporary Music Production - Post Production"
+        },
+        "5298": {
+            "code": "5298",
+            "type": "minor",
+            "name": "Criminal Justice"
+        },
+        "1109": {
+            "code": "1109",
+            "type": "minor",
+            "name": "Dance"
+        },
+        "1057": {
+            "code": "1057",
+            "type": "minor",
+            "name": "Design - Design History"
+        },
+        "1059": {
+            "code": "1059",
+            "type": "minor",
+            "name": "Design - Graphic Design"
+        },
+        "1058": {
+            "code": "1058",
+            "type": "minor",
+            "name": "Design - Illustration"
+        },
+        "6259": {
+            "code": "6259",
+            "type": "minor",
+            "name": "Engineering Physics"
+        },
+        "2039": {
+            "code": "2039",
+            "type": "minor",
+            "name": "Economics"
+        },
+        "2038": {
+            "code": "2038",
+            "type": "minor",
+            "name": "Economics - Energy Economics"
+        },
+        "5057": {
+            "code": "5057",
+            "type": "minor",
+            "name": "English - Creative Writing"
+        },
+        "5059": {
+            "code": "5059",
+            "type": "minor",
+            "name": "English"
+        },
+        "3079": {
+            "code": "3079",
+            "type": "minor",
+            "name": "Fashion Marketing"
+        },
+        "2079": {
+            "code": "2079",
+            "type": "minor",
+            "name": "Finance"
+        },
+        "2065": {
+            "code": "2065",
+            "type": "minor",
+            "name": "Finance - Banking"
+        },
+        "2068": {
+            "code": "2068",
+            "type": "minor",
+            "name": "Finance - Business Law"
+        },
+        "2066": {
+            "code": "2066",
+            "type": "minor",
+            "name": "Finance - Financial Planning"
+        },
+        "2064": {
+            "code": "2064",
+            "type": "minor",
+            "name": "Finance - Insurance and Risk Management"
+        },
+        "2067": {
+            "code": "2067",
+            "type": "minor",
+            "name": "Finance - Real Estate"
+        },
+        "5119": {
+            "code": "5119",
+            "type": "minor",
+            "name": "Geography"
+        },
+        "3047": {
+            "code": "3047",
+            "type": "minor",
+            "name": "Gerontology"
+        },
+        "6139": {
+            "code": "6139",
+            "type": "minor",
+            "name": "Grief, Death and Dying"
+        },
+        "5139": {
+            "code": "5139",
+            "type": "minor",
+            "name": "History"
+        },
+        "5138": {
+            "code": "5138",
+            "type": "minor",
+            "name": "History - War and Society"
+        },
+        "3048": {
+            "code": "3048",
+            "type": "minor",
+            "name": "Human Development and Family Science - Child Life"
+        },
+        "3099": {
+            "code": "3099",
+            "type": "minor",
+            "name": "Human Environmental Sciences"
+        },
+        "5199": {
+            "code": "5199",
+            "type": "minor",
+            "name": "Humanities"
+        },
+        "2117": {
+            "code": "2117",
+            "type": "minor",
+            "name": "Information Systems and Operations Management-Business Analytics"
+        },
+        "2119": {
+            "code": "2119",
+            "type": "minor",
+            "name": "Information Systems and Operations Management -Management Information Systems"
+        },
+        "2199": {
+            "code": "2199",
+            "type": "minor",
+            "name": "Supply Chain Management"
+        },
+        "2137": {
+            "code": "2137",
+            "type": "minor",
+            "name": "International Business"
+        },
+        "3129": {
+            "code": "3129",
+            "type": "minor",
+            "name": "Kinesiology - Outdoor and Community Recreation"
+        },
+        "5597": {
+            "code": "5597",
+            "type": "minor",
+            "name": "Leadership"
+        },
+        "2135": {
+            "code": "2135",
+            "type": "minor",
+            "name": "Management - Management"
+        },
+        "2136": {
+            "code": "2136",
+            "type": "minor",
+            "name": "Management - Business Leadership"
+        },
+        "2138": {
+            "code": "2138",
+            "type": "minor",
+            "name": "Management - Entrepreneurship"
+        },
+        "2139": {
+            "code": "2139",
+            "type": "minor",
+            "name": "Management - Human Resource Management"
+        },
+        "2129": {
+            "code": "2129",
+            "type": "minor",
+            "name": "Management - Strategy"
+        },
+        "2159": {
+            "code": "2159",
+            "type": "minor",
+            "name": "Marketing"
+        },
+        "2158": {
+            "code": "2158",
+            "type": "minor",
+            "name": "Marketing - Professional Selling"
+        },
+        "5206": {
+            "code": "5206",
+            "type": "minor",
+            "name": "Mass Communication - Film Production"
+        },
+        "5015": {
+            "code": "5015",
+            "type": "minor",
+            "name": "Mass Communication - Esports Media"
+        },
+        "5017": {
+            "code": "5017",
+            "type": "minor",
+            "name": "Mass Communication - Mass Communication"
+        },
+        "5211": {
+            "code": "5211",
+            "type": "minor",
+            "name": "Mass Communication - Journalism"
+        },
+        "5016": {
+            "code": "5016",
+            "type": "minor",
+            "name": "Mass Communication - Visual Media"
+        },
+        "6179": {
+            "code": "6179",
+            "type": "minor",
+            "name": "Mathematics"
+        },
+        "2179": {
+            "code": "2179",
+            "type": "minor",
+            "name": "Military Science"
+        },
+        "5234": {
+            "code": "5234",
+            "type": "minor",
+            "name": "Modern Languages - Chinese"
+        },
+        "5239": {
+            "code": "5239",
+            "type": "minor",
+            "name": "Modern Languages - French"
+        },
+        "5238": {
+            "code": "5238",
+            "type": "minor",
+            "name": "Modern Languages - German"
+        },
+        "5233": {
+            "code": "5233",
+            "type": "minor",
+            "name": "Modern Languages - Japanese"
+        },
+        "5237": {
+            "code": "5237",
+            "type": "minor",
+            "name": "Modern Languages - Spanish"
+        },
+        "1079": {
+            "code": "1079",
+            "type": "minor",
+            "name": "Music"
+        },
+        "1074": {
+            "code": "1074",
+            "type": "minor",
+            "name": "Music - Collaborative Piano"
+        },
+        "1075": {
+            "code": "1075",
+            "type": "minor",
+            "name": "Music - Composition"
+        },
+        "1099": {
+            "code": "1099",
+            "type": "minor",
+            "name": "Music - Historical Performance"
+        },
+        "1078": {
+            "code": "1078",
+            "type": "minor",
+            "name": "Music - Jazz Studies"
+        },
+        "1076": {
+            "code": "1076",
+            "type": "minor",
+            "name": "Music - Piano"
+        },
+        "1077": {
+            "code": "1077",
+            "type": "minor",
+            "name": "Music - Piano Pedagogy"
+        },
+        "3098": {
+            "code": "3098",
+            "type": "minor",
+            "name": "Nutrition"
+        },
+        "3269": {
+            "code": "3269",
+            "type": "minor",
+            "name": "Occupational Safety"
+        },
+        "3149": {
+            "code": "3149",
+            "type": "minor",
+            "name": "Physical Education - Coaching Education"
+        },
+        "5198": {
+            "code": "5198",
+            "type": "minor",
+            "name": "Philosophy"
+        },
+        "5196": {
+            "code": "5196",
+            "type": "minor",
+            "name": "Philosophy - Classical Studies in Greek"
+        },
+        "5197": {
+            "code": "5197",
+            "type": "minor",
+            "name": "Philosophy - Classical Studies in Latin"
+        },
+        "5339": {
+            "code": "5339",
+            "type": "minor",
+            "name": "Photographic Arts"
+        },
+        "5279": {
+            "code": "5279",
+            "type": "minor",
+            "name": "Political Science - Political Science"
+        },
+        "5277": {
+            "code": "5277",
+            "type": "minor",
+            "name": "Political Science - International Relations"
+        },
+        "5276": {
+            "code": "5276",
+            "type": "minor",
+            "name": "Political Science - Pre-Law"
+        },
+        "5275": {
+            "code": "5275",
+            "type": "minor",
+            "name": "Political Science - Public Administration"
+        },
+        "3319": {
+            "code": "3319",
+            "type": "minor",
+            "name": "Psychology"
+        },
+        "3117": {
+            "code": "3117",
+            "type": "minor",
+            "name": "Public Health"
+        },
+        "6059": {
+            "code": "6059",
+            "type": "minor",
+            "name": "Science Education - Secondary Science Education"
+        },
+        "5319": {
+            "code": "5319",
+            "type": "minor",
+            "name": "Sociology"
+        },
+        "5309": {
+            "code": "5309",
+            "type": "minor",
+            "name": "Sociology - Human Services"
+        },
+        "5318": {
+            "code": "5318",
+            "type": "minor",
+            "name": "Sociology - Substance Abuse Studies"
+        },
+        "6178": {
+            "code": "6178",
+            "type": "minor",
+            "name": "Statistics"
+        },
+        "5347": {
+            "code": "5347",
+            "type": "minor",
+            "name": "Strategic Communications - Organizational Communication"
+        },
+        "5348": {
+            "code": "5348",
+            "type": "minor",
+            "name": "Strategic Communications - Public Relations"
+        },
+        "5349": {
+            "code": "5349",
+            "type": "minor",
+            "name": "Strategic Communications - Strategic Communications"
+        },
+        "5359": {
+            "code": "5359",
+            "type": "minor",
+            "name": "Technical Writing"
+        },
+        "1139": {
+            "code": "1139",
+            "type": "minor",
+            "name": "Theatre Arts"
+        },
+        "5568": {
+            "code": "5568",
+            "type": "minor",
+            "name": "Asian Studies"
+        },
+        "5575": {
+            "code": "5575",
+            "type": "minor",
+            "name": "Chinese Studies"
+        },
+        "5570": {
+            "code": "5570",
+            "type": "minor",
+            "name": "Film Studies"
+        },
+        "5278": {
+            "code": "5278",
+            "type": "minor",
+            "name": "Global Studies"
+        },
+        "5563": {
+            "code": "5563",
+            "type": "minor",
+            "name": "Indigenous Studies"
+        },
+        "5565": {
+            "code": "5565",
+            "type": "minor",
+            "name": "Race and Ethnic Studies"
+        },
+        "5571": {
+            "code": "5571",
+            "type": "minor",
+            "name": "Religious Studies"
+        },
+        "5567": {
+            "code": "5567",
+            "type": "minor",
+            "name": "Russian Studies"
+        },
+        "5574": {
+            "code": "5574",
+            "type": "minor",
+            "name": "Sustainability Studies"
+        },
+        "5564": {
+            "code": "5564",
+            "type": "minor",
+            "name": "Women’s, Gender, and Sexuality Studies"
+        },
+        "2010": {
+            "code": "2010",
+            "type": "certificate",
+            "name": "Accounting Certificate"
+        },
+        "1480": {
+            "code": "1480",
+            "type": "certificate",
+            "name": "Audio Post-Production"
+        },
+        "6090": {
+            "code": "6090",
+            "type": "certificate",
+            "name": "Cybersecurity Certificate"
+        },
+        "2070": {
+            "code": "2070",
+            "type": "certificate",
+            "name": "Financial Planning Certificate"
+        },
+        "6121": {
+            "code": "6121",
+            "type": "certificate",
+            "name": "Funeral Service Certificate"
+        },
+        "1470": {
+            "code": "1470",
+            "type": "certificate",
+            "name": "Independent Film Directing, Writing, and Entrepreneurship"
+        },
+        "5596": {
+            "code": "5596",
+            "type": "certificate",
+            "name": "Leadership Certificate"
+        },
+        "6588": {
+            "code": "6588",
+            "type": "preProfessional",
+            "name": "Pre-Dental"
+        },
+        "6592": {
+            "code": "6592",
+            "type": "preProfessional",
+            "name": "Pre-Engineering"
+        },
+        "6589": {
+            "code": "6589",
+            "type": "preProfessional",
+            "name": "Pre-Medical"
+        },
+        "6590": {
+            "code": "6590",
+            "type": "preProfessional",
+            "name": "Pre-Optometry"
+        },
+        "6593": {
+            "code": "6593",
+            "type": "preProfessional",
+            "name": "Pre-Pharmacy"
+        },
+        "6591": {
+            "code": "6591",
+            "type": "preProfessional",
+            "name": "Pre-Veterinary Medicine"
+        }
+    },
+    "DegreeMinMax": {
+        "University Core (Major courses may apply in core)": {
+            "min": 42,
+            "max": 44
+        },
+        "WRITTEN AND ORAL COMMUNICATION": 9,
+        "English Composition": 3,
+        "English Composition and Research": 3,
+        "Oral Communication": 3,
+        "QUANTITATIVE REASONING/SCIENTIFIC METHOD": {
+            "min": 10,
+            "max": 11
+        },
+        "Math Requirement": 3,
+        "Life Science": 4,
+        "Physical Science": 3,
+        "One class with Lab": 4,
+        "CRITICAL INQUIRY AND AESTHETIC ANALYSIS": 6,
+        "Aesthetic Analysis": 3,
+        "Critical Inquiry": 3,
+        "AMERICAN HISTORICAL AND POLITICAL ANALYSIS": 6,
+        "American National Government": 3,
+        "History of US: To 1877 or Since 1877": 3,
+        "CULTURAL AND LANGUAGE ANALYSIS ": {
+            "min": 3,
+            "max": 4
+        },
+        "Second Language ": 4,
+        "SOCIAL AND BEHAVIORAL ANALYSIS": 3,
+        "LIFE SKILLS": 5,
+        "Healthy Life Skills": 2,
+        "Life Skills Elective": 3
+    }
+}

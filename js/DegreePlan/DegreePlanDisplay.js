@@ -35,18 +35,22 @@ window.changeLayout = function (layoutType) {
 async function renderDegreePlan() {
 	console.log("Rendering degree plan with layout:", currentLayout);
 
+	// Get the major code from the URL
 	const urlParams = new URLSearchParams(window.location.search);
 	let key = urlParams.get("key");
 	console.log("Degree plan key:", key);
 
+	// Validate the major code (must be a 4-digit number)
 	if (!/^\d{4}$/.test(key)) {
-		key = "5040"; // Default key
+		key = "5040"; // Default key if invalid
 		console.log("Invalid key detected. Using default key:", key);
 	}
 
+	// Load the JSON file for the major code
 	const loader = new DegreePlanLoader();
-	console.log("Loading degree plan from:", `DegreeJSON/${key}.json`);
-	const degreePlan = await loader.load(`DegreeJSON/${key}.json`);
+	const jsonPath = `DegreeJSON/${key}.json`;
+	console.log("Loading degree plan from:", jsonPath);
+	const degreePlan = await loader.load(jsonPath);
 
 	if (!degreePlan) {
 		console.error("Failed to load degree plan!");
@@ -54,6 +58,7 @@ async function renderDegreePlan() {
 	}
 	console.log("Loaded degree plan:", degreePlan);
 
+	// Get the container for rendering
 	const networkContainer = document.getElementById("network");
 	if (!networkContainer) {
 		console.error("Network container not found!");
@@ -63,45 +68,45 @@ async function renderDegreePlan() {
 	console.log("Clearing network container...");
 	networkContainer.innerHTML = ""; // Clear previous content
 
-	let htmlTree;
+	// Render the degree plan based on the current layout
 	switch (currentLayout) {
 		case "DegreeSheet":
 			console.log("Rendering DegreeSheet layout...");
-			const { DegreeInfo, html, data } = await renderStructure(degreePlan); // Extract both HTML and parsed data
+			const { DegreeInfo, html, data } = await renderStructure(degreePlan);
 			console.log("Degree Info:", DegreeInfo);
 			console.log("Rendered HTML:", html);
 			console.log("Parsed Data:", data);
-			networkContainer.appendChild(html); // Append the HTML structure
+			networkContainer.appendChild(html);
 
 			console.log("Calculating credit hours...");
-			const creditHours = calculateCreditHours(DegreeInfo, data); // Use parsed data for calculations
+			const creditHours = calculateCreditHours(DegreeInfo, data);
 			console.log("Credit hours after calculation:", creditHours);
 
 			console.log("Updating progress bar...");
-			updateProgressBar(creditHours); // Update the progress bar
-			return; // Skip appending since DegreeSheet handles rendering
+			updateProgressBar(creditHours);
+			break;
+
 		case "raw":
 			console.log("Rendering raw JSON layout...");
-			htmlTree = renderRawJSON(degreePlan);
-			console.log("Rendered raw JSON:", htmlTree);
+			const rawJson = renderRawJSON(degreePlan);
+			networkContainer.appendChild(rawJson);
 			break;
+
 		case "tree":
 			console.log("Rendering tree layout...");
-			htmlTree = renderTree(degreePlan);
-			console.log("Rendered tree layout:", htmlTree);
+			const treeView = renderTree(degreePlan);
+			networkContainer.appendChild(treeView);
 			break;
+
 		case "SphereGrid":
 			console.log("Rendering SphereGrid layout...");
-			renderSphereGrid(degreePlan, networkContainer); // Render sphere grid directly
-			console.log("Rendered SphereGrid layout.");
-			return; // Skip appending since renderSphereGrid handles rendering
+			renderSphereGrid(degreePlan, networkContainer);
+			break;
+
 		default:
 			console.error("Unknown layout:", currentLayout);
-			return;
+			break;
 	}
-
-	console.log("Appending rendered content to network container...");
-	networkContainer.appendChild(htmlTree); // Append the rendered content
 }
 
 /**

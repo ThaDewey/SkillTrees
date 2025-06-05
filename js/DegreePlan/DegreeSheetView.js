@@ -489,10 +489,12 @@ function createCoursesList(conn, courses, parent) {
             parent: parent
         });
 
+                    groupDiv.style.flexWrap = "wrap"; // Make buttons flexible in width
+
         courses.forEach((course) => {
-            html.buildElement({
+           html.buildElement({
                 elementType: "button",
-                text: `${course.Subj || ""} ${course.Num || ""}`,
+                text: `${course.subj} ${course.num}`,
                 classList: [
                     "course-item",
                     "btn",
@@ -500,6 +502,7 @@ function createCoursesList(conn, courses, parent) {
                 ],
                 parent: groupDiv
             });
+
         });
     } else {
         // Display as ul > li for "And"

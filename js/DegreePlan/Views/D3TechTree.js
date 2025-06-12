@@ -1,4 +1,4 @@
-import { parseDegreePlanForD3 } from "./DegreePlanParser.js";
+import { parseDegreePlanForD3 } from "../../Parsers/DegreePlanParser.js";
 
 export function renderD3TechTree(degreePlan) {
     d3.select("#d3tree").selectAll("*").remove();

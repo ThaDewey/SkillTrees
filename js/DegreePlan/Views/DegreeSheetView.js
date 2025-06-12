@@ -9,8 +9,8 @@
  * @property {string} [DWTERM] - Optional term information.
  * @property {string} [DWTRANSFER] - Optional transfer information.
  */
-import { parseDegreePlanHierarchical, parseDegreePlanFlat } from "./DegreePlanParser.js";
-import * as html from "./domUtils.js";
+import { parseDegreePlanHierarchical, parseDegreePlanFlat } from "../../Parsers/DegreePlanParser.js";
+import * as html from "../../Utils/domUtils.js";
 
 let codes = {};
 let majorcode = -9999;

@@ -1,9 +1,9 @@
 // DegreePlanDisplay.js
 
-import { DegreePlanLoader } from "./DegreePlanLoader.js";
-import { renderStructure } from "./DegreeSheetView.js";
-import { renderSphereGrid } from "./SphereGridView.js";
-import { calculateCreditHours, updateProgressBar } from "./DegreeSheetCreditHours.js"; // Import the functions
+import { DegreePlanLoader } from "../Parsers/DegreePlanLoader.js";
+import { renderStructure } from "./Views/DegreeSheetView.js";
+import { renderSphereGrid } from "./Views/SphereGridView.js";
+import { calculateCreditHours, updateProgressBar } from "./Logic/DegreeSheetCreditHours.js"; // Import the functions
 
 let degreeTitle = "Degree Plan";
 

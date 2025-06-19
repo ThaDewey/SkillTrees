@@ -4,6 +4,7 @@ import { DegreePlanLoader } from "../Parsers/DegreePlanLoader.js";
 import { renderStructure } from "./Views/DegreeSheetView.js";
 import { renderSphereGrid } from "./Views/SphereGridView.js";
 import { calculateCreditHours, updateProgressBar } from "./Logic/DegreeSheetCreditHours.js"; // Import the functions
+import { getCourseDescription } from "./CourseLoader.js";
 
 let degreeTitle = "Degree Plan";
 
@@ -76,6 +77,21 @@ async function renderDegreePlan() {
 			console.log("Degree Info:", DegreeInfo);
 			console.log("Rendered HTML:", html);
 			console.log("Parsed Data:", data);
+
+			// Fetch and display course descriptions
+			const courseContainer = document.createElement("div");
+			courseContainer.className = "course-descriptions";
+
+			for (const course of data.courses || []) {
+				const courseId = course.course_identification;
+				const description = await getCourseDescription(courseId);
+				const courseElement = document.createElement("div");
+				courseElement.className = "course-description";
+				courseElement.innerHTML = `<strong>${courseId}:</strong> ${description}`;
+				courseContainer.appendChild(courseElement);
+			}
+
+			html.appendChild(courseContainer);
 			networkContainer.appendChild(html);
 
 			console.log("Calculating credit hours...");

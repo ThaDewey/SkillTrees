@@ -11,6 +11,7 @@
  */
 import { parseDegreePlanHierarchical, parseDegreePlanFlat } from "../../Parsers/DegreePlanParser.js";
 import * as html from "../../Utils/domUtils.js";
+import { getCourseDescription } from "../CourseLoader.js";
 
 let codes = {};
 let majorcode = -9999;
@@ -278,7 +279,7 @@ function createCoreCategoryDiv(category) {
 }
 
 function createCoreCategoryHeader(category) {
-    return html.BuildElement("h4", `${category.label || "Category"} `);
+    return html.BuildElement("h3", `${category.label || "Category"} `);
 }
 
 function createCoreSubcategoryList(subcategories) {
@@ -289,10 +290,16 @@ function createCoreSubcategoryList(subcategories) {
 
         const subcategoryItem = html.buildElement({
             elementType: "div",
-            text: `${subcategory.label || "Subcategory"}: ${subcategory.reqCount || 0}`,
             classList: ["subcategory-item", "col"],
-            id: subcategory.id || replaceSpaces(`subcategory-item_${subcategory.label}`) || "unknown",
+            id: replaceSpaces(`subcategory-item_${subcategory.label}`),
             parent: subcategoryList
+        });
+
+        const subCategory_Header = html.buildElement({
+            elementType: "h4",
+            text: `${subcategory.label || "Subcategory"}: ${subcategory.reqCount || 0}`,
+            classList: ["subcategory-header"],
+            parent: subcategoryItem
         });
 
         console.log("subcategory.courses", subcategory.courses);
@@ -411,19 +418,22 @@ function renderMajorCategories(majorBlock, majorRequirements) {
     }
 }
 
-
-
 function renderSubcategories(category, categoryItem) {
     if (!category.subcategories) return;
 
     const subCategoryList = createSubCategoryList(category, categoryItem);
 
     category.subcategories.forEach((subcategory) => {
+
         const subcategoryItem = createSubCategoryItem(subcategory, subCategoryList);
+
         createSubCategoryHeader(subcategory, subcategoryItem);
 
         // Render courses if present in the subcategory
-        if (Array.isArray(subcategory.courses) && subcategory.courses.length > 0) {
+        const isArray = Array.isArray(subcategory.courses);
+        const hasItems = isArray && subcategory.courses.length > 0;
+
+        if (isArray && hasItems) {
             createCoursesList(subcategory.courses, subcategoryItem);
         }
     });
@@ -444,7 +454,7 @@ function createSubCategoryItem(subcategory, parent) {
     return html.buildElement({
         elementType: "div",
         classList: ["subcategory-item", "col-6"],
-        id: subcategory.id || replaceSpaces(`subcategory-item_${subcategory.label}`) || "unknown",
+        id: replaceSpaces(`subcategory-item_${subcategory.label}`) || "unknown",
         parent: parent
     });
 }
@@ -467,60 +477,139 @@ function createSubCategoryHeader(subcategory, parent) {
  */
 function createCoursesList(conn, courses, parent) {
     console.log("Creating courses list:", courses);
-    // Ensure courses is always an array
+
     if (!Array.isArray(courses)) {
         console.warn("createCoursesList: 'courses' is not an array", courses);
         return;
     }
-    // Determine layout direction based on courses[0].conn (assume all have same conn in group)
+
     const connection = conn || "And";
-    const isOr = connection === "Or";
-
-    if (isOr) {
-        // Use Bootstrap button group classes for "Or"
-        const groupDiv = html.buildElement({
-            elementType: "div",
-            classList: [
-                "btn-group",
-                "btn-group-horizontal",
-                "mb-2"
-            ],
-            attributes: { role: "group" },
-            parent: parent
-        });
-
-                    groupDiv.style.flexWrap = "wrap"; // Make buttons flexible in width
-
-        courses.forEach((course) => {
-           html.buildElement({
-                elementType: "button",
-                text: `${course.subj} ${course.num}`,
-                classList: [
-                    "course-item",
-                    "btn",
-                    "btn-outline-primary"
-                ],
-                parent: groupDiv
-            });
-
-        });
+    if (connection === "Or") {
+        createOrCoursesGroup(courses, parent);
     } else {
-        // Display as ul > li for "And"
-        const ul = html.buildElement({
-            elementType: "ul",
-            classList: ["course-list", "mb-2"],
-            parent: parent
-        });
-
-        courses.forEach((course) => {
-            html.buildElement({
-                elementType: "li",
-                text: `${course.Subj || ""} ${course.Num || ""}`,
-                classList: ["course-item"],
-                parent: ul
-            });
-        });
+        createAndCoursesList(courses, parent);
     }
+}
+
+function createOrCoursesGroup(courses, parent) {
+    const groupDiv = html.buildElement({
+        elementType: "div",
+        classList: [
+            "mb-2"
+        ],
+        attributes: { role: "group" },
+        parent: parent
+    });
+
+    groupDiv.style.flexWrap = "wrap";
+
+    courses.forEach((course) => {
+        createCourseButton(course, groupDiv);
+    });
+}
+/**
+ * Updates the progress bar based on the value.
+ * @param {number} value - The value to add or subtract from the progress bar.
+ */
+function updateProgressBar(value) {
+    const progressBar = document.getElementById("progress-bar");
+    const progressLabel = document.getElementById("progress-label");
+    const progressOutput = document.getElementById("progress-output"); // Numeric output element
+
+    if (!progressBar || !progressLabel || !progressOutput) {
+        console.error("Progress bar, label, or output not found!");
+        return;
+    }
+
+    // Get the current progress value
+    let currentProgress = parseInt(progressBar.style.width || "0", 10);
+
+    // Update the progress value
+    currentProgress = Math.max(0, Math.min(currentProgress + value, 100)); // Ensure value is between 0 and 100
+
+    // Update the progress bar and label
+    progressBar.style.width = `${currentProgress}%`;
+    progressLabel.textContent = `${currentProgress}%`;
+
+    // Update the numeric output
+    progressOutput.textContent = `Progress: ${currentProgress} out of 100`;
+}
+
+/**
+ * Creates a course button and attaches Bootstrap tooltip functionality to fetch course descriptions.
+ * @param {object} course - The course object containing course details.
+ * @param {HTMLElement} parent - The parent element to append the button.
+ */
+async function createCourseButton(course, parent) {
+    const courseId = `${course.subj}${course.num}`;
+    const description = await getCourseDescription(courseId);
+
+    // Create the button element
+    let button = html.buildElement({
+        elementType: "button",
+        text: courseId,
+        classList: [
+            "course-item",
+            "btn",
+            "btn-outline-primary",
+            "col"
+        ],
+        parent: parent
+    });
+
+    // Add Bootstrap tooltip attributes
+    button.setAttribute("data-bs-toggle", "tooltip");
+    button.setAttribute("data-bs-placement", "top");
+    button.setAttribute("title", description);
+
+    // Initialize the tooltip using Bootstrap's JavaScript
+    const tooltip = new bootstrap.Tooltip(button);
+
+    // Attach click event listener to toggle state and update progress bar
+    button.addEventListener("click", () => {
+        const value = parseInt(button.getAttribute("data-value") || "5", 10); // Default value is 5
+
+        // Toggle the active state
+        if (button.classList.contains("active")) {
+            button.classList.remove("active");
+            updateProgressBar(-value); // Subtract the value
+        } else {
+            button.classList.add("active");
+            updateProgressBar(value); // Add the value
+        }
+    });
+
+    // Optionally set a default data-value attribute for progress bar updates
+    button.setAttribute("data-value", getLastDigit(course.num));
+}
+/**
+ * Returns the last digit of a given number.
+ * @param {number} num - The input number.
+ * @returns {number} The last digit of the number.
+ */
+function getLastDigit(num) {
+    return Math.abs(num) % 10;
+}
+
+function createAndCoursesList(courses, parent) {
+    const ul = html.buildElement({
+        elementType: "ul",
+        classList: ["course-list", "mb-2"],
+        parent: parent
+    });
+
+    courses.forEach((course) => {
+        createCourseListItem(course, ul);
+    });
+}
+
+function createCourseListItem(course, parent) {
+    html.buildElement({
+        elementType: "li",
+        text: `${course.subj}${course.num}`,
+        classList: ["course-item"],
+        parent: parent
+    });
 }
 
 
@@ -550,3 +639,54 @@ function renderElectives(blocks) {
 
     return electives;
 }
+
+/**
+ * Renders the course buttons within a Bootstrap accordion.
+ * @param {Array} courses - Array of course objects.
+ * @param {HTMLElement} parent - The parent element to append the accordion.
+ */
+function renderCoursesInAccordion(courses, parent) {
+    // Prepare accordion items
+    const accordionItems = courses.map((course, index) => {
+        const buttonContainer = document.createElement("div");
+        buttonContainer.className = "button-container";
+
+        // Create a button for each course
+        const button = BuildElement(
+            "button",
+            `${course.Subj || course.subj || ""} ${course.Num || course.num || ""}`,
+            ["btn", "btn-outline-primary", "course-item"]
+        );
+
+        // Attach click event listener to toggle state and update progress bar
+        button.addEventListener("click", () => {
+            const value = parseInt(button.getAttribute("data-value") || "5", 10); // Default value is 5
+
+            // Toggle the active state
+            if (button.classList.contains("active")) {
+                button.classList.remove("active");
+                updateProgressBar(-value); // Subtract the value
+            } else {
+                button.classList.add("active");
+                updateProgressBar(value); // Add the value
+            }
+        });
+
+        // Set a default data-value attribute for progress bar updates
+        button.setAttribute("data-value", "5");
+
+        buttonContainer.appendChild(button);
+
+        return {
+            title: `Course Group ${index + 1}`,
+            content: buttonContainer.outerHTML // Add the button container as content
+        };
+    });
+
+    // Create the accordion using the utility function
+    const accordion = buildBootstrapAccordion("courseAccordion", accordionItems);
+
+    // Append the accordion to the parent element
+    parent.appendChild(accordion);
+}
+

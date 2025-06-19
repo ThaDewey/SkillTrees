@@ -78,3 +78,63 @@ export function ApplyClasses(element, classList) {
 export function CreateElement(elementType) {
     return document.createElement(elementType);
 }
+
+/**
+ * Builds a Bootstrap accordion dynamically.
+ * @param {string} accordionId - The ID for the accordion container.
+ * @param {Array} items - An array of objects with `title` and `content` properties.
+ * @returns {HTMLElement} - The constructed accordion element.
+ */
+function buildBootstrapAccordion(accordionId, items) {
+    // Create the accordion container
+    const accordion = document.createElement("div");
+    accordion.className = "accordion";
+    accordion.id = accordionId;
+
+    // Iterate over the items to create accordion items
+    items.forEach((item, index) => {
+        const itemId = `${accordionId}-item-${index}`;
+
+        // Create the accordion item
+        const accordionItem = document.createElement("div");
+        accordionItem.className = "accordion-item";
+
+        // Create the header
+        const header = document.createElement("h2");
+        header.className = "accordion-header";
+        header.id = `${itemId}-header`;
+
+        const button = document.createElement("button");
+        button.className = "accordion-button";
+        button.type = "button";
+        button.setAttribute("data-bs-toggle", "collapse");
+        button.setAttribute("data-bs-target", `#${itemId}-collapse`);
+        button.setAttribute("aria-expanded", index === 0 ? "true" : "false");
+        button.setAttribute("aria-controls", `${itemId}-collapse`);
+        button.textContent = item.title;
+
+        header.appendChild(button);
+
+        // Create the collapse container
+        const collapse = document.createElement("div");
+        collapse.className = `accordion-collapse collapse ${index === 0 ? "show" : ""}`;
+        collapse.id = `${itemId}-collapse`;
+        collapse.setAttribute("aria-labelledby", `${itemId}-header`);
+        collapse.setAttribute("data-bs-parent", `#${accordionId}`);
+
+        const body = document.createElement("div");
+        body.className = "accordion-body";
+        body.innerHTML = item.content;
+
+        collapse.appendChild(body);
+
+        // Append header and collapse to the accordion item
+        accordionItem.appendChild(header);
+        accordionItem.appendChild(collapse);
+
+        // Append the accordion item to the accordion container
+        accordion.appendChild(accordionItem);
+    });
+
+    return accordion;
+}

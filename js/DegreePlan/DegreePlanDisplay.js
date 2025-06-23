@@ -5,6 +5,7 @@ import { renderStructure } from "./Views/DegreeSheetView.js";
 import { renderSphereGrid } from "./Views/SphereGridView.js";
 import { calculateCreditHours, updateProgressBar } from "./Logic/DegreeSheetCreditHours.js"; // Import the functions
 import { getCourseDescription } from "./CourseLoader.js";
+import { buildSkillTreeGraph, loadPrereqs } from "./Graph/SkillTreeGraphBuilder.js";
 
 let degreeTitle = "Degree Plan";
 
@@ -109,9 +110,16 @@ async function renderDegreePlan() {
 			break;
 
 		case "tree":
-			console.log("Rendering tree layout...");
-			const treeView = renderTree(degreePlan);
-			networkContainer.appendChild(treeView);
+			console.log("Rendering tree layout with prereqs...");
+			networkContainer.innerHTML = "<div>Loading prerequisites...</div>";
+			try {
+				const prereqs = await loadPrereqs();
+				const { nodes, edges, groupMap } = buildSkillTreeGraph(degreePlan, prereqs);
+				// Use the force layout for proof of concept
+				renderVisNetwork({ nodes, edges, groupMap }, networkContainer, { physics: true });
+			} catch (err) {
+				networkContainer.innerHTML = `<div style='color:red'>Failed to load prerequisites: ${err.message}</div>`;
+			}
 			break;
 
 		case "SphereGrid":
@@ -244,6 +252,33 @@ function updateCreditProgress(degreePlan) {
 	} else {
 		console.warn("Credit progress element not found!");
 	}
+}
+
+// Helper to render with vis-network (copied from SkillTreeGraphBuilder for direct use)
+import vis from "vis-network";
+function renderVisNetwork({ nodes, edges, groupMap }, container, extraOptions = {}) {
+    const data = {
+        nodes: new vis.DataSet(nodes),
+        edges: new vis.DataSet(edges)
+    };
+    const options = {
+        groups: Object.fromEntries(
+            Object.entries(groupMap).map(([id, label]) => [
+                id,
+                {
+                    label,
+                    color: { background: "#e0e7ef", border: "#8ca0c8" },
+                    font: { color: "#222", size: 16 }
+                }
+            ])
+        ),
+        nodes: { font: { color: "#000", size: 14 } },
+        edges: { color: "#ccc" },
+        interaction: { dragNodes: true, multiselect: true },
+        manipulation: { enabled: true },
+        ...extraOptions
+    };
+    new vis.Network(container, data, options);
 }
 
 // Initial render

@@ -1,0 +1,26 @@
+<svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with rounded corners -->
+  <rect x="2" y="2" width="196" height="56" rx="8" ry="8" 
+        fill="#2a2a2a" stroke="#555" stroke-width="2"/>
+  
+  <!-- Icon circle on the left -->
+  <circle cx="25" cy="30" r="12" fill="#444" stroke="#666" stroke-width="1"/>
+  <text x="25" y="35" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial">📚</text>
+  
+  <!-- Course name -->
+  <text x="45" y="20" fill="#fff" font-size="12" font-weight="bold" font-family="Arial">{{COURSE_NAME}}</text>
+  
+  <!-- Credit hours -->
+  <text x="45" y="35" fill="#ccc" font-size="10" font-family="Arial">+{{CREDITS}} CR</text>
+  
+  <!-- Progress indicators (bottom right) -->
+  <g transform="translate(160, 40)">
+    <rect x="0" y="0" width="8" height="8" fill="#333" stroke="#555"/>
+    <rect x="10" y="0" width="8" height="8" fill="#333" stroke="#555"/>
+    <rect x="20" y="0" width="8" height="8" fill="#333" stroke="#555"/>
+  </g>
+  
+  <!-- Border highlight for completed courses -->
+  <rect x="0" y="0" width="200" height="60" rx="8" ry="8" 
+        fill="none" stroke="{{BORDER_COLOR}}" stroke-width="3" opacity="0.8"/>
+</svg>

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Degree Tech Tree</title>
+  <script type="text/javascript" src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+  <link href="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.css" rel="stylesheet" />
+  <style>
+    body { 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: #fff; 
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    #network {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      background: linear-gradient(135deg, #0f0f23, #16213e);
+    }
+    .controls {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(0,0,0,0.8);
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid #4a90e2;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .controls h3 {
+      margin: 0 0 10px 0;
+      color: #4a90e2;
+      font-size: 16px;
+    }
+    .controls button {
+      background: linear-gradient(135deg, #4a90e2, #357abd);
+      color: #fff;
+      border: none;
+      padding: 8px 15px;
+      margin: 3px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.3s ease;
+    }
+    .controls button:hover {
+      background: linear-gradient(135deg, #357abd, #2968a3);
+      transform: translateY(-1px);
+      box-shadow: 0 2px 10px rgba(74, 144, 226, 0.3);
+    }
+    .degree-info {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: rgba(0,0,0,0.8);
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid #28a745;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      z-index: 1000;
+      max-width: 300px;
+    }
+    .degree-info h3 {
+      margin: 0 0 10px 0;
+      color: #28a745;
+      font-size: 16px;
+    }
+    .degree-info .info-item {
+      font-size: 12px;
+      margin: 5px 0;
+      color: #ccc;
+    }
+    .degree-info .info-item strong {
+      color: #fff;
+    }
+    .legend {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background: rgba(0,0,0,0.8);
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid #ffc107;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .legend h4 {
+      margin: 0 0 10px 0;
+      color: #ffc107;
+      font-size: 14px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+      font-size: 11px;
+    }
+    .legend-color {
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+      margin-right: 8px;
+      border: 1px solid #555;
+    }
+    .progress-bar {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(0,0,0,0.8);
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid #dc3545;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      z-index: 1000;
+      min-width: 250px;
+    }
+    .progress-bar h4 {
+      margin: 0 0 10px 0;
+      color: #dc3545;
+      font-size: 14px;
+    }
+    .progress-bg {
+      background: #333;
+      height: 20px;
+      border-radius: 10px;
+      margin: 8px 0;
+      overflow: hidden;
+    }
+    .progress-fill {
+      background: linear-gradient(90deg, #28a745, #20c997);
+      height: 100%;
+      border-radius: 10px;
+      transition: width 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 11px;
+    }
+    .credit-info {
+      font-size: 12px;
+      color: #ccc;
+      margin-top: 5px;
+    }
+    .loading-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      font-size: 18px;
+      color: #4a90e2;
+    }
+  </style>
+</head>
+<body>
+  <div id="network"></div>
+  
+  <div class="degree-info">
+    <h3 id="degreeTitle">Loading...</h3>
+    <div class="info-item"><strong>Major Code:</strong> <span id="majorCode">-</span></div>
+    <div class="info-item"><strong>Degree:</strong> <span id="degreeType">-</span></div>
+    <div class="info-item"><strong>College:</strong> <span id="college">-</span></div>
+  </div>
+  
+  <div class="controls">
+    <h3>Controls</h3>
+    <button id="expandAll">Expand All</button>
+    <button id="collapseAll">Collapse All</button>
+    <button id="resetView">Reset View</button>
+    <button id="fitNetwork">Fit to Screen</button>
+  </div>
+  
+  <div class="progress-bar">
+    <h4>Degree Progress</h4>
+    <div class="progress-bg">
+      <div class="progress-fill" id="progressFill" style="width: 0%;">0%</div>
+    </div>
+    <div class="credit-info" id="creditInfo">0/124 Credits</div>
+  </div>
+  
+  <div class="legend">
+    <h4>Node Types</h4>
+    <div class="legend-item">
+      <div class="legend-color" style="background: linear-gradient(135deg, #28a745, #20c997);"></div>
+      <span>Core Requirements</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: linear-gradient(135deg, #4a90e2, #357abd);"></div>
+      <span>Major Requirements</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: linear-gradient(135deg, #ffc107, #e0a800);"></div>
+      <span>Electives</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: linear-gradient(135deg, #6f42c1, #5a32a3);"></div>
+      <span>Categories</span>
+    </div>
+  </div>
+  <script>
+    let network, nodes, edges, degreePlan, degreeId;
+    let collapsedNodes = new Set();
+    let selectedCourses = new Set();
+
+    function getUrlParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    async function loadDegreeNames() {
+      try {
+        const response = await fetch('./DegreeJSON/Codes.json');
+        if (!response.ok) return {};
+        const codes = await response.json();
+        return codes.majors || {};
+      } catch (error) {
+        console.error('Error loading degree codes:', error);
+        return {};
+      }
+    }    // CREATE THE TECH TREE LAYOUT
+    function createTechTreeNodes(degreePlan) {
+      const nodes = [];
+      const edges = [];
+      let nodeId = 0;
+      
+      // Create main degree node at top center
+      nodes.push({
+        id: nodeId++,
+        label: 'Degree Plan',
+        x: 0,
+        y: -400, // Move much higher
+        shape: 'star',
+        color: { background: '#6f42c1', border: '#4c2c92' },
+        font: { color: 'white', size: 18 },
+        size: 40
+      });
+      
+      // Spread blocks horizontally across the screen
+      const blockSpacing = 1200; // Much wider spacing
+      const blockY = 0; // Move blocks down from degree
+      
+      degreePlan.blocks.forEach((block, index) => {
+        const blockX = (index - 1) * blockSpacing; // Spread way out horizontally
+        
+        // Create block node
+        const blockNode = {
+          id: nodeId++,
+          label: block.Title + '\n' + block.Credits + ' Credits',
+          x: blockX,
+          y: blockY,
+          shape: 'box',
+          color: { background: getBlockColor(block.Title), border: '#333' },
+          font: { color: 'white', size: 14 },
+          size: 30
+        };
+        nodes.push(blockNode);
+        
+        // Connect to main degree
+        edges.push({
+          from: 0, // degree node
+          to: blockNode.id,
+          color: '#666',
+          width: 2
+        });
+        
+        // Add categories below this block
+        nodeId = addCategoriesBelow(block, blockNode, blockX, nodes, edges, nodeId);
+      });
+      
+      return { nodes, edges };
+    }
+    
+    // Add categories in a vertical column below each block
+    function addCategoriesBelow(block, blockNode, blockX, nodes, edges, nodeId) {
+      if (!block.rules) return nodeId;
+      
+      const categories = getCategories(block.rules);
+      const categorySpacing = 300; // Much more vertical spacing between categories
+      const startY = 300; // Start much lower
+      
+      categories.forEach((category, index) => {
+        const categoryY = startY + (index * categorySpacing);
+        
+        // Create category node
+        const categoryNode = {
+          id: nodeId++,
+          label: category.label,
+          x: blockX,
+          y: categoryY,
+          shape: 'ellipse',
+          color: { background: '#4a90e2', border: '#2968a3' },
+          font: { color: 'white', size: 12 },
+          size: 25
+        };
+        nodes.push(categoryNode);
+        
+        // Connect to block
+        edges.push({
+          from: blockNode.id,
+          to: categoryNode.id,
+          color: '#999',
+          width: 2
+        });
+        
+        // Add courses to the right of this category
+        nodeId = addCoursesToRight(category, categoryNode, blockX, categoryY, nodes, edges, nodeId);
+      });
+      
+      return nodeId;
+    }
+    
+    // Add courses horizontally to the right of each category
+    function addCoursesToRight(category, categoryNode, startX, categoryY, nodes, edges, nodeId) {
+      if (!category.courses) return nodeId;
+      
+      const courses = category.courses.filter(course => 
+        course.Subj && course.Num && !course.Hide
+      );
+      
+      const courseSpacing = 150; // More horizontal spacing between courses
+      const courseStartX = 300; // Start further to the right
+      
+      courses.forEach((course, index) => {
+        const courseX = startX + courseStartX + (index * courseSpacing);
+        
+        // Create course node
+        const courseNode = {
+          id: nodeId++,
+          label: course.Subj + ' ' + course.Num,
+          x: courseX,
+          y: categoryY,
+          shape: 'circle',
+          color: { background: '#ffffff', border: '#ccc' },
+          font: { color: '#333', size: 10 },
+          size: 20
+        };
+        nodes.push(courseNode);
+        
+        // Connect to category
+        edges.push({
+          from: categoryNode.id,
+          to: courseNode.id,
+          color: '#ccc',
+          width: 1
+        });
+      });
+      
+      return nodeId;
+    }
+    
+    // Extract categories from rules (simplified)
+    function getCategories(rules) {
+      const categories = [];
+      
+      rules.forEach(rule => {
+        if (rule.label && rule.courses) {
+          // Simple category with courses
+          categories.push({
+            label: rule.label,
+            courses: rule.courses
+          });
+        }
+        
+        if (rule.label && rule.rules) {
+          // Category with sub-categories
+          rule.rules.forEach(subRule => {
+            if (subRule.label && subRule.courses) {
+              categories.push({
+                label: rule.label + ': ' + subRule.label,
+                courses: subRule.courses
+              });
+            }
+          });
+        }
+      });
+      
+      return categories;
+    }
+    
+    // Simple color coding for blocks
+    function getBlockColor(title) {
+      if (title.includes('Core')) return '#28a745';    // Green
+      if (title.includes('Major')) return '#007bff';   // Blue  
+      if (title.includes('Elective')) return '#ffc107'; // Yellow
+      return '#6c757d'; // Gray for everything else
+    }
+
+    function updateDegreeInfo(degreePlan, degreeId, degreeNames) {
+      const degreeInfo = degreeNames[degreeId];
+      const degreeName = degreeInfo ? degreeInfo.name : 'Unknown Program';
+      const degreeType = degreeInfo ? degreeInfo.degree : (degreePlan.degree || 'N/A');
+      const college = degreeInfo ? degreeInfo.college : 'N/A';
+
+      document.getElementById('degreeTitle').textContent = `${degreeType} in ${degreeName}`;
+      document.getElementById('majorCode').textContent = degreeId;
+      document.getElementById('degreeType').textContent = degreeType;
+      document.getElementById('college').textContent = college;
+
+      // Update progress
+      const totalCredits = degreePlan.blocks.reduce((sum, block) => sum + (parseInt(block.Credits) || 0), 0);
+      const isBADegree = degreeType && degreeType.includes('B.A.');
+      const requiredCredits = isBADegree ? 124 : totalCredits;
+      const progressPercent = Math.min(100, Math.round((totalCredits / requiredCredits) * 100));
+
+      document.getElementById('progressFill').style.width = `${progressPercent}%`;
+      document.getElementById('progressFill').textContent = `${progressPercent}%`;
+      document.getElementById('creditInfo').textContent = `${totalCredits}/${requiredCredits} Credits`;
+    }
+
+    function setupEventHandlers() {
+      document.getElementById('expandAll').addEventListener('click', () => {
+        collapsedNodes.clear();
+        // Implement expand logic
+      });
+
+      document.getElementById('collapseAll').addEventListener('click', () => {
+        // Implement collapse logic
+      });
+
+      document.getElementById('resetView').addEventListener('click', () => {
+        network.fit();
+      });
+
+      document.getElementById('fitNetwork').addEventListener('click', () => {
+        network.fit();
+      });
+    }
+
+    async function initializeTechTree() {
+      const loadingDiv = document.createElement('div');
+      loadingDiv.className = 'loading-overlay';
+      loadingDiv.textContent = 'Loading Tech Tree...';
+      document.body.appendChild(loadingDiv);
+
+      try {
+        degreeId = getUrlParameter('id') || '5040';
+        
+        const response = await fetch(`./DegreeJSON/${degreeId}.json`);
+        if (!response.ok) {
+          throw new Error(`Failed to load degree plan for ID: ${degreeId}`);
+        }
+        
+        degreePlan = await response.json();
+        const degreeNames = await loadDegreeNames();
+        
+        // Create network data
+        const { nodes: nodeData, edges: edgeData } = createTechTreeNodes(degreePlan);
+        nodes = new vis.DataSet(nodeData);
+        edges = new vis.DataSet(edgeData);
+
+        // Network options
+        const options = {
+          nodes: {
+            borderWidth: 2,
+            shadow: {
+              enabled: true,
+              color: 'rgba(0,0,0,0.3)',
+              size: 10,
+              x: 2,
+              y: 2
+            }
+          },
+          edges: {
+            width: 2,
+            shadow: {
+              enabled: true,
+              color: 'rgba(0,0,0,0.2)',
+              size: 5
+            }
+          },
+          physics: {
+            enabled: false
+          },
+          interaction: {
+            dragNodes: true,
+            dragView: true,
+            zoomView: true
+          }
+        };
+
+        // Initialize network
+        const container = document.getElementById('network');
+        network = new vis.Network(container, { nodes, edges }, options);
+
+        // Update UI
+        updateDegreeInfo(degreePlan, degreeId, degreeNames);
+        setupEventHandlers();
+
+        // Remove loading
+        document.body.removeChild(loadingDiv);
+
+        // Fit the network
+        setTimeout(() => network.fit(), 100);
+
+      } catch (error) {
+        console.error('Error initializing tech tree:', error);
+        loadingDiv.textContent = `Error: ${error.message}`;
+      }
+    }
+
+    // Initialize when page loads
+    window.addEventListener('load', initializeTechTree);
+  </script>
+</body>
+</html>

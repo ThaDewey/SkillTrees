@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>📊 Degree Progress Dashboard</title>
+  <script src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    .dashboard-container {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      grid-template-rows: auto 1fr;
+      grid-template-areas: 
+        "sidebar header"
+        "sidebar main";
+      min-height: 100vh;
+      gap: 0;
+    }
+
+    /* Header */
+    .header {
+      grid-area: header;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 20px 30px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header h1 {
+      font-size: 28px;
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+
+    .header .subtitle {
+      color: #7f8c8d;
+      font-size: 14px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      grid-area: sidebar;
+      background: rgba(44, 62, 80, 0.95);
+      backdrop-filter: blur(10px);
+      color: white;
+      padding: 30px 20px;
+      overflow-y: auto;
+    }
+
+    .student-info {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .student-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(45deg, #3498db, #2980b9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      font-size: 32px;
+      color: white;
+    }
+
+    .student-name {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .student-id {
+      color: #bdc3c7;
+      font-size: 12px;
+    }
+
+    .degree-info {
+      margin-bottom: 30px;
+    }
+
+    .degree-info h3 {
+      font-size: 16px;
+      margin-bottom: 15px;
+      color: #ecf0f1;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+    }
+
+    .info-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .info-label {
+      color: #bdc3c7;
+    }
+
+    .info-value {
+      color: #ecf0f1;
+      font-weight: 500;
+    }
+
+    .overall-progress {
+      margin-bottom: 30px;
+    }
+
+    .progress-circle {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      margin: 20px auto;
+    }
+
+    .progress-circle svg {
+      transform: rotate(-90deg);
+      width: 100%;
+      height: 100%;
+    }
+
+    .progress-circle-bg {
+      fill: none;
+      stroke: rgba(255, 255, 255, 0.2);
+      stroke-width: 8;
+    }
+
+    .progress-circle-fill {
+      fill: none;
+      stroke: #3498db;
+      stroke-width: 8;
+      stroke-linecap: round;
+      stroke-dasharray: 314;
+      stroke-dashoffset: 314;
+      animation: progress-animation 2s ease-out forwards;
+    }
+
+    @keyframes progress-animation {
+      to {
+        stroke-dashoffset: calc(314 - (314 * var(--progress)) / 100);
+      }
+    }
+
+    .progress-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .progress-percentage {
+      font-size: 24px;
+      font-weight: bold;
+      color: #3498db;
+    }
+
+    .progress-label {
+      font-size: 12px;
+      color: #bdc3c7;
+    }
+
+    .quick-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .stat-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 20px;
+      font-weight: bold;
+      color: #3498db;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      color: #bdc3c7;
+      margin-top: 5px;
+    }
+
+    /* Main Content */
+    .main-content {
+      grid-area: main;
+      padding: 30px;
+      overflow-y: auto;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+    }    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto auto;
+      gap: 20px;
+      height: 100%;
+    }
+
+    .graduation-summary {
+      grid-column: 1 / 4;
+    }
+
+    .widget {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .widget:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .widget-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #ecf0f1;
+    }
+
+    .widget-icon {
+      font-size: 24px;
+      margin-right: 10px;
+      color: #3498db;
+    }
+
+    .widget-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    /* Clickable Widget Styling */
+    .clickable {
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .clickable::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    .clickable:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .clickable:hover::before {
+      left: 100%;
+    }
+
+    .navigate-icon {
+      margin-left: auto;
+      font-size: 18px;
+      color: #3498db;
+      transition: transform 0.3s ease;
+    }
+
+    .clickable:hover .navigate-icon {
+      transform: translateX(5px);
+    }
+
+    .core-summary {
+      display: flex;
+      justify-content: space-between;
+      margin: 15px 0;
+      padding: 15px;
+      background: rgba(52, 152, 219, 0.1);
+      border-radius: 8px;
+      border-left: 4px solid #3498db;
+    }
+
+    .summary-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .summary-count {
+      font-size: 24px;
+      font-weight: bold;
+      color: #3498db;
+      margin-bottom: 5px;
+    }
+
+    .summary-label {
+      font-size: 12px;
+      color: #7f8c8d;
+      font-weight: 500;
+    }
+
+    .click-hint {
+      text-align: center;
+      font-size: 12px;
+      color: #3498db;
+      font-weight: 500;
+      margin-top: 10px;
+      opacity: 0.8;
+    }
+
+    .core-widget {
+      border-left: 5px solid #3498db;
+    }
+
+    .degree-progression {
+      border-left: 5px solid #e74c3c;
+    }
+
+    .outstanding-courses {
+      border-left: 5px solid #f39c12;
+    }
+
+    /* Semester Progress Widget */
+    .semester-progress {
+      grid-column: 1 / 3;
+    }
+
+    .semester-timeline {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      padding: 10px 0;
+    }
+
+    .semester-item {
+      min-width: 200px;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      border-radius: 8px;
+      padding: 15px;
+      border-left: 4px solid #3498db;
+      position: relative;
+    }
+
+    .semester-item.completed {
+      border-left-color: #27ae60;
+      background: linear-gradient(135deg, #d5f4e6, #c8e6c9);
+    }
+
+    .semester-item.current {
+      border-left-color: #f39c12;
+      background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+    }
+
+    .semester-header {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .semester-stats {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #7f8c8d;
+    }
+
+    .semester-progress-bar {
+      width: 100%;
+      height: 6px;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 3px;
+      margin-top: 10px;
+      overflow: hidden;
+    }
+
+    .semester-progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #3498db, #2980b9);
+      border-radius: 3px;
+      transition: width 0.5s ease;
+    }
+
+    /* Requirements Breakdown */
+    .requirements-list {
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    .requirement-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid #ecf0f1;
+    }
+
+    .requirement-item:last-child {
+      border-bottom: none;
+    }
+
+    .requirement-info {
+      flex: 1;
+    }
+
+    .requirement-name {
+      font-weight: 500;
+      color: #2c3e50;
+      margin-bottom: 2px;
+    }
+
+    .requirement-progress {
+      font-size: 12px;
+      color: #7f8c8d;
+    }
+
+    .requirement-status {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: white;
+      margin-left: 10px;
+    }
+
+    .requirement-status.completed {
+      background: #27ae60;
+    }
+
+    .requirement-status.in-progress {
+      background: #f39c12;
+    }
+
+    .requirement-status.not-started {
+      background: #95a5a6;
+    }
+
+    /* GPA Trend Chart */
+    .chart-container {
+      position: relative;
+      height: 250px;
+    }
+
+    /* Course Schedule */
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .schedule-day {
+      text-align: center;
+      font-weight: 600;
+      padding: 8px;
+      background: #3498db;
+      color: white;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+
+    .schedule-slot {
+      background: #f8f9fa;
+      border-radius: 4px;
+      padding: 8px;
+      font-size: 11px;
+      min-height: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      border: 1px solid #e9ecef;
+    }
+
+    .schedule-slot.has-class {
+      background: linear-gradient(135deg, #3498db, #2980b9);
+      color: white;
+      font-weight: 500;
+    }
+
+    .course-code {
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+
+    .course-time {
+      font-size: 10px;
+      opacity: 0.8;
+    }
+
+    /* Upcoming Deadlines */
+    .deadline-item {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #ecf0f1;
+    }
+
+    .deadline-date {
+      min-width: 60px;
+      background: #e74c3c;
+      color: white;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px 4px;
+      font-size: 11px;
+      font-weight: bold;
+      margin-right: 15px;
+    }
+
+    .deadline-date.soon {
+      background: #f39c12;
+    }
+
+    .deadline-date.today {
+      background: #e74c3c;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+
+    .deadline-info {
+      flex: 1;
+    }
+
+    .deadline-title {
+      font-weight: 500;
+      color: #2c3e50;
+    }
+
+    .deadline-course {
+      font-size: 12px;
+      color: #7f8c8d;
+    }
+
+    /* Block Progress Styling */
+    .block-progress {
+      margin-top: 10px;
+    }
+
+    .block-stats {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .credits-progress {
+      font-size: 16px;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    .completion-percentage {
+      font-size: 24px;
+      font-weight: bold;
+      color: #3498db;
+    }
+
+    .progress-bar-container {
+      width: 100%;
+      height: 12px;
+      background: #ecf0f1;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #3498db, #2980b9);
+      border-radius: 6px;
+      transition: width 1s ease;
+    }    .course-breakdown {
+      margin-top: 8px;
+    }
+
+    .course-category {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid #ecf0f1;
+    }
+
+    .course-category:last-child {
+      border-bottom: none;
+    }
+
+    .category-name {
+      font-weight: 500;
+      color: #2c3e50;
+    }
+
+    .category-status {
+      font-size: 12px;
+      padding: 4px 8px;
+      border-radius: 12px;
+      font-weight: 500;
+    }
+
+    .category-status.completed {
+      background: #d5f4e6;
+      color: #27ae60;
+    }
+
+    .category-status.in-progress {
+      background: #fff3cd;
+      color: #f39c12;
+    }
+
+    .category-status.pending {
+      background: #f8f9fa;
+      color: #7f8c8d;
+    }
+
+    /* Graduation Summary Styling */
+    .graduation-checklist {
+      margin-bottom: 25px;
+    }
+
+    .requirement-check {
+      display: flex;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid #ecf0f1;
+    }
+
+    .requirement-check:last-child {
+      border-bottom: none;
+    }
+
+    .check-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .check-icon.completed {
+      background: #d5f4e6;
+      color: #27ae60;
+    }
+
+    .check-icon.pending {
+      background: #fff3cd;
+      color: #f39c12;
+    }
+
+    .check-info {
+      flex: 1;
+    }
+
+    .check-title {
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 4px;
+    }
+
+    .check-detail {
+      font-size: 13px;
+      color: #7f8c8d;
+    }
+
+    .graduation-timeline {
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .timeline-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-label {
+      font-weight: 500;
+      color: #2c3e50;
+    }
+
+    .timeline-value {
+      font-weight: 600;
+      color: #3498db;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1200px) {
+      .dashboard-container {
+        grid-template-columns: 250px 1fr;
+      }
+    }    @media (max-width: 1400px) {
+      .dashboard-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      .graduation-summary {
+        grid-column: 1 / 3;
+      }
+    }
+
+    @media (max-width: 968px) {
+      .dashboard-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+          "header"
+          "main";
+      }
+      
+      .sidebar {
+        display: none;
+      }
+      
+      .dashboard-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      .graduation-summary {
+        grid-column: 1 / 3;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        padding: 15px;
+      }
+      
+      .widget {
+        padding: 15px;
+      }
+      
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .graduation-summary {
+        grid-column: 1;
+      }
+    }
+
+    /* Accessibility */
+    .widget:focus-within {
+      outline: 2px solid #3498db;
+      outline-offset: 2px;
+    }
+
+    .requirement-status {
+      position: relative;
+    }
+
+    .requirement-status::after {
+      content: attr(aria-label);
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #2c3e50;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 10px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s;
+    }
+
+    .requirement-status:hover::after {
+      opacity: 1;
+    }
+
+    /* Core Category Visual Styling */
+    .core-communication {
+      border-left: 5px solid #3498db;
+    }
+
+    .core-quantitative {
+      border-left: 5px solid #e74c3c;
+    }
+
+    .core-critical {
+      border-left: 5px solid #9b59b6;
+    }
+
+    .core-american {
+      border-left: 5px solid #f39c12;
+    }
+
+    .core-cultural {
+      border-left: 5px solid #1abc9c;
+    }
+
+    .core-social {
+      border-left: 5px solid #2ecc71;
+    }
+
+    .core-life {
+      border-left: 5px solid #34495e;
+    }
+
+    .major-required {
+      border-left: 5px solid #e67e22;
+    }
+
+    .major-electives {
+      border-left: 5px solid #8e44ad;
+    }
+
+    /* Widget Styling for New Dashboard */
+    .core-widget {
+      border-left: 5px solid #3498db;
+    }
+
+    .degree-progression {
+      border-left: 5px solid #e74c3c;
+    }
+
+    .outstanding-courses {
+      border-left: 5px solid #f39c12;
+    }
+
+    /* Progression Breakdown */
+    .progression-breakdown {
+      margin-top: 15px;
+    }
+
+    .prog-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid #ecf0f1;
+    }
+
+    .prog-item:last-child {
+      border-bottom: none;
+    }
+
+    .prog-label {
+      font-weight: 500;
+      color: #2c3e50;
+    }
+
+    .prog-status {
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 15px;
+    }
+
+    .prog-status.completed {
+      background: #d5edda;
+      color: #155724;
+    }
+
+    .prog-status.in-progress {
+      background: #fff3cd;
+      color: #856404;
+    }
+
+    .prog-status.pending {
+      background: #f8d7da;
+      color: #721c24;
+    }
+
+    /* Outstanding Courses Styling */
+    .courses-list {
+      max-height: 250px;
+      overflow-y: auto;
+    }
+
+    .course-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid #ecf0f1;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .course-item:hover {
+      background-color: #f8f9fa;
+    }
+
+    .course-item:last-child {
+      border-bottom: none;
+    }
+
+    .course-info {
+      flex: 1;
+    }
+
+    .course-code {
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 2px;
+    }
+
+    .course-name {
+      font-size: 13px;
+      color: #7f8c8d;
+    }
+
+    .course-priority {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 8px;
+      border-radius: 12px;
+      text-transform: uppercase;
+    }
+
+    .priority-high .course-priority {
+      background: #ffebee;
+      color: #c62828;
+    }
+
+    .priority-medium .course-priority {
+      background: #fff3e0;
+      color: #ef6c00;
+    }
+
+    .priority-low .course-priority {
+      background: #f3e5f5;
+      color: #7b1fa2;
+    }
+
+    .courses-summary {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #ecf0f1;
+      text-align: center;
+    }
+
+    .summary-text {
+      font-size: 13px;
+      color: #7f8c8d;
+      font-style: italic;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #3498db;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="student-info">
+        <div class="student-avatar">
+          <i class="fas fa-user-graduate"></i>
+        </div>
+        <div class="student-name">Alex Thompson</div>
+        <div class="student-id">ID: ST2025001</div>
+      </div>
+
+      <div class="degree-info">
+        <h3><i class="fas fa-graduation-cap"></i> Degree Information</h3>
+        <div class="info-item">
+          <span class="info-label">Program:</span>
+          <span class="info-value">Computer Science</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Degree:</span>
+          <span class="info-value">Bachelor of Science</span>
+        </div>        <div class="info-item">
+          <span class="info-label">Expected Graduation:</span>
+          <span class="info-value">May 2026</span>
+        </div>
+      </div>
+
+      <div class="overall-progress">
+        <h3><i class="fas fa-chart-pie"></i> Overall Progress</h3>
+        <div class="progress-circle">
+          <svg>
+            <circle class="progress-circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="progress-circle-fill" cx="60" cy="60" r="50" style="--progress: 68"></circle>
+          </svg>
+          <div class="progress-text">
+            <div class="progress-percentage">68%</div>
+            <div class="progress-label">Complete</div>
+          </div>
+        </div>        <div class="quick-stats">
+          <div class="stat-card">
+            <div class="stat-number">82</div>
+            <div class="stat-label">Credits Earned</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">120</div>
+            <div class="stat-label">Credits Required</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3.47</div>
+            <div class="stat-label">Current GPA</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">6</div>
+            <div class="stat-label">Blocks Remaining</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <h1>📊 Degree Progress Dashboard</h1>
+      <div class="subtitle">Track your academic journey and stay on course for graduation</div>
+    </div>    <!-- Main Content -->
+    <div class="main-content">
+      <div class="dashboard-grid">
+        <!-- University Core Requirements Overview -->
+        <div class="widget core-widget clickable" onclick="navigateToCore()">
+          <div class="widget-header">
+            <i class="fas fa-university widget-icon"></i>
+            <h2 class="widget-title">University Core Requirements</h2>
+            <i class="fas fa-arrow-right navigate-icon"></i>
+          </div>
+          <div class="block-progress">
+            <div class="block-stats">
+              <div class="credits-progress">31/42 Credits Complete</div>
+              <div class="completion-percentage">74%</div>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" style="width: 74%"></div>
+            </div>
+            <div class="core-summary">
+              <div class="summary-item">
+                <span class="summary-count">4</span>
+                <span class="summary-label">of 7 categories complete</span>
+              </div>
+              <div class="summary-item">
+                <span class="summary-count">11</span>
+                <span class="summary-label">credits remaining</span>
+              </div>
+            </div>
+            <div class="click-hint">Click to view detailed core progress →</div>
+          </div>
+        </div>        <!-- Degree Progression -->
+        <div class="widget degree-progression clickable" onclick="navigateToMajor()">
+          <div class="widget-header">
+            <i class="fas fa-chart-line widget-icon"></i>
+            <h2 class="widget-title">Degree Progression</h2>
+            <i class="fas fa-arrow-right navigate-icon"></i>
+          </div>
+          <div class="block-progress">
+            <div class="block-stats">
+              <div class="credits-progress">82/120 Credits Complete</div>
+              <div class="completion-percentage">68%</div>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar-fill" style="width: 68%"></div>
+            </div>            <div class="progression-breakdown">
+              <div class="prog-item">
+                <span class="prog-label">Core Requirements</span>
+                <span class="prog-status in-progress">74% Complete</span>
+              </div>
+              <div class="prog-item">
+                <span class="prog-label">Major Requirements</span>
+                <span class="prog-status in-progress">65% Complete</span>
+              </div>
+              <div class="prog-item">
+                <span class="prog-label">Electives</span>
+                <span class="prog-status pending">40% Complete</span>
+              </div>
+            </div>
+            <div class="click-hint">Click to view detailed degree breakdown →</div>
+          </div>
+        </div>
+
+        <!-- Outstanding Courses -->
+        <div class="widget outstanding-courses">
+          <div class="widget-header">
+            <i class="fas fa-list-check widget-icon"></i>
+            <h2 class="widget-title">Suggested Next Courses</h2>
+          </div>
+          <div class="courses-list">
+            <div class="course-item priority-high">
+              <div class="course-info">
+                <div class="course-code">MCOM 1113</div>
+                <div class="course-name">Oral Communication</div>
+              </div>
+              <div class="course-priority">High Priority</div>
+            </div>
+            <div class="course-item priority-high">
+              <div class="course-info">
+                <div class="course-code">CS 3113</div>
+                <div class="course-name">Operating Systems</div>
+              </div>
+              <div class="course-priority">Core Req</div>
+            </div>
+            <div class="course-item priority-medium">
+              <div class="course-info">
+                <div class="course-code">PHIL 1113</div>
+                <div class="course-name">Introduction to Philosophy</div>
+              </div>
+              <div class="course-priority">Core Req</div>
+            </div>
+            <div class="course-item priority-medium">
+              <div class="course-info">
+                <div class="course-code">SPAN 1115</div>
+                <div class="course-name">Elementary Spanish I</div>
+              </div>
+              <div class="course-priority">Cultural Req</div>
+            </div>
+            <div class="course-item priority-low">
+              <div class="course-info">
+                <div class="course-code">CS 4XXX</div>
+                <div class="course-name">CS Elective</div>
+              </div>
+              <div class="course-priority">Elective</div>
+            </div>
+          </div>          <div class="courses-summary">
+            <span class="summary-text">5 courses recommended for next semester</span>
+          </div>
+        </div>
+
+        <!-- Graduation Requirements Summary -->
+        <div class="widget graduation-summary">
+          <div class="widget-header">
+            <i class="fas fa-graduation-cap widget-icon"></i>
+            <h2 class="widget-title">Graduation Requirements Summary</h2>
+          </div>
+          <div class="graduation-checklist">            <div class="requirement-check">
+              <div class="check-icon completed">✓</div>
+              <div class="check-info">
+                <div class="check-title">Minimum Credit Hours</div>
+                <div class="check-detail">82/120 credits completed</div>
+              </div>
+            </div>
+            <div class="requirement-check">
+              <div class="check-icon completed">✓</div>
+              <div class="check-info">
+                <div class="check-title">Minimum GPA Requirement</div>
+                <div class="check-detail">3.47 GPA (Required: 2.0)</div>
+              </div>
+            </div>
+            <div class="requirement-check">
+              <div class="check-icon pending">⏳</div>
+              <div class="check-info">
+                <div class="check-title">Written and Oral Communication</div>
+                <div class="check-detail">67% complete (3 credits remaining)</div>
+              </div>
+            </div>
+            <div class="requirement-check">
+              <div class="check-icon completed">✓</div>
+              <div class="check-info">
+                <div class="check-title">Quantitative Reasoning/Scientific Method</div>
+                <div class="check-detail">100% complete</div>
+              </div>
+            </div>
+            <div class="requirement-check">
+              <div class="check-icon pending">⏳</div>
+              <div class="check-info">
+                <div class="check-title">Critical Inquiry and Aesthetic Analysis</div>
+                <div class="check-detail">50% complete (3 credits remaining)</div>
+              </div>
+            </div>
+            <div class="requirement-check">
+              <div class="check-icon completed">✓</div>
+              <div class="check-info">
+                <div class="check-title">American Historical and Political Analysis</div>
+                <div class="check-detail">100% complete</div>
+              </div>
+            </div>
+            <div class="requirement-check">
+              <div class="check-icon pending">⏳</div>
+              <div class="check-info">
+                <div class="check-title">Cultural and Language Analysis</div>
+                <div class="check-detail">0% complete (3 credits remaining)</div>
+              </div>
+            </div>
+            <div class="requirement-check">
+              <div class="check-icon completed">✓</div>
+              <div class="check-info">
+                <div class="check-title">Social and Behavioral Analysis</div>
+                <div class="check-detail">100% complete</div>
+              </div>
+            </div>
+            <div class="requirement-check">
+              <div class="check-icon pending">⏳</div>
+              <div class="check-info">
+                <div class="check-title">Life Skills</div>
+                <div class="check-detail">50% complete (3 credits remaining)</div>
+              </div>
+            </div>
+            <div class="requirement-check">
+              <div class="check-icon pending">⏳</div>
+              <div class="check-info">
+                <div class="check-title">Computer Science Major - Required Courses</div>
+                <div class="check-detail">65% complete (23 credits remaining)</div>
+              </div>
+            </div>
+            <div class="requirement-check">
+              <div class="check-icon pending">⏳</div>
+              <div class="check-info">
+                <div class="check-title">Computer Science Electives</div>
+                <div class="check-detail">40% complete (9 credits remaining)</div>
+              </div>
+            </div>
+          </div>          <div class="graduation-timeline">
+            <div class="timeline-item">
+              <div class="timeline-label">University Core Credits Remaining:</div>
+              <div class="timeline-value">12 credits</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-label">Major Credits Remaining:</div>
+              <div class="timeline-value">32 credits</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-label">Total Credits Remaining:</div>
+              <div class="timeline-value">38 credits</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-label">Estimated Completion:</div>
+              <div class="timeline-value">Spring 2026</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-label">Courses Remaining:</div>
+              <div class="timeline-value">~13 courses</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>  <script>
+    // Navigation functions
+    function navigateToCore() {
+      window.location.href = 'CoreProgress.html';
+    }    function navigateToMajor() {
+      window.location.href = 'MajorProgress.html';
+    }
+
+    // Add interactivity
+    document.addEventListener('DOMContentLoaded', function() {
+      // Animate progress circles
+      const progressCircles = document.querySelectorAll('.progress-circle-fill');
+      progressCircles.forEach(circle => {
+        const progress = circle.style.getPropertyValue('--progress');
+        circle.style.strokeDashoffset = `calc(314 - (314 * ${progress}) / 100)`;
+      });
+
+      // Animate block progress bars
+      const progressBars = document.querySelectorAll('.progress-bar-fill');
+      progressBars.forEach((bar, index) => {
+        setTimeout(() => {
+          const width = bar.style.width;
+          bar.style.width = '0%';
+          bar.style.transition = 'width 1.5s ease';
+          setTimeout(() => {
+            bar.style.width = width;
+          }, 100);
+        }, index * 200);
+      });      // Add click handlers for degree blocks (only for widgets without specific onclick handlers)
+      const widgets = document.querySelectorAll('.widget');
+      widgets.forEach(widget => {
+        const title = widget.querySelector('.widget-title');
+        // Only add generic handler if widget doesn't have a specific onclick handler and isn't Summary
+        if (title && !title.textContent.includes('Summary') && !widget.hasAttribute('onclick')) {
+          widget.addEventListener('click', function() {
+            const blockName = title.textContent;
+            showBlockDetails(blockName);
+          });
+          
+          // Add hover effect
+          widget.style.cursor = 'pointer';
+        }
+      });
+
+      // Add click handlers for course categories
+      const courseCategories = document.querySelectorAll('.course-category');
+      courseCategories.forEach(category => {
+        category.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const categoryName = this.querySelector('.category-name').textContent;
+          const status = this.querySelector('.category-status').textContent;
+          showCategoryDetails(categoryName, status);
+        });
+        
+        category.style.cursor = 'pointer';
+        category.addEventListener('mouseenter', function() {
+          this.style.backgroundColor = '#f8f9fa';
+        });
+        category.addEventListener('mouseleave', function() {
+          this.style.backgroundColor = 'transparent';
+        });
+      });
+    });
+
+    // Show detailed view for a degree block (placeholder for future use)
+    function showBlockDetails(blockName) {
+      alert(`Detailed view for: ${blockName}\n\nThis would show:\n• All courses in this block\n• Course prerequisites\n• Available course options\n• Recommended course sequence\n• Registration information`);
+    }
+
+    // Show detailed view for a course category (placeholder for future use)
+    function showCategoryDetails(categoryName, status) {
+      alert(`Category Details: ${categoryName}\n\nStatus: ${status}\n\nThis would show:\n• Specific courses in this category\n• Course descriptions and prerequisites\n• Available sections and schedules\n• Registration options`);
+    }
+  </script>
+  </script>
+</body>
+</html>

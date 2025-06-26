@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Degree Tech Tree</title>
+  <script type="text/javascript" src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+  <link href="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.css" rel="stylesheet" />
+  <style>
+    body { 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: #fff; 
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    #network {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      background: linear-gradient(135deg, #0f0f23, #16213e);
+    }
+    .controls {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(0,0,0,0.8);
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid #4a90e2;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .controls h3 {
+      margin: 0 0 10px 0;
+      color: #4a90e2;
+      font-size: 16px;
+    }
+    .controls button {
+      background: linear-gradient(135deg, #4a90e2, #357abd);
+      color: #fff;
+      border: none;
+      padding: 8px 15px;
+      margin: 3px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.3s ease;
+    }
+    .controls button:hover {
+      background: linear-gradient(135deg, #357abd, #2968a3);
+      transform: translateY(-1px);
+      box-shadow: 0 2px 10px rgba(74, 144, 226, 0.3);
+    }
+    .degree-info {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: rgba(0,0,0,0.8);
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid #28a745;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      z-index: 1000;
+      max-width: 300px;
+    }
+    .degree-info h3 {
+      margin: 0 0 10px 0;
+      color: #28a745;
+      font-size: 16px;
+    }
+    .degree-info .info-item {
+      font-size: 12px;
+      margin: 5px 0;
+      color: #ccc;
+    }
+    .degree-info .info-item strong {
+      color: #fff;
+    }
+    .legend {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background: rgba(0,0,0,0.8);
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid #ffc107;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .legend h4 {
+      margin: 0 0 10px 0;
+      color: #ffc107;
+      font-size: 14px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin: 5px 0;
+      font-size: 11px;
+    }
+    .legend-color {
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+      margin-right: 8px;
+      border: 1px solid #555;
+    }
+    .progress-bar {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(0,0,0,0.8);
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid #dc3545;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      z-index: 1000;
+      min-width: 250px;
+    }
+    .progress-bar h4 {
+      margin: 0 0 10px 0;
+      color: #dc3545;
+      font-size: 14px;
+    }
+    .progress-bg {
+      background: #333;
+      height: 20px;
+      border-radius: 10px;
+      margin: 8px 0;
+      overflow: hidden;
+    }
+    .progress-fill {
+      background: linear-gradient(90deg, #28a745, #20c997);
+      height: 100%;
+      border-radius: 10px;
+      transition: width 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-size: 11px;
+    }
+    .credit-info {
+      font-size: 12px;
+      color: #ccc;
+      margin-top: 5px;
+    }
+    .loading-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      font-size: 18px;
+      color: #4a90e2;
+    }
+  </style>
+</head>
+<body>
+  <div id="network"></div>
+  
+  <div class="degree-info">
+    <h3 id="degreeTitle">Loading...</h3>
+    <div class="info-item"><strong>Major Code:</strong> <span id="majorCode">-</span></div>
+    <div class="info-item"><strong>Degree:</strong> <span id="degreeType">-</span></div>
+    <div class="info-item"><strong>College:</strong> <span id="college">-</span></div>
+  </div>
+  
+  <div class="controls">
+    <h3>Controls</h3>
+    <button id="expandAll">Expand All</button>
+    <button id="collapseAll">Collapse All</button>
+    <button id="resetView">Reset View</button>
+    <button id="fitNetwork">Fit to Screen</button>
+  </div>
+  
+  <div class="progress-bar">
+    <h4>Degree Progress</h4>
+    <div class="progress-bg">
+      <div class="progress-fill" id="progressFill" style="width: 0%;">0%</div>
+    </div>
+    <div class="credit-info" id="creditInfo">0/124 Credits</div>
+  </div>
+  
+  <div class="legend">
+    <h4>Node Types</h4>
+    <div class="legend-item">
+      <div class="legend-color" style="background: linear-gradient(135deg, #28a745, #20c997);"></div>
+      <span>Core Requirements</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: linear-gradient(135deg, #4a90e2, #357abd);"></div>
+      <span>Major Requirements</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: linear-gradient(135deg, #ffc107, #e0a800);"></div>
+      <span>Electives</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: linear-gradient(135deg, #6f42c1, #5a32a3);"></div>
+      <span>Categories</span>
+    </div>
+  </div>
+  <script>
+    let network, nodes, edges, degreePlan, degreeId;
+    let collapsedNodes = new Set();
+    let selectedCourses = new Set();
+
+    function getUrlParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    async function loadDegreeNames() {
+      try {
+        const response = await fetch('./DegreeJSON/Codes.json');
+        if (!response.ok) return {};
+        const codes = await response.json();
+        return codes.majors || {};
+      } catch (error) {
+        console.error('Error loading degree codes:', error);
+        return {};
+      }
+    }    // CREATE THE TECH TREE LAYOUT WITH NESTED GROUPS
+    function createTechTreeNodes(degreePlan) {
+      const nodes = [];
+      const edges = [];
+      let nodeId = 0;
+      
+      // Create main degree node at top center
+      nodes.push({
+        id: nodeId++,
+        label: 'Degree Plan',
+        x: 0,
+        y: -400,
+        shape: 'box',
+        color: { background: '#6f42c1', border: '#4c2c92' },
+        font: { color: 'white', size: 18 },
+        size: 40,
+        group: 'degree'
+      });
+      
+      // Spread blocks horizontally across the screen
+      const blockSpacing = 1200;
+      const blockY = 0;
+      
+      degreePlan.blocks.forEach((block, index) => {
+        const blockX = (index - 1) * blockSpacing;
+        
+        // Determine block group based on title
+        let blockGroup = 'otherBlock';
+        if (block.Title.includes('Core')) blockGroup = 'coreBlock';
+        else if (block.Title.includes('Major')) blockGroup = 'majorBlock';
+        else if (block.Title.includes('Elective')) blockGroup = 'electiveBlock';
+        
+        // Create block node
+        const blockNode = {
+          id: nodeId++,
+          label: block.Title + '\n' + block.Credits + ' Credits',
+          x: blockX,
+          y: blockY,
+          shape: 'box',
+          color: { background: getBlockColor(block.Title), border: '#333' },
+          font: { color: 'white', size: 14 },
+          size: 30,
+          group: blockGroup,
+          isBlock: true,
+          blockIndex: index
+        };
+        nodes.push(blockNode);
+        
+        // Connect to main degree
+        edges.push({
+          from: 0,
+          to: blockNode.id,
+          color: '#666',
+          width: 2
+        });
+        
+        // Add categories nested within this block
+        nodeId = addNestedCategories(block, blockNode, blockX, nodes, edges, nodeId, index);
+      });
+      
+      return { nodes, edges };
+    }
+    
+    // Add categories as nested elements within blocks
+    function addNestedCategories(block, blockNode, blockX, nodes, edges, nodeId, blockIndex) {
+      if (!block.rules) return nodeId;
+      
+      const categories = getCategories(block.rules);
+      const categorySpacing = 200;
+      const startY = 200;
+      
+      categories.forEach((category, index) => {
+        const categoryY = startY + (index * categorySpacing);
+        
+        // Create category node with parent block reference
+        const categoryNode = {
+          id: nodeId++,
+          label: category.label,
+          x: blockX,
+          y: categoryY,
+          shape: 'box',
+          group: 'category',
+          size: 25,
+          parentBlock: blockNode.id,
+          isCategory: true,
+          blockIndex: blockIndex
+        };
+        nodes.push(categoryNode);
+        
+        // Connect to parent block
+        edges.push({
+          from: blockNode.id,
+          to: categoryNode.id,
+          color: '#999',
+          width: 2,
+          hidden: false
+        });
+        
+        // Add courses nested within this category
+        nodeId = addNestedCourses(category, categoryNode, blockX, categoryY, nodes, edges, nodeId, blockIndex);
+      });
+      
+      return nodeId;
+    }
+    
+    // Add courses as nested elements within categories
+    function addNestedCourses(category, categoryNode, startX, categoryY, nodes, edges, nodeId, blockIndex) {
+      if (!category.courses) return nodeId;
+      
+      const courses = category.courses.filter(course => 
+        course.Subj && course.Num && !course.Hide
+      );
+      
+      const courseSpacing = 120;
+      const courseStartX = 200;
+      
+      courses.forEach((course, index) => {
+        const courseX = startX + courseStartX + (index * courseSpacing);
+        
+        // Create course node with parent category reference
+        const courseNode = {
+          id: nodeId++,
+          label: course.Subj + ' ' + course.Num,
+          x: courseX,
+          y: categoryY,
+          shape: 'box',
+          group: 'course',
+          size: 15,
+          parentCategory: categoryNode.id,
+          isCourse: true,
+          blockIndex: blockIndex,
+          courseData: course
+        };
+        nodes.push(courseNode);
+        
+        // Connect to parent category
+        edges.push({
+          from: categoryNode.id,
+          to: courseNode.id,
+          color: '#ccc',
+          width: 1,
+          hidden: false
+        });
+      });
+      
+      return nodeId;
+    }
+    
+    // Extract categories from rules (simplified)
+    function getCategories(rules) {
+      const categories = [];
+      
+      rules.forEach(rule => {
+        if (rule.label && rule.courses) {
+          // Simple category with courses
+          categories.push({
+            label: rule.label,
+            courses: rule.courses
+          });
+        }
+        
+        if (rule.label && rule.rules) {
+          // Category with sub-categories
+          rule.rules.forEach(subRule => {
+            if (subRule.label && subRule.courses) {
+              categories.push({
+                label: rule.label + ': ' + subRule.label,
+                courses: subRule.courses
+              });
+            }
+          });
+        }
+      });
+      
+      return categories;
+    }
+      // Simple color coding for blocks
+    function getBlockColor(title) {
+      if (title.includes('Core')) return '#28a745';    // Green
+      if (title.includes('Major')) return '#007bff';   // Blue  
+      if (title.includes('Elective')) return '#ffc107'; // Yellow
+      return '#6c757d'; // Gray for everything else
+    }
+
+    // HIERARCHICAL CLUSTERING FOR NESTED VISUALIZATION
+    function setupHierarchicalClustering() {
+      // Auto-cluster courses within categories
+      clusterCoursesByCategory();
+      
+      // Auto-cluster categories within blocks (optional)
+      // clusterCategoriesByBlock();
+    }
+
+    function clusterCoursesByCategory() {
+      const allNodes = nodes.get();
+      const categories = allNodes.filter(node => node.isCategory);
+      
+      categories.forEach(category => {
+        const coursesInCategory = allNodes.filter(node => 
+          node.isCourse && node.parentCategory === category.id
+        );
+        
+        if (coursesInCategory.length > 2) { // Only cluster if multiple courses
+          const clusterOptionsByData = {
+            joinCondition: function(childOptions) {
+              return childOptions.parentCategory === category.id && childOptions.isCourse;
+            },
+            clusterNodeProperties: {
+              id: `cluster_category_${category.id}`,
+              label: `${category.label}\n(${coursesInCategory.length} courses)`,
+              shape: 'box',
+              color: { background: 'rgba(74, 144, 226, 0.8)', border: '#2968a3' },
+              font: { color: 'white', size: 14 },
+              borderWidth: 3,
+              mass: 3,
+              isCluster: true,
+              parentCategory: category.id,
+              x: category.x + 200,
+              y: category.y
+            }
+          };
+          
+          network.cluster(clusterOptionsByData);
+        }
+      });
+    }
+
+    function clusterCategoriesByBlock() {
+      const allNodes = nodes.get();
+      const blocks = allNodes.filter(node => node.isBlock);
+      
+      blocks.forEach(block => {
+        const categoriesInBlock = allNodes.filter(node => 
+          node.isCategory && node.parentBlock === block.id
+        );
+        
+        if (categoriesInBlock.length > 1) {
+          const clusterOptionsByData = {
+            joinCondition: function(childOptions) {
+              return childOptions.parentBlock === block.id && childOptions.isCategory;
+            },
+            clusterNodeProperties: {
+              id: `cluster_block_${block.id}`,
+              label: `${block.label}\n(${categoriesInBlock.length} categories)`,
+              shape: 'box',
+              color: { background: 'rgba(40, 167, 69, 0.8)', border: '#1e7e34' },
+              font: { color: 'white', size: 16 },
+              borderWidth: 4,
+              mass: 5,
+              isCluster: true,
+              parentBlock: block.id,
+              x: block.x,
+              y: block.y + 100
+            }
+          };
+          
+          network.cluster(clusterOptionsByData);
+        }
+      });
+    }
+
+    // INTERACTIVE NESTED NODE HANDLERS
+    function handleNodeSelection(params) {
+      if (params.nodes.length > 0) {
+        const nodeId = params.nodes[0];
+        const node = nodes.get(nodeId);
+        
+        if (node && node.isCourse) {
+          // Show course details in a tooltip or panel
+          showCourseDetails(node);
+        }
+      }
+    }
+
+    function handleNodeDoubleClick(params) {
+      if (params.nodes.length > 0) {
+        const nodeId = params.nodes[0];
+        
+        // Check if it's a cluster - if so, expand/collapse it
+        if (network.isCluster(nodeId)) {
+          network.openCluster(nodeId);
+        } else {
+          // Check if we can cluster around this node
+          const node = nodes.get(nodeId);
+          if (node && (node.isCategory || node.isBlock)) {
+            clusterAroundNode(nodeId);
+          }
+        }
+      }
+    }
+
+    function clusterAroundNode(nodeId) {
+      const node = nodes.get(nodeId);
+      if (!node) return;
+      
+      if (node.isCategory) {
+        // Cluster all courses in this category
+        const clusterOptions = {
+          joinCondition: function(childOptions) {
+            return childOptions.parentCategory === nodeId && childOptions.isCourse;
+          },
+          clusterNodeProperties: {
+            id: `manual_cluster_${nodeId}`,
+            label: `${node.label}\n(Clustered)`,
+            shape: 'box',
+            color: { background: 'rgba(74, 144, 226, 0.9)', border: '#2968a3' },
+            font: { color: 'white', size: 14 },
+            borderWidth: 3,
+            isCluster: true
+          }
+        };
+        network.cluster(clusterOptions);
+      }
+    }
+
+    function showCourseDetails(node) {
+      if (!node.courseData) return;
+      
+      // Create or update a details panel
+      let detailsPanel = document.getElementById('courseDetails');
+      if (!detailsPanel) {
+        detailsPanel = document.createElement('div');
+        detailsPanel.id = 'courseDetails';
+        detailsPanel.style.cssText = `
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          background: rgba(0,0,0,0.9);
+          color: white;
+          padding: 15px;
+          border-radius: 10px;
+          border: 2px solid #4a90e2;
+          max-width: 300px;
+          z-index: 1001;
+        `;
+        document.body.appendChild(detailsPanel);
+      }
+      
+      const course = node.courseData;
+      detailsPanel.innerHTML = `
+        <h4>${course.Subj} ${course.Num}</h4>
+        <p><strong>Title:</strong> ${course.Title || 'N/A'}</p>
+        <p><strong>Credits:</strong> ${course.Credits || 'N/A'}</p>
+        <p><strong>Description:</strong> ${course.Desc || 'No description available'}</p>
+        <button onclick="this.parentElement.style.display='none'">Close</button>
+      `;
+    }
+
+    function updateDegreeInfo(degreePlan, degreeId, degreeNames) {
+      const degreeInfo = degreeNames[degreeId];
+      const degreeName = degreeInfo ? degreeInfo.name : 'Unknown Program';
+      const degreeType = degreeInfo ? degreeInfo.degree : (degreePlan.degree || 'N/A');
+      const college = degreeInfo ? degreeInfo.college : 'N/A';
+
+      document.getElementById('degreeTitle').textContent = `${degreeType} in ${degreeName}`;
+      document.getElementById('majorCode').textContent = degreeId;
+      document.getElementById('degreeType').textContent = degreeType;
+      document.getElementById('college').textContent = college;
+
+      // Update progress
+      const totalCredits = degreePlan.blocks.reduce((sum, block) => sum + (parseInt(block.Credits) || 0), 0);
+      const isBADegree = degreeType && degreeType.includes('B.A.');
+      const requiredCredits = isBADegree ? 124 : totalCredits;
+      const progressPercent = Math.min(100, Math.round((totalCredits / requiredCredits) * 100));
+
+      document.getElementById('progressFill').style.width = `${progressPercent}%`;
+      document.getElementById('progressFill').textContent = `${progressPercent}%`;
+      document.getElementById('creditInfo').textContent = `${totalCredits}/${requiredCredits} Credits`;
+    }    function setupEventHandlers() {
+      document.getElementById('expandAll').addEventListener('click', () => {
+        expandAllClusters();
+      });
+
+      document.getElementById('collapseAll').addEventListener('click', () => {
+        collapseAllCategories();
+      });
+
+      document.getElementById('resetView').addEventListener('click', () => {
+        network.fit();
+      });
+
+      document.getElementById('fitNetwork').addEventListener('click', () => {
+        network.fit();
+      });
+    }
+
+    function expandAllClusters() {
+      // Get all cluster node IDs
+      const clusterNodes = nodes.get().filter(node => node.isCluster);
+      
+      // Open all clusters
+      clusterNodes.forEach(cluster => {
+        if (network.isCluster(cluster.id)) {
+          network.openCluster(cluster.id);
+        }
+      });
+      
+      // Also manually expand any clustered nodes
+      network.body.data.nodes.forEach((node, nodeId) => {
+        if (network.isCluster(nodeId)) {
+          network.openCluster(nodeId);
+        }
+      });
+    }
+
+    function collapseAllCategories() {
+      // Re-setup clustering to collapse everything
+      setupHierarchicalClustering();
+    }
+
+    async function initializeTechTree() {
+      const loadingDiv = document.createElement('div');
+      loadingDiv.className = 'loading-overlay';
+      loadingDiv.textContent = 'Loading Tech Tree...';
+      document.body.appendChild(loadingDiv);
+
+      try {
+        degreeId = getUrlParameter('id') || '5040';
+        
+        const response = await fetch(`./DegreeJSON/${degreeId}.json`);
+        if (!response.ok) {
+          throw new Error(`Failed to load degree plan for ID: ${degreeId}`);
+        }
+        
+        degreePlan = await response.json();
+        const degreeNames = await loadDegreeNames();
+          // Create network data
+        const { nodes: nodeData, edges: edgeData } = createTechTreeNodes(degreePlan);
+        nodes = new vis.DataSet(nodeData);
+        edges = new vis.DataSet(edgeData);
+        
+        // Network options with advanced clustering for nested visualization
+        const options = {
+          nodes: {
+            borderWidth: 2,
+            shadow: {
+              enabled: true,
+              color: 'rgba(0,0,0,0.3)',
+              size: 10,
+              x: 2,
+              y: 2
+            }
+          },
+          edges: {
+            width: 2,
+            shadow: {
+              enabled: true,
+              color: 'rgba(0,0,0,0.2)',
+              size: 5
+            }
+          },
+          physics: {
+            enabled: false
+          },
+          interaction: {
+            dragNodes: true,
+            dragView: true,
+            zoomView: true
+          },
+          groups: {
+            coreBlock: {
+              color: { background: '#28a745', border: '#1e7e34' },
+              font: { color: 'white' }
+            },
+            majorBlock: {
+              color: { background: '#007bff', border: '#0056b3' },
+              font: { color: 'white' }
+            },
+            electiveBlock: {
+              color: { background: '#ffc107', border: '#d39e00' },
+              font: { color: 'black' }
+            },
+            category: {
+              color: { background: '#4a90e2', border: '#2968a3' },
+              font: { color: 'white' }
+            },
+            course: {
+              color: { background: '#ffffff', border: '#ccc' },
+              font: { color: '#333' }
+            },            // Special styles for cluster nodes (containers)
+            cluster: {
+              shape: 'box',
+              color: { background: 'rgba(74, 144, 226, 0.8)', border: '#2968a3' },
+              font: { color: 'white', size: 16 },
+              borderWidth: 3,
+              borderWidthSelected: 4
+            }
+          }
+        };
+
+        // Initialize network
+        const container = document.getElementById('network');
+        network = new vis.Network(container, { nodes, edges }, options);
+
+        // Set up hierarchical clustering for nested visualization
+        setupHierarchicalClustering();
+
+        // Network event handlers for nested interactions
+        network.on("selectNode", function (params) {
+          handleNodeSelection(params);
+        });
+
+        network.on("doubleClick", function (params) {
+          handleNodeDoubleClick(params);
+        });
+
+        // Update UI
+        updateDegreeInfo(degreePlan, degreeId, degreeNames);
+        setupEventHandlers();
+
+        // Remove loading
+        document.body.removeChild(loadingDiv);
+
+        // Fit the network
+        setTimeout(() => network.fit(), 100);
+
+      } catch (error) {
+        console.error('Error initializing tech tree:', error);
+        loadingDiv.textContent = `Error: ${error.message}`;
+      }
+    }
+
+    // Initialize when page loads
+    window.addEventListener('load', initializeTechTree);
+  </script>
+</body>
+</html>

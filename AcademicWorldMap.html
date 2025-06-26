@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🗺️ Academic World Map - Journey to Completion</title>
+  <script type="text/javascript" src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+  <link href="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.css" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:wght@400;600&display=swap');
+    
+    body { 
+      font-family: 'Crimson Text', serif; 
+      background: 
+        radial-gradient(circle at 30% 70%, rgba(50, 100, 50, 0.2) 0%, transparent 40%),
+        radial-gradient(circle at 70% 30%, rgba(70, 130, 180, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 50% 90%, rgba(160, 82, 45, 0.2) 0%, transparent 30%),
+        linear-gradient(135deg, #1a2f1a, #2f4f4f, #1e3a8a);
+      color: #fff; 
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    /* World map atmosphere with clouds and terrain */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><ellipse cx="30" cy="40" rx="15" ry="8" fill="rgba(255,255,255,0.1)" opacity="0.6"/><ellipse cx="150" cy="60" rx="20" ry="10" fill="rgba(255,255,255,0.08)" opacity="0.5"/><ellipse cx="100" cy="150" rx="12" ry="6" fill="rgba(255,255,255,0.12)" opacity="0.4"/><path d="M10,180 Q50,170 90,180 T170,175" stroke="rgba(139,69,19,0.3)" stroke-width="2" fill="none"/><path d="M20,190 Q80,185 140,190 T190,188" stroke="rgba(139,69,19,0.2)" stroke-width="1" fill="none"/></svg>');
+      animation: worldDrift 30s linear infinite;
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    @keyframes worldDrift {
+      0% { transform: translateX(0px) translateY(0px); }
+      25% { transform: translateX(-10px) translateY(-5px); }
+      50% { transform: translateX(-5px) translateY(-10px); }
+      75% { transform: translateX(5px) translateY(-5px); }
+      100% { transform: translateX(0px) translateY(0px); }
+    }
+
+    #network {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      background: transparent;
+      z-index: 1;
+      position: relative;
+    }
+    
+    /* World Map UI */
+    .world-atlas {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: linear-gradient(135deg, rgba(139, 69, 19, 0.9), rgba(160, 82, 45, 0.9));
+      border: 3px solid #8B4513;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 350px;
+      box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        inset 0 2px 4px rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      z-index: 10;
+      font-family: 'Cinzel', serif;
+      color: #FFF8DC;
+      border-image: linear-gradient(45deg, #CD853F, #8B4513, #A0522D) 1;
+    }
+    
+    .world-atlas h2 {
+      margin: 0 0 15px 0;
+      font-size: 20px;
+      text-align: center;
+      color: #F5DEB3;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      border-bottom: 2px solid #8B4513;
+      padding-bottom: 8px;
+    }
+    
+    .journey-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 15px;
+    }
+    
+    .stat-card {
+      background: rgba(139, 69, 19, 0.6);
+      border: 1px solid #A0522D;
+      border-radius: 6px;
+      padding: 8px;
+      text-align: center;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+    
+    .stat-value {
+      font-size: 18px;
+      font-weight: bold;
+      color: #FFD700;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    
+    .stat-label {
+      font-size: 11px;
+      color: #F5DEB3;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .world-progress {
+      margin: 15px 0;
+    }
+    
+    .progress-label {
+      font-size: 12px;
+      margin-bottom: 5px;
+      color: #F5DEB3;
+    }
+    
+    .progress-bar {
+      width: 100%;
+      height: 20px;
+      background: rgba(139, 69, 19, 0.8);
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #8B4513;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #228B22, #32CD32, #9ACD32);
+      border-radius: 10px;
+      transition: width 0.8s ease;
+      box-shadow: 0 0 10px rgba(50, 205, 50, 0.4);
+    }
+    
+    .progress-text {
+      text-align: center;
+      line-height: 20px;
+      font-size: 11px;
+      font-weight: bold;
+      color: #000;
+      text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+      margin-top: -20px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* World Legend */
+    .world-legend {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: linear-gradient(135deg, rgba(25, 25, 112, 0.9), rgba(72, 61, 139, 0.9));
+      border: 3px solid #483D8B;
+      border-radius: 12px;
+      padding: 15px;
+      max-width: 280px;
+      box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.4),
+        inset 0 2px 4px rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      z-index: 10;
+      font-family: 'Cinzel', serif;
+      color: #E6E6FA;
+    }
+    
+    .world-legend h3 {
+      margin: 0 0 12px 0;
+      font-size: 16px;
+      text-align: center;
+      color: #E6E6FA;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 6px;
+      font-size: 13px;
+    }
+    
+    .legend-icon {
+      margin-right: 8px;
+      font-size: 16px;
+    }
+    
+    /* Territory Status Colors */
+    .territory-unexplored {
+      background: linear-gradient(135deg, #2F4F4F, #708090) !important;
+      border-color: #708090 !important;
+      color: #D3D3D3 !important;
+    }
+    
+    .territory-explored {
+      background: linear-gradient(135deg, #228B22, #32CD32) !important;
+      border-color: #32CD32 !important;
+      color: #F0FFF0 !important;
+    }
+    
+    .territory-partially-explored {
+      background: linear-gradient(135deg, #DAA520, #FFD700) !important;
+      border-color: #FFD700 !important;
+      color: #000 !important;
+    }
+    
+    /* Hide/show toggle */
+    .map-controls {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 15;
+    }
+    
+    .control-btn {
+      background: linear-gradient(135deg, rgba(139, 69, 19, 0.9), rgba(160, 82, 45, 0.9));
+      border: 2px solid #8B4513;
+      border-radius: 6px;
+      color: #F5DEB3;
+      padding: 8px 12px;
+      margin-left: 5px;
+      cursor: pointer;
+      font-family: 'Cinzel', serif;
+      font-size: 12px;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(5px);
+    }
+    
+    .control-btn:hover {
+      background: linear-gradient(135deg, rgba(160, 82, 45, 1), rgba(139, 69, 19, 1));
+      box-shadow: 0 4px 12px rgba(139, 69, 19, 0.4);
+      transform: translateY(-2px);
+    }
+    
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .world-atlas, .world-legend {
+        max-width: 250px;
+        padding: 12px;
+        font-size: 11px;
+      }
+      
+      .journey-stats {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      
+      .stat-value {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="network"></div>
+  
+  <!-- World Atlas Panel -->
+  <div class="world-atlas" id="worldAtlas">
+    <h2>🗺️ World Atlas</h2>
+    <div class="journey-stats">
+      <div class="stat-card">
+        <div class="stat-value" id="totalCourses">0</div>
+        <div class="stat-label">Destinations</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="completedCourses">0</div>
+        <div class="stat-label">Visited</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="totalCredits">0</div>
+        <div class="stat-label">Total Miles</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-value" id="earnedCredits">0</div>
+        <div class="stat-label">Miles Traveled</div>
+      </div>
+    </div>
+    
+    <div class="world-progress">
+      <div class="progress-label">🌍 World Exploration Progress</div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="worldProgressFill"></div>
+      </div>
+      <div class="progress-text" id="worldProgressText">0%</div>
+    </div>
+    
+    <div class="world-progress">
+      <div class="progress-label">🏛️ Credit Hour Progress</div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="creditProgressFill"></div>
+      </div>
+      <div class="progress-text" id="creditProgressText">0/120</div>
+    </div>
+  </div>
+  
+  <!-- World Legend -->
+  <div class="world-legend" id="worldLegend">
+    <h3>🗂️ Territory Guide</h3>
+    <div class="legend-item">
+      <span class="legend-icon">🌍</span>
+      <span>Degree World</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-icon">🏛️</span>
+      <span>Core Continent</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-icon">🏰</span>
+      <span>Major Kingdom</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-icon">🏘️</span>
+      <span>Elective Regions</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-icon">📍</span>
+      <span>Course Destinations</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-icon">🛤️</span>
+      <span>Prerequisite Paths</span>
+    </div>
+  </div>
+  
+  <!-- Map Controls -->
+  <div class="map-controls">
+    <button class="control-btn" onclick="toggleAtlas()">📖 Atlas</button>
+    <button class="control-btn" onclick="toggleLegend()">🗂️ Legend</button>
+    <button class="control-btn" onclick="resetView()">🧭 Center</button>
+  </div>
+
+  <script>
+    let network;
+    let nodes, edges;
+    let degreePlan;
+    
+    // Map layout configuration
+    const MAP_CONFIG = {
+      // World center
+      world: { x: 0, y: 0 },
+      
+      // Continent positions (blocks)
+      continents: {
+        core: { x: -400, y: -200, radius: 300 },
+        major: { x: 300, y: -100, radius: 250 },
+        electives: { x: 0, y: 300, radius: 200 }
+      },
+      
+      // Map styling
+      territorySpacing: 150,
+      destinationSpacing: 80,
+      pathCurvature: 0.3
+    };
+
+    // Initialize the academic world map
+    async function initializeWorldMap() {
+      try {
+        const response = await fetch('./DegreeJSON/5040.json');
+        degreePlan = await response.json();
+        
+        await createWorldMap(degreePlan);
+        
+        updateWorldStats();
+        
+        // Add event listeners
+        network.on('click', handleTerritoryClick);
+        network.on('hoverNode', handleTerritoryHover);
+        network.on('blurNode', handleTerritoryBlur);
+        
+      } catch (error) {
+        console.error('Error loading degree data:', error);
+      }
+    }
+
+    async function createWorldMap(degreePlan) {
+      const nodesArray = [];
+      const edgesArray = [];
+      let nodeId = 1;
+      
+      // Create the degree world (center)
+      const worldNode = {
+        id: 'world',
+        label: '🌍 Degree World\n' + (degreePlan.title || 'Academic Program'),
+        x: MAP_CONFIG.world.x,
+        y: MAP_CONFIG.world.y,
+        size: 60,
+        color: {
+          background: 'linear-gradient(135deg, #4169E1, #1E90FF)',
+          border: '#191970',
+          highlight: { background: '#6495ED', border: '#000080' }
+        },
+        font: { size: 16, color: '#FFFFFF', face: 'Cinzel' },
+        shape: 'circle',
+        borderWidth: 4,
+        shadow: { enabled: true, color: 'rgba(0,0,0,0.3)', size: 10 },
+        fixed: true,
+        group: 'world'
+      };
+      nodesArray.push(worldNode);
+      
+      // Process each block as a continent/territory
+      for (const block of degreePlan.blocks) {
+        const blockInfo = getTerritoryInfo(block.Title);
+        const blockPosition = getBlockPosition(block.Title);
+        
+        // Create block/continent node
+        const blockNode = {
+          id: `block_${nodeId}`,
+          label: blockInfo.icon + ' ' + block.Title + '\n' + 
+                 `${getTotalCredits(block)} Credit Miles`,
+          x: blockPosition.x,
+          y: blockPosition.y,
+          size: 45,
+          color: blockInfo.color,
+          font: { size: 14, color: '#FFFFFF', face: 'Cinzel' },
+          shape: 'ellipse',
+          borderWidth: 3,
+          shadow: { enabled: true, color: 'rgba(0,0,0,0.2)', size: 8 },
+          group: 'continent',
+          blockData: block
+        };
+        nodesArray.push(blockNode);
+        
+        // Connect continent to world
+        edgesArray.push({
+          from: 'world',
+          to: `block_${nodeId}`,
+          color: { color: '#8B4513', opacity: 0.6 },
+          width: 3,
+          smooth: { type: 'curvedCW', roundness: 0.2 },
+          arrows: { to: { enabled: false } }
+        });
+        
+        nodeId++;
+        
+        // Process categories within blocks as countries/regions
+        if (block.categories) {
+          for (const category of block.categories) {
+            const categoryPos = getCategoryPosition(blockPosition, category.Name, block.categories.indexOf(category), block.categories.length);
+            
+            const categoryNode = {
+              id: `category_${nodeId}`,
+              label: getCategoryIcon(category.Name) + ' ' + category.Name + '\n' +
+                     `${category.courses ? category.courses.length : 0} Destinations`,
+              x: categoryPos.x,
+              y: categoryPos.y,
+              size: 30,
+              color: {
+                background: 'linear-gradient(135deg, #CD853F, #D2B48C)',
+                border: '#8B4513',
+                highlight: { background: '#DEB887', border: '#A0522D' }
+              },
+              font: { size: 12, color: '#000000', face: 'Crimson Text' },
+              shape: 'box',
+              borderWidth: 2,
+              shadow: { enabled: true, color: 'rgba(0,0,0,0.15)', size: 5 },
+              group: 'region',
+              categoryData: category
+            };
+            nodesArray.push(categoryNode);
+            
+            // Connect region to continent
+            edgesArray.push({
+              from: `block_${nodeId - 1}`,
+              to: `category_${nodeId}`,
+              color: { color: '#A0522D', opacity: 0.5 },
+              width: 2,
+              smooth: { type: 'curvedCCW', roundness: 0.1 },
+              arrows: { to: { enabled: false } }
+            });
+            
+            nodeId++;
+            
+            // Process courses as destinations
+            if (category.courses) {
+              for (const course of category.courses) {
+                const coursePos = getCoursePosition(categoryPos, course.Number, category.courses.indexOf(course), category.courses.length);
+                
+                const courseNode = {
+                  id: `course_${course.Number}`,
+                  label: course.Number + '\n' + (course.Title || 'Course'),
+                  x: coursePos.x,
+                  y: coursePos.y,
+                  size: 20,
+                  color: getCourseStatusColor(course),
+                  font: { size: 10, color: getCourseFontColor(course), face: 'Crimson Text' },
+                  shape: 'dot',
+                  borderWidth: 2,
+                  shadow: { enabled: true, color: 'rgba(0,0,0,0.1)', size: 3 },
+                  group: 'destination',
+                  courseData: course
+                };
+                nodesArray.push(courseNode);
+                
+                // Connect destination to region
+                edgesArray.push({
+                  from: `category_${nodeId - 1}`,
+                  to: `course_${course.Number}`,
+                  color: { color: '#708090', opacity: 0.4 },
+                  width: 1,
+                  smooth: { type: 'continuous', roundness: 0.1 },
+                  arrows: { to: { enabled: false } }
+                });
+                
+                // Add prerequisite paths
+                if (course.Prerequisites) {
+                  for (const prereq of course.Prerequisites) {
+                    const prereqId = `course_${prereq}`;
+                    if (nodesArray.find(n => n.id === prereqId)) {
+                      edgesArray.push({
+                        from: prereqId,
+                        to: `course_${course.Number}`,
+                        color: { color: '#4169E1', opacity: 0.7 },
+                        width: 2,
+                        smooth: { type: 'curvedCW', roundness: 0.3 },
+                        arrows: { to: { enabled: true, scaleFactor: 0.8 } },
+                        dashes: [5, 5],
+                        label: '🛤️'
+                      });
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      
+      // Create vis.js network
+      nodes = new vis.DataSet(nodesArray);
+      edges = new vis.DataSet(edgesArray);
+      
+      const container = document.getElementById('network');
+      const data = { nodes: nodes, edges: edges };
+      
+      const options = {
+        physics: {
+          enabled: false // Use fixed positioning for map-like layout
+        },
+        interaction: {
+          dragNodes: true,
+          dragView: true,
+          zoomView: true,
+          hover: true
+        },
+        nodes: {
+          chosen: {
+            node: function(values, id, selected, hovering) {
+              values.shadow = true;
+              values.shadowColor = 'rgba(255, 215, 0, 0.6)';
+              values.shadowSize = 15;
+            }
+          }
+        },
+        edges: {
+          chosen: {
+            edge: function(values, id, selected, hovering) {
+              values.width = values.width * 1.5;
+              values.shadowColor = 'rgba(255, 215, 0, 0.3)';
+              values.shadow = true;
+            }
+          }
+        }
+      };
+      
+      network = new vis.Network(container, data, options);
+    }
+
+    // Position calculation functions
+    function getBlockPosition(blockTitle) {
+      if (blockTitle.includes('Core') || blockTitle.includes('General')) {
+        return MAP_CONFIG.continents.core;
+      } else if (blockTitle.includes('Major')) {
+        return MAP_CONFIG.continents.major;
+      } else {
+        return MAP_CONFIG.continents.electives;
+      }
+    }
+    
+    function getCategoryPosition(blockPos, categoryName, index, total) {
+      const angle = (index / total) * 2 * Math.PI;
+      const radius = 120;
+      return {
+        x: blockPos.x + Math.cos(angle) * radius,
+        y: blockPos.y + Math.sin(angle) * radius
+      };
+    }
+    
+    function getCoursePosition(categoryPos, courseNumber, index, total) {
+      const angle = (index / total) * 2 * Math.PI;
+      const radius = 60;
+      return {
+        x: categoryPos.x + Math.cos(angle) * radius,
+        y: categoryPos.y + Math.sin(angle) * radius
+      };
+    }
+
+    // Territory information functions
+    function getTerritoryInfo(title) {
+      if (title.includes('Core') || title.includes('General')) {
+        return {
+          icon: '🏛️',
+          color: {
+            background: 'linear-gradient(135deg, #B8860B, #DAA520)',
+            border: '#8B6914',
+            highlight: { background: '#FFD700', border: '#B8860B' }
+          }
+        };
+      }
+      
+      if (title.includes('Major')) {
+        return {
+          icon: '🏰',
+          color: {
+            background: 'linear-gradient(135deg, #8B0000, #DC143C)',
+            border: '#660000',
+            highlight: { background: '#FF6347', border: '#8B0000' }
+          }
+        };
+      }
+      
+      return {
+        icon: '🏘️',
+        color: {
+          background: 'linear-gradient(135deg, #228B22, #32CD32)',
+          border: '#006400',
+          highlight: { background: '#90EE90', border: '#228B22' }
+        }
+      };
+    }
+    
+    function getCategoryIcon(categoryName) {
+      if (categoryName.includes('Math') || categoryName.includes('Science')) return '🧮';
+      if (categoryName.includes('English') || categoryName.includes('Writing')) return '📚';
+      if (categoryName.includes('History') || categoryName.includes('Social')) return '🏛️';
+      if (categoryName.includes('Art') || categoryName.includes('Fine')) return '🎨';
+      if (categoryName.includes('Computer') || categoryName.includes('Programming')) return '💻';
+      return '📍';
+    }
+    
+    function getCourseStatusColor(course) {
+      // Simulate course completion status (would come from actual data)
+      const isCompleted = Math.random() > 0.7;
+      const isInProgress = Math.random() > 0.5;
+      
+      if (isCompleted) {
+        return {
+          background: 'linear-gradient(135deg, #228B22, #32CD32)',
+          border: '#006400',
+          highlight: { background: '#90EE90', border: '#228B22' }
+        };
+      } else if (isInProgress) {
+        return {
+          background: 'linear-gradient(135deg, #DAA520, #FFD700)',
+          border: '#B8860B',
+          highlight: { background: '#FFFF99', border: '#DAA520' }
+        };
+      } else {
+        return {
+          background: 'linear-gradient(135deg, #2F4F4F, #708090)',
+          border: '#556B2F',
+          highlight: { background: '#B0C4DE', border: '#2F4F4F' }
+        };
+      }
+    }
+    
+    function getCourseFontColor(course) {
+      // Simulate course completion status
+      const isCompleted = Math.random() > 0.7;
+      return isCompleted ? '#FFFFFF' : '#000000';
+    }
+
+    // Event handlers
+    function handleTerritoryClick(event) {
+      if (event.nodes.length > 0) {
+        const nodeId = event.nodes[0];
+        const node = nodes.get(nodeId);
+        
+        if (node.courseData) {
+          showCourseDetails(node.courseData);
+        } else if (node.categoryData) {
+          showCategoryDetails(node.categoryData);
+        } else if (node.blockData) {
+          showBlockDetails(node.blockData);
+        }
+      }
+    }
+    
+    function handleTerritoryHover(event) {
+      const nodeId = event.node;
+      const node = nodes.get(nodeId);
+      
+      if (node.courseData) {
+        showCourseTooltip(event.event, node.courseData);
+      }
+    }
+    
+    function handleTerritoryBlur(event) {
+      hideTooltip();
+    }
+
+    // Detail display functions
+    function showCourseDetails(course) {
+      const modal = document.createElement('div');
+      modal.style.cssText = `
+        position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        background: linear-gradient(135deg, rgba(139, 69, 19, 0.95), rgba(160, 82, 45, 0.95));
+        border: 3px solid #8B4513; border-radius: 12px; padding: 25px;
+        max-width: 400px; z-index: 1000; color: #FFF8DC;
+        box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(15px); font-family: 'Cinzel', serif;
+      `;
+      
+      modal.innerHTML = `
+        <div style="text-align: center; margin-bottom: 20px;">
+          <h3 style="margin: 0; font-size: 18px; color: #FFD700;">📍 Course Destination</h3>
+        </div>
+        <p><strong>🏷️ Course Number:</strong> ${course.Number}</p>
+        <p><strong>📋 Course Title:</strong> ${course.Title || 'Course'}</p>
+        <p><strong>🗺️ Credit Miles:</strong> ${course.CreditHours || 3}</p>
+        <p><strong>📖 Description:</strong> ${course.Description || 'Explore this academic destination to gain valuable knowledge and skills.'}</p>
+        ${course.Prerequisites ? `<p><strong>🛤️ Required Paths:</strong> ${course.Prerequisites.join(', ')}</p>` : ''}
+        <div style="text-align: center; margin-top: 20px;">
+          <button onclick="this.parentElement.parentElement.remove()" 
+                  style="background: linear-gradient(135deg, #8B4513, #A0522D); border: 2px solid #654321; 
+                         color: #F5DEB3; padding: 8px 16px; border-radius: 6px; cursor: pointer; 
+                         font-family: 'Cinzel', serif;">
+            🗺️ Close Map
+          </button>
+        </div>
+      `;
+      
+      document.body.appendChild(modal);
+      
+      // Close on click outside
+      setTimeout(() => {
+        document.addEventListener('click', function closeModal(e) {
+          if (!modal.contains(e.target)) {
+            modal.remove();
+            document.removeEventListener('click', closeModal);
+          }
+        });
+      }, 100);
+    }
+    
+    function showCourseTooltip(event, course) {
+      hideTooltip();
+      
+      const tooltip = document.createElement('div');
+      tooltip.id = 'courseTooltip';
+      tooltip.style.cssText = `
+        position: absolute; background: rgba(139, 69, 19, 0.9); color: #FFF8DC;
+        padding: 8px 12px; border-radius: 6px; font-size: 12px; z-index: 999;
+        border: 1px solid #8B4513; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        pointer-events: none; font-family: 'Crimson Text', serif;
+        left: ${event.clientX + 10}px; top: ${event.clientY - 10}px;
+      `;
+      
+      tooltip.innerHTML = `
+        <strong>${course.Number}</strong><br>
+        ${course.Title || 'Course'}<br>
+        <em>${course.CreditHours || 3} Credit Miles</em>
+      `;
+      
+      document.body.appendChild(tooltip);
+    }
+    
+    function hideTooltip() {
+      const tooltip = document.getElementById('courseTooltip');
+      if (tooltip) tooltip.remove();
+    }
+
+    // Utility functions
+    function getTotalCredits(block) {
+      let total = 0;
+      if (block.categories) {
+        for (const category of block.categories) {
+          if (category.courses) {
+            for (const course of category.courses) {
+              total += course.CreditHours || 3;
+            }
+          }
+        }
+      }
+      return total;
+    }
+    
+    function updateWorldStats() {
+      const stats = calculateWorldStats();
+      
+      document.getElementById('totalCourses').textContent = stats.totalCourses;
+      document.getElementById('completedCourses').textContent = stats.completedCourses;
+      document.getElementById('totalCredits').textContent = stats.totalCredits;
+      document.getElementById('earnedCredits').textContent = stats.earnedCredits;
+      
+      const completionPercentage = Math.round((stats.completedCourses / stats.totalCourses) * 100);
+      const creditPercentage = Math.round((stats.earnedCredits / stats.totalCredits) * 100);
+      
+      document.getElementById('worldProgressFill').style.width = `${completionPercentage}%`;
+      document.getElementById('worldProgressText').textContent = `${completionPercentage}%`;
+      
+      document.getElementById('creditProgressFill').style.width = `${creditPercentage}%`;
+      document.getElementById('creditProgressText').textContent = `${stats.earnedCredits}/${stats.totalCredits}`;
+    }
+    
+    function calculateWorldStats() {
+      let totalCourses = 0;
+      let completedCourses = 0;
+      let totalCredits = 0;
+      let earnedCredits = 0;
+      
+      if (degreePlan && degreePlan.blocks) {
+        for (const block of degreePlan.blocks) {
+          if (block.categories) {
+            for (const category of block.categories) {
+              if (category.courses) {
+                for (const course of category.courses) {
+                  totalCourses++;
+                  totalCredits += course.CreditHours || 3;
+                  
+                  // Simulate completion status
+                  if (Math.random() > 0.7) {
+                    completedCourses++;
+                    earnedCredits += course.CreditHours || 3;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      
+      return { totalCourses, completedCourses, totalCredits, earnedCredits };
+    }
+
+    // Control functions
+    function toggleAtlas() {
+      const atlas = document.getElementById('worldAtlas');
+      atlas.style.display = atlas.style.display === 'none' ? 'block' : 'none';
+    }
+    
+    function toggleLegend() {
+      const legend = document.getElementById('worldLegend');
+      legend.style.display = legend.style.display === 'none' ? 'block' : 'none';
+    }
+    
+    function resetView() {
+      if (network) {
+        network.fit();
+      }
+    }
+
+    // Initialize when page loads
+    document.addEventListener('DOMContentLoaded', initializeWorldMap);
+  </script>
+</body>
+</html>

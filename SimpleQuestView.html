@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">  <title>�️ Degree Map - Journey to Completion</title>
+  <script type="text/javascript" src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+  <link href="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.css" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=MedievalSharp&display=swap');
+    
+    body { 
+      font-family: 'Cinzel', serif; 
+      background: 
+        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+        linear-gradient(135deg, #0c0c1d, #1a1a2e, #16213e);
+      color: #fff; 
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    /* Fantasy atmosphere */
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="0.5" fill="rgba(255,255,255,0.15)"/><circle cx="40" cy="80" r="1.5" fill="rgba(255,255,255,0.05)"/><circle cx="90" cy="90" r="0.8" fill="rgba(255,255,255,0.1)"/></svg>');
+      animation: starfield 20s linear infinite;
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    @keyframes starfield {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(-100px); }
+    }    #network {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      background: transparent;
+      z-index: 1;
+      position: relative;
+    }
+    
+    /* Quest Journal UI */
+    .quest-journal {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: linear-gradient(145deg, rgba(20, 20, 40, 0.95), rgba(40, 40, 80, 0.95));
+      padding: 20px;
+      border-radius: 15px;
+      border: 3px solid #d4af37;
+      box-shadow: 
+        0 0 20px rgba(212, 175, 55, 0.4),
+        inset 0 0 20px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      max-width: 350px;
+      backdrop-filter: blur(10px);
+    }
+    .quest-journal h3 {
+      margin: 0 0 15px 0;
+      color: #d4af37;
+      font-size: 18px;
+      font-family: 'MedievalSharp', cursive;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+    .quest-journal .journal-item {
+      font-size: 13px;
+      margin: 8px 0;
+      color: #e6d3a3;
+      display: flex;
+      justify-content: space-between;
+    }
+    .quest-journal .journal-item strong {
+      color: #fff;
+    }
+    
+    /* Adventure Controls */
+    .adventure-controls {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: linear-gradient(145deg, rgba(20, 20, 40, 0.95), rgba(40, 40, 80, 0.95));
+      padding: 20px;
+      border-radius: 15px;
+      border: 3px solid #8b4513;
+      box-shadow: 
+        0 0 20px rgba(139, 69, 19, 0.4),
+        inset 0 0 20px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+    .adventure-controls h3 {
+      margin: 0 0 15px 0;
+      color: #8b4513;
+      font-size: 16px;
+      font-family: 'MedievalSharp', cursive;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+    .adventure-controls button {
+      background: linear-gradient(145deg, #8b4513, #a0522d);
+      color: #fff;
+      border: 2px solid #d4af37;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 12px;
+      font-family: 'Cinzel', serif;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .adventure-controls button:hover {
+      background: linear-gradient(145deg, #a0522d, #cd853f);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(212, 175, 55, 0.3);
+    }    /* Experience & Progress Tracking */
+    .experience-tracker {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: linear-gradient(145deg, rgba(20, 40, 20, 0.95), rgba(40, 80, 40, 0.95));
+      padding: 20px;
+      border-radius: 15px;
+      border: 3px solid #32cd32;
+      box-shadow: 
+        0 0 20px rgba(50, 205, 50, 0.4),
+        inset 0 0 20px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      min-width: 280px;
+      backdrop-filter: blur(10px);
+    }
+    .experience-tracker h4 {
+      margin: 0 0 15px 0;
+      color: #32cd32;
+      font-size: 16px;
+      font-family: 'MedievalSharp', cursive;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+    .xp-bar {
+      background: linear-gradient(90deg, #1a1a1a, #2d2d2d);
+      height: 25px;
+      border-radius: 15px;
+      margin: 10px 0;
+      overflow: hidden;
+      border: 2px solid #d4af37;
+      position: relative;
+    }
+    .xp-fill {
+      background: linear-gradient(90deg, #32cd32, #00ff00, #32cd32);
+      height: 100%;
+      border-radius: 15px;
+      transition: width 0.5s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      font-weight: bold;
+      font-size: 12px;
+      text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+      position: relative;
+      overflow: hidden;
+    }
+    .xp-fill::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      animation: xp-shine 2s infinite;
+    }
+    @keyframes xp-shine {
+      0% { left: -100%; }
+      100% { left: 100%; }
+    }
+    .xp-info {
+      font-size: 13px;
+      color: #e6d3a3;
+      margin-top: 8px;
+      text-align: center;
+    }
+    
+    /* Quest Legend */
+    .quest-legend {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background: linear-gradient(145deg, rgba(40, 20, 40, 0.95), rgba(80, 40, 80, 0.95));
+      padding: 20px;
+      border-radius: 15px;
+      border: 3px solid #9370db;
+      box-shadow: 
+        0 0 20px rgba(147, 112, 219, 0.4),
+        inset 0 0 20px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+    .quest-legend h4 {
+      margin: 0 0 15px 0;
+      color: #9370db;
+      font-size: 14px;
+      font-family: 'MedievalSharp', cursive;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin: 8px 0;
+      font-size: 11px;
+      color: #e6d3a3;
+    }
+    .legend-color {
+      width: 18px;
+      height: 18px;
+      border-radius: 4px;
+      margin-right: 10px;
+      border: 2px solid #d4af37;
+      box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    }    .loading-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(0,0,0,0.9), rgba(20,20,40,0.9));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      font-size: 24px;
+      color: #d4af37;
+      font-family: 'MedievalSharp', cursive;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    }
+    
+    /* Task Details Panel */
+    .task-details {
+      background: linear-gradient(145deg, rgba(40, 20, 20, 0.95), rgba(80, 40, 40, 0.95));
+      border: 3px solid #dc143c;
+      box-shadow: 
+        0 0 20px rgba(220, 20, 60, 0.4),
+        inset 0 0 20px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+    }
+    .task-details h4 {
+      color: #dc143c;
+      font-family: 'MedievalSharp', cursive;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      border-bottom: 2px solid #d4af37;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+    .task-details p {
+      color: #e6d3a3;
+      line-height: 1.4;
+      margin: 8px 0;
+    }
+    .task-details button {
+      background: linear-gradient(145deg, #dc143c, #b22222);
+      color: #fff;
+      border: 2px solid #d4af37;
+      padding: 8px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: 'Cinzel', serif;
+      font-weight: 600;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+      transition: all 0.3s ease;
+    }
+    .task-details button:hover {
+      background: linear-gradient(145deg, #b22222, #8b0000);
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body>
+  <div id="network"></div>
+    <!-- Degree Info (quest journal styling) -->
+  <div class="quest-journal">
+    <h3>📖 Degree Information</h3>
+    <div class="journal-item"><strong>🎓 Program:</strong> <span id="questJourney">Loading...</span></div>
+    <div class="journal-item"><strong>📜 Major Code:</strong> <span id="questCode">-</span></div>
+    <div class="journal-item"><strong>� Degree:</strong> <span id="adventurerRank">-</span></div>
+    <div class="journal-item"><strong>🏛️ College:</strong> <span id="adventurerGuild">-</span></div>
+  </div>
+  
+  <!-- Controls (adventure controls styling) -->
+  <div class="adventure-controls">
+    <h3>⚔️ View Controls</h3>
+    <button id="expandAll">🔍 Expand All</button>
+    <button id="collapseAll">📋 Collapse All</button>
+    <button id="resetView">🗺️ Reset View</button>
+    <button id="fitNetwork">🎯 Fit to Screen</button>
+  </div>
+  
+  <!-- Progress Tracker (experience tracker styling) -->
+  <div class="experience-tracker">
+    <h4>⭐ Degree Progress</h4>
+    <div class="xp-bar">
+      <div class="xp-fill" id="xpFill" style="width: 0%;">0%</div>
+    </div>
+    <div class="xp-info" id="xpInfo">0/124 Credit Hours</div>
+  </div>
+  
+  <!-- Legend (quest legend styling) -->
+  <div class="quest-legend">
+    <h4>🏺 Block Types</h4>
+    <div class="legend-item">
+      <div class="legend-color" style="background: linear-gradient(135deg, #32cd32, #228b22);"></div>
+      <span>🌿 Core Requirements</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: linear-gradient(135deg, #4169e1, #1e90ff);"></div>
+      <span>⚔️ Major Requirements</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: linear-gradient(135deg, #ffd700, #ffb347);"></div>
+      <span>🎲 Electives</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-color" style="background: linear-gradient(135deg, #9370db, #8a2be2);"></div>
+      <span>📚 Categories</span>
+    </div>
+  </div>  <script>
+    let network, nodes, edges, degreePlan, degreeId;
+    let completedCourses = new Set();
+    let selectedCourses = new Set();
+
+    // Course status tracking
+    const courseStatus = {
+      NOT_STARTED: 'not_started',
+      IN_PROGRESS: 'in_progress', 
+      COMPLETED: 'completed',
+      LOCKED: 'locked'
+    };
+
+    function getUrlParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name);
+    }
+
+    async function loadDegreeNames() {
+      try {
+        const response = await fetch('./DegreeJSON/Codes.json');
+        if (!response.ok) return {};
+        const codes = await response.json();
+        return codes.majors || {};
+      } catch (error) {
+        console.error('Error loading degree codes:', error);
+        return {};
+      }
+    }
+
+    // CREATE THE DEGREE GRAPH WITH RPG THEME
+    function createTechTreeNodes(degreePlan) {
+      const nodes = [];
+      const edges = [];
+      let nodeId = 0;
+      
+      // Create main degree node at top center
+      nodes.push({
+        id: nodeId++,
+        label: '🏆 Degree Plan\n' + (degreePlan.title || 'Academic Program'),
+        x: 0,
+        y: -400,
+        shape: 'box',
+        color: { 
+          background: 'linear-gradient(135deg, #ffd700, #ffb347)',
+          border: '#d4af37' 
+        },
+        font: { 
+          color: '#2d1810', 
+          size: 20,
+          face: 'MedievalSharp'
+        },
+        size: 50,
+        group: 'degree',
+        borderWidth: 4,
+        shadow: {
+          enabled: true,
+          color: 'rgba(212, 175, 55, 0.6)',
+          size: 15
+        }
+      });
+      
+      // Spread blocks horizontally across the screen
+      const blockSpacing = 1200;
+      const blockY = 0;
+      
+      degreePlan.blocks.forEach((block, index) => {
+        const blockX = (index - 1) * blockSpacing;
+        
+        // Determine block type and get appropriate icon/color
+        const blockInfo = getBlockInfo(block.Title);
+        
+        // Create block node
+        const blockNode = {
+          id: nodeId++,
+          label: blockInfo.icon + ' ' + block.Title + '\n' + 
+                 block.Credits + ' Credit Hours',
+          x: blockX,
+          y: blockY,
+          shape: 'box',
+          color: { 
+            background: blockInfo.gradient,
+            border: blockInfo.border 
+          },
+          font: { 
+            color: 'white', 
+            size: 16,
+            face: 'Cinzel'
+          },
+          size: 35,
+          group: blockInfo.group,
+          isBlock: true,
+          blockIndex: index,
+          borderWidth: 3,
+          shadow: {
+            enabled: true,
+            color: blockInfo.shadowColor,
+            size: 12
+          }
+        };
+        nodes.push(blockNode);
+        
+        // Connect to main degree
+        edges.push({
+          from: 0,
+          to: blockNode.id,
+          color: { color: '#d4af37', opacity: 0.8 },
+          width: 3,
+          shadow: true,
+          smooth: { type: 'curvedCW', roundness: 0.2 }
+        });
+        
+        // Add categories nested within this block
+        nodeId = addNestedCategories(block, blockNode, blockX, nodes, edges, nodeId, index);
+      });
+      
+      return { nodes, edges };
+    }    // Add categories as nested elements within blocks
+    function addNestedCategories(block, blockNode, blockX, nodes, edges, nodeId, blockIndex) {
+      if (!block.rules) return nodeId;
+      
+      const categories = getCategories(block.rules);
+      const categorySpacing = 200;
+      const startY = 200;
+      
+      categories.forEach((category, index) => {
+        const categoryY = startY + (index * categorySpacing);
+        
+        // Create category node with parent block reference
+        const categoryNode = {
+          id: nodeId++,
+          label: '📚 ' + category.label,
+          x: blockX,
+          y: categoryY,
+          shape: 'box',
+          group: 'category',
+          size: 25,
+          parentBlock: blockNode.id,
+          isCategory: true,
+          blockIndex: blockIndex,
+          color: {
+            background: 'linear-gradient(135deg, #9370db, #8a2be2)',
+            border: '#4b0082'
+          },
+          font: { 
+            color: 'white', 
+            size: 14,
+            face: 'Cinzel'
+          },
+          borderWidth: 2,
+          shadow: {
+            enabled: true,
+            color: 'rgba(147, 112, 219, 0.4)',
+            size: 8
+          }
+        };
+        nodes.push(categoryNode);
+        
+        // Connect to parent block
+        edges.push({
+          from: blockNode.id,
+          to: categoryNode.id,
+          color: { color: '#9370db', opacity: 0.7 },
+          width: 2,
+          hidden: false,
+          smooth: { type: 'curvedCW', roundness: 0.1 }
+        });
+        
+        // Add courses nested within this category
+        nodeId = addNestedCourses(category, categoryNode, blockX, categoryY, nodes, edges, nodeId, blockIndex);
+      });
+      
+      return nodeId;
+    }
+    
+    // Add courses as nested elements within categories
+    function addNestedCourses(category, categoryNode, startX, categoryY, nodes, edges, nodeId, blockIndex) {
+      if (!category.courses) return nodeId;
+      
+      const courses = category.courses.filter(course => 
+        course.Subj && course.Num && !course.Hide
+      );
+      
+      const courseSpacing = 120;
+      const courseStartX = 200;
+      
+      courses.forEach((course, index) => {
+        const courseX = startX + courseStartX + (index * courseSpacing);
+        
+        // Get course info with credits and status
+        const courseInfo = getCourseInfo(course);
+        
+        // Create course node with parent category reference
+        const courseNode = {
+          id: nodeId++,
+          label: courseInfo.icon + ' ' + course.Subj + ' ' + course.Num,
+          x: courseX,
+          y: categoryY,
+          shape: 'box',
+          group: 'course',
+          size: 15,
+          parentCategory: categoryNode.id,
+          isCourse: true,
+          blockIndex: blockIndex,
+          courseData: course,
+          creditHours: parseInt(course.Credits) || 3,
+          status: courseStatus.NOT_STARTED,
+          color: courseInfo.color,
+          font: { 
+            color: courseInfo.fontColor, 
+            size: 12,
+            face: 'Cinzel'
+          },
+          borderWidth: 2,
+          shadow: {
+            enabled: true,
+            color: 'rgba(0, 0, 0, 0.3)',
+            size: 5
+          }
+        };
+        nodes.push(courseNode);
+        
+        // Connect to parent category
+        edges.push({
+          from: categoryNode.id,
+          to: courseNode.id,
+          color: { color: '#ccc', opacity: 0.6 },
+          width: 1,
+          hidden: false
+        });
+      });
+      
+      return nodeId;
+    }
+    
+    // Extract categories from rules
+    function getCategories(rules) {
+      const categories = [];
+      
+      rules.forEach(rule => {
+        if (rule.label && rule.courses) {
+          // Simple category with courses
+          categories.push({
+            label: rule.label,
+            courses: rule.courses
+          });
+        }
+        
+        if (rule.label && rule.rules) {
+          // Category with sub-categories
+          rule.rules.forEach(subRule => {
+            if (subRule.label && subRule.courses) {
+              categories.push({
+                label: rule.label + ': ' + subRule.label,
+                courses: subRule.courses
+              });
+            }
+          });
+        }
+      });
+      
+      return categories;
+    }
+    
+    // Get block information with RPG theming
+    function getBlockInfo(title) {
+      if (title.includes('Core') || title.includes('General')) {
+        return {
+          icon: '🌿',
+          gradient: 'linear-gradient(135deg, #32cd32, #228b22)',
+          border: '#006400',
+          shadowColor: 'rgba(50, 205, 50, 0.4)',
+          group: 'coreBlock'
+        };
+      }
+      if (title.includes('Major')) {
+        return {
+          icon: '⚔️',
+          gradient: 'linear-gradient(135deg, #4169e1, #1e90ff)',
+          border: '#0000cd',
+          shadowColor: 'rgba(65, 105, 225, 0.4)',
+          group: 'majorBlock'
+        };
+      }
+      if (title.includes('Elective') || title.includes('Minor')) {
+        return {
+          icon: '🎲',
+          gradient: 'linear-gradient(135deg, #ffd700, #ffb347)',
+          border: '#ff8c00',
+          shadowColor: 'rgba(255, 215, 0, 0.4)',
+          group: 'electiveBlock'
+        };
+      }
+      return {
+        icon: '🔮',
+        gradient: 'linear-gradient(135deg, #6a5acd, #483d8b)',
+        border: '#2f2f4f',
+        shadowColor: 'rgba(106, 90, 205, 0.4)',
+        group: 'otherBlock'
+      };
+    }
+
+    // Get course information with status indicators
+    function getCourseInfo(course) {
+      const credits = parseInt(course.Credits) || 3;
+      
+      return {
+        icon: getCourseIcon(course),
+        color: {
+          background: 'linear-gradient(135deg, #f8f9fa, #e9ecef)',
+          border: '#6c757d'
+        },
+        fontColor: '#2d3436',
+        creditHours: credits
+      };
+    }
+
+    // Get appropriate icon for course type
+    function getCourseIcon(course) {
+      const subj = (course.Subj || '').toLowerCase();
+      
+      if (subj.includes('math')) return '🧮';
+      if (subj.includes('cs') || subj.includes('comp')) return '💻';
+      if (subj.includes('eng') || subj.includes('writ')) return '✍️';
+      if (subj.includes('sci') || subj.includes('bio') || subj.includes('chem')) return '🔬';
+      if (subj.includes('hist') || subj.includes('phil')) return '📜';
+      if (subj.includes('art') || subj.includes('mus')) return '🎨';
+      if (subj.includes('phys') || subj.includes('stat')) return '📊';
+      if (subj.includes('lang') || subj.includes('span') || subj.includes('fren')) return '🗣️';
+      
+      return '📝'; // Default course icon
+    }    // HIERARCHICAL CLUSTERING FOR NESTED VISUALIZATION
+    function setupHierarchicalClustering() {
+      // Auto-cluster courses within categories
+      clusterCoursesByCategory();
+    }
+
+    function clusterCoursesByCategory() {
+      const allNodes = nodes.get();
+      const categories = allNodes.filter(node => node.isCategory);
+      
+      categories.forEach(category => {
+        const coursesInCategory = allNodes.filter(node => 
+          node.isCourse && node.parentCategory === category.id
+        );
+        
+        if (coursesInCategory.length > 2) { // Only cluster if multiple courses
+          const clusterOptionsByData = {
+            joinCondition: function(childOptions) {
+              return childOptions.parentCategory === category.id && childOptions.isCourse;
+            },
+            clusterNodeProperties: {
+              id: `course_cluster_${category.id}`,
+              label: `📋 ${category.label}\n(${coursesInCategory.length} courses)`,
+              shape: 'box',
+              color: { 
+                background: 'linear-gradient(135deg, rgba(147, 112, 219, 0.9), rgba(138, 43, 226, 0.9))', 
+                border: '#4b0082' 
+              },
+              font: { color: 'white', size: 14, face: 'Cinzel' },
+              borderWidth: 3,
+              mass: 3,
+              isCluster: true,
+              parentCategory: category.id,
+              x: category.x + 200,
+              y: category.y,
+              shadow: {
+                enabled: true,
+                color: 'rgba(147, 112, 219, 0.5)',
+                size: 10
+              }
+            }
+          };
+          
+          network.cluster(clusterOptionsByData);
+        }
+      });
+    }
+
+    // INTERACTIVE COURSE HANDLERS
+    function handleNodeSelection(params) {
+      if (params.nodes.length > 0) {
+        const nodeId = params.nodes[0];
+        const node = nodes.get(nodeId);
+        
+        if (node && node.isCourse) {
+          // Show course details in panel
+          showCourseDetails(node);
+        }
+      }
+    }
+
+    function handleNodeDoubleClick(params) {
+      if (params.nodes.length > 0) {
+        const nodeId = params.nodes[0];
+        
+        // Check if it's a cluster - if so, expand/collapse it
+        if (network.isCluster(nodeId)) {
+          network.openCluster(nodeId);
+        } else {
+          // Check if we can cluster around this node
+          const node = nodes.get(nodeId);
+          if (node && node.isCategory) {
+            clusterAroundNode(nodeId);
+          } else if (node && node.isCourse) {
+            completeCourse(node);
+          }
+        }
+      }
+    }
+
+    function clusterAroundNode(nodeId) {
+      const node = nodes.get(nodeId);
+      if (!node) return;
+      
+      if (node.isCategory) {
+        // Cluster all courses in this category
+        const clusterOptions = {
+          joinCondition: function(childOptions) {
+            return childOptions.parentCategory === nodeId && childOptions.isCourse;
+          },
+          clusterNodeProperties: {
+            id: `manual_cluster_${nodeId}`,
+            label: `📚 ${node.label}\n(Grouped)`,
+            shape: 'box',
+            color: { 
+              background: 'linear-gradient(135deg, rgba(147, 112, 219, 0.95), rgba(138, 43, 226, 0.95))', 
+              border: '#4b0082' 
+            },
+            font: { color: 'white', size: 14, face: 'Cinzel' },
+            borderWidth: 3,
+            isCluster: true
+          }
+        };
+        network.cluster(clusterOptions);
+      }
+    }
+
+    function completeCourse(courseNode) {
+      if (!courseNode.isCourse) return;
+      
+      // Mark course as completed
+      courseNode.status = courseStatus.COMPLETED;
+      selectedCourses.add(courseNode.id);
+      
+      // Update visual appearance
+      const updates = [{
+        id: courseNode.id,
+        color: {
+          background: 'linear-gradient(135deg, #32cd32, #228b22)',
+          border: '#006400'
+        },
+        font: { color: 'white' },
+        label: '✅ ' + courseNode.courseData.Subj + ' ' + courseNode.courseData.Num
+      }];
+      
+      nodes.update(updates);
+      
+      // Update progress
+      updateDegreeProgress();
+    }
+
+    function showCourseDetails(node) {
+      if (!node.courseData) return;
+      
+      // Create or update a course details panel
+      let detailsPanel = document.getElementById('courseDetails');
+      if (!detailsPanel) {
+        detailsPanel = document.createElement('div');
+        detailsPanel.id = 'courseDetails';
+        detailsPanel.className = 'task-details';
+        detailsPanel.style.cssText = `
+          position: absolute;
+          bottom: 220px;
+          left: 20px;
+          padding: 20px;
+          border-radius: 15px;
+          max-width: 350px;
+          z-index: 1001;
+        `;
+        document.body.appendChild(detailsPanel);
+      }
+      
+      const course = node.courseData;
+      const credits = node.creditHours || 3;
+      const status = node.status === courseStatus.COMPLETED ? '✅ Completed' : '⏳ Available';
+      
+      detailsPanel.innerHTML = `
+        <h4>${getCourseIcon(course)} ${course.Subj} ${course.Num}</h4>
+        <p><strong>📋 Course Title:</strong> ${course.Title || 'Course'}</p>
+        <p><strong>⭐ Credit Hours:</strong> ${credits}</p>
+        <p><strong>🎯 Status:</strong> ${status}</p>
+        <p><strong>📖 Description:</strong> ${course.Desc || 'An important course in your academic journey. Complete this to earn credit hours toward your degree.'}</p>
+        <button onclick="this.parentElement.style.display='none'">🚪 Close</button>
+        ${node.status !== courseStatus.COMPLETED ? 
+          `<button onclick="completeCourseById('${node.id}')">✅ Mark Complete</button>` : 
+          ''}
+      `;
+    }
+
+    // Global function for completing courses
+    window.completeCourseById = function(nodeId) {
+      const node = nodes.get(nodeId);
+      if (node) {
+        completeCourse(node);
+        document.getElementById('courseDetails').style.display = 'none';
+      }
+    };
+
+    function updateDegreeInfo(degreePlan, degreeId, degreeNames) {
+      const degreeInfo = degreeNames[degreeId];
+      const programName = degreeInfo ? degreeInfo.name : 'Unknown Program';
+      const degreeType = degreeInfo ? degreeInfo.degree : (degreePlan.degree || 'Degree');
+      const college = degreeInfo ? degreeInfo.college : 'College';
+
+      document.getElementById('questJourney').textContent = programName;
+      document.getElementById('questCode').textContent = degreeId;
+      document.getElementById('adventurerRank').textContent = degreeType;
+      document.getElementById('adventurerGuild').textContent = college;
+
+      updateDegreeProgress();
+    }
+
+    function updateDegreeProgress() {
+      // Calculate total available credits and earned credits
+      const allCourses = nodes.get().filter(node => node.isCourse);
+      const totalCredits = allCourses.reduce((sum, course) => sum + (course.creditHours || 3), 0);
+      const earnedCredits = allCourses.filter(course => selectedCourses.has(course.id))
+                                    .reduce((sum, course) => sum + (course.creditHours || 3), 0);
+      
+      const progressPercent = totalCredits > 0 ? Math.round((earnedCredits / totalCredits) * 100) : 0;
+
+      document.getElementById('xpFill').style.width = `${progressPercent}%`;
+      document.getElementById('xpFill').textContent = `${progressPercent}%`;
+      document.getElementById('xpInfo').textContent = `${earnedCredits}/${totalCredits} Credit Hours (${progressPercent}% Complete)`;
+    }    function setupEventHandlers() {
+      document.getElementById('expandAll').addEventListener('click', () => {
+        expandAllClusters();
+      });
+
+      document.getElementById('collapseAll').addEventListener('click', () => {
+        collapseAllCategories();
+      });
+
+      document.getElementById('resetView').addEventListener('click', () => {
+        network.fit();
+      });
+
+      document.getElementById('fitNetwork').addEventListener('click', () => {
+        network.fit();
+      });
+    }
+
+    function expandAllClusters() {
+      // Get all cluster node IDs
+      const clusterNodes = nodes.get().filter(node => node.isCluster);
+      
+      // Open all clusters
+      clusterNodes.forEach(cluster => {
+        if (network.isCluster(cluster.id)) {
+          network.openCluster(cluster.id);
+        }
+      });
+      
+      // Also manually expand any clustered nodes
+      network.body.data.nodes.forEach((node, nodeId) => {
+        if (network.isCluster(nodeId)) {
+          network.openCluster(nodeId);
+        }
+      });
+    }
+
+    function collapseAllCategories() {
+      // Re-setup clustering to collapse everything
+      setupHierarchicalClustering();
+    }
+
+    async function initializeTechTree() {
+      const loadingDiv = document.createElement('div');
+      loadingDiv.className = 'loading-overlay';
+      loadingDiv.textContent = '🗡️ Loading Degree Plan...';
+      document.body.appendChild(loadingDiv);
+
+      try {
+        degreeId = getUrlParameter('id') || '5040';
+        
+        const response = await fetch(`./DegreeJSON/${degreeId}.json`);
+        if (!response.ok) {
+          throw new Error(`Failed to load degree plan for ID: ${degreeId}`);
+        }
+        
+        degreePlan = await response.json();
+        const degreeNames = await loadDegreeNames();
+        
+        // Create degree network data
+        const { nodes: nodeData, edges: edgeData } = createTechTreeNodes(degreePlan);
+        nodes = new vis.DataSet(nodeData);
+        edges = new vis.DataSet(edgeData);
+        
+        // Network options with fantasy/RPG styling
+        const options = {
+          nodes: {
+            borderWidth: 2,
+            shadow: {
+              enabled: true,
+              color: 'rgba(0,0,0,0.4)',
+              size: 12,
+              x: 3,
+              y: 3
+            }
+          },
+          edges: {
+            width: 2,
+            shadow: {
+              enabled: true,
+              color: 'rgba(0,0,0,0.3)',
+              size: 8
+            },
+            smooth: {
+              enabled: true,
+              type: 'curvedCW',
+              roundness: 0.2
+            }
+          },
+          physics: {
+            enabled: false
+          },
+          interaction: {
+            dragNodes: true,
+            dragView: true,
+            zoomView: true,
+            hover: true
+          },
+          groups: {
+            coreBlock: {
+              color: { background: 'linear-gradient(135deg, #32cd32, #228b22)', border: '#006400' },
+              font: { color: 'white', face: 'Cinzel' }
+            },
+            majorBlock: {
+              color: { background: 'linear-gradient(135deg, #4169e1, #1e90ff)', border: '#0000cd' },
+              font: { color: 'white', face: 'Cinzel' }
+            },
+            electiveBlock: {
+              color: { background: 'linear-gradient(135deg, #ffd700, #ffb347)', border: '#ff8c00' },
+              font: { color: '#2d1810', face: 'Cinzel' }
+            },
+            category: {
+              color: { background: 'linear-gradient(135deg, #9370db, #8a2be2)', border: '#4b0082' },
+              font: { color: 'white', face: 'Cinzel' }
+            },
+            course: {
+              color: { background: 'linear-gradient(135deg, #f8f9fa, #e9ecef)', border: '#6c757d' },
+              font: { color: '#2d3436', face: 'Cinzel' }
+            }
+          }
+        };
+
+        // Initialize network
+        const container = document.getElementById('network');
+        network = new vis.Network(container, { nodes, edges }, options);
+
+        // Set up hierarchical clustering for nested visualization
+        setupHierarchicalClustering();
+
+        // Network event handlers for course interactions
+        network.on("selectNode", function (params) {
+          handleNodeSelection(params);
+        });
+
+        network.on("doubleClick", function (params) {
+          handleNodeDoubleClick(params);
+        });
+
+        // Hover effects for immersion
+        network.on("hoverNode", function (params) {
+          const node = nodes.get(params.node);
+          if (node && node.isCourse) {
+            network.canvas.body.container.style.cursor = 'pointer';
+          }
+        });
+
+        network.on("blurNode", function (params) {
+          network.canvas.body.container.style.cursor = 'default';
+        });
+
+        // Update UI
+        updateDegreeInfo(degreePlan, degreeId, degreeNames);
+        setupEventHandlers();
+
+        // Remove loading
+        document.body.removeChild(loadingDiv);
+
+        // Fit the network with some drama
+        setTimeout(() => {
+          network.fit({
+            animation: {
+              duration: 1500,
+              easingFunction: 'easeInOutQuad'
+            }
+          });
+        }, 500);
+
+      } catch (error) {
+        console.error('Error initializing degree plan:', error);
+        loadingDiv.textContent = `💀 Loading Failed: ${error.message}`;
+        loadingDiv.style.color = '#dc143c';
+      }
+    }
+
+    // Initialize when page loads
+    window.addEventListener('load', initializeTechTree);
+  </script>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Nested Graphs with vis.js</title>
+  <script type="text/javascript" src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+  <link href="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.css" rel="stylesheet" />
+  <style>
+    body { 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: #fff; 
+      margin: 0;
+      padding: 20px;
+    }
+    .demo-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .demo-section {
+      flex: 1;
+      min-width: 300px;
+      background: rgba(0,0,0,0.3);
+      border-radius: 10px;
+      padding: 20px;
+      border: 2px solid #4a90e2;
+    }
+    .demo-section h3 {
+      color: #4a90e2;
+      margin-top: 0;
+    }
+    .network-container {
+      width: 100%;
+      height: 400px;
+      border: 2px solid #666;
+      border-radius: 8px;
+      background: #000;
+    }
+    .controls {
+      margin: 10px 0;
+    }
+    .controls button {
+      background: linear-gradient(135deg, #4a90e2, #357abd);
+      color: #fff;
+      border: none;
+      padding: 8px 15px;
+      margin: 3px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .controls button:hover {
+      background: linear-gradient(135deg, #357abd, #2968a3);
+    }
+    .info {
+      font-size: 12px;
+      color: #ccc;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Advanced Nested Graph Techniques with vis.js</h1>
+  
+  <div class="demo-container">
+    
+    <!-- DEMO 1: Hierarchical Clustering -->
+    <div class="demo-section">
+      <h3>1. Hierarchical Clustering</h3>
+      <div class="info">Nodes automatically group into expandable containers. Double-click clusters to expand/collapse.</div>
+      <div id="network1" class="network-container"></div>
+      <div class="controls">
+        <button onclick="expandAll1()">Expand All</button>
+        <button onclick="collapseAll1()">Collapse All</button>
+        <button onclick="fit1()">Fit View</button>
+      </div>
+    </div>
+    
+    <!-- DEMO 2: Visual Containment -->
+    <div class="demo-section">
+      <h3>2. Visual Containment</h3>
+      <div class="info">Nodes visually positioned inside "container" nodes with background areas.</div>
+      <div id="network2" class="network-container"></div>
+      <div class="controls">
+        <button onclick="toggleContainers()">Toggle Containers</button>
+        <button onclick="fit2()">Fit View</button>
+      </div>
+    </div>
+    
+    <!-- DEMO 3: Subgraph Groups -->
+    <div class="demo-section">
+      <h3>3. Subgraph Groups</h3>
+      <div class="info">Different layouts within the same network using groups and physics settings.</div>
+      <div id="network3" class="network-container"></div>
+      <div class="controls">
+        <button onclick="changeLayout()">Change Layout</button>
+        <button onclick="fit3()">Fit View</button>
+      </div>
+    </div>
+    
+    <!-- DEMO 4: Nested Interactive Areas -->
+    <div class="demo-section">
+      <h3>4. Multi-Level Zoom</h3>
+      <div class="info">Different detail levels appear at different zoom levels.</div>
+      <div id="network4" class="network-container"></div>
+      <div class="controls">
+        <button onclick="zoomToArea('block1')">Zoom to Block 1</button>
+        <button onclick="zoomToArea('block2')">Zoom to Block 2</button>
+        <button onclick="fit4()">Zoom Out</button>
+      </div>
+    </div>
+    
+  </div>
+
+  <script>
+    let networks = {};
+    
+    // DEMO 1: Hierarchical Clustering
+    function initDemo1() {
+      const nodes = new vis.DataSet([
+        // Container nodes
+        {id: 1, label: 'Computer Science', x: 0, y: 0, group: 'major', mass: 5},
+        {id: 2, label: 'Math Requirements', x: -300, y: 200, group: 'requirement', mass: 3},
+        {id: 3, label: 'Core Courses', x: 300, y: 200, group: 'requirement', mass: 3},
+        
+        // Math courses
+        {id: 10, label: 'MATH 1110', x: -400, y: 300, group: 'math-course', category: 'math'},
+        {id: 11, label: 'MATH 1120', x: -300, y: 300, group: 'math-course', category: 'math'},
+        {id: 12, label: 'MATH 2110', x: -200, y: 300, group: 'math-course', category: 'math'},
+        
+        // CS courses  
+        {id: 20, label: 'CS 1100', x: 200, y: 300, group: 'cs-course', category: 'core'},
+        {id: 21, label: 'CS 2100', x: 300, y: 300, group: 'cs-course', category: 'core'},
+        {id: 22, label: 'CS 3100', x: 400, y: 300, group: 'cs-course', category: 'core'},
+      ]);
+      
+      const edges = new vis.DataSet([
+        {from: 1, to: 2}, {from: 1, to: 3},
+        {from: 2, to: 10}, {from: 2, to: 11}, {from: 2, to: 12},
+        {from: 3, to: 20}, {from: 3, to: 21}, {from: 3, to: 22},
+        {from: 10, to: 11}, {from: 11, to: 12},
+        {from: 20, to: 21}, {from: 21, to: 22}
+      ]);
+      
+      const options = {
+        groups: {
+          'major': {color: '#ff6b6b', shape: 'box', font: {size: 20}},
+          'requirement': {color: '#4ecdc4', shape: 'box', font: {size: 16}},
+          'math-course': {color: '#45b7d1', shape: 'ellipse'},
+          'cs-course': {color: '#96ceb4', shape: 'ellipse'}
+        },
+        physics: false
+      };
+      
+      networks.demo1 = new vis.Network(document.getElementById('network1'), {nodes, edges}, options);
+      
+      // Auto-cluster math courses
+      setTimeout(() => {
+        networks.demo1.cluster({
+          joinCondition: (node) => node.category === 'math',
+          clusterNodeProperties: {
+            id: 'math-cluster',
+            label: 'Math Courses\n(3 courses)',
+            color: '#45b7d1',
+            shape: 'box',
+            font: {size: 16, color: 'white'}
+          }
+        });
+      }, 500);
+      
+      // Double-click to expand clusters
+      networks.demo1.on('doubleClick', (params) => {
+        if (params.nodes.length > 0) {
+          const nodeId = params.nodes[0];
+          if (networks.demo1.isCluster(nodeId)) {
+            networks.demo1.openCluster(nodeId);
+          }
+        }
+      });
+    }
+    
+    // DEMO 2: Visual Containment using SVG backgrounds
+    function initDemo2() {
+      const nodes = new vis.DataSet([
+        // Container with custom shape that shows containment
+        {
+          id: 1, 
+          label: '', 
+          x: 0, y: 0,
+          shape: 'image',
+          image: createContainerSVG(400, 200, 'Major Requirements'),
+          size: 50,
+          mass: 10
+        },
+        
+        // Contained nodes
+        {id: 10, label: 'Course A', x: -80, y: -30, group: 'contained'},
+        {id: 11, label: 'Course B', x: 0, y: -30, group: 'contained'},
+        {id: 12, label: 'Course C', x: 80, y: -30, group: 'contained'},
+        {id: 13, label: 'Course D', x: -40, y: 30, group: 'contained'},
+        {id: 14, label: 'Course E', x: 40, y: 30, group: 'contained'},
+        
+        // External node
+        {id: 20, label: 'Prerequisites', x: -300, y: 0, group: 'external'}
+      ]);
+      
+      const edges = new vis.DataSet([
+        {from: 20, to: 10},
+        {from: 10, to: 11}, {from: 11, to: 12},
+        {from: 10, to: 13}, {from: 11, to: 14}
+      ]);
+      
+      const options = {
+        groups: {
+          'contained': {color: '#fff', borderWidth: 2, shadow: true},
+          'external': {color: '#ff6b6b', shape: 'box'}
+        },
+        physics: false
+      };
+      
+      networks.demo2 = new vis.Network(document.getElementById('network2'), {nodes, edges}, options);
+    }
+    
+    // DEMO 3: Multiple subgraphs with different layouts
+    function initDemo3() {
+      const nodes = new vis.DataSet([
+        // Subgraph 1: Hierarchical tree
+        {id: 1, label: 'Root', x: -200, y: -100, group: 'tree'},
+        {id: 2, label: 'Branch A', x: -300, y: 0, group: 'tree'},
+        {id: 3, label: 'Branch B', x: -100, y: 0, group: 'tree'},
+        {id: 4, label: 'Leaf 1', x: -350, y: 100, group: 'tree'},
+        {id: 5, label: 'Leaf 2', x: -250, y: 100, group: 'tree'},
+        
+        // Subgraph 2: Circular layout
+        {id: 10, label: 'Center', x: 200, y: 0, group: 'circular'},
+        {id: 11, label: 'Node 1', x: 300, y: -50, group: 'circular'},
+        {id: 12, label: 'Node 2', x: 250, y: 50, group: 'circular'},
+        {id: 13, label: 'Node 3', x: 150, y: 50, group: 'circular'},
+        {id: 14, label: 'Node 4', x: 150, y: -50, group: 'circular'},
+        
+        // Bridge node
+        {id: 99, label: 'Bridge', x: 0, y: 0, group: 'bridge'}
+      ]);
+      
+      const edges = new vis.DataSet([
+        // Tree connections
+        {from: 1, to: 2}, {from: 1, to: 3},
+        {from: 2, to: 4}, {from: 2, to: 5},
+        
+        // Circular connections
+        {from: 10, to: 11}, {from: 10, to: 12}, {from: 10, to: 13}, {from: 10, to: 14},
+        {from: 11, to: 12}, {from: 12, to: 13}, {from: 13, to: 14}, {from: 14, to: 11},
+        
+        // Bridge
+        {from: 3, to: 99}, {from: 99, to: 10}
+      ]);
+      
+      const options = {
+        groups: {
+          'tree': {color: '#4ecdc4', shape: 'box'},
+          'circular': {color: '#45b7d1', shape: 'dot', size: 20},
+          'bridge': {color: '#ff6b6b', shape: 'diamond', size: 30}
+        },
+        physics: false
+      };
+      
+      networks.demo3 = new vis.Network(document.getElementById('network3'), {nodes, edges}, options);
+    }
+    
+    // DEMO 4: Multi-level zoom with detail on demand
+    function initDemo4() {
+      const nodes = new vis.DataSet([
+        // High-level blocks
+        {id: 'block1', label: 'Block 1', x: -200, y: 0, group: 'block', area: 'block1'},
+        {id: 'block2', label: 'Block 2', x: 200, y: 0, group: 'block', area: 'block2'},
+        
+        // Block 1 details (initially hidden)
+        {id: 'b1c1', label: 'Category 1.1', x: -300, y: -100, group: 'category', area: 'block1', hidden: true},
+        {id: 'b1c2', label: 'Category 1.2', x: -100, y: -100, group: 'category', area: 'block1', hidden: true},
+        {id: 'b1course1', label: 'Course 1.1.1', x: -350, y: -150, group: 'course', area: 'block1', hidden: true},
+        {id: 'b1course2', label: 'Course 1.1.2', x: -250, y: -150, group: 'course', area: 'block1', hidden: true},
+        
+        // Block 2 details (initially hidden)
+        {id: 'b2c1', label: 'Category 2.1', x: 100, y: -100, group: 'category', area: 'block2', hidden: true},
+        {id: 'b2c2', label: 'Category 2.2', x: 300, y: -100, group: 'category', area: 'block2', hidden: true},
+        {id: 'b2course1', label: 'Course 2.1.1', x: 50, y: -150, group: 'course', area: 'block2', hidden: true},
+        {id: 'b2course2', label: 'Course 2.1.2', x: 150, y: -150, group: 'course', area: 'block2', hidden: true}
+      ]);
+      
+      const edges = new vis.DataSet([
+        // High level
+        {from: 'block1', to: 'block2'},
+        
+        // Block 1 internal
+        {from: 'block1', to: 'b1c1', hidden: true},
+        {from: 'block1', to: 'b1c2', hidden: true},
+        {from: 'b1c1', to: 'b1course1', hidden: true},
+        {from: 'b1c1', to: 'b1course2', hidden: true},
+        
+        // Block 2 internal
+        {from: 'block2', to: 'b2c1', hidden: true},
+        {from: 'block2', to: 'b2c2', hidden: true},
+        {from: 'b2c1', to: 'b2course1', hidden: true},
+        {from: 'b2c1', to: 'b2course2', hidden: true}
+      ]);
+      
+      const options = {
+        groups: {
+          'block': {color: '#ff6b6b', shape: 'box', font: {size: 20}, size: 40},
+          'category': {color: '#4ecdc4', shape: 'box', font: {size: 16}, size: 30},
+          'course': {color: '#45b7d1', shape: 'ellipse', size: 20}
+        },
+        physics: false
+      };
+      
+      networks.demo4 = new vis.Network(document.getElementById('network4'), {nodes, edges}, options);
+      
+      // Store original data for toggling
+      networks.demo4.originalNodes = nodes;
+      networks.demo4.originalEdges = edges;
+    }
+    
+    // Helper function to create container SVG
+    function createContainerSVG(width, height, title) {
+      const svg = `
+        <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
+          <rect x="5" y="5" width="${width-10}" height="${height-10}" 
+                fill="rgba(74, 144, 226, 0.2)" stroke="#4a90e2" stroke-width="3" 
+                stroke-dasharray="10,5" rx="15"/>
+          <text x="${width/2}" y="25" text-anchor="middle" fill="#4a90e2" 
+                font-family="Arial" font-size="16" font-weight="bold">${title}</text>
+        </svg>
+      `;
+      return 'data:image/svg+xml;base64,' + btoa(svg);
+    }
+    
+    // Control functions
+    function expandAll1() {
+      const allNodes = networks.demo1.body.data.nodes;
+      allNodes.forEach((node, nodeId) => {
+        if (networks.demo1.isCluster(nodeId)) {
+          networks.demo1.openCluster(nodeId);
+        }
+      });
+    }
+    
+    function collapseAll1() {
+      // Re-cluster math courses
+      setTimeout(() => {
+        networks.demo1.cluster({
+          joinCondition: (node) => node.category === 'math',
+          clusterNodeProperties: {
+            id: 'math-cluster-2',
+            label: 'Math Courses\n(3 courses)',
+            color: '#45b7d1',
+            shape: 'box',
+            font: {size: 16, color: 'white'}
+          }
+        });
+      }, 100);
+    }
+    
+    function fit1() { networks.demo1.fit(); }
+    function fit2() { networks.demo2.fit(); }
+    function fit3() { networks.demo3.fit(); }
+    function fit4() { networks.demo4.fit(); }
+    
+    function toggleContainers() {
+      // This would toggle visibility of container backgrounds
+      // Implementation depends on specific needs
+    }
+    
+    function changeLayout() {
+      // Animate to different positions
+      networks.demo3.moveNode(10, 200, -100);
+      networks.demo3.moveNode(11, 300, -100);
+      networks.demo3.moveNode(12, 300, 0);
+      networks.demo3.moveNode(13, 200, 100);
+      networks.demo3.moveNode(14, 100, 0);
+    }
+    
+    function zoomToArea(area) {
+      const nodes = networks.demo4.originalNodes.get();
+      const areaNodes = nodes.filter(node => node.area === area);
+      
+      // Show/hide nodes based on area
+      const updates = nodes.map(node => ({
+        ...node,
+        hidden: node.area && node.area !== area
+      }));
+      
+      const edgeUpdates = networks.demo4.originalEdges.get().map(edge => ({
+        ...edge,
+        hidden: edge.hidden && area !== 'all'
+      }));
+      
+      networks.demo4.setData({
+        nodes: new vis.DataSet(updates),
+        edges: new vis.DataSet(edgeUpdates)
+      });
+      
+      // Focus on the area
+      if (areaNodes.length > 0) {
+        const avgX = areaNodes.reduce((sum, node) => sum + node.x, 0) / areaNodes.length;
+        const avgY = areaNodes.reduce((sum, node) => sum + node.y, 0) / areaNodes.length;
+        
+        networks.demo4.moveTo({
+          position: {x: avgX, y: avgY},
+          scale: 1.5,
+          animation: {duration: 1000}
+        });
+      }
+    }
+    
+    // Initialize all demos
+    window.addEventListener('load', () => {
+      initDemo1();
+      initDemo2();
+      initDemo3();
+      initDemo4();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💻 Computer Science Core Requirements</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    .dashboard-container {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      grid-template-rows: auto 1fr;
+      grid-template-areas: 
+        "sidebar header"
+        "sidebar main";
+      min-height: 100vh;
+      gap: 0;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      grid-area: sidebar;
+      background: rgba(44, 62, 80, 0.95);
+      backdrop-filter: blur(10px);
+      color: white;
+      padding: 30px 20px;
+      overflow-y: auto;
+    }
+
+    .student-info {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .student-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(45deg, #3498db, #2980b9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      font-size: 32px;
+      color: white;
+    }
+
+    .student-name {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .student-id {
+      color: #bdc3c7;
+      font-size: 12px;
+    }
+
+    .degree-info {
+      margin-bottom: 30px;
+    }
+
+    .degree-info h3 {
+      font-size: 16px;
+      margin-bottom: 15px;
+      color: #ecf0f1;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+    }
+
+    .info-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .info-label {
+      color: #bdc3c7;
+    }
+
+    .info-value {
+      color: #ecf0f1;
+      font-weight: 500;
+    }
+
+    .overall-progress {
+      margin-bottom: 30px;
+    }
+
+    .progress-circle {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      margin: 20px auto;
+    }
+
+    .progress-circle svg {
+      transform: rotate(-90deg);
+      width: 100%;
+      height: 100%;
+    }
+
+    .progress-circle-bg {
+      fill: none;
+      stroke: rgba(255, 255, 255, 0.2);
+      stroke-width: 8;
+    }
+
+    .progress-circle-fill {
+      fill: none;
+      stroke: #3498db;
+      stroke-width: 8;
+      stroke-linecap: round;
+      stroke-dasharray: 314;
+      stroke-dashoffset: 314;
+      animation: progress-animation 2s ease-out forwards;
+    }
+
+    @keyframes progress-animation {
+      to {
+        stroke-dashoffset: calc(314 - (314 * var(--progress)) / 100);
+      }
+    }
+
+    .progress-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .progress-percentage {
+      font-size: 24px;
+      font-weight: bold;
+      color: #3498db;
+    }
+
+    .progress-label {
+      font-size: 12px;
+      color: #bdc3c7;
+    }
+
+    .quick-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .stat-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 20px;
+      font-weight: bold;
+      color: #3498db;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      color: #bdc3c7;
+      margin-top: 5px;
+    }
+
+    /* Header */
+    .header {
+      grid-area: header;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 20px 30px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      color: #3498db;
+      margin-bottom: 15px;
+    }
+
+    .breadcrumb a {
+      color: #3498db;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .breadcrumb a:hover {
+      color: #2980b9;
+    }
+
+    .header h1 {
+      font-size: 28px;
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+
+    .header .subtitle {
+      color: #7f8c8d;
+      font-size: 14px;
+    }
+
+    /* Main Content */
+    .main-content {
+      grid-area: main;
+      padding: 30px;
+      overflow-y: auto;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+    }
+
+    .category-overview {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-left: 5px solid #e74c3c;
+    }
+
+    .category-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      margin-bottom: 25px;
+    }
+
+    .stat-box {
+      background: linear-gradient(135deg, #e74c3c, #c0392b);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .stat-box-number {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .stat-box-label {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+
+    .progress-bar-container {
+      background: #ecf0f1;
+      height: 12px;
+      border-radius: 6px;
+      overflow: hidden;
+      margin: 15px 0;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #e74c3c, #c0392b);
+      border-radius: 6px;
+      transition: width 1.5s ease;
+    }
+
+    .progress-text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 25px;
+    }
+
+    .course-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .course-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #ecf0f1;
+    }
+
+    .course-status-icon {
+      font-size: 24px;
+      margin-right: 15px;
+      padding: 12px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .completed .course-status-icon { 
+      background: linear-gradient(135deg, #27ae60, #2ecc71); 
+    }
+
+    .in-progress .course-status-icon { 
+      background: linear-gradient(135deg, #f39c12, #e67e22); 
+    }
+
+    .not-started .course-status-icon { 
+      background: linear-gradient(135deg, #e74c3c, #c0392b); 
+    }
+
+    .course-info {
+      flex: 1;
+    }
+
+    .course-code {
+      font-size: 18px;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+
+    .course-title {
+      font-size: 16px;
+      color: #7f8c8d;
+      margin-bottom: 10px;
+    }
+
+    .course-credits {
+      font-size: 14px;
+      font-weight: 500;
+      color: #e74c3c;
+    }
+
+    .course-status-badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-left: auto;
+    }
+
+    .completed .course-status-badge {
+      background: #d5edda;
+      color: #155724;
+    }
+
+    .in-progress .course-status-badge {
+      background: #fff3cd;
+      color: #856404;
+    }
+
+    .not-started .course-status-badge {
+      background: #f8d7da;
+      color: #721c24;
+    }
+
+    .course-details {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #ecf0f1;
+    }
+
+    .detail-item {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .detail-label {
+      font-weight: 600;
+      color: #2c3e50;
+      margin-right: 10px;
+    }
+
+    .detail-value {
+      color: #7f8c8d;
+    }
+
+    .prerequisites {
+      background: rgba(231, 76, 60, 0.1);
+      padding: 10px;
+      border-radius: 8px;
+      border-left: 3px solid #e74c3c;
+      margin-top: 10px;
+    }
+
+    .course-sequence {
+      margin-top: 30px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .sequence-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .sequence-title i {
+      margin-right: 10px;
+      color: #e74c3c;
+    }
+
+    .sequence-flow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .sequence-course {
+      background: rgba(231, 76, 60, 0.1);
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: 2px solid #e74c3c;
+      font-weight: 600;
+      color: #2c3e50;
+      font-size: 14px;
+    }
+
+    .sequence-course.completed {
+      background: rgba(39, 174, 96, 0.1);
+      border-color: #27ae60;
+      color: #27ae60;
+    }
+
+    .sequence-arrow {
+      font-size: 18px;
+      color: #7f8c8d;
+    }
+
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      background: linear-gradient(135deg, #3498db, #2980b9);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      margin-top: 30px;
+    }
+
+    .back-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+    }
+
+    .back-button i {
+      margin-right: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .dashboard-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+          "header"
+          "main";
+      }
+      
+      .sidebar {
+        display: none;
+      }
+      
+      .courses-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .category-stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .sequence-flow {
+        flex-direction: column;
+      }
+
+      .sequence-arrow {
+        transform: rotate(90deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="student-info">
+        <div class="student-avatar">
+          <i class="fas fa-user-graduate"></i>
+        </div>
+        <div class="student-name">Alex Thompson</div>
+        <div class="student-id">ID: ST2025001</div>
+      </div>
+
+      <div class="degree-info">
+        <h3><i class="fas fa-graduation-cap"></i> Degree Information</h3>
+        <div class="info-item">
+          <span class="info-label">Program:</span>
+          <span class="info-value">Computer Science</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Degree:</span>
+          <span class="info-value">Bachelor of Science</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Expected Graduation:</span>
+          <span class="info-value">May 2026</span>
+        </div>
+      </div>
+
+      <div class="overall-progress">
+        <h3><i class="fas fa-chart-pie"></i> Overall Progress</h3>
+        <div class="progress-circle">
+          <svg>
+            <circle class="progress-circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="progress-circle-fill" cx="60" cy="60" r="50" style="--progress: 68"></circle>
+          </svg>
+          <div class="progress-text">
+            <div class="progress-percentage">68%</div>
+            <div class="progress-label">Complete</div>
+          </div>
+        </div>
+        <div class="quick-stats">
+          <div class="stat-card">
+            <div class="stat-number">82</div>
+            <div class="stat-label">Credits Earned</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">120</div>
+            <div class="stat-label">Credits Required</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">3.47</div>
+            <div class="stat-label">Current GPA</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">6</div>
+            <div class="stat-label">Blocks Remaining</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <div class="breadcrumb">
+        <a href="DegreeProgressDashboard.html"><i class="fas fa-home"></i> Dashboard</a>
+        <i class="fas fa-chevron-right"></i>
+        <a href="MajorProgress.html">Major Progress</a>
+        <i class="fas fa-chevron-right"></i>
+        <span>Computer Science Core</span>
+      </div>
+      <h1>💻 Computer Science Core Requirements</h1>
+      <div class="subtitle">Foundational CS courses required for the major</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Category Overview -->
+      <div class="category-overview">
+        <div class="category-stats">
+          <div class="stat-box">
+            <div class="stat-box-number">33</div>
+            <div class="stat-box-label">Credits Completed</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-number">51</div>
+            <div class="stat-box-label">Total Required</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-number">18</div>
+            <div class="stat-box-label">Credits Remaining</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-box-number">65%</div>
+            <div class="stat-box-label">Complete</div>
+          </div>
+        </div>
+        
+        <div class="progress-text">
+          <span>Computer Science Core Progress</span>
+          <span>33/51 Credits (65%)</span>
+        </div>
+        <div class="progress-bar-container">
+          <div class="progress-bar-fill" style="width: 65%"></div>
+        </div>
+      </div>
+
+      <!-- Courses Grid -->
+      <div class="courses-grid">
+        
+        <!-- CS 1114 -->
+        <div class="course-card completed">
+          <div class="course-header">
+            <div class="course-status-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="course-info">
+              <div class="course-code">CS 1114</div>
+              <div class="course-title">Programming Fundamentals</div>
+              <div class="course-credits">4 Credit Hours</div>
+            </div>
+            <div class="course-status-badge">✓ Completed</div>
+          </div>
+          <div class="course-details">
+            <div class="detail-item">
+              <span class="detail-label">Semester Taken:</span>
+              <span class="detail-value">Fall 2023</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Grade Earned:</span>
+              <span class="detail-value">A (4.0)</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Description:</span>
+              <span class="detail-value">Introduction to programming using Python. Covers basic programming concepts, data types, control structures, and problem-solving techniques.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CS 2413 -->
+        <div class="course-card completed">
+          <div class="course-header">
+            <div class="course-status-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="course-info">
+              <div class="course-code">CS 2413</div>
+              <div class="course-title">Data Structures</div>
+              <div class="course-credits">3 Credit Hours</div>
+            </div>
+            <div class="course-status-badge">✓ Completed</div>
+          </div>
+          <div class="course-details">
+            <div class="detail-item">
+              <span class="detail-label">Semester Taken:</span>
+              <span class="detail-value">Spring 2024</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Grade Earned:</span>
+              <span class="detail-value">B+ (3.3)</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Description:</span>
+              <span class="detail-value">Study of fundamental data structures including arrays, linked lists, stacks, queues, trees, and graphs. Algorithm analysis and implementation.</span>
+            </div>
+            <div class="prerequisites">
+              <strong>Prerequisites:</strong> CS 1114 with grade of C or better
+            </div>
+          </div>
+        </div>
+
+        <!-- CS 2614 -->
+        <div class="course-card completed">
+          <div class="course-header">
+            <div class="course-status-icon">
+              <i class="fas fa-check"></i>
+            </div>
+            <div class="course-info">
+              <div class="course-code">CS 2614</div>
+              <div class="course-title">Computer Architecture</div>
+              <div class="course-credits">4 Credit Hours</div>
+            </div>
+            <div class="course-status-badge">✓ Completed</div>
+          </div>
+          <div class="course-details">
+            <div class="detail-item">
+              <span class="detail-label">Semester Taken:</span>
+              <span class="detail-value">Fall 2024</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Grade Earned:</span>
+              <span class="detail-value">A- (3.7)</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Description:</span>
+              <span class="detail-value">Introduction to computer systems, including number systems, digital logic, processor design, assembly language, and memory hierarchy.</span>
+            </div>
+            <div class="prerequisites">
+              <strong>Prerequisites:</strong> CS 1114 and MATH 1513
+            </div>
+          </div>
+        </div>
+
+        <!-- CS 3113 -->
+        <div class="course-card not-started">
+          <div class="course-header">
+            <div class="course-status-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="course-info">
+              <div class="course-code">CS 3113</div>
+              <div class="course-title">Operating Systems</div>
+              <div class="course-credits">3 Credit Hours</div>
+            </div>
+            <div class="course-status-badge">Not Started</div>
+          </div>
+          <div class="course-details">
+            <div class="detail-item">
+              <span class="detail-label">Planned:</span>
+              <span class="detail-value">Spring 2025</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Description:</span>
+              <span class="detail-value">Concepts and design of operating systems including processes, threads, scheduling, synchronization, memory management, and file systems.</span>
+            </div>
+            <div class="prerequisites">
+              <strong>Prerequisites:</strong> CS 2413 and CS 2614 with grades of C or better
+            </div>
+          </div>
+        </div>
+
+        <!-- CS 3333 -->
+        <div class="course-card not-started">
+          <div class="course-header">
+            <div class="course-status-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="course-info">
+              <div class="course-code">CS 3333</div>
+              <div class="course-title">Database Systems</div>
+              <div class="course-credits">3 Credit Hours</div>
+            </div>
+            <div class="course-status-badge">Not Started</div>
+          </div>
+          <div class="course-details">
+            <div class="detail-item">
+              <span class="detail-label">Planned:</span>
+              <span class="detail-value">Fall 2025</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Description:</span>
+              <span class="detail-value">Design and implementation of database systems, including data modeling, relational algebra, SQL, normalization, and transaction management.</span>
+            </div>
+            <div class="prerequisites">
+              <strong>Prerequisites:</strong> CS 2413 with grade of C or better
+            </div>
+          </div>
+        </div>
+
+        <!-- CS 4413 -->
+        <div class="course-card not-started">
+          <div class="course-header">
+            <div class="course-status-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="course-info">
+              <div class="course-code">CS 4413</div>
+              <div class="course-title">Software Engineering</div>
+              <div class="course-credits">3 Credit Hours</div>
+            </div>
+            <div class="course-status-badge">Not Started</div>
+          </div>
+          <div class="course-details">
+            <div class="detail-item">
+              <span class="detail-label">Planned:</span>
+              <span class="detail-value">Spring 2026</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Description:</span>
+              <span class="detail-value">Software development methodologies, project management, requirements analysis, design patterns, testing, and maintenance.</span>
+            </div>
+            <div class="prerequisites">
+              <strong>Prerequisites:</strong> CS 2413 and Junior standing
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Course Sequence -->
+      <div class="course-sequence">
+        <div class="sequence-title">
+          <i class="fas fa-project-diagram"></i>
+          Recommended Course Sequence
+        </div>
+        <div class="sequence-flow">
+          <div class="sequence-course completed">CS 1114</div>
+          <div class="sequence-arrow">→</div>
+          <div class="sequence-course completed">CS 2413</div>
+          <div class="sequence-arrow">→</div>
+          <div class="sequence-course">CS 3113</div>
+          <div class="sequence-arrow">→</div>
+          <div class="sequence-course">CS 4413</div>
+        </div>
+        <br>
+        <div class="sequence-flow">
+          <div class="sequence-course completed">CS 1114</div>
+          <div class="sequence-arrow">→</div>
+          <div class="sequence-course completed">CS 2614</div>
+          <div class="sequence-arrow">→</div>
+          <div class="sequence-course">CS 3113</div>
+        </div>
+        <br>
+        <div class="sequence-flow">
+          <div class="sequence-course completed">CS 2413</div>
+          <div class="sequence-arrow">→</div>
+          <div class="sequence-course">CS 3333</div>
+        </div>
+      </div>
+
+      <!-- Back Button -->
+      <a href="MajorProgress.html" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+        Back to Major Progress
+      </a>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Animate progress bars
+      const progressBars = document.querySelectorAll('.progress-bar-fill');
+      progressBars.forEach((bar, index) => {
+        setTimeout(() => {
+          const width = bar.style.width;
+          bar.style.width = '0%';
+          setTimeout(() => {
+            bar.style.width = width;
+          }, 100);
+        }, index * 200);
+      });
+
+      // Animate progress circle
+      const progressCircles = document.querySelectorAll('.progress-circle-fill');
+      progressCircles.forEach(circle => {
+        const progress = circle.style.getPropertyValue('--progress');
+        circle.style.strokeDashoffset = `calc(314 - (314 * ${progress}) / 100)`;
+      });
+
+      // Add hover effects to course cards
+      const courseCards = document.querySelectorAll('.course-card');
+      courseCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-5px)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0)';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

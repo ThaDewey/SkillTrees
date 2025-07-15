@@ -333,11 +333,43 @@
       padding: 25px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .category-card:hover {
+    }    .category-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Clickable Category Styling */
+    .clickable {
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .clickable::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    .clickable:hover::before {
+      left: 100%;
+    }
+
+    .navigate-icon {
+      margin-left: auto;
+      font-size: 18px;
+      color: #3498db;
+      transition: transform 0.3s ease;
+    }
+
+    .clickable:hover .navigate-icon {
+      transform: translateX(5px);
     }
 
     .category-header {
@@ -599,9 +631,8 @@
 
     <!-- Categories Grid -->
     <div class="categories-grid">
-      
-      <!-- Written and Oral Communication -->
-      <div class="category-card communication">
+        <!-- Written and Oral Communication -->
+      <div class="category-card communication clickable" data-category="Written and Oral Communication">>
         <div class="category-header">
           <div class="category-icon">
             <i class="fas fa-comments"></i>
@@ -613,6 +644,7 @@
               <span class="category-status in-progress">In Progress</span>
             </div>
           </div>
+          <i class="fas fa-chevron-right navigate-icon"></i>
         </div>
         <div class="progress-bar-container">
           <div class="progress-bar-fill" style="width: 67%"></div>
@@ -636,10 +668,8 @@
           </div>
           <div class="course-details">Options: MCOM 1113 or any course with ZCOM attribute</div>
         </div>
-      </div>
-
-      <!-- Quantitative Reasoning/Scientific Method -->
-      <div class="category-card quantitative">
+      </div>      <!-- Quantitative Reasoning/Scientific Method -->
+      <div class="category-card quantitative clickable" data-category="Quantitative Reasoning">>
         <div class="category-header">
           <div class="category-icon">
             <i class="fas fa-calculator"></i>
@@ -651,6 +681,7 @@
               <span class="category-status completed">✓ Complete</span>
             </div>
           </div>
+          <i class="fas fa-chevron-right navigate-icon"></i>
         </div>
         <div class="progress-bar-container">
           <div class="progress-bar-fill" style="width: 100%"></div>
@@ -680,10 +711,8 @@
           </div>
           <div class="course-details">CHEM 1315 includes required lab component</div>
         </div>
-      </div>
-
-      <!-- Critical Inquiry and Aesthetic Analysis -->
-      <div class="category-card critical">
+      </div>      <!-- Critical Inquiry and Aesthetic Analysis -->
+      <div class="category-card critical clickable" data-category="Critical Inquiry">>
         <div class="category-header">
           <div class="category-icon">
             <i class="fas fa-brain"></i>
@@ -695,6 +724,7 @@
               <span class="category-status in-progress">In Progress</span>
             </div>
           </div>
+          <i class="fas fa-chevron-right navigate-icon"></i>
         </div>
         <div class="progress-bar-container">
           <div class="progress-bar-fill" style="width: 50%"></div>
@@ -712,10 +742,8 @@
           </div>
           <div class="course-details">Options: PHIL courses or courses with ZCIN attribute</div>
         </div>
-      </div>
-
-      <!-- American Historical and Political Analysis -->
-      <div class="category-card american">
+      </div>      <!-- American Historical and Political Analysis -->
+      <div class="category-card american clickable" data-category="American Historical and Political Analysis">>
         <div class="category-header">
           <div class="category-icon">
             <i class="fas fa-landmark"></i>
@@ -727,6 +755,7 @@
               <span class="category-status completed">✓ Complete</span>
             </div>
           </div>
+          <i class="fas fa-chevron-right navigate-icon"></i>
         </div>
         <div class="progress-bar-container">
           <div class="progress-bar-fill" style="width: 100%"></div>
@@ -744,10 +773,8 @@
           </div>
           <div class="course-details">HIST 1483 - American History Since 1865 completed</div>
         </div>
-      </div>
-
-      <!-- Cultural and Language Analysis -->
-      <div class="category-card cultural">
+      </div>      <!-- Cultural and Language Analysis -->
+      <div class="category-card cultural clickable" data-category="Cultural and Language Analysis">>
         <div class="category-header">
           <div class="category-icon">
             <i class="fas fa-globe"></i>
@@ -759,6 +786,7 @@
               <span class="category-status not-started">Not Started</span>
             </div>
           </div>
+          <i class="fas fa-chevron-right navigate-icon"></i>
         </div>
         <div class="progress-bar-container">
           <div class="progress-bar-fill" style="width: 0%"></div>
@@ -770,10 +798,8 @@
           </div>
           <div class="course-details">Options: Foreign language, cultural studies, or courses with ZCUL attribute</div>
         </div>
-      </div>
-
-      <!-- Social and Behavioral Analysis -->
-      <div class="category-card social">
+      </div>      <!-- Social and Behavioral Analysis -->
+      <div class="category-card social clickable" data-category="Social and Behavioral Analysis">>
         <div class="category-header">
           <div class="category-icon">
             <i class="fas fa-users"></i>
@@ -785,6 +811,7 @@
               <span class="category-status completed">✓ Complete</span>
             </div>
           </div>
+          <i class="fas fa-chevron-right navigate-icon"></i>
         </div>
         <div class="progress-bar-container">
           <div class="progress-bar-fill" style="width: 100%"></div>
@@ -796,10 +823,8 @@
           </div>
           <div class="course-details">PSYC 1113 - Introduction to Psychology completed</div>
         </div>
-      </div>
-
-      <!-- Life Skills -->
-      <div class="category-card life-skills">
+      </div>      <!-- Life Skills -->
+      <div class="category-card life-skills clickable" data-category="Life Skills">>
         <div class="category-header">
           <div class="category-icon">
             <i class="fas fa-heart"></i>
@@ -811,6 +836,7 @@
               <span class="category-status in-progress">In Progress</span>
             </div>
           </div>
+          <i class="fas fa-chevron-right navigate-icon"></i>
         </div>
         <div class="progress-bar-container">
           <div class="progress-bar-fill" style="width: 50%"></div>
@@ -838,7 +864,6 @@
       Back to Dashboard
     </a>
   </div>
-
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       // Animate progress bars
@@ -862,6 +887,23 @@
         
         card.addEventListener('mouseleave', function() {
           this.style.transform = 'translateY(0)';
+        });
+      });
+    });    // Show detailed course information for a category
+    function showCategoryDetails(categoryName) {
+      // Navigate to dynamic category details page
+      window.location.href = `CategoryDetails.html?category=${encodeURIComponent(categoryName)}&source=core`;
+    }
+
+    // Add click event listeners to category cards
+    document.addEventListener('DOMContentLoaded', function() {
+      const categoryCards = document.querySelectorAll('.category-card.clickable');
+      categoryCards.forEach(card => {
+        card.addEventListener('click', function() {
+          const categoryName = this.getAttribute('data-category');
+          if (categoryName) {
+            showCategoryDetails(categoryName);
+          }
         });
       });
     });

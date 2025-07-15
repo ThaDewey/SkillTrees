@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prerequisite Network Graph</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #4a90e2;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .control-group {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+    }
+
+    .control-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #4a90e2;
+    }
+
+    .control-group select, .control-group input {
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.9);
+      color: #333;
+      min-width: 150px;
+    }
+
+    .control-group button {
+      background: linear-gradient(135deg, #4a90e2, #357abd);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 2px;
+      font-weight: bold;
+    }
+
+    .control-group button:hover {
+      background: linear-gradient(135deg, #357abd, #2968a3);
+    }    .graph-container {
+      width: 100%;
+      height: 80vh;
+      min-height: 800px;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      border: 2px solid #4a90e2;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stats-panel {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 12px;
+      z-index: 1000;
+    }
+
+    .legend {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 12px;
+      z-index: 1000;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .legend-color {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+
+    .info-panel {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 12px;
+      max-height: 150px;
+      overflow-y: auto;
+      display: none;
+    }
+
+    .node {
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .node:hover {
+      stroke-width: 3px;
+    }    .node.highlighted {
+      stroke: #ff6b6b;
+      stroke-width: 4px;
+    }
+
+    .node.core-requirement {
+      stroke: #f39c12;
+      stroke-width: 3px;
+    }
+
+    .node.major-requirement {
+      stroke: #e67e22;
+      stroke-width: 3px;
+    }
+
+    .node.degree-requirement {
+      stroke-dasharray: 3,3;
+    }
+
+    .link {
+      fill: none;
+      stroke-opacity: 0.6;
+      transition: all 0.3s ease;
+    }
+
+    .link.highlighted {
+      stroke-opacity: 1;
+      stroke-width: 3px;
+    }    .prerequisite-link {
+      stroke: #4a90e2;
+      /* Removed: marker-end: url(#arrowhead); */
+    }
+
+    .corequisite-link {
+      stroke: #e67e22;
+      stroke-dasharray: 5,5;
+      /* Removed: marker-end: url(#arrowhead-coreq); */
+    }
+
+    .node-label {
+      font-size: 10px;
+      font-weight: bold;
+      text-anchor: middle;
+      pointer-events: none;
+      fill: #fff;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    }
+
+    .tooltip {
+      position: absolute;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.9);
+      border-radius: 5px;
+      pointer-events: none;
+      font-size: 12px;
+      z-index: 1001;
+      max-width: 250px;
+    }
+
+    @media (max-width: 768px) {
+      .controls {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .control-group {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">    <div class="header">
+      <h1><i class="fas fa-project-diagram"></i> Course Prerequisite Network</h1>
+      <p>Interactive visualization of course dependencies and relationships</p>
+      <p style="font-size: 14px; color: #aaa;">
+        <i class="fas fa-mouse-pointer"></i> Click and drag to pan • 
+        <i class="fas fa-search-plus"></i> Scroll to zoom • 
+        <i class="fas fa-hand-point-up"></i> Click nodes to highlight connections
+      </p>
+    </div>    <div class="controls">      <div class="control-group">
+        <label for="degreeFilter">Degree Program:</label>
+        <select id="degreeFilter">
+          <option value="">Select a Degree</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="subjectFilter">Filter by Subject:</label>
+        <select id="subjectFilter">
+          <option value="">Select a Subject</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="levelFilter">Course Level:</label>
+        <select id="levelFilter">
+          <option value="">All Levels</option>
+          <option value="1000">1000 Level</option>
+          <option value="2000">2000 Level</option>
+          <option value="3000">3000 Level</option>
+          <option value="4000">4000 Level</option>
+          <option value="5000">5000+ Level</option>
+        </select>
+      </div>      <div class="control-group">
+        <label for="maxNodes">Max Nodes:</label>
+        <select id="maxNodes">
+          <option value="100">100 nodes</option>
+          <option value="200" selected>200 nodes</option>
+          <option value="500">500 nodes</option>
+          <option value="1000">1000 nodes</option>
+          <option value="all">All nodes</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <button onclick="resetGraph()">Reset View</button>
+        <button onclick="showAllCourses()">Show All</button>
+        <button onclick="centerView()">Center View</button>
+        <button onclick="togglePhysics()">Toggle Physics</button>
+      </div>
+    </div>
+
+    <div class="graph-container">
+      <svg id="graph"></svg>
+      
+      <div class="stats-panel">
+        <div><strong>Network Statistics</strong></div>
+        <div>Nodes: <span id="nodeCount">0</span></div>
+        <div>Links: <span id="linkCount">0</span></div>
+        <div>Subjects: <span id="subjectCount">0</span></div>
+        <div>Max Depth: <span id="maxDepth">0</span></div>
+      </div>      <div class="legend">
+        <div><strong>Legend</strong></div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #2ecc71;"></div>
+          <span>Entry Level (1000)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #3498db;"></div>
+          <span>Intermediate (2000-3000)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #9b59b6;"></div>
+          <span>Advanced (4000+)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #e74c3c;"></div>
+          <span>Graduate (5000+)</span>
+        </div>
+        <div style="margin-top: 10px;">
+          <div class="legend-item">
+            <div class="legend-color" style="background: #f39c12; border: 3px solid #fff;"></div>
+            <span>Core Requirements</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-color" style="background: #e67e22; border: 3px solid #fff;"></div>
+            <span>Major Requirements</span>
+          </div>
+        </div>
+        <div style="margin-top: 10px;">
+          <div>→ Prerequisite</div>
+          <div>⇢ Corequisite</div>
+        </div>
+      </div>
+
+      <div class="info-panel" id="infoPanel">
+        <div id="infoPanelContent"></div>
+      </div>
+    </div>
+
+    <div class="tooltip" id="tooltip" style="display: none;"></div>
+  </div>
+  <script>
+    // =============================================================================
+    // GLOBAL VARIABLES
+    // =============================================================================
+    
+    // D3.js visualization components
+    let svg;                    // Main SVG element for the graph
+    let simulation;             // Force simulation for node physics
+    let nodeElements;           // D3 selection of course nodes (circles)
+    let linkElements;           // D3 selection of prerequisite/corequisite links
+    let labelElements;          // D3 selection of node labels (text)
+    let zoomBehavior;           // D3 zoom/pan behavior handler
+      // Data storage
+    let allData = { nodes: [], links: [] };        // Complete dataset from JSON
+    let filteredData = { nodes: [], links: [] };   // Currently displayed subset
+    let degreeData = new Map();                     // Loaded degree program data
+    let selectedDegreeInfo = null;                  // Currently selected degree requirements
+    
+    // UI state
+    let physicsEnabled = true;  // Whether force simulation is active// =============================================================================
+    // INITIALIZATION AND DATA LOADING
+    // =============================================================================
+      /**
+     * Main initialization function
+     * Loads prerequisite data, sets up the SVG container, and renders the initial graph
+     */    async function initGraph() {
+      try {
+        // Load the prerequisite/corequisite data from JSON file
+        console.log('Loading prerequisite data...');
+        const preReqResponse = await fetch('./DegreeJSON/202510_Pre26CoReqs.json');
+        console.log('Fetch response:', preReqResponse.status, preReqResponse.ok);
+        
+        if (!preReqResponse.ok) {
+          throw new Error(`Failed to load data: ${preReqResponse.status} ${preReqResponse.statusText}`);
+        }
+        
+        const preReqData = await preReqResponse.json();
+        console.log('Raw data loaded, length:', preReqData.length);
+        
+        // Load available degree programs
+        console.log('Loading degree programs...');
+        await loadDegreePrograms();
+        
+        // Transform raw JSON data into nodes and links for D3.js
+        const processedData = processPrerequisiteData(preReqData);
+        allData = processedData;
+        
+        // Initialize the SVG container and zoom behavior
+        setupSVG();
+        
+        // Populate dropdown filters with available subjects and degrees
+        populateFilters();
+        
+        // Apply initial filters and render the graph
+        filterAndRender();
+        
+        console.log(`Graph initialized with ${allData.nodes.length} courses and ${allData.links.length} prerequisite relationships`);
+      } catch (error) {
+        console.error('Error loading prerequisite data:', error);
+        alert('Failed to load data. Please check the console for details.');
+      }
+    }/**
+     * Process raw prerequisite JSON data into D3.js-compatible format
+     * The input data is an array of prerequisite relationships
+     * @param {Array} preReqData - Array of prerequisite relationship objects
+     * @returns {Object} Processed data with nodes and links arrays
+     */    function processPrerequisiteData(preReqData) {
+      console.log('Processing prerequisite data, input length:', preReqData.length);
+      const nodeMap = new Map();  // Track unique courses to avoid duplicates
+      const links = [];           // Store prerequisite/corequisite relationships
+      
+      // Process each prerequisite relationship in the dataset
+      preReqData.forEach(item => {
+        // Validate that we have both course and prerequisite information
+        if (item.course && item.reqcourse) {
+          
+          // Create node for the main course (if it doesn't exist)
+          if (!nodeMap.has(item.course)) {
+            const courseInfo = parseCourseCode(item.course);
+            nodeMap.set(item.course, {
+              id: item.course,                                    // Unique course identifier
+              label: item.course,                                 // Display label
+              subject: item.coursesubject || courseInfo.subject,  // Subject code (e.g., "MATH", "CS")
+              number: item.coursenumber || courseInfo.number,     // Course number (e.g., 1050, 2420)
+              level: Math.floor((courseInfo.number || 0) / 1000) * 1000,  // Level grouping (1000, 2000, etc.)
+              type: 'course',                                     // Node type identifier
+              prerequisites: [],                                  // Courses required before this one
+              dependents: [],                                     // Courses that require this one
+              depth: 0                                            // Hierarchical depth for layout
+            });
+          }
+          
+          // Create node for the prerequisite course (if it doesn't exist)
+          if (!nodeMap.has(item.reqcourse)) {
+            const preReqInfo = parseCourseCode(item.reqcourse);
+            nodeMap.set(item.reqcourse, {
+              id: item.reqcourse,
+              label: item.reqcourse,
+              subject: item.reqsubject || preReqInfo.subject,
+              number: item.reqnumber || preReqInfo.number,
+              level: Math.floor((preReqInfo.number || 0) / 1000) * 1000,
+              type: 'course',
+              prerequisites: [],
+              dependents: [],
+              depth: 0            });
+          }
+          
+          // Create a directed link representing the prerequisite relationship
+          // Determine if this is a prerequisite or corequisite relationship
+          const linkType = item.requirementtype === 'CoReq' ? 'corequisite' : 'prerequisite';
+          links.push({
+            source: item.reqcourse,    // The prerequisite course
+            target: item.course,       // The course that requires it
+            type: linkType             // Type of relationship
+          });
+          
+          // Update the bidirectional relationship tracking on nodes
+          nodeMap.get(item.course).prerequisites.push(item.reqcourse);      // Track what this course requires
+          nodeMap.get(item.reqcourse).dependents.push(item.course);         // Track what requires this course
+        }
+      });
+      
+      // Convert the Map to an Array for D3.js compatibility
+      const nodes = Array.from(nodeMap.values());
+        // Calculate hierarchical depths for better layout positioning
+      calculateNodeDepths(nodes, links);
+      
+      console.log('Processed data result:', {
+        nodes: nodes.length,
+        links: links.length,
+        sampleNode: nodes[0]
+      });
+      
+      return { nodes, links };
+    }
+
+    /**
+     * Load available degree programs from JSON files
+     * Creates a map of degree data for filtering and highlighting
+     */
+    async function loadDegreePrograms() {
+      const degreeFiles = [
+        { code: '5040', name: 'English BA', file: '5040.json' },
+        { code: '5302', name: 'Computer Science', file: '5302.json' },
+        { code: '6100', name: 'Graduate Program', file: '6100.json' }
+      ];
+      
+      for (const degreeInfo of degreeFiles) {
+        try {
+          const response = await fetch(`./DegreeJSON/${degreeInfo.file}`);
+          if (response.ok) {
+            const data = await response.json();
+            degreeData.set(degreeInfo.code, {
+              ...degreeInfo,
+              data: data,
+              requirements: extractDegreeRequirements(data)
+            });
+            console.log(`Loaded degree: ${degreeInfo.name}`);
+          }
+        } catch (error) {
+          console.warn(`Could not load degree file ${degreeInfo.file}:`, error);
+        }
+      }
+    }
+
+    /**
+     * Extract course requirements from a degree JSON structure
+     * @param {Object} degreeData - The degree JSON data
+     * @returns {Object} Organized course requirements by block type
+     */
+    function extractDegreeRequirements(degreeData) {
+      const requirements = {
+        core: new Set(),
+        major: new Set(),
+        electives: new Set(),
+        all: new Set()
+      };
+      
+      if (!degreeData.blocks) return requirements;
+      
+      degreeData.blocks.forEach(block => {
+        const blockType = block.BlockType.toLowerCase();
+        const isCore = blockType === 'core';
+        const isMajor = blockType !== 'core'; // Assume non-core blocks are major-related
+        
+        // Recursively extract courses from rules
+        const extractCourses = (rules) => {
+          if (!rules) return;
+          
+          rules.forEach(rule => {
+            if (rule.courses) {
+              rule.courses.forEach(course => {
+                if (course.Subj && course.Num && course.Subj !== '@') {
+                  const courseCode = `${course.Subj}${course.Num}`;
+                  requirements.all.add(courseCode);
+                  
+                  if (isCore) {
+                    requirements.core.add(courseCode);
+                  } else if (isMajor) {
+                    requirements.major.add(courseCode);
+                  }
+                }
+              });
+            }
+            
+            if (rule.rules) {
+              extractCourses(rule.rules);
+            }
+          });
+        };
+        
+        extractCourses(block.rules);
+      });
+      
+      return requirements;
+    }/**
+     * Parse a course code into subject and number components
+     * @param {string} courseCode - Course code like "MATH1050" or "CS2420"
+     * @returns {Object} Object with subject and number properties
+     */
+    function parseCourseCode(courseCode) {
+      // Use regex to extract subject letters and course number
+      const match = courseCode.match(/^([A-Z]+)(\d+)/);
+      if (match) {
+        return {
+          subject: match[1],                // Subject prefix (e.g., "MATH", "CS")
+          number: parseInt(match[2])        // Course number as integer (e.g., 1050, 2420)
+        };
+      }
+      // Fallback for malformed course codes
+      return { subject: 'UNKNOWN', number: 0 };
+    }    /**
+     * Calculate hierarchical depths for nodes based on prerequisite relationships
+     * This helps with vertical positioning in hierarchical layouts
+     * @param {Array} nodes - Array of course nodes
+     * @param {Array} links - Array of prerequisite/corequisite links
+     */
+    function calculateNodeDepths(nodes, links) {
+      const nodeMap = new Map(nodes.map(n => [n.id, n]));
+      const visited = new Set();
+      
+      /**
+       * Recursive depth-first search to calculate node depth
+       * @param {string} nodeId - ID of the current node
+       * @param {number} depth - Current depth level
+       */
+      function dfs(nodeId, depth = 0) {
+        if (visited.has(nodeId)) return depth;
+        visited.add(nodeId);
+          const node = nodeMap.get(nodeId);
+        if (!node) return depth;
+        
+        // Update depth if we found a deeper path to this node
+        node.depth = Math.max(node.depth, depth);
+        
+        // Recursively visit all courses that depend on this one
+        node.dependents.forEach(depId => {
+          dfs(depId, depth + 1);
+        });
+        
+        return node.depth;
+      }
+      
+      // Start depth calculation from root nodes (courses with no prerequisites)
+      nodes.filter(n => n.prerequisites.length === 0).forEach(n => {
+        dfs(n.id, 0);
+      });
+    }    // =============================================================================
+    // SVG SETUP AND CONFIGURATION
+    // =============================================================================
+    
+    /**
+     * Initialize the SVG container with zoom/pan behavior and arrow markers
+     * Sets up the main drawing area for the graph visualization
+     */
+    function setupSVG() {
+      // Get container dimensions for responsive sizing
+      const container = d3.select('#graph');
+      const containerNode = container.node().parentNode;
+      const rect = containerNode.getBoundingClientRect();
+      
+      // Create main SVG element with responsive dimensions
+      svg = d3.select('#graph')
+        .attr('width', '100%')
+        .attr('height', '100%')
+        .attr('viewBox', `0 0 ${rect.width} ${rect.height}`)
+        .style('width', '100%')
+        .style('height', '100%');
+      
+      // Configure zoom and pan behavior
+      zoomBehavior = d3.zoom()
+        .scaleExtent([0.1, 4])        // Allow 10% to 400% zoom
+        .on('zoom', (event) => {
+          const { transform } = event;
+          // Apply zoom/pan transform to the main drawing group
+          svg.select('.zoom-group').attr('transform', transform);
+        });
+      
+      // Apply zoom behavior to the SVG
+      svg.call(zoomBehavior);
+      
+      // Create arrowhead markers for directed edges (only if they don't exist)
+      if (svg.select('defs').empty()) {
+        const defs = svg.append('defs');
+        
+        // Standard arrowhead for prerequisite relationships
+        defs.append('marker')
+          .attr('id', 'arrowhead')
+          .attr('viewBox', '0 -5 10 10')
+          .attr('refX', 15)              // Position arrow at edge of target node
+          .attr('refY', 0)
+          .attr('markerWidth', 6)
+          .attr('markerHeight', 6)
+          .attr('orient', 'auto')          .append('path')
+          .attr('d', 'M0,-5L10,0L0,5')     // Arrow shape path
+          .attr('fill', '#4a90e2');          // Blue color for prerequisites
+        
+        // Alternative arrowhead for corequisite relationships  
+        defs.append('marker')
+          .attr('id', 'arrowhead-coreq')
+          .attr('viewBox', '0 -5 10 10')
+          .attr('refX', 15)
+          .attr('refY', 0)
+          .attr('markerWidth', 6)
+          .attr('markerHeight', 6)
+          .attr('orient', 'auto')
+          .append('path')
+          .attr('d', 'M0,-5L10,0L0,5')     // Arrow shape path
+          .attr('fill', '#e67e22');          // Orange color for corequisites
+      }
+
+      // Create a group for all zoomable elements (only if it doesn't exist)
+      if (svg.select('.zoom-group').empty()) {
+        svg.append('g').attr('class', 'zoom-group');
+      }
+    }    /**
+     * Ensure arrow markers exist in the SVG
+     * This function recreates markers to prevent rendering issues
+     */
+    function ensureArrowMarkers() {
+      // Remove any existing markers to prevent conflicts
+      svg.select('defs').remove();
+      
+      // Create fresh defs section at the beginning of SVG
+      const defs = svg.append('defs');
+      
+      // Create prerequisite arrow marker (blue, solid)
+      defs.append('marker')
+        .attr('id', 'arrowhead')
+        .attr('viewBox', '0 -5 10 10')
+        .attr('refX', 20)                    // Position further from node edge        .attr('refY', 0)
+        .attr('markerWidth', 8)
+        .attr('markerHeight', 8)
+        .attr('orient', 'auto')
+        .attr('markerUnits', 'strokeWidth')    // Scale markers with stroke width
+        .append('path')
+        .attr('d', 'M0,-5L10,0L0,5')          // Triangle arrow shape
+        .attr('fill', '#4a90e2')               // Blue color for prerequisites
+        .attr('stroke', 'none');
+      
+      // Create corequisite arrow marker (orange, for bidirectional relationships)
+      defs.append('marker')
+        .attr('id', 'arrowhead-coreq')
+        .attr('viewBox', '0 -5 10 10')
+        .attr('refX', 20)
+        .attr('refY', 0)
+        .attr('markerWidth', 8)
+        .attr('markerHeight', 8)
+        .attr('orient', 'auto')
+        .attr('markerUnits', 'strokeWidth')
+        .append('path')
+        .attr('d', 'M0,-5L10,0L0,5')          // Triangle arrow shape
+        .attr('fill', '#e67e22')               // Orange color for corequisites
+        .attr('stroke', 'none');
+        
+      // Debug log to verify markers were created
+      console.log('Arrow markers created:', svg.select('#arrowhead').node(), svg.select('#arrowhead-coreq').node());
+    }    // =============================================================================
+    // FILTER AND UI MANAGEMENT
+    // =============================================================================
+      /**
+     * Populate the subject filter dropdown with unique course subjects
+     * Extracts all unique subjects from the loaded course data
+     */
+    function populateFilters() {
+      // Extract unique subjects and sort alphabetically
+      const subjects = [...new Set(allData.nodes.map(n => n.subject))].sort();
+      const subjectFilter = d3.select('#subjectFilter');
+      
+      // Add each subject as an option in the dropdown
+      subjects.forEach(subject => {
+        subjectFilter.append('option').attr('value', subject).text(subject);      });
+
+      // Populate degree filter with loaded degree programs
+      const degreeFilter = d3.select('#degreeFilter');
+      degreeData.forEach((degreeInfo, code) => {
+        degreeFilter.append('option')
+          .attr('value', code)
+          .text(degreeInfo.name);
+      });
+          // Set up event listeners for interactive controls
+      d3.select('#degreeFilter').on('change', filterAndRender);
+      d3.select('#subjectFilter').on('change', filterAndRender);
+      d3.select('#levelFilter').on('change', filterAndRender);
+      d3.select('#maxNodes').on('change', filterAndRender);
+    }    /**
+     * Apply current filter settings and re-render the graph
+     * This is called whenever filter controls change
+     */    function filterAndRender() {
+      console.log('filterAndRender called with allData:', {
+        nodes: allData.nodes.length,
+        links: allData.links.length
+      });
+      
+      // Get current filter values from UI controls
+      const degreeFilter = d3.select('#degreeFilter').property('value');
+      const subjectFilter = d3.select('#subjectFilter').property('value');
+      const levelFilter = d3.select('#levelFilter').property('value');
+      const maxNodes = d3.select('#maxNodes').property('value');
+      
+      console.log('Filter values:', { degreeFilter, subjectFilter, levelFilter, maxNodes });
+      
+      // Update selected degree info
+      selectedDegreeInfo = degreeFilter ? degreeData.get(degreeFilter) : null;
+      
+      // Start with all nodes
+      let filteredNodes = [...allData.nodes];
+        // Apply filters if specified
+      if (degreeFilter || subjectFilter || levelFilter) {
+        // If filtering by degree, start with degree requirement courses
+        let coreNodes;
+        if (degreeFilter && selectedDegreeInfo) {
+          // Get courses that are part of the selected degree program
+          coreNodes = allData.nodes.filter(n => 
+            selectedDegreeInfo.requirements.all.has(n.id)
+          );
+        } else {
+          // Filter by subject or level
+          coreNodes = allData.nodes.filter(n => {
+            let matches = true;
+            if (subjectFilter && n.subject !== subjectFilter) matches = false;
+            if (levelFilter && n.level !== parseInt(levelFilter)) matches = false;
+            return matches;
+          });
+        }
+        
+        // Also include all prerequisite and dependent courses to show complete relationships
+        const relatedNodeIds = new Set(coreNodes.map(n => n.id));
+        
+        // Add prerequisites of core nodes
+        coreNodes.forEach(node => {
+          node.prerequisites.forEach(prereqId => relatedNodeIds.add(prereqId));
+        });
+        
+        // Add dependents of core nodes
+        coreNodes.forEach(node => {
+          node.dependents.forEach(depId => relatedNodeIds.add(depId));
+        });
+        
+        // Filter to include core nodes plus their prerequisites and dependents
+        filteredNodes = allData.nodes.filter(n => relatedNodeIds.has(n.id));
+        
+        // If we also have subject/level filters, apply them to the related nodes
+        if ((subjectFilter || levelFilter) && !degreeFilter) {
+          filteredNodes = filteredNodes.filter(n => {
+            // Include original core nodes, or nodes that match subject/level filters
+            let isCore = coreNodes.some(core => core.id === n.id);
+            if (isCore) return true;
+            
+            let matches = true;
+            if (subjectFilter && n.subject !== subjectFilter) matches = false;
+            if (levelFilter && n.level !== parseInt(levelFilter)) matches = false;
+            return matches;
+          });
+        }
+      } else {
+        // No filters applied - show most connected courses by default
+        filteredNodes = getMostConnectedCourses(allData.nodes, 200);
+        console.log('No filters, showing most connected courses:', filteredNodes.length);
+      }
+      
+      // Apply node limit for performance (but be more generous with limits)
+      if (maxNodes !== 'all') {
+        const limit = parseInt(maxNodes);
+        if (filteredNodes.length > limit) {
+          // If we have too many nodes, prioritize by connection count
+          filteredNodes = filteredNodes
+            .map(node => ({
+              ...node,
+              connectionCount: node.prerequisites.length + node.dependents.length
+            }))
+            .sort((a, b) => b.connectionCount - a.connectionCount)
+            .slice(0, limit);
+        }
+      }
+      
+      // Create a set of node IDs for efficient lookup
+      const nodeIds = new Set(filteredNodes.map(n => n.id));
+      
+      // Include all links that connect visible nodes
+      const filteredLinks = allData.links.filter(l => 
+        nodeIds.has(l.source.id || l.source) && nodeIds.has(l.target.id || l.target)
+      );
+        // Update the filtered dataset
+      filteredData = { nodes: filteredNodes, links: filteredLinks };
+      
+      console.log('Filtered data:', {
+        nodes: filteredData.nodes.length,
+        links: filteredData.links.length,
+        firstNode: filteredData.nodes[0]
+      });
+      
+      // Update displayed statistics
+      updateStatistics();
+      
+      // Re-render the graph with new data
+      renderGraph();
+    }
+
+    /**
+     * Get the most connected courses for initial display
+     * Prioritizes courses with many prerequisites and dependents
+     * @param {Array} nodes - Array of all course nodes
+     * @param {number} limit - Maximum number of courses to return
+     * @returns {Array} Most connected courses, sorted by connection count
+     */    function getMostConnectedCourses(nodes, limit = 50) {
+      // Calculate connection count for each course
+      return nodes
+        .map(node => ({
+          ...node,
+          // Count total connections (both prerequisites and courses that depend on this one)
+          connectionCount: node.prerequisites.length + node.dependents.length
+        }))
+        .sort((a, b) => b.connectionCount - a.connectionCount)  // Sort by connection count (descending)
+        .slice(0, limit);                                       // Take only the top N courses
+    }
+
+    // =============================================================================
+    // GRAPH RENDERING AND VISUALIZATION
+    // =============================================================================
+
+    /**
+     * Main function to render the graph visualization
+     * Creates nodes, links, labels and sets up the force simulation
+     */    function renderGraph() {
+      console.log('renderGraph called with data:', {
+        nodes: filteredData.nodes.length,
+        links: filteredData.links.length,
+        svg: !!svg,
+        zoomGroup: svg ? svg.select('.zoom-group').size() : 'no svg'
+      });
+      
+      // Clear previous graph elements (but preserve SVG structure and markers)
+      svg.select('.zoom-group').selectAll('*').remove();
+      
+      // Ensure arrow markers exist for link endpoints
+      if (svg.select('#arrowhead').empty() || svg.select('#arrowhead-coreq').empty()) {
+        // Recreate markers if they're missing
+        svg.select('defs').remove();
+        const defs = svg.append('defs');
+        
+        // Create prerequisite arrow marker
+        defs.append('marker')
+          .attr('id', 'arrowhead')
+          .attr('viewBox', '0 -5 10 10')
+          .attr('refX', 20)
+          .attr('refY', 0)
+          .attr('markerWidth', 10)
+          .attr('markerHeight', 10)
+          .attr('orient', 'auto')
+          .attr('markerUnits', 'strokeWidth')
+          .append('path')
+          .attr('d', 'M0,-5L10,0L0,5')
+          .attr('fill', '#4a90e2')
+          .attr('stroke', 'none');
+        
+        // Create corequisite arrow marker
+        defs.append('marker')
+          .attr('id', 'arrowhead-coreq')
+          .attr('viewBox', '0 -5 10 10')
+          .attr('refX', 20)
+          .attr('refY', 0)
+          .attr('markerWidth', 10)
+          .attr('markerHeight', 10)
+          .attr('orient', 'auto')
+          .attr('markerUnits', 'strokeWidth')
+          .append('path')
+          .attr('d', 'M0,-5L10,0L0,5')
+          .attr('fill', '#e67e22')
+          .attr('stroke', 'none');
+      }
+      
+      // Stop any existing simulation before creating a new one
+      if (simulation) simulation.stop();
+      
+      // Initialize physics simulation for force layout
+      setupSimulation();
+      
+      // Create link elements (lines representing prerequisites/corequisites)
+      linkElements = svg.select('.zoom-group').selectAll('.link')
+        .data(filteredData.links)
+        .enter().append('line')
+        .attr('class', d => `link ${d.type}-link`)
+        .attr('stroke-width', 2)
+        .attr('stroke', d => d.type === 'prerequisite' ? '#4a90e2' : '#e67e22')
+        .attr('stroke-dasharray', d => d.type === 'corequisite' ? '5,5' : null)
+        .attr('marker-end', d => d.type === 'prerequisite' ? 'url(#arrowhead)' : 'url(#arrowhead-coreq)')
+        .attr('x1', 0).attr('y1', 0).attr('x2', 0).attr('y2', 0);
+      
+      // Create node elements (circles representing courses)
+      nodeElements = svg.select('.zoom-group').selectAll('.node')
+        .data(filteredData.nodes)
+        .enter().append('circle')
+        .attr('class', d => {
+          let classes = ['node'];
+          if (selectedDegreeInfo) {
+            if (selectedDegreeInfo.requirements.core.has(d.id)) {
+              classes.push('core-requirement');
+            }
+            if (selectedDegreeInfo.requirements.major.has(d.id)) {
+              classes.push('major-requirement');
+            }
+            if (selectedDegreeInfo.requirements.all.has(d.id)) {
+              classes.push('degree-requirement');
+            }
+          }
+          return classes.join(' ');
+        })
+        .attr('r', d => Math.min(15, 8 + (d.dependents.length * 1.5)))
+        .attr('fill', d => getNodeColor(d))
+        .attr('stroke', d => getNodeStroke(d))
+        .attr('stroke-width', d => getNodeStrokeWidth(d))
+        .call(d3.drag()
+          .on('start', dragStarted)
+          .on('drag', dragged)
+          .on('end', dragEnded))
+        .on('mouseover', showTooltip)
+        .on('mouseout', hideTooltip)
+        .on('click', highlightNode);
+      
+      // Create text labels for highly connected courses only
+      labelElements = svg.select('.zoom-group').selectAll('.node-label')
+        .data(filteredData.nodes.filter(d => d.dependents.length > 2 || d.prerequisites.length > 2))
+        .enter().append('text')
+        .attr('class', 'node-label')
+        .text(d => d.label)
+        .attr('dy', '.35em')
+        .style('font-size', '9px');
+      
+      // Initialize node positions randomly to prevent clustering at origin
+      const container = d3.select('#graph').node().parentNode;
+      const bounds = container.getBoundingClientRect();
+      filteredData.nodes.forEach(d => {
+        d.x = Math.random() * bounds.width;
+        d.y = Math.random() * bounds.height;
+      });
+      
+      // Configure the force simulation with current data
+      simulation.nodes(filteredData.nodes).on('tick', ticked);
+      
+      // Configure link forces
+      const linkForce = simulation.force('link');
+      if (linkForce) {
+        linkForce.links(filteredData.links);
+      }
+      
+      // Restart simulation with full energy
+      simulation.alpha(1).restart();
+      
+      console.log('Graph rendered with', filteredData.nodes.length, 'nodes and', filteredData.links.length, 'links');
+    }
+
+    /**
+     * Configure the D3 force simulation for force-directed layout
+     * Uses repulsion, centering, collision detection, and link forces
+     */
+    function setupSimulation() {
+      // Get container dimensions for centering forces
+      const containerNode = d3.select('#graph').node().parentNode;
+      const rect = containerNode.getBoundingClientRect();
+      const width = rect.width;
+      const height = rect.height;
+      
+      // Create force simulation with optimized settings
+      simulation = d3.forceSimulation()
+        .force('charge', d3.forceManyBody().strength(-200))        // Repulsion between nodes
+        .force('center', d3.forceCenter(width / 2, height / 2))    // Pull toward center
+        .force('collision', d3.forceCollide().radius(20))          // Prevent node overlap
+        .force('link', d3.forceLink().id(d => d.id).strength(0.1)) // Weak link force for natural spread
+        .force('y', d3.forceY().y(d => (d.depth * 80) + 50).strength(0.3)) // Slight vertical organization by depth
+        .alphaDecay(0.02)                                          // Slow cooling rate
+        .velocityDecay(0.3);                                       // Friction/damping
+    }/**
+     * Determine node color based on course level
+     * Uses a color scheme that progresses from green (entry) to red (graduate)
+     * @param {Object} node - Course node object
+     * @returns {string} Hex color code
+     */
+    function getNodeColor(node) {
+      const level = node.level;
+      if (level >= 5000) return '#e74c3c';   // Graduate courses (red)
+      if (level >= 4000) return '#9b59b6';   // Advanced undergraduate (purple)
+      if (level >= 2000) return '#3498db';   // Intermediate courses (blue)
+      return '#2ecc71';                      // Entry level courses (green)
+    }
+
+    /**
+     * Determine node stroke color based on degree requirements
+     * @param {Object} node - Course node object
+     * @returns {string} Hex color code for border
+     */
+    function getNodeStroke(node) {
+      if (!selectedDegreeInfo) return '#fff';
+      
+      if (selectedDegreeInfo.requirements.core.has(node.id)) {
+        return '#f39c12';  // Orange for core requirements
+      }
+      if (selectedDegreeInfo.requirements.major.has(node.id)) {
+        return '#e67e22';  // Darker orange for major requirements
+      }
+      
+      return '#fff';  // Default white border
+    }
+
+    /**
+     * Determine node stroke width based on degree requirements
+     * @param {Object} node - Course node object
+     * @returns {number} Stroke width in pixels
+     */
+    function getNodeStrokeWidth(node) {
+      if (!selectedDegreeInfo) return 2;
+      
+      if (selectedDegreeInfo.requirements.all.has(node.id)) {
+        return 3;  // Thicker border for degree requirements
+      }
+      
+      return 2;  // Default border width
+    }/**
+     * Animation tick function - called repeatedly during force simulation
+     * Updates the positions of all visual elements based on physics calculations
+     */
+    function ticked() {
+      // Update link positions (lines connecting courses)
+      if (linkElements && linkElements.size() > 0) {
+        linkElements
+          .attr('x1', d => d.source.x || 0)    // Link start X position
+          .attr('y1', d => d.source.y || 0)    // Link start Y position
+          .attr('x2', d => d.target.x || 0)    // Link end X position
+          .attr('y2', d => d.target.y || 0);   // Link end Y position
+      }
+      
+      // Update node positions (course circles)
+      if (nodeElements && nodeElements.size() > 0) {
+        nodeElements
+          .attr('cx', d => d.x || 0)           // Circle center X
+          .attr('cy', d => d.y || 0);          // Circle center Y
+      }
+      
+      // Update label positions (course names)
+      if (labelElements && labelElements.size() > 0) {
+        labelElements
+          .attr('x', d => d.x || 0)            // Label X position
+          .attr('y', d => (d.y || 0) + 20);    // Label Y position (below node)
+      }
+      
+      // Occasional debug logging during simulation
+      if (simulation && simulation.alpha() > 0.1) {
+        if (Math.random() < 0.01) { // 1% chance per tick
+          console.log('Tick - links updating:', linkElements ? linkElements.size() : 0, 'alpha:', simulation.alpha().toFixed(3));
+        }
+      }
+    }    // =============================================================================
+    // USER INTERACTION HANDLERS
+    // =============================================================================
+    
+    /**
+     * Show detailed tooltip when hovering over a course node
+     * @param {Event} event - Mouse event
+     * @param {Object} d - Course node data
+     */    function showTooltip(event, d) {
+      const tooltip = d3.select('#tooltip');
+      const prereqList = d.prerequisites.length > 0 ? d.prerequisites.join(', ') : 'None';      const depList = d.dependents.length > 0 ? d.dependents.slice(0, 5).join(', ') : 'None';
+      
+      // Build degree requirement information
+      let degreeInfo = '';
+      if (selectedDegreeInfo) {
+        const isCore = selectedDegreeInfo.requirements.core.has(d.id);
+        const isMajor = selectedDegreeInfo.requirements.major.has(d.id);
+        
+        if (isCore || isMajor) {
+          degreeInfo = `<br/><strong>${selectedDegreeInfo.name}:</strong><br/>`;
+          if (isCore) degreeInfo += '• Core Requirement<br/>';
+          if (isMajor) degreeInfo += '• Major Requirement<br/>';
+        }
+      }
+      
+      // Create and display tooltip with course information
+      tooltip.html(`
+        <strong>${d.label}</strong><br/>
+        Subject: ${d.subject}<br/>
+        Level: ${d.level}<br/>
+        Depth: ${d.depth}<br/>
+        Prerequisites: ${prereqList}<br/>
+        Unlocks: ${depList}${d.dependents.length > 5 ? '...' : ''}${degreeInfo}
+      `)
+      .style('display', 'block')
+      .style('left', (event.pageX + 10) + 'px')    // Position near mouse
+      .style('top', (event.pageY - 10) + 'px');
+    }
+
+    /**
+     * Hide the tooltip when mouse leaves a node
+     */
+    function hideTooltip() {
+      d3.select('#tooltip').style('display', 'none');
+    }
+
+    /**
+     * Highlight a node and its connected courses when clicked
+     * @param {Event} event - Click event
+     * @param {Object} d - Course node data
+     */
+    function highlightNode(event, d) {
+      // Clear all existing highlights
+      nodeElements.classed('highlighted', false);
+      linkElements.classed('highlighted', false);
+      
+      // Find all nodes connected to the selected node
+      const connectedNodes = new Set([d.id]);
+      
+      // Check each link to see if it connects to our selected node
+      linkElements.each(function(link) {
+        if (link.source.id === d.id || link.target.id === d.id) {
+          d3.select(this).classed('highlighted', true);  // Highlight the link
+          connectedNodes.add(link.source.id);            // Add source node
+          connectedNodes.add(link.target.id);            // Add target node
+        }
+      });
+      
+      // Highlight all connected nodes
+      nodeElements.classed('highlighted', node => connectedNodes.has(node.id));
+      
+      // Show detailed information panel
+      showInfoPanel(d);
+    }
+
+    /**
+     * Display detailed course information in the info panel
+     * @param {Object} node - Course node data
+     */
+    function showInfoPanel(node) {
+      const panel = d3.select('#infoPanel');
+      const content = d3.select('#infoPanelContent');
+      
+      // Build prerequisite and dependent chains for display
+      const prereqChain = buildPrerequisiteChain(node);      const dependentChain = buildDependentChain(node);
+      
+      // Display comprehensive course information
+      content.html(`
+        <strong>${node.label} (${node.subject} ${node.number})</strong><br/>
+        <em>Level ${node.level} - Depth ${node.depth}</em><br/><br/>
+        
+        <strong>Prerequisite Chain:</strong><br/>
+        ${prereqChain}<br/><br/>
+        
+        <strong>Enables These Courses:</strong><br/>
+        ${dependentChain}
+      `);
+      
+      // Show the panel
+      panel.style('display', 'block');
+    }
+
+    /**
+     * Build a readable prerequisite chain showing the path to a course
+     * @param {Object} node - Course node data
+     * @returns {string} HTML string showing prerequisite flow
+     */
+    function buildPrerequisiteChain(node) {
+      if (node.prerequisites.length === 0) return 'This is an entry-level course';
+      
+      // Create arrow-separated chain of prerequisites leading to this course
+      return node.prerequisites.map(prereq => {
+        const prereqNode = filteredData.nodes.find(n => n.id === prereq);
+        return prereqNode ? `${prereqNode.label}` : prereq;
+      }).join(' → ') + ` → <strong>${node.label}</strong>`;
+    }
+
+    /**
+     * Build a list of courses that depend on the selected course
+     * @param {Object} node - Course node data
+     * @returns {string} Comma-separated list of dependent courses
+     */
+    function buildDependentChain(node) {
+      if (node.dependents.length === 0) return 'No dependent courses found';
+      
+      // Show up to 10 dependent courses, with "..." if there are more
+      return node.dependents.slice(0, 10).map(dep => {
+        const depNode = filteredData.nodes.find(n => n.id === dep);
+        return depNode ? depNode.label : dep;
+      }).join(', ') + (node.dependents.length > 10 ? '...' : '');
+    }    /**
+     * Update the statistics display panel with current graph data
+     */
+    function updateStatistics() {      d3.select('#nodeCount').text(filteredData.nodes.length);                          // Current node count
+      d3.select('#linkCount').text(filteredData.links.length);                        // Current link count
+      d3.select('#subjectCount').text(new Set(filteredData.nodes.map(n => n.subject)).size);  // Unique subjects
+      d3.select('#maxDepth').text(Math.max(...filteredData.nodes.map(n => n.depth)));         // Maximum depth level
+      
+      // Update degree-related statistics if a degree is selected
+      if (selectedDegreeInfo) {
+        const coreCount = filteredData.nodes.filter(n => selectedDegreeInfo.requirements.core.has(n.id)).length;
+        const majorCount = filteredData.nodes.filter(n => selectedDegreeInfo.requirements.major.has(n.id)).length;
+        
+        // Add degree statistics to the stats panel
+        let degreeStats = d3.select('.stats-panel').select('.degree-stats');
+        if (degreeStats.empty()) {
+          degreeStats = d3.select('.stats-panel').append('div').attr('class', 'degree-stats');
+        }
+        
+        degreeStats.html(`
+          <div style="margin-top: 10px;"><strong>${selectedDegreeInfo.name}</strong></div>
+          <div>Core: ${coreCount} courses</div>
+          <div>Major: ${majorCount} courses</div>
+        `);
+      } else {
+        // Remove degree statistics if no degree is selected
+        d3.select('.stats-panel').select('.degree-stats').remove();
+      }
+    }
+
+    // =============================================================================
+    // DRAG INTERACTION HANDLERS
+    // =============================================================================
+    
+    /**
+     * Handle start of node dragging
+     * @param {Event} event - Drag start event
+     * @param {Object} d - Node being dragged
+     */
+    function dragStarted(event, d) {
+      // Restart simulation if physics is enabled and no other drag is active
+      if (!event.active && physicsEnabled) simulation.alphaTarget(0.3).restart();
+      d.fx = d.x;  // Fix X position during drag
+      d.fy = d.y;  // Fix Y position during drag
+    }
+
+    /**
+     * Handle ongoing node dragging
+     * @param {Event} event - Drag event
+     * @param {Object} d - Node being dragged
+     */
+    function dragged(event, d) {
+      d.fx = event.x;  // Update fixed X position
+      d.fy = event.y;  // Update fixed Y position
+    }
+
+    /**
+     * Handle end of node dragging
+     * @param {Event} event - Drag end event
+     * @param {Object} d - Node that was dragged
+     */
+    function dragEnded(event, d) {
+      // Stop heating the simulation if no other drag is active
+      if (!event.active && physicsEnabled) simulation.alphaTarget(0);
+      d.fx = null;  // Release X position (allow physics to move it)
+      d.fy = null;  // Release Y position (allow physics to move it)
+    }    // =============================================================================
+    // UI CONTROL FUNCTIONS
+    // =============================================================================
+    
+    /**
+     * Reset all filters and show default view
+     */
+    function resetGraph() {
+      d3.select('#degreeFilter').property('value', '');     // Clear degree filter
+      d3.select('#subjectFilter').property('value', '');    // Clear subject filter
+      d3.select('#levelFilter').property('value', '');     // Clear level filter
+      d3.select('#maxNodes').property('value', '200');     // Reset to reasonable default
+      d3.select('#infoPanel').style('display', 'none');    // Hide info panel
+      selectedDegreeInfo = null;                            // Clear selected degree
+      filterAndRender();                                    // Re-render with defaults
+    }
+
+    /**
+     * Show all courses without any filtering
+     */
+    function showAllCourses() {
+      d3.select('#degreeFilter').property('value', '');     // Clear degree filter
+      d3.select('#subjectFilter').property('value', '');    // Clear subject filter
+      d3.select('#levelFilter').property('value', '');     // Clear level filter
+      d3.select('#maxNodes').property('value', 'all');     // Show all nodes
+      d3.select('#infoPanel').style('display', 'none');    // Hide info panel
+      selectedDegreeInfo = null;                            // Clear selected degree
+      filterAndRender();                                    // Re-render with all courses
+    }
+
+    /**
+     * Reset zoom and pan to center the graph in view
+     */
+    function centerView() {
+      const containerNode = d3.select('#graph').node().parentNode;
+      const rect = containerNode.getBoundingClientRect();
+      const transform = d3.zoomIdentity.translate(0, 0).scale(1);  // Reset to identity transform
+      svg.transition()
+        .duration(750)                                            // Smooth transition
+        .call(zoomBehavior.transform, transform);                 // Apply transform
+    }
+
+    /**
+     * Toggle physics simulation on/off for performance or static viewing
+     */
+    function togglePhysics() {
+      physicsEnabled = !physicsEnabled;
+      if (physicsEnabled) {
+        simulation.restart();    // Resume simulation
+      } else {
+        simulation.stop();       // Pause simulation
+      }
+    }
+
+    /**
+     * Export graph as PNG image (placeholder for future implementation)
+     */
+    function exportGraph() {
+      // Future feature: Convert SVG to PNG for download
+      alert('Export functionality would be implemented here');
+    }
+
+    // =============================================================================
+    // RESPONSIVE DESIGN AND INITIALIZATION
+    // =============================================================================
+    
+    /**
+     * Handle window resize to keep graph responsive
+     */
+    function handleResize() {
+      if (svg && simulation) {
+        const containerNode = d3.select('#graph').node().parentNode;
+        const rect = containerNode.getBoundingClientRect();
+        // Update SVG viewBox to match new container size
+        svg.attr('viewBox', `0 0 ${rect.width} ${rect.height}`);
+        // Recenter the force simulation
+        simulation.force('center', d3.forceCenter(rect.width / 2, rect.height / 2));
+        simulation.restart();
+      }
+    }
+
+    // =============================================================================
+    // APPLICATION INITIALIZATION
+    // =============================================================================
+    
+    // Start the application when the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', initGraph);
+    // Handle window resizing for responsive behavior
+    window.addEventListener('resize', handleResize);
+  </script>
+</body>
+</html>

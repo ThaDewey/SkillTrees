@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category Details - Degree Progress Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: grid;
+      grid-template-areas: 
+        "sidebar main";
+      grid-template-columns: 300px 1fr;
+      overflow: hidden;
+    }
+
+    /* Sidebar Styles */
+    .sidebar {
+      grid-area: sidebar;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-right: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      color: white;
+      overflow-y: auto;
+    }
+
+    .student-info {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .student-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(45deg, #3498db, #2ecc71);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .student-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .student-id {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .degree-info {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .degree-info h3 {
+      color: #3498db;
+      margin-bottom: 10px;
+    }
+
+    .progress-ring {
+      width: 80px;
+      height: 80px;
+      margin: 15px auto;
+    }
+
+    .progress-circle {
+      fill: none;
+      stroke: rgba(255, 255, 255, 0.2);
+      stroke-width: 8;
+    }
+
+    .progress-bar {
+      fill: none;
+      stroke: #3498db;
+      stroke-width: 8;
+      stroke-linecap: round;
+      transition: stroke-dashoffset 0.5s ease-in-out;
+    }
+
+    .progress-text {
+      font-size: 16px;
+      font-weight: bold;
+      fill: white;
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+
+    .quick-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .stat-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 20px;
+      font-weight: bold;
+      color: #3498db;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      color: #bdc3c7;
+      margin-top: 5px;
+    }
+
+    .nav-menu {
+      margin-top: 20px;
+    }
+
+    .nav-item {
+      display: block;
+      padding: 12px 16px;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-item:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateX(5px);
+    }
+
+    .nav-item.active {
+      background: rgba(52, 152, 219, 0.3);
+    }
+
+    /* Main Content */
+    .main-content {
+      grid-area: main;
+      padding: 30px;
+      overflow-y: auto;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+    }
+
+    .category-header {
+      background: linear-gradient(135deg, #3498db, #2ecc71);
+      color: white;
+      padding: 30px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .category-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .category-description {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    .back-button:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .content-sections {
+      display: grid;
+      gap: 20px;
+    }
+
+    .content-section {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border-left: 4px solid #3498db;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-content {
+      color: #7f8c8d;
+      line-height: 1.6;
+    }
+
+    .course-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .course-item {
+      background: #f8f9fa;
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      border-left: 3px solid #3498db;
+      transition: all 0.3s ease;
+    }
+
+    .course-item:hover {
+      background: #e9ecef;
+      transform: translateX(5px);
+    }
+
+    .course-item.completed {
+      border-left-color: #27ae60;
+      background: #d4edda;
+    }
+
+    .course-item.completed:hover {
+      background: #c3e6cb;
+    }
+
+    .track-section {
+      margin-top: 20px;
+    }
+
+    .track-item {
+      background: #f1f2f6;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      border-left: 3px solid #9b59b6;
+    }
+
+    .track-name {
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+
+    .track-courses {
+      color: #7f8c8d;
+      font-size: 14px;
+    }
+
+    .error-message {
+      text-align: center;
+      padding: 40px;
+      color: #e74c3c;
+      background: #fff5f5;
+      border-radius: 10px;
+      margin: 20px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        grid-template-areas: 
+          "sidebar"
+          "main";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+      }
+      
+      .sidebar {
+        padding: 15px;
+      }
+      
+      .main-content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">    <div class="student-info">
+      <div class="student-avatar">AT</div>
+      <div class="student-name">Alex Thompson</div>
+      <div class="student-id">Student ID: ST2025001</div>
+    </div>    <div class="degree-info">
+      <h3>Computer Science, B.S.</h3>
+      <p>Expected Graduation: May 2026</p>
+      
+      <svg class="progress-ring" viewBox="0 0 100 100">
+        <circle class="progress-circle" cx="50" cy="50" r="45"></circle>
+        <circle class="progress-bar" cx="50" cy="50" r="45" 
+                style="--progress: 68; stroke-dasharray: 314; stroke-dashoffset: calc(314 - (314 * 68) / 100);"></circle>
+        <text x="50" y="50" class="progress-text">68%</text>
+      </svg>
+      
+      <div class="quick-stats">
+        <div class="stat-card">
+          <div class="stat-number">82</div>
+          <div class="stat-label">Credits Earned</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">120</div>
+          <div class="stat-label">Total Required</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">38</div>
+          <div class="stat-label">Remaining</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">3.47</div>
+          <div class="stat-label">GPA</div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="DegreeProgressDashboard.html" class="nav-item">🏠 Dashboard</a>
+      <a href="CoreProgress.html" class="nav-item">📚 Core Requirements</a>
+      <a href="MajorProgress.html" class="nav-item">💻 Major Requirements</a>
+      <a href="#" class="nav-item">📋 Course Planning</a>
+      <a href="#" class="nav-item">📊 Grade Report</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <a href="#" class="back-button" id="backButton">
+      ← Back to Overview
+    </a>
+
+    <div class="category-header">
+      <h1 class="category-title" id="categoryTitle">Loading...</h1>
+      <p class="category-description" id="categoryDescription">Please wait while we load the category details...</p>
+    </div>
+
+    <div class="content-sections" id="contentSections">
+      <!-- Content will be dynamically loaded here -->
+    </div>
+  </div>
+
+  <script>
+    // Get URL parameters
+    function getUrlParameter(name) {
+      name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+      var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+      var results = regex.exec(location.search);
+      return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+
+    // Course data for all categories
+    const courseData = {      'Computer Science Core': {
+        description: 'Essential computer science courses that form the foundation of your CS knowledge.',
+        completed: [
+          'CS 1114 - Programming Fundamentals (4 credits)',
+          'CS 2413 - Data Structures (3 credits)',
+          'CS 2614 - Computer Architecture (4 credits)',
+          'CS 2813 - Discrete Structures (3 credits)',
+          'CS 3823 - Algorithm Analysis (3 credits)'
+        ],
+        remaining: [
+          'CS 3113 - Operating Systems (3 credits)',
+          'CS 3333 - Database Systems (3 credits)',
+          'CS 4413 - Software Engineering (3 credits)',
+          'CS 4713 - Computer Networks (3 credits)',
+          'CS 4893 - Senior Capstone (3 credits)'
+        ],
+        prerequisites: {
+          'CS 3113': 'CS 2413, CS 2614',
+          'CS 3333': 'CS 2413',
+          'CS 4413': 'CS 2413, Junior standing',
+          'CS 4713': 'CS 3113',
+          'CS 4893': 'Senior standing, completion of 75% of major requirements'
+        }
+      },
+      'Computer Science Electives': {
+        description: 'Advanced CS courses to specialize in your areas of interest.',
+        completed: [
+          'CS 4793 - Artificial Intelligence (3 credits)',
+          'CS 4273 - Web Application Development (3 credits)'
+        ],
+        remaining: [
+          'Need 9 more credits from CS 4000+ level courses'
+        ],
+        options: [
+          'CS 4143 - Mobile Application Development',
+          'CS 4243 - Computer Graphics',
+          'CS 4373 - Machine Learning',
+          'CS 4523 - Cybersecurity',
+          'CS 4653 - Game Development',
+          'CS 4773 - Data Mining',
+          'CS 4883 - Special Topics in CS'
+        ],
+        tracks: {
+          'Software Development': ['CS 4273', 'CS 4143', 'CS 4413'],
+          'AI/Machine Learning': ['CS 4793', 'CS 4373', 'CS 4773'],
+          'Systems': ['CS 4523', 'CS 4713', 'CS 3113'],
+          'Graphics/Games': ['CS 4243', 'CS 4653', 'Linear Algebra']
+        }
+      },
+      'Support Courses': {
+        description: 'Mathematics and science courses that support your computer science studies.',
+        completed: [],
+        remaining: [
+          'PHYS 2514 - University Physics I (4 credits)',
+          'ECE 2713 - Electric Circuits (3 credits)'
+        ],
+        alternatives: [
+          'PHYS 2524 - University Physics II (alternative to ECE 2713)',
+          'MATH 3333 - Linear Algebra (for graphics track)',
+          'STAT 3013 - Applied Statistics (for data science track)'
+        ],
+        prerequisites: {
+          'PHYS 2514': 'MATH 1924, PHYS 2021 (or concurrent)',
+          'ECE 2713': 'MATH 1924, PHYS 2514'
+        }
+      },
+      'Written and Oral Communication': {
+        description: 'Courses to develop your communication skills essential for professional success.',
+        completed: [
+          'ENGL 1113 - English Composition I (3 credits)',
+          'ENGL 1213 - English Composition II (3 credits)'
+        ],
+        remaining: [
+          'COMM 1313 - Public Speaking (3 credits)'
+        ],
+        options: [
+          'COMM 1313 - Public Speaking',
+          'COMM 2413 - Interpersonal Communication',
+          'ENGL 2413 - Technical Writing',
+          'ENGL 3323 - Business Writing'
+        ]
+      },        'Mathematical Sciences': {
+          description: 'Mathematical foundation courses critical for computer science applications.',
+          completed: [
+            'MATH 1914 - Calculus I (4 credits)',
+            'MATH 1924 - Calculus II (4 credits)',
+            'MATH 2513 - Discrete Mathematics (3 credits)'
+          ],
+          remaining: [
+            'STAT 2013 - Elementary Statistics (3 credits)'
+          ],
+          alternatives: [
+            'MATH 3333 - Linear Algebra (alternative to STAT 2013)',
+            'MATH 2934 - Calculus III (for advanced track)'
+          ],
+          prerequisites: {
+            'MATH 1924': 'MATH 1914 or placement',
+            'MATH 2513': 'MATH 1924 or concurrent enrollment',
+            'STAT 2013': 'MATH 1513 or higher'
+          }
+        },'Natural Sciences': {
+          description: 'Science courses that complement your technical education.',
+          completed: [
+            'PHYS 2014 - General Physics I (4 credits)',
+            'CHEM 1515 - General Chemistry I (5 credits)'
+          ],
+          remaining: [
+            'One additional Natural Science course (3-4 credits)'
+          ],
+          options: [
+            'PHYS 2024 - General Physics II',
+            'CHEM 1415 - General Chemistry II',
+            'BIOL 1114 - General Biology I',
+            'GEOL 1014 - Physical Geology'
+          ]
+        },
+        'Quantitative Reasoning': {
+          description: 'Mathematical foundation courses critical for problem-solving and analytical thinking.',
+          completed: [
+            'MATH 1914 - College Algebra (4 credits)',
+            'MATH 1924 - Calculus I (4 credits)'
+          ],
+          remaining: [],
+          options: [
+            'MATH 2934 - Calculus II',
+            'STAT 2013 - Elementary Statistics',
+            'MATH 3333 - Linear Algebra'
+          ]
+        },
+        'Critical Inquiry': {
+          description: 'Courses designed to develop critical thinking and analytical reasoning skills.',
+          completed: [
+            'PHIL 1313 - Introduction to Philosophy (3 credits)'
+          ],
+          remaining: [
+            'One additional Critical Inquiry course (3 credits)'
+          ],
+          options: [
+            'PHIL 2323 - Ethics',
+            'PHIL 2413 - Logic',
+            'PHIL 3323 - Philosophy of Science',
+            'RELI 1113 - World Religions'
+          ]
+        },
+        'American Historical and Political Analysis': {
+          description: 'Understanding American history, government, and political systems.',
+          completed: [
+            'HIST 1483 - American History to 1865 (3 credits)',
+            'POLS 1113 - American Government (3 credits)'
+          ],
+          remaining: [],
+          options: [
+            'HIST 1493 - American History since 1865',
+            'POLS 2213 - State and Local Government',
+            'POLS 3413 - Constitutional Law'
+          ]
+        },
+        'Cultural and Language Analysis': {
+          description: 'Exploring diverse cultures, languages, and global perspectives.',
+          completed: [
+            'SPAN 1115 - Elementary Spanish I (5 credits)'
+          ],
+          remaining: [
+            'One additional Cultural/Language course (3 credits)'
+          ],
+          options: [
+            'SPAN 1225 - Elementary Spanish II',
+            'FREN 1115 - Elementary French I',
+            'ANTH 1113 - Cultural Anthropology',
+            'GEOG 2253 - World Regional Geography'
+          ]
+        },
+        'Social and Behavioral Analysis': {
+          description: 'Understanding human behavior and social structures.',
+          completed: [],
+          remaining: [
+            'One Social and Behavioral Analysis course (3 credits)'
+          ],
+          options: [
+            'PSYC 1113 - General Psychology',
+            'SOCI 1113 - Introduction to Sociology',
+            'ANTH 1113 - Cultural Anthropology',
+            'ECON 2013 - Principles of Macroeconomics'
+          ]
+        },
+        'Life Skills': {
+          description: 'Practical skills for personal wellness and life management.',
+          completed: [
+            'HLTH 1353 - Personal Health (3 credits)'
+          ],
+          remaining: [
+            'One additional Life Skills course (1-3 credits)'
+          ],
+          options: [
+            'PHED 1001 - Fitness and Wellness',
+            'NUTR 2223 - Nutrition',
+            'FACS 1113 - Personal Finance',
+            'Various Physical Education Activities'
+          ]
+        }
+    };
+
+    // Load category data
+    function loadCategoryData() {
+      const categoryName = getUrlParameter('category');
+      const source = getUrlParameter('source');
+      
+      if (!categoryName) {
+        showError('No category specified');
+        return;
+      }
+
+      const data = courseData[categoryName];
+      if (!data) {
+        showError('Category not found: ' + categoryName);
+        return;
+      }
+
+      // Update page title and header
+      document.title = `${categoryName} - Degree Progress Dashboard`;
+      document.getElementById('categoryTitle').textContent = categoryName;
+      document.getElementById('categoryDescription').textContent = data.description || 'Detailed information about this category.';
+
+      // Set up back button
+      const backButton = document.getElementById('backButton');
+      if (source === 'core') {
+        backButton.href = 'CoreProgress.html';
+        backButton.innerHTML = '← Back to Core Requirements';
+      } else if (source === 'major') {
+        backButton.href = 'MajorProgress.html';
+        backButton.innerHTML = '← Back to Major Requirements';
+      } else {
+        backButton.href = 'DegreeProgressDashboard.html';
+        backButton.innerHTML = '← Back to Dashboard';
+      }
+
+      // Generate content sections
+      generateContentSections(data);
+    }
+
+    function generateContentSections(data) {
+      const container = document.getElementById('contentSections');
+      container.innerHTML = '';
+
+      // Completed courses section
+      if (data.completed && data.completed.length > 0) {
+        const section = createSection('✅ Completed Courses', 'completed');
+        const list = document.createElement('ul');
+        list.className = 'course-list';
+        
+        data.completed.forEach(course => {
+          const item = document.createElement('li');
+          item.className = 'course-item completed';
+          item.textContent = course;
+          list.appendChild(item);
+        });
+        
+        section.appendChild(list);
+        container.appendChild(section);
+      }
+
+      // Remaining requirements section
+      if (data.remaining && data.remaining.length > 0) {
+        const section = createSection('📋 Remaining Requirements', 'remaining');
+        const list = document.createElement('ul');
+        list.className = 'course-list';
+        
+        data.remaining.forEach(req => {
+          const item = document.createElement('li');
+          item.className = 'course-item';
+          item.textContent = req;
+          list.appendChild(item);
+        });
+        
+        section.appendChild(list);
+        container.appendChild(section);
+      }
+
+      // Course options section
+      if (data.options && data.options.length > 0) {
+        const section = createSection('💡 Available Course Options', 'options');
+        const list = document.createElement('ul');
+        list.className = 'course-list';
+        
+        data.options.forEach(option => {
+          const item = document.createElement('li');
+          item.className = 'course-item';
+          item.textContent = option;
+          list.appendChild(item);
+        });
+        
+        section.appendChild(list);
+        container.appendChild(section);
+      }
+
+      // Alternative courses section
+      if (data.alternatives && data.alternatives.length > 0) {
+        const section = createSection('🔄 Alternative Courses', 'alternatives');
+        const list = document.createElement('ul');
+        list.className = 'course-list';
+        
+        data.alternatives.forEach(alt => {
+          const item = document.createElement('li');
+          item.className = 'course-item';
+          item.textContent = alt;
+          list.appendChild(item);
+        });
+        
+        section.appendChild(list);
+        container.appendChild(section);
+      }
+
+      // Tracks section
+      if (data.tracks) {
+        const section = createSection('🎯 Recommended Tracks', 'tracks');
+        const trackContainer = document.createElement('div');
+        trackContainer.className = 'track-section';
+        
+        Object.entries(data.tracks).forEach(([track, courses]) => {
+          const trackItem = document.createElement('div');
+          trackItem.className = 'track-item';
+          
+          const trackName = document.createElement('div');
+          trackName.className = 'track-name';
+          trackName.textContent = track;
+          
+          const trackCourses = document.createElement('div');
+          trackCourses.className = 'track-courses';
+          trackCourses.textContent = courses.join(', ');
+          
+          trackItem.appendChild(trackName);
+          trackItem.appendChild(trackCourses);
+          trackContainer.appendChild(trackItem);
+        });
+        
+        section.appendChild(trackContainer);
+        container.appendChild(section);
+      }
+
+      // Prerequisites section
+      if (data.prerequisites) {
+        const section = createSection('📚 Prerequisites', 'prerequisites');
+        const list = document.createElement('ul');
+        list.className = 'course-list';
+        
+        Object.entries(data.prerequisites).forEach(([course, prereq]) => {
+          const item = document.createElement('li');
+          item.className = 'course-item';
+          item.innerHTML = `<strong>${course}:</strong> ${prereq}`;
+          list.appendChild(item);
+        });
+        
+        section.appendChild(list);
+        container.appendChild(section);
+      }
+    }
+
+    function createSection(title, type) {
+      const section = document.createElement('div');
+      section.className = 'content-section';
+      
+      const titleElement = document.createElement('h2');
+      titleElement.className = 'section-title';
+      titleElement.textContent = title;
+      
+      section.appendChild(titleElement);
+      return section;
+    }
+
+    function showError(message) {
+      const container = document.getElementById('contentSections');
+      container.innerHTML = `
+        <div class="error-message">
+          <h2>Error</h2>
+          <p>${message}</p>
+          <p><a href="DegreeProgressDashboard.html">Return to Dashboard</a></p>
+        </div>
+      `;
+    }
+
+    // Initialize page
+    document.addEventListener('DOMContentLoaded', loadCategoryData);
+  </script>
+</body>
+</html>

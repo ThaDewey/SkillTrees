@@ -309,11 +309,43 @@
       padding: 25px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .category-card:hover {
+    }    .category-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Clickable Category Styling */
+    .clickable {
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .clickable::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    .clickable:hover::before {
+      left: 100%;
+    }
+
+    .navigate-icon {
+      margin-left: auto;
+      font-size: 18px;
+      color: #3498db;
+      transition: transform 0.3s ease;
+    }
+
+    .clickable:hover .navigate-icon {
+      transform: translateX(5px);
     }
 
     .category-header {
@@ -571,9 +603,8 @@
 
       <!-- Categories Grid -->
       <div class="categories-grid">
-        
-        <!-- CS Core Requirements -->
-        <div class="category-card cs-core">
+          <!-- CS Core Requirements -->
+        <div class="category-card cs-core clickable" data-category="Computer Science Core">
           <div class="category-header">
             <div class="category-icon">
               <i class="fas fa-code"></i>
@@ -585,6 +616,7 @@
                 <span class="category-status in-progress">In Progress</span>
               </div>
             </div>
+            <i class="fas fa-chevron-right navigate-icon"></i>
           </div>
           <div class="progress-bar-container">
             <div class="progress-bar-fill" style="width: 65%"></div>
@@ -626,21 +658,20 @@
             </div>
             <div class="course-details">Prerequisites: CS 2413, Junior standing</div>
           </div>
-        </div>
-
-        <!-- Math Requirements -->
-        <div class="category-card math-req">
+        </div>        <!-- Math Requirements -->
+        <div class="category-card math-req clickable" data-category="Mathematical Sciences">
           <div class="category-header">
             <div class="category-icon">
               <i class="fas fa-calculator"></i>
             </div>
             <div>
-              <div class="category-title">Mathematics Requirements</div>
+              <div class="category-title">Mathematical Sciences</div>
               <div class="category-progress">
                 12/15 Credits Complete
                 <span class="category-status in-progress">In Progress</span>
               </div>
             </div>
+            <i class="fas fa-chevron-right navigate-icon"></i>
           </div>
           <div class="progress-bar-container">
             <div class="progress-bar-fill" style="width: 80%"></div>
@@ -670,10 +701,8 @@
             </div>
             <div class="course-details">Prerequisites: MATH 1513 or higher</div>
           </div>
-        </div>
-
-        <!-- CS Electives -->
-        <div class="category-card cs-electives">
+        </div>        <!-- CS Electives -->
+        <div class="category-card cs-electives clickable" data-category="Computer Science Electives">
           <div class="category-header">
             <div class="category-icon">
               <i class="fas fa-puzzle-piece"></i>
@@ -685,6 +714,7 @@
                 <span class="category-status in-progress">In Progress</span>
               </div>
             </div>
+            <i class="fas fa-chevron-right navigate-icon"></i>
           </div>
           <div class="progress-bar-container">
             <div class="progress-bar-fill" style="width: 40%"></div>
@@ -708,10 +738,8 @@
             </div>
             <div class="course-details">Choose from CS 4000+ level courses or approved alternatives</div>
           </div>
-        </div>
-
-        <!-- Support Courses -->
-        <div class="category-card support-courses">
+        </div>        <!-- Support Courses -->
+        <div class="category-card support-courses clickable" data-category="Support Courses">
           <div class="category-header">
             <div class="category-icon">
               <i class="fas fa-cogs"></i>
@@ -723,6 +751,7 @@
                 <span class="category-status not-started">Not Started</span>
               </div>
             </div>
+            <i class="fas fa-chevron-right navigate-icon"></i>
           </div>
           <div class="progress-bar-container">
             <div class="progress-bar-fill" style="width: 0%"></div>
@@ -751,7 +780,6 @@
       </a>
     </div>
   </div>
-
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       // Animate progress bars
@@ -771,9 +799,7 @@
       progressCircles.forEach(circle => {
         const progress = circle.style.getPropertyValue('--progress');
         circle.style.strokeDashoffset = `calc(314 - (314 * ${progress}) / 100)`;
-      });
-
-      // Add hover effects to category cards
+      });      // Add hover effects to category cards
       const categoryCards = document.querySelectorAll('.category-card');
       categoryCards.forEach(card => {
         card.addEventListener('mouseenter', function() {
@@ -782,6 +808,12 @@
         
         card.addEventListener('mouseleave', function() {
           this.style.transform = 'translateY(0)';
+        });        // Add click event for navigation
+        card.addEventListener('click', function() {
+          const categoryName = this.getAttribute('data-category');
+          if (categoryName) {
+            window.location.href = `CategoryDetails.html?category=${encodeURIComponent(categoryName)}&source=major`;
+          }
         });
       });
     });

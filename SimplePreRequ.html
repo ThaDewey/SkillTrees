@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Course Network - Nodes Only</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: #fff;
+      margin: 0;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #4a90e2;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .control-group {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+    }
+
+    .control-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #4a90e2;
+    }
+
+    .control-group select, .control-group input {
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.9);
+      color: #333;
+      min-width: 150px;
+    }
+
+    .control-group button {
+      background: linear-gradient(135deg, #4a90e2, #357abd);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 2px;
+      font-weight: bold;
+    }
+
+    .control-group button:hover {
+      background: linear-gradient(135deg, #357abd, #2968a3);
+    }
+
+    .graph-container {
+      width: 100%;
+      height: 80vh;
+      min-height: 800px;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      border: 2px solid #4a90e2;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stats-panel {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 12px;
+      z-index: 1000;
+    }
+
+    .legend {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 12px;
+      z-index: 1000;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .legend-color {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+
+    .info-panel {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 12px;
+      max-height: 150px;
+      overflow-y: auto;
+      display: none;
+    }    .node {
+      cursor: pointer;
+      transition: stroke-width 0.2s ease;
+    }
+
+    .node:hover {
+      stroke-width: 4px;
+      /* Removed transform: scale(1.1) to prevent position shifts */
+    }
+
+    .node.highlighted {
+      stroke: #ff6b6b;
+      stroke-width: 4px;
+      /* Removed transform: scale(1.2) to prevent position shifts */
+    }
+
+    .node-label {
+      font-size: 10px;
+      font-weight: bold;
+      text-anchor: middle;
+      pointer-events: none;
+      fill: #fff;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    }
+
+    .tooltip {
+      position: absolute;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.9);
+      border-radius: 5px;
+      pointer-events: none;
+      font-size: 12px;
+      z-index: 1001;
+      max-width: 250px;
+    }
+
+    @media (max-width: 768px) {
+      .controls {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .control-group {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><i class="fas fa-circle-nodes"></i> Simple Course Network</h1>
+      <p>Course visualization without prerequisite connections</p>
+      <p style="font-size: 14px; color: #aaa;">
+        <i class="fas fa-mouse-pointer"></i> Click and drag to pan • 
+        <i class="fas fa-search-plus"></i> Scroll to zoom • 
+        <i class="fas fa-hand-point-up"></i> Click nodes for details
+      </p>
+    </div>
+
+    <div class="controls">
+      <div class="control-group">
+        <label for="subjectFilter">Filter by Subject:</label>
+        <select id="subjectFilter">
+          <option value="">All Subjects</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="levelFilter">Course Level:</label>
+        <select id="levelFilter">
+          <option value="">All Levels</option>
+          <option value="1000">1000 Level</option>
+          <option value="2000">2000 Level</option>
+          <option value="3000">3000 Level</option>
+          <option value="4000">4000 Level</option>
+          <option value="5000">5000+ Level</option>
+        </select>
+      </div>      <div class="control-group">
+        <label for="maxNodes">Max Nodes:</label>
+        <select id="maxNodes">
+          <option value="1">1 node</option>
+          <option value="2">2 nodes</option>
+          <option value="4">4 nodes</option>
+          <option value="8">8 nodes</option>
+          <option value="16">16 nodes</option>
+          <option value="32">32 nodes</option>
+          <option value="64">64 nodes</option>
+          <option value="128" selected>128 nodes</option>
+          <option value="256">256 nodes</option>
+          <option value="512">512 nodes</option>
+          <option value="1024">1024 nodes</option>
+          <option value="all">All nodes</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="layoutType">Layout:</label>
+        <select id="layoutType">
+          <option value="force" selected>Force Layout</option>
+          <option value="grid">Grid Layout</option>
+          <option value="circle">Circle Layout</option>
+          <option value="random">Random Layout</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <button onclick="resetGraph()">Reset View</button>
+        <button onclick="centerView()">Center View</button>
+        <button onclick="togglePhysics()">Toggle Physics</button>
+      </div>
+    </div>
+
+    <div class="graph-container">
+      <svg id="graph"></svg>
+      
+      <div class="stats-panel">
+        <div><strong>Network Statistics</strong></div>
+        <div>Nodes: <span id="nodeCount">0</span></div>
+        <div>Subjects: <span id="subjectCount">0</span></div>
+        <div>Levels: <span id="levelCount">0</span></div>
+      </div>
+
+      <div class="legend">
+        <div><strong>Legend</strong></div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #2ecc71;"></div>
+          <span>Entry Level (1000)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #3498db;"></div>
+          <span>Intermediate (2000-3000)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #9b59b6;"></div>
+          <span>Advanced (4000+)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #e74c3c;"></div>
+          <span>Graduate (5000+)</span>
+        </div>
+      </div>
+
+      <div class="info-panel" id="infoPanel">
+        <div id="infoPanelContent"></div>
+      </div>
+    </div>
+
+    <div class="tooltip" id="tooltip" style="display: none;"></div>
+  </div>
+
+  <script>
+    // =============================================================================
+    // GLOBAL VARIABLES
+    // =============================================================================
+    
+    let svg;
+    let simulation;
+    let nodeElements;
+    let labelElements;
+    let zoomBehavior;
+    
+    let allData = { nodes: [] };
+    let filteredData = { nodes: [] };
+    
+    let physicsEnabled = true;
+
+    // =============================================================================
+    // INITIALIZATION AND DATA LOADING
+    // =============================================================================
+    
+    async function initGraph() {
+      try {
+        console.log('Loading prerequisite data...');
+        const preReqResponse = await fetch('./DegreeJSON/202510_Pre26CoReqs.json');
+        
+        if (!preReqResponse.ok) {
+          throw new Error(`Failed to load data: ${preReqResponse.status} ${preReqResponse.statusText}`);
+        }
+        
+        const preReqData = await preReqResponse.json();
+        console.log('Raw data loaded, length:', preReqData.length);
+        
+        // Process data to extract unique courses
+        const processedData = processCourseData(preReqData);
+        allData = processedData;
+        
+        setupSVG();
+        populateFilters();
+        filterAndRender();
+        
+        console.log(`Graph initialized with ${allData.nodes.length} courses`);
+      } catch (error) {
+        console.error('Error loading data:', error);
+        alert('Failed to load data. Please check the console for details.');
+      }
+    }    function processCourseData(preReqData) {
+      const nodeMap = new Map();
+      
+      // Extract all unique courses from prerequisite data
+      preReqData.forEach(item => {
+        // Add main course
+        if (item.course && !nodeMap.has(item.course)) {
+          const courseInfo = parseCourseCode(item.course);
+          nodeMap.set(item.course, {
+            id: item.course,
+            label: item.course,
+            subject: item.coursesubject || courseInfo.subject,
+            number: item.coursenumber || courseInfo.number,
+            level: Math.floor((courseInfo.number || 0) / 1000) * 1000,
+            type: 'course',
+            prerequisites: [],
+            dependents: [],
+            connectionCount: 0
+          });
+        }
+        
+        // Add prerequisite course
+        if (item.reqcourse && !nodeMap.has(item.reqcourse)) {
+          const preReqInfo = parseCourseCode(item.reqcourse);
+          nodeMap.set(item.reqcourse, {
+            id: item.reqcourse,
+            label: item.reqcourse,
+            subject: item.reqsubject || preReqInfo.subject,
+            number: item.reqnumber || preReqInfo.number,
+            level: Math.floor((preReqInfo.number || 0) / 1000) * 1000,
+            type: 'course',
+            prerequisites: [],
+            dependents: [],
+            connectionCount: 0
+          });
+        }
+      });
+      
+      // Now count the connections for each course
+      preReqData.forEach(item => {
+        if (item.course && item.reqcourse) {
+          const mainCourse = nodeMap.get(item.course);
+          const prereqCourse = nodeMap.get(item.reqcourse);
+          
+          if (mainCourse && prereqCourse) {
+            // Track prerequisite relationships
+            mainCourse.prerequisites.push(item.reqcourse);
+            prereqCourse.dependents.push(item.course);
+            
+            // Count total connections (prerequisites + dependents)
+            mainCourse.connectionCount = mainCourse.prerequisites.length + mainCourse.dependents.length;
+            prereqCourse.connectionCount = prereqCourse.prerequisites.length + prereqCourse.dependents.length;
+          }
+        }
+      });
+      
+      // Update final connection counts
+      nodeMap.forEach(node => {
+        node.connectionCount = node.prerequisites.length + node.dependents.length;
+      });
+      
+      const nodes = Array.from(nodeMap.values());
+      console.log('Processed', nodes.length, 'unique courses with connection counts');
+      
+      return { nodes };
+    }
+
+    function parseCourseCode(courseCode) {
+      const match = courseCode.match(/^([A-Z]+)(\d+)/);
+      if (match) {
+        return {
+          subject: match[1],
+          number: parseInt(match[2])
+        };
+      }
+      return { subject: 'UNKNOWN', number: 0 };
+    }
+
+    // =============================================================================
+    // SVG SETUP
+    // =============================================================================
+    
+    function setupSVG() {
+      const container = d3.select('#graph');
+      const containerNode = container.node().parentNode;
+      const rect = containerNode.getBoundingClientRect();
+      
+      svg = d3.select('#graph')
+        .attr('width', '100%')
+        .attr('height', '100%')
+        .attr('viewBox', `0 0 ${rect.width} ${rect.height}`)
+        .style('width', '100%')
+        .style('height', '100%');
+      
+      zoomBehavior = d3.zoom()
+        .scaleExtent([0.1, 4])
+        .on('zoom', (event) => {
+          const { transform } = event;
+          svg.select('.zoom-group').attr('transform', transform);
+        });
+      
+      svg.call(zoomBehavior);
+      
+      if (svg.select('.zoom-group').empty()) {
+        svg.append('g').attr('class', 'zoom-group');
+      }
+    }
+
+    // =============================================================================
+    // FILTER AND UI MANAGEMENT
+    // =============================================================================
+    
+    function populateFilters() {
+      const subjects = [...new Set(allData.nodes.map(n => n.subject))].sort();
+      const subjectFilter = d3.select('#subjectFilter');
+      
+      subjects.forEach(subject => {
+        subjectFilter.append('option').attr('value', subject).text(subject);
+      });
+      
+      // Set up event listeners
+      d3.select('#subjectFilter').on('change', filterAndRender);
+      d3.select('#levelFilter').on('change', filterAndRender);
+      d3.select('#maxNodes').on('change', filterAndRender);
+      d3.select('#layoutType').on('change', filterAndRender);
+    }
+    
+    function filterAndRender() {
+      const subjectFilter = d3.select('#subjectFilter').property('value');
+      const levelFilter = d3.select('#levelFilter').property('value');
+      const maxNodes = d3.select('#maxNodes').property('value');
+      
+      let filteredNodes = [...allData.nodes];
+      
+      // Apply subject filter
+      if (subjectFilter) {
+        filteredNodes = filteredNodes.filter(n => n.subject === subjectFilter);
+      }
+      
+      // Apply level filter
+      if (levelFilter) {
+        filteredNodes = filteredNodes.filter(n => n.level === parseInt(levelFilter));
+      }
+        // Apply node limit
+      if (maxNodes !== 'all') {
+        const limit = parseInt(maxNodes);
+        if (filteredNodes.length > limit) {
+          // Sort by connection count (highest first), then by subject and number for tie-breaking
+          filteredNodes = filteredNodes
+            .sort((a, b) => {
+              // Primary sort: connection count (descending - most connected first)
+              if (b.connectionCount !== a.connectionCount) {
+                return b.connectionCount - a.connectionCount;
+              }
+              // Secondary sort: subject alphabetically
+              if (a.subject !== b.subject) {
+                return a.subject.localeCompare(b.subject);
+              }
+              // Tertiary sort: course number
+              return a.number - b.number;
+            })
+            .slice(0, limit);
+        }
+      }
+      
+      filteredData = { nodes: filteredNodes };
+      
+      updateStatistics();
+      renderGraph();
+    }
+
+    // =============================================================================
+    // GRAPH RENDERING
+    // =============================================================================
+    
+    function renderGraph() {
+      console.log('Rendering graph with', filteredData.nodes.length, 'nodes');
+      
+      svg.select('.zoom-group').selectAll('*').remove();
+      
+      if (filteredData.nodes.length === 0) return;
+      
+      const layoutType = d3.select('#layoutType').property('value');
+      
+      // Set initial positions based on layout type
+      setNodePositions(layoutType);
+      
+      // Create node elements
+      nodeElements = svg.select('.zoom-group').selectAll('.node')
+        .data(filteredData.nodes)
+        .enter().append('circle')
+        .attr('class', 'node')
+        .attr('r', 12)
+        .attr('fill', d => getNodeColor(d))
+        .attr('stroke', '#fff')
+        .attr('stroke-width', 2)
+        .attr('cx', d => d.x)
+        .attr('cy', d => d.y)
+        .call(d3.drag()
+          .on('start', dragStarted)
+          .on('drag', dragged)
+          .on('end', dragEnded))
+        .on('mouseover', showTooltip)
+        .on('mouseout', hideTooltip)
+        .on('click', highlightNode);
+      
+      // Create labels
+      labelElements = svg.select('.zoom-group').selectAll('.node-label')
+        .data(filteredData.nodes)
+        .enter().append('text')
+        .attr('class', 'node-label')
+        .text(d => d.label)
+        .attr('x', d => d.x)
+        .attr('y', d => d.y + 20)
+        .attr('dy', '.35em')
+        .style('font-size', '8px');
+      
+      // Setup simulation if using force layout
+      if (layoutType === 'force') {
+        setupSimulation();
+        simulation.nodes(filteredData.nodes).on('tick', ticked);
+        simulation.alpha(1).restart();
+      }
+    }
+
+    function setNodePositions(layoutType) {
+      const containerNode = d3.select('#graph').node().parentNode;
+      const rect = containerNode.getBoundingClientRect();
+      const width = rect.width;
+      const height = rect.height;
+      const padding = 50;
+      
+      switch (layoutType) {
+        case 'grid':
+          const cols = Math.ceil(Math.sqrt(filteredData.nodes.length));
+          const cellWidth = (width - 2 * padding) / cols;
+          const cellHeight = (height - 2 * padding) / Math.ceil(filteredData.nodes.length / cols);
+          
+          filteredData.nodes.forEach((d, i) => {
+            d.x = padding + (i % cols) * cellWidth + cellWidth / 2;
+            d.y = padding + Math.floor(i / cols) * cellHeight + cellHeight / 2;
+          });
+          break;
+          
+        case 'circle':
+          const centerX = width / 2;
+          const centerY = height / 2;
+          const radius = Math.min(width, height) / 3;
+          
+          filteredData.nodes.forEach((d, i) => {
+            const angle = (i / filteredData.nodes.length) * 2 * Math.PI;
+            d.x = centerX + Math.cos(angle) * radius;
+            d.y = centerY + Math.sin(angle) * radius;
+          });
+          break;
+          
+        case 'random':
+          filteredData.nodes.forEach(d => {
+            d.x = padding + Math.random() * (width - 2 * padding);
+            d.y = padding + Math.random() * (height - 2 * padding);
+          });
+          break;
+          
+        case 'force':
+        default:
+          // Random initial positions for force layout
+          filteredData.nodes.forEach(d => {
+            d.x = Math.random() * width;
+            d.y = Math.random() * height;
+          });
+          break;
+      }
+    }    function setupSimulation() {
+      const containerNode = d3.select('#graph').node().parentNode;
+      const rect = containerNode.getBoundingClientRect();
+      const width = rect.width;
+      const height = rect.height;
+      
+      simulation = d3.forceSimulation()
+        .force('charge', d3.forceManyBody().strength(-50))  // Reduced from -100 for less aggressive movement
+        .force('center', d3.forceCenter(width / 2, height / 2))
+        .force('collision', d3.forceCollide().radius(20))
+        .alphaDecay(0.05)      // Faster cooling to settle quickly
+        .velocityDecay(0.8);   // Higher friction to reduce movement
+    }
+
+    function getNodeColor(node) {
+      const level = node.level;
+      if (level >= 5000) return '#e74c3c';
+      if (level >= 4000) return '#9b59b6';
+      if (level >= 2000) return '#3498db';
+      return '#2ecc71';
+    }
+
+    function ticked() {
+      if (nodeElements) {
+        nodeElements
+          .attr('cx', d => d.x)
+          .attr('cy', d => d.y);
+      }
+      
+      if (labelElements) {
+        labelElements
+          .attr('x', d => d.x)
+          .attr('y', d => d.y + 20);
+      }
+    }
+
+    // =============================================================================
+    // INTERACTION HANDLERS
+    // =============================================================================    function showTooltip(event, d) {
+      // Stop any movement during hover to prevent flickering
+      if (simulation) {
+        d.fx = d.x;  // Fix position during hover
+        d.fy = d.y;
+        simulation.alphaTarget(0);  // Stop the simulation
+      }
+      
+      const tooltip = d3.select('#tooltip');
+      
+      tooltip.html(`
+        <strong>${d.label}</strong><br/>
+        Subject: ${d.subject}<br/>
+        Number: ${d.number}<br/>        Level: ${d.level}<br/>
+        <strong>Connections: ${d.connectionCount}</strong><br/>
+        Prerequisites: ${d.prerequisites.length}<br/>
+        Dependents: ${d.dependents.length}
+      `)
+      .style('display', 'block')
+      .style('left', (event.pageX + 10) + 'px')
+      .style('top', (event.pageY - 10) + 'px');
+    }
+
+    function hideTooltip(event, d) {
+      // Release fixed position when hover ends
+      if (d && simulation && physicsEnabled) {
+        d.fx = null;  // Allow physics to move the node again
+        d.fy = null;
+        simulation.alphaTarget(0.1).restart();  // Gently restart simulation
+      }
+      
+      d3.select('#tooltip').style('display', 'none');
+    }
+
+    function highlightNode(event, d) {
+      nodeElements.classed('highlighted', false);
+      d3.select(event.currentTarget).classed('highlighted', true);
+      
+      showInfoPanel(d);
+    }    function showInfoPanel(node) {
+      const panel = d3.select('#infoPanel');
+      const content = d3.select('#infoPanelContent');
+      
+      const prereqList = node.prerequisites.length > 0 ? node.prerequisites.slice(0, 10).join(', ') : 'None';
+      const dependentList = node.dependents.length > 0 ? node.dependents.slice(0, 10).join(', ') : 'None';
+      
+      content.html(`
+        <strong>${node.label}</strong><br/>
+        <em>Subject: ${node.subject} | Number: ${node.number} | Level: ${node.level}</em><br/>
+        <em><strong>Total Connections: ${node.connectionCount}</strong></em><br/><br/>
+        
+        <strong>Prerequisites (${node.prerequisites.length}):</strong><br/>
+        ${prereqList}${node.prerequisites.length > 10 ? '...' : ''}<br/><br/>
+        
+        <strong>Dependents (${node.dependents.length}):</strong><br/>
+        ${dependentList}${node.dependents.length > 10 ? '...' : ''}
+      `);
+      
+      panel.style('display', 'block');
+    }
+
+    function updateStatistics() {
+      d3.select('#nodeCount').text(filteredData.nodes.length);
+      d3.select('#subjectCount').text(new Set(filteredData.nodes.map(n => n.subject)).size);
+      d3.select('#levelCount').text(new Set(filteredData.nodes.map(n => n.level)).size);
+    }
+
+    // =============================================================================
+    // DRAG HANDLERS
+    // =============================================================================
+    
+    function dragStarted(event, d) {
+      if (simulation && physicsEnabled) {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+      }
+    }
+
+    function dragged(event, d) {
+      d.fx = event.x;
+      d.fy = event.y;
+      if (!simulation || !physicsEnabled) {
+        d.x = event.x;
+        d.y = event.y;
+        d3.select(event.sourceEvent.target).attr('cx', d.x).attr('cy', d.y);
+        labelElements.filter(data => data.id === d.id)
+          .attr('x', d.x)
+          .attr('y', d.y + 20);
+      }
+    }
+
+    function dragEnded(event, d) {
+      if (simulation && physicsEnabled) {
+        if (!event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+      }
+    }
+
+    // =============================================================================
+    // UI CONTROL FUNCTIONS
+    // =============================================================================
+    
+    function resetGraph() {
+      d3.select('#subjectFilter').property('value', '');
+      d3.select('#levelFilter').property('value', '');
+      d3.select('#maxNodes').property('value', '100');
+      d3.select('#layoutType').property('value', 'force');
+      d3.select('#infoPanel').style('display', 'none');
+      filterAndRender();
+    }
+
+    function centerView() {
+      const transform = d3.zoomIdentity.translate(0, 0).scale(1);
+      svg.transition()
+        .duration(750)
+        .call(zoomBehavior.transform, transform);
+    }
+
+    function togglePhysics() {
+      physicsEnabled = !physicsEnabled;
+      if (simulation) {
+        if (physicsEnabled) {
+          simulation.restart();
+        } else {
+          simulation.stop();
+        }
+      }
+    }
+
+    // =============================================================================
+    // INITIALIZATION
+    // =============================================================================
+    
+    document.addEventListener('DOMContentLoaded', initGraph);
+    
+    window.addEventListener('resize', () => {
+      if (svg && simulation) {
+        const containerNode = d3.select('#graph').node().parentNode;
+        const rect = containerNode.getBoundingClientRect();
+        svg.attr('viewBox', `0 0 ${rect.width} ${rect.height}`);
+        if (simulation.force) {
+          simulation.force('center', d3.forceCenter(rect.width / 2, rect.height / 2));
+          simulation.restart();
+        }
+      }
+    });
+  </script>
+</body>
+</html>

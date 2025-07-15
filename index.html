@@ -1,20 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Degree Progress Hub - SkillTrees</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Civilization Tech Tree</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      color: #333;
+      overflow-x: hidden;
+    }
 
-  <body>
-    <h1>Tech Tree</h1>
-    <div id="tree-container">
-      <svg id="connections"></svg>
-      <div id="tech-grid"></div>
+    .header {
+      text-align: center;
+      padding: 40px 20px;
+      color: white;
+    }
+
+    .header h1 {
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .header .subtitle {
+      font-size: 1.2em;
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+
+    .header .description {
+      font-size: 1em;
+      opacity: 0.8;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section-title {
+      font-size: 2em;
+      color: white;
+      text-align: center;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 25px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: 2px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    .card:hover::before {
+      left: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      border-color: #3498db;
+    }
+
+    .card-icon {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .main-tools .card-icon { color: #3498db; }
+    .experiments .card-icon { color: #9b59b6; }
+    .demos .card-icon { color: #e74c3c; }
+
+    .card-title {
+      font-size: 1.4em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    .card-description {
+      color: #7f8c8d;
+      line-height: 1.6;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 12px 20px;
+      background: linear-gradient(135deg, #3498db, #2980b9);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .card-link:hover {
+      background: linear-gradient(135deg, #2980b9, #1f4e79);
+      transform: translateY(-2px);
+    }
+
+    .card-link i {
+      margin-right: 8px;
+    }
+
+    .main-tools .card-link {
+      background: linear-gradient(135deg, #3498db, #2980b9);
+    }
+
+    .experiments .card-link {
+      background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    }
+
+    .demos .card-link {
+      background: linear-gradient(135deg, #e74c3c, #c0392b);
+    }
+
+    .status-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      padding: 4px 12px;
+      border-radius: 15px;
+      font-size: 0.8em;
+      font-weight: bold;
+    }
+
+    .status-primary {
+      background: #d5edda;
+      color: #155724;
+    }
+
+    .status-experimental {
+      background: #fff3cd;
+      color: #856404;
+    }
+
+    .status-demo {
+      background: #f8d7da;
+      color: #721c24;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: white;
+      opacity: 0.8;
+    }
+
+    .divider {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      margin: 40px 0;
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2.2em;
+      }
+      
+      .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      
+      .container {
+        padding: 0 15px 30px;
+      }
+    }
+
+    /* Animation for cards loading */
+    .card {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: cardLoad 0.6s ease forwards;
+    }
+
+    .card:nth-child(1) { animation-delay: 0.1s; }
+    .card:nth-child(2) { animation-delay: 0.2s; }
+    .card:nth-child(3) { animation-delay: 0.3s; }
+    .card:nth-child(4) { animation-delay: 0.4s; }
+    .card:nth-child(5) { animation-delay: 0.5s; }
+    .card:nth-child(6) { animation-delay: 0.6s; }
+
+    @keyframes cardLoad {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1><i class="fas fa-graduation-cap"></i> Degree Progress Hub</h1>
+    <div class="subtitle">Interactive Academic Progress Tracking & Visualization</div>
+    <div class="description">
+      Explore your academic journey through multiple interactive tools and visualizations. 
+      Track degree progress, visualize course dependencies, and plan your path to graduation.
     </div>
-    <script type="module" src="script.js"></script>
-  </body>
+  </div>
 
+  <div class="container">
+    <!-- Main Degree Tracking Tools -->
+    <div class="section main-tools">
+      <h2 class="section-title"><i class="fas fa-chart-line"></i> Main Dashboard Tools</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="status-badge status-primary">Primary</div>
+          <div class="card-icon"><i class="fas fa-tachometer-alt"></i></div>
+          <div class="card-title">Degree Progress Dashboard</div>
+          <div class="card-description">
+            Comprehensive overview of your academic progress with detailed breakdowns of core requirements, 
+            major progress, and graduation timeline.
+          </div>
+          <a href="DegreeProgressDashboard.html" class="card-link">
+            <i class="fas fa-arrow-right"></i> Open Dashboard
+          </a>
+        </div>
+
+        <div class="card">
+          <div class="status-badge status-primary">Core</div>
+          <div class="card-icon"><i class="fas fa-university"></i></div>
+          <div class="card-title">Core Requirements Progress</div>
+          <div class="card-description">
+            Deep dive into university core requirements including Written Communication, 
+            Quantitative Reasoning, and all general education categories.
+          </div>
+          <a href="CoreProgress.html" class="card-link">
+            <i class="fas fa-arrow-right"></i> View Core Progress
+          </a>
+        </div>
+
+        <div class="card">
+          <div class="status-badge status-primary">Major</div>
+          <div class="card-icon"><i class="fas fa-code"></i></div>
+          <div class="card-title">Major Requirements Progress</div>
+          <div class="card-description">
+            Detailed breakdown of Computer Science major requirements including core CS courses, 
+            electives, mathematics, and support courses.
+          </div>
+          <a href="MajorProgress.html" class="card-link">
+            <i class="fas fa-arrow-right"></i> View Major Progress
+          </a>
+        </div>
+
+        <div class="card">
+          <div class="status-badge status-primary">Dynamic</div>
+          <div class="card-icon"><i class="fas fa-list-alt"></i></div>
+          <div class="card-title">Category Details</div>
+          <div class="card-description">
+            Dynamic detailed view for any requirement category. Shows completed courses, 
+            remaining requirements, prerequisites, and course options.
+          </div>
+          <a href="CategoryDetails.html?category=Computer%20Science%20Core&source=major" class="card-link">
+            <i class="fas fa-arrow-right"></i> View Sample Category
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Visualization Experiments -->
+    <div class="section experiments">
+      <h2 class="section-title"><i class="fas fa-flask"></i> Interactive Visualizations</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="status-badge status-experimental">RPG Style</div>
+          <div class="card-icon"><i class="fas fa-dragon"></i></div>
+          <div class="card-title">Academic World Map</div>
+          <div class="card-description">
+            Fantasy-themed visualization of your degree journey. Navigate through different 
+            realms representing academic areas with an RPG-style interface.
+          </div>
+          <a href="AcademicWorldMap.html" class="card-link">
+            <i class="fas fa-arrow-right"></i> Explore World Map
+          </a>
+        </div>
+
+        <div class="card">
+          <div class="status-badge status-experimental">Quest Based</div>
+          <div class="card-icon"><i class="fas fa-map"></i></div>
+          <div class="card-title">Simple Quest View</div>
+          <div class="card-description">
+            Gamified approach to degree tracking where courses become quests and 
+            academic progress unlocks new adventures and achievements.
+          </div>
+          <a href="SimpleQuestView.html" class="card-link">
+            <i class="fas fa-arrow-right"></i> Start Quest
+          </a>
+        </div>
+
+        <div class="card">
+          <div class="status-badge status-experimental">Network Graph</div>
+          <div class="card-icon"><i class="fas fa-project-diagram"></i></div>
+          <div class="card-title">Simple Graph View</div>
+          <div class="card-description">
+            Interactive network visualization showing course dependencies and relationships. 
+            Explore how courses connect and build upon each other.
+          </div>
+          <a href="SimpleGraphView.html" class="card-link">
+            <i class="fas fa-arrow-right"></i> View Graph
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Technical Demonstrations -->
+    <div class="section demos">
+      <h2 class="section-title"><i class="fas fa-cogs"></i> Technical Demonstrations</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="status-badge status-demo">Advanced</div>
+          <div class="card-icon"><i class="fas fa-sitemap"></i></div>
+          <div class="card-title">Advanced Nested Graphs</div>
+          <div class="card-description">
+            Advanced vis.js demonstrations showing complex graph layouts, clustering, 
+            and nested visualization techniques for large academic datasets.
+          </div>
+          <a href="AdvancedNestedGraphs.html" class="card-link">
+            <i class="fas fa-arrow-right"></i> View Advanced Demo
+          </a>
+        </div>
+
+        <div class="card">
+          <div class="status-badge status-demo">Simple</div>
+          <div class="card-icon"><i class="fas fa-file-alt"></i></div>
+          <div class="card-title">Simplified Degree View</div>
+          <div class="card-description">
+            Clean, minimalist view of degree requirements focusing on essential information 
+            without complex visualizations or interactive elements.
+          </div>
+          <a href="simplified-degree-view.html" class="card-link">
+            <i class="fas fa-arrow-right"></i> View Simple Version
+          </a>
+        </div>
+
+        <div class="card">
+          <div class="status-badge status-demo">Testing</div>
+          <div class="card-icon"><i class="fas fa-vial"></i></div>
+          <div class="card-title">Tech Tree Test</div>
+          <div class="card-description">
+            Experimental technology tree visualization for testing new features and 
+            layouts before implementing in the main dashboard.
+          </div>
+          <a href="test-tech-tree.html" class="card-link">
+            <i class="fas fa-arrow-right"></i> Open Test
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p><i class="fas fa-graduation-cap"></i> Degree Progress Tracking System</p>
+    <p>Interactive tools for academic success and graduation planning</p>
+  </div>
+
+  <script>
+    // Add some interactive effects
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add click tracking
+      const cards = document.querySelectorAll('.card');
+      cards.forEach(card => {
+        card.addEventListener('click', function(e) {
+          if (e.target.tagName !== 'A') {
+            const link = this.querySelector('.card-link');
+            if (link) {
+              window.location.href = link.href;
+            }
+          }
+        });
+      });
+
+      // Add keyboard navigation
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' && document.activeElement.classList.contains('card')) {
+          document.activeElement.click();
+        }
+      });
+    });
+  </script>
+</body>
 </html>

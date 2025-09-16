@@ -1,0 +1,70 @@
+[
+    {
+        "id": 1,
+        "category": "Adaptability"
+    },
+    {
+        "id": 2,
+        "category": "Computers and information technology"
+    },
+    {
+        "id": 3,
+        "category": "Creativity and innovation"
+    },
+    {
+        "id": 4,
+        "category": "Critical and analytical thinking"
+    },
+    {
+        "id": 5,
+        "category": "Customer service"
+    },
+    {
+        "id": 6,
+        "category": "Detail oriented"
+    },
+    {
+        "id": 7,
+        "category": "Fine motor"
+    },
+    {
+        "id": 8,
+        "category": "Interpersonal"
+    },
+    {
+        "id": 9,
+        "category": "Leadership"
+    },
+    {
+        "id": 10,
+        "category": "Mathematics"
+    },
+    {
+        "id": 11,
+        "category": "Mechanical"
+    },
+    {
+        "id": 12,
+        "category": "Physical strength and stamina"
+    },
+    {
+        "id": 13,
+        "category": "Problem solving and decision making"
+    },
+    {
+        "id": 14,
+        "category": "Project management"
+    },
+    {
+        "id": 15,
+        "category": "Science"
+    },
+    {
+        "id": 16,
+        "category": "Speaking and listening"
+    },
+    {
+        "id": 17,
+        "category": "Writing and reading"
+    }
+]

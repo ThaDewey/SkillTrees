@@ -1,0 +1,924 @@
+[
+  {
+    "course_identification": "ENG5673",
+    "title_short_desc": "Young Adult Literature",
+    "inferred_skills": [
+      {
+        "label": "Analyze Young Adult Texts",
+        "description": "Develop the ability to analyze and interpret texts within the young adult literature genre."
+      },
+      {
+        "label": "Evaluate Adolescent Audience Impact",
+        "description": "Learn to evaluate how young adult literature affects and resonates with an adolescent audience."
+      },
+      {
+        "label": "Explore Literary History",
+        "description": "Gain knowledge of the history and evolution of young adult literature."
+      },
+      {
+        "label": "Understand Scholarship in YA Lit",
+        "description": "Familiarize with scholarly works related to young adult literature."
+      },
+      {
+        "label": "Apply Literary Theory",
+        "description": "Learn to apply literary theory to broaden understanding of the dynamic field of young adult literature."
+      },
+      {
+        "label": "Critically Analyze Narrative Structure",
+        "description": "Develop skills to critically analyze narrative structure within young adult texts."
+      },
+      {
+        "label": "Apply Genre Conventions",
+        "description": "Learn to recognize and apply conventions specific to the genre of young adult literature."
+      },
+      {
+        "label": "Develop Perspective on Contemporary YA Lit",
+        "description": "Cultivate a thoughtful perspective on contemporary young adult literature."
+      }
+    ]
+  },
+  {
+    "course_identification": "ENG4673",
+    "title_short_desc": "Young Adult Literature",
+    "inferred_skills": [
+      {
+        "label": "Analyze History of YA Lit",
+        "description": "Understand the historical development and evolution of young adult literature."
+      },
+      {
+        "label": "Evaluate Adolescent Audience Impact",
+        "description": "Assess how texts impact an adolescent audience."
+      },
+      {
+        "label": "Read & Interpret Scholarship",
+        "description": "Learn to read and interpret scholarly works in the field."
+      },
+      {
+        "label": "Broaden Understanding of Field",
+        "description": "Gain a broader understanding of young adult literature as a dynamic field."
+      },
+      {
+        "label": "Analyze Narrative Structure",
+        "description": "Learn to analyze the structure of narratives in young adult literature."
+      },
+      {
+        "label": "Comprehend Genre Conventions",
+        "description": "Understand and apply conventions of various genres within young adult literature."
+      },
+      {
+        "label": "Critically Read Young Adult Texts",
+        "description": "Develop the ability to critically read and interpret young adult texts."
+      },
+      {
+        "label": "Apply Critical Theory",
+        "description": "Learn to apply critical theory to the study of young adult literature."
+      }
+    ]
+  },
+  {
+    "course_identification": "CSDY4283",
+    "title_short_desc": "Writing the Short Story",
+    "inferred_skills": [
+      {
+        "label": "Analyze Contemporary Fiction",
+        "description": "Identify and discuss contemporary examples of the short story form."
+      },
+      {
+        "label": "Strengthen Writing Skills",
+        "description": "Improve overall writing ability through various assignments."
+      },
+      {
+        "label": "Understand Elements of Fiction",
+        "description": "Gain knowledge about key elements that make up a short story."
+      },
+      {
+        "label": "Produce Short Fiction",
+        "description": "Develop the skill to create original short stories."
+      },
+      {
+        "label": "Compose Writing Assignments",
+        "description": "Complete various writing tasks designed for skill development."
+      },
+      {
+        "label": "Apply Genre Conventions",
+        "description": "Understand and use conventions specific to the short story genre."
+      },
+      {
+        "label": "Analyze Narrative Structure",
+        "description": "Examine the structure of narratives in short stories."
+      },
+      {
+        "label": "Critique Short Stories",
+        "description": "Evaluate and critique various short stories based on learned skills"
+      }
+    ]
+  },
+  {
+    "course_identification": "CSDY4273",
+    "title_short_desc": "Writing The Novel",
+    "inferred_skills": [
+      {
+        "label": "Analyze Published Novels",
+        "description": "Study of published novels to understand craft and structure"
+      },
+      {
+        "label": "Craft Novel Installments",
+        "description": "Workshop-style critique of student-generated novel installments"
+      },
+      {
+        "label": "Apply Genre Conventions",
+        "description": "Understanding and applying conventions in the genre of novel writing"
+      },
+      {
+        "label": "Compose Novel Excerpts",
+        "description": "Developing skills to write coherent and engaging novel excerpts"
+      },
+      {
+        "label": "Critique Peer Work",
+        "description": "Giving constructive feedback on peer-written work"
+      },
+      {
+        "label": "Revise Novel Content",
+        "description": "Refining own written work based on critique and feedback"
+      },
+      {
+        "label": "Publisher-Ready Writing",
+        "description": "Writing novel installments for potential publication"
+      },
+      {
+        "label": "Novel Structure Analysis",
+        "description": "Understanding and applying effective novel structure and pacing"
+      }
+    ]
+  },
+  {
+    "course_identification": "CSDY4583",
+    "title_short_desc": "Writing SciFi/Fantasy",
+    "inferred_skills": [
+      {
+        "label": "Study SciFi/Fantasy History",
+        "description": "Understand the historical context of science fiction and fantasy literature"
+      },
+      {
+        "label": "Compose SciFi/Fantasy Works",
+        "description": "Create original works within the genres of science fiction and fantasy"
+      },
+      {
+        "label": "Revise Compositions",
+        "description": "Edit and refine drafts of written work"
+      },
+      {
+        "label": "Understand Genre Conventions",
+        "description": "Recognize and apply conventions specific to science fiction and fantasy literature"
+      },
+      {
+        "label": "Analyze Literature",
+        "description": "Critically evaluate published works within the genres of science fiction and fantasy"
+      },
+      {
+        "label": "Market Writing",
+        "description": "Learn strategies for marketing written work in the context of science fiction and fantasy literature"
+      },
+      {
+        "label": "Writing Workshop Participation",
+        "description": "Engage in collaborative workshops to receive and provide constructive feedback on writing"
+      }
+    ]
+  },
+  {
+    "course_identification": "CSDY5583",
+    "title_short_desc": "Writing SciFi/Fantasy",
+    "inferred_skills": [
+      {
+        "label": "Study SciFi/Fantasy History",
+        "description": "Learn about the history of Science Fiction and Fantasy literature."
+      },
+      {
+        "label": "Compose SciFi/Fantasy Works",
+        "description": "Write creative works within the genres of Science Fiction and Fantasy."
+      },
+      {
+        "label": "Revise Literary Composition",
+        "description": "Critically revise literary compositions in the context of Science Fiction and Fantasy."
+      },
+      {
+        "label": "Understand Genre Conventions",
+        "description": "Learn about the conventions specific to Science Fiction and Fantasy genres."
+      },
+      {
+        "label": "Analyze Literary Workshops",
+        "description": "Participate in workshops to analyze and discuss Science Fiction and Fantasy works."
+      },
+      {
+        "label": "Market Literary Works",
+        "description": "Learn about marketing strategies for Science Fiction and Fantasy literature."
+      }
+    ]
+  },
+  {
+    "course_identification": "CSDY5313",
+    "title_short_desc": "Writing Mystery/Adventure",
+    "inferred_skills": [
+      {
+        "label": "Analyze Genre Conventions",
+        "description": "Understanding the characteristics and conventions of mystery and adventure genres."
+      },
+      {
+        "label": "Compare Historical Works",
+        "description": "Evaluating and comparing historical mystery and adventure stories."
+      },
+      {
+        "label": "Research Contemporary Authors",
+        "description": "Investigating and researching contemporary authors in the mystery/adventure genre."
+      },
+      {
+        "label": "Write Creative Papers",
+        "description": "Composing creative essays within both the mystery and adventure genres."
+      },
+      {
+        "label": "Compare Contemporary Works",
+        "description": "Assessing and comparing contemporary mystery/adventure works."
+      },
+      {
+        "label": "Prepare Scholarly Analysis",
+        "description": "Producing a scholarly analysis of a contemporary author's work."
+      },
+      {
+        "label": "Analyze Narrative Structure",
+        "description": "Evaluating the structure and elements of mystery/adventure narratives."
+      }
+    ]
+  },
+  {
+    "course_identification": "CSDY5533",
+    "title_short_desc": "Writing For Television",
+    "inferred_skills": [
+      {
+        "label": "Read Scripts Critically",
+        "description": "Analyze and understand television scripts in detail"
+      },
+      {
+        "label": "Television Show Analysis",
+        "description": "Examine and dissect television shows for narrative structure and genre conventions"
+      },
+      {
+        "label": "Creative Writing for TV",
+        "description": "Compose original content suitable for television"
+      },
+      {
+        "label": "Television Genre Understanding",
+        "description": "Gain familiarity with various television genres and their conventions"
+      },
+      {
+        "label": "Narrative Structure Analysis",
+        "description": "Identify and assess narrative structure in television shows"
+      },
+      {
+        "label": "Television Narrative Composition",
+        "description": "Create engaging narratives for television audiences"
+      },
+      {
+        "label": "Genre-specific Writing Techniques",
+        "description": "Apply appropriate writing techniques to various television genres"
+      },
+      {
+        "label": "Television Genre Adaptation",
+        "description": "Adapt written content to fit the requirements of different television genres"
+      }
+    ]
+  },
+  {
+    "course_identification": "ENG4643",
+    "title_short_desc": "Writing for Nonprofits",
+    "inferred_skills": [
+      {
+        "label": "Write Grants",
+        "description": "Compose effective grant applications"
+      },
+      {
+        "label": "Fundraising Writing",
+        "description": "Compose persuasive fundraising materials"
+      },
+      {
+        "label": "Social Media Writing",
+        "description": "Create engaging social media content"
+      },
+      {
+        "label": "Newsletter Composition",
+        "description": "Write compelling newsletters for nonprofits"
+      },
+      {
+        "label": "Internal Communication",
+        "description": "Compose effective internal communications"
+      },
+      {
+        "label": "Apply Genre Conventions",
+        "description": "Use appropriate writing styles in various contexts"
+      },
+      {
+        "label": "Analyze Audience",
+        "description": "Adapt writing to suit different nonprofit audiences"
+      },
+      {
+        "label": "Communicate with Clarity",
+        "description": "Write effectively for a nonprofit setting"
+      }
+    ]
+  },
+  {
+    "course_identification": "ENG5393",
+    "title_short_desc": "Writing for Nonprofits",
+    "inferred_skills": [
+      {
+        "label": "Grants Writing",
+        "description": "Compose and structure grant applications"
+      },
+      {
+        "label": "Fundraising Composition",
+        "description": "Create persuasive fundraising materials"
+      },
+      {
+        "label": "Newsletter Production",
+        "description": "Design effective nonprofit newsletters"
+      },
+      {
+        "label": "Social Media Writing",
+        "description": "Compose engaging content for social media platforms"
+      },
+      {
+        "label": "Internal Communication",
+        "description": "Develop clear and concise internal communications"
+      },
+      {
+        "label": "Genre Adaptation",
+        "description": "Apply genre conventions to nonprofit writing"
+      },
+      {
+        "label": "Audience Analysis",
+        "description": "Identify and cater to diverse audiences"
+      },
+      {
+        "label": "Technical Writing Skills",
+        "description": "Improve writing skills for technical nonprofit work"
+      }
+    ]
+  },
+  {
+    "course_identification": "CSDY3363",
+    "title_short_desc": "Writing for Movies/TV/Stage",
+    "inferred_skills": [
+      {
+        "label": "Historical Analysis",
+        "description": "Exploring the history of dramatic writing"
+      },
+      {
+        "label": "Screenplay Composition",
+        "description": "Writing screenplays for movies and TV"
+      },
+      {
+        "label": "Teleplay Composition",
+        "description": "Writing teleplays for TV"
+      },
+      {
+        "label": "Stage Play Composition",
+        "description": "Writing stage plays"
+      },
+      {
+        "label": "Revision Techniques",
+        "description": "Refining and improving written work"
+      },
+      {
+        "label": "Marketing Strategies",
+        "description": "Promoting dramatic writing for various mediums"
+      },
+      {
+        "label": "Genre Conventions",
+        "description": "Understanding and applying conventions of different genres"
+      },
+      {
+        "label": "Writing Workshop Participation",
+        "description": "Participating in collaborative writing workshops"
+      }
+    ]
+  },
+  {
+    "course_identification": "CJ1313",
+    "title_short_desc": "Writing for CJ Professionals",
+    "inferred_skills": [
+      {
+        "label": "Write Clear and Effective Reports",
+        "description": "Ability to create clear, effective reports specific to the criminal justice field."
+      },
+      {
+        "label": "Utilize APA Citation Style",
+        "description": "Knowledge of American Psychological Association (APA) citation style for academic and professional writing."
+      },
+      {
+        "label": "Critique Writing of Others",
+        "description": "Ability to provide constructive feedback on the writing of others in a professional setting."
+      },
+      {
+        "label": "Write Press Releases",
+        "description": "Competence in composing press releases related to criminal justice matters."
+      },
+      {
+        "label": "Compose Search Warrants",
+        "description": "Ability to write detailed and legally sound search warrant documents."
+      },
+      {
+        "label": "Draft Probation Reports",
+        "description": "Knowledge of how to create comprehensive probation reports."
+      },
+      {
+        "label": "Analyze Narrative Structure",
+        "description": "Understanding of various narrative structures in criminal justice writing."
+      },
+      {
+        "label": "Apply Genre Conventions",
+        "description": "Ability to apply appropriate conventions for different genres within the criminal justice field."
+      }
+    ]
+  },
+  {
+    "course_identification": "CSDY5413",
+    "title_short_desc": "Writing For Children",
+    "inferred_skills": [
+      {
+        "label": "Analyze Children's Literature",
+        "description": "Explore the characteristics of award-winning books for children and young adults."
+      },
+      {
+        "label": "Study Psychology of Learning to Read",
+        "description": "Understand the psychology behind learning to read and its impact on writing for youth."
+      },
+      {
+        "label": "Explore Successful Writing Habits",
+        "description": "Learn from successful authors in the field of children's literature."
+      },
+      {
+        "label": "Analyze Narrative Structure",
+        "description": "Develop skills to analyze narratives suitable for different age groups."
+      },
+      {
+        "label": "Compose Age-Appropriate Texts",
+        "description": "Learn to write for various age groups from early childhood through young adults."
+      },
+      {
+        "label": "Apply Genre Conventions",
+        "description": "Understand and apply conventions specific to writing for children and young adults."
+      },
+      {
+        "label": "Evaluate Writing Techniques",
+        "description": "Critically evaluate techniques used in effective children's literature."
+      },
+      {
+        "label": "Develop Writing Skills for Multiple Age Groups",
+        "description": "Fine-tune writing skills to cater to diverse age groups effectively."
+      }
+    ]
+  },
+  {
+    "course_identification": "CSDY4413",
+    "title_short_desc": "Writing For Children",
+    "inferred_skills": [
+      {
+        "label": "Explore Writing History",
+        "description": "Learn about the history of writing for children"
+      },
+      {
+        "label": "Study Child Psychology",
+        "description": "Understand the psychology of learning to read"
+      },
+      {
+        "label": "Analyze Award-winning Books",
+        "description": "Critically evaluate award-winning children's literature"
+      },
+      {
+        "label": "Explore Successful Writing Habits",
+        "description": "Investigate the habits of successful children's writers"
+      },
+      {
+        "label": "Analyze Narrative Structure",
+        "description": "Learn to analyze narrative structures in children's literature"
+      },
+      {
+        "label": "Comprehend Genre Conventions",
+        "description": "Gain understanding of genre conventions for children's writing"
+      },
+      {
+        "label": "Evaluate Children's Literature Quality",
+        "description": "Critically evaluate the quality of children's literature"
+      },
+      {
+        "label": "Improve Writing Skills",
+        "description": "Develop and refine writing skills for various age groups in children"
+      }
+    ]
+  },
+  {
+    "course_identification": "CSDY4723",
+    "title_short_desc": "Writing Comic Bks/Graph Novels",
+    "inferred_skills": [
+      {
+        "label": "Study Comic History",
+        "description": "Explore the historical background of comic books and graphic novels."
+      },
+      {
+        "label": "Comprehend Composition",
+        "description": "Learn the composition techniques used in comic books and graphic novels."
+      },
+      {
+        "label": "Revise Comic Works",
+        "description": "Develop skills for revising and refining comic book and graphic novel content."
+      },
+      {
+        "label": "Market Comic Books",
+        "description": "Gain understanding on how to market comic books and graphic novels."
+      },
+      {
+        "label": "Analyze Genre Conventions",
+        "description": "Identify and apply conventions specific to the comic book and graphic novel genre."
+      },
+      {
+        "label": "Develop Writing Skills",
+        "description": "Improve overall writing abilities with a focus on comic books and graphic novels."
+      },
+      {
+        "label": "Create Comic Content",
+        "description": "Learn to create engaging content for comic books and graphic novels."
+      },
+      {
+        "label": "Craft Narrative Structure",
+        "description": "Design effective narrative structures for comic books and graphic novels."
+      }
+    ]
+  },
+  {
+    "course_identification": "CSDY5723",
+    "title_short_desc": "Writing Comic Bks/Graph Novels",
+    "inferred_skills": [
+      {
+        "label": "Historical Overview",
+        "description": "Understand the history of comic books and graphic novels"
+      },
+      {
+        "label": "Composition Techniques",
+        "description": "Learn techniques for composing comic book stories"
+      },
+      {
+        "label": "Revision Skills",
+        "description": "Gain skills in revising comic book and graphic novel drafts"
+      },
+      {
+        "label": "Marketing Strategies",
+        "description": "Learn strategies for marketing comic books and graphic novels"
+      },
+      {
+        "label": "Comic Book Analysis",
+        "description": "Analyze the structure, style, and content of comic books"
+      },
+      {
+        "label": "Graphic Novel Creation",
+        "description": "Learn to create graphic novels"
+      },
+      {
+        "label": "Genre Conventions",
+        "description": "Understand and apply conventions of the comic book/graphic novel genre"
+      },
+      {
+        "label": "Workshop Collaboration",
+        "description": "Collaborate in workshop settings to improve writing skills"
+      }
+    ]
+  },
+  {
+    "course_identification": "CSDY5423",
+    "title_short_desc": "Writing Comedy and Satire",
+    "inferred_skills": [
+      {
+        "label": "Analyze Contemporary Comic Literature",
+        "description": "Understand the nuances of contemporary comic and satiric literature."
+      },
+      {
+        "label": "Practice Comic and Satiric Writing Techniques",
+        "description": "Develop skills in crafting effective comic and satiric writing."
+      },
+      {
+        "label": "Produce Original Comic Works",
+        "description": "Create original works within the genres of comedy and satire."
+      },
+      {
+        "label": "Study Genre Conventions",
+        "description": "Learn the conventions specific to comic and satiric writing."
+      },
+      {
+        "label": "Apply Comic and Satiric Tone",
+        "description": "Develop the ability to apply humorous or critical tones appropriately."
+      },
+      {
+        "label": "Critically Evaluate Comedy and Satire",
+        "description": "Analyze and critically evaluate works of comedy and satire."
+      },
+      {
+        "label": "Adapt to Various Genres",
+        "description": "Demonstrate versatility in adapting comic and satiric writing styles across various genres."
+      },
+      {
+        "label": "Revise and Refine Writing",
+        "description": "Learn to revise and refine written works for clarity, coherence, and humor."
+      }
+    ]
+  },
+  {
+    "course_identification": "CSDY4423",
+    "title_short_desc": "Writing Comedy and Satire",
+    "inferred_skills": [
+      {
+        "label": "Analyze Contemporary Literature",
+        "description": "Identify themes, styles, and techniques in contemporary comic and satiric literature."
+      },
+      {
+        "label": "Practice Comic Writing Techniques",
+        "description": "Understand and apply strategies for writing comedy effectively."
+      },
+      {
+        "label": "Apply Satirical Techniques",
+        "description": "Utilize methods to create satire in various genres."
+      },
+      {
+        "label": "Produce Comic & Satiric Works",
+        "description": "Create original comic and satiric works in a variety of genres."
+      },
+      {
+        "label": "Understand Genre Conventions",
+        "description": "Recognize and utilize genre-specific conventions in comic and satiric writing."
+      },
+      {
+        "label": "Critically Evaluate Writings",
+        "description": "Analyze and critique the works of contemporary comic and satirical writers."
+      },
+      {
+        "label": "Develop Writing Voice",
+        "description": "Develop a unique voice in comic and satiric writing that resonates with audiences."
+      },
+      {
+        "label": "Revise & Edit Writings",
+        "description": "Refine and polish comic and satiric works through revision and editing processes."
+      }
+    ]
+  },
+  {
+    "course_identification": "CSDY3333",
+    "title_short_desc": "Writers on Writing",
+    "inferred_skills": [
+      {
+        "label": "Read and Analyze",
+        "description": "Ability to read and critically analyze literary works"
+      },
+      {
+        "label": "Discuss Literature",
+        "description": "Skill in discussing literary composition with peers"
+      },
+      {
+        "label": "Apply Poetics",
+        "description": "Ability to apply poetics theories to creative writing"
+      },
+      {
+        "label": "Diverse Author Analysis",
+        "description": "Competency in understanding and interpreting works by a diverse group of authors"
+      },
+      {
+        "label": "Literary Period Understanding",
+        "description": "Knowledge of literary periods and their respective characteristics"
+      },
+      {
+        "label": "Craft Creative Writing",
+        "description": "Ability to compose creative writing based on theoretical understanding"
+      },
+      {
+        "label": "Discuss Theory Application",
+        "description": "Skill in discussing the application of literary theory to practical writing"
+      },
+      {
+        "label": "Applied Genre Conventions",
+        "description": "Ability to understand and apply genre conventions in creative writing"
+      }
+    ]
+  },
+  {
+    "course_identification": "HUM4113",
+    "title_short_desc": "World Religions",
+    "inferred_skills": [
+      {
+        "label": "Compare Religious Practices",
+        "description": "Analyze cultural and intercultural similarities and differences in religious practices"
+      },
+      {
+        "label": "Identify Parallels in Beliefs",
+        "description": "Recognize patterns and parallels across diverse religious beliefs"
+      },
+      {
+        "label": "Examine Religious Manifestations",
+        "description": "Investigate various means by which religions are expressed and understood"
+      },
+      {
+        "label": "Contextualize Personal Beliefs",
+        "description": "Develop a broader contextual understanding of personal convictions"
+      },
+      {
+        "label": "Understand Others' Beliefs",
+        "description": "Gain insights into the beliefs and practices of others"
+      },
+      {
+        "label": "Analyze Diverse Religious Phenomena",
+        "description": "Explore and interpret diverse religious phenomena"
+      },
+      {
+        "label": "Apply Interdisciplinary Approach",
+        "description": "Use an interdisciplinary approach to study religion and culture"
+      }
+    ]
+  },
+  {
+    "course_identification": "HUM5103",
+    "title_short_desc": "World Religions",
+    "inferred_skills": [
+      {
+        "label": "Compare Religious Practices",
+        "description": "Analyze and compare diverse religious practices across different cultures."
+      },
+      {
+        "label": "Identify Cultural Parallels",
+        "description": "Recognize cultural similarities within various religious beliefs."
+      },
+      {
+        "label": "Distinguish Differences",
+        "description": "Discern and articulate differences in religious traditions."
+      },
+      {
+        "label": "Explore Religious Manifestations",
+        "description": "Investigate various means through which religions are expressed."
+      },
+      {
+        "label": "Broaden Contextual Understanding",
+        "description": "Develop a broader framework for understanding religious beliefs, including one's own and others."
+      },
+      {
+        "label": "Study Major Religious Traditions",
+        "description": "Gain knowledge of the key tenets and practices of major world religions."
+      },
+      {
+        "label": "Explore Minor Religious Traditions",
+        "description": "Familiarize oneself with less common religious traditions, as time permits."
+      },
+      {
+        "label": "Develop Intercultural Sensitivity",
+        "description": "Cultivate an appreciation for diverse religious perspectives and beliefs."
+      }
+    ]
+  },
+  {
+    "course_identification": "ENG3213",
+    "title_short_desc": "World Literature II",
+    "inferred_skills": [
+      {
+        "label": "Compare Literary Traditions",
+        "description": "Analyze historical and cultural contexts of literary texts from diverse regions"
+      },
+      {
+        "label": "Identify Interactions Among Cultures",
+        "description": "Recognize patterns of influence among world literatures and cultures"
+      },
+      {
+        "label": "Contextualize Text Analysis",
+        "description": "Examine literary texts within their distinct historical and cultural contexts"
+      },
+      {
+        "label": "Critical Thinking",
+        "description": "Develop analytical skills in the interpretation of complex patterns"
+      },
+      {
+        "label": "Cross-cultural Understanding",
+        "description": "Gain insights into various world literatures and cultures"
+      },
+      {
+        "label": "Historically-informed Reading",
+        "description": "Learn to read literary texts with an awareness of their historical significance"
+      },
+      {
+        "label": "Cultural Sensitivity",
+        "description": "Develop a nuanced understanding of cultural differences and similarities"
+      },
+      {
+        "label": "Articulate Analysis",
+        "description": "Communicate ideas about literary texts in a clear, persuasive manner"
+      }
+    ]
+  },
+  {
+    "course_identification": "ENG3193",
+    "title_short_desc": "World Literature I",
+    "inferred_skills": [
+      {
+        "label": "Understand Historical Contexts",
+        "description": "Recognize and interpret the historical significance of literary texts"
+      },
+      {
+        "label": "Analyze Cultural Interactions",
+        "description": "Identify patterns of interaction and influence among world literature and cultures"
+      },
+      {
+        "label": "Compare Literary Traditions",
+        "description": "Evaluate similarities and differences in literary traditions from various regions"
+      },
+      {
+        "label": "Identify Complex Patterns",
+        "description": "Detect complex patterns in the literary works studied"
+      },
+      {
+        "label": "Apply Literary Analysis",
+        "description": "Utilize critical thinking skills to analyze narrative structure and themes"
+      },
+      {
+        "label": "Develop Cross-Cultural Awareness",
+        "description": "Foster an appreciation for diverse literary traditions and their cultural implications"
+      }
+    ]
+  },
+  {
+    "course_identification": "HIST1023",
+    "title_short_desc": "World History II",
+    "inferred_skills": [
+      {
+        "label": "Analyze Historical Connections",
+        "description": "Students will learn to examine and interpret the political, social, and cultural links in world history since 1450."
+      },
+      {
+        "label": "Evaluate Historical Developments",
+        "description": "Students will be able to assess the progressions and transformations in world history over time."
+      },
+      {
+        "label": "Identify Global Impact Factors",
+        "description": "Students will learn to recognize and describe factors that have influenced global developments since 1450."
+      },
+      {
+        "label": "Compare Historical Contexts",
+        "description": "Students will be able to compare the political, social, and cultural contexts of different regions in world history."
+      },
+      {
+        "label": "Apply Historical Analysis Methods",
+        "description": "Students will learn to apply various methods of historical analysis to understand global events and trends."
+      },
+      {
+        "label": "Develop Cultural Awareness",
+        "description": "Students will cultivate an understanding and appreciation for the diverse cultures that have shaped world history."
+      },
+      {
+        "label": "Understand Timeline Sequence",
+        "description": "Students will learn to recognize and place events within their proper historical timelines."
+      },
+      {
+        "label": "Communicate Historical Knowledge",
+        "description": "Students will be able to effectively communicate their understanding of world history to others."
+      }
+    ]
+  },
+  {
+    "course_identification": "HIST1013",
+    "title_short_desc": "World History I",
+    "inferred_skills": [
+      {
+        "label": "Identify Historical Connections",
+        "description": "Recognize and analyze the political, social, and cultural links in world history up to 1450."
+      },
+      {
+        "label": "Analyze Historical Developments",
+        "description": "Understand and evaluate historical changes and progressions in various societies."
+      },
+      {
+        "label": "Interpret Historical Contexts",
+        "description": "Comprehend the broader social, political, and cultural contexts within which historical events occurred."
+      },
+      {
+        "label": "Critically Evaluate Sources",
+        "description": "Assess the reliability and validity of historical sources and evidence."
+      },
+      {
+        "label": "Compare Historical Societies",
+        "description": "Compare and contrast various societies' political, social, and cultural aspects."
+      },
+      {
+        "label": "Understand Timelines and Sequence",
+        "description": "Gain an understanding of the chronological order and sequence of historical events."
+      },
+      {
+        "label": "Apply Historical Analysis",
+        "description": "Apply analytical skills to understand, explain, and interpret historical phenomena."
+      },
+      {
+        "label": "Develop Historical Perspective",
+        "description": "Develop a broader historical perspective by understanding the long-term trends and patterns in world history."
+      }
+    ]
+  }
+]

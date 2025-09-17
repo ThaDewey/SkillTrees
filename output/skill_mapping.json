@@ -1,0 +1,4374 @@
+{
+  "Analyze Young Adult Texts || Develop the ability to analyze and interpret texts within the young adult literature genre.": {
+    "skill_id": "SKL-306F739B93",
+    "score": 0.439,
+    "mapped_label": "Analyze Young Adult Texts",
+    "note": "fallback"
+  },
+  "Evaluate Adolescent Audience Impact || Learn to evaluate how young adult literature affects and resonates with an adolescent audience.": {
+    "skill_id": "SKL-6E5E3C5511",
+    "score": 0.385,
+    "mapped_label": "Evaluate Adolescent Audience Impact",
+    "note": "fallback"
+  },
+  "Explore Literary History || Gain knowledge of the history and evolution of young adult literature.": {
+    "skill_id": "SKL-3C4D5E6F03",
+    "score": 0.711,
+    "mapped_label": "Apply Literary Theory"
+  },
+  "Understand Scholarship in YA Lit || Familiarize with scholarly works related to young adult literature.": {
+    "skill_id": "SKL-0129862F2F",
+    "score": 0.408,
+    "mapped_label": "Understand Scholarship in YA Lit",
+    "note": "fallback"
+  },
+  "Apply Literary Theory || Learn to apply literary theory to broaden understanding of the dynamic field of young adult literature.": {
+    "skill_id": "SKL-3C4D5E6F03",
+    "score": 1.0,
+    "mapped_label": "Apply Literary Theory"
+  },
+  "Critically Analyze Narrative Structure || Develop skills to critically analyze narrative structure within young adult texts.": {
+    "skill_id": "SKL-5E6F7A8B05",
+    "score": 0.667,
+    "mapped_label": "Narrative Structure"
+  },
+  "Apply Genre Conventions || Learn to recognize and apply conventions specific to the genre of young adult literature.": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.81,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Develop Perspective on Contemporary YA Lit || Cultivate a thoughtful perspective on contemporary young adult literature.": {
+    "skill_id": "SKL-0E42F6F257",
+    "score": 0.456,
+    "mapped_label": "Develop Perspective on Contemporary YA Lit",
+    "note": "fallback"
+  },
+  "Analyze History of YA Lit || Understand the historical development and evolution of young adult literature.": {
+    "skill_id": "SKL-49C79BC8ED",
+    "score": 0.392,
+    "mapped_label": "Analyze History of YA Lit",
+    "note": "fallback"
+  },
+  "Evaluate Adolescent Audience Impact || Assess how texts impact an adolescent audience.": {
+    "skill_id": "SKL-970A9E1E0E",
+    "score": 0.385,
+    "mapped_label": "Evaluate Adolescent Audience Impact",
+    "note": "fallback"
+  },
+  "Read & Interpret Scholarship || Learn to read and interpret scholarly works in the field.": {
+    "skill_id": "SKL-D10EB005E5",
+    "score": 0.442,
+    "mapped_label": "Read & Interpret Scholarship",
+    "note": "fallback"
+  },
+  "Broaden Understanding of Field || Gain a broader understanding of young adult literature as a dynamic field.": {
+    "skill_id": "SKL-9DDAD6CA84",
+    "score": 0.391,
+    "mapped_label": "Broaden Understanding of Field",
+    "note": "fallback"
+  },
+  "Analyze Narrative Structure || Learn to analyze the structure of narratives in young adult literature.": {
+    "skill_id": "SKL-5E6F7A8B05",
+    "score": 0.826,
+    "mapped_label": "Narrative Structure"
+  },
+  "Comprehend Genre Conventions || Understand and apply conventions of various genres within young adult literature.": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.723,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Critically Read Young Adult Texts || Develop the ability to critically read and interpret young adult texts.": {
+    "skill_id": "SKL-2B3C4D5E02",
+    "score": 0.612,
+    "mapped_label": "Critical Reading"
+  },
+  "Apply Critical Theory || Learn to apply critical theory to the study of young adult literature.": {
+    "skill_id": "SKL-3C4D5E6F03",
+    "score": 0.762,
+    "mapped_label": "Apply Literary Theory"
+  },
+  "Analyze Contemporary Fiction || Identify and discuss contemporary examples of the short story form.": {
+    "skill_id": "SKL-75997502E6",
+    "score": 0.531,
+    "mapped_label": "Analyze Contemporary Fiction",
+    "note": "fallback"
+  },
+  "Strengthen Writing Skills || Improve overall writing ability through various assignments.": {
+    "skill_id": "SKL-6F7A8B9C06",
+    "score": 0.585,
+    "mapped_label": "Creative Writing"
+  },
+  "Understand Elements of Fiction || Gain knowledge about key elements that make up a short story.": {
+    "skill_id": "SKL-17669047CB",
+    "score": 0.413,
+    "mapped_label": "Understand Elements of Fiction",
+    "note": "fallback"
+  },
+  "Produce Short Fiction || Develop the skill to create original short stories.": {
+    "skill_id": "SKL-99ABCDDE4E",
+    "score": 0.609,
+    "mapped_label": "Produce & Publish Content"
+  },
+  "Compose Writing Assignments || Complete various writing tasks designed for skill development.": {
+    "skill_id": "SKL-6BDD0F821F",
+    "score": 0.468,
+    "mapped_label": "Compose Writing Assignments",
+    "note": "fallback"
+  },
+  "Apply Genre Conventions || Understand and use conventions specific to the short story genre.": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.81,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Analyze Narrative Structure || Examine the structure of narratives in short stories.": {
+    "skill_id": "SKL-5E6F7A8B05",
+    "score": 0.826,
+    "mapped_label": "Narrative Structure"
+  },
+  "Critique Short Stories || Evaluate and critique various short stories based on learned skills": {
+    "skill_id": "SKL-0C189237BD",
+    "score": 0.528,
+    "mapped_label": "Critique Short Stories",
+    "note": "fallback"
+  },
+  "Analyze Published Novels || Study of published novels to understand craft and structure": {
+    "skill_id": "SKL-90F137FF3F",
+    "score": 0.449,
+    "mapped_label": "Analyze Published Novels",
+    "note": "fallback"
+  },
+  "Craft Novel Installments || Workshop-style critique of student-generated novel installments": {
+    "skill_id": "SKL-C461A5B515",
+    "score": 0.5,
+    "mapped_label": "Craft Novel Installments",
+    "note": "fallback"
+  },
+  "Apply Genre Conventions || Understanding and applying conventions in the genre of novel writing": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.81,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Compose Novel Excerpts || Developing skills to write coherent and engaging novel excerpts": {
+    "skill_id": "SKL-16A531A63F",
+    "score": 0.429,
+    "mapped_label": "Compose Novel Excerpts",
+    "note": "fallback"
+  },
+  "Critique Peer Work || Giving constructive feedback on peer-written work": {
+    "skill_id": "SKL-A0BCDDEF5F",
+    "score": 0.621,
+    "mapped_label": "Creative Workshop & Peer Review"
+  },
+  "Revise Novel Content || Refining own written work based on critique and feedback": {
+    "skill_id": "SKL-8E5EA1C421",
+    "score": 0.533,
+    "mapped_label": "Revise Novel Content",
+    "note": "fallback"
+  },
+  "Publisher-Ready Writing || Writing novel installments for potential publication": {
+    "skill_id": "SKL-6F7A8B9C06",
+    "score": 0.564,
+    "mapped_label": "Creative Writing"
+  },
+  "Novel Structure Analysis || Understanding and applying effective novel structure and pacing": {
+    "skill_id": "SKL-5E6F7A8B05",
+    "score": 0.605,
+    "mapped_label": "Narrative Structure"
+  },
+  "Study SciFi/Fantasy History || Understand the historical context of science fiction and fantasy literature": {
+    "skill_id": "SKL-4E03EAE7FE",
+    "score": 0.417,
+    "mapped_label": "Study SciFi/Fantasy History",
+    "note": "fallback"
+  },
+  "Compose SciFi/Fantasy Works || Create original works within the genres of science fiction and fantasy": {
+    "skill_id": "SKL-2DBD8219EA",
+    "score": 0.468,
+    "mapped_label": "Compose SciFi/Fantasy Works",
+    "note": "fallback"
+  },
+  "Revise Compositions || Edit and refine drafts of written work": {
+    "skill_id": "SKL-D8C4CE6970",
+    "score": 0.541,
+    "mapped_label": "Revise Compositions",
+    "note": "fallback"
+  },
+  "Understand Genre Conventions || Recognize and apply conventions specific to science fiction and fantasy literature": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.723,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Analyze Literature || Critically evaluate published works within the genres of science fiction and fantasy": {
+    "skill_id": "SKL-3C4D5E6F03",
+    "score": 0.615,
+    "mapped_label": "Apply Literary Theory"
+  },
+  "Market Writing || Learn strategies for marketing written work in the context of science fiction and fantasy literature": {
+    "skill_id": "SKL-6F7A8B9C06",
+    "score": 0.667,
+    "mapped_label": "Creative Writing"
+  },
+  "Writing Workshop Participation || Engage in collaborative workshops to receive and provide constructive feedback on writing": {
+    "skill_id": "SKL-9D36EF8615",
+    "score": 0.525,
+    "mapped_label": "Writing Workshop Participation",
+    "note": "fallback"
+  },
+  "Study SciFi/Fantasy History || Learn about the history of Science Fiction and Fantasy literature.": {
+    "skill_id": "SKL-23372579F3",
+    "score": 0.417,
+    "mapped_label": "Study SciFi/Fantasy History",
+    "note": "fallback"
+  },
+  "Compose SciFi/Fantasy Works || Write creative works within the genres of Science Fiction and Fantasy.": {
+    "skill_id": "SKL-D6D9CFEF1B",
+    "score": 0.468,
+    "mapped_label": "Compose SciFi/Fantasy Works",
+    "note": "fallback"
+  },
+  "Revise Literary Composition || Critically revise literary compositions in the context of Science Fiction and Fantasy.": {
+    "skill_id": "SKL-59432C28A2",
+    "score": 0.5,
+    "mapped_label": "Revise Literary Composition",
+    "note": "fallback"
+  },
+  "Understand Genre Conventions || Learn about the conventions specific to Science Fiction and Fantasy genres.": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.723,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Analyze Literary Workshops || Participate in workshops to analyze and discuss Science Fiction and Fantasy works.": {
+    "skill_id": "SKL-3C4D5E6F03",
+    "score": 0.638,
+    "mapped_label": "Apply Literary Theory"
+  },
+  "Market Literary Works || Learn about marketing strategies for Science Fiction and Fantasy literature.": {
+    "skill_id": "SKL-3C4D5E6F03",
+    "score": 0.619,
+    "mapped_label": "Apply Literary Theory"
+  },
+  "Analyze Genre Conventions || Understanding the characteristics and conventions of mystery and adventure genres.": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.773,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Compare Historical Works || Evaluating and comparing historical mystery and adventure stories.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.558,
+    "mapped_label": "Historical Analysis"
+  },
+  "Research Contemporary Authors || Investigating and researching contemporary authors in the mystery/adventure genre.": {
+    "skill_id": "SKL-8B9C0D1E08",
+    "score": 0.622,
+    "mapped_label": "Research Methods"
+  },
+  "Write Creative Papers || Composing creative essays within both the mystery and adventure genres.": {
+    "skill_id": "SKL-8D0D2221B0",
+    "score": 0.541,
+    "mapped_label": "Write Creative Papers",
+    "note": "fallback"
+  },
+  "Compare Contemporary Works || Assessing and comparing contemporary mystery/adventure works.": {
+    "skill_id": "SKL-099EEC6162",
+    "score": 0.522,
+    "mapped_label": "Compare Contemporary Works",
+    "note": "fallback"
+  },
+  "Prepare Scholarly Analysis || Producing a scholarly analysis of a contemporary author's work.": {
+    "skill_id": "SKL-1A2B3C4D01",
+    "score": 0.605,
+    "mapped_label": "Literary Analysis"
+  },
+  "Analyze Narrative Structure || Evaluating the structure and elements of mystery/adventure narratives.": {
+    "skill_id": "SKL-5E6F7A8B05",
+    "score": 0.826,
+    "mapped_label": "Narrative Structure"
+  },
+  "Read Scripts Critically || Analyze and understand television scripts in detail": {
+    "skill_id": "SKL-09CCF20081",
+    "score": 0.424,
+    "mapped_label": "Read Scripts Critically",
+    "note": "fallback"
+  },
+  "Television Show Analysis || Examine and dissect television shows for narrative structure and genre conventions": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.558,
+    "mapped_label": "Historical Analysis"
+  },
+  "Creative Writing for TV || Compose original content suitable for television": {
+    "skill_id": "SKL-6F7A8B9C06",
+    "score": 0.821,
+    "mapped_label": "Creative Writing"
+  },
+  "Television Genre Understanding || Gain familiarity with various television genres and their conventions": {
+    "skill_id": "SKL-7A8B9C0D07",
+    "score": 0.583,
+    "mapped_label": "Revision & Editing"
+  },
+  "Narrative Structure Analysis || Identify and assess narrative structure in television shows": {
+    "skill_id": "SKL-5E6F7A8B05",
+    "score": 0.809,
+    "mapped_label": "Narrative Structure"
+  },
+  "Television Narrative Composition || Create engaging narratives for television audiences": {
+    "skill_id": "SKL-17CCA894A0",
+    "score": 0.52,
+    "mapped_label": "Television Narrative Composition",
+    "note": "fallback"
+  },
+  "Genre-specific Writing Techniques || Apply appropriate writing techniques to various television genres": {
+    "skill_id": "SKL-40365EDE87",
+    "score": 0.452,
+    "mapped_label": "Genre-specific Writing Techniques",
+    "note": "fallback"
+  },
+  "Television Genre Adaptation || Adapt written content to fit the requirements of different television genres": {
+    "skill_id": "SKL-7A8B9C0D07",
+    "score": 0.578,
+    "mapped_label": "Revision & Editing"
+  },
+  "Write Grants || Compose effective grant applications": {
+    "skill_id": "SKL-2AD3B089AE",
+    "score": 0.483,
+    "mapped_label": "Write Grants",
+    "note": "fallback"
+  },
+  "Fundraising Writing || Compose persuasive fundraising materials": {
+    "skill_id": "SKL-6F7A8B9C06",
+    "score": 0.629,
+    "mapped_label": "Creative Writing"
+  },
+  "Social Media Writing || Create engaging social media content": {
+    "skill_id": "SKL-9C0D1E2F09",
+    "score": 0.649,
+    "mapped_label": "Scholarly Writing"
+  },
+  "Newsletter Composition || Write compelling newsletters for nonprofits": {
+    "skill_id": "SKL-EF0D5D46AC",
+    "score": 0.542,
+    "mapped_label": "Newsletter Composition",
+    "note": "fallback"
+  },
+  "Internal Communication || Compose effective internal communications": {
+    "skill_id": "SKL-5567899A0A",
+    "score": 0.655,
+    "mapped_label": "Professional Communication (Oral)"
+  },
+  "Apply Genre Conventions || Use appropriate writing styles in various contexts": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.81,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Analyze Audience || Adapt writing to suit different nonprofit audiences": {
+    "skill_id": "SKL-B1A41699D6",
+    "score": 0.485,
+    "mapped_label": "Analyze Audience",
+    "note": "fallback"
+  },
+  "Communicate with Clarity || Write effectively for a nonprofit setting": {
+    "skill_id": "SKL-28686A580C",
+    "score": 0.5,
+    "mapped_label": "Communicate with Clarity",
+    "note": "fallback"
+  },
+  "Grants Writing || Compose and structure grant applications": {
+    "skill_id": "SKL-6F7A8B9C06",
+    "score": 0.733,
+    "mapped_label": "Creative Writing"
+  },
+  "Fundraising Composition || Create persuasive fundraising materials": {
+    "skill_id": "SKL-2AD0233746",
+    "score": 0.488,
+    "mapped_label": "Fundraising Composition",
+    "note": "fallback"
+  },
+  "Newsletter Production || Design effective nonprofit newsletters": {
+    "skill_id": "SKL-293A4B5C3D",
+    "score": 0.649,
+    "mapped_label": "Video Production"
+  },
+  "Social Media Writing || Compose engaging content for social media platforms": {
+    "skill_id": "SKL-9C0D1E2F09",
+    "score": 0.649,
+    "mapped_label": "Scholarly Writing"
+  },
+  "Internal Communication || Develop clear and concise internal communications": {
+    "skill_id": "SKL-5567899A0A",
+    "score": 0.655,
+    "mapped_label": "Professional Communication (Oral)"
+  },
+  "Genre Adaptation || Apply genre conventions to nonprofit writing": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.571,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Audience Analysis || Identify and cater to diverse audiences": {
+    "skill_id": "SKL-0D1E2F3A0A",
+    "score": 1.0,
+    "mapped_label": "Audience Analysis"
+  },
+  "Technical Writing Skills || Improve writing skills for technical nonprofit work": {
+    "skill_id": "SKL-9C0D1E2F09",
+    "score": 0.585,
+    "mapped_label": "Scholarly Writing"
+  },
+  "Historical Analysis || Exploring the history of dramatic writing": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 1.0,
+    "mapped_label": "Historical Analysis"
+  },
+  "Screenplay Composition || Writing screenplays for movies and TV": {
+    "skill_id": "SKL-D6BD35C117",
+    "score": 0.513,
+    "mapped_label": "Screenplay Composition",
+    "note": "fallback"
+  },
+  "Teleplay Composition || Writing teleplays for TV": {
+    "skill_id": "SKL-7BF6F315E1",
+    "score": 0.462,
+    "mapped_label": "Teleplay Composition",
+    "note": "fallback"
+  },
+  "Stage Play Composition || Writing stage plays": {
+    "skill_id": "SKL-304DDB76DE",
+    "score": 0.488,
+    "mapped_label": "Stage Play Composition",
+    "note": "fallback"
+  },
+  "Revision Techniques || Refining and improving written work": {
+    "skill_id": "SKL-7A8B9C0D07",
+    "score": 0.595,
+    "mapped_label": "Revision & Editing"
+  },
+  "Marketing Strategies || Promoting dramatic writing for various mediums": {
+    "skill_id": "SKL-267413E660",
+    "score": 0.537,
+    "mapped_label": "Marketing Strategies",
+    "note": "fallback"
+  },
+  "Genre Conventions || Understanding and applying conventions of different genres": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.944,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Writing Workshop Participation || Participating in collaborative writing workshops": {
+    "skill_id": "SKL-346ED6EB2D",
+    "score": 0.525,
+    "mapped_label": "Writing Workshop Participation",
+    "note": "fallback"
+  },
+  "Write Clear and Effective Reports || Ability to create clear, effective reports specific to the criminal justice field.": {
+    "skill_id": "SKL-E3C7E3271D",
+    "score": 0.414,
+    "mapped_label": "Write Clear and Effective Reports",
+    "note": "fallback"
+  },
+  "Utilize APA Citation Style || Knowledge of American Psychological Association (APA) citation style for academic and professional writing.": {
+    "skill_id": "SKL-C07CEA8B6A",
+    "score": 0.423,
+    "mapped_label": "Utilize APA Citation Style",
+    "note": "fallback"
+  },
+  "Critique Writing of Others || Ability to provide constructive feedback on the writing of others in a professional setting.": {
+    "skill_id": "SKL-6F7A8B9C06",
+    "score": 0.619,
+    "mapped_label": "Creative Writing"
+  },
+  "Write Press Releases || Competence in composing press releases related to criminal justice matters.": {
+    "skill_id": "SKL-5ED3D9E88B",
+    "score": 0.421,
+    "mapped_label": "Write Press Releases",
+    "note": "fallback"
+  },
+  "Compose Search Warrants || Ability to write detailed and legally sound search warrant documents.": {
+    "skill_id": "SKL-27B9C5E0A2",
+    "score": 0.537,
+    "mapped_label": "Compose Search Warrants",
+    "note": "fallback"
+  },
+  "Draft Probation Reports || Knowledge of how to create comprehensive probation reports.": {
+    "skill_id": "SKL-050FE34472",
+    "score": 0.522,
+    "mapped_label": "Draft Probation Reports",
+    "note": "fallback"
+  },
+  "Analyze Narrative Structure || Understanding of various narrative structures in criminal justice writing.": {
+    "skill_id": "SKL-5E6F7A8B05",
+    "score": 0.826,
+    "mapped_label": "Narrative Structure"
+  },
+  "Apply Genre Conventions || Ability to apply appropriate conventions for different genres within the criminal justice field.": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.81,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Analyze Children's Literature || Explore the characteristics of award-winning books for children and young adults.": {
+    "skill_id": "SKL-27B45FECD0",
+    "score": 0.48,
+    "mapped_label": "Analyze Children's Literature",
+    "note": "fallback"
+  },
+  "Study Psychology of Learning to Read || Understand the psychology behind learning to read and its impact on writing for youth.": {
+    "skill_id": "SKL-042A952E05",
+    "score": 0.419,
+    "mapped_label": "Study Psychology of Learning to Read",
+    "note": "fallback"
+  },
+  "Explore Successful Writing Habits || Learn from successful authors in the field of children's literature.": {
+    "skill_id": "SKL-6DDD68FFA9",
+    "score": 0.449,
+    "mapped_label": "Explore Successful Writing Habits",
+    "note": "fallback"
+  },
+  "Analyze Narrative Structure || Develop skills to analyze narratives suitable for different age groups.": {
+    "skill_id": "SKL-5E6F7A8B05",
+    "score": 0.826,
+    "mapped_label": "Narrative Structure"
+  },
+  "Compose Age-Appropriate Texts || Learn to write for various age groups from early childhood through young adults.": {
+    "skill_id": "SKL-32A2BDC23E",
+    "score": 0.408,
+    "mapped_label": "Compose Age-Appropriate Texts",
+    "note": "fallback"
+  },
+  "Apply Genre Conventions || Understand and apply conventions specific to writing for children and young adults.": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.81,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Evaluate Writing Techniques || Critically evaluate techniques used in effective children's literature.": {
+    "skill_id": "SKL-6F7A8B9C06",
+    "score": 0.558,
+    "mapped_label": "Creative Writing"
+  },
+  "Develop Writing Skills for Multiple Age Groups || Fine-tune writing skills to cater to diverse age groups effectively.": {
+    "skill_id": "SKL-839E3FA783",
+    "score": 0.41,
+    "mapped_label": "Develop Writing Skills for Multiple Age Groups",
+    "note": "fallback"
+  },
+  "Explore Writing History || Learn about the history of writing for children": {
+    "skill_id": "SKL-69BF06D62D",
+    "score": 0.513,
+    "mapped_label": "Explore Writing History",
+    "note": "fallback"
+  },
+  "Study Child Psychology || Understand the psychology of learning to read": {
+    "skill_id": "SKL-36AB6B6212",
+    "score": 0.353,
+    "mapped_label": "Study Child Psychology",
+    "note": "fallback"
+  },
+  "Analyze Award-winning Books || Critically evaluate award-winning children's literature": {
+    "skill_id": "SKL-E5B43AD103",
+    "score": 0.455,
+    "mapped_label": "Analyze Award-winning Books",
+    "note": "fallback"
+  },
+  "Explore Successful Writing Habits || Investigate the habits of successful children's writers": {
+    "skill_id": "SKL-98B1A92572",
+    "score": 0.449,
+    "mapped_label": "Explore Successful Writing Habits",
+    "note": "fallback"
+  },
+  "Analyze Narrative Structure || Learn to analyze narrative structures in children's literature": {
+    "skill_id": "SKL-5E6F7A8B05",
+    "score": 0.826,
+    "mapped_label": "Narrative Structure"
+  },
+  "Comprehend Genre Conventions || Gain understanding of genre conventions for children's writing": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.723,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Evaluate Children's Literature Quality || Critically evaluate the quality of children's literature": {
+    "skill_id": "SKL-87626069E1",
+    "score": 0.427,
+    "mapped_label": "Evaluate Children's Literature Quality",
+    "note": "fallback"
+  },
+  "Improve Writing Skills || Develop and refine writing skills for various age groups in children": {
+    "skill_id": "SKL-6F7A8B9C06",
+    "score": 0.579,
+    "mapped_label": "Creative Writing"
+  },
+  "Study Comic History || Explore the historical background of comic books and graphic novels.": {
+    "skill_id": "SKL-D51DD0B807",
+    "score": 0.4,
+    "mapped_label": "Study Comic History",
+    "note": "fallback"
+  },
+  "Comprehend Composition || Learn the composition techniques used in comic books and graphic novels.": {
+    "skill_id": "SKL-812543F9DA",
+    "score": 0.474,
+    "mapped_label": "Comprehend Composition",
+    "note": "fallback"
+  },
+  "Revise Comic Works || Develop skills for revising and refining comic book and graphic novel content.": {
+    "skill_id": "SKL-8E7F4F0850",
+    "score": 0.471,
+    "mapped_label": "Revise Comic Works",
+    "note": "fallback"
+  },
+  "Market Comic Books || Gain understanding on how to market comic books and graphic novels.": {
+    "skill_id": "SKL-645190B39F",
+    "score": 0.437,
+    "mapped_label": "Market Comic Books",
+    "note": "fallback"
+  },
+  "Analyze Genre Conventions || Identify and apply conventions specific to the comic book and graphic novel genre.": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.773,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Develop Writing Skills || Improve overall writing abilities with a focus on comic books and graphic novels.": {
+    "skill_id": "SKL-6F7A8B9C06",
+    "score": 0.579,
+    "mapped_label": "Creative Writing"
+  },
+  "Create Comic Content || Learn to create engaging content for comic books and graphic novels.": {
+    "skill_id": "SKL-F1E59FE29E",
+    "score": 0.533,
+    "mapped_label": "Create Comic Content",
+    "note": "fallback"
+  },
+  "Craft Narrative Structure || Design effective narrative structures for comic books and graphic novels.": {
+    "skill_id": "SKL-5E6F7A8B05",
+    "score": 0.864,
+    "mapped_label": "Narrative Structure"
+  },
+  "Historical Overview || Understand the history of comic books and graphic novels": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.632,
+    "mapped_label": "Historical Analysis"
+  },
+  "Composition Techniques || Learn techniques for composing comic book stories": {
+    "skill_id": "SKL-F049CF6278",
+    "score": 0.549,
+    "mapped_label": "Composition Techniques",
+    "note": "fallback"
+  },
+  "Revision Skills || Gain skills in revising comic book and graphic novel drafts": {
+    "skill_id": "SKL-7A8B9C0D07",
+    "score": 0.606,
+    "mapped_label": "Revision & Editing"
+  },
+  "Marketing Strategies || Learn strategies for marketing comic books and graphic novels": {
+    "skill_id": "SKL-A52FE11BEE",
+    "score": 0.537,
+    "mapped_label": "Marketing Strategies",
+    "note": "fallback"
+  },
+  "Comic Book Analysis || Analyze the structure, style, and content of comic books": {
+    "skill_id": "SKL-A1B2C3D4B1",
+    "score": 0.667,
+    "mapped_label": "Comparative Analysis"
+  },
+  "Graphic Novel Creation || Learn to create graphic novels": {
+    "skill_id": "SKL-84D2AB6FBA",
+    "score": 0.526,
+    "mapped_label": "Graphic Novel Creation",
+    "note": "fallback"
+  },
+  "Genre Conventions || Understand and apply conventions of the comic book/graphic novel genre": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.944,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Workshop Collaboration || Collaborate in workshop settings to improve writing skills": {
+    "skill_id": "SKL-9011233444",
+    "score": 0.565,
+    "mapped_label": "Collaboration & Teamwork"
+  },
+  "Analyze Contemporary Comic Literature || Understand the nuances of contemporary comic and satiric literature.": {
+    "skill_id": "SKL-DAD65E54CA",
+    "score": 0.414,
+    "mapped_label": "Analyze Contemporary Comic Literature",
+    "note": "fallback"
+  },
+  "Practice Comic and Satiric Writing Techniques || Develop skills in crafting effective comic and satiric writing.": {
+    "skill_id": "SKL-2C3F848522",
+    "score": 0.494,
+    "mapped_label": "Practice Comic and Satiric Writing Techniques",
+    "note": "fallback"
+  },
+  "Produce Original Comic Works || Create original works within the genres of comedy and satire.": {
+    "skill_id": "SKL-5567899A0A",
+    "score": 0.557,
+    "mapped_label": "Professional Communication (Oral)"
+  },
+  "Study Genre Conventions || Learn the conventions specific to comic and satiric writing.": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.81,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Apply Comic and Satiric Tone || Develop the ability to apply humorous or critical tones appropriately.": {
+    "skill_id": "SKL-509E0A1423",
+    "score": 0.5,
+    "mapped_label": "Apply Comic and Satiric Tone",
+    "note": "fallback"
+  },
+  "Critically Evaluate Comedy and Satire || Analyze and critically evaluate works of comedy and satire.": {
+    "skill_id": "SKL-612B936F01",
+    "score": 0.537,
+    "mapped_label": "Critically Evaluate Comedy and Satire",
+    "note": "fallback"
+  },
+  "Adapt to Various Genres || Demonstrate versatility in adapting comic and satiric writing styles across various genres.": {
+    "skill_id": "SKL-D3EF012342",
+    "score": 0.6,
+    "mapped_label": "Adaptation & Genre Transfer"
+  },
+  "Revise and Refine Writing || Learn to revise and refine written works for clarity, coherence, and humor.": {
+    "skill_id": "SKL-7A8B9C0D07",
+    "score": 0.642,
+    "mapped_label": "Revision & Editing"
+  },
+  "Analyze Contemporary Literature || Identify themes, styles, and techniques in contemporary comic and satiric literature.": {
+    "skill_id": "SKL-B91C33A9C3",
+    "score": 0.521,
+    "mapped_label": "Analyze Contemporary Literature",
+    "note": "fallback"
+  },
+  "Practice Comic Writing Techniques || Understand and apply strategies for writing comedy effectively.": {
+    "skill_id": "SKL-30CA65DB59",
+    "score": 0.531,
+    "mapped_label": "Practice Comic Writing Techniques",
+    "note": "fallback"
+  },
+  "Apply Satirical Techniques || Utilize methods to create satire in various genres.": {
+    "skill_id": "SKL-5C6D7E8F60",
+    "score": 0.582,
+    "mapped_label": "Laboratory & Field Techniques"
+  },
+  "Produce Comic & Satiric Works || Create original comic and satiric works in a variety of genres.": {
+    "skill_id": "SKL-8942C27D3A",
+    "score": 0.516,
+    "mapped_label": "Produce Comic & Satiric Works",
+    "note": "fallback"
+  },
+  "Understand Genre Conventions || Recognize and utilize genre-specific conventions in comic and satiric writing.": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.723,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Critically Evaluate Writings || Analyze and critique the works of contemporary comic and satirical writers.": {
+    "skill_id": "SKL-2B3C4D5E02",
+    "score": 0.636,
+    "mapped_label": "Critical Reading"
+  },
+  "Develop Writing Voice || Develop a unique voice in comic and satiric writing that resonates with audiences.": {
+    "skill_id": "SKL-6F7A8B9C06",
+    "score": 0.595,
+    "mapped_label": "Creative Writing"
+  },
+  "Revise & Edit Writings || Refine and polish comic and satiric works through revision and editing processes.": {
+    "skill_id": "SKL-7A8B9C0D07",
+    "score": 0.75,
+    "mapped_label": "Revision & Editing"
+  },
+  "Read and Analyze || Ability to read and critically analyze literary works": {
+    "skill_id": "SKL-6C83434CE3",
+    "score": 0.485,
+    "mapped_label": "Read and Analyze",
+    "note": "fallback"
+  },
+  "Discuss Literature || Skill in discussing literary composition with peers": {
+    "skill_id": "SKL-D3A7CEE21F",
+    "score": 0.462,
+    "mapped_label": "Discuss Literature",
+    "note": "fallback"
+  },
+  "Apply Poetics || Ability to apply poetics theories to creative writing": {
+    "skill_id": "SKL-5039919F89",
+    "score": 0.462,
+    "mapped_label": "Apply Poetics",
+    "note": "fallback"
+  },
+  "Diverse Author Analysis || Competency in understanding and interpreting works by a diverse group of authors": {
+    "skill_id": "SKL-1A2B3C4D01",
+    "score": 0.7,
+    "mapped_label": "Literary Analysis"
+  },
+  "Literary Period Understanding || Knowledge of literary periods and their respective characteristics": {
+    "skill_id": "SKL-8441CD37CE",
+    "score": 0.522,
+    "mapped_label": "Literary Period Understanding",
+    "note": "fallback"
+  },
+  "Craft Creative Writing || Ability to compose creative writing based on theoretical understanding": {
+    "skill_id": "SKL-6F7A8B9C06",
+    "score": 0.842,
+    "mapped_label": "Creative Writing"
+  },
+  "Discuss Theory Application || Skill in discussing the application of literary theory to practical writing": {
+    "skill_id": "SKL-1F38D78E8B",
+    "score": 0.512,
+    "mapped_label": "Discuss Theory Application",
+    "note": "fallback"
+  },
+  "Applied Genre Conventions || Ability to understand and apply genre conventions in creative writing": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.773,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Compare Religious Practices || Analyze cultural and intercultural similarities and differences in religious practices": {
+    "skill_id": "SKL-5EB9FF0203",
+    "score": 0.48,
+    "mapped_label": "Compare Religious Practices",
+    "note": "fallback"
+  },
+  "Identify Parallels in Beliefs || Recognize patterns and parallels across diverse religious beliefs": {
+    "skill_id": "SKL-BDD8497852",
+    "score": 0.435,
+    "mapped_label": "Identify Parallels in Beliefs",
+    "note": "fallback"
+  },
+  "Examine Religious Manifestations || Investigate various means by which religions are expressed and understood": {
+    "skill_id": "SKL-2B4CC5D38E",
+    "score": 0.462,
+    "mapped_label": "Examine Religious Manifestations",
+    "note": "fallback"
+  },
+  "Contextualize Personal Beliefs || Develop a broader contextual understanding of personal convictions": {
+    "skill_id": "SKL-3CD80557C4",
+    "score": 0.44,
+    "mapped_label": "Contextualize Personal Beliefs",
+    "note": "fallback"
+  },
+  "Understand Others' Beliefs || Gain insights into the beliefs and practices of others": {
+    "skill_id": "SKL-D978FA2B2B",
+    "score": 0.435,
+    "mapped_label": "Understand Others' Beliefs",
+    "note": "fallback"
+  },
+  "Analyze Diverse Religious Phenomena || Explore and interpret diverse religious phenomena": {
+    "skill_id": "SKL-F38758A3A9",
+    "score": 0.424,
+    "mapped_label": "Analyze Diverse Religious Phenomena",
+    "note": "fallback"
+  },
+  "Apply Interdisciplinary Approach || Use an interdisciplinary approach to study religion and culture": {
+    "skill_id": "SKL-3C4D5E6F03",
+    "score": 0.566,
+    "mapped_label": "Apply Literary Theory"
+  },
+  "Compare Religious Practices || Analyze and compare diverse religious practices across different cultures.": {
+    "skill_id": "SKL-128E1E9FBF",
+    "score": 0.48,
+    "mapped_label": "Compare Religious Practices",
+    "note": "fallback"
+  },
+  "Identify Cultural Parallels || Recognize cultural similarities within various religious beliefs.": {
+    "skill_id": "SKL-E436259E8F",
+    "score": 0.478,
+    "mapped_label": "Identify Cultural Parallels",
+    "note": "fallback"
+  },
+  "Distinguish Differences || Discern and articulate differences in religious traditions.": {
+    "skill_id": "SKL-535E76A8F9",
+    "score": 0.424,
+    "mapped_label": "Distinguish Differences",
+    "note": "fallback"
+  },
+  "Explore Religious Manifestations || Investigate various means through which religions are expressed.": {
+    "skill_id": "SKL-3FBBC7F8F2",
+    "score": 0.492,
+    "mapped_label": "Explore Religious Manifestations",
+    "note": "fallback"
+  },
+  "Broaden Contextual Understanding || Develop a broader framework for understanding religious beliefs, including one's own and others.": {
+    "skill_id": "SKL-201015A0E8",
+    "score": 0.458,
+    "mapped_label": "Broaden Contextual Understanding",
+    "note": "fallback"
+  },
+  "Study Major Religious Traditions || Gain knowledge of the key tenets and practices of major world religions.": {
+    "skill_id": "SKL-9580B3F939",
+    "score": 0.44,
+    "mapped_label": "Study Major Religious Traditions",
+    "note": "fallback"
+  },
+  "Explore Minor Religious Traditions || Familiarize oneself with less common religious traditions, as time permits.": {
+    "skill_id": "SKL-741174F658",
+    "score": 0.471,
+    "mapped_label": "Explore Minor Religious Traditions",
+    "note": "fallback"
+  },
+  "Develop Intercultural Sensitivity || Cultivate an appreciation for diverse religious perspectives and beliefs.": {
+    "skill_id": "SKL-4EEA863CAE",
+    "score": 0.486,
+    "mapped_label": "Develop Intercultural Sensitivity",
+    "note": "fallback"
+  },
+  "Compare Literary Traditions || Analyze historical and cultural contexts of literary texts from diverse regions": {
+    "skill_id": "SKL-A30F40A92E",
+    "score": 0.545,
+    "mapped_label": "Compare Literary Traditions",
+    "note": "fallback"
+  },
+  "Identify Interactions Among Cultures || Recognize patterns of influence among world literatures and cultures": {
+    "skill_id": "SKL-04624F35ED",
+    "score": 0.441,
+    "mapped_label": "Identify Interactions Among Cultures",
+    "note": "fallback"
+  },
+  "Contextualize Text Analysis || Examine literary texts within their distinct historical and cultural contexts": {
+    "skill_id": "SKL-A1B2C3D4B1",
+    "score": 0.553,
+    "mapped_label": "Comparative Analysis"
+  },
+  "Critical Thinking || Develop analytical skills in the interpretation of complex patterns": {
+    "skill_id": "SKL-2B3C4D5E02",
+    "score": 0.727,
+    "mapped_label": "Critical Reading"
+  },
+  "Cross-cultural Understanding || Gain insights into various world literatures and cultures": {
+    "skill_id": "SKL-C3D4E5F6D3",
+    "score": 0.581,
+    "mapped_label": "Cultural & Cross-cultural Analysis"
+  },
+  "Historically-informed Reading || Learn to read literary texts with an awareness of their historical significance": {
+    "skill_id": "SKL-2B3C4D5E02",
+    "score": 0.622,
+    "mapped_label": "Critical Reading"
+  },
+  "Cultural Sensitivity || Develop a nuanced understanding of cultural differences and similarities": {
+    "skill_id": "SKL-2234566777",
+    "score": 0.561,
+    "mapped_label": "Ethical Practice & Trauma Sensitivity"
+  },
+  "Articulate Analysis || Communicate ideas about literary texts in a clear, persuasive manner": {
+    "skill_id": "SKL-0D1E2F3A0A",
+    "score": 0.722,
+    "mapped_label": "Audience Analysis"
+  },
+  "Understand Historical Contexts || Recognize and interpret the historical significance of literary texts": {
+    "skill_id": "SKL-BE80042ADA",
+    "score": 0.531,
+    "mapped_label": "Understand Historical Contexts",
+    "note": "fallback"
+  },
+  "Analyze Cultural Interactions || Identify patterns of interaction and influence among world literature and cultures": {
+    "skill_id": "SKL-FF64A53DBB",
+    "score": 0.48,
+    "mapped_label": "Analyze Cultural Interactions",
+    "note": "fallback"
+  },
+  "Compare Literary Traditions || Evaluate similarities and differences in literary traditions from various regions": {
+    "skill_id": "SKL-0ECF3DC914",
+    "score": 0.545,
+    "mapped_label": "Compare Literary Traditions",
+    "note": "fallback"
+  },
+  "Identify Complex Patterns || Detect complex patterns in the literary works studied": {
+    "skill_id": "SKL-52DE4C4B09",
+    "score": 0.413,
+    "mapped_label": "Identify Complex Patterns",
+    "note": "fallback"
+  },
+  "Apply Literary Analysis || Utilize critical thinking skills to analyze narrative structure and themes": {
+    "skill_id": "SKL-1A2B3C4D01",
+    "score": 0.85,
+    "mapped_label": "Literary Analysis"
+  },
+  "Develop Cross-Cultural Awareness || Foster an appreciation for diverse literary traditions and their cultural implications": {
+    "skill_id": "SKL-C3D4E5F6D3",
+    "score": 0.636,
+    "mapped_label": "Cultural & Cross-cultural Analysis"
+  },
+  "Analyze Historical Connections || Students will learn to examine and interpret the political, social, and cultural links in world history since 1450.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.571,
+    "mapped_label": "Historical Analysis"
+  },
+  "Evaluate Historical Developments || Students will be able to assess the progressions and transformations in world history over time.": {
+    "skill_id": "SKL-3B583FDF0D",
+    "score": 0.51,
+    "mapped_label": "Evaluate Historical Developments",
+    "note": "fallback"
+  },
+  "Identify Global Impact Factors || Students will learn to recognize and describe factors that have influenced global developments since 1450.": {
+    "skill_id": "SKL-C3D123541B",
+    "score": 0.415,
+    "mapped_label": "Identify Global Impact Factors",
+    "note": "fallback"
+  },
+  "Compare Historical Contexts || Students will be able to compare the political, social, and cultural contexts of different regions in world history.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.565,
+    "mapped_label": "Historical Analysis"
+  },
+  "Apply Historical Analysis Methods || Students will learn to apply various methods of historical analysis to understand global events and trends.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.731,
+    "mapped_label": "Historical Analysis"
+  },
+  "Develop Cultural Awareness || Students will cultivate an understanding and appreciation for the diverse cultures that have shaped world history.": {
+    "skill_id": "SKL-260612F2EB",
+    "score": 0.5,
+    "mapped_label": "Develop Cultural Awareness",
+    "note": "fallback"
+  },
+  "Understand Timeline Sequence || Students will learn to recognize and place events within their proper historical timelines.": {
+    "skill_id": "SKL-D9AF15C4C3",
+    "score": 0.481,
+    "mapped_label": "Understand Timeline Sequence",
+    "note": "fallback"
+  },
+  "Communicate Historical Knowledge || Students will be able to effectively communicate their understanding of world history to others.": {
+    "skill_id": "SKL-CAC03B1768",
+    "score": 0.51,
+    "mapped_label": "Communicate Historical Knowledge",
+    "note": "fallback"
+  },
+  "Identify Historical Connections || Recognize and analyze the political, social, and cultural links in world history up to 1450.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.56,
+    "mapped_label": "Historical Analysis"
+  },
+  "Analyze Historical Developments || Understand and evaluate historical changes and progressions in various societies.": {
+    "skill_id": "SKL-D9FD1D2D58",
+    "score": 0.52,
+    "mapped_label": "Analyze Historical Developments",
+    "note": "fallback"
+  },
+  "Interpret Historical Contexts || Comprehend the broader social, political, and cultural contexts within which historical events occurred.": {
+    "skill_id": "SKL-33F81C0C61",
+    "score": 0.542,
+    "mapped_label": "Interpret Historical Contexts",
+    "note": "fallback"
+  },
+  "Critically Evaluate Sources || Assess the reliability and validity of historical sources and evidence.": {
+    "skill_id": "SKL-3345677888",
+    "score": 0.596,
+    "mapped_label": "Critical Thinking & Evaluation"
+  },
+  "Compare Historical Societies || Compare and contrast various societies' political, social, and cultural aspects.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.596,
+    "mapped_label": "Historical Analysis"
+  },
+  "Understand Timelines and Sequence || Gain an understanding of the chronological order and sequence of historical events.": {
+    "skill_id": "SKL-19B1B04980",
+    "score": 0.37,
+    "mapped_label": "Understand Timelines and Sequence",
+    "note": "fallback"
+  },
+  "Apply Historical Analysis || Apply analytical skills to understand, explain, and interpret historical phenomena.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.864,
+    "mapped_label": "Historical Analysis"
+  },
+  "Develop Historical Perspective || Develop a broader historical perspective by understanding the long-term trends and patterns in world history.": {
+    "skill_id": "SKL-636E5CC791",
+    "score": 0.531,
+    "mapped_label": "Develop Historical Perspective",
+    "note": "fallback"
+  },
+  "Analyze Women's Historical Roles || Understand and evaluate the historical roles of women in Europe.": {
+    "skill_id": "SKL-9763C2DE36",
+    "score": 0.51,
+    "mapped_label": "Analyze Women's Historical Roles",
+    "note": "fallback"
+  },
+  "Explore Changing Cultural Norms || Investigate shifts in cultural norms concerning women throughout history.": {
+    "skill_id": "SKL-185FD3338C",
+    "score": 0.421,
+    "mapped_label": "Explore Changing Cultural Norms",
+    "note": "fallback"
+  },
+  "Analyze Women's Theories || Evaluate theories related to women's history and their impact on society.": {
+    "skill_id": "SKL-D26C890768",
+    "score": 0.444,
+    "mapped_label": "Analyze Women's Theories",
+    "note": "fallback"
+  },
+  "Understand Social Constraints || Learn about the social constraints faced by women in various domains like politics, business, and religion.": {
+    "skill_id": "SKL-E66A3F3CAA",
+    "score": 0.458,
+    "mapped_label": "Understand Social Constraints",
+    "note": "fallback"
+  },
+  "Interpret General Trends || Identify and analyze general trends regarding the rights and responsibilities of women.": {
+    "skill_id": "SKL-CE9B6EB0B3",
+    "score": 0.488,
+    "mapped_label": "Interpret General Trends",
+    "note": "fallback"
+  },
+  "Examine Women's Navigation Strategies || Study strategies used by women to navigate social constraints throughout history.": {
+    "skill_id": "SKL-7C2FD07B38",
+    "score": 0.438,
+    "mapped_label": "Examine Women's Navigation Strategies",
+    "note": "fallback"
+  },
+  "Write Historical Analysis || Develop the ability to write analytical essays on historical topics related to women's history.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.864,
+    "mapped_label": "Historical Analysis"
+  },
+  "Apply Research Skills || Learn how to research and analyze primary and secondary sources relevant to women's history.": {
+    "skill_id": "SKL-7789ABBC2C",
+    "score": 0.615,
+    "mapped_label": "Research Synthesis"
+  },
+  "Analyze Confucianism Impact || Understand the influence of Confucianism on women's history and culture in China.": {
+    "skill_id": "SKL-E291353BF9",
+    "score": 0.4,
+    "mapped_label": "Analyze Confucianism Impact",
+    "note": "fallback"
+  },
+  "Explore Daoist & Buddhist Influences || Investigate how Daoism and Buddhism have affected women in Chinese history.": {
+    "skill_id": "SKL-C78AC3B067",
+    "score": 0.444,
+    "mapped_label": "Explore Daoist & Buddhist Influences",
+    "note": "fallback"
+  },
+  "Analyze Communist Impact || Assess the impact of Communism on women's roles and rights in China.": {
+    "skill_id": "SKL-7E216E6014",
+    "score": 0.5,
+    "mapped_label": "Analyze Communist Impact",
+    "note": "fallback"
+  },
+  "Understand Capitalist Influences || Comprehend how state-sponsored capitalism has affected contemporary women's issues in China.": {
+    "skill_id": "SKL-BF4BA47034",
+    "score": 0.379,
+    "mapped_label": "Understand Capitalist Influences",
+    "note": "fallback"
+  },
+  "Evaluate Women's Agency || Analyze the agency of women throughout Chinese history amid different cultural and political contexts.": {
+    "skill_id": "SKL-A89BF80F00",
+    "score": 0.45,
+    "mapped_label": "Evaluate Women's Agency",
+    "note": "fallback"
+  },
+  "Explore Historical & Cultural Contexts || Gain insight into historical and cultural factors shaping women's lives in China.": {
+    "skill_id": "SKL-098D936B71",
+    "score": 0.491,
+    "mapped_label": "Explore Historical & Cultural Contexts",
+    "note": "fallback"
+  },
+  "Analyze Modern Women's Issues || Understand contemporary issues facing women in modern-day China.": {
+    "skill_id": "SKL-E2B0825462",
+    "score": 0.385,
+    "mapped_label": "Analyze Modern Women's Issues",
+    "note": "fallback"
+  },
+  "Develop Historical Perspective || Cultivate a deep understanding of women's history and culture across various time periods in China.": {
+    "skill_id": "SKL-672DFA1AC5",
+    "score": 0.531,
+    "mapped_label": "Develop Historical Perspective",
+    "note": "fallback"
+  },
+  "Analyze Confucianism Impact || Understand the influence of Confucianism on women's roles and rights in Chinese history.": {
+    "skill_id": "SKL-1C6C31F2A2",
+    "score": 0.391,
+    "mapped_label": "Analyze Confucianism Impact",
+    "note": "fallback"
+  },
+  "Explore Daoist & Buddhist Traditions || Study the role and status of women in Daoist and Buddhist traditions in China.": {
+    "skill_id": "SKL-3615B93344",
+    "score": 0.475,
+    "mapped_label": "Explore Daoist & Buddhist Traditions",
+    "note": "fallback"
+  },
+  "Investigate Communist Impacts || Analyze how Communism affected the roles, rights, and opportunities for Chinese women.": {
+    "skill_id": "SKL-025851917B",
+    "score": 0.492,
+    "mapped_label": "Investigate Communist Impacts",
+    "note": "fallback"
+  },
+  "Examine Capitalism's Influence || Investigate the effects of state-sponsored capitalism on women in modern China.": {
+    "skill_id": "SKL-B86A17C54D",
+    "score": 0.364,
+    "mapped_label": "Examine Capitalism's Influence",
+    "note": "fallback"
+  },
+  "Analyze Women's Agency || Learn to identify and analyze the agency of Chinese women throughout history.": {
+    "skill_id": "SKL-21BC5F0F87",
+    "score": 0.375,
+    "mapped_label": "Analyze Women's Agency",
+    "note": "fallback"
+  },
+  "Compare Historical Eras || Compare and contrast the experiences of women in different historical periods in China.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.619,
+    "mapped_label": "Historical Analysis"
+  },
+  "Understand Cultural Context || Develop a deep understanding of the cultural contexts shaping women's lives in China.": {
+    "skill_id": "SKL-3AE6236419",
+    "score": 0.393,
+    "mapped_label": "Understand Cultural Context",
+    "note": "fallback"
+  },
+  "Apply Historical Analysis || Learn to apply historical analysis techniques when studying Chinese women's history.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.864,
+    "mapped_label": "Historical Analysis"
+  },
+  "Examine Native Women's Histories || Analyze the historical experiences of Native women within their indigenous communities.": {
+    "skill_id": "SKL-7258A125E3",
+    "score": 0.444,
+    "mapped_label": "Examine Native Women's Histories",
+    "note": "fallback"
+  },
+  "Understand Changing Gender Roles || Recognize and interpret shifts in gender roles over time in indigenous societies.": {
+    "skill_id": "SKL-7AD2D81094",
+    "score": 0.434,
+    "mapped_label": "Understand Changing Gender Roles",
+    "note": "fallback"
+  },
+  "Evaluate Indigenous Community Changes || Assess the impact of broader societal changes on indigenous communities.": {
+    "skill_id": "SKL-C8A981DEE1",
+    "score": 0.4,
+    "mapped_label": "Evaluate Indigenous Community Changes",
+    "note": "fallback"
+  },
+  "Compare Gender Role Shifts || Compare and contrast changes in gender roles across various indigenous communities.": {
+    "skill_id": "SKL-A1B2C3D4B1",
+    "score": 0.565,
+    "mapped_label": "Comparative Analysis"
+  },
+  "Analyze Historical Context || Identify and interpret historical contexts affecting indigenous communities and women.": {
+    "skill_id": "SKL-082C41F8EE",
+    "score": 0.533,
+    "mapped_label": "Analyze Historical Context",
+    "note": "fallback"
+  },
+  "Apply Critical Thinking || Critically evaluate sources, perspectives, and ideas related to Native American gender history.": {
+    "skill_id": "SKL-3345677888",
+    "score": 0.642,
+    "mapped_label": "Critical Thinking & Evaluation"
+  },
+  "Interpret Historical Data || Extract meaningful information from historical data relevant to indigenous women and gender roles.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.591,
+    "mapped_label": "Historical Analysis"
+  },
+  "Develop Historical Empathy || Cultivate an understanding of the unique challenges faced by Native American women throughout history.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.578,
+    "mapped_label": "Historical Analysis"
+  },
+  "Analyze Native American history || Understand and critically evaluate historical events related to Native Americans": {
+    "skill_id": "SKL-0F9FCBA136",
+    "score": 0.5,
+    "mapped_label": "Analyze Native American history",
+    "note": "fallback"
+  },
+  "Explore gender roles in indigenous societies || Investigate the varying gender roles within native communities over time": {
+    "skill_id": "SKL-B336ED94B8",
+    "score": 0.394,
+    "mapped_label": "Explore gender roles in indigenous societies",
+    "note": "fallback"
+  },
+  "Apply feminist perspective || Analyze events and social structures through a feminist lens": {
+    "skill_id": "SKL-970965105A",
+    "score": 0.468,
+    "mapped_label": "Apply feminist perspective",
+    "note": "fallback"
+  },
+  "Compare and contrast cultural perspectives || Differentiate and understand the unique and shared aspects of Native American and Western cultures": {
+    "skill_id": "SKL-74CF9D86C8",
+    "score": 0.484,
+    "mapped_label": "Compare and contrast cultural perspectives",
+    "note": "fallback"
+  },
+  "Evaluate primary sources || Critically assess historical records and artifacts relevant to Native women's experiences": {
+    "skill_id": "SKL-CD0A3261F2",
+    "score": 0.489,
+    "mapped_label": "Evaluate primary sources",
+    "note": "fallback"
+  },
+  "Assess changing gender roles || Analyze the evolution of gender roles within indigenous communities": {
+    "skill_id": "SKL-AA9FBC52E1",
+    "score": 0.407,
+    "mapped_label": "Assess changing gender roles",
+    "note": "fallback"
+  },
+  "Understand broader social context || Recognize and interpret larger social, political, and economic contexts impacting Native American women": {
+    "skill_id": "SKL-0088C9AC8A",
+    "score": 0.448,
+    "mapped_label": "Understand broader social context",
+    "note": "fallback"
+  },
+  "Communicate historical findings || Articulate research findings effectively in academic writing": {
+    "skill_id": "SKL-8BD7FE9E95",
+    "score": 0.52,
+    "mapped_label": "Communicate historical findings",
+    "note": "fallback"
+  },
+  "Analyze Historical Context || Understand historical responses to women's worldviews": {
+    "skill_id": "SKL-3673866B04",
+    "score": 0.533,
+    "mapped_label": "Analyze Historical Context",
+    "note": "fallback"
+  },
+  "Explore Literary Analysis || Evaluate literary interpretations of women outside societal norms": {
+    "skill_id": "SKL-1A2B3C4D01",
+    "score": 0.81,
+    "mapped_label": "Literary Analysis"
+  },
+  "Study Psychological Perspectives || Investigate psychological aspects of deviating female roles": {
+    "skill_id": "SKL-E2E3DC9018",
+    "score": 0.431,
+    "mapped_label": "Study Psychological Perspectives",
+    "note": "fallback"
+  },
+  "Understand Philosophical/Religious Dynamics || Explore religious and philosophical dimensions related to women's deviance": {
+    "skill_id": "SKL-2D40F39972",
+    "score": 0.387,
+    "mapped_label": "Understand Philosophical/Religious Dynamics",
+    "note": "fallback"
+  },
+  "Research Biblical Analysis || Analyze the biblical portrayal of non-conforming female figures": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.622,
+    "mapped_label": "Historical Analysis"
+  },
+  "Investigate Modern Witchcraft || Examine the beliefs and practices of modern Wicca adherents": {
+    "skill_id": "SKL-722756BEEC",
+    "score": 0.475,
+    "mapped_label": "Investigate Modern Witchcraft",
+    "note": "fallback"
+  },
+  "Compare and Contrast Female Figures || Evaluate similarities and differences between various deviant female figures": {
+    "skill_id": "SKL-92973BBA00",
+    "score": 0.509,
+    "mapped_label": "Compare and Contrast Female Figures",
+    "note": "fallback"
+  },
+  "Develop Critical Thinking Skills || Critically analyze societal responses to women outside the norm": {
+    "skill_id": "SKL-3345677888",
+    "score": 0.613,
+    "mapped_label": "Critical Thinking & Evaluation"
+  },
+  "Analyze Women's Roles || Explore the role of women in Spanish America and their relationship with political, religious institutions": {
+    "skill_id": "SKL-B5BD46C9BC",
+    "score": 0.388,
+    "mapped_label": "Analyze Women's Roles",
+    "note": "fallback"
+  },
+  "Critique Silencing || Assess how silencing has influenced women's roles and identities in Spanish America": {
+    "skill_id": "SKL-5CD1697A35",
+    "score": 0.529,
+    "mapped_label": "Critique Silencing",
+    "note": "fallback"
+  },
+  "Explore Otherness || Understand the concept of otherness as it pertains to women in Spanish America": {
+    "skill_id": "SKL-B88D5F1F14",
+    "score": 0.457,
+    "mapped_label": "Explore Otherness",
+    "note": "fallback"
+  },
+  "Analyze Mythical Images || Examine mythical images that have contributed to false identities for women in Spanish America": {
+    "skill_id": "SKL-644FBAA1D3",
+    "score": 0.433,
+    "mapped_label": "Analyze Mythical Images",
+    "note": "fallback"
+  },
+  "Compare Geographic Regions || Study literature from diverse geographic regions of Central and South America, Mexico, and the Caribbean": {
+    "skill_id": "SKL-A7D27FC62B",
+    "score": 0.478,
+    "mapped_label": "Compare Geographic Regions",
+    "note": "fallback"
+  },
+  "Apply Literary Analysis || Use literary analysis techniques to interpret works by women writers from Spanish America": {
+    "skill_id": "SKL-1A2B3C4D01",
+    "score": 0.85,
+    "mapped_label": "Literary Analysis"
+  },
+  "Develop Critical Thinking || Formulate critical thinking skills in analyzing literature and social issues pertaining to women in Spanish America": {
+    "skill_id": "SKL-3345677888",
+    "score": 0.618,
+    "mapped_label": "Critical Thinking & Evaluation"
+  },
+  "Analyze Women's Historical Impact || Examine women's contributions and barriers throughout Western civilization history": {
+    "skill_id": "SKL-8C4D07BC2F",
+    "score": 0.462,
+    "mapped_label": "Analyze Women's Historical Impact",
+    "note": "fallback"
+  },
+  "Identify Political, Economic, Religious Factors || Understand factors affecting women in public and private life": {
+    "skill_id": "SKL-A10537ED2F",
+    "score": 0.363,
+    "mapped_label": "Identify Political, Economic, Religious Factors",
+    "note": "fallback"
+  },
+  "Explore Intellectual, Artistic, Social History || Investigate women's roles and influences in intellectual, artistic, and social contexts": {
+    "skill_id": "SKL-74B207CC66",
+    "score": 0.486,
+    "mapped_label": "Explore Intellectual, Artistic, Social History",
+    "note": "fallback"
+  },
+  "Trace Women's Evolution in Society || Follow the development of women's role in society from prehistory to the present": {
+    "skill_id": "SKL-4B0F7DC4AA",
+    "score": 0.471,
+    "mapped_label": "Trace Women's Evolution in Society",
+    "note": "fallback"
+  },
+  "Evaluate Social Barriers for Women || Assess barriers placed upon women in various aspects of life": {
+    "skill_id": "SKL-9BF14229EC",
+    "score": 0.413,
+    "mapped_label": "Evaluate Social Barriers for Women",
+    "note": "fallback"
+  },
+  "Apply Historical Analysis Techniques || Employ analytical methods to study women's history": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.691,
+    "mapped_label": "Historical Analysis"
+  },
+  "Compare and Contrast Women's Roles || Compare and contrast women's roles across different time periods and cultures": {
+    "skill_id": "SKL-3D824B88E1",
+    "score": 0.481,
+    "mapped_label": "Compare and Contrast Women's Roles",
+    "note": "fallback"
+  },
+  "Develop Historical Perspective || Gain a comprehensive historical perspective on the role of women in Western civilization": {
+    "skill_id": "SKL-474F9337E9",
+    "score": 0.531,
+    "mapped_label": "Develop Historical Perspective",
+    "note": "fallback"
+  },
+  "Analyze Regional Identity || Exploring how regional identity forms and evolves for women in the American West": {
+    "skill_id": "SKL-CF551586D4",
+    "score": 0.419,
+    "mapped_label": "Analyze Regional Identity",
+    "note": "fallback"
+  },
+  "Understand Cultural Representations || Learning to identify and interpret cultural representations of women in the Western context": {
+    "skill_id": "SKL-17AA3EE136",
+    "score": 0.464,
+    "mapped_label": "Understand Cultural Representations",
+    "note": "fallback"
+  },
+  "Explore Women's Mobility || Analyzing patterns of movement and migration for women across the American West": {
+    "skill_id": "SKL-47AA17DEF0",
+    "score": 0.437,
+    "mapped_label": "Explore Women's Mobility",
+    "note": "fallback"
+  },
+  "Interpret Diverse Perspectives || Gaining skills to understand and appreciate diverse viewpoints among Western women": {
+    "skill_id": "SKL-9FA665C789",
+    "score": 0.362,
+    "mapped_label": "Interpret Diverse Perspectives",
+    "note": "fallback"
+  },
+  "Trace Cultural History || Mapping changes in the cultural landscape of the American West over time": {
+    "skill_id": "SKL-86DD99FD1D",
+    "score": 0.41,
+    "mapped_label": "Trace Cultural History",
+    "note": "fallback"
+  },
+  "Explore Shaping Influences || Identifying how women's influence has contributed to shaping the American West": {
+    "skill_id": "SKL-28C4BA1C35",
+    "score": 0.441,
+    "mapped_label": "Explore Shaping Influences",
+    "note": "fallback"
+  },
+  "Evaluate Narrative Structures || Critically analyzing the structure and meaning of narratives related to Western women": {
+    "skill_id": "SKL-5E6F7A8B05",
+    "score": 0.792,
+    "mapped_label": "Narrative Structure"
+  },
+  "Apply Historical Analysis || Developing skills for historical analysis within the context of the American West": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.864,
+    "mapped_label": "Historical Analysis"
+  },
+  "Analyze Regional Identity || Understanding the historical and cultural factors shaping regional identity in the American West": {
+    "skill_id": "SKL-74D9035164",
+    "score": 0.419,
+    "mapped_label": "Analyze Regional Identity",
+    "note": "fallback"
+  },
+  "Explore Mobility Patterns || Identifying patterns of mobility among women in the American West over time": {
+    "skill_id": "SKL-6891B5A00F",
+    "score": 0.478,
+    "mapped_label": "Explore Mobility Patterns",
+    "note": "fallback"
+  },
+  "Interpret Cultural Representations || Analyzing cultural depictions and stereotypes of women in the American West": {
+    "skill_id": "SKL-A5D8328147",
+    "score": 0.453,
+    "mapped_label": "Interpret Cultural Representations",
+    "note": "fallback"
+  },
+  "Evaluate Perspectives || Assessing diverse perspectives on the experiences of women in the American West": {
+    "skill_id": "SKL-866AD7027C",
+    "score": 0.455,
+    "mapped_label": "Evaluate Perspectives",
+    "note": "fallback"
+  },
+  "Develop Historical Analysis || Crafting historical analyses to understand the role of women in shaping the American West": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.826,
+    "mapped_label": "Historical Analysis"
+  },
+  "Discuss Cultural Shifts || Exploring shifts in cultural norms and attitudes towards women in the American West": {
+    "skill_id": "SKL-BD70881958",
+    "score": 0.45,
+    "mapped_label": "Discuss Cultural Shifts",
+    "note": "fallback"
+  },
+  "Compare Historical Contexts || Comparing and contrasting the experiences of women across different historical contexts in the American West": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.565,
+    "mapped_label": "Historical Analysis"
+  },
+  "Critically Evaluate Sources || Assessing primary and secondary sources to evaluate their credibility and relevance to the study of women in the American West": {
+    "skill_id": "SKL-3345677888",
+    "score": 0.596,
+    "mapped_label": "Critical Thinking & Evaluation"
+  },
+  "Analyze Media History || Understand and dissect the historical context of women in media.": {
+    "skill_id": "SKL-5CEDE340D3",
+    "score": 0.429,
+    "mapped_label": "Analyze Media History",
+    "note": "fallback"
+  },
+  "Interpret Statistics || Learn to analyze and interpret statistics related to women in media.": {
+    "skill_id": "SKL-920F411046",
+    "score": 0.522,
+    "mapped_label": "Interpret Statistics",
+    "note": "fallback"
+  },
+  "Evaluate Media Portrayal || Assess the representation of women as subjects of media.": {
+    "skill_id": "SKL-D1B21F909E",
+    "score": 0.439,
+    "mapped_label": "Evaluate Media Portrayal",
+    "note": "fallback"
+  },
+  "Engage with Guest Speakers || Develop skills in collaborative learning and knowledge exchange with industry professionals.": {
+    "skill_id": "SKL-C2D8C421F6",
+    "score": 0.421,
+    "mapped_label": "Engage with Guest Speakers",
+    "note": "fallback"
+  },
+  "Discuss Current Issues || Learn to discuss and debate current issues related to women in media.": {
+    "skill_id": "SKL-99726F5900",
+    "score": 0.417,
+    "mapped_label": "Discuss Current Issues",
+    "note": "fallback"
+  },
+  "Forecast Future Trends || Develop the ability to forecast potential future developments for women in media.": {
+    "skill_id": "SKL-CE419EABB3",
+    "score": 0.439,
+    "mapped_label": "Forecast Future Trends",
+    "note": "fallback"
+  },
+  "Critically Analyze Journalism || Learn to critically analyze journalism and its impact on women.": {
+    "skill_id": "SKL-AD2DD331D8",
+    "score": 0.542,
+    "mapped_label": "Critically Analyze Journalism",
+    "note": "fallback"
+  },
+  "Advocate for Equality || Develop advocacy skills in promoting gender equality within the media industry.": {
+    "skill_id": "SKL-D4FA827A3F",
+    "score": 0.432,
+    "mapped_label": "Advocate for Equality",
+    "note": "fallback"
+  },
+  "Analyze Women's Role || Explore the role of women as journalism professionals and subjects of media": {
+    "skill_id": "SKL-419CC516F2",
+    "score": 0.401,
+    "mapped_label": "Analyze Women's Role",
+    "note": "fallback"
+  },
+  "Historical Contextualization || Understand historical contexts related to women in media": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.638,
+    "mapped_label": "Historical Analysis"
+  },
+  "Statistical Analysis || Evaluate statistics related to women in media": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.821,
+    "mapped_label": "Historical Analysis"
+  },
+  "Opinion Formation || Form and express opinions in response to readings and discussions": {
+    "skill_id": "SKL-0112344555",
+    "score": 0.558,
+    "mapped_label": "Presentation & Performance"
+  },
+  "Guest Speaker Engagement || Engage with guest speakers on the topic of women in media": {
+    "skill_id": "SKL-1B06C039E9",
+    "score": 0.538,
+    "mapped_label": "Guest Speaker Engagement",
+    "note": "fallback"
+  },
+  "Future Scenario Analysis || Explore and discuss possible future issues related to women in media": {
+    "skill_id": "SKL-1A2B3C4D01",
+    "score": 0.634,
+    "mapped_label": "Literary Analysis"
+  },
+  "Critical Discussion || Participate in critical discussions on women-related media issues": {
+    "skill_id": "SKL-2B3C4D5E02",
+    "score": 0.686,
+    "mapped_label": "Critical Reading"
+  },
+  "Analyze Gender Influence || Understand the impact of gender on English, American, and world literature": {
+    "skill_id": "SKL-2AD7512C4A",
+    "score": 0.4,
+    "mapped_label": "Analyze Gender Influence",
+    "note": "fallback"
+  },
+  "Evaluate Female Writers || Assess literary criticism by women writers": {
+    "skill_id": "SKL-E8FBD04825",
+    "score": 0.462,
+    "mapped_label": "Evaluate Female Writers",
+    "note": "fallback"
+  },
+  "Identify Literary Themes || Recognize recurring themes in literature written by women": {
+    "skill_id": "SKL-3C4D5E6F03",
+    "score": 0.622,
+    "mapped_label": "Apply Literary Theory"
+  },
+  "Critique Female Narratives || Analyze the narrative structure of female-authored literature": {
+    "skill_id": "SKL-D72E4FBF7A",
+    "score": 0.521,
+    "mapped_label": "Critique Female Narratives",
+    "note": "fallback"
+  },
+  "Compare Genre Conventions || Understand how genre conventions apply to women writers' work": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.773,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Develop Historical Perspective || Gain a historical understanding of the evolution of women's literature": {
+    "skill_id": "SKL-29C3C1761A",
+    "score": 0.531,
+    "mapped_label": "Develop Historical Perspective",
+    "note": "fallback"
+  },
+  "Apply Literary Analysis || Employ literary analysis techniques to interpret texts": {
+    "skill_id": "SKL-1A2B3C4D01",
+    "score": 0.85,
+    "mapped_label": "Literary Analysis"
+  },
+  "Formulate Critical Opinions || Develop and express critical opinions about women's literature": {
+    "skill_id": "SKL-694B06C514",
+    "score": 0.512,
+    "mapped_label": "Formulate Critical Opinions",
+    "note": "fallback"
+  },
+  "Analyze Leadership Challenges || Exploring historical and contemporary leadership challenges faced by women.": {
+    "skill_id": "SKL-AA72F73C32",
+    "score": 0.4,
+    "mapped_label": "Analyze Leadership Challenges",
+    "note": "fallback"
+  },
+  "Identify Strategies for Change || Recognizing strategies that promote success for women in leadership roles.": {
+    "skill_id": "SKL-3ECFD0C6B9",
+    "score": 0.431,
+    "mapped_label": "Identify Strategies for Change",
+    "note": "fallback"
+  },
+  "Evaluate Contemporary Opportunities || Assessing current opportunities available to women leaders.": {
+    "skill_id": "SKL-695C6A03A5",
+    "score": 0.423,
+    "mapped_label": "Evaluate Contemporary Opportunities",
+    "note": "fallback"
+  },
+  "Critically Examine Leadership || Analyzing leadership from a critical perspective related to women.": {
+    "skill_id": "SKL-2B3C4D5E02",
+    "score": 0.578,
+    "mapped_label": "Critical Reading"
+  },
+  "Compare Historical Perspectives || Comparing historical perspectives on women in leadership roles.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.56,
+    "mapped_label": "Historical Analysis"
+  },
+  "Develop Cross-Disciplinary Knowledge || Gaining knowledge in both communications and leadership through cross-listing with LEAD 3533.": {
+    "skill_id": "SKL-D4DB8FF690",
+    "score": 0.358,
+    "mapped_label": "Develop Cross-Disciplinary Knowledge",
+    "note": "fallback"
+  },
+  "Apply Communication Skills || Applying effective communication skills to discuss and debate women's leadership topics.": {
+    "skill_id": "SKL-5567899A0A",
+    "score": 0.61,
+    "mapped_label": "Professional Communication (Oral)"
+  },
+  "Explore Success Strategies || Learning strategies for personal success as a woman leader.": {
+    "skill_id": "SKL-71524920C1",
+    "score": 0.372,
+    "mapped_label": "Explore Success Strategies",
+    "note": "fallback"
+  },
+  "Understand White Collar Crime || Gain knowledge about the nature and definition of white collar crime.": {
+    "skill_id": "SKL-0775EBA986",
+    "score": 0.419,
+    "mapped_label": "Understand White Collar Crime",
+    "note": "fallback"
+  },
+  "Analyze Victimization in White Collar Crime || Learn to analyze the complexities involved in victimization related to white collar crimes.": {
+    "skill_id": "SKL-88C83AC370",
+    "score": 0.405,
+    "mapped_label": "Analyze Victimization in White Collar Crime",
+    "note": "fallback"
+  },
+  "Assess Sentencing Issues || Develop skills to evaluate sentencing issues in white collar crime cases.": {
+    "skill_id": "SKL-1E23213AE9",
+    "score": 0.429,
+    "mapped_label": "Assess Sentencing Issues",
+    "note": "fallback"
+  },
+  "Explore Criminal Justice System Response || Learn about the challenges and responses of the criminal justice system towards white collar crimes.": {
+    "skill_id": "SKL-874690D858",
+    "score": 0.418,
+    "mapped_label": "Explore Criminal Justice System Response",
+    "note": "fallback"
+  },
+  "Analyze Debates About White Collar Crime || Gain skills to analyze debates surrounding the definition, causes, and impacts of white collar crime.": {
+    "skill_id": "SKL-C94757BCA1",
+    "score": 0.391,
+    "mapped_label": "Analyze Debates About White Collar Crime",
+    "note": "fallback"
+  },
+  "Write Effective Academic Essays || Improve academic writing skills through essays related to the course content.": {
+    "skill_id": "SKL-59D92528C7",
+    "score": 0.407,
+    "mapped_label": "Write Effective Academic Essays",
+    "note": "fallback"
+  },
+  "Apply Critical Thinking Skills || Develop critical thinking skills by critically analyzing case studies and theories related to white collar crime.": {
+    "skill_id": "SKL-3345677888",
+    "score": 0.633,
+    "mapped_label": "Critical Thinking & Evaluation"
+  },
+  "Evaluate Offender Behavior || Learn to evaluate the behavior, motivations, and profiles of white collar offenders.": {
+    "skill_id": "SKL-C85B470BBA",
+    "score": 0.456,
+    "mapped_label": "Evaluate Offender Behavior",
+    "note": "fallback"
+  },
+  "Examine Historical Phenomena || Analyze and understand historical religious traditions involving the worship of Goddesses.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.553,
+    "mapped_label": "Historical Analysis"
+  },
+  "Evaluate Cultural Responses || Assess various cultural, literary, psychological, philosophical, and religious responses to and interpretations of such traditions.": {
+    "skill_id": "SKL-0080899910",
+    "score": 0.459,
+    "mapped_label": "Evaluate Cultural Responses",
+    "note": "fallback"
+  },
+  "Understand Heterodoxy || Gain insight into heterodox religious traditions from ancient times to the present.": {
+    "skill_id": "SKL-17C401CEAF",
+    "score": 0.378,
+    "mapped_label": "Understand Heterodoxy",
+    "note": "fallback"
+  },
+  "Analyze Literary Traditions || Explore and critically analyze literary traditions associated with Goddess worship.": {
+    "skill_id": "SKL-3C4D5E6F03",
+    "score": 0.625,
+    "mapped_label": "Apply Literary Theory"
+  },
+  "Interpret Historical Texts || Gain proficiency in interpreting historical texts related to the subject matter.": {
+    "skill_id": "SKL-DDBCD8DA6B",
+    "score": 0.533,
+    "mapped_label": "Interpret Historical Texts",
+    "note": "fallback"
+  },
+  "Apply Critical Thinking || Develop and apply critical thinking skills in evaluating the information discussed in the course.": {
+    "skill_id": "SKL-3345677888",
+    "score": 0.642,
+    "mapped_label": "Critical Thinking & Evaluation"
+  },
+  "Demonstrate Senior-Level Understanding || Demonstrate a mature understanding of complex religious, historical, and cultural topics.": {
+    "skill_id": "SKL-A108049FE1",
+    "score": 0.37,
+    "mapped_label": "Demonstrate Senior-Level Understanding",
+    "note": "fallback"
+  },
+  "Engage with Diverse Perspectives || Explore diverse perspectives on the role and worship of Goddesses in various cultures and religions.": {
+    "skill_id": "SKL-62B30D45F3",
+    "score": 0.392,
+    "mapped_label": "Engage with Diverse Perspectives",
+    "note": "fallback"
+  },
+  "Identify CBRNE Agents || Recognize chemical, biological, radiological, nuclear, and explosive agents related to terrorism events": {
+    "skill_id": "SKL-1CFA381451",
+    "score": 0.474,
+    "mapped_label": "Identify CBRNE Agents",
+    "note": "fallback"
+  },
+  "Process CBRNE Scenes || Follow protocols for processing crime scenes involving weapons of mass destruction": {
+    "skill_id": "SKL-DE04DFD1A4",
+    "score": 0.489,
+    "mapped_label": "Process CBRNE Scenes",
+    "note": "fallback"
+  },
+  "Conduct Lab Analysis || Perform laboratory analysis on samples from CBRNE events": {
+    "skill_id": "SKL-A1B2C3D4B1",
+    "score": 0.6,
+    "mapped_label": "Comparative Analysis"
+  },
+  "Field Analysis Skills || Perform field analyses on samples from CBRNE events": {
+    "skill_id": "SKL-E5F60718F5",
+    "score": 0.596,
+    "mapped_label": "Data Analysis & Statistics"
+  },
+  "Analyze Terrorism Events || Understand the dynamics of domestic and international terrorism events": {
+    "skill_id": "SKL-27FE0F1ADD",
+    "score": 0.444,
+    "mapped_label": "Analyze Terrorism Events",
+    "note": "fallback"
+  },
+  "Laboratory Techniques || Apply laboratory techniques for CBRNE agent analysis": {
+    "skill_id": "SKL-5C6D7E8F60",
+    "score": 0.84,
+    "mapped_label": "Laboratory & Field Techniques"
+  },
+  "Field Analysis Procedures || Follow procedures for field analyses on samples from CBRNE events": {
+    "skill_id": "SKL-455C9FDE3D",
+    "score": 0.524,
+    "mapped_label": "Field Analysis Procedures",
+    "note": "fallback"
+  },
+  "CBRNE Threat Assessment || Evaluate threats posed by chemical, biological, radiological, nuclear, and explosive agents": {
+    "skill_id": "SKL-74967E2D01",
+    "score": 0.408,
+    "mapped_label": "CBRNE Threat Assessment",
+    "note": "fallback"
+  },
+  "Identify CBRNE agents || Recognize chemical, biological, radiological, nuclear, and explosive substances in various contexts.": {
+    "skill_id": "SKL-70F006A1A0",
+    "score": 0.474,
+    "mapped_label": "Identify CBRNE agents",
+    "note": "fallback"
+  },
+  "Process CBRNE crime scenes || Follow protocol for handling evidence at sites of WMD events.": {
+    "skill_id": "SKL-B4339C7BCD",
+    "score": 0.452,
+    "mapped_label": "Process CBRNE crime scenes",
+    "note": "fallback"
+  },
+  "Conduct laboratory analysis || Perform tests on samples to identify CBRNE agents.": {
+    "skill_id": "SKL-A1B2C3D4B1",
+    "score": 0.638,
+    "mapped_label": "Comparative Analysis"
+  },
+  "Perform field analysis || Analyze substances in the field during a WMD event.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.634,
+    "mapped_label": "Historical Analysis"
+  },
+  "Apply terrorism context knowledge || Understand the connection between terrorism and WMD use.": {
+    "skill_id": "SKL-65C2337B55",
+    "score": 0.459,
+    "mapped_label": "Apply terrorism context knowledge",
+    "note": "fallback"
+  },
+  "Comprehend international implications || Recognize the global ramifications of WMD events.": {
+    "skill_id": "SKL-6FC9C7AC50",
+    "score": 0.486,
+    "mapped_label": "Comprehend international implications",
+    "note": "fallback"
+  },
+  "Follow safety protocols || Adhere to guidelines for handling potentially hazardous materials.": {
+    "skill_id": "SKL-7E8F901122",
+    "score": 0.565,
+    "mapped_label": "Risk & Safety Practices"
+  },
+  "Apply investigative techniques || Utilize methods to collect and interpret evidence in WMD cases.": {
+    "skill_id": "SKL-B1CDEF0120",
+    "score": 0.621,
+    "mapped_label": "Apply Quantitative Reasoning"
+  },
+  "Develop Vocal Techniques || Learn various techniques for improving vocal clarity, expressiveness, projection, and confidence": {
+    "skill_id": "SKL-8180A1A8AE",
+    "score": 0.491,
+    "mapped_label": "Develop Vocal Techniques",
+    "note": "fallback"
+  },
+  "Stage Dialect Development || Explore the fundamentals of developing a stage dialect": {
+    "skill_id": "SKL-19C34284CD",
+    "score": 0.4,
+    "mapped_label": "Stage Dialect Development",
+    "note": "fallback"
+  },
+  "Vocal Clarity Improvement || Improve the clarity of voice delivery in performance": {
+    "skill_id": "SKL-505098AD6F",
+    "score": 0.432,
+    "mapped_label": "Vocal Clarity Improvement",
+    "note": "fallback"
+  },
+  "Expressiveness Enhancement || Enhance the expressiveness of vocal delivery for better performance": {
+    "skill_id": "SKL-22BB9F5094",
+    "score": 0.423,
+    "mapped_label": "Expressiveness Enhancement",
+    "note": "fallback"
+  },
+  "Projection Skill || Learn techniques for projecting voice effectively on stage": {
+    "skill_id": "SKL-64E3C39120",
+    "score": 0.5,
+    "mapped_label": "Projection Skill",
+    "note": "fallback"
+  },
+  "Vocal Confidence Building || Build vocal confidence both on and off stage": {
+    "skill_id": "SKL-EF5926D2FD",
+    "score": 0.439,
+    "mapped_label": "Vocal Confidence Building",
+    "note": "fallback"
+  },
+  "Dialect Analysis || Analyze dialects for stage performance purposes": {
+    "skill_id": "SKL-0D1E2F3A0A",
+    "score": 0.788,
+    "mapped_label": "Audience Analysis"
+  },
+  "Control Resonance || Developing the ability to control resonance for enhanced expressive intonation": {
+    "skill_id": "SKL-F42D595957",
+    "score": 0.455,
+    "mapped_label": "Control Resonance",
+    "note": "fallback"
+  },
+  "Physical Control || Gaining more physical control through group work": {
+    "skill_id": "SKL-EA1BA5FFDB",
+    "score": 0.514,
+    "mapped_label": "Physical Control",
+    "note": "fallback"
+  },
+  "Vocal Interpretation || Interpreting vocal nuances in text analysis": {
+    "skill_id": "SKL-81FACD60B2",
+    "score": 0.5,
+    "mapped_label": "Vocal Interpretation",
+    "note": "fallback"
+  },
+  "Expressive Intonation Analysis || Analyzing and enhancing expressive intonation in speech": {
+    "skill_id": "SKL-A1B2C3D4B1",
+    "score": 0.56,
+    "mapped_label": "Comparative Analysis"
+  },
+  "Group Collaboration || Working effectively in group settings for physical control and text analysis": {
+    "skill_id": "SKL-9011233444",
+    "score": 0.605,
+    "mapped_label": "Collaboration & Teamwork"
+  },
+  "Text Analysis Skills || Enhancing textual interpretation and analysis abilities": {
+    "skill_id": "SKL-E5F60718F5",
+    "score": 0.609,
+    "mapped_label": "Data Analysis & Statistics"
+  },
+  "Vocal Expression || Improving vocal expression through controlled resonance and intonation": {
+    "skill_id": "SKL-F60718290A",
+    "score": 0.595,
+    "mapped_label": "Modeling & Regression"
+  },
+  "Physical Coordination || Developing coordination in physical movement for voice and movement exercises": {
+    "skill_id": "SKL-5EF64B7359",
+    "score": 0.519,
+    "mapped_label": "Physical Coordination",
+    "note": "fallback"
+  },
+  "Proper Breathing || Learning to breathe properly for stage performances": {
+    "skill_id": "SKL-9BC3611D85",
+    "score": 0.5,
+    "mapped_label": "Proper Breathing",
+    "note": "fallback"
+  },
+  "Resonance Techniques || Techniques to enhance vocal resonance": {
+    "skill_id": "SKL-73696E4352",
+    "score": 0.531,
+    "mapped_label": "Resonance Techniques",
+    "note": "fallback"
+  },
+  "Articulation Practice || Improving clarity and precision of speech": {
+    "skill_id": "SKL-0112344555",
+    "score": 0.553,
+    "mapped_label": "Presentation & Performance"
+  },
+  "Floor Exercises || Physical exercises for body relaxation": {
+    "skill_id": "SKL-0DB45A6B3A",
+    "score": 0.455,
+    "mapped_label": "Floor Exercises",
+    "note": "fallback"
+  },
+  "Theatre Games || Participation in games to improve acting skills": {
+    "skill_id": "SKL-E11F5D6D3E",
+    "score": 0.467,
+    "mapped_label": "Theatre Games",
+    "note": "fallback"
+  },
+  "Eliminate Posture Dysfunctions || Correcting poor posture for performance": {
+    "skill_id": "SKL-6EB26E6060",
+    "score": 0.476,
+    "mapped_label": "Eliminate Posture Dysfunctions",
+    "note": "fallback"
+  },
+  "Support for Vocal Instrument || Learning how to support the voice effectively": {
+    "skill_id": "SKL-87EEA37D6F",
+    "score": 0.464,
+    "mapped_label": "Support for Vocal Instrument",
+    "note": "fallback"
+  },
+  "Stage Worthy Vocal Skills || Developing vocal skills suitable for stage performances": {
+    "skill_id": "SKL-EBA79A0EE1",
+    "score": 0.5,
+    "mapped_label": "Stage Worthy Vocal Skills",
+    "note": "fallback"
+  },
+  "Recognize Prefixes || Identify and understand the meaning of prefixes in words.": {
+    "skill_id": "SKL-D300B66F8D",
+    "score": 0.45,
+    "mapped_label": "Recognize Prefixes",
+    "note": "fallback"
+  },
+  "Understand Suffixes || Identify and understand the meaning of suffixes in words.": {
+    "skill_id": "SKL-4886ED0B3C",
+    "score": 0.444,
+    "mapped_label": "Understand Suffixes",
+    "note": "fallback"
+  },
+  "Analyze Etymologies || Trace the origin of words to improve understanding.": {
+    "skill_id": "SKL-207A0778B0",
+    "score": 0.403,
+    "mapped_label": "Analyze Etymologies",
+    "note": "fallback"
+  },
+  "Enhance Reading Skills || Improve reading comprehension through vocabulary expansion.": {
+    "skill_id": "SKL-BBC31C02A6",
+    "score": 0.474,
+    "mapped_label": "Enhance Reading Skills",
+    "note": "fallback"
+  },
+  "Boost Writing Competency || Increase writing proficiency by using new vocabulary.": {
+    "skill_id": "SKL-FE1ED1F6EB",
+    "score": 0.45,
+    "mapped_label": "Boost Writing Competency",
+    "note": "fallback"
+  },
+  "Apply Word Analysis || Use prefixes, suffixes, and etymologies in analysis tasks.": {
+    "skill_id": "SKL-C2DEF12331",
+    "score": 0.667,
+    "mapped_label": "Apply Qualitative Analysis"
+  },
+  "Improve Verbal IQ || Develop verbal intelligence through extensive vocabulary.": {
+    "skill_id": "SKL-985BABC765",
+    "score": 0.486,
+    "mapped_label": "Improve Verbal IQ",
+    "note": "fallback"
+  },
+  "Expand Language Aptitude || Broaden language proficiency by learning new words and word forms.": {
+    "skill_id": "SKL-FB8E14AD2D",
+    "score": 0.386,
+    "mapped_label": "Expand Language Aptitude",
+    "note": "fallback"
+  },
+  "Research News Stories || Students will learn how to research news stories for reporting": {
+    "skill_id": "SKL-7789ABBC2C",
+    "score": 0.667,
+    "mapped_label": "Research Synthesis"
+  },
+  "Use Electronic News-Gathering Equipment || Students will be trained on the use of electronic news-gathering equipment": {
+    "skill_id": "SKL-331D5B7438",
+    "score": 0.523,
+    "mapped_label": "Use Electronic News-Gathering Equipment",
+    "note": "fallback"
+  },
+  "Write and Report Style || Students will learn about writing and reporting style in news": {
+    "skill_id": "SKL-82D1358BBE",
+    "score": 0.458,
+    "mapped_label": "Write and Report Style",
+    "note": "fallback"
+  },
+  "On-Air Presentation || Students will learn to present completed stories on air": {
+    "skill_id": "SKL-C83BD086CD",
+    "score": 0.533,
+    "mapped_label": "On-Air Presentation",
+    "note": "fallback"
+  },
+  "Electronic News Gathering || Students will gain skills in electronic news gathering": {
+    "skill_id": "SKL-DC117552B6",
+    "score": 0.549,
+    "mapped_label": "Electronic News Gathering",
+    "note": "fallback"
+  },
+  "News Reporting || Students will learn the art of reporting news": {
+    "skill_id": "SKL-4B5C6D7E5F",
+    "score": 0.7,
+    "mapped_label": "News Gathering & Reporting"
+  },
+  "Writing for News || Students will develop skills in writing for news": {
+    "skill_id": "SKL-B1CA6DE394",
+    "score": 0.476,
+    "mapped_label": "Writing for News",
+    "note": "fallback"
+  },
+  "On-Camera Performance || Students will learn the necessary skills for on-camera performance": {
+    "skill_id": "SKL-0112344555",
+    "score": 0.596,
+    "mapped_label": "Presentation & Performance"
+  },
+  "Generate Content || Creating original material for video-based reporting": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.629,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Teamwork || Working collaboratively in a news team": {
+    "skill_id": "SKL-60107177C5",
+    "score": 0.5,
+    "mapped_label": "Teamwork",
+    "note": "fallback"
+  },
+  "News Gathering || Acquiring news stories for video journalism": {
+    "skill_id": "SKL-4B5C6D7E5F",
+    "score": 0.7,
+    "mapped_label": "News Gathering & Reporting"
+  },
+  "Writing for Video || Composing scripts suitable for video newscasts": {
+    "skill_id": "SKL-258D8ACB50",
+    "score": 0.424,
+    "mapped_label": "Writing for Video",
+    "note": "fallback"
+  },
+  "Content Creation || Designing video-driven content for news programs": {
+    "skill_id": "SKL-5BA5134011",
+    "score": 0.545,
+    "mapped_label": "Content Creation",
+    "note": "fallback"
+  },
+  "Newscast Production || Creating team-driven newscasts for video broadcasts": {
+    "skill_id": "SKL-293A4B5C3D",
+    "score": 0.686,
+    "mapped_label": "Video Production"
+  },
+  "News Reporting Practices || Applying theories and practices of news reporting in a video context": {
+    "skill_id": "SKL-4B5C6D7E5F",
+    "score": 0.56,
+    "mapped_label": "News Gathering & Reporting"
+  },
+  "Video Storytelling || Developing engaging narratives for video journalism": {
+    "skill_id": "SKL-1DF2668225",
+    "score": 0.529,
+    "mapped_label": "Video Storytelling",
+    "note": "fallback"
+  },
+  "Videography Skills || Applying techniques to capture high-quality video footage": {
+    "skill_id": "SKL-43DE16D3CE",
+    "score": 0.514,
+    "mapped_label": "Videography Skills",
+    "note": "fallback"
+  },
+  "Sound Production || Recording and managing audio for video production": {
+    "skill_id": "SKL-3A4B5C6D4E",
+    "score": 0.8,
+    "mapped_label": "Audio & Sound Production"
+  },
+  "Editing Techniques || Manipulating videos to create compelling narratives": {
+    "skill_id": "SKL-5C6D7E8F60",
+    "score": 0.553,
+    "mapped_label": "Laboratory & Field Techniques"
+  },
+  "Writing for Storytelling || Composing effective scripts and storylines": {
+    "skill_id": "SKL-459639C365",
+    "score": 0.5,
+    "mapped_label": "Writing for Storytelling",
+    "note": "fallback"
+  },
+  "Directing Abilities || Leading actors and crew to execute a vision": {
+    "skill_id": "SKL-875B4FE374",
+    "score": 0.489,
+    "mapped_label": "Directing Abilities",
+    "note": "fallback"
+  },
+  "Producing Skills || Organizing resources and overseeing production": {
+    "skill_id": "SKL-BDBA1D10F7",
+    "score": 0.5,
+    "mapped_label": "Producing Skills",
+    "note": "fallback"
+  },
+  "Storytelling across Platforms || Adapting storytelling methods for different media": {
+    "skill_id": "SKL-8405FE4548",
+    "score": 0.44,
+    "mapped_label": "Storytelling across Platforms",
+    "note": "fallback"
+  },
+  "Use Video Editing Software || Demonstrate proficiency in using industry-standard video editing software": {
+    "skill_id": "SKL-BE5B6DDCFB",
+    "score": 0.545,
+    "mapped_label": "Use Video Editing Software",
+    "note": "fallback"
+  },
+  "Edit Video Sequences || Manipulate and arrange video clips to create coherent narratives": {
+    "skill_id": "SKL-EB67A8AEEB",
+    "score": 0.444,
+    "mapped_label": "Edit Video Sequences",
+    "note": "fallback"
+  },
+  "Apply Transitions and Effects || Utilize various visual transitions and effects to enhance video content": {
+    "skill_id": "SKL-75DF793029",
+    "score": 0.509,
+    "mapped_label": "Apply Transitions and Effects",
+    "note": "fallback"
+  },
+  "Create Titles and Captions || Design and implement titles, captions, and other text elements for videos": {
+    "skill_id": "SKL-D6715FA6F7",
+    "score": 0.478,
+    "mapped_label": "Create Titles and Captions",
+    "note": "fallback"
+  },
+  "Sound Editing || Manage audio components, such as music, dialogue, and sound effects": {
+    "skill_id": "SKL-7A8B9C0D07",
+    "score": 0.71,
+    "mapped_label": "Revision & Editing"
+  },
+  "Color Correction and Grading || Adjust color balances, contrasts, and other visual aspects to improve video quality": {
+    "skill_id": "SKL-EA9A093A2D",
+    "score": 0.462,
+    "mapped_label": "Color Correction and Grading",
+    "note": "fallback"
+  },
+  "Project Management || Organize and complete multiple video editing projects effectively": {
+    "skill_id": "SKL-8F90112333",
+    "score": 0.783,
+    "mapped_label": "Project & Program Management"
+  },
+  "Collaborate with Others || Work cooperatively on video production tasks with peers or professionals": {
+    "skill_id": "SKL-9011233444",
+    "score": 0.596,
+    "mapped_label": "Collaboration & Teamwork"
+  },
+  "Analyze trauma impact || Understanding the interpersonal and psychological effects of trauma on victims.": {
+    "skill_id": "SKL-03FE9872A3",
+    "score": 0.45,
+    "mapped_label": "Analyze trauma impact",
+    "note": "fallback"
+  },
+  "Assess media coverage || Evaluating the impact of media coverage on victims, journalists, and communications professionals.": {
+    "skill_id": "SKL-734AB1C3F0",
+    "score": 0.37,
+    "mapped_label": "Assess media coverage",
+    "note": "fallback"
+  },
+  "Communicate effectively || Developing clear and effective communication skills in discussing trauma and its impact.": {
+    "skill_id": "SKL-DFFFFA2A4F",
+    "score": 0.465,
+    "mapped_label": "Communicate effectively",
+    "note": "fallback"
+  },
+  "Empathize with victims || Cultivating empathy for victims and their experiences during media coverage.": {
+    "skill_id": "SKL-C71CE25D81",
+    "score": 0.526,
+    "mapped_label": "Empathize with victims",
+    "note": "fallback"
+  },
+  "Identify journalistic ethics || Recognizing ethical considerations in reporting on traumatic events and their impact on victims.": {
+    "skill_id": "SKL-D31A1DA428",
+    "score": 0.471,
+    "mapped_label": "Identify journalistic ethics",
+    "note": "fallback"
+  },
+  "Respond to crisis situations || Learning how to respond appropriately to crisis situations, especially those involving trauma.": {
+    "skill_id": "SKL-F35FAB92D9",
+    "score": 0.435,
+    "mapped_label": "Respond to crisis situations",
+    "note": "fallback"
+  },
+  "Understand media psychology || Exploring the psychological aspects of media consumption and its impact on victims and journalists.": {
+    "skill_id": "SKL-990AD4A963",
+    "score": 0.396,
+    "mapped_label": "Understand media psychology",
+    "note": "fallback"
+  },
+  "Write for various audiences || Composing written work tailored to diverse audiences, including victims, journalists, and communications professionals.": {
+    "skill_id": "SKL-E41C739DC3",
+    "score": 0.455,
+    "mapped_label": "Write for various audiences",
+    "note": "fallback"
+  },
+  "Understand Victimization History || Demonstrate knowledge of the historical development and evolution of victimization.": {
+    "skill_id": "SKL-DBBFB07C78",
+    "score": 0.431,
+    "mapped_label": "Understand Victimization History",
+    "note": "fallback"
+  },
+  "Analyze Theories of Victimology || Critically evaluate various theories used to explain victimization.": {
+    "skill_id": "SKL-F557C05D65",
+    "score": 0.423,
+    "mapped_label": "Analyze Theories of Victimology",
+    "note": "fallback"
+  },
+  "Examine Criminal Justice System Interaction || Demonstrate understanding of how crime victims interact within the criminal justice system.": {
+    "skill_id": "SKL-E4548786F6",
+    "score": 0.457,
+    "mapped_label": "Examine Criminal Justice System Interaction",
+    "note": "fallback"
+  },
+  "Study Classical and Contemporary Works || Analyze key works in victimology, both classic and modern.": {
+    "skill_id": "SKL-F48A643BB5",
+    "score": 0.441,
+    "mapped_label": "Study Classical and Contemporary Works",
+    "note": "fallback"
+  },
+  "Evaluate Victim Services || Assess the effectiveness of various victim services programs.": {
+    "skill_id": "SKL-F15CCD2C31",
+    "score": 0.426,
+    "mapped_label": "Evaluate Victim Services",
+    "note": "fallback"
+  },
+  "Apply Critical Thinking to Victimization || Demonstrate the ability to critically analyze issues related to victimization.": {
+    "skill_id": "SKL-3345677888",
+    "score": 0.714,
+    "mapped_label": "Critical Thinking & Evaluation"
+  },
+  "Understand Interaction of Crime with Society || Gain an understanding of how crime affects individuals and society as a whole.": {
+    "skill_id": "SKL-E0B9873955",
+    "score": 0.423,
+    "mapped_label": "Understand Interaction of Crime with Society",
+    "note": "fallback"
+  },
+  "Develop Awareness of Victim Services Needs || Recognize the needs and challenges faced by victims in the criminal justice system.": {
+    "skill_id": "SKL-633FBA3A80",
+    "score": 0.396,
+    "mapped_label": "Develop Awareness of Victim Services Needs",
+    "note": "fallback"
+  },
+  "Analyze Market Structures || Understand and differentiate various forms of industrial organization": {
+    "skill_id": "SKL-5E6F7A8B05",
+    "score": 0.591,
+    "mapped_label": "Narrative Structure"
+  },
+  "Evaluate Market Performance || Assess market performance based on structure and conduct": {
+    "skill_id": "SKL-0112344555",
+    "score": 0.604,
+    "mapped_label": "Presentation & Performance"
+  },
+  "Examine Social Welfare Implications || Identify and analyze the implications of industrial organization on social welfare": {
+    "skill_id": "SKL-31542CFE0F",
+    "score": 0.417,
+    "mapped_label": "Examine Social Welfare Implications",
+    "note": "fallback"
+  },
+  "Investigate Market Conduct || Analyze market conduct within various structures": {
+    "skill_id": "SKL-02409F7E67",
+    "score": 0.462,
+    "mapped_label": "Investigate Market Conduct",
+    "note": "fallback"
+  },
+  "Apply Regulatory Policies || Understand and apply regulatory policies as alternatives to market competition": {
+    "skill_id": "SKL-0502690D1B",
+    "score": 0.51,
+    "mapped_label": "Apply Regulatory Policies",
+    "note": "fallback"
+  },
+  "Understand Antitrust Policies || Comprehend antitrust policies and their application in market regulation": {
+    "skill_id": "SKL-9BBA5A0B29",
+    "score": 0.417,
+    "mapped_label": "Understand Antitrust Policies",
+    "note": "fallback"
+  },
+  "Analyze Legal Precedents || Examine the impact of legal cases on market structure and regulation": {
+    "skill_id": "SKL-B837588AD1",
+    "score": 0.419,
+    "mapped_label": "Analyze Legal Precedents",
+    "note": "fallback"
+  },
+  "Formulate Policy Alternatives || Propose policy alternatives based on analyzed market structures, performance, and conduct": {
+    "skill_id": "SKL-6B66BD76F9",
+    "score": 0.483,
+    "mapped_label": "Formulate Policy Alternatives",
+    "note": "fallback"
+  },
+  "Analyze Demand and Cost || Applying economic theory to solve business and public policy problems through demand and cost estimation and analysis.": {
+    "skill_id": "SKL-FF6C180647",
+    "score": 0.44,
+    "mapped_label": "Analyze Demand and Cost",
+    "note": "fallback"
+  },
+  "Forecast Economic Trends || Developing skills in economic forecasting for business decision making.": {
+    "skill_id": "SKL-26340DAAA5",
+    "score": 0.419,
+    "mapped_label": "Forecast Economic Trends",
+    "note": "fallback"
+  },
+  "Perform Cost/Benefit Analysis || Learning to evaluate the advantages and disadvantages of different alternatives based on costs and benefits.": {
+    "skill_id": "SKL-4FDA4B1286",
+    "score": 0.531,
+    "mapped_label": "Perform Cost/Benefit Analysis",
+    "note": "fallback"
+  },
+  "Investigate Competitive Behavior || Examining various forms of competitive behavior in markets.": {
+    "skill_id": "SKL-9460FCE70D",
+    "score": 0.423,
+    "mapped_label": "Investigate Competitive Behavior",
+    "note": "fallback"
+  },
+  "Analyze Noncompetitive Behavior || Investigating different forms of non-competitive behavior in industries and market structures.": {
+    "skill_id": "SKL-E2F75EE99C",
+    "score": 0.423,
+    "mapped_label": "Analyze Noncompetitive Behavior",
+    "note": "fallback"
+  },
+  "Apply Economic Theory || Utilizing economic theory to address real-world business and policy issues.": {
+    "skill_id": "SKL-3C4D5E6F03",
+    "score": 0.667,
+    "mapped_label": "Apply Literary Theory"
+  },
+  "Estimate Demand || Developing the ability to estimate demand in various market scenarios.": {
+    "skill_id": "SKL-40D0F9CA2D",
+    "score": 0.429,
+    "mapped_label": "Estimate Demand",
+    "note": "fallback"
+  },
+  "Analyze Market Structures || Understanding and analyzing different market structures and their effects on competition and pricing.": {
+    "skill_id": "SKL-5E6F7A8B05",
+    "score": 0.591,
+    "mapped_label": "Narrative Structure"
+  },
+  "Analyze Colonial Period || Identify key events and themes during the colonial period of American history.": {
+    "skill_id": "SKL-24B45EEFB2",
+    "score": 0.409,
+    "mapped_label": "Analyze Colonial Period",
+    "note": "fallback"
+  },
+  "Understand Early U.S. Development || Explore the development of the United States from its founding through the late 1800s.": {
+    "skill_id": "SKL-A51EAAC54A",
+    "score": 0.382,
+    "mapped_label": "Understand Early U.S. Development",
+    "note": "fallback"
+  },
+  "Evaluate Sources || Assess primary and secondary sources related to US history up to 1877.": {
+    "skill_id": "SKL-19D11F72D0",
+    "score": 0.514,
+    "mapped_label": "Evaluate Sources",
+    "note": "fallback"
+  },
+  "Identify Historical Trends || Recognize and analyze trends in US history during this time period.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.578,
+    "mapped_label": "Historical Analysis"
+  },
+  "Interpret Historical Context || Understand the historical context of events in American history up to 1877.": {
+    "skill_id": "SKL-6F874C71CC",
+    "score": 0.511,
+    "mapped_label": "Interpret Historical Context",
+    "note": "fallback"
+  },
+  "Critically Analyze Primary Sources || Develop skills for critical analysis of primary sources related to US history.": {
+    "skill_id": "SKL-E0C030C405",
+    "score": 0.491,
+    "mapped_label": "Critically Analyze Primary Sources",
+    "note": "fallback"
+  },
+  "Explore Historical Themes || Examine recurring themes and patterns in the history of the United States up to 1877.": {
+    "skill_id": "SKL-D4B972F166",
+    "score": 0.545,
+    "mapped_label": "Explore Historical Themes",
+    "note": "fallback"
+  },
+  "Synthesize Historical Knowledge || Demonstrate the ability to synthesize historical knowledge to form coherent arguments or explanations about US history up to 1877.": {
+    "skill_id": "SKL-6F9E0A301C",
+    "score": 0.52,
+    "mapped_label": "Synthesize Historical Knowledge",
+    "note": "fallback"
+  },
+  "Analyze Historical Events || Identify and interpret key historical events in the post-bellum period to the present.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.591,
+    "mapped_label": "Historical Analysis"
+  },
+  "Evaluate Historical Context || Assess the social, political, and economic context of U.S. history from 1877 to the present.": {
+    "skill_id": "SKL-992AA8F0E6",
+    "score": 0.522,
+    "mapped_label": "Evaluate Historical Context",
+    "note": "fallback"
+  },
+  "Compare Historical Periods || Identify similarities and differences in historical periods within the U.S.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.578,
+    "mapped_label": "Historical Analysis"
+  },
+  "Research Historical Information || Locate, evaluate, and synthesize primary and secondary sources to enhance understanding of U.S. history.": {
+    "skill_id": "SKL-8B9C0D1E08",
+    "score": 0.679,
+    "mapped_label": "Research Methods"
+  },
+  "Write Historical Analysis || Produce well-structured written analyses on specific topics in U.S. history from 1877 to the present.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.864,
+    "mapped_label": "Historical Analysis"
+  },
+  "Identify Causes and Consequences || Recognize causes and consequences of significant events and trends in U.S. history.": {
+    "skill_id": "SKL-F95662DFFA",
+    "score": 0.429,
+    "mapped_label": "Identify Causes and Consequences",
+    "note": "fallback"
+  },
+  "Understand Historical Perspectives || Develop an appreciation for the diverse perspectives that shape U.S. history.": {
+    "skill_id": "SKL-BE2E3F57A8",
+    "score": 0.528,
+    "mapped_label": "Understand Historical Perspectives",
+    "note": "fallback"
+  },
+  "Explore Social Movements || Evaluate the role of social movements in shaping American society and history.": {
+    "skill_id": "SKL-9028F820EC",
+    "score": 0.465,
+    "mapped_label": "Explore Social Movements",
+    "note": "fallback"
+  },
+  "Analyze Urban Politics || Understanding the role of local politics in urban sustainability": {
+    "skill_id": "SKL-C9D070FF5F",
+    "score": 0.5,
+    "mapped_label": "Analyze Urban Politics",
+    "note": "fallback"
+  },
+  "Apply Sustainable Development Theory || Utilizing theories in sustainable development within urban contexts": {
+    "skill_id": "SKL-CAE8B94C84",
+    "score": 0.526,
+    "mapped_label": "Apply Sustainable Development Theory",
+    "note": "fallback"
+  },
+  "Compare Global Urban Sustainability Practices || Analyzing similarities and differences between worldwide urban sustainability methods": {
+    "skill_id": "SKL-733011B355",
+    "score": 0.5,
+    "mapped_label": "Compare Global Urban Sustainability Practices",
+    "note": "fallback"
+  },
+  "Evaluate Oklahoma's Urban Sustainability Efforts || Assessing the pursuit of sustainable development in Oklahoma's urban areas": {
+    "skill_id": "SKL-029F00F7FF",
+    "score": 0.424,
+    "mapped_label": "Evaluate Oklahoma's Urban Sustainability Efforts",
+    "note": "fallback"
+  },
+  "Develop Theoretical Perspectives || Formulating theoretical perspectives on urban sustainability": {
+    "skill_id": "SKL-66DDE2A9F8",
+    "score": 0.431,
+    "mapped_label": "Develop Theoretical Perspectives",
+    "note": "fallback"
+  },
+  "Analyze Urban Relationships and Impact || Exploring the connection between urban development and sustainability": {
+    "skill_id": "SKL-2DA4BB760F",
+    "score": 0.406,
+    "mapped_label": "Analyze Urban Relationships and Impact",
+    "note": "fallback"
+  },
+  "Implement Sustainable Strategies || Applying sustainable strategies in urban planning and development": {
+    "skill_id": "SKL-0413A00B60",
+    "score": 0.449,
+    "mapped_label": "Implement Sustainable Strategies",
+    "note": "fallback"
+  },
+  "Communicate Sustainable Urban Development Concepts || Sharing knowledge about sustainable urban development with others": {
+    "skill_id": "SKL-F16F375E00",
+    "score": 0.391,
+    "mapped_label": "Communicate Sustainable Urban Development Concepts",
+    "note": "fallback"
+  },
+  "Understand Sustainable Development Theory || Recognize and explain the principles of sustainable development as applied in urban contexts.": {
+    "skill_id": "SKL-42ED959ADC",
+    "score": 0.376,
+    "mapped_label": "Understand Sustainable Development Theory",
+    "note": "fallback"
+  },
+  "Analyze Urban Political Processes || Evaluate the role and impact of local political processes on urban sustainability.": {
+    "skill_id": "SKL-9445927307",
+    "score": 0.408,
+    "mapped_label": "Analyze Urban Political Processes",
+    "note": "fallback"
+  },
+  "Apply Sustainable Development Principles || Use sustainability principles to address urban challenges and promote development.": {
+    "skill_id": "SKL-274295BF95",
+    "score": 0.455,
+    "mapped_label": "Apply Sustainable Development Principles",
+    "note": "fallback"
+  },
+  "Compare Global Urban Sustainability Approaches || Assess different strategies for achieving sustainable development in various urban settings.": {
+    "skill_id": "SKL-4B65A81FEA",
+    "score": 0.417,
+    "mapped_label": "Compare Global Urban Sustainability Approaches",
+    "note": "fallback"
+  },
+  "Evaluate Oklahoma-specific Urban Sustainability || Analyze and critique the pursuit of sustainability in Oklahoma cities.": {
+    "skill_id": "SKL-FD651C492F",
+    "score": 0.429,
+    "mapped_label": "Evaluate Oklahoma-specific Urban Sustainability",
+    "note": "fallback"
+  },
+  "Develop Sustainable Urban Policies || Design effective policies to promote sustainable urban development.": {
+    "skill_id": "SKL-BF3BA2BDAF",
+    "score": 0.4,
+    "mapped_label": "Develop Sustainable Urban Policies",
+    "note": "fallback"
+  },
+  "Explain Theoretical Underpinnings of Sustainability || Articulate the theories that guide sustainability in an urban context.": {
+    "skill_id": "SKL-6414162490",
+    "score": 0.41,
+    "mapped_label": "Explain Theoretical Underpinnings of Sustainability",
+    "note": "fallback"
+  },
+  "Assess Urban Sustainability Impact || Analyze and evaluate the outcomes of urban sustainability efforts.": {
+    "skill_id": "SKL-D14B0BB4B8",
+    "score": 0.429,
+    "mapped_label": "Assess Urban Sustainability Impact",
+    "note": "fallback"
+  },
+  "Understand Land Use Laws || Demonstrate the ability to comprehend American land use planning laws.": {
+    "skill_id": "SKL-401FF1C6B5",
+    "score": 0.39,
+    "mapped_label": "Understand Land Use Laws",
+    "note": "fallback"
+  },
+  "Analyze Nuisance Laws || Develop skills in analyzing nuisance laws related to urban planning.": {
+    "skill_id": "SKL-4E075FB271",
+    "score": 0.426,
+    "mapped_label": "Analyze Nuisance Laws",
+    "note": "fallback"
+  },
+  "Interpret Restrictive Covenants || Learn to interpret and understand restrictive covenants.": {
+    "skill_id": "SKL-2A3B352445",
+    "score": 0.512,
+    "mapped_label": "Interpret Restrictive Covenants",
+    "note": "fallback"
+  },
+  "Evaluate Planning Policies || Gain skills in evaluating planning policies and controls.": {
+    "skill_id": "SKL-E62BA74CF5",
+    "score": 0.444,
+    "mapped_label": "Evaluate Planning Policies",
+    "note": "fallback"
+  },
+  "Identify Zoning Regulations || Develop competency in identifying zoning regulations.": {
+    "skill_id": "SKL-6D7E8F9011",
+    "score": 0.567,
+    "mapped_label": "Evidence Handling & Investigation"
+  },
+  "Apply Subdivision Controls || Learn to apply subdivision controls in urban planning.": {
+    "skill_id": "SKL-CCDAEC5492",
+    "score": 0.481,
+    "mapped_label": "Apply Subdivision Controls",
+    "note": "fallback"
+  },
+  "Recognize Innovations in Land Use || Demonstrate the ability to recognize recent innovations in land use control.": {
+    "skill_id": "SKL-F265CBC9FD",
+    "score": 0.462,
+    "mapped_label": "Recognize Innovations in Land Use",
+    "note": "fallback"
+  },
+  "Apply Legal Knowledge to Planning || Learn to apply legal knowledge to urban planning scenarios.": {
+    "skill_id": "SKL-89EE77F4EB",
+    "score": 0.492,
+    "mapped_label": "Apply Legal Knowledge to Planning",
+    "note": "fallback"
+  },
+  "Understand Urban Context || Analyze the historical context of urban areas, political institutions, and social environments.": {
+    "skill_id": "SKL-575E56E06B",
+    "score": 0.408,
+    "mapped_label": "Understand Urban Context",
+    "note": "fallback"
+  },
+  "Evaluate Contemporary Institutions || Assess contemporary political, social, and economical urban institutions.": {
+    "skill_id": "SKL-2EBFD3762F",
+    "score": 0.491,
+    "mapped_label": "Evaluate Contemporary Institutions",
+    "note": "fallback"
+  },
+  "Historical Analysis || Perform historical analysis of urban policy and administration.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 1.0,
+    "mapped_label": "Historical Analysis"
+  },
+  "Compare Historical Trends || Compare and contrast historical trends in urban areas.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.591,
+    "mapped_label": "Historical Analysis"
+  },
+  "Contextualize Urban Issues || Contextualize contemporary urban issues within their historical context.": {
+    "skill_id": "SKL-A2A9921570",
+    "score": 0.527,
+    "mapped_label": "Contextualize Urban Issues",
+    "note": "fallback"
+  },
+  "Research Historical Urban Data || Conduct research on historical urban data to inform analysis and understanding.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.571,
+    "mapped_label": "Historical Analysis"
+  },
+  "Apply Historical Lessons || Apply historical lessons to contemporary urban issues and policies.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.651,
+    "mapped_label": "Historical Analysis"
+  },
+  "Critically Evaluate Policies || Evaluate the effectiveness of past and present urban policies.": {
+    "skill_id": "SKL-3345677888",
+    "score": 0.586,
+    "mapped_label": "Critical Thinking & Evaluation"
+  },
+  "Compare Municipal Governments || Analyze the administrative and political structures of U.S. municipal governments, with a focus on Oklahoma governments.": {
+    "skill_id": "SKL-A60478E55E",
+    "score": 0.49,
+    "mapped_label": "Compare Municipal Governments",
+    "note": "fallback"
+  },
+  "Examine Political Environments || Investigate the political environment of municipal governments in the United States, particularly focusing on those in Oklahoma.": {
+    "skill_id": "SKL-E192878902",
+    "score": 0.449,
+    "mapped_label": "Examine Political Environments",
+    "note": "fallback"
+  },
+  "Evaluate Municipal Administration || Assess the administrative aspects of U.S. municipal governments, with an emphasis on those in Oklahoma.": {
+    "skill_id": "SKL-22EE9D2B9F",
+    "score": 0.485,
+    "mapped_label": "Evaluate Municipal Administration",
+    "note": "fallback"
+  },
+  "Apply Policy Analysis || Apply analytical skills to evaluate policies within urban government contexts, specifically as they pertain to Oklahoma governments.": {
+    "skill_id": "SKL-C2DEF12331",
+    "score": 0.723,
+    "mapped_label": "Apply Qualitative Analysis"
+  },
+  "Compare and Contrast Policies || Analyze the similarities and differences between various urban government policies, with a focus on those applicable to Oklahoma governments.": {
+    "skill_id": "SKL-A1B2C3D4B1",
+    "score": 0.571,
+    "mapped_label": "Comparative Analysis"
+  },
+  "Discuss Policy Implications || Explore the implications of urban government policies for municipal administrations in the U.S., with an emphasis on Oklahoma governments.": {
+    "skill_id": "SKL-4BCD159928",
+    "score": 0.519,
+    "mapped_label": "Discuss Policy Implications",
+    "note": "fallback"
+  },
+  "Identify Government Structures || Recognize and identify various government structures within the urban context, particularly those prevalent in Oklahoma municipalities.": {
+    "skill_id": "SKL-5E6F7A8B05",
+    "score": 0.612,
+    "mapped_label": "Narrative Structure"
+  },
+  "Apply Policy Recommendations || Formulate policy recommendations for improving urban governance, taking into account the administrative and political environment of U.S. municipal governments, with a focus on Oklahoma governments.": {
+    "skill_id": "SKL-97AE4A5C8F",
+    "score": 0.509,
+    "mapped_label": "Apply Policy Recommendations",
+    "note": "fallback"
+  },
+  "Apply Advanced GIS || Utilize advanced Geographic Information System techniques": {
+    "skill_id": "SKL-5B1C8A4A37",
+    "score": 0.545,
+    "mapped_label": "Apply Advanced GIS",
+    "note": "fallback"
+  },
+  "Analyze Urban Issues || Examine urban and socio-economic problems related to urban planning, ecology, and demographics": {
+    "skill_id": "SKL-46C113B33D",
+    "score": 0.391,
+    "mapped_label": "Analyze Urban Issues",
+    "note": "fallback"
+  },
+  "Implement Urban Planning || Use GIS in urban and regional planning": {
+    "skill_id": "SKL-D7E0D7DE06",
+    "score": 0.431,
+    "mapped_label": "Implement Urban Planning",
+    "note": "fallback"
+  },
+  "Understand Urban Ecology || Gain knowledge about urban ecology": {
+    "skill_id": "SKL-F43483EE5A",
+    "score": 0.39,
+    "mapped_label": "Understand Urban Ecology",
+    "note": "fallback"
+  },
+  "Conduct Demographic Analysis || Perform demographic studies using GIS": {
+    "skill_id": "SKL-A1B2C3D4B1",
+    "score": 0.625,
+    "mapped_label": "Comparative Analysis"
+  },
+  "Operate Geospatial Technology || Manage and utilize geospatial technology": {
+    "skill_id": "SKL-18293A4B2C",
+    "score": 0.556,
+    "mapped_label": "GIS & Geospatial Analysis"
+  },
+  "Collaborate with Junior Standing Students || Work effectively in groups with students at junior standing or above": {
+    "skill_id": "SKL-3DE9339A97",
+    "score": 0.439,
+    "mapped_label": "Collaborate with Junior Standing Students",
+    "note": "fallback"
+  },
+  "Apply Urban GIS Techniques || Students will learn to utilize advanced techniques in urban Geographic Information System.": {
+    "skill_id": "SKL-5C6D7E8F60",
+    "score": 0.582,
+    "mapped_label": "Laboratory & Field Techniques"
+  },
+  "Analyze Urban Planning Issues || Students will develop skills to analyze urban and regional planning problems.": {
+    "skill_id": "SKL-1F5F61AEF9",
+    "score": 0.413,
+    "mapped_label": "Analyze Urban Planning Issues",
+    "note": "fallback"
+  },
+  "Conduct Urban Ecology Research || Students will learn how to carry out research related to urban ecology.": {
+    "skill_id": "SKL-80079730D4",
+    "score": 0.388,
+    "mapped_label": "Conduct Urban Ecology Research",
+    "note": "fallback"
+  },
+  "Perform Demographic Analysis || Students will gain competency in demographic analysis through the course.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.553,
+    "mapped_label": "Historical Analysis"
+  },
+  "Operate GIS Software || Students will become proficient in using Geographic Information System software.": {
+    "skill_id": "SKL-A61CAAA0E5",
+    "score": 0.462,
+    "mapped_label": "Operate GIS Software",
+    "note": "fallback"
+  },
+  "Interpret Urban Data || Students will learn to interpret urban data for various purposes.": {
+    "skill_id": "SKL-8946C1BFFD",
+    "score": 0.486,
+    "mapped_label": "Interpret Urban Data",
+    "note": "fallback"
+  },
+  "Create GIS Maps || Students will acquire the ability to create maps using Geographic Information System.": {
+    "skill_id": "SKL-C070257738",
+    "score": 0.516,
+    "mapped_label": "Create GIS Maps",
+    "note": "fallback"
+  },
+  "Evaluate Urban Impact || Students will learn how to evaluate urban and socio-economic impacts using GIS.": {
+    "skill_id": "SKL-8F73241286",
+    "score": 0.449,
+    "mapped_label": "Evaluate Urban Impact",
+    "note": "fallback"
+  },
+  "Understand Hazard Principles || Recognize the fundamental concepts of hazards and risks.": {
+    "skill_id": "SKL-2397B4F1A4",
+    "score": 0.368,
+    "mapped_label": "Understand Hazard Principles",
+    "note": "fallback"
+  },
+  "Design Training Programs || Develop strategies for effective hazard training program designs.": {
+    "skill_id": "SKL-1123455666",
+    "score": 0.56,
+    "mapped_label": "Teaching & Training Design"
+  },
+  "Deliver Hazard Training || Implement delivery methods for successful hazard communication programs.": {
+    "skill_id": "SKL-7E8F901122",
+    "score": 0.554,
+    "mapped_label": "Risk & Safety Practices"
+  },
+  "Assess Hazard Communication Programs || Evaluate the elements of an acceptable hazard communication program.": {
+    "skill_id": "SKL-5567899A0A",
+    "score": 0.638,
+    "mapped_label": "Professional Communication (Oral)"
+  },
+  "Identify Hazards || Recognize potential hazards and risks in various contexts.": {
+    "skill_id": "SKL-7542949062",
+    "score": 0.484,
+    "mapped_label": "Identify Hazards",
+    "note": "fallback"
+  },
+  "Comprehend Risk Communication || Understand the principles of risk and hazard communication.": {
+    "skill_id": "SKL-5567899A0A",
+    "score": 0.581,
+    "mapped_label": "Professional Communication (Oral)"
+  },
+  "Apply Hazard Knowledge || Implement learned knowledge about hazards in practical situations.": {
+    "skill_id": "SKL-75CD114999",
+    "score": 0.465,
+    "mapped_label": "Apply Hazard Knowledge",
+    "note": "fallback"
+  },
+  "Improve Communication Skills || Enhance communication abilities to effectively convey hazard information.": {
+    "skill_id": "SKL-5567899A0A",
+    "score": 0.656,
+    "mapped_label": "Professional Communication (Oral)"
+  },
+  "Identify Hazards || Recognize and categorize potential hazards in a work environment": {
+    "skill_id": "SKL-82FCCE0F3D",
+    "score": 0.424,
+    "mapped_label": "Identify Hazards",
+    "note": "fallback"
+  },
+  "Assess Risk || Evaluate the level of risk associated with identified hazards": {
+    "skill_id": "SKL-D1B802A6EC",
+    "score": 0.414,
+    "mapped_label": "Assess Risk",
+    "note": "fallback"
+  },
+  "Design Training || Plan and structure effective hazard training programs": {
+    "skill_id": "SKL-1123455666",
+    "score": 0.585,
+    "mapped_label": "Teaching & Training Design"
+  },
+  "Deliver Training || Present information about hazards in an engaging and understandable manner": {
+    "skill_id": "SKL-6F7A8B9C06",
+    "score": 0.562,
+    "mapped_label": "Creative Writing"
+  },
+  "Implement HCP || Establish and manage a comprehensive Hazard Communication Program": {
+    "skill_id": "SKL-F844DA0265",
+    "score": 0.463,
+    "mapped_label": "Implement HCP",
+    "note": "fallback"
+  },
+  "Analyze Program Elements || Critically evaluate the components of an acceptable hazard communication program": {
+    "skill_id": "SKL-8F90112333",
+    "score": 0.577,
+    "mapped_label": "Project & Program Management"
+  },
+  "Apply Regulations || Comply with relevant regulations for hazard communication programs": {
+    "skill_id": "SKL-C2DEF12331",
+    "score": 0.605,
+    "mapped_label": "Apply Qualitative Analysis"
+  },
+  "Evaluate Program Effectiveness || Assess the efficacy of a hazard communication program and make improvements as needed": {
+    "skill_id": "SKL-28B13F7306",
+    "score": 0.491,
+    "mapped_label": "Evaluate Program Effectiveness",
+    "note": "fallback"
+  },
+  "Vocal Development || Improve vocal technique and control": {
+    "skill_id": "SKL-7284D71BE7",
+    "score": 0.4,
+    "mapped_label": "Vocal Development",
+    "note": "fallback"
+  },
+  "Choral Rehearsal || Collaborate effectively in a choir setting": {
+    "skill_id": "SKL-E6BD0CB54E",
+    "score": 0.517,
+    "mapped_label": "Choral Rehearsal",
+    "note": "fallback"
+  },
+  "Music Reading || Understand and interpret choral music notation": {
+    "skill_id": "SKL-2B3C4D5E02",
+    "score": 0.69,
+    "mapped_label": "Critical Reading"
+  },
+  "Repertoire Mastery || Familiarize with a wide variety of choral literature": {
+    "skill_id": "SKL-268EC1F7AF",
+    "score": 0.455,
+    "mapped_label": "Repertoire Mastery",
+    "note": "fallback"
+  },
+  "Performance Skills || Develop stage presence and delivery techniques": {
+    "skill_id": "SKL-E7DE063AAB",
+    "score": 0.5,
+    "mapped_label": "Performance Skills",
+    "note": "fallback"
+  },
+  "Musical Creativity || Explore different genres of choral music": {
+    "skill_id": "SKL-32AB4A1B3E",
+    "score": 0.529,
+    "mapped_label": "Musical Creativity",
+    "note": "fallback"
+  },
+  "Cultural Awareness || Gain understanding of the historical and cultural context of various choral works": {
+    "skill_id": "SKL-37FA3F49BD",
+    "score": 0.514,
+    "mapped_label": "Cultural Awareness",
+    "note": "fallback"
+  },
+  "Artistic Expression || Express emotions through vocal performance": {
+    "skill_id": "SKL-2B3C4D5E02",
+    "score": 0.571,
+    "mapped_label": "Critical Reading"
+  },
+  "Vocal Development || Developing vocal talents through rehearsal and performance.": {
+    "skill_id": "SKL-4A48F22355",
+    "score": 0.404,
+    "mapped_label": "Vocal Development",
+    "note": "fallback"
+  },
+  "Mixed Choral Literature || Understanding and performing a wide variety of mixed choral music.": {
+    "skill_id": "SKL-B80F8C37BF",
+    "score": 0.5,
+    "mapped_label": "Mixed Choral Literature",
+    "note": "fallback"
+  },
+  "Rehearsal Techniques || Mastering the techniques required for effective choir rehearsals.": {
+    "skill_id": "SKL-5C6D7E8F60",
+    "score": 0.571,
+    "mapped_label": "Laboratory & Field Techniques"
+  },
+  "Performance Preparation || Preparing for successful choral performances.": {
+    "skill_id": "SKL-889ABC-CD3D",
+    "score": 0.55,
+    "mapped_label": "Source Evaluation"
+  },
+  "Music Interpretation || Interpreting and expressing various choral compositions.": {
+    "skill_id": "SKL-35FB736608",
+    "score": 0.486,
+    "mapped_label": "Music Interpretation",
+    "note": "fallback"
+  },
+  "Team Collaboration || Working effectively as part of a choir ensemble.": {
+    "skill_id": "SKL-9011233444",
+    "score": 0.619,
+    "mapped_label": "Collaboration & Teamwork"
+  },
+  "Musical Direction || Following the guidance of a choral director.": {
+    "skill_id": "SKL-8529DF8081",
+    "score": 0.485,
+    "mapped_label": "Musical Direction",
+    "note": "fallback"
+  },
+  "Artistic Expression || Expressing oneself artistically through choral music performance.": {
+    "skill_id": "SKL-2B3C4D5E02",
+    "score": 0.571,
+    "mapped_label": "Critical Reading"
+  },
+  "Analyze Political Changes || Understanding and evaluating shifts in political structures and policies.": {
+    "skill_id": "SKL-472D80ACFB",
+    "score": 0.488,
+    "mapped_label": "Analyze Political Changes",
+    "note": "fallback"
+  },
+  "Examine Social Transformations || Identifying and interpreting changes in social dynamics and trends.": {
+    "skill_id": "SKL-51ECC9FD26",
+    "score": 0.49,
+    "mapped_label": "Examine Social Transformations",
+    "note": "fallback"
+  },
+  "Evaluate Economic Developments || Analyzing the evolution of economic systems and their impacts.": {
+    "skill_id": "SKL-317EEDBBB6",
+    "score": 0.45,
+    "mapped_label": "Evaluate Economic Developments",
+    "note": "fallback"
+  },
+  "Understand Cultural Evolution || Recognizing and appreciating cultural shifts in American society.": {
+    "skill_id": "SKL-42A4255A76",
+    "score": 0.522,
+    "mapped_label": "Understand Cultural Evolution",
+    "note": "fallback"
+  },
+  "Compare Historical Contexts || Comparing the U.S.'s history with key events of the 20th and 21st centuries.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.565,
+    "mapped_label": "Historical Analysis"
+  },
+  "Critically Analyze Primary Sources || Evaluating the reliability and significance of historical documents.": {
+    "skill_id": "SKL-BBDB22547D",
+    "score": 0.491,
+    "mapped_label": "Critically Analyze Primary Sources",
+    "note": "fallback"
+  },
+  "Develop Historical Argumentation || Constructing well-reasoned, evidence-based arguments about the U.S. history.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.588,
+    "mapped_label": "Historical Analysis"
+  },
+  "Write Historical Analysis || Communicating historical analysis in a clear and effective manner.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.864,
+    "mapped_label": "Historical Analysis"
+  },
+  "Analyze Political Changes || Demonstrate the ability to dissect political evolution in the United States from WWII to present.": {
+    "skill_id": "SKL-4F51A88EEE",
+    "score": 0.488,
+    "mapped_label": "Analyze Political Changes",
+    "note": "fallback"
+  },
+  "Explore Social Transformations || Develop skills in understanding and interpreting social shifts in the U.S., post-1945.": {
+    "skill_id": "SKL-F208735791",
+    "score": 0.468,
+    "mapped_label": "Explore Social Transformations",
+    "note": "fallback"
+  },
+  "Evaluate Economic Developments || Learn to assess economic transformations that have occurred in the United States since WWII.": {
+    "skill_id": "SKL-1A9D84D5AE",
+    "score": 0.449,
+    "mapped_label": "Evaluate Economic Developments",
+    "note": "fallback"
+  },
+  "Interpret Cultural Evolutions || Acquire skills in understanding and interpreting cultural changes within the U.S. context post-1945.": {
+    "skill_id": "SKL-F50D78A9FE",
+    "score": 0.5,
+    "mapped_label": "Interpret Cultural Evolutions",
+    "note": "fallback"
+  },
+  "Develop Historical Perspective || Cultivate a comprehensive historical perspective on the United States, from WWII to present.": {
+    "skill_id": "SKL-CD8BF99146",
+    "score": 0.531,
+    "mapped_label": "Develop Historical Perspective",
+    "note": "fallback"
+  },
+  "Compare and Contrast Historical Periods || Learn to compare and contrast different periods in U.S. history since 1945.": {
+    "skill_id": "SKL-80D9CF2F36",
+    "score": 0.475,
+    "mapped_label": "Compare and Contrast Historical Periods",
+    "note": "fallback"
+  },
+  "Analyze Primary Sources || Gain the ability to critically analyze primary sources related to U.S. history since 1945.": {
+    "skill_id": "SKL-B0550E015C",
+    "score": 0.5,
+    "mapped_label": "Analyze Primary Sources",
+    "note": "fallback"
+  },
+  "Write Historical Analysis || Develop the skill to compose well-researched and reasoned historical analyses.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.864,
+    "mapped_label": "Historical Analysis"
+  },
+  "Assess Motor Development || Ability to evaluate motor skills and development in exceptional children": {
+    "skill_id": "SKL-6182521FC8",
+    "score": 0.412,
+    "mapped_label": "Assess Motor Development",
+    "note": "fallback"
+  },
+  "Design Adapted Programs || Competency to develop physical education and recreation programs for exceptional children": {
+    "skill_id": "SKL-E4FEA0528B",
+    "score": 0.449,
+    "mapped_label": "Design Adapted Programs",
+    "note": "fallback"
+  },
+  "Analyze Motor Characteristics || Skill to understand the unique motor characteristics of exceptional children": {
+    "skill_id": "SKL-E4AF1BD4C8",
+    "score": 0.545,
+    "mapped_label": "Analyze Motor Characteristics",
+    "note": "fallback"
+  },
+  "Field Experience || Ability to participate in field experiences related to physical education and recreation for exceptional children": {
+    "skill_id": "SKL-9C7E74FC4D",
+    "score": 0.419,
+    "mapped_label": "Field Experience",
+    "note": "fallback"
+  },
+  "Lab Experience || Competency to engage in laboratory experiences related to physical education and recreation for exceptional children": {
+    "skill_id": "SKL-B4AE8C5C36",
+    "score": 0.439,
+    "mapped_label": "Lab Experience",
+    "note": "fallback"
+  },
+  "Program Adaptation || Skill to adapt physical education and recreation programs based on the needs of exceptional children": {
+    "skill_id": "SKL-D4E5F607E4",
+    "score": 0.622,
+    "mapped_label": "Policy & Program Evaluation"
+  },
+  "Motor Development Assessment || Ability to assess motor development in exceptional children through various methods": {
+    "skill_id": "SKL-1EDBDCD77F",
+    "score": 0.393,
+    "mapped_label": "Motor Development Assessment",
+    "note": "fallback"
+  },
+  "Physical Education Program Planning || Competency to plan and implement physical education programs for exceptional children": {
+    "skill_id": "SKL-880CA60A03",
+    "score": 0.529,
+    "mapped_label": "Physical Education Program Planning",
+    "note": "fallback"
+  },
+  "Perform Jazz Styles || Demonstrate the ability to play a variety of jazz styles professionally.": {
+    "skill_id": "SKL-A5E1607379",
+    "score": 0.4,
+    "mapped_label": "Perform Jazz Styles",
+    "note": "fallback"
+  },
+  "Solo Performance Techniques || Develop techniques for successful solo performances in a jazz ensemble setting.": {
+    "skill_id": "SKL-5C6D7E8F60",
+    "score": 0.571,
+    "mapped_label": "Laboratory & Field Techniques"
+  },
+  "Ensemble Collaboration || Learn to collaborate effectively within a jazz ensemble.": {
+    "skill_id": "SKL-9011233444",
+    "score": 0.565,
+    "mapped_label": "Collaboration & Teamwork"
+  },
+  "Technical Guidance || Receive guidance on the technical aspects of playing in a jazz ensemble.": {
+    "skill_id": "SKL-DC9FA6342B",
+    "score": 0.432,
+    "mapped_label": "Technical Guidance",
+    "note": "fallback"
+  },
+  "Commercial Music Performance || Gain skills for performing commercial music on a professional level.": {
+    "skill_id": "SKL-030FD6EAAA",
+    "score": 0.519,
+    "mapped_label": "Commercial Music Performance",
+    "note": "fallback"
+  },
+  "Jazz Improvisation || Learn and apply jazz improvisation techniques.": {
+    "skill_id": "SKL-EDE1DCEE43",
+    "score": 0.471,
+    "mapped_label": "Jazz Improvisation",
+    "note": "fallback"
+  },
+  "Style Adaptability || Develop adaptability to a wide range of jazz styles.": {
+    "skill_id": "SKL-659DACBA88",
+    "score": 0.4,
+    "mapped_label": "Style Adaptability",
+    "note": "fallback"
+  },
+  "Professional Performance Skills || Acquire the skills needed for professional-level performance in jazz and commercial music.": {
+    "skill_id": "SKL-0112344555",
+    "score": 0.667,
+    "mapped_label": "Presentation & Performance"
+  },
+  "Advanced Jazz Performance || Developing proficiency in playing jazz and commercial music at an advanced level.": {
+    "skill_id": "SKL-0112344555",
+    "score": 0.588,
+    "mapped_label": "Presentation & Performance"
+  },
+  "Ensemble Leadership || Learning to lead a group in ensemble performance.": {
+    "skill_id": "SKL-1072AC271F",
+    "score": 0.417,
+    "mapped_label": "Ensemble Leadership",
+    "note": "fallback"
+  },
+  "Solo Performance Improvement || Advancing solo performance skills within the context of jazz and commercial music.": {
+    "skill_id": "SKL-43A4900933",
+    "score": 0.519,
+    "mapped_label": "Solo Performance Improvement",
+    "note": "fallback"
+  },
+  "Style Diversification || Gaining proficiency in a wide range of styles suitable for professional jazz and commercial music performance.": {
+    "skill_id": "SKL-EBCA40DF86",
+    "score": 0.486,
+    "mapped_label": "Style Diversification",
+    "note": "fallback"
+  },
+  "Technical Guidance || Receiving expert guidance on technical aspects of jazz and ensemble performance.": {
+    "skill_id": "SKL-FA71120193",
+    "score": 0.432,
+    "mapped_label": "Technical Guidance",
+    "note": "fallback"
+  },
+  "Performance Analysis || Developing the ability to analyze and improve upon individual and group performances.": {
+    "skill_id": "SKL-0D1E2F3A0A",
+    "score": 0.703,
+    "mapped_label": "Audience Analysis"
+  },
+  "Critical Listening || Learning to critically listen to and evaluate jazz and commercial music performances.": {
+    "skill_id": "SKL-2B3C4D5E02",
+    "score": 0.765,
+    "mapped_label": "Critical Reading"
+  },
+  "Artistic Expression || Furthering the ability to express oneself artistically within the context of jazz and commercial music.": {
+    "skill_id": "SKL-2B3C4D5E02",
+    "score": 0.571,
+    "mapped_label": "Critical Reading"
+  },
+  "Study Documentary History || Analyze and understand the history of documentaries in broadcasting": {
+    "skill_id": "SKL-E34204429F",
+    "score": 0.478,
+    "mapped_label": "Study Documentary History",
+    "note": "fallback"
+  },
+  "Script Documentary Techniques || Develop skills in writing scripts for television documentaries": {
+    "skill_id": "SKL-5C6D7E8F60",
+    "score": 0.552,
+    "mapped_label": "Laboratory & Field Techniques"
+  },
+  "Design Production Elements || Learn production design principles for television documentaries": {
+    "skill_id": "SKL-293A4B5C3D",
+    "score": 0.619,
+    "mapped_label": "Video Production"
+  },
+  "Use Video Techniques || Gain proficiency in using video techniques specific to documentary production": {
+    "skill_id": "SKL-C62A8CA120",
+    "score": 0.531,
+    "mapped_label": "Use Video Techniques",
+    "note": "fallback"
+  },
+  "Apply Audio Techniques || Develop audio techniques suitable for television documentaries": {
+    "skill_id": "SKL-5C6D7E8F60",
+    "score": 0.588,
+    "mapped_label": "Laboratory & Field Techniques"
+  },
+  "Edit Documentary Content || Acquire editing skills to effectively combine video, audio, and other content in a documentary": {
+    "skill_id": "SKL-686E7FFD25",
+    "score": 0.465,
+    "mapped_label": "Edit Documentary Content",
+    "note": "fallback"
+  },
+  "Produce Television Documents || Learn the processes involved in producing full-length television documentaries": {
+    "skill_id": "SKL-99ABCDDE4E",
+    "score": 0.604,
+    "mapped_label": "Produce & Publish Content"
+  },
+  "Analyze Political Events || Understand and evaluate the political developments in Tudor-Stuart England": {
+    "skill_id": "SKL-FADCFD91AB",
+    "score": 0.45,
+    "mapped_label": "Analyze Political Events",
+    "note": "fallback"
+  },
+  "Explore Military History || Gain knowledge about significant military events during this period": {
+    "skill_id": "SKL-3C4D5E6F03",
+    "score": 0.622,
+    "mapped_label": "Apply Literary Theory"
+  },
+  "Interpret Cultural Shifts || Identify and analyze cultural changes that occurred in England from Henry VII to Queen Anne": {
+    "skill_id": "SKL-D326325057",
+    "score": 0.524,
+    "mapped_label": "Interpret Cultural Shifts",
+    "note": "fallback"
+  },
+  "Study Social Dynamics || Learn about the social structures and dynamics during Tudor-Stuart England": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.55,
+    "mapped_label": "Historical Analysis"
+  },
+  "Apply Historical Analysis || Develop skills to critically analyze historical events, trends, and their implications": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.864,
+    "mapped_label": "Historical Analysis"
+  },
+  "Write Historical Essays || Learn to write well-structured essays focusing on Tudor-Stuart England's history": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.667,
+    "mapped_label": "Historical Analysis"
+  },
+  "Understand Timeline Sequence || Gain ability to correctly place historical events within their chronological order": {
+    "skill_id": "SKL-CACB8C4841",
+    "score": 0.383,
+    "mapped_label": "Understand Timeline Sequence",
+    "note": "fallback"
+  },
+  "Identify Cultural Influences || Learn to recognize and discuss the cultural influences on political, military, and social aspects of Tudor-Stuart England": {
+    "skill_id": "SKL-62530819B4",
+    "score": 0.414,
+    "mapped_label": "Identify Cultural Influences",
+    "note": "fallback"
+  },
+  "Analyze Political Developments || Understand and evaluate significant political shifts in Tudor and Stuart England.": {
+    "skill_id": "SKL-7D2C97B652",
+    "score": 0.447,
+    "mapped_label": "Analyze Political Developments",
+    "note": "fallback"
+  },
+  "Explore Military History || Gain knowledge about military conflicts and their impact during the Tudor-Stuart period.": {
+    "skill_id": "SKL-3C4D5E6F03",
+    "score": 0.622,
+    "mapped_label": "Apply Literary Theory"
+  },
+  "Understand Cultural Transformations || Appreciate changes in culture, arts, and literature throughout Tudor-Stuart England.": {
+    "skill_id": "SKL-D1F177BE8F",
+    "score": 0.464,
+    "mapped_label": "Understand Cultural Transformations",
+    "note": "fallback"
+  },
+  "Examine Social Structures || Learn about the social hierarchies, classes, and their evolution during this era.": {
+    "skill_id": "SKL-B3DE97301B",
+    "score": 0.5,
+    "mapped_label": "Examine Social Structures",
+    "note": "fallback"
+  },
+  "Interpret Historical Sources || Develop skills to critically analyze primary and secondary sources related to Tudor-Stuart England.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.553,
+    "mapped_label": "Historical Analysis"
+  },
+  "Evaluate Historical Perspectives || Assess various historical viewpoints on the Tudor-Stuart period, fostering a nuanced understanding.": {
+    "skill_id": "SKL-35A870FF3D",
+    "score": 0.549,
+    "mapped_label": "Evaluate Historical Perspectives",
+    "note": "fallback"
+  },
+  "Write Historical Analyses || Craft well-researched and coherent analyses based on the studied events in Tudor-Stuart England.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.818,
+    "mapped_label": "Historical Analysis"
+  },
+  "Develop Historical Contextualization || Learn to situate events, people, and ideas within their historical context within Tudor-Stuart England.": {
+    "skill_id": "SKL-1B4482C63B",
+    "score": 0.545,
+    "mapped_label": "Develop Historical Contextualization",
+    "note": "fallback"
+  },
+  "Investigate Research || Analyze and review relevant research in special education": {
+    "skill_id": "SKL-FA5375C1A4",
+    "score": 0.478,
+    "mapped_label": "Investigate Research",
+    "note": "fallback"
+  },
+  "Explore Societal Changes || Assess societal changes impacting people with disabilities": {
+    "skill_id": "SKL-3EA16B7F98",
+    "score": 0.453,
+    "mapped_label": "Explore Societal Changes",
+    "note": "fallback"
+  },
+  "Evaluate Medical Trends || Analyze medical trends in the special education field": {
+    "skill_id": "SKL-E6D2E4AADB",
+    "score": 0.462,
+    "mapped_label": "Evaluate Medical Trends",
+    "note": "fallback"
+  },
+  "Understand Litigation || Explore litigation within the context of special education": {
+    "skill_id": "SKL-6D7E8F9011",
+    "score": 0.556,
+    "mapped_label": "Evidence Handling & Investigation"
+  },
+  "Identify Legislation || Recognize and interpret legislation affecting special education": {
+    "skill_id": "SKL-DFC39E0F6D",
+    "score": 0.488,
+    "mapped_label": "Identify Legislation",
+    "note": "fallback"
+  },
+  "Analyze Controversial Issues || Assess and evaluate controversial issues in special education": {
+    "skill_id": "SKL-ED490BFE03",
+    "score": 0.408,
+    "mapped_label": "Analyze Controversial Issues",
+    "note": "fallback"
+  },
+  "Develop Curricular Strategies || Design curricular development strategies for special education": {
+    "skill_id": "SKL-2B0A51523D",
+    "score": 0.423,
+    "mapped_label": "Develop Curricular Strategies",
+    "note": "fallback"
+  },
+  "Apply Best Practices || Utilize best practices in the field of special education": {
+    "skill_id": "SKL-7E8F901122",
+    "score": 0.558,
+    "mapped_label": "Risk & Safety Practices"
+  },
+  "Understand Trauma Approaches || Study various counseling and therapeutic approaches for treating abuse and trauma.": {
+    "skill_id": "SKL-FC6B987103",
+    "score": 0.439,
+    "mapped_label": "Understand Trauma Approaches",
+    "note": "fallback"
+  },
+  "Apply Psychoanalytic Perspectives || Learn to use psychoanalytic theories in the field of alcohol and drug dependency.": {
+    "skill_id": "SKL-466645536A",
+    "score": 0.492,
+    "mapped_label": "Apply Psychoanalytic Perspectives",
+    "note": "fallback"
+  },
+  "Explore Behavioral Theories || Gain knowledge about behavioral theories applicable to substance abuse treatment.": {
+    "skill_id": "SKL-2F7E432787",
+    "score": 0.458,
+    "mapped_label": "Explore Behavioral Theories",
+    "note": "fallback"
+  },
+  "Employ Existential Techniques || Learn to employ existential techniques in trauma counseling for substance abuse cases.": {
+    "skill_id": "SKL-5C6D7E8F60",
+    "score": 0.586,
+    "mapped_label": "Laboratory & Field Techniques"
+  },
+  "Use Humanistic Approaches || Learn to use humanistic approaches in treating clients with a history of trauma.": {
+    "skill_id": "SKL-ED5FF25A53",
+    "score": 0.455,
+    "mapped_label": "Use Humanistic Approaches",
+    "note": "fallback"
+  },
+  "Master Cognitive Behavioral Methods || Develop skills in cognitive behavioral methods for addressing trauma and substance abuse.": {
+    "skill_id": "SKL-D703EF35CD",
+    "score": 0.471,
+    "mapped_label": "Master Cognitive Behavioral Methods",
+    "note": "fallback"
+  },
+  "Analyze Theorists' Relevance || Learn to evaluate the relevance of various theorists to the field of alcohol and drug dependency.": {
+    "skill_id": "SKL-AB984A9DE4",
+    "score": 0.408,
+    "mapped_label": "Analyze Theorists' Relevance",
+    "note": "fallback"
+  },
+  "Apply Therapeutic Processes || Gain practical skills in individual counseling processes for treating trauma-related issues.": {
+    "skill_id": "SKL-E07D37E143",
+    "score": 0.491,
+    "mapped_label": "Apply Therapeutic Processes",
+    "note": "fallback"
+  },
+  "Identify Workplace Trauma || Recognize and name traumatic events within the communications industry.": {
+    "skill_id": "SKL-FC7BF97042",
+    "score": 0.45,
+    "mapped_label": "Identify Workplace Trauma",
+    "note": "fallback"
+  },
+  "React to Workplace Trauma || Develop appropriate responses to workplace trauma situations.": {
+    "skill_id": "SKL-87D0A6BB2A",
+    "score": 0.464,
+    "mapped_label": "React to Workplace Trauma",
+    "note": "fallback"
+  },
+  "Ethically Address Trauma || Learn ethical considerations when dealing with traumatic events in the communications field.": {
+    "skill_id": "SKL-2234566777",
+    "score": 0.557,
+    "mapped_label": "Ethical Practice & Trauma Sensitivity"
+  },
+  "Anticipate Traumatic Events || Gain skills to foresee potential traumatic situations.": {
+    "skill_id": "SKL-0A2578D76F",
+    "score": 0.5,
+    "mapped_label": "Anticipate Traumatic Events",
+    "note": "fallback"
+  },
+  "Explore Proactive Approaches || Learn proactive strategies for managing workplace trauma.": {
+    "skill_id": "SKL-D734BE9AA0",
+    "score": 0.468,
+    "mapped_label": "Explore Proactive Approaches",
+    "note": "fallback"
+  },
+  "Analyze Trauma Impact || Assess the impact of trauma on professionals in communications.": {
+    "skill_id": "SKL-A24BAB732A",
+    "score": 0.45,
+    "mapped_label": "Analyze Trauma Impact",
+    "note": "fallback"
+  },
+  "Develop Leadership Skills || Enhance leadership abilities in traumatic situations.": {
+    "skill_id": "SKL-BB4B5762DC",
+    "score": 0.419,
+    "mapped_label": "Develop Leadership Skills",
+    "note": "fallback"
+  },
+  "Apply Ethical Guidelines || Understand and apply ethical guidelines when dealing with trauma in the communications field.": {
+    "skill_id": "SKL-0533AA9E86",
+    "score": 0.474,
+    "mapped_label": "Apply Ethical Guidelines",
+    "note": "fallback"
+  },
+  "Lexical Analysis || Recognize and translate token sequences in a programming language.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.743,
+    "mapped_label": "Historical Analysis"
+  },
+  "Syntax Analysis || Interpret the structure of programming language statements.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.706,
+    "mapped_label": "Historical Analysis"
+  },
+  "Semantic Analysis || Understand and interpret the meaning of programming constructs.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.722,
+    "mapped_label": "Historical Analysis"
+  },
+  "Finite Automata || Design machines with a fixed number of states for language recognition.": {
+    "skill_id": "SKL-B3A8FA6BF2",
+    "score": 0.375,
+    "mapped_label": "Finite Automata",
+    "note": "fallback"
+  },
+  "Regular Expressions || Manipulate patterns in programming languages and text processing.": {
+    "skill_id": "SKL-A0AB48A5B0",
+    "score": 0.5,
+    "mapped_label": "Regular Expressions",
+    "note": "fallback"
+  },
+  "LL and LR Grammars || Apply bottom-up and top-down parsing techniques for language analysis.": {
+    "skill_id": "SKL-0A9A5B6661",
+    "score": 0.402,
+    "mapped_label": "LL and LR Grammars",
+    "note": "fallback"
+  },
+  "Type Systems || Enforce type checking and maintain type safety in programming languages.": {
+    "skill_id": "SKL-91A80A2768",
+    "score": 0.414,
+    "mapped_label": "Type Systems",
+    "note": "fallback"
+  },
+  "Code Generation || Transform abstract syntax trees into executable code.": {
+    "skill_id": "SKL-889ABC-CD3D",
+    "score": 0.562,
+    "mapped_label": "Source Evaluation"
+  },
+  "Lexical Analysis || Understanding and processing the lexical structure of a programming language": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.743,
+    "mapped_label": "Historical Analysis"
+  },
+  "Syntax Analysis || Recognizing and validating the syntax of programming languages": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.706,
+    "mapped_label": "Historical Analysis"
+  },
+  "Semantic Analysis || Investigating the meaning and interpretation of programming language constructs": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.722,
+    "mapped_label": "Historical Analysis"
+  },
+  "Finite Automata Application || Using finite automata in programming language translation": {
+    "skill_id": "SKL-1C82D3A7E1",
+    "score": 0.433,
+    "mapped_label": "Finite Automata Application",
+    "note": "fallback"
+  },
+  "Regular Expressions Utilization || Employing regular expressions to describe and manipulate patterns in programming languages": {
+    "skill_id": "SKL-0F39C6494D",
+    "score": 0.5,
+    "mapped_label": "Regular Expressions Utilization",
+    "note": "fallback"
+  },
+  "LL & LR Grammar Implementation || Designing and implementing LL(1) and LR(1) parsing techniques for compilers": {
+    "skill_id": "SKL-D4E5F607E4",
+    "score": 0.561,
+    "mapped_label": "Policy & Program Evaluation"
+  },
+  "Type System Development || Creating type systems to support strong typing and type checking in programming languages": {
+    "skill_id": "SKL-4252D1CED5",
+    "score": 0.362,
+    "mapped_label": "Type System Development",
+    "note": "fallback"
+  },
+  "Code Generation & Optimization || Generating and optimizing code from high-level programming language constructs": {
+    "skill_id": "SKL-3DAA458654",
+    "score": 0.536,
+    "mapped_label": "Code Generation & Optimization",
+    "note": "fallback"
+  },
+  "Respond to Scene || Demonstrate the ability to respond effectively to traffic accident scenes": {
+    "skill_id": "SKL-16CCE440AE",
+    "score": 0.471,
+    "mapped_label": "Respond to Scene",
+    "note": "fallback"
+  },
+  "Scene Protection || Apply techniques for protecting and securing traffic accident investigation scenes": {
+    "skill_id": "SKL-293A4B5C3D",
+    "score": 0.625,
+    "mapped_label": "Video Production"
+  },
+  "Evidence Gathering || Collect and preserve evidence from traffic accidents according to protocol": {
+    "skill_id": "SKL-6D7E8F9011",
+    "score": 0.551,
+    "mapped_label": "Evidence Handling & Investigation"
+  },
+  "Evidence Preservation || Maintain the integrity of collected evidence during traffic accident investigations": {
+    "skill_id": "SKL-293A4B5C3D",
+    "score": 0.595,
+    "mapped_label": "Video Production"
+  },
+  "Accident Reconstruction || Analyze and reconstruct traffic accidents to determine cause and sequence of events": {
+    "skill_id": "SKL-293A4B5C3D",
+    "score": 0.615,
+    "mapped_label": "Video Production"
+  },
+  "Legal Examination || Understand and apply enforcement-related statutes related to vehicles and traffic in Oklahoma": {
+    "skill_id": "SKL-B800142B49",
+    "score": 0.471,
+    "mapped_label": "Legal Examination",
+    "note": "fallback"
+  },
+  "Practical Exercise || Participate in practical exercises to reinforce learning and develop necessary skill sets": {
+    "skill_id": "SKL-ECC78CB056",
+    "score": 0.529,
+    "mapped_label": "Practical Exercise",
+    "note": "fallback"
+  },
+  "Analyze Traditional Cultures || Understand and critically analyze the traditional cultures of Southeast Asia.": {
+    "skill_id": "SKL-C7A09CBF70",
+    "score": 0.468,
+    "mapped_label": "Analyze Traditional Cultures",
+    "note": "fallback"
+  },
+  "Evaluate Western Colonialisms || Assess the impact and implications of western colonialism on Southeast Asia.": {
+    "skill_id": "SKL-277074D798",
+    "score": 0.421,
+    "mapped_label": "Evaluate Western Colonialisms",
+    "note": "fallback"
+  },
+  "Examine Nationalist Movements || Investigate nationalist movements and their role in shaping modern Southeast Asian nations.": {
+    "skill_id": "SKL-73F5659622",
+    "score": 0.435,
+    "mapped_label": "Examine Nationalist Movements",
+    "note": "fallback"
+  },
+  "Develop Understanding of Governance || Gain an understanding of the development and workings of representative governments in Southeast Asia.": {
+    "skill_id": "SKL-7B276AF6F7",
+    "score": 0.441,
+    "mapped_label": "Develop Understanding of Governance",
+    "note": "fallback"
+  },
+  "Assess Contemporary Roles || Analyze and evaluate contemporary roles of Southeast Asian nations in international relations.": {
+    "skill_id": "SKL-17BB5FA185",
+    "score": 0.477,
+    "mapped_label": "Assess Contemporary Roles",
+    "note": "fallback"
+  },
+  "Research Historical Context || Develop skills in researching historical contexts relevant to modern Southeast Asia.": {
+    "skill_id": "SKL-FD54F7D5B3",
+    "score": 0.533,
+    "mapped_label": "Research Historical Context",
+    "note": "fallback"
+  },
+  "Critically Evaluate Sources || Learn to critically evaluate various sources of information related to the history of Southeast Asia.": {
+    "skill_id": "SKL-3345677888",
+    "score": 0.596,
+    "mapped_label": "Critical Thinking & Evaluation"
+  },
+  "Write Historically Informed Analysis || Develop ability to write historically informed analysis and arguments based on research and critical evaluation of sources.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.691,
+    "mapped_label": "Historical Analysis"
+  },
+  "Compare Cultures || Analyze the differences and similarities between traditional cultures in Southeast Asia": {
+    "skill_id": "SKL-A1B2C3D4B1",
+    "score": 0.556,
+    "mapped_label": "Comparative Analysis"
+  },
+  "Examine Impact of Colonialism || Assess the influence of Western colonialism on Southeast Asian societies": {
+    "skill_id": "SKL-C4248DB09A",
+    "score": 0.435,
+    "mapped_label": "Examine Impact of Colonialism",
+    "note": "fallback"
+  },
+  "Understand Nationalist Movements || Recognize and analyze nationalist movements in Southeast Asia": {
+    "skill_id": "SKL-992905ADDF",
+    "score": 0.481,
+    "mapped_label": "Understand Nationalist Movements",
+    "note": "fallback"
+  },
+  "Form Government Analysis || Explore the formation of nations and representative governments in Southeast Asia": {
+    "skill_id": "SKL-A1B2C3D4B1",
+    "score": 0.591,
+    "mapped_label": "Comparative Analysis"
+  },
+  "Assess Contemporary Roles || Evaluate the roles of Southeast Asian countries in international relations": {
+    "skill_id": "SKL-0AA69ECCD3",
+    "score": 0.443,
+    "mapped_label": "Assess Contemporary Roles",
+    "note": "fallback"
+  },
+  "Research Historical Context || Conduct research on historical contexts relevant to modern Southeast Asia": {
+    "skill_id": "SKL-F8DD9971E5",
+    "score": 0.533,
+    "mapped_label": "Research Historical Context",
+    "note": "fallback"
+  },
+  "Analyze Religious Impact || Examine the impact of religion on traditional cultures in Southeast Asia": {
+    "skill_id": "SKL-D63822BD3B",
+    "score": 0.4,
+    "mapped_label": "Analyze Religious Impact",
+    "note": "fallback"
+  },
+  "Analyze Consumer Behavior || Ability to dissect and understand the behavior of consumers": {
+    "skill_id": "SKL-692EAD0F8E",
+    "score": 0.435,
+    "mapped_label": "Analyze Consumer Behavior",
+    "note": "fallback"
+  },
+  "Analyze Firm Behavior || Capability to evaluate the behavior of firms": {
+    "skill_id": "SKL-3965257764",
+    "score": 0.4,
+    "mapped_label": "Analyze Firm Behavior",
+    "note": "fallback"
+  },
+  "Analyze Resource Owner Behavior || Skill to analyze the behavior of resource owners": {
+    "skill_id": "SKL-91844AEEF9",
+    "score": 0.458,
+    "mapped_label": "Analyze Resource Owner Behavior",
+    "note": "fallback"
+  },
+  "Analyze Public Entity Behavior || Ability to analyze the behavior of public entities": {
+    "skill_id": "SKL-A02DDC5C53",
+    "score": 0.471,
+    "mapped_label": "Analyze Public Entity Behavior",
+    "note": "fallback"
+  },
+  "Model Industrial Organization || Competency in developing theoretical models for industrial organization": {
+    "skill_id": "SKL-5133B97EFF",
+    "score": 0.484,
+    "mapped_label": "Model Industrial Organization",
+    "note": "fallback"
+  },
+  "Identify Market Failures || Skill to identify potential market failures": {
+    "skill_id": "SKL-EBC46D37E6",
+    "score": 0.419,
+    "mapped_label": "Identify Market Failures",
+    "note": "fallback"
+  },
+  "Analyze Government Interventions || Ability to analyze government interventions in markets": {
+    "skill_id": "SKL-5F1A093F65",
+    "score": 0.51,
+    "mapped_label": "Analyze Government Interventions",
+    "note": "fallback"
+  },
+  "Develop Efficiency Concepts || Skill to develop concepts related to market efficiency": {
+    "skill_id": "SKL-835D88B53A",
+    "score": 0.407,
+    "mapped_label": "Develop Efficiency Concepts",
+    "note": "fallback"
+  },
+  "Understand Number Systems || Recognize the structure and properties of various number systems": {
+    "skill_id": "SKL-7584C8554B",
+    "score": 0.494,
+    "mapped_label": "Understand Number Systems",
+    "note": "fallback"
+  },
+  "Operate on Different Number Sets || Apply operations to natural numbers, real numbers, and other mathematical structures": {
+    "skill_id": "SKL-C91B67B7C1",
+    "score": 0.431,
+    "mapped_label": "Operate on Different Number Sets",
+    "note": "fallback"
+  },
+  "Analyze Ordering Properties || Identify and analyze the ordering relationships between numbers and mathematical entities": {
+    "skill_id": "SKL-57051CFB60",
+    "score": 0.5,
+    "mapped_label": "Analyze Ordering Properties",
+    "note": "fallback"
+  },
+  "Define Functions || Formulate and manipulate functions as mathematical objects": {
+    "skill_id": "SKL-4D5E6F7A04",
+    "score": 0.571,
+    "mapped_label": "Genre & Conventions"
+  },
+  "Apply Number Theory || Use number theory to explore the properties of numbers, such as prime numbers": {
+    "skill_id": "SKL-3C4D5E6F03",
+    "score": 0.75,
+    "mapped_label": "Apply Literary Theory"
+  },
+  "Recognize Set Extensions || Identify and work with sets that include all real numbers": {
+    "skill_id": "SKL-3DFB5B2518",
+    "score": 0.512,
+    "mapped_label": "Recognize Set Extensions",
+    "note": "fallback"
+  },
+  "Teach Mathematics Fundamentals || Develop skills to teach essential mathematics concepts relevant for elementary, special, and early childhood education": {
+    "skill_id": "SKL-EBAEC67F53",
+    "score": 0.417,
+    "mapped_label": "Teach Mathematics Fundamentals",
+    "note": "fallback"
+  },
+  "Solve Real-Number Problems || Apply mathematical reasoning to solve problems using real numbers": {
+    "skill_id": "SKL-2BE8231CE2",
+    "score": 0.377,
+    "mapped_label": "Solve Real-Number Problems",
+    "note": "fallback"
+  },
+  "Understand Analytical Biochemistry || Demonstrate understanding of the principles and practices related to analytical biochemistry.": {
+    "skill_id": "SKL-CD72DCA641",
+    "score": 0.433,
+    "mapped_label": "Understand Analytical Biochemistry",
+    "note": "fallback"
+  },
+  "Apply Laboratory Mathematics || Develop skills in mathematical problem-solving for laboratory applications.": {
+    "skill_id": "SKL-0E425A0F99",
+    "score": 0.531,
+    "mapped_label": "Apply Laboratory Mathematics",
+    "note": "fallback"
+  },
+  "Operate Instrumentation || Gain proficiency in operating various analytical instrumentations.": {
+    "skill_id": "SKL-E2C5FAF0D1",
+    "score": 0.524,
+    "mapped_label": "Operate Instrumentation",
+    "note": "fallback"
+  },
+  "Perform Routine Procedures || Master routine laboratory procedures for clinical chemistry.": {
+    "skill_id": "SKL-C67D134452",
+    "score": 0.489,
+    "mapped_label": "Perform Routine Procedures",
+    "note": "fallback"
+  },
+  "Execute Special Procedures || Learn to execute special laboratory techniques in clinical chemistry.": {
+    "skill_id": "SKL-BF7042713F",
+    "score": 0.433,
+    "mapped_label": "Execute Special Procedures",
+    "note": "fallback"
+  },
+  "Assess Medical Significance || Develop abilities to interpret the medical implications of analytical results.": {
+    "skill_id": "SKL-27169D26C6",
+    "score": 0.444,
+    "mapped_label": "Assess Medical Significance",
+    "note": "fallback"
+  },
+  "Apply Laboratory Methodology || Learn and apply appropriate methodologies for laboratory work in clinical chemistry.": {
+    "skill_id": "SKL-5004DCD163",
+    "score": 0.531,
+    "mapped_label": "Apply Laboratory Methodology",
+    "note": "fallback"
+  },
+  "Explain Routine & Special Procedures || Acquire the ability to explain the procedures used in clinical chemistry labs.": {
+    "skill_id": "SKL-E8C628410B",
+    "score": 0.433,
+    "mapped_label": "Explain Routine & Special Procedures",
+    "note": "fallback"
+  },
+  "Understand Graph Structure || Recognize and analyze the structure of various types of graphs.": {
+    "skill_id": "SKL-5E6F7A8B05",
+    "score": 0.622,
+    "mapped_label": "Narrative Structure"
+  },
+  "Explore Tree Properties || Identify and study the characteristics of trees in a graph.": {
+    "skill_id": "SKL-4BDB8848C8",
+    "score": 0.44,
+    "mapped_label": "Explore Tree Properties",
+    "note": "fallback"
+  },
+  "Analyze Connectivity || Determine connectivity patterns within graphs.": {
+    "skill_id": "SKL-49512146EB",
+    "score": 0.462,
+    "mapped_label": "Analyze Connectivity",
+    "note": "fallback"
+  },
+  "Explore Planarity || Identify and analyze planar graphs.": {
+    "skill_id": "SKL-871363C0D2",
+    "score": 0.485,
+    "mapped_label": "Explore Planarity",
+    "note": "fallback"
+  },
+  "Comprehend Colorability || Understand the coloring of graphs and its implications.": {
+    "skill_id": "SKL-DF47074B5A",
+    "score": 0.424,
+    "mapped_label": "Comprehend Colorability",
+    "note": "fallback"
+  },
+  "Study Digraphs || Investigate directed graphs and their properties.": {
+    "skill_id": "SKL-408D60F6FE",
+    "score": 0.405,
+    "mapped_label": "Study Digraphs",
+    "note": "fallback"
+  },
+  "Manipulate Matrices || Work with matrices associated with a given graph.": {
+    "skill_id": "SKL-CD2ED516A9",
+    "score": 0.474,
+    "mapped_label": "Manipulate Matrices",
+    "note": "fallback"
+  },
+  "Explore Graph Automorphisms || Investigate the symmetry properties of graphs through automorphism groups.": {
+    "skill_id": "SKL-CB14BDFD36",
+    "score": 0.407,
+    "mapped_label": "Explore Graph Automorphisms",
+    "note": "fallback"
+  },
+  "Understand Medical Lab Principles || Demonstrate knowledge of the fundamental principles governing medical laboratories": {
+    "skill_id": "SKL-4D5FAB6003",
+    "score": 0.408,
+    "mapped_label": "Understand Medical Lab Principles",
+    "note": "fallback"
+  },
+  "Implement Basic Management || Apply basic management strategies in a medical laboratory setting": {
+    "skill_id": "SKL-8F90112333",
+    "score": 0.593,
+    "mapped_label": "Project & Program Management"
+  },
+  "Teach Special Education Methodology || Develop and employ specialized educational methods for medical technology students": {
+    "skill_id": "SKL-5B2E57EA42",
+    "score": 0.471,
+    "mapped_label": "Teach Special Education Methodology",
+    "note": "fallback"
+  },
+  "Execute Special Projects || Plan, organize, and carry out special projects within selected areas of medical technology": {
+    "skill_id": "SKL-A02E147492",
+    "score": 0.498,
+    "mapped_label": "Execute Special Projects",
+    "note": "fallback"
+  },
+  "Apply Appropriate Pre-Med Curriculum || Demonstrate the ability to leverage prior premedical technology curriculum in coursework": {
+    "skill_id": "SKL-5B80A01CE1",
+    "score": 0.469,
+    "mapped_label": "Apply Appropriate Pre-Med Curriculum",
+    "note": "fallback"
+  },
+  "Develop Special Projects in Selected Areas || Formulate and execute special projects focused on specific areas within medical technology": {
+    "skill_id": "SKL-BDD7F26328",
+    "score": 0.435,
+    "mapped_label": "Develop Special Projects in Selected Areas",
+    "note": "fallback"
+  },
+  "Interpret Samples || Analyze and interpret random samples from data sets.": {
+    "skill_id": "SKL-8083BCB1BE",
+    "score": 0.507,
+    "mapped_label": "Interpret Samples",
+    "note": "fallback"
+  },
+  "Create Frequency Distributions || Generate frequency distributions for sample data.": {
+    "skill_id": "SKL-03B1E0AB09",
+    "score": 0.522,
+    "mapped_label": "Create Frequency Distributions",
+    "note": "fallback"
+  },
+  "Understand Sampling Distribution || Learn about the distribution of sample means and proportions.": {
+    "skill_id": "SKL-6D7E8F9011",
+    "score": 0.554,
+    "mapped_label": "Evidence Handling & Investigation"
+  },
+  "Apply Sampling Plans || Implement acceptance plans for quality control.": {
+    "skill_id": "SKL-C2DEF12331",
+    "score": 0.565,
+    "mapped_label": "Apply Qualitative Analysis"
+  },
+  "Rectify Inspection Methods || Explore methods to improve and optimize inspection techniques.": {
+    "skill_id": "SKL-F6789D29F9",
+    "score": 0.524,
+    "mapped_label": "Rectify Inspection Methods",
+    "note": "fallback"
+  },
+  "Utilize Control Charts || Learn how to create and use control charts for process monitoring.": {
+    "skill_id": "SKL-3C0A1590FB",
+    "score": 0.441,
+    "mapped_label": "Utilize Control Charts",
+    "note": "fallback"
+  },
+  "Evaluate General Theory || Understand the underlying theory of control chart applications.": {
+    "skill_id": "SKL-3C4D5E6F03",
+    "score": 0.591,
+    "mapped_label": "Apply Literary Theory"
+  },
+  "Solve Differential Equations || Apply various methods to solve complex differential equations": {
+    "skill_id": "SKL-889ABC-CD3D",
+    "score": 0.578,
+    "mapped_label": "Source Evaluation"
+  },
+  "Understand Partial Derivatives || Manipulate and interpret partial derivatives in multiple variables": {
+    "skill_id": "SKL-C2416988EA",
+    "score": 0.45,
+    "mapped_label": "Understand Partial Derivatives",
+    "note": "fallback"
+  },
+  "Apply Separation of Variables || Use separation of variables to solve separable differential equations": {
+    "skill_id": "SKL-0236D619E9",
+    "score": 0.509,
+    "mapped_label": "Apply Separation of Variables",
+    "note": "fallback"
+  },
+  "Recognize Special Functions || Identify and apply special functions in solving differential equations": {
+    "skill_id": "SKL-49C9716A77",
+    "score": 0.545,
+    "mapped_label": "Recognize Special Functions",
+    "note": "fallback"
+  },
+  "Solve Elliptic Equations || Apply methods to solve elliptic partial differential equations": {
+    "skill_id": "SKL-889ABC-CD3D",
+    "score": 0.585,
+    "mapped_label": "Source Evaluation"
+  },
+  "Solve Hyperbolic Equations || Use appropriate techniques to solve hyperbolic partial differential equations": {
+    "skill_id": "SKL-889ABC-CD3D",
+    "score": 0.558,
+    "mapped_label": "Source Evaluation"
+  },
+  "Solve Parabolic Equations || Apply methods to solve parabolic partial differential equations": {
+    "skill_id": "SKL-889ABC-CD3D",
+    "score": 0.571,
+    "mapped_label": "Source Evaluation"
+  },
+  "Prove Existence & Uniqueness || Demonstrate the existence and uniqueness of solutions for given differential equations": {
+    "skill_id": "SKL-471F9F818E",
+    "score": 0.453,
+    "mapped_label": "Prove Existence & Uniqueness",
+    "note": "fallback"
+  },
+  "Fit Linear Data || Apply techniques to fit linear equations to data sets": {
+    "skill_id": "SKL-A5392F7876",
+    "score": 0.5,
+    "mapped_label": "Fit Linear Data",
+    "note": "fallback"
+  },
+  "Fit Polynomial Data || Learn methods for fitting polynomial functions to data": {
+    "skill_id": "SKL-CAB06F2159",
+    "score": 0.474,
+    "mapped_label": "Fit Polynomial Data",
+    "note": "fallback"
+  },
+  "Fit Orthogonal Polynomials || Understand and apply orthogonal polynomial fitting techniques": {
+    "skill_id": "SKL-8A75715EE9",
+    "score": 0.444,
+    "mapped_label": "Fit Orthogonal Polynomials",
+    "note": "fallback"
+  },
+  "Fit Exponential Growth Curves || Develop skills in fitting exponential growth curves to data": {
+    "skill_id": "SKL-9A61F1D557",
+    "score": 0.393,
+    "mapped_label": "Fit Exponential Growth Curves",
+    "note": "fallback"
+  },
+  "Analyze Piecewise Polygonal Fitting || Evaluate piecewise polygonal functions and their applications": {
+    "skill_id": "SKL-181CA7C51B",
+    "score": 0.454,
+    "mapped_label": "Analyze Piecewise Polygonal Fitting",
+    "note": "fallback"
+  },
+  "Apply Non-Parametric Tests || Demonstrate the ability to utilize non-parametric statistical tests with data that is not normally distributed.": {
+    "skill_id": "SKL-3D09E4259F",
+    "score": 0.468,
+    "mapped_label": "Apply Non-Parametric Tests",
+    "note": "fallback"
+  },
+  "Perform Hypothesis Testing || Master the art of hypothesis testing in scenarios where the underlying population does not follow a specific distribution.": {
+    "skill_id": "SKL-633FEACEC1",
+    "score": 0.462,
+    "mapped_label": "Perform Hypothesis Testing",
+    "note": "fallback"
+  },
+  "Analyze Binomial Data || Understand and apply the binomial test for analyzing data consisting of successes and failures.": {
+    "skill_id": "SKL-AB5C9D1AF2",
+    "score": 0.42,
+    "mapped_label": "Analyze Binomial Data",
+    "note": "fallback"
+  },
+  "Conduct Sign Test || Execute the sign test to compare matched pairs of data.": {
+    "skill_id": "SKL-4F53026069",
+    "score": 0.424,
+    "mapped_label": "Conduct Sign Test",
+    "note": "fallback"
+  },
+  "Administer Median Test || Utilize the median test for making inferences about population medians when sample sizes are small.": {
+    "skill_id": "SKL-7D25A743B8",
+    "score": 0.419,
+    "mapped_label": "Administer Median Test",
+    "note": "fallback"
+  },
+  "Perform Cochran Q Test || Apply the Cochran Q test for comparing multiple samples from a single population.": {
+    "skill_id": "SKL-849E30027F",
+    "score": 0.417,
+    "mapped_label": "Perform Cochran Q Test",
+    "note": "fallback"
+  },
+  "Evaluate Statistical Significance || Assess statistical significance in non-parametric hypothesis testing.": {
+    "skill_id": "SKL-A6B5728640",
+    "score": 0.441,
+    "mapped_label": "Evaluate Statistical Significance",
+    "note": "fallback"
+  },
+  "Interpret Non-Parametric Results || Draw meaningful conclusions based on results obtained from non-parametric statistical analyses.": {
+    "skill_id": "SKL-013A397B15",
+    "score": 0.375,
+    "mapped_label": "Interpret Non-Parametric Results",
+    "note": "fallback"
+  },
+  "Analyze Labor Market Theory || Understanding and applying the neoclassical theory of labor markets": {
+    "skill_id": "SKL-3C4D5E6F03",
+    "score": 0.625,
+    "mapped_label": "Apply Literary Theory"
+  },
+  "Investigate Hours of Work Determination || Exploring factors influencing the number of hours worked": {
+    "skill_id": "SKL-7ECA242AD7",
+    "score": 0.431,
+    "mapped_label": "Investigate Hours of Work Determination",
+    "note": "fallback"
+  },
+  "Evaluate Union Impact || Assessing the effect of unions on labor markets": {
+    "skill_id": "SKL-8AF381542A",
+    "score": 0.526,
+    "mapped_label": "Evaluate Union Impact",
+    "note": "fallback"
+  },
+  "Analyze Government Policy Impact || Understanding how government policies like affirmative action, minimum wages, and immigration affect labor markets": {
+    "skill_id": "SKL-82B739325A",
+    "score": 0.379,
+    "mapped_label": "Analyze Government Policy Impact",
+    "note": "fallback"
+  },
+  "Investigate Human Capital Investment || Examining the role of human capital investment in earnings determination": {
+    "skill_id": "SKL-9DFB7121D8",
+    "score": 0.438,
+    "mapped_label": "Investigate Human Capital Investment",
+    "note": "fallback"
+  },
+  "Analyze Labor Market Outcomes || Studying issues related to labor market outcomes such as discrimination and poverty": {
+    "skill_id": "SKL-61E05982D6",
+    "score": 0.4,
+    "mapped_label": "Analyze Labor Market Outcomes",
+    "note": "fallback"
+  },
+  "Apply Economic Analysis || Applying economic analysis to solve real-world problems in labor markets": {
+    "skill_id": "SKL-C2DEF12331",
+    "score": 0.653,
+    "mapped_label": "Apply Qualitative Analysis"
+  },
+  "Critically Evaluate Data || Analyzing and interpreting data related to labor market trends and policies": {
+    "skill_id": "SKL-2B3C4D5E02",
+    "score": 0.6,
+    "mapped_label": "Critical Reading"
+  },
+  "Discuss Current Issues || Analyze and discuss current issues in sales force management": {
+    "skill_id": "SKL-6D3D82F9CF",
+    "score": 0.39,
+    "mapped_label": "Discuss Current Issues",
+    "note": "fallback"
+  },
+  "Evaluate Trends || Assess trends in sales force management": {
+    "skill_id": "SKL-D14E72EC03",
+    "score": 0.5,
+    "mapped_label": "Evaluate Trends",
+    "note": "fallback"
+  },
+  "Interpret Academic Readings || Understand and interpret academic literature related to sales force management": {
+    "skill_id": "SKL-2B3C4D5E02",
+    "score": 0.558,
+    "mapped_label": "Critical Reading"
+  },
+  "Apply Industry Knowledge || Use industry knowledge to solve problems in sales force management": {
+    "skill_id": "SKL-3FF21DF2FB",
+    "score": 0.533,
+    "mapped_label": "Apply Industry Knowledge",
+    "note": "fallback"
+  },
+  "Collaborate on Discussions || Participate in group discussions about sales force management": {
+    "skill_id": "SKL-9011233444",
+    "score": 0.56,
+    "mapped_label": "Collaboration & Teamwork"
+  },
+  "Critically Evaluate Articles || Evaluate critically articles from industry and academic journals": {
+    "skill_id": "SKL-3345677888",
+    "score": 0.586,
+    "mapped_label": "Critical Thinking & Evaluation"
+  },
+  "Adapt to Contemporary Sales || Develop the ability to adapt sales strategies to contemporary issues": {
+    "skill_id": "SKL-C070892680",
+    "score": 0.458,
+    "mapped_label": "Adapt to Contemporary Sales",
+    "note": "fallback"
+  },
+  "Learn Current Best Practices || Gain understanding of best practices in current sales force management": {
+    "skill_id": "SKL-F1C50EA4A8",
+    "score": 0.471,
+    "mapped_label": "Learn Current Best Practices",
+    "note": "fallback"
+  },
+  "Multiple Regression Analysis || An ability to perform and interpret multiple linear regression analyses.": {
+    "skill_id": "SKL-1A2B3C4D01",
+    "score": 0.622,
+    "mapped_label": "Literary Analysis"
+  },
+  "Logistic Regression Analysis || A skill in executing and interpreting logistic regression models.": {
+    "skill_id": "SKL-1A2B3C4D01",
+    "score": 0.622,
+    "mapped_label": "Literary Analysis"
+  },
+  "Survival Analysis || An understanding of survival analysis techniques for event-time data.": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.778,
+    "mapped_label": "Historical Analysis"
+  },
+  "Proportional Hazard Models || A competency in applying and understanding proportional hazards models.": {
+    "skill_id": "SKL-CCD0207B50",
+    "score": 0.407,
+    "mapped_label": "Proportional Hazard Models",
+    "note": "fallback"
+  },
+  "Time Series Analysis || An ability to perform time series analysis using appropriate statistical methods.": {
+    "skill_id": "SKL-1A2B3C4D01",
+    "score": 0.649,
+    "mapped_label": "Literary Analysis"
+  },
+  "SAS Data Analysis || A proficiency in using SAS for data analysis and modeling.": {
+    "skill_id": "SKL-18293A4B2C",
+    "score": 0.667,
+    "mapped_label": "GIS & Geospatial Analysis"
+  },
+  "Statistical Inference || An ability to make statistical inferences based on the results of regression analyses.": {
+    "skill_id": "SKL-9DD6AD747E",
+    "score": 0.486,
+    "mapped_label": "Statistical Inference",
+    "note": "fallback"
+  },
+  "Analyze Multiple Regression || Ability to perform statistical analysis using multiple independent variables": {
+    "skill_id": "SKL-DED2969F3B",
+    "score": 0.542,
+    "mapped_label": "Analyze Multiple Regression",
+    "note": "fallback"
+  },
+  "Implement Logistic Regression || Skill in applying logistic regression for binary outcomes prediction": {
+    "skill_id": "SKL-F60718290A",
+    "score": 0.56,
+    "mapped_label": "Modeling & Regression"
+  },
+  "Understand Survival Analysis || Knowledge of statistical methods for analyzing the time to an event": {
+    "skill_id": "SKL-B2C3D4E5C2",
+    "score": 0.638,
+    "mapped_label": "Historical Analysis"
+  },
+  "Apply Proportional Hazard Models || Ability to use proportional hazards regression in survival analysis": {
+    "skill_id": "SKL-02375C7B24",
+    "score": 0.414,
+    "mapped_label": "Apply Proportional Hazard Models",
+    "note": "fallback"
+  },
+  "Analyze Time Series Data || Skill in analyzing and modeling time-dependent data series": {
+    "skill_id": "SKL-83FD42FA2D",
+    "score": 0.44,
+    "mapped_label": "Analyze Time Series Data",
+    "note": "fallback"
+  },
+  "Utilize SAS Software || Familiarity with the SAS statistical software package": {
+    "skill_id": "SKL-78972464B5",
+    "score": 0.41,
+    "mapped_label": "Utilize SAS Software",
+    "note": "fallback"
+  },
+  "Apply Experimental Statistics || Developing skills to perform statistical analysis in experimental contexts": {
+    "skill_id": "SKL-8DB7B446DB",
+    "score": 0.545,
+    "mapped_label": "Apply Experimental Statistics",
+    "note": "fallback"
+  },
+  "Estimate Parameters || Learning methods for estimating parameters in a statistical model": {
+    "skill_id": "SKL-5C138B0437",
+    "score": 0.514,
+    "mapped_label": "Estimate Parameters",
+    "note": "fallback"
+  },
+  "Test Significance || Acquiring skills to evaluate the significance of test results": {
+    "skill_id": "SKL-652C4A7CE7",
+    "score": 0.419,
+    "mapped_label": "Test Significance",
+    "note": "fallback"
+  },
+  "Understand Probability Concepts || Gaining knowledge about various probability theories and applications": {
+    "skill_id": "SKL-B596C2438B",
+    "score": 0.436,
+    "mapped_label": "Understand Probability Concepts",
+    "note": "fallback"
+  },
+  "Analyze Linear Regression || Learning to apply linear regression techniques for data analysis": {
+    "skill_id": "SKL-F60718290A",
+    "score": 0.652,
+    "mapped_label": "Modeling & Regression"
+  },
+  "Correlate Variables || Acquiring skills to identify relationships and correlations between variables": {
+    "skill_id": "SKL-8850140556",
+    "score": 0.514,
+    "mapped_label": "Correlate Variables",
+    "note": "fallback"
+  },
+  "Analyze Probability Distributions || Developing the ability to analyze probability distributions, such as normal distribution": {
+    "skill_id": "SKL-18BF019858",
+    "score": 0.449,
+    "mapped_label": "Analyze Probability Distributions",
+    "note": "fallback"
+  },
+  "Understand Experimental Error || Recognize and interpret various types of experimental errors": {
+    "skill_id": "SKL-54F826408A",
+    "score": 0.536,
+    "mapped_label": "Understand Experimental Error",
+    "note": "fallback"
+  },
+  "Analyze One-Way Classifications || Perform analysis of variance for one-way classifications": {
+    "skill_id": "SKL-3AFEAF6B6C",
+    "score": 0.44,
+    "mapped_label": "Analyze One-Way Classifications",
+    "note": "fallback"
+  },
+  "Analyze Two-Way Classifications || Conduct analysis of variance for two-way classifications": {
+    "skill_id": "SKL-8ACCC4D52C",
+    "score": 0.4,
+    "mapped_label": "Analyze Two-Way Classifications",
+    "note": "fallback"
+  },
+  "Analyze Three-Way Classifications || Execute analysis of variance for three-way classifications": {
+    "skill_id": "SKL-3AED55687C",
+    "score": 0.413,
+    "mapped_label": "Analyze Three-Way Classifications",
+    "note": "fallback"
+  },
+  "Use Nonparametric Statistics || Employ nonparametric statistical methods in experimental design": {
+    "skill_id": "SKL-9A1F908087",
+    "score": 0.481,
+    "mapped_label": "Use Nonparametric Statistics",
+    "note": "fallback"
+  },
+  "Apply ANOVA Techniques || Demonstrate proficiency in using Analysis of Variance techniques": {
+    "skill_id": "SKL-249B9B13ED",
+    "score": 0.549,
+    "mapped_label": "Apply ANOVA Techniques",
+    "note": "fallback"
+  },
+  "Analyze One-Way Classification || Understand and analyze experimental data using one-way classification": {
+    "skill_id": "SKL-5E9FF4F75F",
+    "score": 0.408,
+    "mapped_label": "Analyze One-Way Classification",
+    "note": "fallback"
+  },
+  "Two-Way Classification Analysis || Perform analysis of variance on two-way classification experiments": {
+    "skill_id": "SKL-C2DEF12331",
+    "score": 0.596,
+    "mapped_label": "Apply Qualitative Analysis"
+  },
+  "Three-Way Classification Analysis || Apply three-way classification analysis to experimental data": {
+    "skill_id": "SKL-C2DEF12331",
+    "score": 0.576,
+    "mapped_label": "Apply Qualitative Analysis"
+  },
+  "Nested and Incomplete Block Designs || Understand and work with nested and incomplete block designs": {
+    "skill_id": "SKL-EF781FEF57",
+    "score": 0.426,
+    "mapped_label": "Nested and Incomplete Block Designs",
+    "note": "fallback"
+  },
+  "Analysis of Covariance || Perform analysis of covariance on experimental data": {
+    "skill_id": "SKL-FA536656B4",
+    "score": 0.458,
+    "mapped_label": "Analysis of Covariance",
+    "note": "fallback"
+  },
+  "Experimental Error Analysis || Analyze and manage errors that may occur in experiments": {
+    "skill_id": "SKL-0718293A1B",
+    "score": 0.667,
+    "mapped_label": "Experimental Design & ANOVA"
+  },
+  "Basic Concepts of Experiments || Gain understanding of fundamental experimental concepts": {
+    "skill_id": "SKL-98C683FC4A",
+    "score": 0.4,
+    "mapped_label": "Basic Concepts of Experiments",
+    "note": "fallback"
+  }
+}

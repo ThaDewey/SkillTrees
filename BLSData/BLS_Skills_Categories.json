@@ -1,70 +1,87 @@
 [
     {
         "id": 1,
-        "category": "Adaptability"
+        "category": "Adaptability",
+        "description": "Adjusts behavior or work methods in response to new information or changing conditions; open to change and new information; maintains composure even with changing circumstances; actively learns and uses relevant knowledge to adapt to changes."
     },
     {
         "id": 2,
-        "category": "Computers and information technology"
+        "category": "Computers and information technology",
+        "description": "Uses computers and related technology to accomplish work activities, including tasks such as sending emails, using the internet to find information, using word processor or spreadsheet applications, programming computers, designing websites, and managing computer networks."
     },
     {
         "id": 3,
-        "category": "Creativity and innovation"
+        "category": "Creativity and innovation",
+        "description": "Uses imagination to develop new insights in situations and applies innovative solutions to problems; designs, creates, and implements cutting-edge processes, ideas, or products, including artistic contributions."
     },
     {
         "id": 4,
-        "category": "Critical and analytical thinking"
+        "category": "Critical and analytical thinking",
+        "description": "Applies logic and reasoning to analyze information, identify strengths and weaknesses of various approaches and solutions to problems, and draw conclusions."
     },
     {
         "id": 5,
-        "category": "Customer service"
+        "category": "Customer service",
+        "description": "Works with external customers (for example, clients, patients, and consumers); tasks involve providing information and assistance to customers, dealing with difficult people or situations, and convincing others to buy goods or services."
     },
     {
         "id": 6,
-        "category": "Detail oriented"
+        "category": "Detail oriented",
+        "description": "Pays close attention to all the small particulars when working on a task or project."
     },
     {
         "id": 7,
-        "category": "Fine motor"
+        "category": "Fine motor",
+        "description": "Coordinates the use of fingers, hands, and wrists to make precise movements."
     },
     {
         "id": 8,
-        "category": "Interpersonal"
+        "category": "Interpersonal",
+        "description": "Shows understanding, friendliness, courtesy, tact, empathy, concern, and politeness to others, leading to the development and support of effective relationships."
     },
     {
         "id": 9,
-        "category": "Leadership"
+        "category": "Leadership",
+        "description": "Influences and guides others to accomplish strategic plans by leading, mentoring, taking charge, building teams, and offering direction."
     },
     {
         "id": 10,
-        "category": "Mathematics"
+        "category": "Mathematics",
+        "description": "Uses principles of mathematics rules and methods to express ideas and solve problems; tasks involve comprehending and accurately interpreting mathematical information, applying mathematical reasoning, and formulating a solution."
     },
     {
         "id": 11,
-        "category": "Mechanical"
+        "category": "Mechanical",
+        "description": "Applies knowledge of machines, systems, and tools to complete tasks such as operating, monitoring, maintaining, troubleshooting, building, installing, and repairing mechanical or electrical devices and equipment."
     },
     {
         "id": 12,
-        "category": "Physical strength and stamina"
+        "category": "Physical strength and stamina",
+        "description": "Uses the body to complete work-related duties, such as standing for long periods of time to help customers, exerting muscular force to lift heavy objects, and coordinating the movement of multiple limbs to entertain a crowd through dance or athletics."
     },
     {
         "id": 13,
-        "category": "Problem solving and decision making"
+        "category": "Problem solving and decision making",
+        "description": "Identifies complex problems, determines accuracy and relevance of information, uses judgment to develop and evaluate options, and implements solutions."
     },
     {
         "id": 14,
-        "category": "Project management"
+        "category": "Project management",
+        "description": "Applies knowledge, methods, and processes to achieve the objectives of a project; tasks involve developing, scheduling, coordinating, and managing resources, including monitoring costs, work, and contractor performance."
     },
     {
         "id": 15,
-        "category": "Science"
+        "category": "Science",
+        "description": "Uses principles of scientific rules and methods to express ideas and solve problems; tasks involve comprehending and accurately interpreting scientific information and formulating solutions to scientific problems."
     },
     {
         "id": 16,
-        "category": "Speaking and listening"
+        "category": "Speaking and listening",
+        "description": "Communicates verbally to convey, exchange, and receive ideas and information."
     },
     {
         "id": 17,
-        "category": "Writing and reading"
+        "category": "Writing and reading",
+        "description": "Communicates in writing to convey, exchange, and receive ideas and information."
     }
 ]

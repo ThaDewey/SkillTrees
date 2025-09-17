@@ -1,0 +1,1332 @@
+[
+  {
+    "course_identification": "ENG5673",
+    "title_short_desc": "Young Adult Literature",
+    "inferred_skills": [
+      "SKL-306F739B93",
+      "SKL-6E5E3C5511",
+      "SKL-3C4D5E6F03",
+      "SKL-0129862F2F",
+      "SKL-5E6F7A8B05",
+      "SKL-4D5E6F7A04",
+      "SKL-0E42F6F257"
+    ]
+  },
+  {
+    "course_identification": "ENG4673",
+    "title_short_desc": "Young Adult Literature",
+    "inferred_skills": [
+      "SKL-49C79BC8ED",
+      "SKL-970A9E1E0E",
+      "SKL-D10EB005E5",
+      "SKL-9DDAD6CA84",
+      "SKL-5E6F7A8B05",
+      "SKL-4D5E6F7A04",
+      "SKL-2B3C4D5E02",
+      "SKL-3C4D5E6F03"
+    ]
+  },
+  {
+    "course_identification": "CSDY4283",
+    "title_short_desc": "Writing the Short Story",
+    "inferred_skills": [
+      "SKL-75997502E6",
+      "SKL-6F7A8B9C06",
+      "SKL-17669047CB",
+      "SKL-99ABCDDE4E",
+      "SKL-6BDD0F821F",
+      "SKL-4D5E6F7A04",
+      "SKL-5E6F7A8B05",
+      "SKL-0C189237BD"
+    ]
+  },
+  {
+    "course_identification": "CSDY4273",
+    "title_short_desc": "Writing The Novel",
+    "inferred_skills": [
+      "SKL-90F137FF3F",
+      "SKL-C461A5B515",
+      "SKL-4D5E6F7A04",
+      "SKL-16A531A63F",
+      "SKL-A0BCDDEF5F",
+      "SKL-8E5EA1C421",
+      "SKL-6F7A8B9C06",
+      "SKL-5E6F7A8B05"
+    ]
+  },
+  {
+    "course_identification": "CSDY4583",
+    "title_short_desc": "Writing SciFi/Fantasy",
+    "inferred_skills": [
+      "SKL-4E03EAE7FE",
+      "SKL-2DBD8219EA",
+      "SKL-D8C4CE6970",
+      "SKL-4D5E6F7A04",
+      "SKL-3C4D5E6F03",
+      "SKL-6F7A8B9C06",
+      "SKL-9D36EF8615"
+    ]
+  },
+  {
+    "course_identification": "CSDY5583",
+    "title_short_desc": "Writing SciFi/Fantasy",
+    "inferred_skills": [
+      "SKL-23372579F3",
+      "SKL-D6D9CFEF1B",
+      "SKL-59432C28A2",
+      "SKL-4D5E6F7A04",
+      "SKL-3C4D5E6F03"
+    ]
+  },
+  {
+    "course_identification": "CSDY5313",
+    "title_short_desc": "Writing Mystery/Adventure",
+    "inferred_skills": [
+      "SKL-4D5E6F7A04",
+      "SKL-B2C3D4E5C2",
+      "SKL-8B9C0D1E08",
+      "SKL-8D0D2221B0",
+      "SKL-099EEC6162",
+      "SKL-1A2B3C4D01",
+      "SKL-5E6F7A8B05"
+    ]
+  },
+  {
+    "course_identification": "CSDY5533",
+    "title_short_desc": "Writing For Television",
+    "inferred_skills": [
+      "SKL-09CCF20081",
+      "SKL-B2C3D4E5C2",
+      "SKL-6F7A8B9C06",
+      "SKL-7A8B9C0D07",
+      "SKL-5E6F7A8B05",
+      "SKL-17CCA894A0",
+      "SKL-40365EDE87"
+    ]
+  },
+  {
+    "course_identification": "ENG4643",
+    "title_short_desc": "Writing for Nonprofits",
+    "inferred_skills": [
+      "SKL-2AD3B089AE",
+      "SKL-6F7A8B9C06",
+      "SKL-9C0D1E2F09",
+      "SKL-EF0D5D46AC",
+      "SKL-5567899A0A",
+      "SKL-4D5E6F7A04",
+      "SKL-B1A41699D6",
+      "SKL-28686A580C"
+    ]
+  },
+  {
+    "course_identification": "ENG5393",
+    "title_short_desc": "Writing for Nonprofits",
+    "inferred_skills": [
+      "SKL-6F7A8B9C06",
+      "SKL-2AD0233746",
+      "SKL-293A4B5C3D",
+      "SKL-9C0D1E2F09",
+      "SKL-5567899A0A",
+      "SKL-4D5E6F7A04",
+      "SKL-0D1E2F3A0A"
+    ]
+  },
+  {
+    "course_identification": "CSDY3363",
+    "title_short_desc": "Writing for Movies/TV/Stage",
+    "inferred_skills": [
+      "SKL-B2C3D4E5C2",
+      "SKL-D6BD35C117",
+      "SKL-7BF6F315E1",
+      "SKL-304DDB76DE",
+      "SKL-7A8B9C0D07",
+      "SKL-267413E660",
+      "SKL-4D5E6F7A04",
+      "SKL-346ED6EB2D"
+    ]
+  },
+  {
+    "course_identification": "CJ1313",
+    "title_short_desc": "Writing for CJ Professionals",
+    "inferred_skills": [
+      "SKL-E3C7E3271D",
+      "SKL-C07CEA8B6A",
+      "SKL-6F7A8B9C06",
+      "SKL-5ED3D9E88B",
+      "SKL-27B9C5E0A2",
+      "SKL-050FE34472",
+      "SKL-5E6F7A8B05",
+      "SKL-4D5E6F7A04"
+    ]
+  },
+  {
+    "course_identification": "CSDY5413",
+    "title_short_desc": "Writing For Children",
+    "inferred_skills": [
+      "SKL-27B45FECD0",
+      "SKL-042A952E05",
+      "SKL-6DDD68FFA9",
+      "SKL-5E6F7A8B05",
+      "SKL-32A2BDC23E",
+      "SKL-4D5E6F7A04",
+      "SKL-6F7A8B9C06",
+      "SKL-839E3FA783"
+    ]
+  },
+  {
+    "course_identification": "CSDY4413",
+    "title_short_desc": "Writing For Children",
+    "inferred_skills": [
+      "SKL-69BF06D62D",
+      "SKL-36AB6B6212",
+      "SKL-E5B43AD103",
+      "SKL-98B1A92572",
+      "SKL-5E6F7A8B05",
+      "SKL-4D5E6F7A04",
+      "SKL-87626069E1",
+      "SKL-6F7A8B9C06"
+    ]
+  },
+  {
+    "course_identification": "CSDY4723",
+    "title_short_desc": "Writing Comic Bks/Graph Novels",
+    "inferred_skills": [
+      "SKL-D51DD0B807",
+      "SKL-812543F9DA",
+      "SKL-8E7F4F0850",
+      "SKL-645190B39F",
+      "SKL-4D5E6F7A04",
+      "SKL-6F7A8B9C06",
+      "SKL-F1E59FE29E",
+      "SKL-5E6F7A8B05"
+    ]
+  },
+  {
+    "course_identification": "CSDY5723",
+    "title_short_desc": "Writing Comic Bks/Graph Novels",
+    "inferred_skills": [
+      "SKL-B2C3D4E5C2",
+      "SKL-F049CF6278",
+      "SKL-7A8B9C0D07",
+      "SKL-A52FE11BEE",
+      "SKL-A1B2C3D4B1",
+      "SKL-84D2AB6FBA",
+      "SKL-4D5E6F7A04",
+      "SKL-9011233444"
+    ]
+  },
+  {
+    "course_identification": "CSDY5423",
+    "title_short_desc": "Writing Comedy and Satire",
+    "inferred_skills": [
+      "SKL-DAD65E54CA",
+      "SKL-2C3F848522",
+      "SKL-5567899A0A",
+      "SKL-4D5E6F7A04",
+      "SKL-509E0A1423",
+      "SKL-612B936F01",
+      "SKL-D3EF012342",
+      "SKL-7A8B9C0D07"
+    ]
+  },
+  {
+    "course_identification": "CSDY4423",
+    "title_short_desc": "Writing Comedy and Satire",
+    "inferred_skills": [
+      "SKL-B91C33A9C3",
+      "SKL-30CA65DB59",
+      "SKL-5C6D7E8F60",
+      "SKL-8942C27D3A",
+      "SKL-4D5E6F7A04",
+      "SKL-2B3C4D5E02",
+      "SKL-6F7A8B9C06",
+      "SKL-7A8B9C0D07"
+    ]
+  },
+  {
+    "course_identification": "CSDY3333",
+    "title_short_desc": "Writers on Writing",
+    "inferred_skills": [
+      "SKL-6C83434CE3",
+      "SKL-D3A7CEE21F",
+      "SKL-5039919F89",
+      "SKL-1A2B3C4D01",
+      "SKL-8441CD37CE",
+      "SKL-6F7A8B9C06",
+      "SKL-1F38D78E8B",
+      "SKL-4D5E6F7A04"
+    ]
+  },
+  {
+    "course_identification": "HUM4113",
+    "title_short_desc": "World Religions",
+    "inferred_skills": [
+      "SKL-5EB9FF0203",
+      "SKL-BDD8497852",
+      "SKL-2B4CC5D38E",
+      "SKL-3CD80557C4",
+      "SKL-D978FA2B2B",
+      "SKL-F38758A3A9",
+      "SKL-3C4D5E6F03"
+    ]
+  },
+  {
+    "course_identification": "HUM5103",
+    "title_short_desc": "World Religions",
+    "inferred_skills": [
+      "SKL-128E1E9FBF",
+      "SKL-E436259E8F",
+      "SKL-535E76A8F9",
+      "SKL-3FBBC7F8F2",
+      "SKL-201015A0E8",
+      "SKL-9580B3F939",
+      "SKL-741174F658",
+      "SKL-4EEA863CAE"
+    ]
+  },
+  {
+    "course_identification": "ENG3213",
+    "title_short_desc": "World Literature II",
+    "inferred_skills": [
+      "SKL-A30F40A92E",
+      "SKL-04624F35ED",
+      "SKL-A1B2C3D4B1",
+      "SKL-2B3C4D5E02",
+      "SKL-C3D4E5F6D3",
+      "SKL-2234566777",
+      "SKL-0D1E2F3A0A"
+    ]
+  },
+  {
+    "course_identification": "ENG3193",
+    "title_short_desc": "World Literature I",
+    "inferred_skills": [
+      "SKL-BE80042ADA",
+      "SKL-FF64A53DBB",
+      "SKL-0ECF3DC914",
+      "SKL-52DE4C4B09",
+      "SKL-1A2B3C4D01",
+      "SKL-C3D4E5F6D3"
+    ]
+  },
+  {
+    "course_identification": "HIST1023",
+    "title_short_desc": "World History II",
+    "inferred_skills": [
+      "SKL-B2C3D4E5C2",
+      "SKL-3B583FDF0D",
+      "SKL-C3D123541B",
+      "SKL-260612F2EB",
+      "SKL-D9AF15C4C3",
+      "SKL-CAC03B1768"
+    ]
+  },
+  {
+    "course_identification": "HIST1013",
+    "title_short_desc": "World History I",
+    "inferred_skills": [
+      "SKL-B2C3D4E5C2",
+      "SKL-D9FD1D2D58",
+      "SKL-33F81C0C61",
+      "SKL-3345677888",
+      "SKL-19B1B04980",
+      "SKL-636E5CC791"
+    ]
+  },
+  {
+    "course_identification": "HIST3423",
+    "title_short_desc": "Women's History: European",
+    "inferred_skills": [
+      "SKL-9763C2DE36",
+      "SKL-185FD3338C",
+      "SKL-D26C890768",
+      "SKL-E66A3F3CAA",
+      "SKL-CE9B6EB0B3",
+      "SKL-7C2FD07B38",
+      "SKL-B2C3D4E5C2",
+      "SKL-7789ABBC2C"
+    ]
+  },
+  {
+    "course_identification": "HIST4453",
+    "title_short_desc": "Women's History: China",
+    "inferred_skills": [
+      "SKL-E291353BF9",
+      "SKL-C78AC3B067",
+      "SKL-7E216E6014",
+      "SKL-BF4BA47034",
+      "SKL-A89BF80F00",
+      "SKL-098D936B71",
+      "SKL-E2B0825462",
+      "SKL-672DFA1AC5"
+    ]
+  },
+  {
+    "course_identification": "HIST5453",
+    "title_short_desc": "Women's History: China",
+    "inferred_skills": [
+      "SKL-1C6C31F2A2",
+      "SKL-3615B93344",
+      "SKL-025851917B",
+      "SKL-B86A17C54D",
+      "SKL-21BC5F0F87",
+      "SKL-B2C3D4E5C2",
+      "SKL-3AE6236419"
+    ]
+  },
+  {
+    "course_identification": "HIST4413",
+    "title_short_desc": "Women/Gender in Native America",
+    "inferred_skills": [
+      "SKL-7258A125E3",
+      "SKL-7AD2D81094",
+      "SKL-C8A981DEE1",
+      "SKL-A1B2C3D4B1",
+      "SKL-082C41F8EE",
+      "SKL-3345677888",
+      "SKL-B2C3D4E5C2"
+    ]
+  },
+  {
+    "course_identification": "HIST5413",
+    "title_short_desc": "Women/Gender in Native America",
+    "inferred_skills": [
+      "SKL-0F9FCBA136",
+      "SKL-B336ED94B8",
+      "SKL-970965105A",
+      "SKL-74CF9D86C8",
+      "SKL-CD0A3261F2",
+      "SKL-AA9FBC52E1",
+      "SKL-0088C9AC8A",
+      "SKL-8BD7FE9E95"
+    ]
+  },
+  {
+    "course_identification": "HUM5143",
+    "title_short_desc": "Women, Witches, and Religion",
+    "inferred_skills": [
+      "SKL-3673866B04",
+      "SKL-1A2B3C4D01",
+      "SKL-E2E3DC9018",
+      "SKL-2D40F39972",
+      "SKL-B2C3D4E5C2",
+      "SKL-722756BEEC",
+      "SKL-92973BBA00",
+      "SKL-3345677888"
+    ]
+  },
+  {
+    "course_identification": "SPAN4303",
+    "title_short_desc": "Women Writing In Span America",
+    "inferred_skills": [
+      "SKL-B5BD46C9BC",
+      "SKL-5CD1697A35",
+      "SKL-B88D5F1F14",
+      "SKL-644FBAA1D3",
+      "SKL-A7D27FC62B",
+      "SKL-1A2B3C4D01",
+      "SKL-3345677888"
+    ]
+  },
+  {
+    "course_identification": "HUM5243",
+    "title_short_desc": "Women in the Humanities",
+    "inferred_skills": [
+      "SKL-8C4D07BC2F",
+      "SKL-A10537ED2F",
+      "SKL-74B207CC66",
+      "SKL-4B0F7DC4AA",
+      "SKL-9BF14229EC",
+      "SKL-B2C3D4E5C2",
+      "SKL-3D824B88E1",
+      "SKL-474F9337E9"
+    ]
+  },
+  {
+    "course_identification": "HIST4423",
+    "title_short_desc": "Women in the American West",
+    "inferred_skills": [
+      "SKL-CF551586D4",
+      "SKL-17AA3EE136",
+      "SKL-47AA17DEF0",
+      "SKL-9FA665C789",
+      "SKL-86DD99FD1D",
+      "SKL-28C4BA1C35",
+      "SKL-5E6F7A8B05",
+      "SKL-B2C3D4E5C2"
+    ]
+  },
+  {
+    "course_identification": "HIST5423",
+    "title_short_desc": "Women in the American West",
+    "inferred_skills": [
+      "SKL-74D9035164",
+      "SKL-6891B5A00F",
+      "SKL-A5D8328147",
+      "SKL-866AD7027C",
+      "SKL-B2C3D4E5C2",
+      "SKL-BD70881958",
+      "SKL-3345677888"
+    ]
+  },
+  {
+    "course_identification": "MCOM5313",
+    "title_short_desc": "Women in Media",
+    "inferred_skills": [
+      "SKL-5CEDE340D3",
+      "SKL-920F411046",
+      "SKL-D1B21F909E",
+      "SKL-C2D8C421F6",
+      "SKL-99726F5900",
+      "SKL-CE419EABB3",
+      "SKL-AD2DD331D8",
+      "SKL-D4FA827A3F"
+    ]
+  },
+  {
+    "course_identification": "MCOM4313",
+    "title_short_desc": "Women in Media",
+    "inferred_skills": [
+      "SKL-419CC516F2",
+      "SKL-B2C3D4E5C2",
+      "SKL-0112344555",
+      "SKL-1B06C039E9",
+      "SKL-1A2B3C4D01",
+      "SKL-2B3C4D5E02"
+    ]
+  },
+  {
+    "course_identification": "ENG5683",
+    "title_short_desc": "Women in Literature",
+    "inferred_skills": [
+      "SKL-2AD7512C4A",
+      "SKL-E8FBD04825",
+      "SKL-3C4D5E6F03",
+      "SKL-D72E4FBF7A",
+      "SKL-4D5E6F7A04",
+      "SKL-29C3C1761A",
+      "SKL-1A2B3C4D01",
+      "SKL-694B06C514"
+    ]
+  },
+  {
+    "course_identification": "MCOM3533",
+    "title_short_desc": "Women and Leadership",
+    "inferred_skills": [
+      "SKL-AA72F73C32",
+      "SKL-3ECFD0C6B9",
+      "SKL-695C6A03A5",
+      "SKL-2B3C4D5E02",
+      "SKL-B2C3D4E5C2",
+      "SKL-D4DB8FF690",
+      "SKL-5567899A0A",
+      "SKL-71524920C1"
+    ]
+  },
+  {
+    "course_identification": "CJ4533",
+    "title_short_desc": "White Collar Crime",
+    "inferred_skills": [
+      "SKL-0775EBA986",
+      "SKL-88C83AC370",
+      "SKL-1E23213AE9",
+      "SKL-874690D858",
+      "SKL-C94757BCA1",
+      "SKL-59D92528C7",
+      "SKL-3345677888",
+      "SKL-C85B470BBA"
+    ]
+  },
+  {
+    "course_identification": "HUM4323",
+    "title_short_desc": "When God was a Woman",
+    "inferred_skills": [
+      "SKL-B2C3D4E5C2",
+      "SKL-0080899910",
+      "SKL-17C401CEAF",
+      "SKL-3C4D5E6F03",
+      "SKL-DDBCD8DA6B",
+      "SKL-3345677888",
+      "SKL-A108049FE1",
+      "SKL-62B30D45F3"
+    ]
+  },
+  {
+    "course_identification": "FRSC5553",
+    "title_short_desc": "WMD Forensics",
+    "inferred_skills": [
+      "SKL-1CFA381451",
+      "SKL-DE04DFD1A4",
+      "SKL-A1B2C3D4B1",
+      "SKL-E5F60718F5",
+      "SKL-27FE0F1ADD",
+      "SKL-5C6D7E8F60",
+      "SKL-455C9FDE3D",
+      "SKL-74967E2D01"
+    ]
+  },
+  {
+    "course_identification": "FRSC4553",
+    "title_short_desc": "WMD Forensics",
+    "inferred_skills": [
+      "SKL-70F006A1A0",
+      "SKL-B4339C7BCD",
+      "SKL-A1B2C3D4B1",
+      "SKL-B2C3D4E5C2",
+      "SKL-65C2337B55",
+      "SKL-6FC9C7AC50",
+      "SKL-7E8F901122",
+      "SKL-B1CDEF0120"
+    ]
+  },
+  {
+    "course_identification": "THRT3513",
+    "title_short_desc": "Voice, Speech, and Dialect",
+    "inferred_skills": [
+      "SKL-8180A1A8AE",
+      "SKL-19C34284CD",
+      "SKL-505098AD6F",
+      "SKL-22BB9F5094",
+      "SKL-64E3C39120",
+      "SKL-EF5926D2FD",
+      "SKL-0D1E2F3A0A"
+    ]
+  },
+  {
+    "course_identification": "THRT2233",
+    "title_short_desc": "Voice and Movement 2",
+    "inferred_skills": [
+      "SKL-F42D595957",
+      "SKL-EA1BA5FFDB",
+      "SKL-81FACD60B2",
+      "SKL-A1B2C3D4B1",
+      "SKL-9011233444",
+      "SKL-E5F60718F5",
+      "SKL-F60718290A",
+      "SKL-5EF64B7359"
+    ]
+  },
+  {
+    "course_identification": "THRT1613",
+    "title_short_desc": "Voice and Movement 1",
+    "inferred_skills": [
+      "SKL-9BC3611D85",
+      "SKL-73696E4352",
+      "SKL-0112344555",
+      "SKL-0DB45A6B3A",
+      "SKL-E11F5D6D3E",
+      "SKL-6EB26E6060",
+      "SKL-87EEA37D6F",
+      "SKL-EBA79A0EE1"
+    ]
+  },
+  {
+    "course_identification": "ENG1253",
+    "title_short_desc": "Vocabulary Building",
+    "inferred_skills": [
+      "SKL-D300B66F8D",
+      "SKL-4886ED0B3C",
+      "SKL-207A0778B0",
+      "SKL-BBC31C02A6",
+      "SKL-FE1ED1F6EB",
+      "SKL-C2DEF12331",
+      "SKL-985BABC765",
+      "SKL-FB8E14AD2D"
+    ]
+  },
+  {
+    "course_identification": "MCOM3033",
+    "title_short_desc": "Video News II",
+    "inferred_skills": [
+      "SKL-7789ABBC2C",
+      "SKL-331D5B7438",
+      "SKL-82D1358BBE",
+      "SKL-C83BD086CD",
+      "SKL-DC117552B6",
+      "SKL-4B5C6D7E5F",
+      "SKL-B1CA6DE394",
+      "SKL-0112344555"
+    ]
+  },
+  {
+    "course_identification": "MCOM2203",
+    "title_short_desc": "Video News I",
+    "inferred_skills": [
+      "SKL-4D5E6F7A04",
+      "SKL-60107177C5",
+      "SKL-4B5C6D7E5F",
+      "SKL-258D8ACB50",
+      "SKL-5BA5134011",
+      "SKL-293A4B5C3D",
+      "SKL-1DF2668225"
+    ]
+  },
+  {
+    "course_identification": "MCOM3243",
+    "title_short_desc": "Video Field Production",
+    "inferred_skills": [
+      "SKL-43DE16D3CE",
+      "SKL-3A4B5C6D4E",
+      "SKL-5C6D7E8F60",
+      "SKL-459639C365",
+      "SKL-875B4FE374",
+      "SKL-BDBA1D10F7",
+      "SKL-8405FE4548"
+    ]
+  },
+  {
+    "course_identification": "MCOM3013",
+    "title_short_desc": "Video Editing",
+    "inferred_skills": [
+      "SKL-BE5B6DDCFB",
+      "SKL-EB67A8AEEB",
+      "SKL-75DF793029",
+      "SKL-D6715FA6F7",
+      "SKL-7A8B9C0D07",
+      "SKL-EA9A093A2D",
+      "SKL-8F90112333",
+      "SKL-9011233444"
+    ]
+  },
+  {
+    "course_identification": "MCOM4433",
+    "title_short_desc": "Victims and the Media",
+    "inferred_skills": [
+      "SKL-03FE9872A3",
+      "SKL-734AB1C3F0",
+      "SKL-DFFFFA2A4F",
+      "SKL-C71CE25D81",
+      "SKL-D31A1DA428",
+      "SKL-F35FAB92D9",
+      "SKL-990AD4A963",
+      "SKL-E41C739DC3"
+    ]
+  },
+  {
+    "course_identification": "CJ4323",
+    "title_short_desc": "Victimology",
+    "inferred_skills": [
+      "SKL-DBBFB07C78",
+      "SKL-F557C05D65",
+      "SKL-E4548786F6",
+      "SKL-F48A643BB5",
+      "SKL-F15CCD2C31",
+      "SKL-3345677888",
+      "SKL-E0B9873955",
+      "SKL-633FBA3A80"
+    ]
+  },
+  {
+    "course_identification": "ECON5363",
+    "title_short_desc": "Market Structure/Reg/Antitrust",
+    "inferred_skills": [
+      "SKL-5E6F7A8B05",
+      "SKL-0112344555",
+      "SKL-31542CFE0F",
+      "SKL-02409F7E67",
+      "SKL-0502690D1B",
+      "SKL-9BBA5A0B29",
+      "SKL-B837588AD1",
+      "SKL-6B66BD76F9"
+    ]
+  },
+  {
+    "course_identification": "ECON5103",
+    "title_short_desc": "Microeconomic Analysis",
+    "inferred_skills": [
+      "SKL-FF6C180647",
+      "SKL-26340DAAA5",
+      "SKL-4FDA4B1286",
+      "SKL-9460FCE70D",
+      "SKL-E2F75EE99C",
+      "SKL-3C4D5E6F03",
+      "SKL-40D0F9CA2D",
+      "SKL-5E6F7A8B05"
+    ]
+  },
+  {
+    "course_identification": "HIST1483",
+    "title_short_desc": "History Of U.S. To 1877",
+    "inferred_skills": [
+      "SKL-24B45EEFB2",
+      "SKL-A51EAAC54A",
+      "SKL-19D11F72D0",
+      "SKL-B2C3D4E5C2",
+      "SKL-6F874C71CC",
+      "SKL-E0C030C405",
+      "SKL-D4B972F166",
+      "SKL-6F9E0A301C"
+    ]
+  },
+  {
+    "course_identification": "HIST1493",
+    "title_short_desc": "History Of U.S. Since 1877",
+    "inferred_skills": [
+      "SKL-B2C3D4E5C2",
+      "SKL-992AA8F0E6",
+      "SKL-8B9C0D1E08",
+      "SKL-F95662DFFA",
+      "SKL-BE2E3F57A8",
+      "SKL-9028F820EC"
+    ]
+  },
+  {
+    "course_identification": "POL4363",
+    "title_short_desc": "Urban Sustainability",
+    "inferred_skills": [
+      "SKL-C9D070FF5F",
+      "SKL-CAE8B94C84",
+      "SKL-733011B355",
+      "SKL-029F00F7FF",
+      "SKL-66DDE2A9F8",
+      "SKL-2DA4BB760F",
+      "SKL-0413A00B60",
+      "SKL-F16F375E00"
+    ]
+  },
+  {
+    "course_identification": "POL5363",
+    "title_short_desc": "Urban Sustainability",
+    "inferred_skills": [
+      "SKL-42ED959ADC",
+      "SKL-9445927307",
+      "SKL-274295BF95",
+      "SKL-4B65A81FEA",
+      "SKL-FD651C492F",
+      "SKL-BF3BA2BDAF",
+      "SKL-6414162490",
+      "SKL-D14B0BB4B8"
+    ]
+  },
+  {
+    "course_identification": "POL5173",
+    "title_short_desc": "Urban Planning and Politics",
+    "inferred_skills": [
+      "SKL-401FF1C6B5",
+      "SKL-4E075FB271",
+      "SKL-2A3B352445",
+      "SKL-E62BA74CF5",
+      "SKL-6D7E8F9011",
+      "SKL-CCDAEC5492",
+      "SKL-F265CBC9FD",
+      "SKL-89EE77F4EB"
+    ]
+  },
+  {
+    "course_identification": "POL5013",
+    "title_short_desc": "Urban History of Policy/Admin",
+    "inferred_skills": [
+      "SKL-575E56E06B",
+      "SKL-2EBFD3762F",
+      "SKL-B2C3D4E5C2",
+      "SKL-A2A9921570",
+      "SKL-3345677888"
+    ]
+  },
+  {
+    "course_identification": "POL5183",
+    "title_short_desc": "Urban Government And Policy",
+    "inferred_skills": [
+      "SKL-A60478E55E",
+      "SKL-E192878902",
+      "SKL-22EE9D2B9F",
+      "SKL-C2DEF12331",
+      "SKL-A1B2C3D4B1",
+      "SKL-4BCD159928",
+      "SKL-5E6F7A8B05",
+      "SKL-97AE4A5C8F"
+    ]
+  },
+  {
+    "course_identification": "GEO4733",
+    "title_short_desc": "Urban GIS",
+    "inferred_skills": [
+      "SKL-5B1C8A4A37",
+      "SKL-46C113B33D",
+      "SKL-D7E0D7DE06",
+      "SKL-F43483EE5A",
+      "SKL-A1B2C3D4B1",
+      "SKL-18293A4B2C",
+      "SKL-3DE9339A97"
+    ]
+  },
+  {
+    "course_identification": "GEO5733",
+    "title_short_desc": "Urban GIS",
+    "inferred_skills": [
+      "SKL-5C6D7E8F60",
+      "SKL-1F5F61AEF9",
+      "SKL-80079730D4",
+      "SKL-B2C3D4E5C2",
+      "SKL-A61CAAA0E5",
+      "SKL-8946C1BFFD",
+      "SKL-C070257738",
+      "SKL-8F73241286"
+    ]
+  },
+  {
+    "course_identification": "SFTY5412",
+    "title_short_desc": "Hazard Communication",
+    "inferred_skills": [
+      "SKL-2397B4F1A4",
+      "SKL-1123455666",
+      "SKL-7E8F901122",
+      "SKL-5567899A0A",
+      "SKL-7542949062",
+      "SKL-75CD114999"
+    ]
+  },
+  {
+    "course_identification": "SFTY4412",
+    "title_short_desc": "Hazard Communication",
+    "inferred_skills": [
+      "SKL-82FCCE0F3D",
+      "SKL-D1B802A6EC",
+      "SKL-1123455666",
+      "SKL-6F7A8B9C06",
+      "SKL-F844DA0265",
+      "SKL-8F90112333",
+      "SKL-C2DEF12331",
+      "SKL-28B13F7306"
+    ]
+  },
+  {
+    "course_identification": "MPER2010",
+    "title_short_desc": "University Choir",
+    "inferred_skills": [
+      "SKL-7284D71BE7",
+      "SKL-E6BD0CB54E",
+      "SKL-2B3C4D5E02",
+      "SKL-268EC1F7AF",
+      "SKL-E7DE063AAB",
+      "SKL-32AB4A1B3E",
+      "SKL-37FA3F49BD"
+    ]
+  },
+  {
+    "course_identification": "MPER2111",
+    "title_short_desc": "University Choir",
+    "inferred_skills": [
+      "SKL-4A48F22355",
+      "SKL-B80F8C37BF",
+      "SKL-5C6D7E8F60",
+      "SKL-889ABC-CD3D",
+      "SKL-35FB736608",
+      "SKL-9011233444",
+      "SKL-8529DF8081",
+      "SKL-2B3C4D5E02"
+    ]
+  },
+  {
+    "course_identification": "HIST4873",
+    "title_short_desc": "United States since 1945",
+    "inferred_skills": [
+      "SKL-472D80ACFB",
+      "SKL-51ECC9FD26",
+      "SKL-317EEDBBB6",
+      "SKL-42A4255A76",
+      "SKL-B2C3D4E5C2",
+      "SKL-BBDB22547D"
+    ]
+  },
+  {
+    "course_identification": "HIST5873",
+    "title_short_desc": "United States since 1945",
+    "inferred_skills": [
+      "SKL-4F51A88EEE",
+      "SKL-F208735791",
+      "SKL-1A9D84D5AE",
+      "SKL-F50D78A9FE",
+      "SKL-CD8BF99146",
+      "SKL-80D9CF2F36",
+      "SKL-B0550E015C",
+      "SKL-B2C3D4E5C2"
+    ]
+  },
+  {
+    "course_identification": "PHED5602",
+    "title_short_desc": "PE&Rec Except Child",
+    "inferred_skills": [
+      "SKL-6182521FC8",
+      "SKL-E4FEA0528B",
+      "SKL-E4AF1BD4C8",
+      "SKL-9C7E74FC4D",
+      "SKL-B4AE8C5C36",
+      "SKL-D4E5F607E4",
+      "SKL-1EDBDCD77F",
+      "SKL-880CA60A03"
+    ]
+  },
+  {
+    "course_identification": "MPER3341",
+    "title_short_desc": "Jazz Ensemble",
+    "inferred_skills": [
+      "SKL-A5E1607379",
+      "SKL-5C6D7E8F60",
+      "SKL-9011233444",
+      "SKL-DC9FA6342B",
+      "SKL-030FD6EAAA",
+      "SKL-EDE1DCEE43",
+      "SKL-659DACBA88",
+      "SKL-0112344555"
+    ]
+  },
+  {
+    "course_identification": "MPER5611",
+    "title_short_desc": "Jazz Ensemble",
+    "inferred_skills": [
+      "SKL-0112344555",
+      "SKL-1072AC271F",
+      "SKL-43A4900933",
+      "SKL-EBCA40DF86",
+      "SKL-FA71120193",
+      "SKL-0D1E2F3A0A",
+      "SKL-2B3C4D5E02"
+    ]
+  },
+  {
+    "course_identification": "MCOM4413",
+    "title_short_desc": "TV Documentary Production",
+    "inferred_skills": [
+      "SKL-E34204429F",
+      "SKL-5C6D7E8F60",
+      "SKL-293A4B5C3D",
+      "SKL-C62A8CA120",
+      "SKL-686E7FFD25",
+      "SKL-99ABCDDE4E"
+    ]
+  },
+  {
+    "course_identification": "HIST4653",
+    "title_short_desc": "Tudor-Stuart England",
+    "inferred_skills": [
+      "SKL-FADCFD91AB",
+      "SKL-3C4D5E6F03",
+      "SKL-D326325057",
+      "SKL-B2C3D4E5C2",
+      "SKL-CACB8C4841",
+      "SKL-62530819B4"
+    ]
+  },
+  {
+    "course_identification": "HIST5653",
+    "title_short_desc": "Tudor-Stuart England",
+    "inferred_skills": [
+      "SKL-7D2C97B652",
+      "SKL-3C4D5E6F03",
+      "SKL-D1F177BE8F",
+      "SKL-B3DE97301B",
+      "SKL-B2C3D4E5C2",
+      "SKL-35A870FF3D",
+      "SKL-1B4482C63B"
+    ]
+  },
+  {
+    "course_identification": "SPED4322",
+    "title_short_desc": "Trends & Issues in Special Ed",
+    "inferred_skills": [
+      "SKL-FA5375C1A4",
+      "SKL-3EA16B7F98",
+      "SKL-E6D2E4AADB",
+      "SKL-6D7E8F9011",
+      "SKL-DFC39E0F6D",
+      "SKL-ED490BFE03",
+      "SKL-2B0A51523D",
+      "SKL-7E8F901122"
+    ]
+  },
+  {
+    "course_identification": "SAS5633",
+    "title_short_desc": "Trauma Counseling",
+    "inferred_skills": [
+      "SKL-FC6B987103",
+      "SKL-466645536A",
+      "SKL-2F7E432787",
+      "SKL-5C6D7E8F60",
+      "SKL-ED5FF25A53",
+      "SKL-D703EF35CD",
+      "SKL-AB984A9DE4",
+      "SKL-E07D37E143"
+    ]
+  },
+  {
+    "course_identification": "MCOM5423",
+    "title_short_desc": "Trauma & Leadership in Comm",
+    "inferred_skills": [
+      "SKL-FC7BF97042",
+      "SKL-87D0A6BB2A",
+      "SKL-2234566777",
+      "SKL-0A2578D76F",
+      "SKL-D734BE9AA0",
+      "SKL-A24BAB732A",
+      "SKL-BB4B5762DC",
+      "SKL-0533AA9E86"
+    ]
+  },
+  {
+    "course_identification": "CMSC4173",
+    "title_short_desc": "Translator Design",
+    "inferred_skills": [
+      "SKL-B2C3D4E5C2",
+      "SKL-B3A8FA6BF2",
+      "SKL-A0AB48A5B0",
+      "SKL-0A9A5B6661",
+      "SKL-91A80A2768",
+      "SKL-889ABC-CD3D"
+    ]
+  },
+  {
+    "course_identification": "CMSC5073",
+    "title_short_desc": "Translator Design",
+    "inferred_skills": [
+      "SKL-B2C3D4E5C2",
+      "SKL-1C82D3A7E1",
+      "SKL-0F39C6494D",
+      "SKL-D4E5F607E4",
+      "SKL-4252D1CED5",
+      "SKL-3DAA458654"
+    ]
+  },
+  {
+    "course_identification": "CJ1563",
+    "title_short_desc": "Traffic & Accident Investigation",
+    "inferred_skills": [
+      "SKL-16CCE440AE",
+      "SKL-293A4B5C3D",
+      "SKL-6D7E8F9011",
+      "SKL-B800142B49",
+      "SKL-ECC78CB056"
+    ]
+  },
+  {
+    "course_identification": "HIST4863",
+    "title_short_desc": "Hist Of Modern Southeast Asia",
+    "inferred_skills": [
+      "SKL-C7A09CBF70",
+      "SKL-277074D798",
+      "SKL-73F5659622",
+      "SKL-7B276AF6F7",
+      "SKL-17BB5FA185",
+      "SKL-FD54F7D5B3",
+      "SKL-3345677888",
+      "SKL-B2C3D4E5C2"
+    ]
+  },
+  {
+    "course_identification": "HIST5863",
+    "title_short_desc": "Hist Of Modern Southeast Asia",
+    "inferred_skills": [
+      "SKL-A1B2C3D4B1",
+      "SKL-C4248DB09A",
+      "SKL-992905ADDF",
+      "SKL-0AA69ECCD3",
+      "SKL-F8DD9971E5",
+      "SKL-D63822BD3B"
+    ]
+  },
+  {
+    "course_identification": "ECON3203",
+    "title_short_desc": "Intermediate Microeconomics",
+    "inferred_skills": [
+      "SKL-692EAD0F8E",
+      "SKL-3965257764",
+      "SKL-91844AEEF9",
+      "SKL-A02DDC5C53",
+      "SKL-5133B97EFF",
+      "SKL-EBC46D37E6",
+      "SKL-5F1A093F65",
+      "SKL-835D88B53A"
+    ]
+  },
+  {
+    "course_identification": "MATH2013",
+    "title_short_desc": "Structures Of Mathematics",
+    "inferred_skills": [
+      "SKL-7584C8554B",
+      "SKL-C91B67B7C1",
+      "SKL-57051CFB60",
+      "SKL-4D5E6F7A04",
+      "SKL-3C4D5E6F03",
+      "SKL-3DFB5B2518",
+      "SKL-EBAEC67F53",
+      "SKL-2BE8231CE2"
+    ]
+  },
+  {
+    "course_identification": "CHEM4325",
+    "title_short_desc": "Clinical Chemistry II",
+    "inferred_skills": [
+      "SKL-CD72DCA641",
+      "SKL-0E425A0F99",
+      "SKL-E2C5FAF0D1",
+      "SKL-C67D134452",
+      "SKL-BF7042713F",
+      "SKL-27169D26C6",
+      "SKL-5004DCD163",
+      "SKL-E8C628410B"
+    ]
+  },
+  {
+    "course_identification": "MATH5563",
+    "title_short_desc": "Introduction To Graph Theory",
+    "inferred_skills": [
+      "SKL-5E6F7A8B05",
+      "SKL-4BDB8848C8",
+      "SKL-49512146EB",
+      "SKL-871363C0D2",
+      "SKL-DF47074B5A",
+      "SKL-408D60F6FE",
+      "SKL-CD2ED516A9",
+      "SKL-CB14BDFD36"
+    ]
+  },
+  {
+    "course_identification": "CHEM4351",
+    "title_short_desc": "Topics In Medical Technology",
+    "inferred_skills": [
+      "SKL-4D5FAB6003",
+      "SKL-8F90112333",
+      "SKL-5B2E57EA42",
+      "SKL-A02E147492",
+      "SKL-5B80A01CE1",
+      "SKL-BDD7F26328"
+    ]
+  },
+  {
+    "course_identification": "STAT5253",
+    "title_short_desc": "Quality Control",
+    "inferred_skills": [
+      "SKL-8083BCB1BE",
+      "SKL-03B1E0AB09",
+      "SKL-6D7E8F9011",
+      "SKL-C2DEF12331",
+      "SKL-F6789D29F9",
+      "SKL-3C0A1590FB",
+      "SKL-3C4D5E6F03"
+    ]
+  },
+  {
+    "course_identification": "MATH5413",
+    "title_short_desc": "Differential Equations",
+    "inferred_skills": [
+      "SKL-889ABC-CD3D",
+      "SKL-C2416988EA",
+      "SKL-0236D619E9",
+      "SKL-49C9716A77",
+      "SKL-471F9F818E"
+    ]
+  },
+  {
+    "course_identification": "STAT5423",
+    "title_short_desc": "Data Fitting",
+    "inferred_skills": [
+      "SKL-A5392F7876",
+      "SKL-CAB06F2159",
+      "SKL-8A75715EE9",
+      "SKL-9A61F1D557",
+      "SKL-181CA7C51B"
+    ]
+  },
+  {
+    "course_identification": "STAT5303",
+    "title_short_desc": "Non-Parametric Statistics",
+    "inferred_skills": [
+      "SKL-3D09E4259F",
+      "SKL-633FEACEC1",
+      "SKL-AB5C9D1AF2",
+      "SKL-4F53026069",
+      "SKL-7D25A743B8",
+      "SKL-849E30027F",
+      "SKL-A6B5728640",
+      "SKL-013A397B15"
+    ]
+  },
+  {
+    "course_identification": "ECON4513",
+    "title_short_desc": "Labor Econ & Public Policy",
+    "inferred_skills": [
+      "SKL-3C4D5E6F03",
+      "SKL-7ECA242AD7",
+      "SKL-8AF381542A",
+      "SKL-82B739325A",
+      "SKL-9DFB7121D8",
+      "SKL-61E05982D6",
+      "SKL-C2DEF12331",
+      "SKL-2B3C4D5E02"
+    ]
+  },
+  {
+    "course_identification": "MBA5632",
+    "title_short_desc": "Topics in Sales Force Mgmt",
+    "inferred_skills": [
+      "SKL-6D3D82F9CF",
+      "SKL-D14E72EC03",
+      "SKL-2B3C4D5E02",
+      "SKL-3FF21DF2FB",
+      "SKL-9011233444",
+      "SKL-3345677888",
+      "SKL-C070892680",
+      "SKL-F1C50EA4A8"
+    ]
+  },
+  {
+    "course_identification": "STAT4213",
+    "title_short_desc": "Applied Regression Analysis",
+    "inferred_skills": [
+      "SKL-1A2B3C4D01",
+      "SKL-B2C3D4E5C2",
+      "SKL-CCD0207B50",
+      "SKL-18293A4B2C",
+      "SKL-9DD6AD747E"
+    ]
+  },
+  {
+    "course_identification": "STAT5213",
+    "title_short_desc": "Applied Regression Analysis",
+    "inferred_skills": [
+      "SKL-DED2969F3B",
+      "SKL-F60718290A",
+      "SKL-B2C3D4E5C2",
+      "SKL-02375C7B24",
+      "SKL-83FD42FA2D",
+      "SKL-78972464B5"
+    ]
+  },
+  {
+    "course_identification": "STAT2113",
+    "title_short_desc": "Statistical Methods",
+    "inferred_skills": [
+      "SKL-8DB7B446DB",
+      "SKL-5C138B0437",
+      "SKL-652C4A7CE7",
+      "SKL-B596C2438B",
+      "SKL-F60718290A",
+      "SKL-8850140556",
+      "SKL-18BF019858"
+    ]
+  },
+  {
+    "course_identification": "STAT5103",
+    "title_short_desc": "Applied Experimental Design",
+    "inferred_skills": [
+      "SKL-54F826408A",
+      "SKL-3AFEAF6B6C",
+      "SKL-8ACCC4D52C",
+      "SKL-3AED55687C",
+      "SKL-9A1F908087",
+      "SKL-249B9B13ED"
+    ]
+  },
+  {
+    "course_identification": "STAT4103",
+    "title_short_desc": "Applied Experimental Design",
+    "inferred_skills": [
+      "SKL-5E9FF4F75F",
+      "SKL-C2DEF12331",
+      "SKL-EF781FEF57",
+      "SKL-FA536656B4",
+      "SKL-0718293A1B",
+      "SKL-98C683FC4A"
+    ]
+  }
+]

@@ -1,0 +1,6950 @@
+[
+  {
+    "skill_id": "SKL-1516A32435",
+    "label": "Accident Reconstruction",
+    "description": "Analyze and reconstruct traffic accidents to determine cause and sequence of events",
+    "courses": [
+      "CJ1563"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C070892680",
+    "label": "Adapt to Contemporary Sales",
+    "description": "Develop the ability to adapt sales strategies to contemporary issues",
+    "courses": [
+      "MBA5632"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-CCC6DEBB20",
+    "label": "Adapt to Various Genres",
+    "description": "Demonstrate versatility in adapting comic and satiric writing styles across various genres.",
+    "courses": [
+      "CSDY5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7D25A743B8",
+    "label": "Administer Median Test",
+    "description": "Utilize the median test for making inferences about population medians when sample sizes are small.",
+    "courses": [
+      "STAT5303"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3E83B38F45",
+    "label": "Advanced Jazz Performance",
+    "description": "Developing proficiency in playing jazz and commercial music at an advanced level.",
+    "courses": [
+      "MPER5611"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D4FA827A3F",
+    "label": "Advocate for Equality",
+    "description": "Develop advocacy skills in promoting gender equality within the media industry.",
+    "courses": [
+      "MCOM5313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FA536656B4",
+    "label": "Analysis of Covariance",
+    "description": "Perform analysis of covariance on experimental data",
+    "courses": [
+      "STAT4103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B1A41699D6",
+    "label": "Analyze Audience",
+    "description": "Adapt writing to suit different nonprofit audiences",
+    "courses": [
+      "ENG4643"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E5B43AD103",
+    "label": "Analyze Award-winning Books",
+    "description": "Critically evaluate award-winning children's literature",
+    "courses": [
+      "CSDY4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-AB5C9D1AF2",
+    "label": "Analyze Binomial Data",
+    "description": "Understand and apply the binomial test for analyzing data consisting of successes and failures.",
+    "courses": [
+      "STAT5303"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-27B45FECD0",
+    "label": "Analyze Children's Literature",
+    "description": "Explore the characteristics of award-winning books for children and young adults.",
+    "courses": [
+      "CSDY5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-24B45EEFB2",
+    "label": "Analyze Colonial Period",
+    "description": "Identify key events and themes during the colonial period of American history.",
+    "courses": [
+      "HIST1483"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7E216E6014",
+    "label": "Analyze Communist Impact",
+    "description": "Assess the impact of Communism on women's roles and rights in China.",
+    "courses": [
+      "HIST4453"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E291353BF9",
+    "label": "Analyze Confucianism Impact",
+    "description": "Understand the influence of Confucianism on women's history and culture in China.",
+    "courses": [
+      "HIST4453"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1C6C31F2A2",
+    "label": "Analyze Confucianism Impact",
+    "description": "Understand the influence of Confucianism on women's roles and rights in Chinese history.",
+    "courses": [
+      "HIST5453"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-49512146EB",
+    "label": "Analyze Connectivity",
+    "description": "Determine connectivity patterns within graphs.",
+    "courses": [
+      "MATH5563"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-692EAD0F8E",
+    "label": "Analyze Consumer Behavior",
+    "description": "Ability to dissect and understand the behavior of consumers",
+    "courses": [
+      "ECON3203"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DAD65E54CA",
+    "label": "Analyze Contemporary Comic Literature",
+    "description": "Understand the nuances of contemporary comic and satiric literature.",
+    "courses": [
+      "CSDY5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-75997502E6",
+    "label": "Analyze Contemporary Fiction",
+    "description": "Identify and discuss contemporary examples of the short story form.",
+    "courses": [
+      "CSDY4283"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B91C33A9C3",
+    "label": "Analyze Contemporary Literature",
+    "description": "Identify themes, styles, and techniques in contemporary comic and satiric literature.",
+    "courses": [
+      "CSDY4423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-ED490BFE03",
+    "label": "Analyze Controversial Issues",
+    "description": "Assess and evaluate controversial issues in special education",
+    "courses": [
+      "SPED4322"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FF64A53DBB",
+    "label": "Analyze Cultural Interactions",
+    "description": "Identify patterns of interaction and influence among world literature and cultures",
+    "courses": [
+      "ENG3193"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C94757BCA1",
+    "label": "Analyze Debates About White Collar Crime",
+    "description": "Gain skills to analyze debates surrounding the definition, causes, and impacts of white collar crime.",
+    "courses": [
+      "CJ4533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FF6C180647",
+    "label": "Analyze Demand and Cost",
+    "description": "Applying economic theory to solve business and public policy problems through demand and cost estimation and analysis.",
+    "courses": [
+      "ECON5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F38758A3A9",
+    "label": "Analyze Diverse Religious Phenomena",
+    "description": "Explore and interpret diverse religious phenomena",
+    "courses": [
+      "HUM4113"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-207A0778B0",
+    "label": "Analyze Etymologies",
+    "description": "Trace the origin of words to improve understanding.",
+    "courses": [
+      "ENG1253"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3965257764",
+    "label": "Analyze Firm Behavior",
+    "description": "Capability to evaluate the behavior of firms",
+    "courses": [
+      "ECON3203"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2AD7512C4A",
+    "label": "Analyze Gender Influence",
+    "description": "Understand the impact of gender on English, American, and world literature",
+    "courses": [
+      "ENG5683"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FEEA5A1A88",
+    "label": "Analyze Genre Conventions",
+    "description": "Understanding the characteristics and conventions of mystery and adventure genres.",
+    "courses": [
+      "CSDY5313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0A86421F40",
+    "label": "Analyze Genre Conventions",
+    "description": "Identify and apply conventions specific to the comic book and graphic novel genre.",
+    "courses": [
+      "CSDY4723"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5F1A093F65",
+    "label": "Analyze Government Interventions",
+    "description": "Ability to analyze government interventions in markets",
+    "courses": [
+      "ECON3203"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-82B739325A",
+    "label": "Analyze Government Policy Impact",
+    "description": "Understanding how government policies like affirmative action, minimum wages, and immigration affect labor markets",
+    "courses": [
+      "ECON4513"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DEDE7C6CFA",
+    "label": "Analyze Historical Connections",
+    "description": "Students will learn to examine and interpret the political, social, and cultural links in world history since 1450.",
+    "courses": [
+      "HIST1023"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-082C41F8EE",
+    "label": "Analyze Historical Context",
+    "description": "Identify and interpret historical contexts affecting indigenous communities and women.",
+    "courses": [
+      "HIST4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3673866B04",
+    "label": "Analyze Historical Context",
+    "description": "Understand historical responses to women's worldviews",
+    "courses": [
+      "HUM5143"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D9FD1D2D58",
+    "label": "Analyze Historical Developments",
+    "description": "Understand and evaluate historical changes and progressions in various societies.",
+    "courses": [
+      "HIST1013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2F9C4F193F",
+    "label": "Analyze Historical Events",
+    "description": "Identify and interpret key historical events in the post-bellum period to the present.",
+    "courses": [
+      "HIST1493"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-49C79BC8ED",
+    "label": "Analyze History of YA Lit",
+    "description": "Understand the historical development and evolution of young adult literature.",
+    "courses": [
+      "ENG4673"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-61E05982D6",
+    "label": "Analyze Labor Market Outcomes",
+    "description": "Studying issues related to labor market outcomes such as discrimination and poverty",
+    "courses": [
+      "ECON4513"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F235F50EA2",
+    "label": "Analyze Labor Market Theory",
+    "description": "Understanding and applying the neoclassical theory of labor markets",
+    "courses": [
+      "ECON4513"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-AA72F73C32",
+    "label": "Analyze Leadership Challenges",
+    "description": "Exploring historical and contemporary leadership challenges faced by women.",
+    "courses": [
+      "MCOM3533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B837588AD1",
+    "label": "Analyze Legal Precedents",
+    "description": "Examine the impact of legal cases on market structure and regulation",
+    "courses": [
+      "ECON5363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EE64C22691",
+    "label": "Analyze Linear Regression",
+    "description": "Learning to apply linear regression techniques for data analysis",
+    "courses": [
+      "STAT2113"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E13279ED95",
+    "label": "Analyze Literary Traditions",
+    "description": "Explore and critically analyze literary traditions associated with Goddess worship.",
+    "courses": [
+      "HUM4323"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EEF7A6D282",
+    "label": "Analyze Literary Workshops",
+    "description": "Participate in workshops to analyze and discuss Science Fiction and Fantasy works.",
+    "courses": [
+      "CSDY5583"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4D77DBBFB0",
+    "label": "Analyze Literature",
+    "description": "Critically evaluate published works within the genres of science fiction and fantasy",
+    "courses": [
+      "CSDY4583"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C027FE8C83",
+    "label": "Analyze Market Structures",
+    "description": "Understand and differentiate various forms of industrial organization",
+    "courses": [
+      "ECON5363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6D7E9E3433",
+    "label": "Analyze Market Structures",
+    "description": "Understanding and analyzing different market structures and their effects on competition and pricing.",
+    "courses": [
+      "ECON5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5CEDE340D3",
+    "label": "Analyze Media History",
+    "description": "Understand and dissect the historical context of women in media.",
+    "courses": [
+      "MCOM5313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E2B0825462",
+    "label": "Analyze Modern Women's Issues",
+    "description": "Understand contemporary issues facing women in modern-day China.",
+    "courses": [
+      "HIST4453"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E4AF1BD4C8",
+    "label": "Analyze Motor Characteristics",
+    "description": "Skill to understand the unique motor characteristics of exceptional children",
+    "courses": [
+      "PHED5602"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DED2969F3B",
+    "label": "Analyze Multiple Regression",
+    "description": "Ability to perform statistical analysis using multiple independent variables",
+    "courses": [
+      "STAT5213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-644FBAA1D3",
+    "label": "Analyze Mythical Images",
+    "description": "Examine mythical images that have contributed to false identities for women in Spanish America",
+    "courses": [
+      "SPAN4303"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-75B8C9132C",
+    "label": "Analyze Narrative Structure",
+    "description": "Learn to analyze the structure of narratives in young adult literature.",
+    "courses": [
+      "ENG4673"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-43EC01A30C",
+    "label": "Analyze Narrative Structure",
+    "description": "Examine the structure of narratives in short stories.",
+    "courses": [
+      "CSDY4283"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A188E68515",
+    "label": "Analyze Narrative Structure",
+    "description": "Evaluating the structure and elements of mystery/adventure narratives.",
+    "courses": [
+      "CSDY5313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FD10B2E15D",
+    "label": "Analyze Narrative Structure",
+    "description": "Understanding of various narrative structures in criminal justice writing.",
+    "courses": [
+      "CJ1313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6FC9B60B83",
+    "label": "Analyze Narrative Structure",
+    "description": "Develop skills to analyze narratives suitable for different age groups.",
+    "courses": [
+      "CSDY5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0D05769240",
+    "label": "Analyze Narrative Structure",
+    "description": "Learn to analyze narrative structures in children's literature",
+    "courses": [
+      "CSDY4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0F9FCBA136",
+    "label": "Analyze Native American history",
+    "description": "Understand and critically evaluate historical events related to Native Americans",
+    "courses": [
+      "HIST5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E2F75EE99C",
+    "label": "Analyze Noncompetitive Behavior",
+    "description": "Investigating different forms of non-competitive behavior in industries and market structures.",
+    "courses": [
+      "ECON5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4E075FB271",
+    "label": "Analyze Nuisance Laws",
+    "description": "Develop skills in analyzing nuisance laws related to urban planning.",
+    "courses": [
+      "POL5173"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5E9FF4F75F",
+    "label": "Analyze One-Way Classification",
+    "description": "Understand and analyze experimental data using one-way classification",
+    "courses": [
+      "STAT4103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3AFEAF6B6C",
+    "label": "Analyze One-Way Classifications",
+    "description": "Perform analysis of variance for one-way classifications",
+    "courses": [
+      "STAT5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-57051CFB60",
+    "label": "Analyze Ordering Properties",
+    "description": "Identify and analyze the ordering relationships between numbers and mathematical entities",
+    "courses": [
+      "MATH2013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-181CA7C51B",
+    "label": "Analyze Piecewise Polygonal Fitting",
+    "description": "Evaluate piecewise polygonal functions and their applications",
+    "courses": [
+      "STAT5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-472D80ACFB",
+    "label": "Analyze Political Changes",
+    "description": "Understanding and evaluating shifts in political structures and policies.",
+    "courses": [
+      "HIST4873"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4F51A88EEE",
+    "label": "Analyze Political Changes",
+    "description": "Demonstrate the ability to dissect political evolution in the United States from WWII to present.",
+    "courses": [
+      "HIST5873"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7D2C97B652",
+    "label": "Analyze Political Developments",
+    "description": "Understand and evaluate significant political shifts in Tudor and Stuart England.",
+    "courses": [
+      "HIST5653"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FADCFD91AB",
+    "label": "Analyze Political Events",
+    "description": "Understand and evaluate the political developments in Tudor-Stuart England",
+    "courses": [
+      "HIST4653"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B0550E015C",
+    "label": "Analyze Primary Sources",
+    "description": "Gain the ability to critically analyze primary sources related to U.S. history since 1945.",
+    "courses": [
+      "HIST5873"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-18BF019858",
+    "label": "Analyze Probability Distributions",
+    "description": "Developing the ability to analyze probability distributions, such as normal distribution",
+    "courses": [
+      "STAT2113"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-127D20E68E",
+    "label": "Analyze Program Elements",
+    "description": "Critically evaluate the components of an acceptable hazard communication program",
+    "courses": [
+      "SFTY4412"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A02DDC5C53",
+    "label": "Analyze Public Entity Behavior",
+    "description": "Ability to analyze the behavior of public entities",
+    "courses": [
+      "ECON3203"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-90F137FF3F",
+    "label": "Analyze Published Novels",
+    "description": "Study of published novels to understand craft and structure",
+    "courses": [
+      "CSDY4273"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-CF551586D4",
+    "label": "Analyze Regional Identity",
+    "description": "Exploring how regional identity forms and evolves for women in the American West",
+    "courses": [
+      "HIST4423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-74D9035164",
+    "label": "Analyze Regional Identity",
+    "description": "Understanding the historical and cultural factors shaping regional identity in the American West",
+    "courses": [
+      "HIST5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D63822BD3B",
+    "label": "Analyze Religious Impact",
+    "description": "Examine the impact of religion on traditional cultures in Southeast Asia",
+    "courses": [
+      "HIST5863"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-91844AEEF9",
+    "label": "Analyze Resource Owner Behavior",
+    "description": "Skill to analyze the behavior of resource owners",
+    "courses": [
+      "ECON3203"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-27FE0F1ADD",
+    "label": "Analyze Terrorism Events",
+    "description": "Understand the dynamics of domestic and international terrorism events",
+    "courses": [
+      "FRSC5553"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F557C05D65",
+    "label": "Analyze Theories of Victimology",
+    "description": "Critically evaluate various theories used to explain victimization.",
+    "courses": [
+      "CJ4323"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-AB984A9DE4",
+    "label": "Analyze Theorists' Relevance",
+    "description": "Learn to evaluate the relevance of various theorists to the field of alcohol and drug dependency.",
+    "courses": [
+      "SAS5633"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3AED55687C",
+    "label": "Analyze Three-Way Classifications",
+    "description": "Execute analysis of variance for three-way classifications",
+    "courses": [
+      "STAT5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-83FD42FA2D",
+    "label": "Analyze Time Series Data",
+    "description": "Skill in analyzing and modeling time-dependent data series",
+    "courses": [
+      "STAT5213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C7A09CBF70",
+    "label": "Analyze Traditional Cultures",
+    "description": "Understand and critically analyze the traditional cultures of Southeast Asia.",
+    "courses": [
+      "HIST4863"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-03FE9872A3",
+    "label": "Analyze trauma impact",
+    "description": "Understanding the interpersonal and psychological effects of trauma on victims.",
+    "courses": [
+      "MCOM4433"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A24BAB732A",
+    "label": "Analyze Trauma Impact",
+    "description": "Assess the impact of trauma on professionals in communications.",
+    "courses": [
+      "MCOM5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8ACCC4D52C",
+    "label": "Analyze Two-Way Classifications",
+    "description": "Conduct analysis of variance for two-way classifications",
+    "courses": [
+      "STAT5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-46C113B33D",
+    "label": "Analyze Urban Issues",
+    "description": "Examine urban and socio-economic problems related to urban planning, ecology, and demographics",
+    "courses": [
+      "GEO4733"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1F5F61AEF9",
+    "label": "Analyze Urban Planning Issues",
+    "description": "Students will develop skills to analyze urban and regional planning problems.",
+    "courses": [
+      "GEO5733"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9445927307",
+    "label": "Analyze Urban Political Processes",
+    "description": "Evaluate the role and impact of local political processes on urban sustainability.",
+    "courses": [
+      "POL5363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C9D070FF5F",
+    "label": "Analyze Urban Politics",
+    "description": "Understanding the role of local politics in urban sustainability",
+    "courses": [
+      "POL4363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2DA4BB760F",
+    "label": "Analyze Urban Relationships and Impact",
+    "description": "Exploring the connection between urban development and sustainability",
+    "courses": [
+      "POL4363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-88C83AC370",
+    "label": "Analyze Victimization in White Collar Crime",
+    "description": "Learn to analyze the complexities involved in victimization related to white collar crimes.",
+    "courses": [
+      "CJ4533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-21BC5F0F87",
+    "label": "Analyze Women's Agency",
+    "description": "Learn to identify and analyze the agency of Chinese women throughout history.",
+    "courses": [
+      "HIST5453"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8C4D07BC2F",
+    "label": "Analyze Women's Historical Impact",
+    "description": "Examine women's contributions and barriers throughout Western civilization history",
+    "courses": [
+      "HUM5243"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9763C2DE36",
+    "label": "Analyze Women's Historical Roles",
+    "description": "Understand and evaluate the historical roles of women in Europe.",
+    "courses": [
+      "HIST3423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-419CC516F2",
+    "label": "Analyze Women's Role",
+    "description": "Explore the role of women as journalism professionals and subjects of media",
+    "courses": [
+      "MCOM4313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B5BD46C9BC",
+    "label": "Analyze Women's Roles",
+    "description": "Explore the role of women in Spanish America and their relationship with political, religious institutions",
+    "courses": [
+      "SPAN4303"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D26C890768",
+    "label": "Analyze Women's Theories",
+    "description": "Evaluate theories related to women's history and their impact on society.",
+    "courses": [
+      "HIST3423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-306F739B93",
+    "label": "Analyze Young Adult Texts",
+    "description": "Develop the ability to analyze and interpret texts within the young adult literature genre.",
+    "courses": [
+      "ENG5673"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0A2578D76F",
+    "label": "Anticipate Traumatic Events",
+    "description": "Gain skills to foresee potential traumatic situations.",
+    "courses": [
+      "MCOM5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-40B41CBE13",
+    "label": "Applied Genre Conventions",
+    "description": "Ability to understand and apply genre conventions in creative writing",
+    "courses": [
+      "CSDY3333"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5B1C8A4A37",
+    "label": "Apply Advanced GIS",
+    "description": "Utilize advanced Geographic Information System techniques",
+    "courses": [
+      "GEO4733"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-249B9B13ED",
+    "label": "Apply ANOVA Techniques",
+    "description": "Demonstrate proficiency in using Analysis of Variance techniques",
+    "courses": [
+      "STAT5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5B80A01CE1",
+    "label": "Apply Appropriate Pre-Med Curriculum",
+    "description": "Demonstrate the ability to leverage prior premedical technology curriculum in coursework",
+    "courses": [
+      "CHEM4351"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-431F85E334",
+    "label": "Apply Audio Techniques",
+    "description": "Develop audio techniques suitable for television documentaries",
+    "courses": [
+      "MCOM4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E98BC79D87",
+    "label": "Apply Best Practices",
+    "description": "Utilize best practices in the field of special education",
+    "courses": [
+      "SPED4322"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-509E0A1423",
+    "label": "Apply Comic and Satiric Tone",
+    "description": "Develop the ability to apply humorous or critical tones appropriately.",
+    "courses": [
+      "CSDY5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C506EFB619",
+    "label": "Apply Communication Skills",
+    "description": "Applying effective communication skills to discuss and debate women's leadership topics.",
+    "courses": [
+      "MCOM3533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DB437DF8D2",
+    "label": "Apply Critical Theory",
+    "description": "Learn to apply critical theory to the study of young adult literature.",
+    "courses": [
+      "ENG4673"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-69AE2109D3",
+    "label": "Apply Critical Thinking",
+    "description": "Critically evaluate sources, perspectives, and ideas related to Native American gender history.",
+    "courses": [
+      "HIST4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3E1613F7FF",
+    "label": "Apply Critical Thinking",
+    "description": "Develop and apply critical thinking skills in evaluating the information discussed in the course.",
+    "courses": [
+      "HUM4323"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-472D0D0C2C",
+    "label": "Apply Critical Thinking Skills",
+    "description": "Develop critical thinking skills by critically analyzing case studies and theories related to white collar crime.",
+    "courses": [
+      "CJ4533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B33CB91D13",
+    "label": "Apply Critical Thinking to Victimization",
+    "description": "Demonstrate the ability to critically analyze issues related to victimization.",
+    "courses": [
+      "CJ4323"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-34FA94DE9A",
+    "label": "Apply Economic Analysis",
+    "description": "Applying economic analysis to solve real-world problems in labor markets",
+    "courses": [
+      "ECON4513"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-451F1D395C",
+    "label": "Apply Economic Theory",
+    "description": "Utilizing economic theory to address real-world business and policy issues.",
+    "courses": [
+      "ECON5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0533AA9E86",
+    "label": "Apply Ethical Guidelines",
+    "description": "Understand and apply ethical guidelines when dealing with trauma in the communications field.",
+    "courses": [
+      "MCOM5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8DB7B446DB",
+    "label": "Apply Experimental Statistics",
+    "description": "Developing skills to perform statistical analysis in experimental contexts",
+    "courses": [
+      "STAT2113"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-970965105A",
+    "label": "Apply feminist perspective",
+    "description": "Analyze events and social structures through a feminist lens",
+    "courses": [
+      "HIST5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3556FCBDCD",
+    "label": "Apply Genre Conventions",
+    "description": "Learn to recognize and apply conventions specific to the genre of young adult literature.",
+    "courses": [
+      "ENG5673"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DCDD43D707",
+    "label": "Apply Genre Conventions",
+    "description": "Understand and use conventions specific to the short story genre.",
+    "courses": [
+      "CSDY4283"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-305EF4297C",
+    "label": "Apply Genre Conventions",
+    "description": "Understanding and applying conventions in the genre of novel writing",
+    "courses": [
+      "CSDY4273"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7874539F85",
+    "label": "Apply Genre Conventions",
+    "description": "Use appropriate writing styles in various contexts",
+    "courses": [
+      "ENG4643"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-32AD11E8AE",
+    "label": "Apply Genre Conventions",
+    "description": "Ability to apply appropriate conventions for different genres within the criminal justice field.",
+    "courses": [
+      "CJ1313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3C32945A05",
+    "label": "Apply Genre Conventions",
+    "description": "Understand and apply conventions specific to writing for children and young adults.",
+    "courses": [
+      "CSDY5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-75CD114999",
+    "label": "Apply Hazard Knowledge",
+    "description": "Implement learned knowledge about hazards in practical situations.",
+    "courses": [
+      "SFTY5412"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-578F12B4B7",
+    "label": "Apply Historical Analysis",
+    "description": "Apply analytical skills to understand, explain, and interpret historical phenomena.",
+    "courses": [
+      "HIST1013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BDEE606F5A",
+    "label": "Apply Historical Analysis",
+    "description": "Learn to apply historical analysis techniques when studying Chinese women's history.",
+    "courses": [
+      "HIST5453"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-32C10CFE2F",
+    "label": "Apply Historical Analysis",
+    "description": "Developing skills for historical analysis within the context of the American West",
+    "courses": [
+      "HIST4423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-522A178F05",
+    "label": "Apply Historical Analysis",
+    "description": "Develop skills to critically analyze historical events, trends, and their implications",
+    "courses": [
+      "HIST4653"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DF171AB97E",
+    "label": "Apply Historical Analysis Methods",
+    "description": "Students will learn to apply various methods of historical analysis to understand global events and trends.",
+    "courses": [
+      "HIST1023"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B6C35652B9",
+    "label": "Apply Historical Analysis Techniques",
+    "description": "Employ analytical methods to study women's history",
+    "courses": [
+      "HUM5243"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B30D2B52AF",
+    "label": "Apply Historical Lessons",
+    "description": "Apply historical lessons to contemporary urban issues and policies.",
+    "courses": [
+      "POL5013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3FF21DF2FB",
+    "label": "Apply Industry Knowledge",
+    "description": "Use industry knowledge to solve problems in sales force management",
+    "courses": [
+      "MBA5632"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-CA5BE2B6AC",
+    "label": "Apply Interdisciplinary Approach",
+    "description": "Use an interdisciplinary approach to study religion and culture",
+    "courses": [
+      "HUM4113"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A5618E9C72",
+    "label": "Apply investigative techniques",
+    "description": "Utilize methods to collect and interpret evidence in WMD cases.",
+    "courses": [
+      "FRSC4553"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0E425A0F99",
+    "label": "Apply Laboratory Mathematics",
+    "description": "Develop skills in mathematical problem-solving for laboratory applications.",
+    "courses": [
+      "CHEM4325"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5004DCD163",
+    "label": "Apply Laboratory Methodology",
+    "description": "Learn and apply appropriate methodologies for laboratory work in clinical chemistry.",
+    "courses": [
+      "CHEM4325"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-89EE77F4EB",
+    "label": "Apply Legal Knowledge to Planning",
+    "description": "Learn to apply legal knowledge to urban planning scenarios.",
+    "courses": [
+      "POL5173"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-10EA86C8FE",
+    "label": "Apply Literary Analysis",
+    "description": "Utilize critical thinking skills to analyze narrative structure and themes",
+    "courses": [
+      "ENG3193"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4DE233E204",
+    "label": "Apply Literary Analysis",
+    "description": "Use literary analysis techniques to interpret works by women writers from Spanish America",
+    "courses": [
+      "SPAN4303"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6AAD40FBD8",
+    "label": "Apply Literary Analysis",
+    "description": "Employ literary analysis techniques to interpret texts",
+    "courses": [
+      "ENG5683"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E7C27B5450",
+    "label": "Apply Literary Theory",
+    "description": "Learn to apply literary theory to broaden understanding of the dynamic field of young adult literature.",
+    "courses": [
+      "ENG5673"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3D09E4259F",
+    "label": "Apply Non-Parametric Tests",
+    "description": "Demonstrate the ability to utilize non-parametric statistical tests with data that is not normally distributed.",
+    "courses": [
+      "STAT5303"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A9AF133D40",
+    "label": "Apply Number Theory",
+    "description": "Use number theory to explore the properties of numbers, such as prime numbers",
+    "courses": [
+      "MATH2013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5039919F89",
+    "label": "Apply Poetics",
+    "description": "Ability to apply poetics theories to creative writing",
+    "courses": [
+      "CSDY3333"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-19E84FBD71",
+    "label": "Apply Policy Analysis",
+    "description": "Apply analytical skills to evaluate policies within urban government contexts, specifically as they pertain to Oklahoma governments.",
+    "courses": [
+      "POL5183"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-97AE4A5C8F",
+    "label": "Apply Policy Recommendations",
+    "description": "Formulate policy recommendations for improving urban governance, taking into account the administrative and political environment of U.S. municipal governments, with a focus on Oklahoma governments.",
+    "courses": [
+      "POL5183"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-02375C7B24",
+    "label": "Apply Proportional Hazard Models",
+    "description": "Ability to use proportional hazards regression in survival analysis",
+    "courses": [
+      "STAT5213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-466645536A",
+    "label": "Apply Psychoanalytic Perspectives",
+    "description": "Learn to use psychoanalytic theories in the field of alcohol and drug dependency.",
+    "courses": [
+      "SAS5633"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A3EF979BC4",
+    "label": "Apply Regulations",
+    "description": "Comply with relevant regulations for hazard communication programs",
+    "courses": [
+      "SFTY4412"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0502690D1B",
+    "label": "Apply Regulatory Policies",
+    "description": "Understand and apply regulatory policies as alternatives to market competition",
+    "courses": [
+      "ECON5363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2FD2107DF6",
+    "label": "Apply Research Skills",
+    "description": "Learn how to research and analyze primary and secondary sources relevant to women's history.",
+    "courses": [
+      "HIST3423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-04F7AE6327",
+    "label": "Apply Sampling Plans",
+    "description": "Implement acceptance plans for quality control.",
+    "courses": [
+      "STAT5253"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-37E602618D",
+    "label": "Apply Satirical Techniques",
+    "description": "Utilize methods to create satire in various genres.",
+    "courses": [
+      "CSDY4423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0236D619E9",
+    "label": "Apply Separation of Variables",
+    "description": "Use separation of variables to solve separable differential equations",
+    "courses": [
+      "MATH5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-CCDAEC5492",
+    "label": "Apply Subdivision Controls",
+    "description": "Learn to apply subdivision controls in urban planning.",
+    "courses": [
+      "POL5173"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-274295BF95",
+    "label": "Apply Sustainable Development Principles",
+    "description": "Use sustainability principles to address urban challenges and promote development.",
+    "courses": [
+      "POL5363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-CAE8B94C84",
+    "label": "Apply Sustainable Development Theory",
+    "description": "Utilizing theories in sustainable development within urban contexts",
+    "courses": [
+      "POL4363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-65C2337B55",
+    "label": "Apply terrorism context knowledge",
+    "description": "Understand the connection between terrorism and WMD use.",
+    "courses": [
+      "FRSC4553"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E07D37E143",
+    "label": "Apply Therapeutic Processes",
+    "description": "Gain practical skills in individual counseling processes for treating trauma-related issues.",
+    "courses": [
+      "SAS5633"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-75DF793029",
+    "label": "Apply Transitions and Effects",
+    "description": "Utilize various visual transitions and effects to enhance video content",
+    "courses": [
+      "MCOM3013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B541224393",
+    "label": "Apply Urban GIS Techniques",
+    "description": "Students will learn to utilize advanced techniques in urban Geographic Information System.",
+    "courses": [
+      "GEO5733"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-68C37D5A3B",
+    "label": "Apply Word Analysis",
+    "description": "Use prefixes, suffixes, and etymologies in analysis tasks.",
+    "courses": [
+      "ENG1253"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DA1A2F38B4",
+    "label": "Articulate Analysis",
+    "description": "Communicate ideas about literary texts in a clear, persuasive manner",
+    "courses": [
+      "ENG3213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-671B1F0C0C",
+    "label": "Articulation Practice",
+    "description": "Improving clarity and precision of speech",
+    "courses": [
+      "THRT1613"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EF9340C419",
+    "label": "Artistic Expression",
+    "description": "Express emotions through vocal performance",
+    "courses": [
+      "MPER2010"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EF1760D887",
+    "label": "Artistic Expression",
+    "description": "Expressing oneself artistically through choral music performance.",
+    "courses": [
+      "MPER2111"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-76FDE03C81",
+    "label": "Artistic Expression",
+    "description": "Furthering the ability to express oneself artistically within the context of jazz and commercial music.",
+    "courses": [
+      "MPER5611"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-AA9FBC52E1",
+    "label": "Assess changing gender roles",
+    "description": "Analyze the evolution of gender roles within indigenous communities",
+    "courses": [
+      "HIST5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-17BB5FA185",
+    "label": "Assess Contemporary Roles",
+    "description": "Analyze and evaluate contemporary roles of Southeast Asian nations in international relations.",
+    "courses": [
+      "HIST4863"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0AA69ECCD3",
+    "label": "Assess Contemporary Roles",
+    "description": "Evaluate the roles of Southeast Asian countries in international relations",
+    "courses": [
+      "HIST5863"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FE543A82A8",
+    "label": "Assess Hazard Communication Programs",
+    "description": "Evaluate the elements of an acceptable hazard communication program.",
+    "courses": [
+      "SFTY5412"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-734AB1C3F0",
+    "label": "Assess media coverage",
+    "description": "Evaluating the impact of media coverage on victims, journalists, and communications professionals.",
+    "courses": [
+      "MCOM4433"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-27169D26C6",
+    "label": "Assess Medical Significance",
+    "description": "Develop abilities to interpret the medical implications of analytical results.",
+    "courses": [
+      "CHEM4325"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6182521FC8",
+    "label": "Assess Motor Development",
+    "description": "Ability to evaluate motor skills and development in exceptional children",
+    "courses": [
+      "PHED5602"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D1B802A6EC",
+    "label": "Assess Risk",
+    "description": "Evaluate the level of risk associated with identified hazards",
+    "courses": [
+      "SFTY4412"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1E23213AE9",
+    "label": "Assess Sentencing Issues",
+    "description": "Develop skills to evaluate sentencing issues in white collar crime cases.",
+    "courses": [
+      "CJ4533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D14B0BB4B8",
+    "label": "Assess Urban Sustainability Impact",
+    "description": "Analyze and evaluate the outcomes of urban sustainability efforts.",
+    "courses": [
+      "POL5363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A9D34E87E5",
+    "label": "Audience Analysis",
+    "description": "Identify and cater to diverse audiences",
+    "courses": [
+      "ENG5393"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-98C683FC4A",
+    "label": "Basic Concepts of Experiments",
+    "description": "Gain understanding of fundamental experimental concepts",
+    "courses": [
+      "STAT4103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FE1ED1F6EB",
+    "label": "Boost Writing Competency",
+    "description": "Increase writing proficiency by using new vocabulary.",
+    "courses": [
+      "ENG1253"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-201015A0E8",
+    "label": "Broaden Contextual Understanding",
+    "description": "Develop a broader framework for understanding religious beliefs, including one's own and others.",
+    "courses": [
+      "HUM5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9DDAD6CA84",
+    "label": "Broaden Understanding of Field",
+    "description": "Gain a broader understanding of young adult literature as a dynamic field.",
+    "courses": [
+      "ENG4673"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-74967E2D01",
+    "label": "CBRNE Threat Assessment",
+    "description": "Evaluate threats posed by chemical, biological, radiological, nuclear, and explosive agents",
+    "courses": [
+      "FRSC5553"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E6BD0CB54E",
+    "label": "Choral Rehearsal",
+    "description": "Collaborate effectively in a choir setting",
+    "courses": [
+      "MPER2010"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7378CD3B50",
+    "label": "Code Generation",
+    "description": "Transform abstract syntax trees into executable code.",
+    "courses": [
+      "CMSC4173"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3DAA458654",
+    "label": "Code Generation & Optimization",
+    "description": "Generating and optimizing code from high-level programming language constructs",
+    "courses": [
+      "CMSC5073"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2E6C182559",
+    "label": "Collaborate on Discussions",
+    "description": "Participate in group discussions about sales force management",
+    "courses": [
+      "MBA5632"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3DE9339A97",
+    "label": "Collaborate with Junior Standing Students",
+    "description": "Work effectively in groups with students at junior standing or above",
+    "courses": [
+      "GEO4733"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C23334ACA0",
+    "label": "Collaborate with Others",
+    "description": "Work cooperatively on video production tasks with peers or professionals",
+    "courses": [
+      "MCOM3013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EA9A093A2D",
+    "label": "Color Correction and Grading",
+    "description": "Adjust color balances, contrasts, and other visual aspects to improve video quality",
+    "courses": [
+      "MCOM3013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-90D73C55D1",
+    "label": "Comic Book Analysis",
+    "description": "Analyze the structure, style, and content of comic books",
+    "courses": [
+      "CSDY5723"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-030FD6EAAA",
+    "label": "Commercial Music Performance",
+    "description": "Gain skills for performing commercial music on a professional level.",
+    "courses": [
+      "MPER3341"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DFFFFA2A4F",
+    "label": "Communicate effectively",
+    "description": "Developing clear and effective communication skills in discussing trauma and its impact.",
+    "courses": [
+      "MCOM4433"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8BD7FE9E95",
+    "label": "Communicate historical findings",
+    "description": "Articulate research findings effectively in academic writing",
+    "courses": [
+      "HIST5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-CAC03B1768",
+    "label": "Communicate Historical Knowledge",
+    "description": "Students will be able to effectively communicate their understanding of world history to others.",
+    "courses": [
+      "HIST1023"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F16F375E00",
+    "label": "Communicate Sustainable Urban Development Concepts",
+    "description": "Sharing knowledge about sustainable urban development with others",
+    "courses": [
+      "POL4363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-28686A580C",
+    "label": "Communicate with Clarity",
+    "description": "Write effectively for a nonprofit setting",
+    "courses": [
+      "ENG4643"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-74CF9D86C8",
+    "label": "Compare and contrast cultural perspectives",
+    "description": "Differentiate and understand the unique and shared aspects of Native American and Western cultures",
+    "courses": [
+      "HIST5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-92973BBA00",
+    "label": "Compare and Contrast Female Figures",
+    "description": "Evaluate similarities and differences between various deviant female figures",
+    "courses": [
+      "HUM5143"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-80D9CF2F36",
+    "label": "Compare and Contrast Historical Periods",
+    "description": "Learn to compare and contrast different periods in U.S. history since 1945.",
+    "courses": [
+      "HIST5873"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D973F1A8C3",
+    "label": "Compare and Contrast Policies",
+    "description": "Analyze the similarities and differences between various urban government policies, with a focus on those applicable to Oklahoma governments.",
+    "courses": [
+      "POL5183"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3D824B88E1",
+    "label": "Compare and Contrast Women's Roles",
+    "description": "Compare and contrast women's roles across different time periods and cultures",
+    "courses": [
+      "HUM5243"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-099EEC6162",
+    "label": "Compare Contemporary Works",
+    "description": "Assessing and comparing contemporary mystery/adventure works.",
+    "courses": [
+      "CSDY5313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-27ECB8252A",
+    "label": "Compare Cultures",
+    "description": "Analyze the differences and similarities between traditional cultures in Southeast Asia",
+    "courses": [
+      "HIST5863"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2D9F384637",
+    "label": "Compare Gender Role Shifts",
+    "description": "Compare and contrast changes in gender roles across various indigenous communities.",
+    "courses": [
+      "HIST4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4CAAB9F3F6",
+    "label": "Compare Genre Conventions",
+    "description": "Understand how genre conventions apply to women writers' work",
+    "courses": [
+      "ENG5683"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A7D27FC62B",
+    "label": "Compare Geographic Regions",
+    "description": "Study literature from diverse geographic regions of Central and South America, Mexico, and the Caribbean",
+    "courses": [
+      "SPAN4303"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4B65A81FEA",
+    "label": "Compare Global Urban Sustainability Approaches",
+    "description": "Assess different strategies for achieving sustainable development in various urban settings.",
+    "courses": [
+      "POL5363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-733011B355",
+    "label": "Compare Global Urban Sustainability Practices",
+    "description": "Analyzing similarities and differences between worldwide urban sustainability methods",
+    "courses": [
+      "POL4363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-130EB46F7A",
+    "label": "Compare Historical Contexts",
+    "description": "Students will be able to compare the political, social, and cultural contexts of different regions in world history.",
+    "courses": [
+      "HIST1023"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E9AF17F487",
+    "label": "Compare Historical Contexts",
+    "description": "Comparing and contrasting the experiences of women across different historical contexts in the American West",
+    "courses": [
+      "HIST5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-ED764399FE",
+    "label": "Compare Historical Contexts",
+    "description": "Comparing the U.S.'s history with key events of the 20th and 21st centuries.",
+    "courses": [
+      "HIST4873"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3D644FB056",
+    "label": "Compare Historical Eras",
+    "description": "Compare and contrast the experiences of women in different historical periods in China.",
+    "courses": [
+      "HIST5453"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-51C0070B81",
+    "label": "Compare Historical Periods",
+    "description": "Identify similarities and differences in historical periods within the U.S.",
+    "courses": [
+      "HIST1493"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-35EB7BDE98",
+    "label": "Compare Historical Perspectives",
+    "description": "Comparing historical perspectives on women in leadership roles.",
+    "courses": [
+      "MCOM3533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D86FCA4AD7",
+    "label": "Compare Historical Societies",
+    "description": "Compare and contrast various societies' political, social, and cultural aspects.",
+    "courses": [
+      "HIST1013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-47DAD4DD98",
+    "label": "Compare Historical Trends",
+    "description": "Compare and contrast historical trends in urban areas.",
+    "courses": [
+      "POL5013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3B27ACEE3D",
+    "label": "Compare Historical Works",
+    "description": "Evaluating and comparing historical mystery and adventure stories.",
+    "courses": [
+      "CSDY5313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A30F40A92E",
+    "label": "Compare Literary Traditions",
+    "description": "Analyze historical and cultural contexts of literary texts from diverse regions",
+    "courses": [
+      "ENG3213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0ECF3DC914",
+    "label": "Compare Literary Traditions",
+    "description": "Evaluate similarities and differences in literary traditions from various regions",
+    "courses": [
+      "ENG3193"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A60478E55E",
+    "label": "Compare Municipal Governments",
+    "description": "Analyze the administrative and political structures of U.S. municipal governments, with a focus on Oklahoma governments.",
+    "courses": [
+      "POL5183"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5EB9FF0203",
+    "label": "Compare Religious Practices",
+    "description": "Analyze cultural and intercultural similarities and differences in religious practices",
+    "courses": [
+      "HUM4113"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-128E1E9FBF",
+    "label": "Compare Religious Practices",
+    "description": "Analyze and compare diverse religious practices across different cultures.",
+    "courses": [
+      "HUM5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-32A2BDC23E",
+    "label": "Compose Age-Appropriate Texts",
+    "description": "Learn to write for various age groups from early childhood through young adults.",
+    "courses": [
+      "CSDY5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-16A531A63F",
+    "label": "Compose Novel Excerpts",
+    "description": "Developing skills to write coherent and engaging novel excerpts",
+    "courses": [
+      "CSDY4273"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2DBD8219EA",
+    "label": "Compose SciFi/Fantasy Works",
+    "description": "Create original works within the genres of science fiction and fantasy",
+    "courses": [
+      "CSDY4583"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D6D9CFEF1B",
+    "label": "Compose SciFi/Fantasy Works",
+    "description": "Write creative works within the genres of Science Fiction and Fantasy.",
+    "courses": [
+      "CSDY5583"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-27B9C5E0A2",
+    "label": "Compose Search Warrants",
+    "description": "Ability to write detailed and legally sound search warrant documents.",
+    "courses": [
+      "CJ1313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6BDD0F821F",
+    "label": "Compose Writing Assignments",
+    "description": "Complete various writing tasks designed for skill development.",
+    "courses": [
+      "CSDY4283"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F049CF6278",
+    "label": "Composition Techniques",
+    "description": "Learn techniques for composing comic book stories",
+    "courses": [
+      "CSDY5723"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DF47074B5A",
+    "label": "Comprehend Colorability",
+    "description": "Understand the coloring of graphs and its implications.",
+    "courses": [
+      "MATH5563"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-812543F9DA",
+    "label": "Comprehend Composition",
+    "description": "Learn the composition techniques used in comic books and graphic novels.",
+    "courses": [
+      "CSDY4723"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D90F9909D8",
+    "label": "Comprehend Genre Conventions",
+    "description": "Understand and apply conventions of various genres within young adult literature.",
+    "courses": [
+      "ENG4673"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BA1443AFB0",
+    "label": "Comprehend Genre Conventions",
+    "description": "Gain understanding of genre conventions for children's writing",
+    "courses": [
+      "CSDY4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6FC9C7AC50",
+    "label": "Comprehend international implications",
+    "description": "Recognize the global ramifications of WMD events.",
+    "courses": [
+      "FRSC4553"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C4D46E9BB1",
+    "label": "Comprehend Risk Communication",
+    "description": "Understand the principles of risk and hazard communication.",
+    "courses": [
+      "SFTY5412"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E2E971A60E",
+    "label": "Conduct Demographic Analysis",
+    "description": "Perform demographic studies using GIS",
+    "courses": [
+      "GEO4733"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-AE61437556",
+    "label": "Conduct Lab Analysis",
+    "description": "Perform laboratory analysis on samples from CBRNE events",
+    "courses": [
+      "FRSC5553"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-167259268C",
+    "label": "Conduct laboratory analysis",
+    "description": "Perform tests on samples to identify CBRNE agents.",
+    "courses": [
+      "FRSC4553"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4F53026069",
+    "label": "Conduct Sign Test",
+    "description": "Execute the sign test to compare matched pairs of data.",
+    "courses": [
+      "STAT5303"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-80079730D4",
+    "label": "Conduct Urban Ecology Research",
+    "description": "Students will learn how to carry out research related to urban ecology.",
+    "courses": [
+      "GEO5733"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5BA5134011",
+    "label": "Content Creation",
+    "description": "Designing video-driven content for news programs",
+    "courses": [
+      "MCOM2203"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3CD80557C4",
+    "label": "Contextualize Personal Beliefs",
+    "description": "Develop a broader contextual understanding of personal convictions",
+    "courses": [
+      "HUM4113"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-AE5697B5C8",
+    "label": "Contextualize Text Analysis",
+    "description": "Examine literary texts within their distinct historical and cultural contexts",
+    "courses": [
+      "ENG3213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A2A9921570",
+    "label": "Contextualize Urban Issues",
+    "description": "Contextualize contemporary urban issues within their historical context.",
+    "courses": [
+      "POL5013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F42D595957",
+    "label": "Control Resonance",
+    "description": "Developing the ability to control resonance for enhanced expressive intonation",
+    "courses": [
+      "THRT2233"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8850140556",
+    "label": "Correlate Variables",
+    "description": "Acquiring skills to identify relationships and correlations between variables",
+    "courses": [
+      "STAT2113"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8D303EF8B2",
+    "label": "Craft Creative Writing",
+    "description": "Ability to compose creative writing based on theoretical understanding",
+    "courses": [
+      "CSDY3333"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-74B0279804",
+    "label": "Craft Narrative Structure",
+    "description": "Design effective narrative structures for comic books and graphic novels.",
+    "courses": [
+      "CSDY4723"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C461A5B515",
+    "label": "Craft Novel Installments",
+    "description": "Workshop-style critique of student-generated novel installments",
+    "courses": [
+      "CSDY4273"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F1E59FE29E",
+    "label": "Create Comic Content",
+    "description": "Learn to create engaging content for comic books and graphic novels.",
+    "courses": [
+      "CSDY4723"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-03B1E0AB09",
+    "label": "Create Frequency Distributions",
+    "description": "Generate frequency distributions for sample data.",
+    "courses": [
+      "STAT5253"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C070257738",
+    "label": "Create GIS Maps",
+    "description": "Students will acquire the ability to create maps using Geographic Information System.",
+    "courses": [
+      "GEO5733"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D6715FA6F7",
+    "label": "Create Titles and Captions",
+    "description": "Design and implement titles, captions, and other text elements for videos",
+    "courses": [
+      "MCOM3013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-40D04FECB9",
+    "label": "Creative Writing for TV",
+    "description": "Compose original content suitable for television",
+    "courses": [
+      "CSDY5533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0B3136F67A",
+    "label": "Critical Discussion",
+    "description": "Participate in critical discussions on women-related media issues",
+    "courses": [
+      "MCOM4313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-65C905D499",
+    "label": "Critical Listening",
+    "description": "Learning to critically listen to and evaluate jazz and commercial music performances.",
+    "courses": [
+      "MPER5611"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-82E98CB54A",
+    "label": "Critical Thinking",
+    "description": "Develop analytical skills in the interpretation of complex patterns",
+    "courses": [
+      "ENG3213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-AD2DD331D8",
+    "label": "Critically Analyze Journalism",
+    "description": "Learn to critically analyze journalism and its impact on women.",
+    "courses": [
+      "MCOM5313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-98D0D30F57",
+    "label": "Critically Analyze Narrative Structure",
+    "description": "Develop skills to critically analyze narrative structure within young adult texts.",
+    "courses": [
+      "ENG5673"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E0C030C405",
+    "label": "Critically Analyze Primary Sources",
+    "description": "Develop skills for critical analysis of primary sources related to US history.",
+    "courses": [
+      "HIST1483"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BBDB22547D",
+    "label": "Critically Analyze Primary Sources",
+    "description": "Evaluating the reliability and significance of historical documents.",
+    "courses": [
+      "HIST4873"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F5E50C8079",
+    "label": "Critically Evaluate Articles",
+    "description": "Evaluate critically articles from industry and academic journals",
+    "courses": [
+      "MBA5632"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-612B936F01",
+    "label": "Critically Evaluate Comedy and Satire",
+    "description": "Analyze and critically evaluate works of comedy and satire.",
+    "courses": [
+      "CSDY5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DAFC17D8EF",
+    "label": "Critically Evaluate Data",
+    "description": "Analyzing and interpreting data related to labor market trends and policies",
+    "courses": [
+      "ECON4513"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-42B9C2AFDB",
+    "label": "Critically Evaluate Policies",
+    "description": "Evaluate the effectiveness of past and present urban policies.",
+    "courses": [
+      "POL5013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5B54F2F74C",
+    "label": "Critically Evaluate Sources",
+    "description": "Assess the reliability and validity of historical sources and evidence.",
+    "courses": [
+      "HIST1013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F4A55E8B12",
+    "label": "Critically Evaluate Sources",
+    "description": "Assessing primary and secondary sources to evaluate their credibility and relevance to the study of women in the American West",
+    "courses": [
+      "HIST5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F3BFC4F716",
+    "label": "Critically Evaluate Sources",
+    "description": "Learn to critically evaluate various sources of information related to the history of Southeast Asia.",
+    "courses": [
+      "HIST4863"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-43EED3E57F",
+    "label": "Critically Evaluate Writings",
+    "description": "Analyze and critique the works of contemporary comic and satirical writers.",
+    "courses": [
+      "CSDY4423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-32622AE6D4",
+    "label": "Critically Examine Leadership",
+    "description": "Analyzing leadership from a critical perspective related to women.",
+    "courses": [
+      "MCOM3533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0679D651ED",
+    "label": "Critically Read Young Adult Texts",
+    "description": "Develop the ability to critically read and interpret young adult texts.",
+    "courses": [
+      "ENG4673"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D72E4FBF7A",
+    "label": "Critique Female Narratives",
+    "description": "Analyze the narrative structure of female-authored literature",
+    "courses": [
+      "ENG5683"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-ABF3636957",
+    "label": "Critique Peer Work",
+    "description": "Giving constructive feedback on peer-written work",
+    "courses": [
+      "CSDY4273"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0C189237BD",
+    "label": "Critique Short Stories",
+    "description": "Evaluate and critique various short stories based on learned skills",
+    "courses": [
+      "CSDY4283"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5CD1697A35",
+    "label": "Critique Silencing",
+    "description": "Assess how silencing has influenced women's roles and identities in Spanish America",
+    "courses": [
+      "SPAN4303"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0CD9054863",
+    "label": "Critique Writing of Others",
+    "description": "Ability to provide constructive feedback on the writing of others in a professional setting.",
+    "courses": [
+      "CJ1313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4C5E04CEA2",
+    "label": "Cross-cultural Understanding",
+    "description": "Gain insights into various world literatures and cultures",
+    "courses": [
+      "ENG3213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-37FA3F49BD",
+    "label": "Cultural Awareness",
+    "description": "Gain understanding of the historical and cultural context of various choral works",
+    "courses": [
+      "MPER2010"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C89BD0D506",
+    "label": "Cultural Sensitivity",
+    "description": "Develop a nuanced understanding of cultural differences and similarities",
+    "courses": [
+      "ENG3213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F310A3B9B3",
+    "label": "Define Functions",
+    "description": "Formulate and manipulate functions as mathematical objects",
+    "courses": [
+      "MATH2013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9125AD3A33",
+    "label": "Deliver Hazard Training",
+    "description": "Implement delivery methods for successful hazard communication programs.",
+    "courses": [
+      "SFTY5412"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A49ACA38D6",
+    "label": "Deliver Training",
+    "description": "Present information about hazards in an engaging and understandable manner",
+    "courses": [
+      "SFTY4412"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A108049FE1",
+    "label": "Demonstrate Senior-Level Understanding",
+    "description": "Demonstrate a mature understanding of complex religious, historical, and cultural topics.",
+    "courses": [
+      "HUM4323"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E4FEA0528B",
+    "label": "Design Adapted Programs",
+    "description": "Competency to develop physical education and recreation programs for exceptional children",
+    "courses": [
+      "PHED5602"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1AD8B44B2A",
+    "label": "Design Production Elements",
+    "description": "Learn production design principles for television documentaries",
+    "courses": [
+      "MCOM4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4946598ED0",
+    "label": "Design Training",
+    "description": "Plan and structure effective hazard training programs",
+    "courses": [
+      "SFTY4412"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-04E1A2C294",
+    "label": "Design Training Programs",
+    "description": "Develop strategies for effective hazard training program designs.",
+    "courses": [
+      "SFTY5412"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-633FBA3A80",
+    "label": "Develop Awareness of Victim Services Needs",
+    "description": "Recognize the needs and challenges faced by victims in the criminal justice system.",
+    "courses": [
+      "CJ4323"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D0A875CC5C",
+    "label": "Develop Critical Thinking",
+    "description": "Formulate critical thinking skills in analyzing literature and social issues pertaining to women in Spanish America",
+    "courses": [
+      "SPAN4303"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-192054D602",
+    "label": "Develop Critical Thinking Skills",
+    "description": "Critically analyze societal responses to women outside the norm",
+    "courses": [
+      "HUM5143"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5C58615AA2",
+    "label": "Develop Cross-Cultural Awareness",
+    "description": "Foster an appreciation for diverse literary traditions and their cultural implications",
+    "courses": [
+      "ENG3193"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D4DB8FF690",
+    "label": "Develop Cross-Disciplinary Knowledge",
+    "description": "Gaining knowledge in both communications and leadership through cross-listing with LEAD 3533.",
+    "courses": [
+      "MCOM3533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-260612F2EB",
+    "label": "Develop Cultural Awareness",
+    "description": "Students will cultivate an understanding and appreciation for the diverse cultures that have shaped world history.",
+    "courses": [
+      "HIST1023"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2B0A51523D",
+    "label": "Develop Curricular Strategies",
+    "description": "Design curricular development strategies for special education",
+    "courses": [
+      "SPED4322"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-835D88B53A",
+    "label": "Develop Efficiency Concepts",
+    "description": "Skill to develop concepts related to market efficiency",
+    "courses": [
+      "ECON3203"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-491051C5D2",
+    "label": "Develop Historical Analysis",
+    "description": "Crafting historical analyses to understand the role of women in shaping the American West",
+    "courses": [
+      "HIST5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B9650B1917",
+    "label": "Develop Historical Argumentation",
+    "description": "Constructing well-reasoned, evidence-based arguments about the U.S. history.",
+    "courses": [
+      "HIST4873"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1B4482C63B",
+    "label": "Develop Historical Contextualization",
+    "description": "Learn to situate events, people, and ideas within their historical context within Tudor-Stuart England.",
+    "courses": [
+      "HIST5653"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-41E7DBD5D7",
+    "label": "Develop Historical Empathy",
+    "description": "Cultivate an understanding of the unique challenges faced by Native American women throughout history.",
+    "courses": [
+      "HIST4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-636E5CC791",
+    "label": "Develop Historical Perspective",
+    "description": "Develop a broader historical perspective by understanding the long-term trends and patterns in world history.",
+    "courses": [
+      "HIST1013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-672DFA1AC5",
+    "label": "Develop Historical Perspective",
+    "description": "Cultivate a deep understanding of women's history and culture across various time periods in China.",
+    "courses": [
+      "HIST4453"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-474F9337E9",
+    "label": "Develop Historical Perspective",
+    "description": "Gain a comprehensive historical perspective on the role of women in Western civilization",
+    "courses": [
+      "HUM5243"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-29C3C1761A",
+    "label": "Develop Historical Perspective",
+    "description": "Gain a historical understanding of the evolution of women's literature",
+    "courses": [
+      "ENG5683"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-CD8BF99146",
+    "label": "Develop Historical Perspective",
+    "description": "Cultivate a comprehensive historical perspective on the United States, from WWII to present.",
+    "courses": [
+      "HIST5873"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4EEA863CAE",
+    "label": "Develop Intercultural Sensitivity",
+    "description": "Cultivate an appreciation for diverse religious perspectives and beliefs.",
+    "courses": [
+      "HUM5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BB4B5762DC",
+    "label": "Develop Leadership Skills",
+    "description": "Enhance leadership abilities in traumatic situations.",
+    "courses": [
+      "MCOM5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0E42F6F257",
+    "label": "Develop Perspective on Contemporary YA Lit",
+    "description": "Cultivate a thoughtful perspective on contemporary young adult literature.",
+    "courses": [
+      "ENG5673"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BDD7F26328",
+    "label": "Develop Special Projects in Selected Areas",
+    "description": "Formulate and execute special projects focused on specific areas within medical technology",
+    "courses": [
+      "CHEM4351"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BF3BA2BDAF",
+    "label": "Develop Sustainable Urban Policies",
+    "description": "Design effective policies to promote sustainable urban development.",
+    "courses": [
+      "POL5363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-66DDE2A9F8",
+    "label": "Develop Theoretical Perspectives",
+    "description": "Formulating theoretical perspectives on urban sustainability",
+    "courses": [
+      "POL4363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7B276AF6F7",
+    "label": "Develop Understanding of Governance",
+    "description": "Gain an understanding of the development and workings of representative governments in Southeast Asia.",
+    "courses": [
+      "HIST4863"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8180A1A8AE",
+    "label": "Develop Vocal Techniques",
+    "description": "Learn various techniques for improving vocal clarity, expressiveness, projection, and confidence",
+    "courses": [
+      "THRT3513"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-086B7C9E7D",
+    "label": "Develop Writing Skills",
+    "description": "Improve overall writing abilities with a focus on comic books and graphic novels.",
+    "courses": [
+      "CSDY4723"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-839E3FA783",
+    "label": "Develop Writing Skills for Multiple Age Groups",
+    "description": "Fine-tune writing skills to cater to diverse age groups effectively.",
+    "courses": [
+      "CSDY5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7B35253D9F",
+    "label": "Develop Writing Voice",
+    "description": "Develop a unique voice in comic and satiric writing that resonates with audiences.",
+    "courses": [
+      "CSDY4423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EF01013DB3",
+    "label": "Dialect Analysis",
+    "description": "Analyze dialects for stage performance purposes",
+    "courses": [
+      "THRT3513"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-875B4FE374",
+    "label": "Directing Abilities",
+    "description": "Leading actors and crew to execute a vision",
+    "courses": [
+      "MCOM3243"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BD70881958",
+    "label": "Discuss Cultural Shifts",
+    "description": "Exploring shifts in cultural norms and attitudes towards women in the American West",
+    "courses": [
+      "HIST5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-99726F5900",
+    "label": "Discuss Current Issues",
+    "description": "Learn to discuss and debate current issues related to women in media.",
+    "courses": [
+      "MCOM5313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6D3D82F9CF",
+    "label": "Discuss Current Issues",
+    "description": "Analyze and discuss current issues in sales force management",
+    "courses": [
+      "MBA5632"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D3A7CEE21F",
+    "label": "Discuss Literature",
+    "description": "Skill in discussing literary composition with peers",
+    "courses": [
+      "CSDY3333"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4BCD159928",
+    "label": "Discuss Policy Implications",
+    "description": "Explore the implications of urban government policies for municipal administrations in the U.S., with an emphasis on Oklahoma governments.",
+    "courses": [
+      "POL5183"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1F38D78E8B",
+    "label": "Discuss Theory Application",
+    "description": "Skill in discussing the application of literary theory to practical writing",
+    "courses": [
+      "CSDY3333"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-535E76A8F9",
+    "label": "Distinguish Differences",
+    "description": "Discern and articulate differences in religious traditions.",
+    "courses": [
+      "HUM5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7E3BC5E686",
+    "label": "Diverse Author Analysis",
+    "description": "Competency in understanding and interpreting works by a diverse group of authors",
+    "courses": [
+      "CSDY3333"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-050FE34472",
+    "label": "Draft Probation Reports",
+    "description": "Knowledge of how to create comprehensive probation reports.",
+    "courses": [
+      "CJ1313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-686E7FFD25",
+    "label": "Edit Documentary Content",
+    "description": "Acquire editing skills to effectively combine video, audio, and other content in a documentary",
+    "courses": [
+      "MCOM4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EB67A8AEEB",
+    "label": "Edit Video Sequences",
+    "description": "Manipulate and arrange video clips to create coherent narratives",
+    "courses": [
+      "MCOM3013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-65CE8E0BD7",
+    "label": "Editing Techniques",
+    "description": "Manipulating videos to create compelling narratives",
+    "courses": [
+      "MCOM3243"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DC117552B6",
+    "label": "Electronic News Gathering",
+    "description": "Students will gain skills in electronic news gathering",
+    "courses": [
+      "MCOM3033"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6EB26E6060",
+    "label": "Eliminate Posture Dysfunctions",
+    "description": "Correcting poor posture for performance",
+    "courses": [
+      "THRT1613"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C71CE25D81",
+    "label": "Empathize with victims",
+    "description": "Cultivating empathy for victims and their experiences during media coverage.",
+    "courses": [
+      "MCOM4433"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D1F52EBF48",
+    "label": "Employ Existential Techniques",
+    "description": "Learn to employ existential techniques in trauma counseling for substance abuse cases.",
+    "courses": [
+      "SAS5633"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-62B30D45F3",
+    "label": "Engage with Diverse Perspectives",
+    "description": "Explore diverse perspectives on the role and worship of Goddesses in various cultures and religions.",
+    "courses": [
+      "HUM4323"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C2D8C421F6",
+    "label": "Engage with Guest Speakers",
+    "description": "Develop skills in collaborative learning and knowledge exchange with industry professionals.",
+    "courses": [
+      "MCOM5313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BBC31C02A6",
+    "label": "Enhance Reading Skills",
+    "description": "Improve reading comprehension through vocabulary expansion.",
+    "courses": [
+      "ENG1253"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3BDE6E1C2B",
+    "label": "Ensemble Collaboration",
+    "description": "Learn to collaborate effectively within a jazz ensemble.",
+    "courses": [
+      "MPER3341"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1072AC271F",
+    "label": "Ensemble Leadership",
+    "description": "Learning to lead a group in ensemble performance.",
+    "courses": [
+      "MPER5611"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-40D0F9CA2D",
+    "label": "Estimate Demand",
+    "description": "Developing the ability to estimate demand in various market scenarios.",
+    "courses": [
+      "ECON5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5C138B0437",
+    "label": "Estimate Parameters",
+    "description": "Learning methods for estimating parameters in a statistical model",
+    "courses": [
+      "STAT2113"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4062054FB1",
+    "label": "Ethically Address Trauma",
+    "description": "Learn ethical considerations when dealing with traumatic events in the communications field.",
+    "courses": [
+      "MCOM5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6E5E3C5511",
+    "label": "Evaluate Adolescent Audience Impact",
+    "description": "Learn to evaluate how young adult literature affects and resonates with an adolescent audience.",
+    "courses": [
+      "ENG5673"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-970A9E1E0E",
+    "label": "Evaluate Adolescent Audience Impact",
+    "description": "Assess how texts impact an adolescent audience.",
+    "courses": [
+      "ENG4673"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-87626069E1",
+    "label": "Evaluate Children's Literature Quality",
+    "description": "Critically evaluate the quality of children's literature",
+    "courses": [
+      "CSDY4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2EBFD3762F",
+    "label": "Evaluate Contemporary Institutions",
+    "description": "Assess contemporary political, social, and economical urban institutions.",
+    "courses": [
+      "POL5013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-695C6A03A5",
+    "label": "Evaluate Contemporary Opportunities",
+    "description": "Assessing current opportunities available to women leaders.",
+    "courses": [
+      "MCOM3533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0080899910",
+    "label": "Evaluate Cultural Responses",
+    "description": "Assess various cultural, literary, psychological, philosophical, and religious responses to and interpretations of such traditions.",
+    "courses": [
+      "HUM4323"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-317EEDBBB6",
+    "label": "Evaluate Economic Developments",
+    "description": "Analyzing the evolution of economic systems and their impacts.",
+    "courses": [
+      "HIST4873"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1A9D84D5AE",
+    "label": "Evaluate Economic Developments",
+    "description": "Learn to assess economic transformations that have occurred in the United States since WWII.",
+    "courses": [
+      "HIST5873"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E8FBD04825",
+    "label": "Evaluate Female Writers",
+    "description": "Assess literary criticism by women writers",
+    "courses": [
+      "ENG5683"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-72A7057204",
+    "label": "Evaluate General Theory",
+    "description": "Understand the underlying theory of control chart applications.",
+    "courses": [
+      "STAT5253"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-992AA8F0E6",
+    "label": "Evaluate Historical Context",
+    "description": "Assess the social, political, and economic context of U.S. history from 1877 to the present.",
+    "courses": [
+      "HIST1493"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3B583FDF0D",
+    "label": "Evaluate Historical Developments",
+    "description": "Students will be able to assess the progressions and transformations in world history over time.",
+    "courses": [
+      "HIST1023"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-35A870FF3D",
+    "label": "Evaluate Historical Perspectives",
+    "description": "Assess various historical viewpoints on the Tudor-Stuart period, fostering a nuanced understanding.",
+    "courses": [
+      "HIST5653"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C8A981DEE1",
+    "label": "Evaluate Indigenous Community Changes",
+    "description": "Assess the impact of broader societal changes on indigenous communities.",
+    "courses": [
+      "HIST4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4ED345CFD8",
+    "label": "Evaluate Market Performance",
+    "description": "Assess market performance based on structure and conduct",
+    "courses": [
+      "ECON5363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D1B21F909E",
+    "label": "Evaluate Media Portrayal",
+    "description": "Assess the representation of women as subjects of media.",
+    "courses": [
+      "MCOM5313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E6D2E4AADB",
+    "label": "Evaluate Medical Trends",
+    "description": "Analyze medical trends in the special education field",
+    "courses": [
+      "SPED4322"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-22EE9D2B9F",
+    "label": "Evaluate Municipal Administration",
+    "description": "Assess the administrative aspects of U.S. municipal governments, with an emphasis on those in Oklahoma.",
+    "courses": [
+      "POL5183"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A8C5CB4353",
+    "label": "Evaluate Narrative Structures",
+    "description": "Critically analyzing the structure and meaning of narratives related to Western women",
+    "courses": [
+      "HIST4423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C85B470BBA",
+    "label": "Evaluate Offender Behavior",
+    "description": "Learn to evaluate the behavior, motivations, and profiles of white collar offenders.",
+    "courses": [
+      "CJ4533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-029F00F7FF",
+    "label": "Evaluate Oklahoma's Urban Sustainability Efforts",
+    "description": "Assessing the pursuit of sustainable development in Oklahoma's urban areas",
+    "courses": [
+      "POL4363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FD651C492F",
+    "label": "Evaluate Oklahoma-specific Urban Sustainability",
+    "description": "Analyze and critique the pursuit of sustainability in Oklahoma cities.",
+    "courses": [
+      "POL5363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-866AD7027C",
+    "label": "Evaluate Perspectives",
+    "description": "Assessing diverse perspectives on the experiences of women in the American West",
+    "courses": [
+      "HIST5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E62BA74CF5",
+    "label": "Evaluate Planning Policies",
+    "description": "Gain skills in evaluating planning policies and controls.",
+    "courses": [
+      "POL5173"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-CD0A3261F2",
+    "label": "Evaluate primary sources",
+    "description": "Critically assess historical records and artifacts relevant to Native women's experiences",
+    "courses": [
+      "HIST5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-28B13F7306",
+    "label": "Evaluate Program Effectiveness",
+    "description": "Assess the efficacy of a hazard communication program and make improvements as needed",
+    "courses": [
+      "SFTY4412"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9BF14229EC",
+    "label": "Evaluate Social Barriers for Women",
+    "description": "Assess barriers placed upon women in various aspects of life",
+    "courses": [
+      "HUM5243"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-19D11F72D0",
+    "label": "Evaluate Sources",
+    "description": "Assess primary and secondary sources related to US history up to 1877.",
+    "courses": [
+      "HIST1483"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A6B5728640",
+    "label": "Evaluate Statistical Significance",
+    "description": "Assess statistical significance in non-parametric hypothesis testing.",
+    "courses": [
+      "STAT5303"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D14E72EC03",
+    "label": "Evaluate Trends",
+    "description": "Assess trends in sales force management",
+    "courses": [
+      "MBA5632"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8AF381542A",
+    "label": "Evaluate Union Impact",
+    "description": "Assessing the effect of unions on labor markets",
+    "courses": [
+      "ECON4513"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8F73241286",
+    "label": "Evaluate Urban Impact",
+    "description": "Students will learn how to evaluate urban and socio-economic impacts using GIS.",
+    "courses": [
+      "GEO5733"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F15CCD2C31",
+    "label": "Evaluate Victim Services",
+    "description": "Assess the effectiveness of various victim services programs.",
+    "courses": [
+      "CJ4323"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-277074D798",
+    "label": "Evaluate Western Colonialisms",
+    "description": "Assess the impact and implications of western colonialism on Southeast Asia.",
+    "courses": [
+      "HIST4863"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A89BF80F00",
+    "label": "Evaluate Women's Agency",
+    "description": "Analyze the agency of women throughout Chinese history amid different cultural and political contexts.",
+    "courses": [
+      "HIST4453"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BD9C8E2441",
+    "label": "Evaluate Writing Techniques",
+    "description": "Critically evaluate techniques used in effective children's literature.",
+    "courses": [
+      "CSDY5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BF2307DFE3",
+    "label": "Evidence Gathering",
+    "description": "Collect and preserve evidence from traffic accidents according to protocol",
+    "courses": [
+      "CJ1563"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-932F0AE82C",
+    "label": "Evidence Preservation",
+    "description": "Maintain the integrity of collected evidence during traffic accident investigations",
+    "courses": [
+      "CJ1563"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B86A17C54D",
+    "label": "Examine Capitalism's Influence",
+    "description": "Investigate the effects of state-sponsored capitalism on women in modern China.",
+    "courses": [
+      "HIST5453"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E4548786F6",
+    "label": "Examine Criminal Justice System Interaction",
+    "description": "Demonstrate understanding of how crime victims interact within the criminal justice system.",
+    "courses": [
+      "CJ4323"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DFF1FBC638",
+    "label": "Examine Historical Phenomena",
+    "description": "Analyze and understand historical religious traditions involving the worship of Goddesses.",
+    "courses": [
+      "HUM4323"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C4248DB09A",
+    "label": "Examine Impact of Colonialism",
+    "description": "Assess the influence of Western colonialism on Southeast Asian societies",
+    "courses": [
+      "HIST5863"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-73F5659622",
+    "label": "Examine Nationalist Movements",
+    "description": "Investigate nationalist movements and their role in shaping modern Southeast Asian nations.",
+    "courses": [
+      "HIST4863"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7258A125E3",
+    "label": "Examine Native Women's Histories",
+    "description": "Analyze the historical experiences of Native women within their indigenous communities.",
+    "courses": [
+      "HIST4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E192878902",
+    "label": "Examine Political Environments",
+    "description": "Investigate the political environment of municipal governments in the United States, particularly focusing on those in Oklahoma.",
+    "courses": [
+      "POL5183"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2B4CC5D38E",
+    "label": "Examine Religious Manifestations",
+    "description": "Investigate various means by which religions are expressed and understood",
+    "courses": [
+      "HUM4113"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B3DE97301B",
+    "label": "Examine Social Structures",
+    "description": "Learn about the social hierarchies, classes, and their evolution during this era.",
+    "courses": [
+      "HIST5653"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-51ECC9FD26",
+    "label": "Examine Social Transformations",
+    "description": "Identifying and interpreting changes in social dynamics and trends.",
+    "courses": [
+      "HIST4873"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-31542CFE0F",
+    "label": "Examine Social Welfare Implications",
+    "description": "Identify and analyze the implications of industrial organization on social welfare",
+    "courses": [
+      "ECON5363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7C2FD07B38",
+    "label": "Examine Women's Navigation Strategies",
+    "description": "Study strategies used by women to navigate social constraints throughout history.",
+    "courses": [
+      "HIST3423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BF7042713F",
+    "label": "Execute Special Procedures",
+    "description": "Learn to execute special laboratory techniques in clinical chemistry.",
+    "courses": [
+      "CHEM4325"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A02E147492",
+    "label": "Execute Special Projects",
+    "description": "Plan, organize, and carry out special projects within selected areas of medical technology",
+    "courses": [
+      "CHEM4351"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FB8E14AD2D",
+    "label": "Expand Language Aptitude",
+    "description": "Broaden language proficiency by learning new words and word forms.",
+    "courses": [
+      "ENG1253"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5A71CAEC78",
+    "label": "Experimental Error Analysis",
+    "description": "Analyze and manage errors that may occur in experiments",
+    "courses": [
+      "STAT4103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E8C628410B",
+    "label": "Explain Routine & Special Procedures",
+    "description": "Acquire the ability to explain the procedures used in clinical chemistry labs.",
+    "courses": [
+      "CHEM4325"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6414162490",
+    "label": "Explain Theoretical Underpinnings of Sustainability",
+    "description": "Articulate the theories that guide sustainability in an urban context.",
+    "courses": [
+      "POL5363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2F7E432787",
+    "label": "Explore Behavioral Theories",
+    "description": "Gain knowledge about behavioral theories applicable to substance abuse treatment.",
+    "courses": [
+      "SAS5633"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-185FD3338C",
+    "label": "Explore Changing Cultural Norms",
+    "description": "Investigate shifts in cultural norms concerning women throughout history.",
+    "courses": [
+      "HIST3423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-874690D858",
+    "label": "Explore Criminal Justice System Response",
+    "description": "Learn about the challenges and responses of the criminal justice system towards white collar crimes.",
+    "courses": [
+      "CJ4533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C78AC3B067",
+    "label": "Explore Daoist & Buddhist Influences",
+    "description": "Investigate how Daoism and Buddhism have affected women in Chinese history.",
+    "courses": [
+      "HIST4453"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3615B93344",
+    "label": "Explore Daoist & Buddhist Traditions",
+    "description": "Study the role and status of women in Daoist and Buddhist traditions in China.",
+    "courses": [
+      "HIST5453"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B336ED94B8",
+    "label": "Explore gender roles in indigenous societies",
+    "description": "Investigate the varying gender roles within native communities over time",
+    "courses": [
+      "HIST5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-CB14BDFD36",
+    "label": "Explore Graph Automorphisms",
+    "description": "Investigate the symmetry properties of graphs through automorphism groups.",
+    "courses": [
+      "MATH5563"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-098D936B71",
+    "label": "Explore Historical & Cultural Contexts",
+    "description": "Gain insight into historical and cultural factors shaping women's lives in China.",
+    "courses": [
+      "HIST4453"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D4B972F166",
+    "label": "Explore Historical Themes",
+    "description": "Examine recurring themes and patterns in the history of the United States up to 1877.",
+    "courses": [
+      "HIST1483"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-74B207CC66",
+    "label": "Explore Intellectual, Artistic, Social History",
+    "description": "Investigate women's roles and influences in intellectual, artistic, and social contexts",
+    "courses": [
+      "HUM5243"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EA7029C713",
+    "label": "Explore Literary Analysis",
+    "description": "Evaluate literary interpretations of women outside societal norms",
+    "courses": [
+      "HUM5143"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7B87AADD5B",
+    "label": "Explore Literary History",
+    "description": "Gain knowledge of the history and evolution of young adult literature.",
+    "courses": [
+      "ENG5673"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C77B839849",
+    "label": "Explore Military History",
+    "description": "Gain knowledge about significant military events during this period",
+    "courses": [
+      "HIST4653"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-82F21D0FFD",
+    "label": "Explore Military History",
+    "description": "Gain knowledge about military conflicts and their impact during the Tudor-Stuart period.",
+    "courses": [
+      "HIST5653"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-741174F658",
+    "label": "Explore Minor Religious Traditions",
+    "description": "Familiarize oneself with less common religious traditions, as time permits.",
+    "courses": [
+      "HUM5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6891B5A00F",
+    "label": "Explore Mobility Patterns",
+    "description": "Identifying patterns of mobility among women in the American West over time",
+    "courses": [
+      "HIST5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B88D5F1F14",
+    "label": "Explore Otherness",
+    "description": "Understand the concept of otherness as it pertains to women in Spanish America",
+    "courses": [
+      "SPAN4303"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-871363C0D2",
+    "label": "Explore Planarity",
+    "description": "Identify and analyze planar graphs.",
+    "courses": [
+      "MATH5563"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D734BE9AA0",
+    "label": "Explore Proactive Approaches",
+    "description": "Learn proactive strategies for managing workplace trauma.",
+    "courses": [
+      "MCOM5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3FBBC7F8F2",
+    "label": "Explore Religious Manifestations",
+    "description": "Investigate various means through which religions are expressed.",
+    "courses": [
+      "HUM5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-28C4BA1C35",
+    "label": "Explore Shaping Influences",
+    "description": "Identifying how women's influence has contributed to shaping the American West",
+    "courses": [
+      "HIST4423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9028F820EC",
+    "label": "Explore Social Movements",
+    "description": "Evaluate the role of social movements in shaping American society and history.",
+    "courses": [
+      "HIST1493"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F208735791",
+    "label": "Explore Social Transformations",
+    "description": "Develop skills in understanding and interpreting social shifts in the U.S., post-1945.",
+    "courses": [
+      "HIST5873"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3EA16B7F98",
+    "label": "Explore Societal Changes",
+    "description": "Assess societal changes impacting people with disabilities",
+    "courses": [
+      "SPED4322"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-71524920C1",
+    "label": "Explore Success Strategies",
+    "description": "Learning strategies for personal success as a woman leader.",
+    "courses": [
+      "MCOM3533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6DDD68FFA9",
+    "label": "Explore Successful Writing Habits",
+    "description": "Learn from successful authors in the field of children's literature.",
+    "courses": [
+      "CSDY5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-98B1A92572",
+    "label": "Explore Successful Writing Habits",
+    "description": "Investigate the habits of successful children's writers",
+    "courses": [
+      "CSDY4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4BDB8848C8",
+    "label": "Explore Tree Properties",
+    "description": "Identify and study the characteristics of trees in a graph.",
+    "courses": [
+      "MATH5563"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-47AA17DEF0",
+    "label": "Explore Women's Mobility",
+    "description": "Analyzing patterns of movement and migration for women across the American West",
+    "courses": [
+      "HIST4423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-69BF06D62D",
+    "label": "Explore Writing History",
+    "description": "Learn about the history of writing for children",
+    "courses": [
+      "CSDY4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0978C6CEF8",
+    "label": "Expressive Intonation Analysis",
+    "description": "Analyzing and enhancing expressive intonation in speech",
+    "courses": [
+      "THRT2233"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-22BB9F5094",
+    "label": "Expressiveness Enhancement",
+    "description": "Enhance the expressiveness of vocal delivery for better performance",
+    "courses": [
+      "THRT3513"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-455C9FDE3D",
+    "label": "Field Analysis Procedures",
+    "description": "Follow procedures for field analyses on samples from CBRNE events",
+    "courses": [
+      "FRSC5553"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-CC1887EB56",
+    "label": "Field Analysis Skills",
+    "description": "Perform field analyses on samples from CBRNE events",
+    "courses": [
+      "FRSC5553"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9C7E74FC4D",
+    "label": "Field Experience",
+    "description": "Ability to participate in field experiences related to physical education and recreation for exceptional children",
+    "courses": [
+      "PHED5602"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B3A8FA6BF2",
+    "label": "Finite Automata",
+    "description": "Design machines with a fixed number of states for language recognition.",
+    "courses": [
+      "CMSC4173"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1C82D3A7E1",
+    "label": "Finite Automata Application",
+    "description": "Using finite automata in programming language translation",
+    "courses": [
+      "CMSC5073"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9A61F1D557",
+    "label": "Fit Exponential Growth Curves",
+    "description": "Develop skills in fitting exponential growth curves to data",
+    "courses": [
+      "STAT5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A5392F7876",
+    "label": "Fit Linear Data",
+    "description": "Apply techniques to fit linear equations to data sets",
+    "courses": [
+      "STAT5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8A75715EE9",
+    "label": "Fit Orthogonal Polynomials",
+    "description": "Understand and apply orthogonal polynomial fitting techniques",
+    "courses": [
+      "STAT5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-CAB06F2159",
+    "label": "Fit Polynomial Data",
+    "description": "Learn methods for fitting polynomial functions to data",
+    "courses": [
+      "STAT5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0DB45A6B3A",
+    "label": "Floor Exercises",
+    "description": "Physical exercises for body relaxation",
+    "courses": [
+      "THRT1613"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E67EC8E789",
+    "label": "Follow safety protocols",
+    "description": "Adhere to guidelines for handling potentially hazardous materials.",
+    "courses": [
+      "FRSC4553"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-26340DAAA5",
+    "label": "Forecast Economic Trends",
+    "description": "Developing skills in economic forecasting for business decision making.",
+    "courses": [
+      "ECON5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-CE419EABB3",
+    "label": "Forecast Future Trends",
+    "description": "Develop the ability to forecast potential future developments for women in media.",
+    "courses": [
+      "MCOM5313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7A3832739E",
+    "label": "Form Government Analysis",
+    "description": "Explore the formation of nations and representative governments in Southeast Asia",
+    "courses": [
+      "HIST5863"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-694B06C514",
+    "label": "Formulate Critical Opinions",
+    "description": "Develop and express critical opinions about women's literature",
+    "courses": [
+      "ENG5683"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6B66BD76F9",
+    "label": "Formulate Policy Alternatives",
+    "description": "Propose policy alternatives based on analyzed market structures, performance, and conduct",
+    "courses": [
+      "ECON5363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2AD0233746",
+    "label": "Fundraising Composition",
+    "description": "Create persuasive fundraising materials",
+    "courses": [
+      "ENG5393"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BFD209C456",
+    "label": "Fundraising Writing",
+    "description": "Compose persuasive fundraising materials",
+    "courses": [
+      "ENG4643"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-83D331E6C1",
+    "label": "Future Scenario Analysis",
+    "description": "Explore and discuss possible future issues related to women in media",
+    "courses": [
+      "MCOM4313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6E71AFA053",
+    "label": "Generate Content",
+    "description": "Creating original material for video-based reporting",
+    "courses": [
+      "MCOM2203"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BC8F363AB6",
+    "label": "Genre Adaptation",
+    "description": "Apply genre conventions to nonprofit writing",
+    "courses": [
+      "ENG5393"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E3D6D2D123",
+    "label": "Genre Conventions",
+    "description": "Understanding and applying conventions of different genres",
+    "courses": [
+      "CSDY3363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B247CE3CF1",
+    "label": "Genre Conventions",
+    "description": "Understand and apply conventions of the comic book/graphic novel genre",
+    "courses": [
+      "CSDY5723"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-40365EDE87",
+    "label": "Genre-specific Writing Techniques",
+    "description": "Apply appropriate writing techniques to various television genres",
+    "courses": [
+      "CSDY5533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9B81A713FB",
+    "label": "Grants Writing",
+    "description": "Compose and structure grant applications",
+    "courses": [
+      "ENG5393"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-84D2AB6FBA",
+    "label": "Graphic Novel Creation",
+    "description": "Learn to create graphic novels",
+    "courses": [
+      "CSDY5723"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F793516C70",
+    "label": "Group Collaboration",
+    "description": "Working effectively in group settings for physical control and text analysis",
+    "courses": [
+      "THRT2233"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1B06C039E9",
+    "label": "Guest Speaker Engagement",
+    "description": "Engage with guest speakers on the topic of women in media",
+    "courses": [
+      "MCOM4313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-49012B0065",
+    "label": "Historical Analysis",
+    "description": "Exploring the history of dramatic writing",
+    "courses": [
+      "CSDY3363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DAF1AAD117",
+    "label": "Historical Analysis",
+    "description": "Perform historical analysis of urban policy and administration.",
+    "courses": [
+      "POL5013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-359D13B7D9",
+    "label": "Historical Contextualization",
+    "description": "Understand historical contexts related to women in media",
+    "courses": [
+      "MCOM4313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0A0C169DE5",
+    "label": "Historical Overview",
+    "description": "Understand the history of comic books and graphic novels",
+    "courses": [
+      "CSDY5723"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B3FA61D295",
+    "label": "Historically-informed Reading",
+    "description": "Learn to read literary texts with an awareness of their historical significance",
+    "courses": [
+      "ENG3213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F95662DFFA",
+    "label": "Identify Causes and Consequences",
+    "description": "Recognize causes and consequences of significant events and trends in U.S. history.",
+    "courses": [
+      "HIST1493"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1CFA381451",
+    "label": "Identify CBRNE Agents",
+    "description": "Recognize chemical, biological, radiological, nuclear, and explosive agents related to terrorism events",
+    "courses": [
+      "FRSC5553"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-70F006A1A0",
+    "label": "Identify CBRNE agents",
+    "description": "Recognize chemical, biological, radiological, nuclear, and explosive substances in various contexts.",
+    "courses": [
+      "FRSC4553"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-52DE4C4B09",
+    "label": "Identify Complex Patterns",
+    "description": "Detect complex patterns in the literary works studied",
+    "courses": [
+      "ENG3193"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-62530819B4",
+    "label": "Identify Cultural Influences",
+    "description": "Learn to recognize and discuss the cultural influences on political, military, and social aspects of Tudor-Stuart England",
+    "courses": [
+      "HIST4653"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E436259E8F",
+    "label": "Identify Cultural Parallels",
+    "description": "Recognize cultural similarities within various religious beliefs.",
+    "courses": [
+      "HUM5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C3D123541B",
+    "label": "Identify Global Impact Factors",
+    "description": "Students will learn to recognize and describe factors that have influenced global developments since 1450.",
+    "courses": [
+      "HIST1023"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C4C2D911E3",
+    "label": "Identify Government Structures",
+    "description": "Recognize and identify various government structures within the urban context, particularly those prevalent in Oklahoma municipalities.",
+    "courses": [
+      "POL5183"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7542949062",
+    "label": "Identify Hazards",
+    "description": "Recognize potential hazards and risks in various contexts.",
+    "courses": [
+      "SFTY5412"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-82FCCE0F3D",
+    "label": "Identify Hazards",
+    "description": "Recognize and categorize potential hazards in a work environment",
+    "courses": [
+      "SFTY4412"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-30EDEE2A08",
+    "label": "Identify Historical Connections",
+    "description": "Recognize and analyze the political, social, and cultural links in world history up to 1450.",
+    "courses": [
+      "HIST1013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7B772C8675",
+    "label": "Identify Historical Trends",
+    "description": "Recognize and analyze trends in US history during this time period.",
+    "courses": [
+      "HIST1483"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-04624F35ED",
+    "label": "Identify Interactions Among Cultures",
+    "description": "Recognize patterns of influence among world literatures and cultures",
+    "courses": [
+      "ENG3213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D31A1DA428",
+    "label": "Identify journalistic ethics",
+    "description": "Recognizing ethical considerations in reporting on traumatic events and their impact on victims.",
+    "courses": [
+      "MCOM4433"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DFC39E0F6D",
+    "label": "Identify Legislation",
+    "description": "Recognize and interpret legislation affecting special education",
+    "courses": [
+      "SPED4322"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7EA4AE9888",
+    "label": "Identify Literary Themes",
+    "description": "Recognize recurring themes in literature written by women",
+    "courses": [
+      "ENG5683"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EBC46D37E6",
+    "label": "Identify Market Failures",
+    "description": "Skill to identify potential market failures",
+    "courses": [
+      "ECON3203"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BDD8497852",
+    "label": "Identify Parallels in Beliefs",
+    "description": "Recognize patterns and parallels across diverse religious beliefs",
+    "courses": [
+      "HUM4113"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A10537ED2F",
+    "label": "Identify Political, Economic, Religious Factors",
+    "description": "Understand factors affecting women in public and private life",
+    "courses": [
+      "HUM5243"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3ECFD0C6B9",
+    "label": "Identify Strategies for Change",
+    "description": "Recognizing strategies that promote success for women in leadership roles.",
+    "courses": [
+      "MCOM3533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FC7BF97042",
+    "label": "Identify Workplace Trauma",
+    "description": "Recognize and name traumatic events within the communications industry.",
+    "courses": [
+      "MCOM5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-AD2B2A0802",
+    "label": "Identify Zoning Regulations",
+    "description": "Develop competency in identifying zoning regulations.",
+    "courses": [
+      "POL5173"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F33AFA49EC",
+    "label": "Implement Basic Management",
+    "description": "Apply basic management strategies in a medical laboratory setting",
+    "courses": [
+      "CHEM4351"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F844DA0265",
+    "label": "Implement HCP",
+    "description": "Establish and manage a comprehensive Hazard Communication Program",
+    "courses": [
+      "SFTY4412"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5F022DC9F6",
+    "label": "Implement Logistic Regression",
+    "description": "Skill in applying logistic regression for binary outcomes prediction",
+    "courses": [
+      "STAT5213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0413A00B60",
+    "label": "Implement Sustainable Strategies",
+    "description": "Applying sustainable strategies in urban planning and development",
+    "courses": [
+      "POL4363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D7E0D7DE06",
+    "label": "Implement Urban Planning",
+    "description": "Use GIS in urban and regional planning",
+    "courses": [
+      "GEO4733"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3BB6D65B62",
+    "label": "Improve Communication Skills",
+    "description": "Enhance communication abilities to effectively convey hazard information.",
+    "courses": [
+      "SFTY5412"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-985BABC765",
+    "label": "Improve Verbal IQ",
+    "description": "Develop verbal intelligence through extensive vocabulary.",
+    "courses": [
+      "ENG1253"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3F01D78CD6",
+    "label": "Improve Writing Skills",
+    "description": "Develop and refine writing skills for various age groups in children",
+    "courses": [
+      "CSDY4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-793A232913",
+    "label": "Internal Communication",
+    "description": "Compose effective internal communications",
+    "courses": [
+      "ENG4643"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-23D48D932E",
+    "label": "Internal Communication",
+    "description": "Develop clear and concise internal communications",
+    "courses": [
+      "ENG5393"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-24F5E724F1",
+    "label": "Interpret Academic Readings",
+    "description": "Understand and interpret academic literature related to sales force management",
+    "courses": [
+      "MBA5632"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F50D78A9FE",
+    "label": "Interpret Cultural Evolutions",
+    "description": "Acquire skills in understanding and interpreting cultural changes within the U.S. context post-1945.",
+    "courses": [
+      "HIST5873"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A5D8328147",
+    "label": "Interpret Cultural Representations",
+    "description": "Analyzing cultural depictions and stereotypes of women in the American West",
+    "courses": [
+      "HIST5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D326325057",
+    "label": "Interpret Cultural Shifts",
+    "description": "Identify and analyze cultural changes that occurred in England from Henry VII to Queen Anne",
+    "courses": [
+      "HIST4653"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9FA665C789",
+    "label": "Interpret Diverse Perspectives",
+    "description": "Gaining skills to understand and appreciate diverse viewpoints among Western women",
+    "courses": [
+      "HIST4423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-CE9B6EB0B3",
+    "label": "Interpret General Trends",
+    "description": "Identify and analyze general trends regarding the rights and responsibilities of women.",
+    "courses": [
+      "HIST3423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6F874C71CC",
+    "label": "Interpret Historical Context",
+    "description": "Understand the historical context of events in American history up to 1877.",
+    "courses": [
+      "HIST1483"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-33F81C0C61",
+    "label": "Interpret Historical Contexts",
+    "description": "Comprehend the broader social, political, and cultural contexts within which historical events occurred.",
+    "courses": [
+      "HIST1013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-974A397938",
+    "label": "Interpret Historical Data",
+    "description": "Extract meaningful information from historical data relevant to indigenous women and gender roles.",
+    "courses": [
+      "HIST4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7C2B57B7D8",
+    "label": "Interpret Historical Sources",
+    "description": "Develop skills to critically analyze primary and secondary sources related to Tudor-Stuart England.",
+    "courses": [
+      "HIST5653"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DDBCD8DA6B",
+    "label": "Interpret Historical Texts",
+    "description": "Gain proficiency in interpreting historical texts related to the subject matter.",
+    "courses": [
+      "HUM4323"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-013A397B15",
+    "label": "Interpret Non-Parametric Results",
+    "description": "Draw meaningful conclusions based on results obtained from non-parametric statistical analyses.",
+    "courses": [
+      "STAT5303"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2A3B352445",
+    "label": "Interpret Restrictive Covenants",
+    "description": "Learn to interpret and understand restrictive covenants.",
+    "courses": [
+      "POL5173"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8083BCB1BE",
+    "label": "Interpret Samples",
+    "description": "Analyze and interpret random samples from data sets.",
+    "courses": [
+      "STAT5253"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-920F411046",
+    "label": "Interpret Statistics",
+    "description": "Learn to analyze and interpret statistics related to women in media.",
+    "courses": [
+      "MCOM5313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8946C1BFFD",
+    "label": "Interpret Urban Data",
+    "description": "Students will learn to interpret urban data for various purposes.",
+    "courses": [
+      "GEO5733"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-025851917B",
+    "label": "Investigate Communist Impacts",
+    "description": "Analyze how Communism affected the roles, rights, and opportunities for Chinese women.",
+    "courses": [
+      "HIST5453"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9460FCE70D",
+    "label": "Investigate Competitive Behavior",
+    "description": "Examining various forms of competitive behavior in markets.",
+    "courses": [
+      "ECON5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7ECA242AD7",
+    "label": "Investigate Hours of Work Determination",
+    "description": "Exploring factors influencing the number of hours worked",
+    "courses": [
+      "ECON4513"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9DFB7121D8",
+    "label": "Investigate Human Capital Investment",
+    "description": "Examining the role of human capital investment in earnings determination",
+    "courses": [
+      "ECON4513"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-02409F7E67",
+    "label": "Investigate Market Conduct",
+    "description": "Analyze market conduct within various structures",
+    "courses": [
+      "ECON5363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-722756BEEC",
+    "label": "Investigate Modern Witchcraft",
+    "description": "Examine the beliefs and practices of modern Wicca adherents",
+    "courses": [
+      "HUM5143"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FA5375C1A4",
+    "label": "Investigate Research",
+    "description": "Analyze and review relevant research in special education",
+    "courses": [
+      "SPED4322"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EDE1DCEE43",
+    "label": "Jazz Improvisation",
+    "description": "Learn and apply jazz improvisation techniques.",
+    "courses": [
+      "MPER3341"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B4AE8C5C36",
+    "label": "Lab Experience",
+    "description": "Competency to engage in laboratory experiences related to physical education and recreation for exceptional children",
+    "courses": [
+      "PHED5602"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E9C1793540",
+    "label": "Laboratory Techniques",
+    "description": "Apply laboratory techniques for CBRNE agent analysis",
+    "courses": [
+      "FRSC5553"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F1C50EA4A8",
+    "label": "Learn Current Best Practices",
+    "description": "Gain understanding of best practices in current sales force management",
+    "courses": [
+      "MBA5632"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B800142B49",
+    "label": "Legal Examination",
+    "description": "Understand and apply enforcement-related statutes related to vehicles and traffic in Oklahoma",
+    "courses": [
+      "CJ1563"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8DB713E741",
+    "label": "Lexical Analysis",
+    "description": "Recognize and translate token sequences in a programming language.",
+    "courses": [
+      "CMSC4173"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-47F86A7CAA",
+    "label": "Lexical Analysis",
+    "description": "Understanding and processing the lexical structure of a programming language",
+    "courses": [
+      "CMSC5073"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8441CD37CE",
+    "label": "Literary Period Understanding",
+    "description": "Knowledge of literary periods and their respective characteristics",
+    "courses": [
+      "CSDY3333"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C8177003E8",
+    "label": "LL & LR Grammar Implementation",
+    "description": "Designing and implementing LL(1) and LR(1) parsing techniques for compilers",
+    "courses": [
+      "CMSC5073"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0A9A5B6661",
+    "label": "LL and LR Grammars",
+    "description": "Apply bottom-up and top-down parsing techniques for language analysis.",
+    "courses": [
+      "CMSC4173"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B7E71CEA64",
+    "label": "Logistic Regression Analysis",
+    "description": "A skill in executing and interpreting logistic regression models.",
+    "courses": [
+      "STAT4213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-CD2ED516A9",
+    "label": "Manipulate Matrices",
+    "description": "Work with matrices associated with a given graph.",
+    "courses": [
+      "MATH5563"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-645190B39F",
+    "label": "Market Comic Books",
+    "description": "Gain understanding on how to market comic books and graphic novels.",
+    "courses": [
+      "CSDY4723"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-AEC0C205A0",
+    "label": "Market Literary Works",
+    "description": "Learn about marketing strategies for Science Fiction and Fantasy literature.",
+    "courses": [
+      "CSDY5583"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F1754AFDF3",
+    "label": "Market Writing",
+    "description": "Learn strategies for marketing written work in the context of science fiction and fantasy literature",
+    "courses": [
+      "CSDY4583"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-267413E660",
+    "label": "Marketing Strategies",
+    "description": "Promoting dramatic writing for various mediums",
+    "courses": [
+      "CSDY3363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A52FE11BEE",
+    "label": "Marketing Strategies",
+    "description": "Learn strategies for marketing comic books and graphic novels",
+    "courses": [
+      "CSDY5723"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D703EF35CD",
+    "label": "Master Cognitive Behavioral Methods",
+    "description": "Develop skills in cognitive behavioral methods for addressing trauma and substance abuse.",
+    "courses": [
+      "SAS5633"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B80F8C37BF",
+    "label": "Mixed Choral Literature",
+    "description": "Understanding and performing a wide variety of mixed choral music.",
+    "courses": [
+      "MPER2111"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5133B97EFF",
+    "label": "Model Industrial Organization",
+    "description": "Competency in developing theoretical models for industrial organization",
+    "courses": [
+      "ECON3203"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1EDBDCD77F",
+    "label": "Motor Development Assessment",
+    "description": "Ability to assess motor development in exceptional children through various methods",
+    "courses": [
+      "PHED5602"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7621F981F0",
+    "label": "Multiple Regression Analysis",
+    "description": "An ability to perform and interpret multiple linear regression analyses.",
+    "courses": [
+      "STAT4213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-35FB736608",
+    "label": "Music Interpretation",
+    "description": "Interpreting and expressing various choral compositions.",
+    "courses": [
+      "MPER2111"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B4B75EDCC3",
+    "label": "Music Reading",
+    "description": "Understand and interpret choral music notation",
+    "courses": [
+      "MPER2010"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-32AB4A1B3E",
+    "label": "Musical Creativity",
+    "description": "Explore different genres of choral music",
+    "courses": [
+      "MPER2010"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8529DF8081",
+    "label": "Musical Direction",
+    "description": "Following the guidance of a choral director.",
+    "courses": [
+      "MPER2111"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D98BADAB62",
+    "label": "Narrative Structure Analysis",
+    "description": "Identify and assess narrative structure in television shows",
+    "courses": [
+      "CSDY5533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EF781FEF57",
+    "label": "Nested and Incomplete Block Designs",
+    "description": "Understand and work with nested and incomplete block designs",
+    "courses": [
+      "STAT4103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E13F0E87E7",
+    "label": "News Gathering",
+    "description": "Acquiring news stories for video journalism",
+    "courses": [
+      "MCOM2203"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1F281C555F",
+    "label": "News Reporting",
+    "description": "Students will learn the art of reporting news",
+    "courses": [
+      "MCOM3033"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-76ECE9D0CC",
+    "label": "News Reporting Practices",
+    "description": "Applying theories and practices of news reporting in a video context",
+    "courses": [
+      "MCOM2203"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-ED59E3D076",
+    "label": "Newscast Production",
+    "description": "Creating team-driven newscasts for video broadcasts",
+    "courses": [
+      "MCOM2203"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EF0D5D46AC",
+    "label": "Newsletter Composition",
+    "description": "Write compelling newsletters for nonprofits",
+    "courses": [
+      "ENG4643"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2376BA06E3",
+    "label": "Newsletter Production",
+    "description": "Design effective nonprofit newsletters",
+    "courses": [
+      "ENG5393"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EADF733E47",
+    "label": "Novel Structure Analysis",
+    "description": "Understanding and applying effective novel structure and pacing",
+    "courses": [
+      "CSDY4273"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C83BD086CD",
+    "label": "On-Air Presentation",
+    "description": "Students will learn to present completed stories on air",
+    "courses": [
+      "MCOM3033"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0B9340CD4B",
+    "label": "On-Camera Performance",
+    "description": "Students will learn the necessary skills for on-camera performance",
+    "courses": [
+      "MCOM3033"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1AFD1C6F9C",
+    "label": "Operate Geospatial Technology",
+    "description": "Manage and utilize geospatial technology",
+    "courses": [
+      "GEO4733"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A61CAAA0E5",
+    "label": "Operate GIS Software",
+    "description": "Students will become proficient in using Geographic Information System software.",
+    "courses": [
+      "GEO5733"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E2C5FAF0D1",
+    "label": "Operate Instrumentation",
+    "description": "Gain proficiency in operating various analytical instrumentations.",
+    "courses": [
+      "CHEM4325"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C91B67B7C1",
+    "label": "Operate on Different Number Sets",
+    "description": "Apply operations to natural numbers, real numbers, and other mathematical structures",
+    "courses": [
+      "MATH2013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A1995FD2F2",
+    "label": "Opinion Formation",
+    "description": "Form and express opinions in response to readings and discussions",
+    "courses": [
+      "MCOM4313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-849E30027F",
+    "label": "Perform Cochran Q Test",
+    "description": "Apply the Cochran Q test for comparing multiple samples from a single population.",
+    "courses": [
+      "STAT5303"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4FDA4B1286",
+    "label": "Perform Cost/Benefit Analysis",
+    "description": "Learning to evaluate the advantages and disadvantages of different alternatives based on costs and benefits.",
+    "courses": [
+      "ECON5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F88C23BAFB",
+    "label": "Perform Demographic Analysis",
+    "description": "Students will gain competency in demographic analysis through the course.",
+    "courses": [
+      "GEO5733"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3819064F6B",
+    "label": "Perform field analysis",
+    "description": "Analyze substances in the field during a WMD event.",
+    "courses": [
+      "FRSC4553"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-633FEACEC1",
+    "label": "Perform Hypothesis Testing",
+    "description": "Master the art of hypothesis testing in scenarios where the underlying population does not follow a specific distribution.",
+    "courses": [
+      "STAT5303"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A5E1607379",
+    "label": "Perform Jazz Styles",
+    "description": "Demonstrate the ability to play a variety of jazz styles professionally.",
+    "courses": [
+      "MPER3341"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C67D134452",
+    "label": "Perform Routine Procedures",
+    "description": "Master routine laboratory procedures for clinical chemistry.",
+    "courses": [
+      "CHEM4325"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-24ECCF93FD",
+    "label": "Performance Analysis",
+    "description": "Developing the ability to analyze and improve upon individual and group performances.",
+    "courses": [
+      "MPER5611"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-12D4C7CF5A",
+    "label": "Performance Preparation",
+    "description": "Preparing for successful choral performances.",
+    "courses": [
+      "MPER2111"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E7DE063AAB",
+    "label": "Performance Skills",
+    "description": "Develop stage presence and delivery techniques",
+    "courses": [
+      "MPER2010"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EA1BA5FFDB",
+    "label": "Physical Control",
+    "description": "Gaining more physical control through group work",
+    "courses": [
+      "THRT2233"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5EF64B7359",
+    "label": "Physical Coordination",
+    "description": "Developing coordination in physical movement for voice and movement exercises",
+    "courses": [
+      "THRT2233"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-880CA60A03",
+    "label": "Physical Education Program Planning",
+    "description": "Competency to plan and implement physical education programs for exceptional children",
+    "courses": [
+      "PHED5602"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-ECC78CB056",
+    "label": "Practical Exercise",
+    "description": "Participate in practical exercises to reinforce learning and develop necessary skill sets",
+    "courses": [
+      "CJ1563"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2C3F848522",
+    "label": "Practice Comic and Satiric Writing Techniques",
+    "description": "Develop skills in crafting effective comic and satiric writing.",
+    "courses": [
+      "CSDY5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-30CA65DB59",
+    "label": "Practice Comic Writing Techniques",
+    "description": "Understand and apply strategies for writing comedy effectively.",
+    "courses": [
+      "CSDY4423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-15ABDDA8AA",
+    "label": "Prepare Scholarly Analysis",
+    "description": "Producing a scholarly analysis of a contemporary author's work.",
+    "courses": [
+      "CSDY5313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B4339C7BCD",
+    "label": "Process CBRNE crime scenes",
+    "description": "Follow protocol for handling evidence at sites of WMD events.",
+    "courses": [
+      "FRSC4553"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DE04DFD1A4",
+    "label": "Process CBRNE Scenes",
+    "description": "Follow protocols for processing crime scenes involving weapons of mass destruction",
+    "courses": [
+      "FRSC5553"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8942C27D3A",
+    "label": "Produce Comic & Satiric Works",
+    "description": "Create original comic and satiric works in a variety of genres.",
+    "courses": [
+      "CSDY4423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-772566BBAF",
+    "label": "Produce Original Comic Works",
+    "description": "Create original works within the genres of comedy and satire.",
+    "courses": [
+      "CSDY5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2EA29A5D92",
+    "label": "Produce Short Fiction",
+    "description": "Develop the skill to create original short stories.",
+    "courses": [
+      "CSDY4283"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C1A40B2E29",
+    "label": "Produce Television Documents",
+    "description": "Learn the processes involved in producing full-length television documentaries",
+    "courses": [
+      "MCOM4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BDBA1D10F7",
+    "label": "Producing Skills",
+    "description": "Organizing resources and overseeing production",
+    "courses": [
+      "MCOM3243"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0CCC495332",
+    "label": "Professional Performance Skills",
+    "description": "Acquire the skills needed for professional-level performance in jazz and commercial music.",
+    "courses": [
+      "MPER3341"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C1200D33AA",
+    "label": "Program Adaptation",
+    "description": "Skill to adapt physical education and recreation programs based on the needs of exceptional children",
+    "courses": [
+      "PHED5602"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5E9F0178E4",
+    "label": "Project Management",
+    "description": "Organize and complete multiple video editing projects effectively",
+    "courses": [
+      "MCOM3013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-64E3C39120",
+    "label": "Projection Skill",
+    "description": "Learn techniques for projecting voice effectively on stage",
+    "courses": [
+      "THRT3513"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9BC3611D85",
+    "label": "Proper Breathing",
+    "description": "Learning to breathe properly for stage performances",
+    "courses": [
+      "THRT1613"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-CCD0207B50",
+    "label": "Proportional Hazard Models",
+    "description": "A competency in applying and understanding proportional hazards models.",
+    "courses": [
+      "STAT4213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-471F9F818E",
+    "label": "Prove Existence & Uniqueness",
+    "description": "Demonstrate the existence and uniqueness of solutions for given differential equations",
+    "courses": [
+      "MATH5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7D79B1D71C",
+    "label": "Publisher-Ready Writing",
+    "description": "Writing novel installments for potential publication",
+    "courses": [
+      "CSDY4273"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-87D0A6BB2A",
+    "label": "React to Workplace Trauma",
+    "description": "Develop appropriate responses to workplace trauma situations.",
+    "courses": [
+      "MCOM5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D10EB005E5",
+    "label": "Read & Interpret Scholarship",
+    "description": "Learn to read and interpret scholarly works in the field.",
+    "courses": [
+      "ENG4673"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6C83434CE3",
+    "label": "Read and Analyze",
+    "description": "Ability to read and critically analyze literary works",
+    "courses": [
+      "CSDY3333"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-09CCF20081",
+    "label": "Read Scripts Critically",
+    "description": "Analyze and understand television scripts in detail",
+    "courses": [
+      "CSDY5533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F265CBC9FD",
+    "label": "Recognize Innovations in Land Use",
+    "description": "Demonstrate the ability to recognize recent innovations in land use control.",
+    "courses": [
+      "POL5173"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D300B66F8D",
+    "label": "Recognize Prefixes",
+    "description": "Identify and understand the meaning of prefixes in words.",
+    "courses": [
+      "ENG1253"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3DFB5B2518",
+    "label": "Recognize Set Extensions",
+    "description": "Identify and work with sets that include all real numbers",
+    "courses": [
+      "MATH2013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-49C9716A77",
+    "label": "Recognize Special Functions",
+    "description": "Identify and apply special functions in solving differential equations",
+    "courses": [
+      "MATH5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F6789D29F9",
+    "label": "Rectify Inspection Methods",
+    "description": "Explore methods to improve and optimize inspection techniques.",
+    "courses": [
+      "STAT5253"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A0AB48A5B0",
+    "label": "Regular Expressions",
+    "description": "Manipulate patterns in programming languages and text processing.",
+    "courses": [
+      "CMSC4173"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0F39C6494D",
+    "label": "Regular Expressions Utilization",
+    "description": "Employing regular expressions to describe and manipulate patterns in programming languages",
+    "courses": [
+      "CMSC5073"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1981DF217C",
+    "label": "Rehearsal Techniques",
+    "description": "Mastering the techniques required for effective choir rehearsals.",
+    "courses": [
+      "MPER2111"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-268EC1F7AF",
+    "label": "Repertoire Mastery",
+    "description": "Familiarize with a wide variety of choral literature",
+    "courses": [
+      "MPER2010"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1B8ABCE37B",
+    "label": "Research Biblical Analysis",
+    "description": "Analyze the biblical portrayal of non-conforming female figures",
+    "courses": [
+      "HUM5143"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-713707314C",
+    "label": "Research Contemporary Authors",
+    "description": "Investigating and researching contemporary authors in the mystery/adventure genre.",
+    "courses": [
+      "CSDY5313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FD54F7D5B3",
+    "label": "Research Historical Context",
+    "description": "Develop skills in researching historical contexts relevant to modern Southeast Asia.",
+    "courses": [
+      "HIST4863"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F8DD9971E5",
+    "label": "Research Historical Context",
+    "description": "Conduct research on historical contexts relevant to modern Southeast Asia",
+    "courses": [
+      "HIST5863"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9D823F9BAC",
+    "label": "Research Historical Information",
+    "description": "Locate, evaluate, and synthesize primary and secondary sources to enhance understanding of U.S. history.",
+    "courses": [
+      "HIST1493"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EDF9098726",
+    "label": "Research Historical Urban Data",
+    "description": "Conduct research on historical urban data to inform analysis and understanding.",
+    "courses": [
+      "POL5013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0DC561E6F3",
+    "label": "Research News Stories",
+    "description": "Students will learn how to research news stories for reporting",
+    "courses": [
+      "MCOM3033"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-73696E4352",
+    "label": "Resonance Techniques",
+    "description": "Techniques to enhance vocal resonance",
+    "courses": [
+      "THRT1613"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F35FAB92D9",
+    "label": "Respond to crisis situations",
+    "description": "Learning how to respond appropriately to crisis situations, especially those involving trauma.",
+    "courses": [
+      "MCOM4433"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-16CCE440AE",
+    "label": "Respond to Scene",
+    "description": "Demonstrate the ability to respond effectively to traffic accident scenes",
+    "courses": [
+      "CJ1563"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-446FEECD4C",
+    "label": "Revise & Edit Writings",
+    "description": "Refine and polish comic and satiric works through revision and editing processes.",
+    "courses": [
+      "CSDY4423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E11767996D",
+    "label": "Revise and Refine Writing",
+    "description": "Learn to revise and refine written works for clarity, coherence, and humor.",
+    "courses": [
+      "CSDY5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8E7F4F0850",
+    "label": "Revise Comic Works",
+    "description": "Develop skills for revising and refining comic book and graphic novel content.",
+    "courses": [
+      "CSDY4723"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D8C4CE6970",
+    "label": "Revise Compositions",
+    "description": "Edit and refine drafts of written work",
+    "courses": [
+      "CSDY4583"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-59432C28A2",
+    "label": "Revise Literary Composition",
+    "description": "Critically revise literary compositions in the context of Science Fiction and Fantasy.",
+    "courses": [
+      "CSDY5583"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8E5EA1C421",
+    "label": "Revise Novel Content",
+    "description": "Refining own written work based on critique and feedback",
+    "courses": [
+      "CSDY4273"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FC2C109C1A",
+    "label": "Revision Skills",
+    "description": "Gain skills in revising comic book and graphic novel drafts",
+    "courses": [
+      "CSDY5723"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2C83E71103",
+    "label": "Revision Techniques",
+    "description": "Refining and improving written work",
+    "courses": [
+      "CSDY3363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3FA11EB079",
+    "label": "SAS Data Analysis",
+    "description": "A proficiency in using SAS for data analysis and modeling.",
+    "courses": [
+      "STAT4213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B2165EB6C3",
+    "label": "Scene Protection",
+    "description": "Apply techniques for protecting and securing traffic accident investigation scenes",
+    "courses": [
+      "CJ1563"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D6BD35C117",
+    "label": "Screenplay Composition",
+    "description": "Writing screenplays for movies and TV",
+    "courses": [
+      "CSDY3363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0012D105CD",
+    "label": "Script Documentary Techniques",
+    "description": "Develop skills in writing scripts for television documentaries",
+    "courses": [
+      "MCOM4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FEB3FDFFBA",
+    "label": "Semantic Analysis",
+    "description": "Understand and interpret the meaning of programming constructs.",
+    "courses": [
+      "CMSC4173"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-05593F1038",
+    "label": "Semantic Analysis",
+    "description": "Investigating the meaning and interpretation of programming language constructs",
+    "courses": [
+      "CMSC5073"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-05E719C2C1",
+    "label": "Social Media Writing",
+    "description": "Create engaging social media content",
+    "courses": [
+      "ENG4643"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6881B2694F",
+    "label": "Social Media Writing",
+    "description": "Compose engaging content for social media platforms",
+    "courses": [
+      "ENG5393"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-43A4900933",
+    "label": "Solo Performance Improvement",
+    "description": "Advancing solo performance skills within the context of jazz and commercial music.",
+    "courses": [
+      "MPER5611"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-393EC74E63",
+    "label": "Solo Performance Techniques",
+    "description": "Develop techniques for successful solo performances in a jazz ensemble setting.",
+    "courses": [
+      "MPER3341"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C7D4031E44",
+    "label": "Solve Differential Equations",
+    "description": "Apply various methods to solve complex differential equations",
+    "courses": [
+      "MATH5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-89AD95A3D2",
+    "label": "Solve Elliptic Equations",
+    "description": "Apply methods to solve elliptic partial differential equations",
+    "courses": [
+      "MATH5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4733FB86B6",
+    "label": "Solve Hyperbolic Equations",
+    "description": "Use appropriate techniques to solve hyperbolic partial differential equations",
+    "courses": [
+      "MATH5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-175A4E88DA",
+    "label": "Solve Parabolic Equations",
+    "description": "Apply methods to solve parabolic partial differential equations",
+    "courses": [
+      "MATH5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2BE8231CE2",
+    "label": "Solve Real-Number Problems",
+    "description": "Apply mathematical reasoning to solve problems using real numbers",
+    "courses": [
+      "MATH2013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-76E6B1ECE2",
+    "label": "Sound Editing",
+    "description": "Manage audio components, such as music, dialogue, and sound effects",
+    "courses": [
+      "MCOM3013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FA1BDA667D",
+    "label": "Sound Production",
+    "description": "Recording and managing audio for video production",
+    "courses": [
+      "MCOM3243"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-19C34284CD",
+    "label": "Stage Dialect Development",
+    "description": "Explore the fundamentals of developing a stage dialect",
+    "courses": [
+      "THRT3513"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-304DDB76DE",
+    "label": "Stage Play Composition",
+    "description": "Writing stage plays",
+    "courses": [
+      "CSDY3363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EBA79A0EE1",
+    "label": "Stage Worthy Vocal Skills",
+    "description": "Developing vocal skills suitable for stage performances",
+    "courses": [
+      "THRT1613"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F273F7CCE7",
+    "label": "Statistical Analysis",
+    "description": "Evaluate statistics related to women in media",
+    "courses": [
+      "MCOM4313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9DD6AD747E",
+    "label": "Statistical Inference",
+    "description": "An ability to make statistical inferences based on the results of regression analyses.",
+    "courses": [
+      "STAT4213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8405FE4548",
+    "label": "Storytelling across Platforms",
+    "description": "Adapting storytelling methods for different media",
+    "courses": [
+      "MCOM3243"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-75AE077CF1",
+    "label": "Strengthen Writing Skills",
+    "description": "Improve overall writing ability through various assignments.",
+    "courses": [
+      "CSDY4283"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-36AB6B6212",
+    "label": "Study Child Psychology",
+    "description": "Understand the psychology of learning to read",
+    "courses": [
+      "CSDY4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F48A643BB5",
+    "label": "Study Classical and Contemporary Works",
+    "description": "Analyze key works in victimology, both classic and modern.",
+    "courses": [
+      "CJ4323"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D51DD0B807",
+    "label": "Study Comic History",
+    "description": "Explore the historical background of comic books and graphic novels.",
+    "courses": [
+      "CSDY4723"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-408D60F6FE",
+    "label": "Study Digraphs",
+    "description": "Investigate directed graphs and their properties.",
+    "courses": [
+      "MATH5563"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E34204429F",
+    "label": "Study Documentary History",
+    "description": "Analyze and understand the history of documentaries in broadcasting",
+    "courses": [
+      "MCOM4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5FCD9FCFEB",
+    "label": "Study Genre Conventions",
+    "description": "Learn the conventions specific to comic and satiric writing.",
+    "courses": [
+      "CSDY5423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9580B3F939",
+    "label": "Study Major Religious Traditions",
+    "description": "Gain knowledge of the key tenets and practices of major world religions.",
+    "courses": [
+      "HUM5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E2E3DC9018",
+    "label": "Study Psychological Perspectives",
+    "description": "Investigate psychological aspects of deviating female roles",
+    "courses": [
+      "HUM5143"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-042A952E05",
+    "label": "Study Psychology of Learning to Read",
+    "description": "Understand the psychology behind learning to read and its impact on writing for youth.",
+    "courses": [
+      "CSDY5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4E03EAE7FE",
+    "label": "Study SciFi/Fantasy History",
+    "description": "Understand the historical context of science fiction and fantasy literature",
+    "courses": [
+      "CSDY4583"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-23372579F3",
+    "label": "Study SciFi/Fantasy History",
+    "description": "Learn about the history of Science Fiction and Fantasy literature.",
+    "courses": [
+      "CSDY5583"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6810EF3173",
+    "label": "Study Social Dynamics",
+    "description": "Learn about the social structures and dynamics during Tudor-Stuart England",
+    "courses": [
+      "HIST4653"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-659DACBA88",
+    "label": "Style Adaptability",
+    "description": "Develop adaptability to a wide range of jazz styles.",
+    "courses": [
+      "MPER3341"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EBCA40DF86",
+    "label": "Style Diversification",
+    "description": "Gaining proficiency in a wide range of styles suitable for professional jazz and commercial music performance.",
+    "courses": [
+      "MPER5611"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-87EEA37D6F",
+    "label": "Support for Vocal Instrument",
+    "description": "Learning how to support the voice effectively",
+    "courses": [
+      "THRT1613"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D6B317D1E7",
+    "label": "Survival Analysis",
+    "description": "An understanding of survival analysis techniques for event-time data.",
+    "courses": [
+      "STAT4213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F305D2089B",
+    "label": "Syntax Analysis",
+    "description": "Interpret the structure of programming language statements.",
+    "courses": [
+      "CMSC4173"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-ADC698CF8A",
+    "label": "Syntax Analysis",
+    "description": "Recognizing and validating the syntax of programming languages",
+    "courses": [
+      "CMSC5073"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6F9E0A301C",
+    "label": "Synthesize Historical Knowledge",
+    "description": "Demonstrate the ability to synthesize historical knowledge to form coherent arguments or explanations about US history up to 1877.",
+    "courses": [
+      "HIST1483"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EBAEC67F53",
+    "label": "Teach Mathematics Fundamentals",
+    "description": "Develop skills to teach essential mathematics concepts relevant for elementary, special, and early childhood education",
+    "courses": [
+      "MATH2013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5B2E57EA42",
+    "label": "Teach Special Education Methodology",
+    "description": "Develop and employ specialized educational methods for medical technology students",
+    "courses": [
+      "CHEM4351"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EF4AF3EF9C",
+    "label": "Team Collaboration",
+    "description": "Working effectively as part of a choir ensemble.",
+    "courses": [
+      "MPER2111"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-60107177C5",
+    "label": "Teamwork",
+    "description": "Working collaboratively in a news team",
+    "courses": [
+      "MCOM2203"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DC9FA6342B",
+    "label": "Technical Guidance",
+    "description": "Receive guidance on the technical aspects of playing in a jazz ensemble.",
+    "courses": [
+      "MPER3341"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FA71120193",
+    "label": "Technical Guidance",
+    "description": "Receiving expert guidance on technical aspects of jazz and ensemble performance.",
+    "courses": [
+      "MPER5611"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BB4DE50F32",
+    "label": "Technical Writing Skills",
+    "description": "Improve writing skills for technical nonprofit work",
+    "courses": [
+      "ENG5393"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7BF6F315E1",
+    "label": "Teleplay Composition",
+    "description": "Writing teleplays for TV",
+    "courses": [
+      "CSDY3363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2B144AA6E1",
+    "label": "Television Genre Adaptation",
+    "description": "Adapt written content to fit the requirements of different television genres",
+    "courses": [
+      "CSDY5533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7FAA676120",
+    "label": "Television Genre Understanding",
+    "description": "Gain familiarity with various television genres and their conventions",
+    "courses": [
+      "CSDY5533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-17CCA894A0",
+    "label": "Television Narrative Composition",
+    "description": "Create engaging narratives for television audiences",
+    "courses": [
+      "CSDY5533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1109F9653F",
+    "label": "Television Show Analysis",
+    "description": "Examine and dissect television shows for narrative structure and genre conventions",
+    "courses": [
+      "CSDY5533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-652C4A7CE7",
+    "label": "Test Significance",
+    "description": "Acquiring skills to evaluate the significance of test results",
+    "courses": [
+      "STAT2113"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-322B70876C",
+    "label": "Text Analysis Skills",
+    "description": "Enhancing textual interpretation and analysis abilities",
+    "courses": [
+      "THRT2233"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E11F5D6D3E",
+    "label": "Theatre Games",
+    "description": "Participation in games to improve acting skills",
+    "courses": [
+      "THRT1613"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-AEBA279D24",
+    "label": "Three-Way Classification Analysis",
+    "description": "Apply three-way classification analysis to experimental data",
+    "courses": [
+      "STAT4103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D21E2D6DDC",
+    "label": "Time Series Analysis",
+    "description": "An ability to perform time series analysis using appropriate statistical methods.",
+    "courses": [
+      "STAT4213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-86DD99FD1D",
+    "label": "Trace Cultural History",
+    "description": "Mapping changes in the cultural landscape of the American West over time",
+    "courses": [
+      "HIST4423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4B0F7DC4AA",
+    "label": "Trace Women's Evolution in Society",
+    "description": "Follow the development of women's role in society from prehistory to the present",
+    "courses": [
+      "HUM5243"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B870682AEA",
+    "label": "Two-Way Classification Analysis",
+    "description": "Perform analysis of variance on two-way classification experiments",
+    "courses": [
+      "STAT4103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4252D1CED5",
+    "label": "Type System Development",
+    "description": "Creating type systems to support strong typing and type checking in programming languages",
+    "courses": [
+      "CMSC5073"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-91A80A2768",
+    "label": "Type Systems",
+    "description": "Enforce type checking and maintain type safety in programming languages.",
+    "courses": [
+      "CMSC4173"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-CD72DCA641",
+    "label": "Understand Analytical Biochemistry",
+    "description": "Demonstrate understanding of the principles and practices related to analytical biochemistry.",
+    "courses": [
+      "CHEM4325"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9BBA5A0B29",
+    "label": "Understand Antitrust Policies",
+    "description": "Comprehend antitrust policies and their application in market regulation",
+    "courses": [
+      "ECON5363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0088C9AC8A",
+    "label": "Understand broader social context",
+    "description": "Recognize and interpret larger social, political, and economic contexts impacting Native American women",
+    "courses": [
+      "HIST5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BF4BA47034",
+    "label": "Understand Capitalist Influences",
+    "description": "Comprehend how state-sponsored capitalism has affected contemporary women's issues in China.",
+    "courses": [
+      "HIST4453"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7AD2D81094",
+    "label": "Understand Changing Gender Roles",
+    "description": "Recognize and interpret shifts in gender roles over time in indigenous societies.",
+    "courses": [
+      "HIST4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3AE6236419",
+    "label": "Understand Cultural Context",
+    "description": "Develop a deep understanding of the cultural contexts shaping women's lives in China.",
+    "courses": [
+      "HIST5453"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-42A4255A76",
+    "label": "Understand Cultural Evolution",
+    "description": "Recognizing and appreciating cultural shifts in American society.",
+    "courses": [
+      "HIST4873"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-17AA3EE136",
+    "label": "Understand Cultural Representations",
+    "description": "Learning to identify and interpret cultural representations of women in the Western context",
+    "courses": [
+      "HIST4423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D1F177BE8F",
+    "label": "Understand Cultural Transformations",
+    "description": "Appreciate changes in culture, arts, and literature throughout Tudor-Stuart England.",
+    "courses": [
+      "HIST5653"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A51EAAC54A",
+    "label": "Understand Early U.S. Development",
+    "description": "Explore the development of the United States from its founding through the late 1800s.",
+    "courses": [
+      "HIST1483"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-17669047CB",
+    "label": "Understand Elements of Fiction",
+    "description": "Gain knowledge about key elements that make up a short story.",
+    "courses": [
+      "CSDY4283"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-54F826408A",
+    "label": "Understand Experimental Error",
+    "description": "Recognize and interpret various types of experimental errors",
+    "courses": [
+      "STAT5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4A069AC11F",
+    "label": "Understand Genre Conventions",
+    "description": "Recognize and apply conventions specific to science fiction and fantasy literature",
+    "courses": [
+      "CSDY4583"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7F82062976",
+    "label": "Understand Genre Conventions",
+    "description": "Learn about the conventions specific to Science Fiction and Fantasy genres.",
+    "courses": [
+      "CSDY5583"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-66704B6D3F",
+    "label": "Understand Genre Conventions",
+    "description": "Recognize and utilize genre-specific conventions in comic and satiric writing.",
+    "courses": [
+      "CSDY4423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E9CDB489E5",
+    "label": "Understand Graph Structure",
+    "description": "Recognize and analyze the structure of various types of graphs.",
+    "courses": [
+      "MATH5563"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2397B4F1A4",
+    "label": "Understand Hazard Principles",
+    "description": "Recognize the fundamental concepts of hazards and risks.",
+    "courses": [
+      "SFTY5412"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-17C401CEAF",
+    "label": "Understand Heterodoxy",
+    "description": "Gain insight into heterodox religious traditions from ancient times to the present.",
+    "courses": [
+      "HUM4323"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BE80042ADA",
+    "label": "Understand Historical Contexts",
+    "description": "Recognize and interpret the historical significance of literary texts",
+    "courses": [
+      "ENG3193"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BE2E3F57A8",
+    "label": "Understand Historical Perspectives",
+    "description": "Develop an appreciation for the diverse perspectives that shape U.S. history.",
+    "courses": [
+      "HIST1493"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E0B9873955",
+    "label": "Understand Interaction of Crime with Society",
+    "description": "Gain an understanding of how crime affects individuals and society as a whole.",
+    "courses": [
+      "CJ4323"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-401FF1C6B5",
+    "label": "Understand Land Use Laws",
+    "description": "Demonstrate the ability to comprehend American land use planning laws.",
+    "courses": [
+      "POL5173"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B3D6308C50",
+    "label": "Understand Litigation",
+    "description": "Explore litigation within the context of special education",
+    "courses": [
+      "SPED4322"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-990AD4A963",
+    "label": "Understand media psychology",
+    "description": "Exploring the psychological aspects of media consumption and its impact on victims and journalists.",
+    "courses": [
+      "MCOM4433"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4D5FAB6003",
+    "label": "Understand Medical Lab Principles",
+    "description": "Demonstrate knowledge of the fundamental principles governing medical laboratories",
+    "courses": [
+      "CHEM4351"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-992905ADDF",
+    "label": "Understand Nationalist Movements",
+    "description": "Recognize and analyze nationalist movements in Southeast Asia",
+    "courses": [
+      "HIST5863"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7584C8554B",
+    "label": "Understand Number Systems",
+    "description": "Recognize the structure and properties of various number systems",
+    "courses": [
+      "MATH2013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D978FA2B2B",
+    "label": "Understand Others' Beliefs",
+    "description": "Gain insights into the beliefs and practices of others",
+    "courses": [
+      "HUM4113"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C2416988EA",
+    "label": "Understand Partial Derivatives",
+    "description": "Manipulate and interpret partial derivatives in multiple variables",
+    "courses": [
+      "MATH5413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2D40F39972",
+    "label": "Understand Philosophical/Religious Dynamics",
+    "description": "Explore religious and philosophical dimensions related to women's deviance",
+    "courses": [
+      "HUM5143"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B596C2438B",
+    "label": "Understand Probability Concepts",
+    "description": "Gaining knowledge about various probability theories and applications",
+    "courses": [
+      "STAT2113"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B2623EC95D",
+    "label": "Understand Sampling Distribution",
+    "description": "Learn about the distribution of sample means and proportions.",
+    "courses": [
+      "STAT5253"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0129862F2F",
+    "label": "Understand Scholarship in YA Lit",
+    "description": "Familiarize with scholarly works related to young adult literature.",
+    "courses": [
+      "ENG5673"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E66A3F3CAA",
+    "label": "Understand Social Constraints",
+    "description": "Learn about the social constraints faced by women in various domains like politics, business, and religion.",
+    "courses": [
+      "HIST3423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4886ED0B3C",
+    "label": "Understand Suffixes",
+    "description": "Identify and understand the meaning of suffixes in words.",
+    "courses": [
+      "ENG1253"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4F69D33C0F",
+    "label": "Understand Survival Analysis",
+    "description": "Knowledge of statistical methods for analyzing the time to an event",
+    "courses": [
+      "STAT5213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-42ED959ADC",
+    "label": "Understand Sustainable Development Theory",
+    "description": "Recognize and explain the principles of sustainable development as applied in urban contexts.",
+    "courses": [
+      "POL5363"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-D9AF15C4C3",
+    "label": "Understand Timeline Sequence",
+    "description": "Students will learn to recognize and place events within their proper historical timelines.",
+    "courses": [
+      "HIST1023"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-CACB8C4841",
+    "label": "Understand Timeline Sequence",
+    "description": "Gain ability to correctly place historical events within their chronological order",
+    "courses": [
+      "HIST4653"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-19B1B04980",
+    "label": "Understand Timelines and Sequence",
+    "description": "Gain an understanding of the chronological order and sequence of historical events.",
+    "courses": [
+      "HIST1013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-FC6B987103",
+    "label": "Understand Trauma Approaches",
+    "description": "Study various counseling and therapeutic approaches for treating abuse and trauma.",
+    "courses": [
+      "SAS5633"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-575E56E06B",
+    "label": "Understand Urban Context",
+    "description": "Analyze the historical context of urban areas, political institutions, and social environments.",
+    "courses": [
+      "POL5013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F43483EE5A",
+    "label": "Understand Urban Ecology",
+    "description": "Gain knowledge about urban ecology",
+    "courses": [
+      "GEO4733"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-DBBFB07C78",
+    "label": "Understand Victimization History",
+    "description": "Demonstrate knowledge of the historical development and evolution of victimization.",
+    "courses": [
+      "CJ4323"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-0775EBA986",
+    "label": "Understand White Collar Crime",
+    "description": "Gain knowledge about the nature and definition of white collar crime.",
+    "courses": [
+      "CJ4533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-331D5B7438",
+    "label": "Use Electronic News-Gathering Equipment",
+    "description": "Students will be trained on the use of electronic news-gathering equipment",
+    "courses": [
+      "MCOM3033"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-ED5FF25A53",
+    "label": "Use Humanistic Approaches",
+    "description": "Learn to use humanistic approaches in treating clients with a history of trauma.",
+    "courses": [
+      "SAS5633"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9A1F908087",
+    "label": "Use Nonparametric Statistics",
+    "description": "Employ nonparametric statistical methods in experimental design",
+    "courses": [
+      "STAT5103"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BE5B6DDCFB",
+    "label": "Use Video Editing Software",
+    "description": "Demonstrate proficiency in using industry-standard video editing software",
+    "courses": [
+      "MCOM3013"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C62A8CA120",
+    "label": "Use Video Techniques",
+    "description": "Gain proficiency in using video techniques specific to documentary production",
+    "courses": [
+      "MCOM4413"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C07CEA8B6A",
+    "label": "Utilize APA Citation Style",
+    "description": "Knowledge of American Psychological Association (APA) citation style for academic and professional writing.",
+    "courses": [
+      "CJ1313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-3C0A1590FB",
+    "label": "Utilize Control Charts",
+    "description": "Learn how to create and use control charts for process monitoring.",
+    "courses": [
+      "STAT5253"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-78972464B5",
+    "label": "Utilize SAS Software",
+    "description": "Familiarity with the SAS statistical software package",
+    "courses": [
+      "STAT5213"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-1DF2668225",
+    "label": "Video Storytelling",
+    "description": "Developing engaging narratives for video journalism",
+    "courses": [
+      "MCOM2203"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-43DE16D3CE",
+    "label": "Videography Skills",
+    "description": "Applying techniques to capture high-quality video footage",
+    "courses": [
+      "MCOM3243"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-505098AD6F",
+    "label": "Vocal Clarity Improvement",
+    "description": "Improve the clarity of voice delivery in performance",
+    "courses": [
+      "THRT3513"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-EF5926D2FD",
+    "label": "Vocal Confidence Building",
+    "description": "Build vocal confidence both on and off stage",
+    "courses": [
+      "THRT3513"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-7284D71BE7",
+    "label": "Vocal Development",
+    "description": "Improve vocal technique and control",
+    "courses": [
+      "MPER2010"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4A48F22355",
+    "label": "Vocal Development",
+    "description": "Developing vocal talents through rehearsal and performance.",
+    "courses": [
+      "MPER2111"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-A3E69566D9",
+    "label": "Vocal Expression",
+    "description": "Improving vocal expression through controlled resonance and intonation",
+    "courses": [
+      "THRT2233"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-81FACD60B2",
+    "label": "Vocal Interpretation",
+    "description": "Interpreting vocal nuances in text analysis",
+    "courses": [
+      "THRT2233"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B8039A5255",
+    "label": "Workshop Collaboration",
+    "description": "Collaborate in workshop settings to improve writing skills",
+    "courses": [
+      "CSDY5723"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-82D1358BBE",
+    "label": "Write and Report Style",
+    "description": "Students will learn about writing and reporting style in news",
+    "courses": [
+      "MCOM3033"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E3C7E3271D",
+    "label": "Write Clear and Effective Reports",
+    "description": "Ability to create clear, effective reports specific to the criminal justice field.",
+    "courses": [
+      "CJ1313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-8D0D2221B0",
+    "label": "Write Creative Papers",
+    "description": "Composing creative essays within both the mystery and adventure genres.",
+    "courses": [
+      "CSDY5313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-59D92528C7",
+    "label": "Write Effective Academic Essays",
+    "description": "Improve academic writing skills through essays related to the course content.",
+    "courses": [
+      "CJ4533"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-E41C739DC3",
+    "label": "Write for various audiences",
+    "description": "Composing written work tailored to diverse audiences, including victims, journalists, and communications professionals.",
+    "courses": [
+      "MCOM4433"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-2AD3B089AE",
+    "label": "Write Grants",
+    "description": "Compose effective grant applications",
+    "courses": [
+      "ENG4643"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-4291AFE015",
+    "label": "Write Historical Analyses",
+    "description": "Craft well-researched and coherent analyses based on the studied events in Tudor-Stuart England.",
+    "courses": [
+      "HIST5653"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6F1BB1234A",
+    "label": "Write Historical Analysis",
+    "description": "Develop the ability to write analytical essays on historical topics related to women's history.",
+    "courses": [
+      "HIST3423"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-6827163280",
+    "label": "Write Historical Analysis",
+    "description": "Produce well-structured written analyses on specific topics in U.S. history from 1877 to the present.",
+    "courses": [
+      "HIST1493"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-F1F28ADDBC",
+    "label": "Write Historical Analysis",
+    "description": "Communicating historical analysis in a clear and effective manner.",
+    "courses": [
+      "HIST4873"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-BA25EDFB8B",
+    "label": "Write Historical Analysis",
+    "description": "Develop the skill to compose well-researched and reasoned historical analyses.",
+    "courses": [
+      "HIST5873"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-C5CFA2F696",
+    "label": "Write Historical Essays",
+    "description": "Learn to write well-structured essays focusing on Tudor-Stuart England's history",
+    "courses": [
+      "HIST4653"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-131B0BC893",
+    "label": "Write Historically Informed Analysis",
+    "description": "Develop ability to write historically informed analysis and arguments based on research and critical evaluation of sources.",
+    "courses": [
+      "HIST4863"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-5ED3D9E88B",
+    "label": "Write Press Releases",
+    "description": "Competence in composing press releases related to criminal justice matters.",
+    "courses": [
+      "CJ1313"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-B1CA6DE394",
+    "label": "Writing for News",
+    "description": "Students will develop skills in writing for news",
+    "courses": [
+      "MCOM3033"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-459639C365",
+    "label": "Writing for Storytelling",
+    "description": "Composing effective scripts and storylines",
+    "courses": [
+      "MCOM3243"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-258D8ACB50",
+    "label": "Writing for Video",
+    "description": "Composing scripts suitable for video newscasts",
+    "courses": [
+      "MCOM2203"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-9D36EF8615",
+    "label": "Writing Workshop Participation",
+    "description": "Engage in collaborative workshops to receive and provide constructive feedback on writing",
+    "courses": [
+      "CSDY4583"
+    ],
+    "course_count": 1
+  },
+  {
+    "skill_id": "SKL-346ED6EB2D",
+    "label": "Writing Workshop Participation",
+    "description": "Participating in collaborative writing workshops",
+    "courses": [
+      "CSDY3363"
+    ],
+    "course_count": 1
+  }
+]

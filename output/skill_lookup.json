@@ -1,0 +1,2210 @@
+{
+  "SKL-1A2B3C4D01": {
+    "label": "Literary Analysis",
+    "description": "Analyze themes, structure, and techniques in literary texts."
+  },
+  "SKL-2B3C4D5E02": {
+    "label": "Critical Reading",
+    "description": "Critically read and interpret texts, identifying arguments and evidence."
+  },
+  "SKL-3C4D5E6F03": {
+    "label": "Apply Literary Theory",
+    "description": "Use literary and critical theories to interpret texts and craft arguments."
+  },
+  "SKL-4D5E6F7A04": {
+    "label": "Genre & Conventions",
+    "description": "Identify and apply conventions specific to literary and media genres."
+  },
+  "SKL-5E6F7A8B05": {
+    "label": "Narrative Structure",
+    "description": "Analyze and evaluate narrative organization and storytelling techniques."
+  },
+  "SKL-6F7A8B9C06": {
+    "label": "Creative Writing",
+    "description": "Compose original creative texts (stories, scripts, or other genres)."
+  },
+  "SKL-7A8B9C0D07": {
+    "label": "Revision & Editing",
+    "description": "Revise and edit writing for clarity, coherence, and audience impact."
+  },
+  "SKL-8B9C0D1E08": {
+    "label": "Research Methods",
+    "description": "Locate, evaluate, and synthesize primary and secondary sources."
+  },
+  "SKL-9C0D1E2F09": {
+    "label": "Scholarly Writing",
+    "description": "Produce clear, evidence-based academic writing and analyses."
+  },
+  "SKL-0D1E2F3A0A": {
+    "label": "Audience Analysis",
+    "description": "Adapt content to the needs and expectations of specific audiences."
+  },
+  "SKL-A1B2C3D4B1": {
+    "label": "Comparative Analysis",
+    "description": "Compare texts, cultures, or historical periods to identify relationships and differences."
+  },
+  "SKL-B2C3D4E5C2": {
+    "label": "Historical Analysis",
+    "description": "Contextualize and interpret events, texts, or movements in their historical settings."
+  },
+  "SKL-C3D4E5F6D3": {
+    "label": "Cultural & Cross-cultural Analysis",
+    "description": "Analyze cultural influences and interactions across contexts."
+  },
+  "SKL-D4E5F607E4": {
+    "label": "Policy & Program Evaluation",
+    "description": "Assess policies, programs, or interventions and their impacts."
+  },
+  "SKL-E5F60718F5": {
+    "label": "Data Analysis & Statistics",
+    "description": "Apply statistical methods to analyze and interpret quantitative data."
+  },
+  "SKL-F60718290A": {
+    "label": "Modeling & Regression",
+    "description": "Build and interpret regression and predictive models."
+  },
+  "SKL-0718293A1B": {
+    "label": "Experimental Design & ANOVA",
+    "description": "Design experiments and use ANOVA/nonparametric tests to evaluate results."
+  },
+  "SKL-18293A4B2C": {
+    "label": "GIS & Geospatial Analysis",
+    "description": "Use GIS tools to map, analyze, and interpret spatial data."
+  },
+  "SKL-293A4B5C3D": {
+    "label": "Video Production",
+    "description": "Produce video content including planning, shooting, and post-production."
+  },
+  "SKL-3A4B5C6D4E": {
+    "label": "Audio & Sound Production",
+    "description": "Record and edit audio for media and performance."
+  },
+  "SKL-4B5C6D7E5F": {
+    "label": "News Gathering & Reporting",
+    "description": "Research, gather, and report news stories for media formats."
+  },
+  "SKL-5C6D7E8F60": {
+    "label": "Laboratory & Field Techniques",
+    "description": "Apply laboratory and field protocols for safe, reliable data or evidence collection."
+  },
+  "SKL-6D7E8F9011": {
+    "label": "Evidence Handling & Investigation",
+    "description": "Collect, preserve, and document evidence following protocol."
+  },
+  "SKL-7E8F901122": {
+    "label": "Risk & Safety Practices",
+    "description": "Identify hazards and follow safety and hazard communication procedures."
+  },
+  "SKL-8F90112333": {
+    "label": "Project & Program Management",
+    "description": "Plan, organize, and manage projects to meet objectives and deadlines."
+  },
+  "SKL-9011233444": {
+    "label": "Collaboration & Teamwork",
+    "description": "Work effectively with others in group or ensemble settings."
+  },
+  "SKL-0112344555": {
+    "label": "Presentation & Performance",
+    "description": "Prepare and deliver content for live or recorded performance and presentations."
+  },
+  "SKL-1123455666": {
+    "label": "Teaching & Training Design",
+    "description": "Design and deliver instructional or training materials and sessions."
+  },
+  "SKL-2234566777": {
+    "label": "Ethical Practice & Trauma Sensitivity",
+    "description": "Apply ethical guidelines and trauma-aware approaches in professional settings."
+  },
+  "SKL-3345677888": {
+    "label": "Critical Thinking & Evaluation",
+    "description": "Formulate, evaluate, and defend reasoned arguments and judgments."
+  },
+  "SKL-4456788999": {
+    "label": "Professional Communication (Written)",
+    "description": "Write clearly for professional, academic, and public audiences."
+  },
+  "SKL-5567899A0A": {
+    "label": "Professional Communication (Oral)",
+    "description": "Speak clearly and persuasively in presentations, interviews, or broadcasts."
+  },
+  "SKL-667899AB1B": {
+    "label": "Software & Tool Proficiency",
+    "description": "Use domain-specific software (e.g., GIS, SAS, video editors) to produce work."
+  },
+  "SKL-7789ABBC2C": {
+    "label": "Research Synthesis",
+    "description": "Synthesize research findings into coherent summaries and recommendations."
+  },
+  "SKL-889ABC-CD3D": {
+    "label": "Source Evaluation",
+    "description": "Assess credibility, relevance, and bias in sources of information."
+  },
+  "SKL-99ABCDDE4E": {
+    "label": "Produce & Publish Content",
+    "description": "Take creative or journalistic work through production to publication or broadcast."
+  },
+  "SKL-A0BCDDEF5F": {
+    "label": "Creative Workshop & Peer Review",
+    "description": "Give and receive constructive feedback to improve creative work."
+  },
+  "SKL-B1CDEF0120": {
+    "label": "Apply Quantitative Reasoning",
+    "description": "Use quantitative methods to make evidence-based conclusions."
+  },
+  "SKL-C2DEF12331": {
+    "label": "Apply Qualitative Analysis",
+    "description": "Analyze qualitative data, texts, and cultural materials for patterns and meaning."
+  },
+  "SKL-D3EF012342": {
+    "label": "Adaptation & Genre Transfer",
+    "description": "Adapt writing and media across formats and audiences while preserving core meaning."
+  },
+  "SKL-306F739B93": {
+    "label": "Analyze Young Adult Texts",
+    "description": "Develop the ability to analyze and interpret texts within the young adult literature genre."
+  },
+  "SKL-6E5E3C5511": {
+    "label": "Evaluate Adolescent Audience Impact",
+    "description": "Learn to evaluate how young adult literature affects and resonates with an adolescent audience."
+  },
+  "SKL-0129862F2F": {
+    "label": "Understand Scholarship in YA Lit",
+    "description": "Familiarize with scholarly works related to young adult literature."
+  },
+  "SKL-0E42F6F257": {
+    "label": "Develop Perspective on Contemporary YA Lit",
+    "description": "Cultivate a thoughtful perspective on contemporary young adult literature."
+  },
+  "SKL-49C79BC8ED": {
+    "label": "Analyze History of YA Lit",
+    "description": "Understand the historical development and evolution of young adult literature."
+  },
+  "SKL-970A9E1E0E": {
+    "label": "Evaluate Adolescent Audience Impact",
+    "description": "Assess how texts impact an adolescent audience."
+  },
+  "SKL-D10EB005E5": {
+    "label": "Read & Interpret Scholarship",
+    "description": "Learn to read and interpret scholarly works in the field."
+  },
+  "SKL-9DDAD6CA84": {
+    "label": "Broaden Understanding of Field",
+    "description": "Gain a broader understanding of young adult literature as a dynamic field."
+  },
+  "SKL-75997502E6": {
+    "label": "Analyze Contemporary Fiction",
+    "description": "Identify and discuss contemporary examples of the short story form."
+  },
+  "SKL-17669047CB": {
+    "label": "Understand Elements of Fiction",
+    "description": "Gain knowledge about key elements that make up a short story."
+  },
+  "SKL-6BDD0F821F": {
+    "label": "Compose Writing Assignments",
+    "description": "Complete various writing tasks designed for skill development."
+  },
+  "SKL-0C189237BD": {
+    "label": "Critique Short Stories",
+    "description": "Evaluate and critique various short stories based on learned skills"
+  },
+  "SKL-90F137FF3F": {
+    "label": "Analyze Published Novels",
+    "description": "Study of published novels to understand craft and structure"
+  },
+  "SKL-C461A5B515": {
+    "label": "Craft Novel Installments",
+    "description": "Workshop-style critique of student-generated novel installments"
+  },
+  "SKL-16A531A63F": {
+    "label": "Compose Novel Excerpts",
+    "description": "Developing skills to write coherent and engaging novel excerpts"
+  },
+  "SKL-8E5EA1C421": {
+    "label": "Revise Novel Content",
+    "description": "Refining own written work based on critique and feedback"
+  },
+  "SKL-4E03EAE7FE": {
+    "label": "Study SciFi/Fantasy History",
+    "description": "Understand the historical context of science fiction and fantasy literature"
+  },
+  "SKL-2DBD8219EA": {
+    "label": "Compose SciFi/Fantasy Works",
+    "description": "Create original works within the genres of science fiction and fantasy"
+  },
+  "SKL-D8C4CE6970": {
+    "label": "Revise Compositions",
+    "description": "Edit and refine drafts of written work"
+  },
+  "SKL-9D36EF8615": {
+    "label": "Writing Workshop Participation",
+    "description": "Engage in collaborative workshops to receive and provide constructive feedback on writing"
+  },
+  "SKL-23372579F3": {
+    "label": "Study SciFi/Fantasy History",
+    "description": "Learn about the history of Science Fiction and Fantasy literature."
+  },
+  "SKL-D6D9CFEF1B": {
+    "label": "Compose SciFi/Fantasy Works",
+    "description": "Write creative works within the genres of Science Fiction and Fantasy."
+  },
+  "SKL-59432C28A2": {
+    "label": "Revise Literary Composition",
+    "description": "Critically revise literary compositions in the context of Science Fiction and Fantasy."
+  },
+  "SKL-8D0D2221B0": {
+    "label": "Write Creative Papers",
+    "description": "Composing creative essays within both the mystery and adventure genres."
+  },
+  "SKL-099EEC6162": {
+    "label": "Compare Contemporary Works",
+    "description": "Assessing and comparing contemporary mystery/adventure works."
+  },
+  "SKL-09CCF20081": {
+    "label": "Read Scripts Critically",
+    "description": "Analyze and understand television scripts in detail"
+  },
+  "SKL-17CCA894A0": {
+    "label": "Television Narrative Composition",
+    "description": "Create engaging narratives for television audiences"
+  },
+  "SKL-40365EDE87": {
+    "label": "Genre-specific Writing Techniques",
+    "description": "Apply appropriate writing techniques to various television genres"
+  },
+  "SKL-2AD3B089AE": {
+    "label": "Write Grants",
+    "description": "Compose effective grant applications"
+  },
+  "SKL-EF0D5D46AC": {
+    "label": "Newsletter Composition",
+    "description": "Write compelling newsletters for nonprofits"
+  },
+  "SKL-B1A41699D6": {
+    "label": "Analyze Audience",
+    "description": "Adapt writing to suit different nonprofit audiences"
+  },
+  "SKL-28686A580C": {
+    "label": "Communicate with Clarity",
+    "description": "Write effectively for a nonprofit setting"
+  },
+  "SKL-2AD0233746": {
+    "label": "Fundraising Composition",
+    "description": "Create persuasive fundraising materials"
+  },
+  "SKL-D6BD35C117": {
+    "label": "Screenplay Composition",
+    "description": "Writing screenplays for movies and TV"
+  },
+  "SKL-7BF6F315E1": {
+    "label": "Teleplay Composition",
+    "description": "Writing teleplays for TV"
+  },
+  "SKL-304DDB76DE": {
+    "label": "Stage Play Composition",
+    "description": "Writing stage plays"
+  },
+  "SKL-267413E660": {
+    "label": "Marketing Strategies",
+    "description": "Promoting dramatic writing for various mediums"
+  },
+  "SKL-346ED6EB2D": {
+    "label": "Writing Workshop Participation",
+    "description": "Participating in collaborative writing workshops"
+  },
+  "SKL-E3C7E3271D": {
+    "label": "Write Clear and Effective Reports",
+    "description": "Ability to create clear, effective reports specific to the criminal justice field."
+  },
+  "SKL-C07CEA8B6A": {
+    "label": "Utilize APA Citation Style",
+    "description": "Knowledge of American Psychological Association (APA) citation style for academic and professional writing."
+  },
+  "SKL-5ED3D9E88B": {
+    "label": "Write Press Releases",
+    "description": "Competence in composing press releases related to criminal justice matters."
+  },
+  "SKL-27B9C5E0A2": {
+    "label": "Compose Search Warrants",
+    "description": "Ability to write detailed and legally sound search warrant documents."
+  },
+  "SKL-050FE34472": {
+    "label": "Draft Probation Reports",
+    "description": "Knowledge of how to create comprehensive probation reports."
+  },
+  "SKL-27B45FECD0": {
+    "label": "Analyze Children's Literature",
+    "description": "Explore the characteristics of award-winning books for children and young adults."
+  },
+  "SKL-042A952E05": {
+    "label": "Study Psychology of Learning to Read",
+    "description": "Understand the psychology behind learning to read and its impact on writing for youth."
+  },
+  "SKL-6DDD68FFA9": {
+    "label": "Explore Successful Writing Habits",
+    "description": "Learn from successful authors in the field of children's literature."
+  },
+  "SKL-32A2BDC23E": {
+    "label": "Compose Age-Appropriate Texts",
+    "description": "Learn to write for various age groups from early childhood through young adults."
+  },
+  "SKL-839E3FA783": {
+    "label": "Develop Writing Skills for Multiple Age Groups",
+    "description": "Fine-tune writing skills to cater to diverse age groups effectively."
+  },
+  "SKL-69BF06D62D": {
+    "label": "Explore Writing History",
+    "description": "Learn about the history of writing for children"
+  },
+  "SKL-36AB6B6212": {
+    "label": "Study Child Psychology",
+    "description": "Understand the psychology of learning to read"
+  },
+  "SKL-E5B43AD103": {
+    "label": "Analyze Award-winning Books",
+    "description": "Critically evaluate award-winning children's literature"
+  },
+  "SKL-98B1A92572": {
+    "label": "Explore Successful Writing Habits",
+    "description": "Investigate the habits of successful children's writers"
+  },
+  "SKL-87626069E1": {
+    "label": "Evaluate Children's Literature Quality",
+    "description": "Critically evaluate the quality of children's literature"
+  },
+  "SKL-D51DD0B807": {
+    "label": "Study Comic History",
+    "description": "Explore the historical background of comic books and graphic novels."
+  },
+  "SKL-812543F9DA": {
+    "label": "Comprehend Composition",
+    "description": "Learn the composition techniques used in comic books and graphic novels."
+  },
+  "SKL-8E7F4F0850": {
+    "label": "Revise Comic Works",
+    "description": "Develop skills for revising and refining comic book and graphic novel content."
+  },
+  "SKL-645190B39F": {
+    "label": "Market Comic Books",
+    "description": "Gain understanding on how to market comic books and graphic novels."
+  },
+  "SKL-F1E59FE29E": {
+    "label": "Create Comic Content",
+    "description": "Learn to create engaging content for comic books and graphic novels."
+  },
+  "SKL-F049CF6278": {
+    "label": "Composition Techniques",
+    "description": "Learn techniques for composing comic book stories"
+  },
+  "SKL-A52FE11BEE": {
+    "label": "Marketing Strategies",
+    "description": "Learn strategies for marketing comic books and graphic novels"
+  },
+  "SKL-84D2AB6FBA": {
+    "label": "Graphic Novel Creation",
+    "description": "Learn to create graphic novels"
+  },
+  "SKL-DAD65E54CA": {
+    "label": "Analyze Contemporary Comic Literature",
+    "description": "Understand the nuances of contemporary comic and satiric literature."
+  },
+  "SKL-2C3F848522": {
+    "label": "Practice Comic and Satiric Writing Techniques",
+    "description": "Develop skills in crafting effective comic and satiric writing."
+  },
+  "SKL-509E0A1423": {
+    "label": "Apply Comic and Satiric Tone",
+    "description": "Develop the ability to apply humorous or critical tones appropriately."
+  },
+  "SKL-612B936F01": {
+    "label": "Critically Evaluate Comedy and Satire",
+    "description": "Analyze and critically evaluate works of comedy and satire."
+  },
+  "SKL-B91C33A9C3": {
+    "label": "Analyze Contemporary Literature",
+    "description": "Identify themes, styles, and techniques in contemporary comic and satiric literature."
+  },
+  "SKL-30CA65DB59": {
+    "label": "Practice Comic Writing Techniques",
+    "description": "Understand and apply strategies for writing comedy effectively."
+  },
+  "SKL-8942C27D3A": {
+    "label": "Produce Comic & Satiric Works",
+    "description": "Create original comic and satiric works in a variety of genres."
+  },
+  "SKL-6C83434CE3": {
+    "label": "Read and Analyze",
+    "description": "Ability to read and critically analyze literary works"
+  },
+  "SKL-D3A7CEE21F": {
+    "label": "Discuss Literature",
+    "description": "Skill in discussing literary composition with peers"
+  },
+  "SKL-5039919F89": {
+    "label": "Apply Poetics",
+    "description": "Ability to apply poetics theories to creative writing"
+  },
+  "SKL-8441CD37CE": {
+    "label": "Literary Period Understanding",
+    "description": "Knowledge of literary periods and their respective characteristics"
+  },
+  "SKL-1F38D78E8B": {
+    "label": "Discuss Theory Application",
+    "description": "Skill in discussing the application of literary theory to practical writing"
+  },
+  "SKL-5EB9FF0203": {
+    "label": "Compare Religious Practices",
+    "description": "Analyze cultural and intercultural similarities and differences in religious practices"
+  },
+  "SKL-BDD8497852": {
+    "label": "Identify Parallels in Beliefs",
+    "description": "Recognize patterns and parallels across diverse religious beliefs"
+  },
+  "SKL-2B4CC5D38E": {
+    "label": "Examine Religious Manifestations",
+    "description": "Investigate various means by which religions are expressed and understood"
+  },
+  "SKL-3CD80557C4": {
+    "label": "Contextualize Personal Beliefs",
+    "description": "Develop a broader contextual understanding of personal convictions"
+  },
+  "SKL-D978FA2B2B": {
+    "label": "Understand Others' Beliefs",
+    "description": "Gain insights into the beliefs and practices of others"
+  },
+  "SKL-F38758A3A9": {
+    "label": "Analyze Diverse Religious Phenomena",
+    "description": "Explore and interpret diverse religious phenomena"
+  },
+  "SKL-128E1E9FBF": {
+    "label": "Compare Religious Practices",
+    "description": "Analyze and compare diverse religious practices across different cultures."
+  },
+  "SKL-E436259E8F": {
+    "label": "Identify Cultural Parallels",
+    "description": "Recognize cultural similarities within various religious beliefs."
+  },
+  "SKL-535E76A8F9": {
+    "label": "Distinguish Differences",
+    "description": "Discern and articulate differences in religious traditions."
+  },
+  "SKL-3FBBC7F8F2": {
+    "label": "Explore Religious Manifestations",
+    "description": "Investigate various means through which religions are expressed."
+  },
+  "SKL-201015A0E8": {
+    "label": "Broaden Contextual Understanding",
+    "description": "Develop a broader framework for understanding religious beliefs, including one's own and others."
+  },
+  "SKL-9580B3F939": {
+    "label": "Study Major Religious Traditions",
+    "description": "Gain knowledge of the key tenets and practices of major world religions."
+  },
+  "SKL-741174F658": {
+    "label": "Explore Minor Religious Traditions",
+    "description": "Familiarize oneself with less common religious traditions, as time permits."
+  },
+  "SKL-4EEA863CAE": {
+    "label": "Develop Intercultural Sensitivity",
+    "description": "Cultivate an appreciation for diverse religious perspectives and beliefs."
+  },
+  "SKL-A30F40A92E": {
+    "label": "Compare Literary Traditions",
+    "description": "Analyze historical and cultural contexts of literary texts from diverse regions"
+  },
+  "SKL-04624F35ED": {
+    "label": "Identify Interactions Among Cultures",
+    "description": "Recognize patterns of influence among world literatures and cultures"
+  },
+  "SKL-BE80042ADA": {
+    "label": "Understand Historical Contexts",
+    "description": "Recognize and interpret the historical significance of literary texts"
+  },
+  "SKL-FF64A53DBB": {
+    "label": "Analyze Cultural Interactions",
+    "description": "Identify patterns of interaction and influence among world literature and cultures"
+  },
+  "SKL-0ECF3DC914": {
+    "label": "Compare Literary Traditions",
+    "description": "Evaluate similarities and differences in literary traditions from various regions"
+  },
+  "SKL-52DE4C4B09": {
+    "label": "Identify Complex Patterns",
+    "description": "Detect complex patterns in the literary works studied"
+  },
+  "SKL-3B583FDF0D": {
+    "label": "Evaluate Historical Developments",
+    "description": "Students will be able to assess the progressions and transformations in world history over time."
+  },
+  "SKL-C3D123541B": {
+    "label": "Identify Global Impact Factors",
+    "description": "Students will learn to recognize and describe factors that have influenced global developments since 1450."
+  },
+  "SKL-260612F2EB": {
+    "label": "Develop Cultural Awareness",
+    "description": "Students will cultivate an understanding and appreciation for the diverse cultures that have shaped world history."
+  },
+  "SKL-D9AF15C4C3": {
+    "label": "Understand Timeline Sequence",
+    "description": "Students will learn to recognize and place events within their proper historical timelines."
+  },
+  "SKL-CAC03B1768": {
+    "label": "Communicate Historical Knowledge",
+    "description": "Students will be able to effectively communicate their understanding of world history to others."
+  },
+  "SKL-D9FD1D2D58": {
+    "label": "Analyze Historical Developments",
+    "description": "Understand and evaluate historical changes and progressions in various societies."
+  },
+  "SKL-33F81C0C61": {
+    "label": "Interpret Historical Contexts",
+    "description": "Comprehend the broader social, political, and cultural contexts within which historical events occurred."
+  },
+  "SKL-19B1B04980": {
+    "label": "Understand Timelines and Sequence",
+    "description": "Gain an understanding of the chronological order and sequence of historical events."
+  },
+  "SKL-636E5CC791": {
+    "label": "Develop Historical Perspective",
+    "description": "Develop a broader historical perspective by understanding the long-term trends and patterns in world history."
+  },
+  "SKL-9763C2DE36": {
+    "label": "Analyze Women's Historical Roles",
+    "description": "Understand and evaluate the historical roles of women in Europe."
+  },
+  "SKL-185FD3338C": {
+    "label": "Explore Changing Cultural Norms",
+    "description": "Investigate shifts in cultural norms concerning women throughout history."
+  },
+  "SKL-D26C890768": {
+    "label": "Analyze Women's Theories",
+    "description": "Evaluate theories related to women's history and their impact on society."
+  },
+  "SKL-E66A3F3CAA": {
+    "label": "Understand Social Constraints",
+    "description": "Learn about the social constraints faced by women in various domains like politics, business, and religion."
+  },
+  "SKL-CE9B6EB0B3": {
+    "label": "Interpret General Trends",
+    "description": "Identify and analyze general trends regarding the rights and responsibilities of women."
+  },
+  "SKL-7C2FD07B38": {
+    "label": "Examine Women's Navigation Strategies",
+    "description": "Study strategies used by women to navigate social constraints throughout history."
+  },
+  "SKL-E291353BF9": {
+    "label": "Analyze Confucianism Impact",
+    "description": "Understand the influence of Confucianism on women's history and culture in China."
+  },
+  "SKL-C78AC3B067": {
+    "label": "Explore Daoist & Buddhist Influences",
+    "description": "Investigate how Daoism and Buddhism have affected women in Chinese history."
+  },
+  "SKL-7E216E6014": {
+    "label": "Analyze Communist Impact",
+    "description": "Assess the impact of Communism on women's roles and rights in China."
+  },
+  "SKL-BF4BA47034": {
+    "label": "Understand Capitalist Influences",
+    "description": "Comprehend how state-sponsored capitalism has affected contemporary women's issues in China."
+  },
+  "SKL-A89BF80F00": {
+    "label": "Evaluate Women's Agency",
+    "description": "Analyze the agency of women throughout Chinese history amid different cultural and political contexts."
+  },
+  "SKL-098D936B71": {
+    "label": "Explore Historical & Cultural Contexts",
+    "description": "Gain insight into historical and cultural factors shaping women's lives in China."
+  },
+  "SKL-E2B0825462": {
+    "label": "Analyze Modern Women's Issues",
+    "description": "Understand contemporary issues facing women in modern-day China."
+  },
+  "SKL-672DFA1AC5": {
+    "label": "Develop Historical Perspective",
+    "description": "Cultivate a deep understanding of women's history and culture across various time periods in China."
+  },
+  "SKL-1C6C31F2A2": {
+    "label": "Analyze Confucianism Impact",
+    "description": "Understand the influence of Confucianism on women's roles and rights in Chinese history."
+  },
+  "SKL-3615B93344": {
+    "label": "Explore Daoist & Buddhist Traditions",
+    "description": "Study the role and status of women in Daoist and Buddhist traditions in China."
+  },
+  "SKL-025851917B": {
+    "label": "Investigate Communist Impacts",
+    "description": "Analyze how Communism affected the roles, rights, and opportunities for Chinese women."
+  },
+  "SKL-B86A17C54D": {
+    "label": "Examine Capitalism's Influence",
+    "description": "Investigate the effects of state-sponsored capitalism on women in modern China."
+  },
+  "SKL-21BC5F0F87": {
+    "label": "Analyze Women's Agency",
+    "description": "Learn to identify and analyze the agency of Chinese women throughout history."
+  },
+  "SKL-3AE6236419": {
+    "label": "Understand Cultural Context",
+    "description": "Develop a deep understanding of the cultural contexts shaping women's lives in China."
+  },
+  "SKL-7258A125E3": {
+    "label": "Examine Native Women's Histories",
+    "description": "Analyze the historical experiences of Native women within their indigenous communities."
+  },
+  "SKL-7AD2D81094": {
+    "label": "Understand Changing Gender Roles",
+    "description": "Recognize and interpret shifts in gender roles over time in indigenous societies."
+  },
+  "SKL-C8A981DEE1": {
+    "label": "Evaluate Indigenous Community Changes",
+    "description": "Assess the impact of broader societal changes on indigenous communities."
+  },
+  "SKL-082C41F8EE": {
+    "label": "Analyze Historical Context",
+    "description": "Identify and interpret historical contexts affecting indigenous communities and women."
+  },
+  "SKL-0F9FCBA136": {
+    "label": "Analyze Native American history",
+    "description": "Understand and critically evaluate historical events related to Native Americans"
+  },
+  "SKL-B336ED94B8": {
+    "label": "Explore gender roles in indigenous societies",
+    "description": "Investigate the varying gender roles within native communities over time"
+  },
+  "SKL-970965105A": {
+    "label": "Apply feminist perspective",
+    "description": "Analyze events and social structures through a feminist lens"
+  },
+  "SKL-74CF9D86C8": {
+    "label": "Compare and contrast cultural perspectives",
+    "description": "Differentiate and understand the unique and shared aspects of Native American and Western cultures"
+  },
+  "SKL-CD0A3261F2": {
+    "label": "Evaluate primary sources",
+    "description": "Critically assess historical records and artifacts relevant to Native women's experiences"
+  },
+  "SKL-AA9FBC52E1": {
+    "label": "Assess changing gender roles",
+    "description": "Analyze the evolution of gender roles within indigenous communities"
+  },
+  "SKL-0088C9AC8A": {
+    "label": "Understand broader social context",
+    "description": "Recognize and interpret larger social, political, and economic contexts impacting Native American women"
+  },
+  "SKL-8BD7FE9E95": {
+    "label": "Communicate historical findings",
+    "description": "Articulate research findings effectively in academic writing"
+  },
+  "SKL-3673866B04": {
+    "label": "Analyze Historical Context",
+    "description": "Understand historical responses to women's worldviews"
+  },
+  "SKL-E2E3DC9018": {
+    "label": "Study Psychological Perspectives",
+    "description": "Investigate psychological aspects of deviating female roles"
+  },
+  "SKL-2D40F39972": {
+    "label": "Understand Philosophical/Religious Dynamics",
+    "description": "Explore religious and philosophical dimensions related to women's deviance"
+  },
+  "SKL-722756BEEC": {
+    "label": "Investigate Modern Witchcraft",
+    "description": "Examine the beliefs and practices of modern Wicca adherents"
+  },
+  "SKL-92973BBA00": {
+    "label": "Compare and Contrast Female Figures",
+    "description": "Evaluate similarities and differences between various deviant female figures"
+  },
+  "SKL-B5BD46C9BC": {
+    "label": "Analyze Women's Roles",
+    "description": "Explore the role of women in Spanish America and their relationship with political, religious institutions"
+  },
+  "SKL-5CD1697A35": {
+    "label": "Critique Silencing",
+    "description": "Assess how silencing has influenced women's roles and identities in Spanish America"
+  },
+  "SKL-B88D5F1F14": {
+    "label": "Explore Otherness",
+    "description": "Understand the concept of otherness as it pertains to women in Spanish America"
+  },
+  "SKL-644FBAA1D3": {
+    "label": "Analyze Mythical Images",
+    "description": "Examine mythical images that have contributed to false identities for women in Spanish America"
+  },
+  "SKL-A7D27FC62B": {
+    "label": "Compare Geographic Regions",
+    "description": "Study literature from diverse geographic regions of Central and South America, Mexico, and the Caribbean"
+  },
+  "SKL-8C4D07BC2F": {
+    "label": "Analyze Women's Historical Impact",
+    "description": "Examine women's contributions and barriers throughout Western civilization history"
+  },
+  "SKL-A10537ED2F": {
+    "label": "Identify Political, Economic, Religious Factors",
+    "description": "Understand factors affecting women in public and private life"
+  },
+  "SKL-74B207CC66": {
+    "label": "Explore Intellectual, Artistic, Social History",
+    "description": "Investigate women's roles and influences in intellectual, artistic, and social contexts"
+  },
+  "SKL-4B0F7DC4AA": {
+    "label": "Trace Women's Evolution in Society",
+    "description": "Follow the development of women's role in society from prehistory to the present"
+  },
+  "SKL-9BF14229EC": {
+    "label": "Evaluate Social Barriers for Women",
+    "description": "Assess barriers placed upon women in various aspects of life"
+  },
+  "SKL-3D824B88E1": {
+    "label": "Compare and Contrast Women's Roles",
+    "description": "Compare and contrast women's roles across different time periods and cultures"
+  },
+  "SKL-474F9337E9": {
+    "label": "Develop Historical Perspective",
+    "description": "Gain a comprehensive historical perspective on the role of women in Western civilization"
+  },
+  "SKL-CF551586D4": {
+    "label": "Analyze Regional Identity",
+    "description": "Exploring how regional identity forms and evolves for women in the American West"
+  },
+  "SKL-17AA3EE136": {
+    "label": "Understand Cultural Representations",
+    "description": "Learning to identify and interpret cultural representations of women in the Western context"
+  },
+  "SKL-47AA17DEF0": {
+    "label": "Explore Women's Mobility",
+    "description": "Analyzing patterns of movement and migration for women across the American West"
+  },
+  "SKL-9FA665C789": {
+    "label": "Interpret Diverse Perspectives",
+    "description": "Gaining skills to understand and appreciate diverse viewpoints among Western women"
+  },
+  "SKL-86DD99FD1D": {
+    "label": "Trace Cultural History",
+    "description": "Mapping changes in the cultural landscape of the American West over time"
+  },
+  "SKL-28C4BA1C35": {
+    "label": "Explore Shaping Influences",
+    "description": "Identifying how women's influence has contributed to shaping the American West"
+  },
+  "SKL-74D9035164": {
+    "label": "Analyze Regional Identity",
+    "description": "Understanding the historical and cultural factors shaping regional identity in the American West"
+  },
+  "SKL-6891B5A00F": {
+    "label": "Explore Mobility Patterns",
+    "description": "Identifying patterns of mobility among women in the American West over time"
+  },
+  "SKL-A5D8328147": {
+    "label": "Interpret Cultural Representations",
+    "description": "Analyzing cultural depictions and stereotypes of women in the American West"
+  },
+  "SKL-866AD7027C": {
+    "label": "Evaluate Perspectives",
+    "description": "Assessing diverse perspectives on the experiences of women in the American West"
+  },
+  "SKL-BD70881958": {
+    "label": "Discuss Cultural Shifts",
+    "description": "Exploring shifts in cultural norms and attitudes towards women in the American West"
+  },
+  "SKL-5CEDE340D3": {
+    "label": "Analyze Media History",
+    "description": "Understand and dissect the historical context of women in media."
+  },
+  "SKL-920F411046": {
+    "label": "Interpret Statistics",
+    "description": "Learn to analyze and interpret statistics related to women in media."
+  },
+  "SKL-D1B21F909E": {
+    "label": "Evaluate Media Portrayal",
+    "description": "Assess the representation of women as subjects of media."
+  },
+  "SKL-C2D8C421F6": {
+    "label": "Engage with Guest Speakers",
+    "description": "Develop skills in collaborative learning and knowledge exchange with industry professionals."
+  },
+  "SKL-99726F5900": {
+    "label": "Discuss Current Issues",
+    "description": "Learn to discuss and debate current issues related to women in media."
+  },
+  "SKL-CE419EABB3": {
+    "label": "Forecast Future Trends",
+    "description": "Develop the ability to forecast potential future developments for women in media."
+  },
+  "SKL-AD2DD331D8": {
+    "label": "Critically Analyze Journalism",
+    "description": "Learn to critically analyze journalism and its impact on women."
+  },
+  "SKL-D4FA827A3F": {
+    "label": "Advocate for Equality",
+    "description": "Develop advocacy skills in promoting gender equality within the media industry."
+  },
+  "SKL-419CC516F2": {
+    "label": "Analyze Women's Role",
+    "description": "Explore the role of women as journalism professionals and subjects of media"
+  },
+  "SKL-1B06C039E9": {
+    "label": "Guest Speaker Engagement",
+    "description": "Engage with guest speakers on the topic of women in media"
+  },
+  "SKL-2AD7512C4A": {
+    "label": "Analyze Gender Influence",
+    "description": "Understand the impact of gender on English, American, and world literature"
+  },
+  "SKL-E8FBD04825": {
+    "label": "Evaluate Female Writers",
+    "description": "Assess literary criticism by women writers"
+  },
+  "SKL-D72E4FBF7A": {
+    "label": "Critique Female Narratives",
+    "description": "Analyze the narrative structure of female-authored literature"
+  },
+  "SKL-29C3C1761A": {
+    "label": "Develop Historical Perspective",
+    "description": "Gain a historical understanding of the evolution of women's literature"
+  },
+  "SKL-694B06C514": {
+    "label": "Formulate Critical Opinions",
+    "description": "Develop and express critical opinions about women's literature"
+  },
+  "SKL-AA72F73C32": {
+    "label": "Analyze Leadership Challenges",
+    "description": "Exploring historical and contemporary leadership challenges faced by women."
+  },
+  "SKL-3ECFD0C6B9": {
+    "label": "Identify Strategies for Change",
+    "description": "Recognizing strategies that promote success for women in leadership roles."
+  },
+  "SKL-695C6A03A5": {
+    "label": "Evaluate Contemporary Opportunities",
+    "description": "Assessing current opportunities available to women leaders."
+  },
+  "SKL-D4DB8FF690": {
+    "label": "Develop Cross-Disciplinary Knowledge",
+    "description": "Gaining knowledge in both communications and leadership through cross-listing with LEAD 3533."
+  },
+  "SKL-71524920C1": {
+    "label": "Explore Success Strategies",
+    "description": "Learning strategies for personal success as a woman leader."
+  },
+  "SKL-0775EBA986": {
+    "label": "Understand White Collar Crime",
+    "description": "Gain knowledge about the nature and definition of white collar crime."
+  },
+  "SKL-88C83AC370": {
+    "label": "Analyze Victimization in White Collar Crime",
+    "description": "Learn to analyze the complexities involved in victimization related to white collar crimes."
+  },
+  "SKL-1E23213AE9": {
+    "label": "Assess Sentencing Issues",
+    "description": "Develop skills to evaluate sentencing issues in white collar crime cases."
+  },
+  "SKL-874690D858": {
+    "label": "Explore Criminal Justice System Response",
+    "description": "Learn about the challenges and responses of the criminal justice system towards white collar crimes."
+  },
+  "SKL-C94757BCA1": {
+    "label": "Analyze Debates About White Collar Crime",
+    "description": "Gain skills to analyze debates surrounding the definition, causes, and impacts of white collar crime."
+  },
+  "SKL-59D92528C7": {
+    "label": "Write Effective Academic Essays",
+    "description": "Improve academic writing skills through essays related to the course content."
+  },
+  "SKL-C85B470BBA": {
+    "label": "Evaluate Offender Behavior",
+    "description": "Learn to evaluate the behavior, motivations, and profiles of white collar offenders."
+  },
+  "SKL-0080899910": {
+    "label": "Evaluate Cultural Responses",
+    "description": "Assess various cultural, literary, psychological, philosophical, and religious responses to and interpretations of such traditions."
+  },
+  "SKL-17C401CEAF": {
+    "label": "Understand Heterodoxy",
+    "description": "Gain insight into heterodox religious traditions from ancient times to the present."
+  },
+  "SKL-DDBCD8DA6B": {
+    "label": "Interpret Historical Texts",
+    "description": "Gain proficiency in interpreting historical texts related to the subject matter."
+  },
+  "SKL-A108049FE1": {
+    "label": "Demonstrate Senior-Level Understanding",
+    "description": "Demonstrate a mature understanding of complex religious, historical, and cultural topics."
+  },
+  "SKL-62B30D45F3": {
+    "label": "Engage with Diverse Perspectives",
+    "description": "Explore diverse perspectives on the role and worship of Goddesses in various cultures and religions."
+  },
+  "SKL-1CFA381451": {
+    "label": "Identify CBRNE Agents",
+    "description": "Recognize chemical, biological, radiological, nuclear, and explosive agents related to terrorism events"
+  },
+  "SKL-DE04DFD1A4": {
+    "label": "Process CBRNE Scenes",
+    "description": "Follow protocols for processing crime scenes involving weapons of mass destruction"
+  },
+  "SKL-27FE0F1ADD": {
+    "label": "Analyze Terrorism Events",
+    "description": "Understand the dynamics of domestic and international terrorism events"
+  },
+  "SKL-455C9FDE3D": {
+    "label": "Field Analysis Procedures",
+    "description": "Follow procedures for field analyses on samples from CBRNE events"
+  },
+  "SKL-74967E2D01": {
+    "label": "CBRNE Threat Assessment",
+    "description": "Evaluate threats posed by chemical, biological, radiological, nuclear, and explosive agents"
+  },
+  "SKL-70F006A1A0": {
+    "label": "Identify CBRNE agents",
+    "description": "Recognize chemical, biological, radiological, nuclear, and explosive substances in various contexts."
+  },
+  "SKL-B4339C7BCD": {
+    "label": "Process CBRNE crime scenes",
+    "description": "Follow protocol for handling evidence at sites of WMD events."
+  },
+  "SKL-65C2337B55": {
+    "label": "Apply terrorism context knowledge",
+    "description": "Understand the connection between terrorism and WMD use."
+  },
+  "SKL-6FC9C7AC50": {
+    "label": "Comprehend international implications",
+    "description": "Recognize the global ramifications of WMD events."
+  },
+  "SKL-8180A1A8AE": {
+    "label": "Develop Vocal Techniques",
+    "description": "Learn various techniques for improving vocal clarity, expressiveness, projection, and confidence"
+  },
+  "SKL-19C34284CD": {
+    "label": "Stage Dialect Development",
+    "description": "Explore the fundamentals of developing a stage dialect"
+  },
+  "SKL-505098AD6F": {
+    "label": "Vocal Clarity Improvement",
+    "description": "Improve the clarity of voice delivery in performance"
+  },
+  "SKL-22BB9F5094": {
+    "label": "Expressiveness Enhancement",
+    "description": "Enhance the expressiveness of vocal delivery for better performance"
+  },
+  "SKL-64E3C39120": {
+    "label": "Projection Skill",
+    "description": "Learn techniques for projecting voice effectively on stage"
+  },
+  "SKL-EF5926D2FD": {
+    "label": "Vocal Confidence Building",
+    "description": "Build vocal confidence both on and off stage"
+  },
+  "SKL-F42D595957": {
+    "label": "Control Resonance",
+    "description": "Developing the ability to control resonance for enhanced expressive intonation"
+  },
+  "SKL-EA1BA5FFDB": {
+    "label": "Physical Control",
+    "description": "Gaining more physical control through group work"
+  },
+  "SKL-81FACD60B2": {
+    "label": "Vocal Interpretation",
+    "description": "Interpreting vocal nuances in text analysis"
+  },
+  "SKL-5EF64B7359": {
+    "label": "Physical Coordination",
+    "description": "Developing coordination in physical movement for voice and movement exercises"
+  },
+  "SKL-9BC3611D85": {
+    "label": "Proper Breathing",
+    "description": "Learning to breathe properly for stage performances"
+  },
+  "SKL-73696E4352": {
+    "label": "Resonance Techniques",
+    "description": "Techniques to enhance vocal resonance"
+  },
+  "SKL-0DB45A6B3A": {
+    "label": "Floor Exercises",
+    "description": "Physical exercises for body relaxation"
+  },
+  "SKL-E11F5D6D3E": {
+    "label": "Theatre Games",
+    "description": "Participation in games to improve acting skills"
+  },
+  "SKL-6EB26E6060": {
+    "label": "Eliminate Posture Dysfunctions",
+    "description": "Correcting poor posture for performance"
+  },
+  "SKL-87EEA37D6F": {
+    "label": "Support for Vocal Instrument",
+    "description": "Learning how to support the voice effectively"
+  },
+  "SKL-EBA79A0EE1": {
+    "label": "Stage Worthy Vocal Skills",
+    "description": "Developing vocal skills suitable for stage performances"
+  },
+  "SKL-D300B66F8D": {
+    "label": "Recognize Prefixes",
+    "description": "Identify and understand the meaning of prefixes in words."
+  },
+  "SKL-4886ED0B3C": {
+    "label": "Understand Suffixes",
+    "description": "Identify and understand the meaning of suffixes in words."
+  },
+  "SKL-207A0778B0": {
+    "label": "Analyze Etymologies",
+    "description": "Trace the origin of words to improve understanding."
+  },
+  "SKL-BBC31C02A6": {
+    "label": "Enhance Reading Skills",
+    "description": "Improve reading comprehension through vocabulary expansion."
+  },
+  "SKL-FE1ED1F6EB": {
+    "label": "Boost Writing Competency",
+    "description": "Increase writing proficiency by using new vocabulary."
+  },
+  "SKL-985BABC765": {
+    "label": "Improve Verbal IQ",
+    "description": "Develop verbal intelligence through extensive vocabulary."
+  },
+  "SKL-FB8E14AD2D": {
+    "label": "Expand Language Aptitude",
+    "description": "Broaden language proficiency by learning new words and word forms."
+  },
+  "SKL-331D5B7438": {
+    "label": "Use Electronic News-Gathering Equipment",
+    "description": "Students will be trained on the use of electronic news-gathering equipment"
+  },
+  "SKL-82D1358BBE": {
+    "label": "Write and Report Style",
+    "description": "Students will learn about writing and reporting style in news"
+  },
+  "SKL-C83BD086CD": {
+    "label": "On-Air Presentation",
+    "description": "Students will learn to present completed stories on air"
+  },
+  "SKL-DC117552B6": {
+    "label": "Electronic News Gathering",
+    "description": "Students will gain skills in electronic news gathering"
+  },
+  "SKL-B1CA6DE394": {
+    "label": "Writing for News",
+    "description": "Students will develop skills in writing for news"
+  },
+  "SKL-60107177C5": {
+    "label": "Teamwork",
+    "description": "Working collaboratively in a news team"
+  },
+  "SKL-258D8ACB50": {
+    "label": "Writing for Video",
+    "description": "Composing scripts suitable for video newscasts"
+  },
+  "SKL-5BA5134011": {
+    "label": "Content Creation",
+    "description": "Designing video-driven content for news programs"
+  },
+  "SKL-1DF2668225": {
+    "label": "Video Storytelling",
+    "description": "Developing engaging narratives for video journalism"
+  },
+  "SKL-43DE16D3CE": {
+    "label": "Videography Skills",
+    "description": "Applying techniques to capture high-quality video footage"
+  },
+  "SKL-459639C365": {
+    "label": "Writing for Storytelling",
+    "description": "Composing effective scripts and storylines"
+  },
+  "SKL-875B4FE374": {
+    "label": "Directing Abilities",
+    "description": "Leading actors and crew to execute a vision"
+  },
+  "SKL-BDBA1D10F7": {
+    "label": "Producing Skills",
+    "description": "Organizing resources and overseeing production"
+  },
+  "SKL-8405FE4548": {
+    "label": "Storytelling across Platforms",
+    "description": "Adapting storytelling methods for different media"
+  },
+  "SKL-BE5B6DDCFB": {
+    "label": "Use Video Editing Software",
+    "description": "Demonstrate proficiency in using industry-standard video editing software"
+  },
+  "SKL-EB67A8AEEB": {
+    "label": "Edit Video Sequences",
+    "description": "Manipulate and arrange video clips to create coherent narratives"
+  },
+  "SKL-75DF793029": {
+    "label": "Apply Transitions and Effects",
+    "description": "Utilize various visual transitions and effects to enhance video content"
+  },
+  "SKL-D6715FA6F7": {
+    "label": "Create Titles and Captions",
+    "description": "Design and implement titles, captions, and other text elements for videos"
+  },
+  "SKL-EA9A093A2D": {
+    "label": "Color Correction and Grading",
+    "description": "Adjust color balances, contrasts, and other visual aspects to improve video quality"
+  },
+  "SKL-03FE9872A3": {
+    "label": "Analyze trauma impact",
+    "description": "Understanding the interpersonal and psychological effects of trauma on victims."
+  },
+  "SKL-734AB1C3F0": {
+    "label": "Assess media coverage",
+    "description": "Evaluating the impact of media coverage on victims, journalists, and communications professionals."
+  },
+  "SKL-DFFFFA2A4F": {
+    "label": "Communicate effectively",
+    "description": "Developing clear and effective communication skills in discussing trauma and its impact."
+  },
+  "SKL-C71CE25D81": {
+    "label": "Empathize with victims",
+    "description": "Cultivating empathy for victims and their experiences during media coverage."
+  },
+  "SKL-D31A1DA428": {
+    "label": "Identify journalistic ethics",
+    "description": "Recognizing ethical considerations in reporting on traumatic events and their impact on victims."
+  },
+  "SKL-F35FAB92D9": {
+    "label": "Respond to crisis situations",
+    "description": "Learning how to respond appropriately to crisis situations, especially those involving trauma."
+  },
+  "SKL-990AD4A963": {
+    "label": "Understand media psychology",
+    "description": "Exploring the psychological aspects of media consumption and its impact on victims and journalists."
+  },
+  "SKL-E41C739DC3": {
+    "label": "Write for various audiences",
+    "description": "Composing written work tailored to diverse audiences, including victims, journalists, and communications professionals."
+  },
+  "SKL-DBBFB07C78": {
+    "label": "Understand Victimization History",
+    "description": "Demonstrate knowledge of the historical development and evolution of victimization."
+  },
+  "SKL-F557C05D65": {
+    "label": "Analyze Theories of Victimology",
+    "description": "Critically evaluate various theories used to explain victimization."
+  },
+  "SKL-E4548786F6": {
+    "label": "Examine Criminal Justice System Interaction",
+    "description": "Demonstrate understanding of how crime victims interact within the criminal justice system."
+  },
+  "SKL-F48A643BB5": {
+    "label": "Study Classical and Contemporary Works",
+    "description": "Analyze key works in victimology, both classic and modern."
+  },
+  "SKL-F15CCD2C31": {
+    "label": "Evaluate Victim Services",
+    "description": "Assess the effectiveness of various victim services programs."
+  },
+  "SKL-E0B9873955": {
+    "label": "Understand Interaction of Crime with Society",
+    "description": "Gain an understanding of how crime affects individuals and society as a whole."
+  },
+  "SKL-633FBA3A80": {
+    "label": "Develop Awareness of Victim Services Needs",
+    "description": "Recognize the needs and challenges faced by victims in the criminal justice system."
+  },
+  "SKL-31542CFE0F": {
+    "label": "Examine Social Welfare Implications",
+    "description": "Identify and analyze the implications of industrial organization on social welfare"
+  },
+  "SKL-02409F7E67": {
+    "label": "Investigate Market Conduct",
+    "description": "Analyze market conduct within various structures"
+  },
+  "SKL-0502690D1B": {
+    "label": "Apply Regulatory Policies",
+    "description": "Understand and apply regulatory policies as alternatives to market competition"
+  },
+  "SKL-9BBA5A0B29": {
+    "label": "Understand Antitrust Policies",
+    "description": "Comprehend antitrust policies and their application in market regulation"
+  },
+  "SKL-B837588AD1": {
+    "label": "Analyze Legal Precedents",
+    "description": "Examine the impact of legal cases on market structure and regulation"
+  },
+  "SKL-6B66BD76F9": {
+    "label": "Formulate Policy Alternatives",
+    "description": "Propose policy alternatives based on analyzed market structures, performance, and conduct"
+  },
+  "SKL-FF6C180647": {
+    "label": "Analyze Demand and Cost",
+    "description": "Applying economic theory to solve business and public policy problems through demand and cost estimation and analysis."
+  },
+  "SKL-26340DAAA5": {
+    "label": "Forecast Economic Trends",
+    "description": "Developing skills in economic forecasting for business decision making."
+  },
+  "SKL-4FDA4B1286": {
+    "label": "Perform Cost/Benefit Analysis",
+    "description": "Learning to evaluate the advantages and disadvantages of different alternatives based on costs and benefits."
+  },
+  "SKL-9460FCE70D": {
+    "label": "Investigate Competitive Behavior",
+    "description": "Examining various forms of competitive behavior in markets."
+  },
+  "SKL-E2F75EE99C": {
+    "label": "Analyze Noncompetitive Behavior",
+    "description": "Investigating different forms of non-competitive behavior in industries and market structures."
+  },
+  "SKL-40D0F9CA2D": {
+    "label": "Estimate Demand",
+    "description": "Developing the ability to estimate demand in various market scenarios."
+  },
+  "SKL-24B45EEFB2": {
+    "label": "Analyze Colonial Period",
+    "description": "Identify key events and themes during the colonial period of American history."
+  },
+  "SKL-A51EAAC54A": {
+    "label": "Understand Early U.S. Development",
+    "description": "Explore the development of the United States from its founding through the late 1800s."
+  },
+  "SKL-19D11F72D0": {
+    "label": "Evaluate Sources",
+    "description": "Assess primary and secondary sources related to US history up to 1877."
+  },
+  "SKL-6F874C71CC": {
+    "label": "Interpret Historical Context",
+    "description": "Understand the historical context of events in American history up to 1877."
+  },
+  "SKL-E0C030C405": {
+    "label": "Critically Analyze Primary Sources",
+    "description": "Develop skills for critical analysis of primary sources related to US history."
+  },
+  "SKL-D4B972F166": {
+    "label": "Explore Historical Themes",
+    "description": "Examine recurring themes and patterns in the history of the United States up to 1877."
+  },
+  "SKL-6F9E0A301C": {
+    "label": "Synthesize Historical Knowledge",
+    "description": "Demonstrate the ability to synthesize historical knowledge to form coherent arguments or explanations about US history up to 1877."
+  },
+  "SKL-992AA8F0E6": {
+    "label": "Evaluate Historical Context",
+    "description": "Assess the social, political, and economic context of U.S. history from 1877 to the present."
+  },
+  "SKL-F95662DFFA": {
+    "label": "Identify Causes and Consequences",
+    "description": "Recognize causes and consequences of significant events and trends in U.S. history."
+  },
+  "SKL-BE2E3F57A8": {
+    "label": "Understand Historical Perspectives",
+    "description": "Develop an appreciation for the diverse perspectives that shape U.S. history."
+  },
+  "SKL-9028F820EC": {
+    "label": "Explore Social Movements",
+    "description": "Evaluate the role of social movements in shaping American society and history."
+  },
+  "SKL-C9D070FF5F": {
+    "label": "Analyze Urban Politics",
+    "description": "Understanding the role of local politics in urban sustainability"
+  },
+  "SKL-CAE8B94C84": {
+    "label": "Apply Sustainable Development Theory",
+    "description": "Utilizing theories in sustainable development within urban contexts"
+  },
+  "SKL-733011B355": {
+    "label": "Compare Global Urban Sustainability Practices",
+    "description": "Analyzing similarities and differences between worldwide urban sustainability methods"
+  },
+  "SKL-029F00F7FF": {
+    "label": "Evaluate Oklahoma's Urban Sustainability Efforts",
+    "description": "Assessing the pursuit of sustainable development in Oklahoma's urban areas"
+  },
+  "SKL-66DDE2A9F8": {
+    "label": "Develop Theoretical Perspectives",
+    "description": "Formulating theoretical perspectives on urban sustainability"
+  },
+  "SKL-2DA4BB760F": {
+    "label": "Analyze Urban Relationships and Impact",
+    "description": "Exploring the connection between urban development and sustainability"
+  },
+  "SKL-0413A00B60": {
+    "label": "Implement Sustainable Strategies",
+    "description": "Applying sustainable strategies in urban planning and development"
+  },
+  "SKL-F16F375E00": {
+    "label": "Communicate Sustainable Urban Development Concepts",
+    "description": "Sharing knowledge about sustainable urban development with others"
+  },
+  "SKL-42ED959ADC": {
+    "label": "Understand Sustainable Development Theory",
+    "description": "Recognize and explain the principles of sustainable development as applied in urban contexts."
+  },
+  "SKL-9445927307": {
+    "label": "Analyze Urban Political Processes",
+    "description": "Evaluate the role and impact of local political processes on urban sustainability."
+  },
+  "SKL-274295BF95": {
+    "label": "Apply Sustainable Development Principles",
+    "description": "Use sustainability principles to address urban challenges and promote development."
+  },
+  "SKL-4B65A81FEA": {
+    "label": "Compare Global Urban Sustainability Approaches",
+    "description": "Assess different strategies for achieving sustainable development in various urban settings."
+  },
+  "SKL-FD651C492F": {
+    "label": "Evaluate Oklahoma-specific Urban Sustainability",
+    "description": "Analyze and critique the pursuit of sustainability in Oklahoma cities."
+  },
+  "SKL-BF3BA2BDAF": {
+    "label": "Develop Sustainable Urban Policies",
+    "description": "Design effective policies to promote sustainable urban development."
+  },
+  "SKL-6414162490": {
+    "label": "Explain Theoretical Underpinnings of Sustainability",
+    "description": "Articulate the theories that guide sustainability in an urban context."
+  },
+  "SKL-D14B0BB4B8": {
+    "label": "Assess Urban Sustainability Impact",
+    "description": "Analyze and evaluate the outcomes of urban sustainability efforts."
+  },
+  "SKL-401FF1C6B5": {
+    "label": "Understand Land Use Laws",
+    "description": "Demonstrate the ability to comprehend American land use planning laws."
+  },
+  "SKL-4E075FB271": {
+    "label": "Analyze Nuisance Laws",
+    "description": "Develop skills in analyzing nuisance laws related to urban planning."
+  },
+  "SKL-2A3B352445": {
+    "label": "Interpret Restrictive Covenants",
+    "description": "Learn to interpret and understand restrictive covenants."
+  },
+  "SKL-E62BA74CF5": {
+    "label": "Evaluate Planning Policies",
+    "description": "Gain skills in evaluating planning policies and controls."
+  },
+  "SKL-CCDAEC5492": {
+    "label": "Apply Subdivision Controls",
+    "description": "Learn to apply subdivision controls in urban planning."
+  },
+  "SKL-F265CBC9FD": {
+    "label": "Recognize Innovations in Land Use",
+    "description": "Demonstrate the ability to recognize recent innovations in land use control."
+  },
+  "SKL-89EE77F4EB": {
+    "label": "Apply Legal Knowledge to Planning",
+    "description": "Learn to apply legal knowledge to urban planning scenarios."
+  },
+  "SKL-575E56E06B": {
+    "label": "Understand Urban Context",
+    "description": "Analyze the historical context of urban areas, political institutions, and social environments."
+  },
+  "SKL-2EBFD3762F": {
+    "label": "Evaluate Contemporary Institutions",
+    "description": "Assess contemporary political, social, and economical urban institutions."
+  },
+  "SKL-A2A9921570": {
+    "label": "Contextualize Urban Issues",
+    "description": "Contextualize contemporary urban issues within their historical context."
+  },
+  "SKL-A60478E55E": {
+    "label": "Compare Municipal Governments",
+    "description": "Analyze the administrative and political structures of U.S. municipal governments, with a focus on Oklahoma governments."
+  },
+  "SKL-E192878902": {
+    "label": "Examine Political Environments",
+    "description": "Investigate the political environment of municipal governments in the United States, particularly focusing on those in Oklahoma."
+  },
+  "SKL-22EE9D2B9F": {
+    "label": "Evaluate Municipal Administration",
+    "description": "Assess the administrative aspects of U.S. municipal governments, with an emphasis on those in Oklahoma."
+  },
+  "SKL-4BCD159928": {
+    "label": "Discuss Policy Implications",
+    "description": "Explore the implications of urban government policies for municipal administrations in the U.S., with an emphasis on Oklahoma governments."
+  },
+  "SKL-97AE4A5C8F": {
+    "label": "Apply Policy Recommendations",
+    "description": "Formulate policy recommendations for improving urban governance, taking into account the administrative and political environment of U.S. municipal governments, with a focus on Oklahoma governments."
+  },
+  "SKL-5B1C8A4A37": {
+    "label": "Apply Advanced GIS",
+    "description": "Utilize advanced Geographic Information System techniques"
+  },
+  "SKL-46C113B33D": {
+    "label": "Analyze Urban Issues",
+    "description": "Examine urban and socio-economic problems related to urban planning, ecology, and demographics"
+  },
+  "SKL-D7E0D7DE06": {
+    "label": "Implement Urban Planning",
+    "description": "Use GIS in urban and regional planning"
+  },
+  "SKL-F43483EE5A": {
+    "label": "Understand Urban Ecology",
+    "description": "Gain knowledge about urban ecology"
+  },
+  "SKL-3DE9339A97": {
+    "label": "Collaborate with Junior Standing Students",
+    "description": "Work effectively in groups with students at junior standing or above"
+  },
+  "SKL-1F5F61AEF9": {
+    "label": "Analyze Urban Planning Issues",
+    "description": "Students will develop skills to analyze urban and regional planning problems."
+  },
+  "SKL-80079730D4": {
+    "label": "Conduct Urban Ecology Research",
+    "description": "Students will learn how to carry out research related to urban ecology."
+  },
+  "SKL-A61CAAA0E5": {
+    "label": "Operate GIS Software",
+    "description": "Students will become proficient in using Geographic Information System software."
+  },
+  "SKL-8946C1BFFD": {
+    "label": "Interpret Urban Data",
+    "description": "Students will learn to interpret urban data for various purposes."
+  },
+  "SKL-C070257738": {
+    "label": "Create GIS Maps",
+    "description": "Students will acquire the ability to create maps using Geographic Information System."
+  },
+  "SKL-8F73241286": {
+    "label": "Evaluate Urban Impact",
+    "description": "Students will learn how to evaluate urban and socio-economic impacts using GIS."
+  },
+  "SKL-2397B4F1A4": {
+    "label": "Understand Hazard Principles",
+    "description": "Recognize the fundamental concepts of hazards and risks."
+  },
+  "SKL-7542949062": {
+    "label": "Identify Hazards",
+    "description": "Recognize potential hazards and risks in various contexts."
+  },
+  "SKL-75CD114999": {
+    "label": "Apply Hazard Knowledge",
+    "description": "Implement learned knowledge about hazards in practical situations."
+  },
+  "SKL-82FCCE0F3D": {
+    "label": "Identify Hazards",
+    "description": "Recognize and categorize potential hazards in a work environment"
+  },
+  "SKL-D1B802A6EC": {
+    "label": "Assess Risk",
+    "description": "Evaluate the level of risk associated with identified hazards"
+  },
+  "SKL-F844DA0265": {
+    "label": "Implement HCP",
+    "description": "Establish and manage a comprehensive Hazard Communication Program"
+  },
+  "SKL-28B13F7306": {
+    "label": "Evaluate Program Effectiveness",
+    "description": "Assess the efficacy of a hazard communication program and make improvements as needed"
+  },
+  "SKL-7284D71BE7": {
+    "label": "Vocal Development",
+    "description": "Improve vocal technique and control"
+  },
+  "SKL-E6BD0CB54E": {
+    "label": "Choral Rehearsal",
+    "description": "Collaborate effectively in a choir setting"
+  },
+  "SKL-268EC1F7AF": {
+    "label": "Repertoire Mastery",
+    "description": "Familiarize with a wide variety of choral literature"
+  },
+  "SKL-E7DE063AAB": {
+    "label": "Performance Skills",
+    "description": "Develop stage presence and delivery techniques"
+  },
+  "SKL-32AB4A1B3E": {
+    "label": "Musical Creativity",
+    "description": "Explore different genres of choral music"
+  },
+  "SKL-37FA3F49BD": {
+    "label": "Cultural Awareness",
+    "description": "Gain understanding of the historical and cultural context of various choral works"
+  },
+  "SKL-4A48F22355": {
+    "label": "Vocal Development",
+    "description": "Developing vocal talents through rehearsal and performance."
+  },
+  "SKL-B80F8C37BF": {
+    "label": "Mixed Choral Literature",
+    "description": "Understanding and performing a wide variety of mixed choral music."
+  },
+  "SKL-35FB736608": {
+    "label": "Music Interpretation",
+    "description": "Interpreting and expressing various choral compositions."
+  },
+  "SKL-8529DF8081": {
+    "label": "Musical Direction",
+    "description": "Following the guidance of a choral director."
+  },
+  "SKL-472D80ACFB": {
+    "label": "Analyze Political Changes",
+    "description": "Understanding and evaluating shifts in political structures and policies."
+  },
+  "SKL-51ECC9FD26": {
+    "label": "Examine Social Transformations",
+    "description": "Identifying and interpreting changes in social dynamics and trends."
+  },
+  "SKL-317EEDBBB6": {
+    "label": "Evaluate Economic Developments",
+    "description": "Analyzing the evolution of economic systems and their impacts."
+  },
+  "SKL-42A4255A76": {
+    "label": "Understand Cultural Evolution",
+    "description": "Recognizing and appreciating cultural shifts in American society."
+  },
+  "SKL-BBDB22547D": {
+    "label": "Critically Analyze Primary Sources",
+    "description": "Evaluating the reliability and significance of historical documents."
+  },
+  "SKL-4F51A88EEE": {
+    "label": "Analyze Political Changes",
+    "description": "Demonstrate the ability to dissect political evolution in the United States from WWII to present."
+  },
+  "SKL-F208735791": {
+    "label": "Explore Social Transformations",
+    "description": "Develop skills in understanding and interpreting social shifts in the U.S., post-1945."
+  },
+  "SKL-1A9D84D5AE": {
+    "label": "Evaluate Economic Developments",
+    "description": "Learn to assess economic transformations that have occurred in the United States since WWII."
+  },
+  "SKL-F50D78A9FE": {
+    "label": "Interpret Cultural Evolutions",
+    "description": "Acquire skills in understanding and interpreting cultural changes within the U.S. context post-1945."
+  },
+  "SKL-CD8BF99146": {
+    "label": "Develop Historical Perspective",
+    "description": "Cultivate a comprehensive historical perspective on the United States, from WWII to present."
+  },
+  "SKL-80D9CF2F36": {
+    "label": "Compare and Contrast Historical Periods",
+    "description": "Learn to compare and contrast different periods in U.S. history since 1945."
+  },
+  "SKL-B0550E015C": {
+    "label": "Analyze Primary Sources",
+    "description": "Gain the ability to critically analyze primary sources related to U.S. history since 1945."
+  },
+  "SKL-6182521FC8": {
+    "label": "Assess Motor Development",
+    "description": "Ability to evaluate motor skills and development in exceptional children"
+  },
+  "SKL-E4FEA0528B": {
+    "label": "Design Adapted Programs",
+    "description": "Competency to develop physical education and recreation programs for exceptional children"
+  },
+  "SKL-E4AF1BD4C8": {
+    "label": "Analyze Motor Characteristics",
+    "description": "Skill to understand the unique motor characteristics of exceptional children"
+  },
+  "SKL-9C7E74FC4D": {
+    "label": "Field Experience",
+    "description": "Ability to participate in field experiences related to physical education and recreation for exceptional children"
+  },
+  "SKL-B4AE8C5C36": {
+    "label": "Lab Experience",
+    "description": "Competency to engage in laboratory experiences related to physical education and recreation for exceptional children"
+  },
+  "SKL-1EDBDCD77F": {
+    "label": "Motor Development Assessment",
+    "description": "Ability to assess motor development in exceptional children through various methods"
+  },
+  "SKL-880CA60A03": {
+    "label": "Physical Education Program Planning",
+    "description": "Competency to plan and implement physical education programs for exceptional children"
+  },
+  "SKL-A5E1607379": {
+    "label": "Perform Jazz Styles",
+    "description": "Demonstrate the ability to play a variety of jazz styles professionally."
+  },
+  "SKL-DC9FA6342B": {
+    "label": "Technical Guidance",
+    "description": "Receive guidance on the technical aspects of playing in a jazz ensemble."
+  },
+  "SKL-030FD6EAAA": {
+    "label": "Commercial Music Performance",
+    "description": "Gain skills for performing commercial music on a professional level."
+  },
+  "SKL-EDE1DCEE43": {
+    "label": "Jazz Improvisation",
+    "description": "Learn and apply jazz improvisation techniques."
+  },
+  "SKL-659DACBA88": {
+    "label": "Style Adaptability",
+    "description": "Develop adaptability to a wide range of jazz styles."
+  },
+  "SKL-1072AC271F": {
+    "label": "Ensemble Leadership",
+    "description": "Learning to lead a group in ensemble performance."
+  },
+  "SKL-43A4900933": {
+    "label": "Solo Performance Improvement",
+    "description": "Advancing solo performance skills within the context of jazz and commercial music."
+  },
+  "SKL-EBCA40DF86": {
+    "label": "Style Diversification",
+    "description": "Gaining proficiency in a wide range of styles suitable for professional jazz and commercial music performance."
+  },
+  "SKL-FA71120193": {
+    "label": "Technical Guidance",
+    "description": "Receiving expert guidance on technical aspects of jazz and ensemble performance."
+  },
+  "SKL-E34204429F": {
+    "label": "Study Documentary History",
+    "description": "Analyze and understand the history of documentaries in broadcasting"
+  },
+  "SKL-C62A8CA120": {
+    "label": "Use Video Techniques",
+    "description": "Gain proficiency in using video techniques specific to documentary production"
+  },
+  "SKL-686E7FFD25": {
+    "label": "Edit Documentary Content",
+    "description": "Acquire editing skills to effectively combine video, audio, and other content in a documentary"
+  },
+  "SKL-FADCFD91AB": {
+    "label": "Analyze Political Events",
+    "description": "Understand and evaluate the political developments in Tudor-Stuart England"
+  },
+  "SKL-D326325057": {
+    "label": "Interpret Cultural Shifts",
+    "description": "Identify and analyze cultural changes that occurred in England from Henry VII to Queen Anne"
+  },
+  "SKL-CACB8C4841": {
+    "label": "Understand Timeline Sequence",
+    "description": "Gain ability to correctly place historical events within their chronological order"
+  },
+  "SKL-62530819B4": {
+    "label": "Identify Cultural Influences",
+    "description": "Learn to recognize and discuss the cultural influences on political, military, and social aspects of Tudor-Stuart England"
+  },
+  "SKL-7D2C97B652": {
+    "label": "Analyze Political Developments",
+    "description": "Understand and evaluate significant political shifts in Tudor and Stuart England."
+  },
+  "SKL-D1F177BE8F": {
+    "label": "Understand Cultural Transformations",
+    "description": "Appreciate changes in culture, arts, and literature throughout Tudor-Stuart England."
+  },
+  "SKL-B3DE97301B": {
+    "label": "Examine Social Structures",
+    "description": "Learn about the social hierarchies, classes, and their evolution during this era."
+  },
+  "SKL-35A870FF3D": {
+    "label": "Evaluate Historical Perspectives",
+    "description": "Assess various historical viewpoints on the Tudor-Stuart period, fostering a nuanced understanding."
+  },
+  "SKL-1B4482C63B": {
+    "label": "Develop Historical Contextualization",
+    "description": "Learn to situate events, people, and ideas within their historical context within Tudor-Stuart England."
+  },
+  "SKL-FA5375C1A4": {
+    "label": "Investigate Research",
+    "description": "Analyze and review relevant research in special education"
+  },
+  "SKL-3EA16B7F98": {
+    "label": "Explore Societal Changes",
+    "description": "Assess societal changes impacting people with disabilities"
+  },
+  "SKL-E6D2E4AADB": {
+    "label": "Evaluate Medical Trends",
+    "description": "Analyze medical trends in the special education field"
+  },
+  "SKL-DFC39E0F6D": {
+    "label": "Identify Legislation",
+    "description": "Recognize and interpret legislation affecting special education"
+  },
+  "SKL-ED490BFE03": {
+    "label": "Analyze Controversial Issues",
+    "description": "Assess and evaluate controversial issues in special education"
+  },
+  "SKL-2B0A51523D": {
+    "label": "Develop Curricular Strategies",
+    "description": "Design curricular development strategies for special education"
+  },
+  "SKL-FC6B987103": {
+    "label": "Understand Trauma Approaches",
+    "description": "Study various counseling and therapeutic approaches for treating abuse and trauma."
+  },
+  "SKL-466645536A": {
+    "label": "Apply Psychoanalytic Perspectives",
+    "description": "Learn to use psychoanalytic theories in the field of alcohol and drug dependency."
+  },
+  "SKL-2F7E432787": {
+    "label": "Explore Behavioral Theories",
+    "description": "Gain knowledge about behavioral theories applicable to substance abuse treatment."
+  },
+  "SKL-ED5FF25A53": {
+    "label": "Use Humanistic Approaches",
+    "description": "Learn to use humanistic approaches in treating clients with a history of trauma."
+  },
+  "SKL-D703EF35CD": {
+    "label": "Master Cognitive Behavioral Methods",
+    "description": "Develop skills in cognitive behavioral methods for addressing trauma and substance abuse."
+  },
+  "SKL-AB984A9DE4": {
+    "label": "Analyze Theorists' Relevance",
+    "description": "Learn to evaluate the relevance of various theorists to the field of alcohol and drug dependency."
+  },
+  "SKL-E07D37E143": {
+    "label": "Apply Therapeutic Processes",
+    "description": "Gain practical skills in individual counseling processes for treating trauma-related issues."
+  },
+  "SKL-FC7BF97042": {
+    "label": "Identify Workplace Trauma",
+    "description": "Recognize and name traumatic events within the communications industry."
+  },
+  "SKL-87D0A6BB2A": {
+    "label": "React to Workplace Trauma",
+    "description": "Develop appropriate responses to workplace trauma situations."
+  },
+  "SKL-0A2578D76F": {
+    "label": "Anticipate Traumatic Events",
+    "description": "Gain skills to foresee potential traumatic situations."
+  },
+  "SKL-D734BE9AA0": {
+    "label": "Explore Proactive Approaches",
+    "description": "Learn proactive strategies for managing workplace trauma."
+  },
+  "SKL-A24BAB732A": {
+    "label": "Analyze Trauma Impact",
+    "description": "Assess the impact of trauma on professionals in communications."
+  },
+  "SKL-BB4B5762DC": {
+    "label": "Develop Leadership Skills",
+    "description": "Enhance leadership abilities in traumatic situations."
+  },
+  "SKL-0533AA9E86": {
+    "label": "Apply Ethical Guidelines",
+    "description": "Understand and apply ethical guidelines when dealing with trauma in the communications field."
+  },
+  "SKL-B3A8FA6BF2": {
+    "label": "Finite Automata",
+    "description": "Design machines with a fixed number of states for language recognition."
+  },
+  "SKL-A0AB48A5B0": {
+    "label": "Regular Expressions",
+    "description": "Manipulate patterns in programming languages and text processing."
+  },
+  "SKL-0A9A5B6661": {
+    "label": "LL and LR Grammars",
+    "description": "Apply bottom-up and top-down parsing techniques for language analysis."
+  },
+  "SKL-91A80A2768": {
+    "label": "Type Systems",
+    "description": "Enforce type checking and maintain type safety in programming languages."
+  },
+  "SKL-1C82D3A7E1": {
+    "label": "Finite Automata Application",
+    "description": "Using finite automata in programming language translation"
+  },
+  "SKL-0F39C6494D": {
+    "label": "Regular Expressions Utilization",
+    "description": "Employing regular expressions to describe and manipulate patterns in programming languages"
+  },
+  "SKL-4252D1CED5": {
+    "label": "Type System Development",
+    "description": "Creating type systems to support strong typing and type checking in programming languages"
+  },
+  "SKL-3DAA458654": {
+    "label": "Code Generation & Optimization",
+    "description": "Generating and optimizing code from high-level programming language constructs"
+  },
+  "SKL-16CCE440AE": {
+    "label": "Respond to Scene",
+    "description": "Demonstrate the ability to respond effectively to traffic accident scenes"
+  },
+  "SKL-B800142B49": {
+    "label": "Legal Examination",
+    "description": "Understand and apply enforcement-related statutes related to vehicles and traffic in Oklahoma"
+  },
+  "SKL-ECC78CB056": {
+    "label": "Practical Exercise",
+    "description": "Participate in practical exercises to reinforce learning and develop necessary skill sets"
+  },
+  "SKL-C7A09CBF70": {
+    "label": "Analyze Traditional Cultures",
+    "description": "Understand and critically analyze the traditional cultures of Southeast Asia."
+  },
+  "SKL-277074D798": {
+    "label": "Evaluate Western Colonialisms",
+    "description": "Assess the impact and implications of western colonialism on Southeast Asia."
+  },
+  "SKL-73F5659622": {
+    "label": "Examine Nationalist Movements",
+    "description": "Investigate nationalist movements and their role in shaping modern Southeast Asian nations."
+  },
+  "SKL-7B276AF6F7": {
+    "label": "Develop Understanding of Governance",
+    "description": "Gain an understanding of the development and workings of representative governments in Southeast Asia."
+  },
+  "SKL-17BB5FA185": {
+    "label": "Assess Contemporary Roles",
+    "description": "Analyze and evaluate contemporary roles of Southeast Asian nations in international relations."
+  },
+  "SKL-FD54F7D5B3": {
+    "label": "Research Historical Context",
+    "description": "Develop skills in researching historical contexts relevant to modern Southeast Asia."
+  },
+  "SKL-C4248DB09A": {
+    "label": "Examine Impact of Colonialism",
+    "description": "Assess the influence of Western colonialism on Southeast Asian societies"
+  },
+  "SKL-992905ADDF": {
+    "label": "Understand Nationalist Movements",
+    "description": "Recognize and analyze nationalist movements in Southeast Asia"
+  },
+  "SKL-0AA69ECCD3": {
+    "label": "Assess Contemporary Roles",
+    "description": "Evaluate the roles of Southeast Asian countries in international relations"
+  },
+  "SKL-F8DD9971E5": {
+    "label": "Research Historical Context",
+    "description": "Conduct research on historical contexts relevant to modern Southeast Asia"
+  },
+  "SKL-D63822BD3B": {
+    "label": "Analyze Religious Impact",
+    "description": "Examine the impact of religion on traditional cultures in Southeast Asia"
+  },
+  "SKL-692EAD0F8E": {
+    "label": "Analyze Consumer Behavior",
+    "description": "Ability to dissect and understand the behavior of consumers"
+  },
+  "SKL-3965257764": {
+    "label": "Analyze Firm Behavior",
+    "description": "Capability to evaluate the behavior of firms"
+  },
+  "SKL-91844AEEF9": {
+    "label": "Analyze Resource Owner Behavior",
+    "description": "Skill to analyze the behavior of resource owners"
+  },
+  "SKL-A02DDC5C53": {
+    "label": "Analyze Public Entity Behavior",
+    "description": "Ability to analyze the behavior of public entities"
+  },
+  "SKL-5133B97EFF": {
+    "label": "Model Industrial Organization",
+    "description": "Competency in developing theoretical models for industrial organization"
+  },
+  "SKL-EBC46D37E6": {
+    "label": "Identify Market Failures",
+    "description": "Skill to identify potential market failures"
+  },
+  "SKL-5F1A093F65": {
+    "label": "Analyze Government Interventions",
+    "description": "Ability to analyze government interventions in markets"
+  },
+  "SKL-835D88B53A": {
+    "label": "Develop Efficiency Concepts",
+    "description": "Skill to develop concepts related to market efficiency"
+  },
+  "SKL-7584C8554B": {
+    "label": "Understand Number Systems",
+    "description": "Recognize the structure and properties of various number systems"
+  },
+  "SKL-C91B67B7C1": {
+    "label": "Operate on Different Number Sets",
+    "description": "Apply operations to natural numbers, real numbers, and other mathematical structures"
+  },
+  "SKL-57051CFB60": {
+    "label": "Analyze Ordering Properties",
+    "description": "Identify and analyze the ordering relationships between numbers and mathematical entities"
+  },
+  "SKL-3DFB5B2518": {
+    "label": "Recognize Set Extensions",
+    "description": "Identify and work with sets that include all real numbers"
+  },
+  "SKL-EBAEC67F53": {
+    "label": "Teach Mathematics Fundamentals",
+    "description": "Develop skills to teach essential mathematics concepts relevant for elementary, special, and early childhood education"
+  },
+  "SKL-2BE8231CE2": {
+    "label": "Solve Real-Number Problems",
+    "description": "Apply mathematical reasoning to solve problems using real numbers"
+  },
+  "SKL-CD72DCA641": {
+    "label": "Understand Analytical Biochemistry",
+    "description": "Demonstrate understanding of the principles and practices related to analytical biochemistry."
+  },
+  "SKL-0E425A0F99": {
+    "label": "Apply Laboratory Mathematics",
+    "description": "Develop skills in mathematical problem-solving for laboratory applications."
+  },
+  "SKL-E2C5FAF0D1": {
+    "label": "Operate Instrumentation",
+    "description": "Gain proficiency in operating various analytical instrumentations."
+  },
+  "SKL-C67D134452": {
+    "label": "Perform Routine Procedures",
+    "description": "Master routine laboratory procedures for clinical chemistry."
+  },
+  "SKL-BF7042713F": {
+    "label": "Execute Special Procedures",
+    "description": "Learn to execute special laboratory techniques in clinical chemistry."
+  },
+  "SKL-27169D26C6": {
+    "label": "Assess Medical Significance",
+    "description": "Develop abilities to interpret the medical implications of analytical results."
+  },
+  "SKL-5004DCD163": {
+    "label": "Apply Laboratory Methodology",
+    "description": "Learn and apply appropriate methodologies for laboratory work in clinical chemistry."
+  },
+  "SKL-E8C628410B": {
+    "label": "Explain Routine & Special Procedures",
+    "description": "Acquire the ability to explain the procedures used in clinical chemistry labs."
+  },
+  "SKL-4BDB8848C8": {
+    "label": "Explore Tree Properties",
+    "description": "Identify and study the characteristics of trees in a graph."
+  },
+  "SKL-49512146EB": {
+    "label": "Analyze Connectivity",
+    "description": "Determine connectivity patterns within graphs."
+  },
+  "SKL-871363C0D2": {
+    "label": "Explore Planarity",
+    "description": "Identify and analyze planar graphs."
+  },
+  "SKL-DF47074B5A": {
+    "label": "Comprehend Colorability",
+    "description": "Understand the coloring of graphs and its implications."
+  },
+  "SKL-408D60F6FE": {
+    "label": "Study Digraphs",
+    "description": "Investigate directed graphs and their properties."
+  },
+  "SKL-CD2ED516A9": {
+    "label": "Manipulate Matrices",
+    "description": "Work with matrices associated with a given graph."
+  },
+  "SKL-CB14BDFD36": {
+    "label": "Explore Graph Automorphisms",
+    "description": "Investigate the symmetry properties of graphs through automorphism groups."
+  },
+  "SKL-4D5FAB6003": {
+    "label": "Understand Medical Lab Principles",
+    "description": "Demonstrate knowledge of the fundamental principles governing medical laboratories"
+  },
+  "SKL-5B2E57EA42": {
+    "label": "Teach Special Education Methodology",
+    "description": "Develop and employ specialized educational methods for medical technology students"
+  },
+  "SKL-A02E147492": {
+    "label": "Execute Special Projects",
+    "description": "Plan, organize, and carry out special projects within selected areas of medical technology"
+  },
+  "SKL-5B80A01CE1": {
+    "label": "Apply Appropriate Pre-Med Curriculum",
+    "description": "Demonstrate the ability to leverage prior premedical technology curriculum in coursework"
+  },
+  "SKL-BDD7F26328": {
+    "label": "Develop Special Projects in Selected Areas",
+    "description": "Formulate and execute special projects focused on specific areas within medical technology"
+  },
+  "SKL-8083BCB1BE": {
+    "label": "Interpret Samples",
+    "description": "Analyze and interpret random samples from data sets."
+  },
+  "SKL-03B1E0AB09": {
+    "label": "Create Frequency Distributions",
+    "description": "Generate frequency distributions for sample data."
+  },
+  "SKL-F6789D29F9": {
+    "label": "Rectify Inspection Methods",
+    "description": "Explore methods to improve and optimize inspection techniques."
+  },
+  "SKL-3C0A1590FB": {
+    "label": "Utilize Control Charts",
+    "description": "Learn how to create and use control charts for process monitoring."
+  },
+  "SKL-C2416988EA": {
+    "label": "Understand Partial Derivatives",
+    "description": "Manipulate and interpret partial derivatives in multiple variables"
+  },
+  "SKL-0236D619E9": {
+    "label": "Apply Separation of Variables",
+    "description": "Use separation of variables to solve separable differential equations"
+  },
+  "SKL-49C9716A77": {
+    "label": "Recognize Special Functions",
+    "description": "Identify and apply special functions in solving differential equations"
+  },
+  "SKL-471F9F818E": {
+    "label": "Prove Existence & Uniqueness",
+    "description": "Demonstrate the existence and uniqueness of solutions for given differential equations"
+  },
+  "SKL-A5392F7876": {
+    "label": "Fit Linear Data",
+    "description": "Apply techniques to fit linear equations to data sets"
+  },
+  "SKL-CAB06F2159": {
+    "label": "Fit Polynomial Data",
+    "description": "Learn methods for fitting polynomial functions to data"
+  },
+  "SKL-8A75715EE9": {
+    "label": "Fit Orthogonal Polynomials",
+    "description": "Understand and apply orthogonal polynomial fitting techniques"
+  },
+  "SKL-9A61F1D557": {
+    "label": "Fit Exponential Growth Curves",
+    "description": "Develop skills in fitting exponential growth curves to data"
+  },
+  "SKL-181CA7C51B": {
+    "label": "Analyze Piecewise Polygonal Fitting",
+    "description": "Evaluate piecewise polygonal functions and their applications"
+  },
+  "SKL-3D09E4259F": {
+    "label": "Apply Non-Parametric Tests",
+    "description": "Demonstrate the ability to utilize non-parametric statistical tests with data that is not normally distributed."
+  },
+  "SKL-633FEACEC1": {
+    "label": "Perform Hypothesis Testing",
+    "description": "Master the art of hypothesis testing in scenarios where the underlying population does not follow a specific distribution."
+  },
+  "SKL-AB5C9D1AF2": {
+    "label": "Analyze Binomial Data",
+    "description": "Understand and apply the binomial test for analyzing data consisting of successes and failures."
+  },
+  "SKL-4F53026069": {
+    "label": "Conduct Sign Test",
+    "description": "Execute the sign test to compare matched pairs of data."
+  },
+  "SKL-7D25A743B8": {
+    "label": "Administer Median Test",
+    "description": "Utilize the median test for making inferences about population medians when sample sizes are small."
+  },
+  "SKL-849E30027F": {
+    "label": "Perform Cochran Q Test",
+    "description": "Apply the Cochran Q test for comparing multiple samples from a single population."
+  },
+  "SKL-A6B5728640": {
+    "label": "Evaluate Statistical Significance",
+    "description": "Assess statistical significance in non-parametric hypothesis testing."
+  },
+  "SKL-013A397B15": {
+    "label": "Interpret Non-Parametric Results",
+    "description": "Draw meaningful conclusions based on results obtained from non-parametric statistical analyses."
+  },
+  "SKL-7ECA242AD7": {
+    "label": "Investigate Hours of Work Determination",
+    "description": "Exploring factors influencing the number of hours worked"
+  },
+  "SKL-8AF381542A": {
+    "label": "Evaluate Union Impact",
+    "description": "Assessing the effect of unions on labor markets"
+  },
+  "SKL-82B739325A": {
+    "label": "Analyze Government Policy Impact",
+    "description": "Understanding how government policies like affirmative action, minimum wages, and immigration affect labor markets"
+  },
+  "SKL-9DFB7121D8": {
+    "label": "Investigate Human Capital Investment",
+    "description": "Examining the role of human capital investment in earnings determination"
+  },
+  "SKL-61E05982D6": {
+    "label": "Analyze Labor Market Outcomes",
+    "description": "Studying issues related to labor market outcomes such as discrimination and poverty"
+  },
+  "SKL-6D3D82F9CF": {
+    "label": "Discuss Current Issues",
+    "description": "Analyze and discuss current issues in sales force management"
+  },
+  "SKL-D14E72EC03": {
+    "label": "Evaluate Trends",
+    "description": "Assess trends in sales force management"
+  },
+  "SKL-3FF21DF2FB": {
+    "label": "Apply Industry Knowledge",
+    "description": "Use industry knowledge to solve problems in sales force management"
+  },
+  "SKL-C070892680": {
+    "label": "Adapt to Contemporary Sales",
+    "description": "Develop the ability to adapt sales strategies to contemporary issues"
+  },
+  "SKL-F1C50EA4A8": {
+    "label": "Learn Current Best Practices",
+    "description": "Gain understanding of best practices in current sales force management"
+  },
+  "SKL-CCD0207B50": {
+    "label": "Proportional Hazard Models",
+    "description": "A competency in applying and understanding proportional hazards models."
+  },
+  "SKL-9DD6AD747E": {
+    "label": "Statistical Inference",
+    "description": "An ability to make statistical inferences based on the results of regression analyses."
+  },
+  "SKL-DED2969F3B": {
+    "label": "Analyze Multiple Regression",
+    "description": "Ability to perform statistical analysis using multiple independent variables"
+  },
+  "SKL-02375C7B24": {
+    "label": "Apply Proportional Hazard Models",
+    "description": "Ability to use proportional hazards regression in survival analysis"
+  },
+  "SKL-83FD42FA2D": {
+    "label": "Analyze Time Series Data",
+    "description": "Skill in analyzing and modeling time-dependent data series"
+  },
+  "SKL-78972464B5": {
+    "label": "Utilize SAS Software",
+    "description": "Familiarity with the SAS statistical software package"
+  },
+  "SKL-8DB7B446DB": {
+    "label": "Apply Experimental Statistics",
+    "description": "Developing skills to perform statistical analysis in experimental contexts"
+  },
+  "SKL-5C138B0437": {
+    "label": "Estimate Parameters",
+    "description": "Learning methods for estimating parameters in a statistical model"
+  },
+  "SKL-652C4A7CE7": {
+    "label": "Test Significance",
+    "description": "Acquiring skills to evaluate the significance of test results"
+  },
+  "SKL-B596C2438B": {
+    "label": "Understand Probability Concepts",
+    "description": "Gaining knowledge about various probability theories and applications"
+  },
+  "SKL-8850140556": {
+    "label": "Correlate Variables",
+    "description": "Acquiring skills to identify relationships and correlations between variables"
+  },
+  "SKL-18BF019858": {
+    "label": "Analyze Probability Distributions",
+    "description": "Developing the ability to analyze probability distributions, such as normal distribution"
+  },
+  "SKL-54F826408A": {
+    "label": "Understand Experimental Error",
+    "description": "Recognize and interpret various types of experimental errors"
+  },
+  "SKL-3AFEAF6B6C": {
+    "label": "Analyze One-Way Classifications",
+    "description": "Perform analysis of variance for one-way classifications"
+  },
+  "SKL-8ACCC4D52C": {
+    "label": "Analyze Two-Way Classifications",
+    "description": "Conduct analysis of variance for two-way classifications"
+  },
+  "SKL-3AED55687C": {
+    "label": "Analyze Three-Way Classifications",
+    "description": "Execute analysis of variance for three-way classifications"
+  },
+  "SKL-9A1F908087": {
+    "label": "Use Nonparametric Statistics",
+    "description": "Employ nonparametric statistical methods in experimental design"
+  },
+  "SKL-249B9B13ED": {
+    "label": "Apply ANOVA Techniques",
+    "description": "Demonstrate proficiency in using Analysis of Variance techniques"
+  },
+  "SKL-5E9FF4F75F": {
+    "label": "Analyze One-Way Classification",
+    "description": "Understand and analyze experimental data using one-way classification"
+  },
+  "SKL-EF781FEF57": {
+    "label": "Nested and Incomplete Block Designs",
+    "description": "Understand and work with nested and incomplete block designs"
+  },
+  "SKL-FA536656B4": {
+    "label": "Analysis of Covariance",
+    "description": "Perform analysis of covariance on experimental data"
+  },
+  "SKL-98C683FC4A": {
+    "label": "Basic Concepts of Experiments",
+    "description": "Gain understanding of fundamental experimental concepts"
+  }
+}

@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Course ↔ Skill Graph</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { margin:0; font-family: system-ui, Arial; }
+    #chart { width:100vw; height:100vh; background:#fafafa; }
+    .node { stroke: #fff; stroke-width: 1.2px; cursor: grab; }
+    .node.course { stroke: #222; stroke-width:1.5px; }
+    .label { pointer-events: none; font-size: 11px; font-weight: 600; }
+    .tooltip {
+      position: absolute; pointer-events:none;
+      background: rgba(0,0,0,0.75); color:#fff; padding:6px 8px; border-radius:4px;
+      font-size:12px; transform: translate(-50%,-120%); white-space:nowrap;
+    }
+    .legend { position: absolute; left:10px; top:10px; background:#fff; padding:8px; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.12); font-size:13px;}
+    .controls { position:absolute; right:10px; top:10px; background:#fff; padding:8px; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.12); }
+    button { margin:2px 0; display:block; width:100%; }
+  </style>
+</head>
+<body>
+  <div id="chart"></div>
+  <div class="legend">
+    <div><strong>Legend</strong></div>
+    <div style="display:flex;align-items:center;margin-top:6px"><svg width="18" height="12"><circle cx="9" cy="6" r="6" fill="#1f77b4"/></svg>&nbsp;Course</div>
+    <div style="display:flex;align-items:center;margin-top:6px"><svg width="18" height="12"><circle cx="9" cy="6" r="6" fill="#ff7f0e"/></svg>&nbsp;Skill</div>
+  </div>
+  <div class="controls">
+    <button id="reset">Reset zoom / layout</button>
+    <button id="center">Center</button>
+    <div style="margin-top:6px;font-size:12px;color:#444">Show top <span id="course-count-label">30</span> courses</div>
+    <input id="course-count" type="range" min="5" max="200" value="30" style="width:160px" />
+    <button id="show10" style="margin-top:6px">Show 10</button>
+    <button id="show20">Show 20</button>
+    <div style="margin-top:8px; display:flex; align-items:center; gap:8px">
+      <input type="checkbox" id="hide-unconnected" />
+      <label for="hide-unconnected" style="font-size:12px">Hide unconnected skills</label>
+    </div>
+    <div style="margin-top:8px; display:flex; align-items:center; gap:8px">
+      <input type="checkbox" id="skill-focused" />
+      <label for="skill-focused" style="font-size:12px">Skill-focused view (slider => top N skills)</label>
+    </div>
+    <div style="margin-top:6px;font-size:12px;color:#444">Data loaded from:<br><code id="data-source">loading...</code>
+      <div style="margin-top:6px;font-size:12px;color:#444">Courses: <span id="data-course-count">0</span></div>
+    </div>
+  </div>
+  <div id="tooltip" class="tooltip" style="display:none;"></div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+    // smallest useful checks and graph construction
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const svg = d3.select("#chart").append("svg").attr("width", width).attr("height", height);
+    const container = svg.append("g");
+
+    // zoom
+    svg.call(d3.zoom().on("zoom", (event) => container.attr("transform", event.transform)));
+
+    const tooltip = d3.select("#tooltip");
+
+    // load course JSON (prefer the with_bls file if present), skill lookup, and BLS categories
+  let ALL_COURSES = null;
+  let DATA_SOURCE_PATH = null;
+    let SKILL_LOOKUP = {};
+    let BLS_CATEGORIES = [];
+    Promise.all([
+      fetch("output/ollama_course_skills_with_bls.json").then(r => r.ok ? r.json() : null),
+      fetch("output/ollama_course_skills_mapped.json").then(r => r.ok ? r.json() : []),
+      fetch("output/skill_lookup.json").then(r => r.ok ? r.json() : {}),
+      fetch("BLSData/BLS_Skills_Categories.json").then(r => r.ok ? r.json() : [])
+    ])
+    .then(([withBls, mapped, skillLookup, blsCats]) => {
+      // prefer the with_bls file if available and non-empty, else fallback to mapped
+      if (withBls && Array.isArray(withBls) && withBls.length > 0) {
+        ALL_COURSES = withBls;
+        DATA_SOURCE_PATH = 'output/ollama_course_skills_with_bls.json';
+      } else {
+        ALL_COURSES = mapped || [];
+        DATA_SOURCE_PATH = 'output/ollama_course_skills_mapped.json';
+      }
+      SKILL_LOOKUP = skillLookup || {};
+      BLS_CATEGORIES = blsCats || [];
+      const initialN = +document.getElementById('course-count').value || 30;
+      // update UI with data source info
+      const dsEl = document.getElementById('data-source');
+      const countEl = document.getElementById('data-course-count');
+      if (dsEl) dsEl.textContent = DATA_SOURCE_PATH;
+      if (countEl) countEl.textContent = ALL_COURSES.length;
+
+      renderGraph(filterCourses(ALL_COURSES, initialN), SKILL_LOOKUP, BLS_CATEGORIES);
+    })
+    .catch(err => {
+      container.append("text").attr("x",20).attr("y",40).text("Failed to load JSON — make sure you're serving the folder via HTTP.").attr("fill","red");
+      console.error(err);
+    });
+
+    function renderGraph(data, skillLookup = {}, blsCategories = []) {
+      // if an existing graph exists, remove it before re-render
+      container.selectAll('*').remove();
+      // Build unique nodes: courses and skills
+      const nodesMap = new Map();
+      const links = [];
+
+      data.forEach(course => {
+        const courseId = "course:" + course.course_identification;
+        if (!nodesMap.has(courseId)) {
+          nodesMap.set(courseId, {
+            id: courseId,
+            type: "course",
+            short: course.course_identification,
+            title: course.title_short_desc
+          });
+        }
+        (course.inferred_skills || []).forEach(skillId => {
+          const skillKey = "skill:" + skillId;
+          if (!nodesMap.has(skillKey)) {
+            const meta = skillLookup[skillId] || {};
+            nodesMap.set(skillKey, {
+              id: skillKey,
+              type: "skill",
+              skill: skillId,
+              label: meta.label || null,
+              description: meta.description || null
+            });
+          }
+          links.push({ source: courseId, target: skillKey });
+        });
+        // add BLS category node and link (if present on the course)
+        const blsInfo = course.bls_category || (course.bls || null);
+        if (blsInfo && (blsInfo.id || blsInfo.category)) {
+          const blsKey = 'bls:' + (blsInfo.id || blsInfo.category).toString();
+          if (!nodesMap.has(blsKey)) {
+            nodesMap.set(blsKey, {
+              id: blsKey,
+              type: 'bls',
+              bls_id: blsInfo.id || null,
+              label: blsInfo.category || blsInfo.id || 'BLS'
+            });
+          }
+          links.push({ source: courseId, target: blsKey });
+        }
+      });
+
+      const nodes = Array.from(nodesMap.values());
+
+      // If user requested, remove skill nodes that have no links (degree 0)
+      if (document.getElementById('hide-unconnected') && document.getElementById('hide-unconnected').checked) {
+        // compute degree for each node id (normalize source/target which might be strings or objects)
+        const deg = new Map();
+        function idOf(x) { return (typeof x === 'object' && x !== null) ? x.id : x; }
+        links.forEach(l => {
+          const s = idOf(l.source);
+          const t = idOf(l.target);
+          deg.set(s, (deg.get(s) || 0) + 1);
+          deg.set(t, (deg.get(t) || 0) + 1);
+        });
+          // filter nodesMap and links to remove skill nodes with degree 0 or 1
+          const filteredNodes = nodes.filter(n => {
+            if (n.type !== 'skill') return true; // keep course & bls nodes
+            const d = deg.get(n.id) || 0;
+            return d > 1; // keep only skills connected to more than one displayed course
+          });
+        const allowedIds = new Set(filteredNodes.map(n => n.id));
+        const filteredLinks = links.filter(l => allowedIds.has(idOf(l.source)) && allowedIds.has(idOf(l.target)));
+        // replace for rendering
+        nodes.length = 0; nodes.push(...filteredNodes);
+        links.length = 0; links.push(...filteredLinks);
+      }
+
+      // Basic force simulation
+      const simulation = d3.forceSimulation(nodes)
+        .force("link", d3.forceLink(links).id(d => d.id).distance(d => d.type === "course" ? 90 : 60).strength(0.6))
+        .force("charge", d3.forceManyBody().strength(-120))
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("collision", d3.forceCollide().radius(d => d.type === "course" ? 28 : 14));
+
+      // links
+      const link = container.append("g")
+        .attr("stroke", "#bbb")
+        .attr("stroke-opacity", 0.8)
+        .selectAll("line")
+        .data(links)
+        .join("line")
+        .attr("stroke-width", 1);
+
+      // nodes
+      const node = container.append("g")
+        .selectAll("g")
+        .data(nodes)
+        .join("g")
+        .call(drag(simulation));
+
+      node.append("circle")
+        .attr("r", d => d.type === "course" ? 12 : (d.type === 'bls' ? 9 : 7))
+        .attr("class", d => "node " + d.type)
+        .attr("fill", d => d.type === "course" ? "#1f77b4" : (d.type === 'bls' ? '#2ca02c' : "#ff7f0e"))
+        .on("mouseover", (event, d) => {
+          tooltip.style("display", "block");
+          if (d.type === 'course') {
+            tooltip.html(`<strong>${d.short}</strong><div style="font-weight:400">${d.title}</div>`);
+          } else if (d.type === 'skill') {
+            tooltip.html(`<strong>${d.label || d.skill}</strong><div style="font-weight:400">${d.description || "(no description)"}</div>`);
+          } else if (d.type === 'bls') {
+            // try to find a description in blsCategories
+            const meta = blsCategories.find(x => (x.id && ('bls:' + x.id) === d.id) || x.category === d.label);
+            const desc = meta ? meta.description : '';
+            tooltip.html(`<strong>${d.label}</strong><div style="font-weight:400">${desc || '(no description)'}</div>`);
+          }
+        })
+        .on("mousemove", (event) => {
+          tooltip.style("left", (event.pageX) + "px").style("top", (event.pageY) + "px");
+        })
+        .on("mouseout", () => tooltip.style("display", "none"));
+
+      // labels for courses only (to reduce clutter)
+      node.append("text")
+        .attr("class", "label")
+        .attr("x", 10)
+        .attr("y", 3)
+        .text(d => d.type === "course" ? d.short : "")
+        .style("font-size", d => d.type === "course" ? "11px" : "10px");
+
+      simulation.on("tick", () => {
+        link
+          .attr("x1", d => d.source.x)
+          .attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x)
+          .attr("y2", d => d.target.y);
+
+        node.attr("transform", d => `translate(${d.x},${d.y})`);
+      });
+
+      // click to highlight neighbors
+      node.on("click", (event, d) => {
+        const neighborIds = new Set();
+        function idOf(x) { return (typeof x === 'object' && x !== null) ? x.id : x; }
+        links.forEach(l => {
+          const s = idOf(l.source);
+          const t = idOf(l.target);
+          if (s === d.id) neighborIds.add(t);
+          if (t === d.id) neighborIds.add(s);
+        });
+        // dim non neighbors
+        node.selectAll("circle").attr("fill-opacity", n => (n.id === d.id || neighborIds.has(n.id)) ? 1 : 0.15);
+        link.attr("stroke-opacity", l => {
+          const s = idOf(l.source); const t = idOf(l.target);
+          return (s === d.id || t === d.id) ? 0.95 : 0.05;
+        });
+        // show tooltip for course as well
+        if (d.type === "course") {
+          // list connected skills
+          const skills = Array.from(neighborIds)
+            .filter(id => id.startsWith("skill:"))
+            .map(s => s.replace("skill:", ""))
+            .slice(0, 200);
+          // include BLS category if present
+          const blsCats = Array.from(neighborIds).filter(id => id.startsWith('bls:'));
+          // Map to label if available
+          const skillDisplay = skills.map(sid => {
+            const meta = skillLookup[sid];
+            return meta ? `${meta.label} (${sid})` : sid;
+          });
+          const blsDisplay = blsCats.map(bid => {
+            return bid.replace('bls:','');
+          });
+          tooltip.style("display","block").html(`<strong>${d.short}</strong><div style="font-weight:400">${d.title}</div><div style="margin-top:6px"><em>Skills (${skills.length}):</em><div style="max-height:240px;overflow:auto">${skillDisplay.join(", ")}</div></div>${blsDisplay.length?`<div style="margin-top:6px"><em>BLS:</em> ${blsDisplay.join(", ")}</div>`:''}`);
+          tooltip.style("left",(event.pageX)+"px").style("top",(event.pageY)+"px");
+        }
+      });
+
+      // Reset / center buttons
+      d3.select("#reset").on("click", () => {
+        node.selectAll("circle").attr("fill-opacity",1);
+        link.attr("stroke-opacity",0.8);
+        svg.transition().duration(400).call(d3.zoom().transform, d3.zoomIdentity);
+        simulation.alpha(1).restart();
+      });
+      d3.select("#center").on("click", () => {
+        svg.transition().duration(600).call(d3.zoom().transform, d3.zoomIdentity.translate(width/2 - width/2, height/2 - height/2));
+      });
+
+      // helper: dragging
+      function drag(sim) {
+        function dragstarted(event, d) {
+          if (!event.active) sim.alphaTarget(0.3).restart();
+          d.fx = d.x; d.fy = d.y;
+        }
+        function dragged(event, d) {
+          d.fx = event.x; d.fy = event.y;
+        }
+        function dragended(event, d) {
+          if (!event.active) sim.alphaTarget(0);
+          d.fx = null; d.fy = null;
+        }
+        return d3.drag().on("start", dragstarted).on("drag", dragged).on("end", dragended);
+      }
+
+      // fit initial view if graph large
+      setTimeout(() => { simulation.alpha(0.05); }, 1000);
+    }
+
+    // Utility: take top-N courses from ALL_COURSES
+    // Default ordering is as-is in file; could be changed to popularity or alphabetical
+    function filterCourses(courses, n) {
+      if (!courses) return [];
+      return courses.slice(0, n);
+    }
+
+    // wire up slider and quick buttons
+    const courseCountInput = document.getElementById('course-count');
+    const courseCountLabel = document.getElementById('course-count-label');
+  const hideUnconnectedCheckbox = document.getElementById('hide-unconnected');
+    const skillFocusedCheckbox = document.getElementById('skill-focused');
+    courseCountInput.addEventListener('input', (e) => {
+      const n = +e.target.value;
+      courseCountLabel.textContent = n;
+    });
+    // update on change (mouse up) to re-render
+    courseCountInput.addEventListener('change', (e) => {
+      const n = +e.target.value;
+      if (!ALL_COURSES) return;
+      if (skillFocusedCheckbox.checked) {
+        const topSkills = computeTopNSkills(ALL_COURSES, n);
+        renderGraphForSkills(topSkills, SKILL_LOOKUP, BLS_CATEGORIES);
+      } else {
+        renderGraph(filterCourses(ALL_COURSES, n), SKILL_LOOKUP, BLS_CATEGORIES);
+      }
+    });
+    document.getElementById('show10').addEventListener('click', () => {
+      courseCountInput.value = 10; courseCountLabel.textContent = 10;
+      if (skillFocusedCheckbox.checked) {
+        const topSkills = computeTopNSkills(ALL_COURSES, 10);
+        renderGraphForSkills(topSkills, SKILL_LOOKUP, BLS_CATEGORIES);
+      } else {
+        renderGraph(filterCourses(ALL_COURSES, 10), SKILL_LOOKUP, BLS_CATEGORIES);
+      }
+    });
+    document.getElementById('show20').addEventListener('click', () => {
+      courseCountInput.value = 20; courseCountLabel.textContent = 20;
+      if (skillFocusedCheckbox.checked) {
+        const topSkills = computeTopNSkills(ALL_COURSES, 20);
+        renderGraphForSkills(topSkills, SKILL_LOOKUP, BLS_CATEGORIES);
+      } else {
+        renderGraph(filterCourses(ALL_COURSES, 20), SKILL_LOOKUP, BLS_CATEGORIES);
+      }
+    });
+    // hide/unconnected toggle
+    hideUnconnectedCheckbox.addEventListener('change', () => {
+      const n = +courseCountInput.value;
+      if (skillFocusedCheckbox.checked) {
+        const topSkills = computeTopNSkills(ALL_COURSES, n);
+        renderGraphForSkills(topSkills, SKILL_LOOKUP, BLS_CATEGORIES);
+      } else {
+        renderGraph(filterCourses(ALL_COURSES, n), SKILL_LOOKUP, BLS_CATEGORIES);
+      }
+    });
+    // skill-focused toggle
+    skillFocusedCheckbox.addEventListener('change', () => {
+      const n = +courseCountInput.value;
+      courseCountLabel.textContent = n;
+      if (skillFocusedCheckbox.checked) {
+        // treat slider as 'top N skills'
+        const topSkills = computeTopNSkills(ALL_COURSES, n);
+        renderGraphForSkills(topSkills, SKILL_LOOKUP, BLS_CATEGORIES);
+      } else {
+        renderGraph(filterCourses(ALL_COURSES, n), SKILL_LOOKUP, BLS_CATEGORIES);
+      }
+    });
+
+    // compute top-N skills across a set of courses (by frequency)
+    function computeTopNSkills(courses, n) {
+      const freq = new Map();
+      courses.forEach(c => {
+        (c.inferred_skills || []).forEach(s => freq.set(s, (freq.get(s) || 0) + 1));
+      });
+      const sorted = Array.from(freq.entries()).sort((a,b) => b[1] - a[1]).slice(0, n).map(x => x[0]);
+      return sorted; // array of skill ids
+    }
+
+    // render graph for a set of top skills: include all courses that reference them and link
+    function renderGraphForSkills(skillIds, skillLookup = {}, blsCategories = []) {
+      const skillSet = new Set(skillIds.map(s => 'skill:' + s));
+      // build a reduced course list: include courses that reference any of these skills
+      const filteredCourses = ALL_COURSES.filter(c => (c.inferred_skills || []).some(s => skillIds.indexOf(s) !== -1));
+      // create nodes/links from these courses and the selected skills
+      // We'll reuse renderGraph but need to transform filtered courses so they only keep the selected skills
+      const transformed = filteredCourses.map(c => ({ ...c, inferred_skills: (c.inferred_skills || []).filter(s => skillIds.indexOf(s) !== -1) }));
+      renderGraph(transformed, skillLookup, blsCategories);
+    }
+  </script>
+</body>
+</html>

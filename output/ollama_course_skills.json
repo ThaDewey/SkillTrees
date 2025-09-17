@@ -920,5 +920,2731 @@
         "description": "Develop a broader historical perspective by understanding the long-term trends and patterns in world history."
       }
     ]
+  },
+  {
+    "course_identification": "HIST3423",
+    "title_short_desc": "Women's History: European",
+    "inferred_skills": [
+      {
+        "label": "Analyze Women's Roles",
+        "description": "Identify and analyze historical roles of women in early modern Europe to the mid-20th century"
+      },
+      {
+        "label": "Explore Gender Theories",
+        "description": "Investigate theories on women's history and changing roles, rights, and responsibilities"
+      },
+      {
+        "label": "Navigate Social Constraints",
+        "description": "Understand how women navigated social constraints in politics, business, industry, and the church"
+      },
+      {
+        "label": "Evaluate Historical Trends",
+        "description": "Assess general trends related to women's roles and cultural expectations over time"
+      },
+      {
+        "label": "Historical Research",
+        "description": "Conduct research on representative individuals in women's history"
+      },
+      {
+        "label": "Critical Analysis",
+        "description": "Analyze and interpret the historical and cultural roles of women throughout Europe"
+      },
+      {
+        "label": "Historical Contextualization",
+        "description": "Place individuals, events, and movements in their appropriate historical contexts"
+      },
+      {
+        "label": "Cultural Analysis",
+        "description": "Analyze the cultural impact on women's roles and expectations throughout European history"
+      }
+    ]
+  },
+  {
+    "course_identification": "HIST4453",
+    "title_short_desc": "Women's History: China",
+    "inferred_skills": [
+      {
+        "label": "Analyze Women's Role",
+        "description": "Examining the role of women in Chinese history and culture."
+      },
+      {
+        "label": "Understand Religious Influence",
+        "description": "Investigating Confucianism, Daoism, Buddhism, Communism, and Capitalism's impact on women."
+      },
+      {
+        "label": "Explore Women's Agency",
+        "description": "Studying the agency of women in the face of various societal systems."
+      },
+      {
+        "label": "Analyze Historical Narratives",
+        "description": "Evaluating historical narratives concerning Chinese women."
+      },
+      {
+        "label": "Identify Cultural Trends",
+        "description": "Recognizing cultural trends and patterns in the history of Chinese women."
+      },
+      {
+        "label": "Evaluate Societal Systems",
+        "description": "Assessing societal systems' effects on gender roles in China."
+      },
+      {
+        "label": "Critically Evaluate Sources",
+        "description": "Analyzing and evaluating sources related to Chinese women's history."
+      },
+      {
+        "label": "Discuss Gender Studies",
+        "description": "Participating in discussions on the historical perspectives of gender in China."
+      }
+    ]
+  },
+  {
+    "course_identification": "HIST5453",
+    "title_short_desc": "Women's History: China",
+    "inferred_skills": [
+      {
+        "label": "Analyze Confucianism Impact",
+        "description": "Explore the influence of Confucianism on women's history and culture in China"
+      },
+      {
+        "label": "Evaluate Daoist Influence",
+        "description": "Assess the role of Daoism in shaping women's experiences in China"
+      },
+      {
+        "label": "Examine Buddhist Traditions",
+        "description": "Investigate the impact of Buddhism on Chinese women throughout history"
+      },
+      {
+        "label": "Study Communist Policies",
+        "description": "Analyze communist policies and their effects on women in China"
+      },
+      {
+        "label": "Understand Capitalist Effects",
+        "description": "Comprehend the impact of state-sponsored capitalism on contemporary Chinese women's issues"
+      },
+      {
+        "label": "Evaluate Women's Agency",
+        "description": "Analyze the agency displayed by women in various historical and cultural contexts within China"
+      },
+      {
+        "label": "Compare Historical Eras",
+        "description": "Explore similarities and differences between ancient and modern times regarding women's history in China"
+      },
+      {
+        "label": "Analyze Cultural Changes",
+        "description": "Examine the changes in Chinese culture as they pertain to women from past to present"
+      }
+    ]
+  },
+  {
+    "course_identification": "HIST4413",
+    "title_short_desc": "Women/Gender in Native America",
+    "inferred_skills": [
+      {
+        "label": "Analyze Native American history",
+        "description": "Study the historical experiences of Native women within their communities"
+      },
+      {
+        "label": "Explore gender role changes",
+        "description": "Understand how gender roles have evolved in indigenous North American communities"
+      },
+      {
+        "label": "Compare cultural perspectives",
+        "description": "Learn about diverse perspectives on women and gender in Native America"
+      },
+      {
+        "label": "Evaluate historical sources",
+        "description": "Assess primary and secondary sources related to Native American history"
+      },
+      {
+        "label": "Apply critical thinking",
+        "description": "Analyze and interpret complex information about gender in Native America"
+      },
+      {
+        "label": "Communicate historical findings",
+        "description": "Present research on the historical experiences of Native women"
+      },
+      {
+        "label": "Develop cultural sensitivity",
+        "description": "Cultivate respect and understanding for diverse cultures and histories"
+      },
+      {
+        "label": "Collaborate in group discussions",
+        "description": "Participate in class discussions about Native American women and gender"
+      }
+    ]
+  },
+  {
+    "course_identification": "HIST5413",
+    "title_short_desc": "Women/Gender in Native America",
+    "inferred_skills": [
+      {
+        "label": "Examine Historical Context",
+        "description": "Analyze the historical experiences of Native women within their cultural contexts."
+      },
+      {
+        "label": "Understand Gender Roles",
+        "description": "Identify and describe the evolution of gender roles in indigenous communities."
+      },
+      {
+        "label": "Evaluate Cultural Impact",
+        "description": "Assess how changes in gender roles have influenced indigenous cultures."
+      },
+      {
+        "label": "Compare Gender Experiences",
+        "description": "Compare and contrast the experiences of Native women with those in other societies."
+      },
+      {
+        "label": "Analyze Indigenous Studies",
+        "description": "Apply analytical skills to study indigenous communities and their histories."
+      },
+      {
+        "label": "Critically Evaluate Sources",
+        "description": "Evaluate the reliability and relevance of sources related to Native American history."
+      },
+      {
+        "label": "Develop Historical Perspective",
+        "description": "Develop a historical perspective on the role and status of women in Native America."
+      },
+      {
+        "label": "Communicate Historically",
+        "description": "Effectively communicate historical insights about Native American women and gender roles."
+      }
+    ]
+  },
+  {
+    "course_identification": "HUM5143",
+    "title_short_desc": "Women, Witches, and Religion",
+    "inferred_skills": [
+      {
+        "label": "Analyze Historical Context",
+        "description": "Identify historical factors influencing societal responses to women outside norms."
+      },
+      {
+        "label": "Compare Literary Characters",
+        "description": "Differentiate and compare female characters across various literary periods."
+      },
+      {
+        "label": "Explore Psychological Aspects",
+        "description": "Understand psychological implications of divergences from societal norms for women."
+      },
+      {
+        "label": "Study Philosophical/Religious Dimensions",
+        "description": "Investigate how religious and philosophical beliefs shape responses to non-conforming women."
+      },
+      {
+        "label": "Interpret Biblical Texts",
+        "description": "Analyze biblical passages related to women outside societal norms."
+      },
+      {
+        "label": "Compare Historical Women Roles",
+        "description": "Compare and contrast various historical female roles, such as maenads, oracles, martyrs, etc."
+      },
+      {
+        "label": "Understand Modern Spiritual Movements",
+        "description": "Gain knowledge of contemporary spiritual movements like Wicca and their adherents."
+      }
+    ]
+  },
+  {
+    "course_identification": "SPAN4303",
+    "title_short_desc": "Women Writing In Span America",
+    "inferred_skills": [
+      {
+        "label": "Analyze Women's Roles",
+        "description": "Examining women's roles in Spanish America within the context of political and religious institutions."
+      },
+      {
+        "label": "Identify Influential Institutions",
+        "description": "Recognizing key political and religious institutions that have played a role in shaping women's experiences in Spanish America."
+      },
+      {
+        "label": "Explore Cultural Myths",
+        "description": "Investigating mythical images of women and their impact on the formation of false identities in Spanish America."
+      },
+      {
+        "label": "Understand Issues Affecting Women",
+        "description": "Comprehending issues such as silencing, otherness that have influenced women in Spanish America."
+      },
+      {
+        "label": "Analyze Literature by Women",
+        "description": "Assessing literature from diverse periods and geographic regions of Central and South America, Mexico, and the Caribbean written by women."
+      },
+      {
+        "label": "Critically Evaluate Texts",
+        "description": "Analyzing texts for their literary merit, thematic elements, and contributions to Spanish American literature."
+      },
+      {
+        "label": "Develop Analytical Skills",
+        "description": "Enhancing analytical skills through the close reading and interpretation of women's writing in Spanish America."
+      }
+    ]
+  },
+  {
+    "course_identification": "HUM5243",
+    "title_short_desc": "Women in the Humanities",
+    "inferred_skills": [
+      {
+        "label": "Analyze Women's History",
+        "description": "Identify and evaluate historical events related to women's role in Western civilization."
+      },
+      {
+        "label": "Understand Political Influence",
+        "description": "Explore how political factors have affected women throughout history."
+      },
+      {
+        "label": "Evaluate Economic Impact",
+        "description": "Assess the economic contributions and limitations for women in various periods."
+      },
+      {
+        "label": "Analyze Religious Beliefs",
+        "description": "Examine religious beliefs and their effects on women's roles in society."
+      },
+      {
+        "label": "Interpret Intellectual Ideas",
+        "description": "Discuss intellectual advancements made by women throughout history."
+      },
+      {
+        "label": "Evaluate Artistic Contributions",
+        "description": "Assess artistic achievements and impact of women in various disciplines."
+      },
+      {
+        "label": "Analyze Social Dynamics",
+        "description": "Identify and evaluate the social roles and dynamics experienced by women."
+      },
+      {
+        "label": "Critically Evaluate Barriers",
+        "description": "Analyze historical obstacles that have been placed upon women in public and private life."
+      }
+    ]
+  },
+  {
+    "course_identification": "HIST4423",
+    "title_short_desc": "Women in the American West",
+    "inferred_skills": [
+      {
+        "label": "Analyze Regional Identity",
+        "description": "Exploring regional identity within the context of the American West."
+      },
+      {
+        "label": "Evaluate Cultural Representations",
+        "description": "Assessing cultural representations in relation to women in the American West."
+      },
+      {
+        "label": "Understand Diverse Perspectives",
+        "description": "Comprehending diverse perspectives of women that shaped the American West."
+      },
+      {
+        "label": "Interpret Historical Narratives",
+        "description": "Decoding historical narratives to gain insights into women's roles in the American West."
+      },
+      {
+        "label": "Critically Analyze Mobility",
+        "description": "Examining mobility patterns and their implications for women in the American West."
+      },
+      {
+        "label": "Apply Historical Analysis Methods",
+        "description": "Utilizing various historical analysis methods to understand women's roles in the American West."
+      },
+      {
+        "label": "Develop Argumentative Skills",
+        "description": "Fostering skills for constructing arguments based on historical evidence regarding women in the American West."
+      },
+      {
+        "label": "Explore Cultural Influences",
+        "description": "Investigating cultural influences on women's roles and experiences within the American West."
+      }
+    ]
+  },
+  {
+    "course_identification": "HIST5423",
+    "title_short_desc": "Women in the American West",
+    "inferred_skills": [
+      {
+        "label": "Analyze Regional Identity",
+        "description": "Exploring how regional identity has been shaped by women's perspectives."
+      },
+      {
+        "label": "Understand Cultural Representations",
+        "description": "Gaining insight into cultural representations as portrayed by women in the American West."
+      },
+      {
+        "label": "Trace Women's Mobility",
+        "description": "Studying patterns of mobility and migration among women in the American West."
+      },
+      {
+        "label": "Evaluate Perspectives of Diverse Women",
+        "description": "Assessing diverse perspectives held by women throughout different periods in the American West."
+      },
+      {
+        "label": "Analyze Narrative Structure",
+        "description": "Breaking down narratives and their structures to understand the role of women in shaping them."
+      },
+      {
+        "label": "Critique Cultural Impact",
+        "description": "Critically evaluating the cultural impact made by women on the American West."
+      },
+      {
+        "label": "Explore Shaped American West",
+        "description": "Investigating how women's roles contributed to shaping the American West."
+      },
+      {
+        "label": "Compare and Contrast Perspectives",
+        "description": "Comparing and contrasting various perspectives of women in different regions of the American West."
+      }
+    ]
+  },
+  {
+    "course_identification": "MCOM5313",
+    "title_short_desc": "Women in Media",
+    "inferred_skills": [
+      {
+        "label": "Analyze Historical Impact",
+        "description": "Explore the historical role of women in media."
+      },
+      {
+        "label": "Statistical Data Interpretation",
+        "description": "Understand media statistics related to women."
+      },
+      {
+        "label": "Guest Speaker Engagement",
+        "description": "Learn from industry professionals about women in media."
+      },
+      {
+        "label": "Issue Analysis",
+        "description": "Discuss past, current, and future issues related to women in media."
+      },
+      {
+        "label": "Critical Thinking",
+        "description": "Evaluate the representation of women in the media."
+      },
+      {
+        "label": "Communication Skills",
+        "description": "Develop effective communication skills through discussions and debates."
+      },
+      {
+        "label": "Media Awareness",
+        "description": "Gain awareness of women as subjects in the media."
+      },
+      {
+        "label": "Future Media Forecasting",
+        "description": "Predict possible future trends for women in media."
+      }
+    ]
+  },
+  {
+    "course_identification": "MCOM4313",
+    "title_short_desc": "Women in Media",
+    "inferred_skills": [
+      {
+        "label": "Analyze Women's Role in Journalism",
+        "description": "Explore the impact and significance of women as journalism professionals"
+      },
+      {
+        "label": "Evaluate Media Representation of Women",
+        "description": "Assess the portrayal of women in various media platforms"
+      },
+      {
+        "label": "Historical Contextualization",
+        "description": "Understand the historical context of women's role and media representation"
+      },
+      {
+        "label": "Statistical Analysis",
+        "description": "Interpret and analyze statistics related to women in media"
+      },
+      {
+        "label": "Critical Discussion",
+        "description": "Engage in thoughtful discussions on current and future issues affecting women in media"
+      },
+      {
+        "label": "Opinion Formation",
+        "description": "Develop well-supported opinions based on course materials and discussions"
+      },
+      {
+        "label": "Guest Speaker Engagement",
+        "description": "Participate in conversations with guest speakers from the media industry"
+      }
+    ]
+  },
+  {
+    "course_identification": "ENG5683",
+    "title_short_desc": "Women in Literature",
+    "inferred_skills": [
+      {
+        "label": "Analyze Gender Impact",
+        "description": "Understand the importance of gender in evaluating literature and literary criticism"
+      },
+      {
+        "label": "Evaluate English Literature",
+        "description": "Assess literature written by women in the English language"
+      },
+      {
+        "label": "Analyze American Literature",
+        "description": "Examine literature written by women from America"
+      },
+      {
+        "label": "Evaluate World Literature",
+        "description": "Assess literature written by women from around the world"
+      },
+      {
+        "label": "Analyze Narrative Structure",
+        "description": "Understand and evaluate narrative structures in literature written by women"
+      },
+      {
+        "label": "Analyze Literary Criticism",
+        "description": "Evaluate literary criticism by women writers"
+      },
+      {
+        "label": "Apply Genre Conventions",
+        "description": "Understand and apply genre conventions in literature written by women"
+      }
+    ]
+  },
+  {
+    "course_identification": "MCOM3533",
+    "title_short_desc": "Women and Leadership",
+    "inferred_skills": [
+      {
+        "label": "Critically Analyze Leadership Challenges",
+        "description": "Evaluate historical and contemporary leadership hurdles for women"
+      },
+      {
+        "label": "Identify Strategies for Change",
+        "description": "Recognize strategies designed to bring change in leadership contexts"
+      },
+      {
+        "label": "Explore Opportunities in Leadership",
+        "description": "Discuss opportunities available for women in leadership roles"
+      },
+      {
+        "label": "Analyze Narrative Structures",
+        "description": "Evaluate the structure of stories related to women's leadership"
+      },
+      {
+        "label": "Compose Persuasive Arguments",
+        "description": "Develop arguments supporting women in leadership positions"
+      },
+      {
+        "label": "Apply Genre Conventions",
+        "description": "Use appropriate conventions when discussing and analyzing leadership topics"
+      },
+      {
+        "label": "Discuss Contemporary Leadership Issues",
+        "description": "Explore modern challenges and issues in women's leadership"
+      },
+      {
+        "label": "Evaluate Success Strategies",
+        "description": "Assess strategies for success in women's leadership contexts"
+      }
+    ]
+  },
+  {
+    "course_identification": "CJ4533",
+    "title_short_desc": "White Collar Crime",
+    "inferred_skills": [
+      {
+        "label": "Analyze White Collar Crime Definitions",
+        "description": "Develop the ability to understand and analyze various debates about white collar crime."
+      },
+      {
+        "label": "Examine Victimization Complexities",
+        "description": "Learn to evaluate the complex nature of victimization in white collar crimes."
+      },
+      {
+        "label": "Assess Offender Sentencing Issues",
+        "description": "Gain skills to analyze and assess issues related to offender sentencing in white collar crime cases."
+      },
+      {
+        "label": "Understand Criminal Justice System Response",
+        "description": "Learn about the difficulties inherent in the criminal justice system response to white collar crimes."
+      },
+      {
+        "label": "Critically Evaluate White Collar Crime Responses",
+        "description": "Develop the ability to critically evaluate responses to white collar crime by the criminal justice system."
+      },
+      {
+        "label": "Apply Written Communication Skills",
+        "description": "Improve written communication skills through essay writing related to white collar crime topics."
+      }
+    ]
+  },
+  {
+    "course_identification": "HUM4323",
+    "title_short_desc": "When God was a Woman",
+    "inferred_skills": [
+      {
+        "label": "Evaluate Historical Phenomena",
+        "description": "Analyze and interpret historical traditions of goddess worship."
+      },
+      {
+        "label": "Compare Religious Traditions",
+        "description": "Explore the similarities and differences between various religious traditions."
+      },
+      {
+        "label": "Examine Literary Responses",
+        "description": "Understand literary interpretations of goddess-worshiping traditions."
+      },
+      {
+        "label": "Analyze Psychological Interpretations",
+        "description": "Comprehend psychological perspectives on these religious traditions."
+      },
+      {
+        "label": "Assess Philosophical Perspectives",
+        "description": "Explore philosophical views and interpretations of goddess-worshiping traditions."
+      },
+      {
+        "label": "Understand Heterodoxy Contexts",
+        "description": "Gain an understanding of the context and implications of heterodox religious practices."
+      },
+      {
+        "label": "Explore Goddess-Centric Theology",
+        "description": "Investigate theological aspects related to goddess worship."
+      },
+      {
+        "label": "Apply Critical Thinking",
+        "description": "Develop critical thinking skills in examining these traditions from various perspectives."
+      }
+    ]
+  },
+  {
+    "course_identification": "FRSC5553",
+    "title_short_desc": "WMD Forensics",
+    "inferred_skills": [
+      {
+        "label": "Identify CBRNE Agents",
+        "description": "Recognize chemical, biological, radiological, nuclear, and explosive agents related to terrorism events"
+      },
+      {
+        "label": "Process Crime Scenes",
+        "description": "Manage crime scenes following CBRNE event procedures"
+      },
+      {
+        "label": "Laboratory Analysis",
+        "description": "Perform laboratory analyses of CBRNE samples"
+      },
+      {
+        "label": "Field Analyses Skills",
+        "description": "Conduct field analyses of CBRNE agents"
+      },
+      {
+        "label": "Analyze Terrorism Events",
+        "description": "Evaluate domestic and international terrorism events involving WMD"
+      },
+      {
+        "label": "CBRNE Event Response",
+        "description": "Respond effectively to CBRNE event situations"
+      },
+      {
+        "label": "Laboratory & Field Techniques",
+        "description": "Apply laboratory and field techniques in CBRNE analyses"
+      },
+      {
+        "label": "Safety Procedures",
+        "description": "Understand safety protocols for handling and analyzing CBRNE agents"
+      }
+    ]
+  },
+  {
+    "course_identification": "FRSC4553",
+    "title_short_desc": "WMD Forensics",
+    "inferred_skills": [
+      {
+        "label": "Identify CBRNE Agents",
+        "description": "Recognize chemical, biological, radiological, nuclear, and explosive agents associated with terrorism events."
+      },
+      {
+        "label": "Process CBRNE Scenes",
+        "description": "Apply techniques for processing crime scenes involving weapons of mass destruction."
+      },
+      {
+        "label": "Analyze CBRNE Samples",
+        "description": "Perform laboratory analysis on samples from CBRNE events."
+      },
+      {
+        "label": "Conduct Field Analysis",
+        "description": "Execute field analyses in relation to CBRNE incidents."
+      },
+      {
+        "label": "Assess Terrorism Events",
+        "description": "Evaluate the nature and implications of domestic and international terrorism events involving WMD."
+      },
+      {
+        "label": "Apply Forensic Techniques",
+        "description": "Utilize forensic methods specific to weapons of mass destruction."
+      },
+      {
+        "label": "Understand CBRNE Threats",
+        "description": "Gain knowledge about the risks and threats posed by CBRNE agents."
+      }
+    ]
+  },
+  {
+    "course_identification": "THRT3513",
+    "title_short_desc": "Voice, Speech, and Dialect",
+    "inferred_skills": [
+      {
+        "label": "Develop Vocal Techniques",
+        "description": "Mastering vocal techniques for performance"
+      },
+      {
+        "label": "Enhance Clarity",
+        "description": "Improving the clarity of voice for stage performances"
+      },
+      {
+        "label": "Boost Expressiveness",
+        "description": "Increasing the expressiveness of voice"
+      },
+      {
+        "label": "Build Projection",
+        "description": "Strengthening vocal projection for on-stage delivery"
+      },
+      {
+        "label": "Cultivate Vocal Confidence",
+        "description": "Developing vocal confidence both on and off stage"
+      },
+      {
+        "label": "Learn Dialect Development",
+        "description": "Exploring the fundamentals of developing a stage dialect"
+      },
+      {
+        "label": "Improve Stage Presence",
+        "description": "Enhancing overall stage presence and performance skills"
+      },
+      {
+        "label": "Apply Vocal Analysis",
+        "description": "Analyzing vocal aspects for optimal performance outcomes"
+      }
+    ]
+  },
+  {
+    "course_identification": "THRT2233",
+    "title_short_desc": "Voice and Movement 2",
+    "inferred_skills": [
+      {
+        "label": "Control Resonance",
+        "description": "Developing the ability to control and utilize resonance for enhanced expressive intonation."
+      },
+      {
+        "label": "Physical Control in Groups",
+        "description": "Learning group work techniques for improved physical control."
+      },
+      {
+        "label": "Vocal Interpretation Analysis",
+        "description": "Exploring text analysis with a focus on vocal interpretation."
+      },
+      {
+        "label": "Expressive Intonation Enhancement",
+        "description": "Mastering techniques to enhance expressive intonation through resonance control."
+      },
+      {
+        "label": "Group Collaboration",
+        "description": "Developing collaborative skills through group work in physical control and text analysis."
+      },
+      {
+        "label": "Vocal Intonation Analysis",
+        "description": "Learning to analyze vocal intonation for expressive purposes."
+      },
+      {
+        "label": "Physical Control Improvement",
+        "description": "Advancing physical control through group work and resonance control exercises."
+      },
+      {
+        "label": "Vocal Interpretation Mastery",
+        "description": "Mastering vocal interpretation through text analysis and collaborative practice."
+      }
+    ]
+  },
+  {
+    "course_identification": "THRT1613",
+    "title_short_desc": "Voice and Movement 1",
+    "inferred_skills": [
+      {
+        "label": "Proper Breathing",
+        "description": "Demonstrating the ability to breathe correctly for a stage-worthy vocal instrument"
+      },
+      {
+        "label": "Resonance Control",
+        "description": "Maintaining control over the tonal quality of one's voice"
+      },
+      {
+        "label": "Articulation Mastery",
+        "description": "Improving clarity and precision in speech"
+      },
+      {
+        "label": "Body Relaxation",
+        "description": "Learning techniques to relax the body"
+      },
+      {
+        "label": "Posture Correction",
+        "description": "Recognizing and eliminating poor posture"
+      },
+      {
+        "label": "Floor Exercise Proficiency",
+        "description": "Performing exercises designed to improve physical abilities for acting"
+      },
+      {
+        "label": "Theatre Game Participation",
+        "description": "Participating in theatre games to enhance performance skills"
+      }
+    ]
+  },
+  {
+    "course_identification": "ENG1253",
+    "title_short_desc": "Vocabulary Building",
+    "inferred_skills": [
+      {
+        "label": "Recognize Prefixes",
+        "description": "Identify and understand the meaning of prefixes in words."
+      },
+      {
+        "label": "Understand Suffixes",
+        "description": "Identify and understand the meaning of suffixes in words."
+      },
+      {
+        "label": "Analyze Etymologies",
+        "description": "Explore the origin and history of words."
+      },
+      {
+        "label": "Improve Reading Comprehension",
+        "description": "Enhance ability to understand complex texts."
+      },
+      {
+        "label": "Boost Writing Competency",
+        "description": "Develop skills for effective writing."
+      },
+      {
+        "label": "Identify Word Parts",
+        "description": "Recognize how prefixes, suffixes, and roots combine to form words."
+      },
+      {
+        "label": "Enhance Vocabulary",
+        "description": "Expand personal vocabulary for better communication."
+      },
+      {
+        "label": "Apply Language Rules",
+        "description": "Use knowledge of prefixes, suffixes, and etymologies to correctly form words according to standard English rules."
+      }
+    ]
+  },
+  {
+    "course_identification": "MCOM3033",
+    "title_short_desc": "Video News II",
+    "inferred_skills": [
+      {
+        "label": "Research Stories",
+        "description": "Locate and gather information for news stories"
+      },
+      {
+        "label": "Write News Reports",
+        "description": "Compose clear and concise news articles"
+      },
+      {
+        "label": "Reporting Style",
+        "description": "Develop a unique, engaging reporting style"
+      },
+      {
+        "label": "On-Air Presentation",
+        "description": "Deliver news reports professionally on camera"
+      },
+      {
+        "label": "Edit News Stories",
+        "description": "Refine and structure news content for broadcast"
+      },
+      {
+        "label": "News Gathering",
+        "description": "Collect news using various methods and sources"
+      }
+    ]
+  },
+  {
+    "course_identification": "MCOM2203",
+    "title_short_desc": "Video News I",
+    "inferred_skills": [
+      {
+        "label": "Gather Video News",
+        "description": "Collecting video content for news reporting"
+      },
+      {
+        "label": "Write for Video",
+        "description": "Composing scripts for video-based reporting"
+      },
+      {
+        "label": "Create Newscasts",
+        "description": "Producing team-driven newscasts"
+      },
+      {
+        "label": "Generate Content",
+        "description": "Creating content for video-driven media"
+      },
+      {
+        "label": "Apply News Theories",
+        "description": "Utilizing theories in news gathering and writing"
+      },
+      {
+        "label": "Work in a Team",
+        "description": "Collaborating with peers to create content"
+      },
+      {
+        "label": "News Reporting Practices",
+        "description": "Understanding practices specific to video news reporting"
+      }
+    ]
+  },
+  {
+    "course_identification": "MCOM3243",
+    "title_short_desc": "Video Field Production",
+    "inferred_skills": [
+      {
+        "label": "Videography Skills",
+        "description": "Applying technical knowledge for capturing moving images"
+      },
+      {
+        "label": "Sound Recording Skills",
+        "description": "Understanding and utilizing techniques for capturing high-quality audio"
+      },
+      {
+        "label": "Editing Skills",
+        "description": "Manipulating video, audio, and visual elements to produce a cohesive narrative"
+      },
+      {
+        "label": "Writing Skills",
+        "description": "Developing storylines and scripts for video content"
+      },
+      {
+        "label": "Directing Skills",
+        "description": "Leading actors, crew, and production processes to create videos"
+      },
+      {
+        "label": "Producing Skills",
+        "description": "Organizing resources, scheduling, and budgeting for video productions"
+      },
+      {
+        "label": "Media Platform Knowledge",
+        "description": "Understanding different media platforms and their requirements for video content"
+      }
+    ]
+  },
+  {
+    "course_identification": "MCOM3013",
+    "title_short_desc": "Video Editing",
+    "inferred_skills": [
+      {
+        "label": "Operate Video Editor Software",
+        "description": "Demonstrates the ability to navigate and utilize industry-standard video editing software"
+      },
+      {
+        "label": "Video Sequencing",
+        "description": "Displays competency in organizing video clips in a coherent sequence for editing purposes"
+      },
+      {
+        "label": "Timeline Management",
+        "description": "Demonstrates the ability to effectively manage multiple layers and elements within a video timeline"
+      },
+      {
+        "label": "Video Transitions Application",
+        "description": "Shows proficiency in applying various video transitions between clips seamlessly"
+      },
+      {
+        "label": "Color Correction",
+        "description": "Demonstrates the ability to adjust color balance, contrast, and brightness in a video clip"
+      },
+      {
+        "label": "Audio Editing",
+        "description": "Displays competency in editing audio components within a video project"
+      },
+      {
+        "label": "Project Exporting",
+        "description": "Shows proficiency in exporting edited videos for various platforms and formats"
+      },
+      {
+        "label": "Video Project Planning",
+        "description": "Demonstrates the ability to plan and organize a video project from concept through final delivery"
+      }
+    ]
+  },
+  {
+    "course_identification": "MCOM4433",
+    "title_short_desc": "Victims and the Media",
+    "inferred_skills": [
+      {
+        "label": "Analyze Trauma Impact",
+        "description": "Understand the interpersonal and psychological effects of trauma on victims."
+      },
+      {
+        "label": "Evaluate Media Coverage",
+        "description": "Assess the impact of media coverage on victims, journalists, and communications professionals."
+      },
+      {
+        "label": "Critique Journalistic Ethics",
+        "description": "Analyze journalistic ethics in relation to reporting trauma."
+      },
+      {
+        "label": "Develop Empathy",
+        "description": "Foster empathy for victims and sensitivity in media representation."
+      },
+      {
+        "label": "Communicate Effectively",
+        "description": "Improve communication skills when addressing sensitive topics related to trauma."
+      },
+      {
+        "label": "Apply Psychological Principles",
+        "description": "Understand and apply psychological principles in media representation of trauma victims."
+      },
+      {
+        "label": "Craft Professional Messages",
+        "description": "Compose clear, concise, and appropriate messages for various communications platforms."
+      },
+      {
+        "label": "Professional Development",
+        "description": "Gain skills necessary for a career in media or communications related to trauma reporting."
+      }
+    ]
+  },
+  {
+    "course_identification": "CJ4323",
+    "title_short_desc": "Victimology",
+    "inferred_skills": [
+      {
+        "label": "Understand Victimization History",
+        "description": "Develop knowledge of the historical background of victimization."
+      },
+      {
+        "label": "Analyze Theories of Victimology",
+        "description": "Critically evaluate theories related to victimology."
+      },
+      {
+        "label": "Examine Interaction with Justice System",
+        "description": "Gain insight into how crime victims interact within the criminal justice system."
+      },
+      {
+        "label": "Study Classical and Current Works",
+        "description": "Learn from foundational and contemporary works in the field of victimology."
+      },
+      {
+        "label": "Explore Victim Services",
+        "description": "Acquire understanding of various victim services available."
+      },
+      {
+        "label": "Analyze Crime Victim-Related Literature",
+        "description": "Develop skills for comprehensively reviewing literature related to crime victims."
+      },
+      {
+        "label": "Apply Victimology Principles",
+        "description": "Gain practical application of victimology principles and theories."
+      },
+      {
+        "label": "Provide Victim Services Support",
+        "description": "Learn to support victims within the context of various victim services settings."
+      }
+    ]
+  },
+  {
+    "course_identification": "ECON5363",
+    "title_short_desc": "Market Structure/Reg/Antitrust",
+    "inferred_skills": [
+      {
+        "label": "Analyze Market Structures",
+        "description": "Ability to identify and evaluate various forms of industrial organization"
+      },
+      {
+        "label": "Investigate Market Performance",
+        "description": "Competency in investigating market performance and conduct"
+      },
+      {
+        "label": "Evaluate Social Welfare Implications",
+        "description": "Ability to assess the social welfare implications of different market structures"
+      },
+      {
+        "label": "Understand Regulation Policies",
+        "description": "Knowledge of policy alternatives such as regulation in industrial organization"
+      },
+      {
+        "label": "Apply Antitrust Principles",
+        "description": "Ability to apply antitrust principles and legal precedents"
+      },
+      {
+        "label": "Analyze Market Conduct",
+        "description": "Competency in analyzing market conduct within different structures"
+      },
+      {
+        "label": "Develop Policy Recommendations",
+        "description": "Ability to propose policy alternatives based on findings"
+      },
+      {
+        "label": "Apply Theoretical Frameworks",
+        "description": "Ability to apply theoretical frameworks to real-world scenarios in industrial organization"
+      }
+    ]
+  },
+  {
+    "course_identification": "ECON5103",
+    "title_short_desc": "Microeconomic Analysis",
+    "inferred_skills": [
+      {
+        "label": "Demand Estimation",
+        "description": "Application of economic theory to estimate demand for goods and services"
+      },
+      {
+        "label": "Cost Analysis",
+        "description": "Use of analysis to evaluate production costs"
+      },
+      {
+        "label": "Economic Forecasting",
+        "description": "Prediction of economic trends based on historical data and models"
+      },
+      {
+        "label": "Cost/Benefit Analysis",
+        "description": "Evaluation of the pros and cons of a particular course of action in terms of costs and benefits"
+      },
+      {
+        "label": "Competitive Behavior Analysis",
+        "description": "Investigation of market structures and competitive dynamics between firms"
+      },
+      {
+        "label": "Noncompetitive Behavior Analysis",
+        "description": "Examination of behavior outside the boundaries of perfect competition"
+      },
+      {
+        "label": "Solution of Business Problems",
+        "description": "Application of economic principles to address business-related challenges"
+      },
+      {
+        "label": "Public Policy Problem Solving",
+        "description": "Use of economic analysis in addressing public policy issues"
+      }
+    ]
+  },
+  {
+    "course_identification": "HIST1483",
+    "title_short_desc": "History Of U.S. To 1877",
+    "inferred_skills": [
+      {
+        "label": "Analyze Colonial Period",
+        "description": "Evaluate historical events and trends during the colonial era of American history"
+      },
+      {
+        "label": "Interpret Civil War",
+        "description": "Examine and understand the causes, course, and consequences of the American Civil War"
+      },
+      {
+        "label": "Critically Evaluate Narratives",
+        "description": "Assess and critique historical accounts of U.S. history up to 1877"
+      },
+      {
+        "label": "Compare Historical Contexts",
+        "description": "Learn to compare and contrast various historical periods within the United States"
+      },
+      {
+        "label": "Identify Trends Over Time",
+        "description": "Recognize and analyze long-term patterns in American history up to 1877"
+      },
+      {
+        "label": "Apply Historical Analysis",
+        "description": "Utilize historical analysis techniques to understand the development of the United States"
+      },
+      {
+        "label": "Research Historical Facts",
+        "description": "Conduct research and gather information about U.S. history before 1877"
+      },
+      {
+        "label": "Understand US History Timeline",
+        "description": "Gain a comprehensive understanding of the chronology of events in American history"
+      }
+    ]
+  },
+  {
+    "course_identification": "HIST1493",
+    "title_short_desc": "History Of U.S. Since 1877",
+    "inferred_skills": [
+      {
+        "label": "Analyze Historical Context",
+        "description": "Examining and interpreting the social, political, and economic events of US history since 1877."
+      },
+      {
+        "label": "Critically Evaluate Primary Sources",
+        "description": "Assessing the credibility and significance of historical documents, artifacts, and accounts."
+      },
+      {
+        "label": "Compare Historical Eras",
+        "description": "Comparing and contrasting different periods in US history to understand patterns and trends."
+      },
+      {
+        "label": "Understand Long-term Trends",
+        "description": "Recognizing and analyzing long-term historical developments, including their causes and consequences."
+      },
+      {
+        "label": "Develop Historical Arguments",
+        "description": "Constructing compelling historical arguments supported by evidence and analysis."
+      },
+      {
+        "label": "Interpret Secondary Sources",
+        "description": "Evaluating and understanding interpretations of US history presented in scholarly works."
+      },
+      {
+        "label": "Identify Themes in U.S. History",
+        "description": "Recognizing recurring themes, ideas, and debates in the narrative of US history."
+      },
+      {
+        "label": "Discuss Controversial Topics",
+        "description": "Addressing and debating controversial topics in US history with a critical and informed perspective"
+      }
+    ]
+  },
+  {
+    "course_identification": "POL4363",
+    "title_short_desc": "Urban Sustainability",
+    "inferred_skills": [
+      {
+        "label": "Understand Sustainable Development",
+        "description": "Explore the theoretical foundations of sustainable development in urban contexts."
+      },
+      {
+        "label": "Analyze Local Political Processes",
+        "description": "Gain skills to dissect local political processes related to urban sustainability."
+      },
+      {
+        "label": "Apply Sustainable Development Principles",
+        "description": "Learn how to apply sustainable development principles in urban settings globally."
+      },
+      {
+        "label": "Analyze Urban Contexts",
+        "description": "Develop the ability to analyze urban contexts from a sustainability perspective."
+      },
+      {
+        "label": "Evaluate Sustainable Development Policies",
+        "description": "Learn to assess the impact and effectiveness of urban sustainability policies."
+      },
+      {
+        "label": "Compare Global Urban Sustainability Initiatives",
+        "description": "Gain skills to compare various global urban sustainability initiatives."
+      },
+      {
+        "label": "Develop Urban Sustainability Strategies",
+        "description": "Learn how to develop strategies for promoting urban sustainability."
+      },
+      {
+        "label": "Discuss Urban Sustainability Issues",
+        "description": "Improve communication skills when discussing urban sustainability issues."
+      }
+    ]
+  },
+  {
+    "course_identification": "POL5363",
+    "title_short_desc": "Urban Sustainability",
+    "inferred_skills": [
+      {
+        "label": "Understand Sustainable Development",
+        "description": "Develop an understanding of the theoretical foundations of sustainable development in urban contexts."
+      },
+      {
+        "label": "Analyze Urban Political Processes",
+        "description": "Learn to analyze local political processes as they relate to sustainable development."
+      },
+      {
+        "label": "Apply Sustainability Principles",
+        "description": "Gain the ability to apply sustainability principles in urban settings worldwide."
+      },
+      {
+        "label": "Evaluate Urban Development Policies",
+        "description": "Learn to evaluate policies aimed at promoting sustainable urban development."
+      },
+      {
+        "label": "Compare Global Sustainable Practices",
+        "description": "Develop the skill to compare sustainability practices in different global urban settings."
+      },
+      {
+        "label": "Critically Analyze Urban Issues",
+        "description": "Learn to critically analyze urban issues from a sustainability perspective."
+      },
+      {
+        "label": "Develop Sustainable Urban Strategies",
+        "description": "Gain the ability to develop strategies for sustainable urban development."
+      },
+      {
+        "label": "Assess Urban Development Impact",
+        "description": "Learn to assess the impact of urban development on sustainability."
+      }
+    ]
+  },
+  {
+    "course_identification": "POL5173",
+    "title_short_desc": "Urban Planning and Politics",
+    "inferred_skills": [
+      {
+        "label": "Understand Land Use Laws",
+        "description": "Gain knowledge about American land use planning laws"
+      },
+      {
+        "label": "Analyze Nuisance Law",
+        "description": "Learn to analyze the law of nuisance"
+      },
+      {
+        "label": "Interpret Restrictive Covenants",
+        "description": "Learn how to interpret restrictive covenants"
+      },
+      {
+        "label": "Comprehend Planning and Zoning",
+        "description": "Understand planning, zoning, and subdivision controls"
+      },
+      {
+        "label": "Identify Land Use Controls",
+        "description": "Learn to identify recent innovations in land use controls"
+      },
+      {
+        "label": "Apply Land Use Laws",
+        "description": "Gain the ability to apply learned land use laws"
+      },
+      {
+        "label": "Evaluate Land Use Regulations",
+        "description": "Learn to evaluate existing and potential regulations in land use planning"
+      },
+      {
+        "label": "Stay Updated on Land Use Innovations",
+        "description": "Acquire the ability to stay updated on recent land use innovations"
+      }
+    ]
+  },
+  {
+    "course_identification": "POL5013",
+    "title_short_desc": "Urban History of Policy/Admin",
+    "inferred_skills": [
+      {
+        "label": "Analyze Urban Institutions",
+        "description": "Exploring the political, social, and economical institutions in urban areas"
+      },
+      {
+        "label": "Historical Contextualization",
+        "description": "Placing contemporary urban issues in a historical context"
+      },
+      {
+        "label": "Research Urban Development",
+        "description": "Investigating the development of urban areas over time"
+      },
+      {
+        "label": "Evaluate Urban Policies",
+        "description": "Assessing the effectiveness and impact of urban policies"
+      },
+      {
+        "label": "Identify Trends in Urbanization",
+        "description": "Recognizing patterns and trends in urban growth and evolution"
+      },
+      {
+        "label": "Compare Urban Environments",
+        "description": "Comparing different urban areas across various dimensions"
+      },
+      {
+        "label": "Apply Historical Perspective",
+        "description": "Utilizing historical knowledge to understand modern urban issues"
+      },
+      {
+        "label": "Critically Analyze Urban Issues",
+        "description": "Examining urban challenges from multiple perspectives and making informed judgments"
+      }
+    ]
+  },
+  {
+    "course_identification": "POL5183",
+    "title_short_desc": "Urban Government And Policy",
+    "inferred_skills": [
+      {
+        "label": "Analyze Municipal Governance",
+        "description": "Examining the administrative structure of U.S municipal governments."
+      },
+      {
+        "label": "Evaluate Oklahoma Government Policies",
+        "description": "Assessing the political policies specific to Oklahoma city governments."
+      },
+      {
+        "label": "Compare and Contrast Urban Policies",
+        "description": "Analyzing differences and similarities between various urban government policies."
+      },
+      {
+        "label": "Apply Policy Analysis Techniques",
+        "description": "Applying techniques to evaluate and compare government policies."
+      },
+      {
+        "label": "Examine Political Environment",
+        "description": "Analyzing the political climate of U.S municipal governments."
+      },
+      {
+        "label": "Interpret Government Data",
+        "description": "Understanding and interpreting data related to urban government policies."
+      },
+      {
+        "label": "Develop Policy Recommendations",
+        "description": "Formulating suggestions for improving municipal government policies."
+      },
+      {
+        "label": "Collaborate on Public Policy Issues",
+        "description": "Working together with others to address public policy issues in urban governments."
+      }
+    ]
+  },
+  {
+    "course_identification": "GEO4733",
+    "title_short_desc": "Urban GIS",
+    "inferred_skills": [
+      {
+        "label": "Apply Advanced GIS Techniques",
+        "description": "Using advanced geographic information system techniques for urban and socio-economic analysis."
+      },
+      {
+        "label": "Analyze Urban Planning",
+        "description": "Understanding urban and regional planning through GIS application."
+      },
+      {
+        "label": "Explore Urban Ecology",
+        "description": "Investigating urban ecological issues with the help of GIS technology."
+      },
+      {
+        "label": "Conduct Demographic Analysis",
+        "description": "Analyzing demographics using geographic information systems."
+      },
+      {
+        "label": "Utilize Urban GIS Tools",
+        "description": "Leveraging specific urban-focused GIS tools and software."
+      },
+      {
+        "label": "Collaborate on Socio-Economic Issues",
+        "description": "Working in groups to tackle urban and socio-economic issues using GIS techniques."
+      },
+      {
+        "label": "Leverage Junior Standing",
+        "description": "Demonstrating an understanding of concepts at a junior level or above in this course."
+      }
+    ]
+  },
+  {
+    "course_identification": "GEO5733",
+    "title_short_desc": "Urban GIS",
+    "inferred_skills": [
+      {
+        "label": "Apply Advanced GIS Techniques",
+        "description": "A student will learn to utilize sophisticated GIS techniques in an urban context."
+      },
+      {
+        "label": "Analyze Urban and Socio-Economic Issues",
+        "description": "Students will develop the ability to analyze complex urban and socio-economic issues."
+      },
+      {
+        "label": "Conduct Urban and Regional Planning",
+        "description": "A student will learn to carry out urban and regional planning using GIS methods."
+      },
+      {
+        "label": "Analyze Urban Ecology",
+        "description": "Students will gain skills in analyzing urban ecological systems with GIS."
+      },
+      {
+        "label": "Perform Demographic Analysis",
+        "description": "A student will learn to perform demographic analysis using GIS tools."
+      },
+      {
+        "label": "Utilize GIS for Urban Problem-solving",
+        "description": "Students will master the application of GIS in solving urban problems."
+      },
+      {
+        "label": "Interpret GIS Data for Planning Purposes",
+        "description": "A student will learn to interpret GIS data for urban and regional planning purposes."
+      },
+      {
+        "label": "Evaluate Urban Spatial Patterns",
+        "description": "Students will develop the ability to evaluate spatial patterns in urban areas using GIS."
+      }
+    ]
+  },
+  {
+    "course_identification": "SFTY5412",
+    "title_short_desc": "Hazard Communication",
+    "inferred_skills": [
+      {
+        "label": "Identify Hazards",
+        "description": "Recognize potential hazards in a given environment or material."
+      },
+      {
+        "label": "Assess Risk",
+        "description": "Evaluate the level of danger associated with identified hazards."
+      },
+      {
+        "label": "Design Training",
+        "description": "Plan and create effective training programs for hazard communication."
+      },
+      {
+        "label": "Deliver Training",
+        "description": "Communicate hazard information in a clear and engaging manner."
+      },
+      {
+        "label": "Understand Hazcom Program",
+        "description": "Familiarize with the elements of an acceptable hazard communication program."
+      },
+      {
+        "label": "Principles of Risk Communication",
+        "description": "Learn the foundational principles for communicating risks effectively."
+      },
+      {
+        "label": "Analyze Hazard Training Programs",
+        "description": "Evaluate the design and delivery of existing hazard training programs."
+      },
+      {
+        "label": "Apply Hazcom Principles",
+        "description": "Implement learned principles in practical hazard communication scenarios."
+      }
+    ]
+  },
+  {
+    "course_identification": "SFTY4412",
+    "title_short_desc": "Hazard Communication",
+    "inferred_skills": [
+      {
+        "label": "Identify Hazards",
+        "description": "Recognize and categorize potential hazards in various work environments."
+      },
+      {
+        "label": "Understand Risk Communication",
+        "description": "Comprehend the principles of risk communication to effectively convey hazard information."
+      },
+      {
+        "label": "Design Training Programs",
+        "description": "Plan and structure educational programs for hazard training."
+      },
+      {
+        "label": "Deliver Hazard Training",
+        "description": "Implement the designed programs to deliver effective hazard training."
+      },
+      {
+        "label": "Create Acceptable Programs",
+        "description": "Develop an acceptable hazard communication program according to established guidelines."
+      },
+      {
+        "label": "Analyze Hazard Training Needs",
+        "description": "Evaluate the training requirements for employees regarding workplace hazards."
+      },
+      {
+        "label": "Implement Communication Strategies",
+        "description": "Apply communication strategies to educate employees on workplace hazards."
+      },
+      {
+        "label": "Assess Hazard Program Effectiveness",
+        "description": "Evaluate the effectiveness of the implemented hazard communication program."
+      }
+    ]
+  },
+  {
+    "course_identification": "MPER2010",
+    "title_short_desc": "University Choir",
+    "inferred_skills": [
+      {
+        "label": "Vocal Technique Development",
+        "description": "Students will learn to refine their vocal skills through rehearsals and performances."
+      },
+      {
+        "label": "Choral Literature Analysis",
+        "description": "Students will develop the ability to understand and interpret various choral literature styles."
+      },
+      {
+        "label": "Blending Vocal Harmonies",
+        "description": "Students will learn to harmonize their voices effectively within a group setting."
+      },
+      {
+        "label": "Rehearsal Preparation",
+        "description": "Students will practice preparing for rehearsals by memorizing music and practicing independently."
+      },
+      {
+        "label": "Performance Presentation",
+        "description": "Students will learn to present themselves professionally during performances."
+      },
+      {
+        "label": "Teamwork and Collaboration",
+        "description": "Students will cultivate teamwork skills by working with fellow choir members to create cohesive performances."
+      },
+      {
+        "label": "Music Reading",
+        "description": "Students will improve their ability to read sheet music for choral arrangements."
+      },
+      {
+        "label": "Musical Expression",
+        "description": "Students will develop the ability to express emotion effectively through singing."
+      }
+    ]
+  },
+  {
+    "course_identification": "MPER2111",
+    "title_short_desc": "University Choir",
+    "inferred_skills": [
+      {
+        "label": "Vocal Development",
+        "description": "Improving vocal techniques and abilities"
+      },
+      {
+        "label": "Rehearsal Techniques",
+        "description": "Mastering the art of rehearsal processes"
+      },
+      {
+        "label": "Performance Preparation",
+        "description": "Preparing for successful performances"
+      },
+      {
+        "label": "Choral Literature Analysis",
+        "description": "Understanding and interpreting choral literature"
+      },
+      {
+        "label": "Vocal Harmony",
+        "description": "Performing harmoniously in group settings"
+      },
+      {
+        "label": "Music Direction",
+        "description": "Following the guidance of music directors"
+      },
+      {
+        "label": "Team Collaboration",
+        "description": "Working effectively as part of a choir ensemble"
+      },
+      {
+        "label": "Artistic Expression",
+        "description": "Expressing emotions and ideas through music"
+      }
+    ]
+  },
+  {
+    "course_identification": "HIST4873",
+    "title_short_desc": "United States since 1945",
+    "inferred_skills": [
+      {
+        "label": "Analyze Political Changes",
+        "description": "Examines political changes in the United States from World War II to the present"
+      },
+      {
+        "label": "Evaluate Social Trends",
+        "description": "Assesses social trends in the United States since 1945"
+      },
+      {
+        "label": "Understand Economic Shifts",
+        "description": "Comprehension of economic changes in the United States from World War II to present"
+      },
+      {
+        "label": "Explore Cultural Evolution",
+        "description": "Investigates cultural changes in the United States since 1945"
+      },
+      {
+        "label": "Critically Analyze Historiography",
+        "description": "Critical analysis of historiographical works related to U.S. history since 1945"
+      },
+      {
+        "label": "Develop Historical Argumentation",
+        "description": "Develops historical arguments based on primary and secondary sources"
+      },
+      {
+        "label": "Apply Research Skills",
+        "description": "Applies research skills to gather information relevant to U.S. history since 1945"
+      },
+      {
+        "label": "Write Historical Analysis",
+        "description": "Writes historical analyses demonstrating understanding of the political, social, economic, and cultural changes in the United States from World War II to the present"
+      }
+    ]
+  },
+  {
+    "course_identification": "HIST5873",
+    "title_short_desc": "United States since 1945",
+    "inferred_skills": [
+      {
+        "label": "Analyze Political Changes",
+        "description": "Understand and evaluate political developments in the United States post-WWII"
+      },
+      {
+        "label": "Evaluate Social Transformations",
+        "description": "Examine and assess social shifts in the United States from 1945 to present"
+      },
+      {
+        "label": "Assess Economic Evolution",
+        "description": "Analyze economic changes that have occurred in the United States since 1945"
+      },
+      {
+        "label": "Understand Cultural Evolvement",
+        "description": "Learn about cultural transformations in the United States from WWII to present"
+      },
+      {
+        "label": "Apply Historical Analysis",
+        "description": "Use historical analysis techniques to interpret events and trends in U.S. history"
+      },
+      {
+        "label": "Critically Examine Sources",
+        "description": "Evaluate the credibility, relevance, and significance of historical sources"
+      },
+      {
+        "label": "Write Historical Analysis",
+        "description": "Develop written arguments based on historical research and analysis"
+      },
+      {
+        "label": "Collaborate in Research",
+        "description": "Participate in group discussions and collaborative projects to explore U.S. history"
+      }
+    ]
+  },
+  {
+    "course_identification": "PHED5602",
+    "title_short_desc": "PE&Rec Except Child",
+    "inferred_skills": [
+      {
+        "label": "Understand Motor Characteristics",
+        "description": "The ability to comprehend the unique physical characteristics of exceptional children"
+      },
+      {
+        "label": "Assess Motor Development",
+        "description": "Developing skills for evaluating motor development in exceptional children"
+      },
+      {
+        "label": "Design Adaptive Programs",
+        "description": "Learning to develop and adapt physical education and recreation programs for exceptional children"
+      },
+      {
+        "label": "Field Experience",
+        "description": "Gaining practical experience through fieldwork related to exceptional child PE and recreation"
+      },
+      {
+        "label": "Laboratory Experience",
+        "description": "Participating in hands-on learning experiences in laboratory settings related to exceptional child PE and recreation"
+      },
+      {
+        "label": "Analyze Program Effectiveness",
+        "description": "Evaluating the effectiveness of physical education and recreation programs for exceptional children"
+      },
+      {
+        "label": "Apply Assessment Methods",
+        "description": "Applying various assessment methods to evaluate motor development in exceptional children"
+      },
+      {
+        "label": "Develop Adaptive Strategies",
+        "description": "Creating adaptive strategies to enhance the physical education and recreation experiences of exceptional children"
+      }
+    ]
+  },
+  {
+    "course_identification": "MPER3341",
+    "title_short_desc": "Jazz Ensemble",
+    "inferred_skills": [
+      {
+        "label": "Ensemble Performance",
+        "description": "Performing and collaborating effectively in a jazz ensemble setting."
+      },
+      {
+        "label": "Solo Performance",
+        "description": "Developing skills for solo performance in jazz and commercial music."
+      },
+      {
+        "label": "Jazz Style Mastery",
+        "description": "Understanding and executing various styles of jazz and commercial music."
+      },
+      {
+        "label": "Technical Guidance",
+        "description": "Receiving guidance on technical aspects of ensemble and solo performance."
+      },
+      {
+        "label": "Professional Performance",
+        "description": "Preparing for professional-level jazz and commercial music performances."
+      },
+      {
+        "label": "Broad Jazz Exposure",
+        "description": "Gaining exposure to a wide range of styles within the genre of jazz."
+      },
+      {
+        "label": "Jazz Improvisation",
+        "description": "Improving skills for improvisational jazz performance."
+      }
+    ]
+  },
+  {
+    "course_identification": "MPER5611",
+    "title_short_desc": "Jazz Ensemble",
+    "inferred_skills": [
+      {
+        "label": "Advanced Jazz Performance",
+        "description": "Demonstrating professional-level jazz playing ability."
+      },
+      {
+        "label": "Ensemble Collaboration",
+        "description": "Working effectively with other musicians in an ensemble setting."
+      },
+      {
+        "label": "Style Versatility",
+        "description": "Performing a wide range of jazz and commercial music styles."
+      },
+      {
+        "label": "Solo Performance Mastery",
+        "description": "Developing advanced proficiency in solo performance."
+      },
+      {
+        "label": "Technical Guidance",
+        "description": "Receiving specialized instruction for ensemble and solo performance."
+      },
+      {
+        "label": "In-depth Technique Study",
+        "description": "Exploring complex jazz techniques in depth."
+      },
+      {
+        "label": "Stylistic Analysis",
+        "description": "Analyzing various jazz and commercial music styles."
+      },
+      {
+        "label": "Professional Preparation",
+        "description": "Preparing for a professional career in jazz and commercial music."
+      }
+    ]
+  },
+  {
+    "course_identification": "MCOM4413",
+    "title_short_desc": "TV Documentary Production",
+    "inferred_skills": [
+      {
+        "label": "Study Documentary History",
+        "description": "Understand the history of documentaries in broadcasting"
+      },
+      {
+        "label": "Script Techniques",
+        "description": "Learn scripting techniques for television documentaries"
+      },
+      {
+        "label": "Production Design",
+        "description": "Gain knowledge in production design for documentaries"
+      },
+      {
+        "label": "Video Production",
+        "description": "Acquire skills in video production for documentaries"
+      },
+      {
+        "label": "Audio Production",
+        "description": "Learn audio production techniques for documentaries"
+      },
+      {
+        "label": "Editing Techniques",
+        "description": "Gain proficiency in editing techniques used in documentaries"
+      },
+      {
+        "label": "Documentary Production Design",
+        "description": "Understand the design aspects specific to documentary production"
+      },
+      {
+        "label": "Apply Documentary Techniques",
+        "description": "Develop ability to apply learned techniques in documentaries"
+      }
+    ]
+  },
+  {
+    "course_identification": "HIST4653",
+    "title_short_desc": "Tudor-Stuart England",
+    "inferred_skills": [
+      {
+        "label": "Analyze Political Developments",
+        "description": "Understand the political changes in Tudor-Stuart England from Henry VII to Queen Anne"
+      },
+      {
+        "label": "Evaluate Military Strategies",
+        "description": "Assess military developments and their impact on English history during the Tudor-Stuart period"
+      },
+      {
+        "label": "Identify Cultural Trends",
+        "description": "Recognize and describe significant cultural shifts in Tudor-Stuart England"
+      },
+      {
+        "label": "Understand Social Transformations",
+        "description": "Comprehend the social changes and structures within Tudor-Stuart society"
+      },
+      {
+        "label": "Compare Historical Contexts",
+        "description": "Analyze similarities and differences between historical periods within Tudor-Stuart England"
+      },
+      {
+        "label": "Explain Historical Events",
+        "description": "Demonstrate the ability to articulate historical events and their significance in English history"
+      },
+      {
+        "label": "Apply Critical Thinking",
+        "description": "Evaluate primary and secondary sources related to Tudor-Stuart England"
+      },
+      {
+        "label": "Write Historical Analysis",
+        "description": "Compose well-researched and articulate historical analysis on events in Tudor-Stuart England"
+      }
+    ]
+  },
+  {
+    "course_identification": "HIST5653",
+    "title_short_desc": "Tudor-Stuart England",
+    "inferred_skills": [
+      {
+        "label": "Analyze Political Developments",
+        "description": "Understand and evaluate political changes in Tudor-Stuart England"
+      },
+      {
+        "label": "Explore Military History",
+        "description": "Gain knowledge about military events during the Tudor-Stuart period"
+      },
+      {
+        "label": "Understand Cultural Shifts",
+        "description": "Comprehend cultural transformations in Tudor-Stuart England"
+      },
+      {
+        "label": "Analyze Social Movements",
+        "description": "Evaluate the development and evolution of social structures"
+      },
+      {
+        "label": "Interpret Historical Sources",
+        "description": "Critically analyze primary and secondary sources related to Tudor-Stuart England"
+      },
+      {
+        "label": "Develop Historical Argument",
+        "description": "Formulate well-supported historical arguments based on evidence and analysis"
+      },
+      {
+        "label": "Write Historically Informed Essays",
+        "description": "Compose essays demonstrating understanding of the Tudor-Stuart period"
+      },
+      {
+        "label": "Appreciate English Heritage",
+        "description": "Gain an appreciation for England's historical significance during the Tudor-Stuart era"
+      }
+    ]
+  },
+  {
+    "course_identification": "SPED4322",
+    "title_short_desc": "Trends & Issues in Special Ed",
+    "inferred_skills": [
+      {
+        "label": "Investigate Research",
+        "description": "Explore relevant research within special education."
+      },
+      {
+        "label": "Analyze Societal Changes",
+        "description": "Evaluate societal changes impacting people in the special education population."
+      },
+      {
+        "label": "Review Legislation",
+        "description": "Assess current and emerging legislation affecting special education."
+      },
+      {
+        "label": "Analyze Litigation",
+        "description": "Examine legal cases related to special education issues."
+      },
+      {
+        "label": "Evaluate Controversial Issues",
+        "description": "Assess and debate controversial topics within the field of special education."
+      },
+      {
+        "label": "Develop Curriculum",
+        "description": "Design curricula for special education based on best practices."
+      },
+      {
+        "label": "Apply Best Practices",
+        "description": "Implement and adapt best practices within special education."
+      }
+    ]
+  },
+  {
+    "course_identification": "SAS5633",
+    "title_short_desc": "Trauma Counseling",
+    "inferred_skills": [
+      {
+        "label": "Understand Psychoanalytic Perspectives",
+        "description": "Gain knowledge of the psychoanalytic approach in treating abuse and trauma"
+      },
+      {
+        "label": "Comprehend Behavioral Approaches",
+        "description": "Learn about behavioral strategies for counseling individuals affected by trauma"
+      },
+      {
+        "label": "Apply Existential Perspectives",
+        "description": "Familiarize with existential viewpoints in the treatment of abuse and trauma"
+      },
+      {
+        "label": "Understand Humanistic Approaches",
+        "description": "Gain understanding of humanistic methods for counseling traumatized individuals"
+      },
+      {
+        "label": "Learn Cognitive Behavioral Techniques",
+        "description": "Acquire skills in using cognitive behavioral approaches to treat trauma"
+      },
+      {
+        "label": "Analyze Theorist Relevance",
+        "description": "Develop ability to evaluate relevance and application of selected theorists"
+      },
+      {
+        "label": "Apply Theories in Drug Dependency",
+        "description": "Learn how to apply these theories specifically to alcohol and drug dependency"
+      }
+    ]
+  },
+  {
+    "course_identification": "MCOM5423",
+    "title_short_desc": "Trauma & Leadership in Comm",
+    "inferred_skills": [
+      {
+        "label": "Identify Workplace Trauma",
+        "description": "Recognizing instances of trauma within professional communications settings"
+      },
+      {
+        "label": "React to Traumatic Events",
+        "description": "Responding effectively to traumatic situations in the workplace"
+      },
+      {
+        "label": "Evaluate Ethical Considerations",
+        "description": "Assessing ethical implications of trauma in communications"
+      },
+      {
+        "label": "Anticipate Trauma Scenarios",
+        "description": "Predicting potential traumatic events and preparing for them proactively"
+      },
+      {
+        "label": "Apply Ethical Leadership Principles",
+        "description": "Utilizing ethical leadership strategies in managing traumatic situations"
+      },
+      {
+        "label": "Analyze Trauma Impact on Professionals",
+        "description": "Examining how trauma affects professionals in communications"
+      },
+      {
+        "label": "Develop Preventive Measures",
+        "description": "Formulating preventive measures to minimize trauma's impact"
+      },
+      {
+        "label": "Discuss Trauma-Related Topics",
+        "description": "Communicating effectively about trauma and its effects on individuals and organizations"
+      }
+    ]
+  },
+  {
+    "course_identification": "CMSC4173",
+    "title_short_desc": "Translator Design",
+    "inferred_skills": [
+      {
+        "label": "Lexical Analysis",
+        "description": "Identify and categorize the tokens in a programming language"
+      },
+      {
+        "label": "Syntax Analysis",
+        "description": "Understand the structure and well-formedness of a programming language"
+      },
+      {
+        "label": "Semantic Analysis",
+        "description": "Determine the meaning and implications of program elements in context"
+      },
+      {
+        "label": "Finite Automata",
+        "description": "Use finite automata to recognize languages or solve computational problems"
+      },
+      {
+        "label": "Regular Expressions",
+        "description": "Manipulate and search text using patterns defined by regular expressions"
+      },
+      {
+        "label": "LL & LR Grammars",
+        "description": "Apply top-down and bottom-up parsing techniques to build compilers"
+      },
+      {
+        "label": "Type Systems and Checkers",
+        "description": "Develop and utilize type systems for static program analysis"
+      },
+      {
+        "label": "Code Generation & Optimization",
+        "description": "Produce efficient machine code from high-level language constructs"
+      }
+    ]
+  },
+  {
+    "course_identification": "CMSC5073",
+    "title_short_desc": "Translator Design",
+    "inferred_skills": [
+      {
+        "label": "Lexical Analysis",
+        "description": "Understanding and parsing the structure of source code tokens"
+      },
+      {
+        "label": "Syntax Analysis",
+        "description": "Determining the grammatical structure of a program"
+      },
+      {
+        "label": "Semantic Analysis",
+        "description": "Identifying and validating the meaning of programs in terms of their syntax"
+      },
+      {
+        "label": "Finite Automata Utilization",
+        "description": "Using finite automata to parse input data sequences"
+      },
+      {
+        "label": "Regular Expression Application",
+        "description": "Describing and recognizing regular languages using regular expressions"
+      },
+      {
+        "label": "LL and LR Grammar Implementation",
+        "description": "Using LL(k) and LR(k) parsing techniques to build language translators"
+      },
+      {
+        "label": "Type System Design",
+        "description": "Creating type systems for programming languages to enforce type safety"
+      },
+      {
+        "label": "Code Optimization",
+        "description": "Improving the efficiency of generated code through optimization techniques"
+      }
+    ]
+  },
+  {
+    "course_identification": "CJ1563",
+    "title_short_desc": "Traffic & Accident Invest",
+    "inferred_skills": [
+      {
+        "label": "Respond to Scene",
+        "description": "Understand procedures for arriving at an accident scene"
+      },
+      {
+        "label": "Scene Protection",
+        "description": "Learn techniques for safeguarding a crime scene"
+      },
+      {
+        "label": "Gather Evidence",
+        "description": "Develop abilities in collecting and preserving evidence"
+      },
+      {
+        "label": "Accident Reconstruction",
+        "description": "Acquire skills in re-creating traffic accidents"
+      },
+      {
+        "label": "Legal Examination",
+        "description": "Analyze Oklahoma's enforcement-related traffic laws"
+      },
+      {
+        "label": "Practical Application",
+        "description": "Engage in exercises to reinforce learning and develop skills"
+      },
+      {
+        "label": "Enforcement-Related Statutes",
+        "description": "Understand the application of Title 47 in traffic enforcement"
+      },
+      {
+        "label": "Accident Investigation Procedures",
+        "description": "Learn specifics on accident investigation procedures"
+      }
+    ]
+  },
+  {
+    "course_identification": "HIST4863",
+    "title_short_desc": "Hist Of Modern Southeast Asia",
+    "inferred_skills": [
+      {
+        "label": "Analyze Traditional Cultures",
+        "description": "Understand and evaluate traditional cultures in Southeast Asia"
+      },
+      {
+        "label": "Explore Religions",
+        "description": "Investigate the impact and evolution of religions in Southeast Asia"
+      },
+      {
+        "label": "Evaluate Western Colonialisms",
+        "description": "Analyze the effects of western colonialism on Southeast Asia"
+      },
+      {
+        "label": "Understand Nationalist Movements",
+        "description": "Gain knowledge about nationalist movements in Southeast Asia"
+      },
+      {
+        "label": "Formulate Nation Building",
+        "description": "Learn how nations were formed in Southeast Asia"
+      },
+      {
+        "label": "Develop Government Structures",
+        "description": "Comprehend the development of representative governments in Southeast Asia"
+      },
+      {
+        "label": "Assess Contemporary Roles",
+        "description": "Analyze contemporary roles of Southeast Asian countries in international relations"
+      },
+      {
+        "label": "Research International Relations",
+        "description": "Investigate the role of Southeast Asia in modern global affairs"
+      }
+    ]
+  },
+  {
+    "course_identification": "HIST5863",
+    "title_short_desc": "Hist Of Modern Southeast Asia",
+    "inferred_skills": [
+      {
+        "label": "Analyze Traditional Cultures",
+        "description": "Understand and evaluate the characteristics of traditional cultures in Southeast Asia."
+      },
+      {
+        "label": "Evaluate Western Colonialism Impact",
+        "description": "Assess the influence and effects of western colonialism on Southeast Asia."
+      },
+      {
+        "label": "Understand Nationalist Movements",
+        "description": "Gain knowledge about the development, goals, and outcomes of nationalist movements in Southeast Asia."
+      },
+      {
+        "label": "Identify Formation of Nations",
+        "description": "Recognize and explain the processes leading to the formation of modern nations in Southeast Asia."
+      },
+      {
+        "label": "Apply Political Analysis",
+        "description": "Develop skills for understanding and analyzing political developments in representative governments of Southeast Asian countries."
+      },
+      {
+        "label": "Evaluate Role in International Relations",
+        "description": "Assess the roles and impacts of Southeast Asian nations in international relations and global issues."
+      },
+      {
+        "label": "Historical Research Skills",
+        "description": "Acquire skills for conducting historical research, including sourcing, interpreting, and synthesizing primary and secondary sources."
+      },
+      {
+        "label": "Critical Thinking in History",
+        "description": "Develop critical thinking skills to evaluate historical accounts, interpretations, and arguments related to modern Southeast Asia."
+      }
+    ]
+  },
+  {
+    "course_identification": "ECON3203",
+    "title_short_desc": "Intermediate Microeconomics",
+    "inferred_skills": [
+      {
+        "label": "Analyze Consumer Behavior",
+        "description": "Understand the analysis of consumer decision-making and purchasing patterns."
+      },
+      {
+        "label": "Evaluate Firm Behavior",
+        "description": "Comprehend the behavior and decision-making process of firms in various market conditions."
+      },
+      {
+        "label": "Examine Resource Owner Decisions",
+        "description": "Understand how resource owners, like land or capital, make decisions within a market economy."
+      },
+      {
+        "label": "Model Industrial Organization",
+        "description": "Develop theoretical models for understanding competition and performance in different industries."
+      },
+      {
+        "label": "Identify Market Failures",
+        "description": "Recognize potential market inefficiencies and failures that can affect economic outcomes."
+      },
+      {
+        "label": "Analyze Government Interventions",
+        "description": "Explore the role of government interventions, such as regulations or subsidies, to address market failures."
+      },
+      {
+        "label": "Develop Efficiency Concepts",
+        "description": "Learn about concepts related to economic efficiency and their application in different contexts."
+      },
+      {
+        "label": "Understand Equity Concepts",
+        "description": "Familiarize with equity concepts, focusing on the distribution of benefits and burdens among different groups in society."
+      }
+    ]
+  },
+  {
+    "course_identification": "MATH2013",
+    "title_short_desc": "Structures Of Mathematics",
+    "inferred_skills": [
+      {
+        "label": "Understand Number Systems",
+        "description": "Develop understanding of various number systems and their properties."
+      },
+      {
+        "label": "Operate with Real Numbers",
+        "description": "Learn operations on real numbers and their properties."
+      },
+      {
+        "label": "Analyze Ordering Properties",
+        "description": "Develop ability to analyze ordering properties in number systems."
+      },
+      {
+        "label": "Comprehend Function Basics",
+        "description": "Understand and apply basic concepts of functions."
+      },
+      {
+        "label": "Explore Number Theory",
+        "description": "Investigate properties and relationships in numbers."
+      },
+      {
+        "label": "Apply Mathematical Reasoning",
+        "description": "Develop skills to apply mathematical reasoning in problem-solving."
+      },
+      {
+        "label": "Problem Solving with Real Numbers",
+        "description": "Learn to solve problems using real numbers and their properties."
+      },
+      {
+        "label": "Apply Math to Education",
+        "description": "Understand how mathematical structures apply in education contexts."
+      }
+    ]
+  },
+  {
+    "course_identification": "CHEM4325",
+    "title_short_desc": "Clinical Chemistry II",
+    "inferred_skills": [
+      {
+        "label": "Apply Analytical Biochemistry",
+        "description": "Understand and apply the principles of analytical biochemistry in a lab setting."
+      },
+      {
+        "label": "Operate Instrumentation",
+        "description": "Manage various laboratory instruments for chemical analysis."
+      },
+      {
+        "label": "Understand Lab Mathematics",
+        "description": "Gain proficiency in mathematical calculations relevant to lab work."
+      },
+      {
+        "label": "Perform Routine Procedures",
+        "description": "Master routine laboratory procedures essential for clinical chemistry."
+      },
+      {
+        "label": "Execute Special Procedures",
+        "description": "Carry out specialized lab methods specific to clinical chemistry."
+      },
+      {
+        "label": "Evaluate Medical Significance",
+        "description": "Assess the medical implications of chemical analysis results."
+      },
+      {
+        "label": "Apply Laboratory Methodology",
+        "description": "Use appropriate laboratory methodologies for various clinical chemistry tasks."
+      }
+    ]
+  },
+  {
+    "course_identification": "MATH5563",
+    "title_short_desc": "Introduction To Graph Theory",
+    "inferred_skills": [
+      {
+        "label": "Understand Graph Structure",
+        "description": "Recognizing and analyzing the characteristics of different graphs."
+      },
+      {
+        "label": "Explore Tree Concepts",
+        "description": "Identifying, defining, and applying the properties of trees in graph theory."
+      },
+      {
+        "label": "Evaluate Connectivity",
+        "description": "Determining the connections between nodes within a given graph."
+      },
+      {
+        "label": "Determine Planarity",
+        "description": "Assessing whether a graph can be drawn without any edge crossings."
+      },
+      {
+        "label": "Analyze Graph Colorability",
+        "description": "Comprehending and applying coloring techniques to graphs."
+      },
+      {
+        "label": "Work with Digraphs",
+        "description": "Manipulating, interpreting, and analyzing directed graphs."
+      },
+      {
+        "label": "Understand Matrix Associations",
+        "description": "Recognizing and utilizing the matrices associated with a given graph."
+      },
+      {
+        "label": "Examine Automorphism Group",
+        "description": "Investigating symmetries within graphs through their automorphism group."
+      }
+    ]
+  },
+  {
+    "course_identification": "CHEM4351",
+    "title_short_desc": "Topics In Medical Technology",
+    "inferred_skills": [
+      {
+        "label": "Understand Basic Management",
+        "description": "Demonstrate knowledge of basic principles and practices for managing a medical laboratory."
+      },
+      {
+        "label": "Apply Special Education Methodology",
+        "description": "Utilize specialized teaching strategies in the field of medical technology education."
+      },
+      {
+        "label": "Participate in Special Projects",
+        "description": "Engage in targeted projects focused on selected areas within medical technology."
+      },
+      {
+        "label": "Follow Appropriate Methodology",
+        "description": "Adhere to acceptable procedures, standards, and methodologies within the medical laboratory setting."
+      },
+      {
+        "label": "Develop Special Project Skills",
+        "description": "Acquire the ability to design and execute special projects in various areas of medical technology."
+      },
+      {
+        "label": "Follow Appropriate Curriculum",
+        "description": "Demonstrate proficiency in a predetermined curriculum for medical technology courses."
+      },
+      {
+        "label": "Learn Selected Areas",
+        "description": "Gain knowledge and competencies in specific areas of the medical laboratory field."
+      },
+      {
+        "label": "Demonstrate Subject Mastery",
+        "description": "Show proficiency and understanding of the topics covered within Medical Technology courses."
+      }
+    ]
+  },
+  {
+    "course_identification": "STAT5253",
+    "title_short_desc": "Quality Control",
+    "inferred_skills": [
+      {
+        "label": "Sample Analysis",
+        "description": "Analyzing random samples from a larger data set"
+      },
+      {
+        "label": "Frequency Distribution Analysis",
+        "description": "Interpreting the frequency distribution of sample data"
+      },
+      {
+        "label": "Sampling Distribution Understanding",
+        "description": "Understanding the distribution of sample means or proportions"
+      },
+      {
+        "label": "Sampling Acceptance Plan Application",
+        "description": "Using acceptance plans for quality control in sampling"
+      },
+      {
+        "label": "Rectifying Inspection Skills",
+        "description": "Applying rectification techniques to inspection procedures"
+      },
+      {
+        "label": "Control Chart Application",
+        "description": "Implementing and using control charts for quality monitoring"
+      },
+      {
+        "label": "General Theory of Control Charts",
+        "description": "Understanding the general principles behind control charts"
+      }
+    ]
+  },
+  {
+    "course_identification": "MATH5413",
+    "title_short_desc": "Differential Equations",
+    "inferred_skills": [
+      {
+        "label": "Solve Differential Equations",
+        "description": "Students will learn how to solve various types of differential equations."
+      },
+      {
+        "label": "Understand Partial Differential Equations",
+        "description": "Students will gain knowledge about partial differential equations."
+      },
+      {
+        "label": "Analyze Elliptic, Hyperbolic, Parabolic Equations",
+        "description": "Students will learn to analyze different types of elliptic, hyperbolic, and parabolic equations."
+      },
+      {
+        "label": "Apply Separation of Variables",
+        "description": "Students will learn to use the method of separation of variables in solving differential equations."
+      },
+      {
+        "label": "Work with Special Functions",
+        "description": "Students will be introduced to special functions and their applications in differential equations."
+      },
+      {
+        "label": "Understand Eigen Function Expressions",
+        "description": "Students will learn about eigen function expressions in the context of differential equations."
+      },
+      {
+        "label": "Prove Existence and Uniqueness of Solutions",
+        "description": "Students will learn to prove the existence and uniqueness of solutions for certain classes of differential equations."
+      }
+    ]
+  },
+  {
+    "course_identification": "STAT5423",
+    "title_short_desc": "Data Fitting",
+    "inferred_skills": [
+      {
+        "label": "Fit Linear Equations",
+        "description": "Ability to fit and interpret data using linear equations"
+      },
+      {
+        "label": "Fit Polynomial Functions",
+        "description": "Ability to fit and interpret data using polynomial functions"
+      },
+      {
+        "label": "Fit Orthogonal Polynomials",
+        "description": "Ability to fit and interpret data using orthogonal polynomials"
+      },
+      {
+        "label": "Fit Exponential Growth Curves",
+        "description": "Ability to fit and interpret data using exponential growth curves"
+      },
+      {
+        "label": "Piecewise Polygonal Fitting",
+        "description": "Ability to fit piecewise polygonal models to data"
+      },
+      {
+        "label": "Analyze Data Fit Results",
+        "description": "Ability to analyze and interpret results of data fitting procedures"
+      },
+      {
+        "label": "Apply Fitting Techniques",
+        "description": "Ability to apply various fitting techniques to solve practical problems"
+      }
+    ]
+  },
+  {
+    "course_identification": "STAT5303",
+    "title_short_desc": "Non-Parametric Statistics",
+    "inferred_skills": [
+      {
+        "label": "Apply Distribution-Free Tests",
+        "description": "Utilizing techniques to test hypotheses with data not following a specific distribution"
+      },
+      {
+        "label": "Use Binomial Test",
+        "description": "Applying the binomial test in non-parametric statistical analysis"
+      },
+      {
+        "label": "Employ Sign Test Method",
+        "description": "Implementing the sign test to analyze data"
+      },
+      {
+        "label": "Apply Median Test",
+        "description": "Using the median test for hypothesis testing"
+      },
+      {
+        "label": "Understand Cochran Q Test",
+        "description": "Comprehending and applying the Cochran Q test in statistical analysis"
+      },
+      {
+        "label": "Hypothesis Test with Data Irregularities",
+        "description": "Testing hypotheses with data that deviates from a regular pattern or specific distribution"
+      },
+      {
+        "label": "Analyze Statistical Data Independently",
+        "description": "Investigating and analyzing statistical data without relying on parametric assumptions"
+      },
+      {
+        "label": "Evaluate Statistical Significance",
+        "description": "Assessing the significance of results in non-parametric statistical analysis"
+      }
+    ]
+  },
+  {
+    "course_identification": "ECON4513",
+    "title_short_desc": "Labor Econ & Public Policy",
+    "inferred_skills": [
+      {
+        "label": "Understand Neoclassical Theory",
+        "description": "Analyze the foundational principles of neoclassical labor market theory."
+      },
+      {
+        "label": "Investigate Hours of Work Determination",
+        "description": "Explore factors influencing the determination of hours of work in labor markets."
+      },
+      {
+        "label": "Analyze Wage Determination",
+        "description": "Study how wages are determined within labor markets."
+      },
+      {
+        "label": "Assess Union Impact",
+        "description": "Evaluate the influence of unions on labor markets."
+      },
+      {
+        "label": "Examine Government Policy Effects",
+        "description": "Investigate the impact of government policies, such as affirmative action, minimum wages, and immigration, on labor markets."
+      },
+      {
+        "label": "Consider Human Capital Investment",
+        "description": "Explore the role of human capital investment in determining earnings."
+      },
+      {
+        "label": "Study Labor Market Outcomes",
+        "description": "Analyze problems associated with labor market outcomes, such as discrimination and poverty."
+      }
+    ]
+  },
+  {
+    "course_identification": "MBA5632",
+    "title_short_desc": "Topics in Sales Force Mgmt",
+    "inferred_skills": [
+      {
+        "label": "Analyze Sales Trends",
+        "description": "Evaluating current trends and issues in sales force management"
+      },
+      {
+        "label": "Critically Read Academic Texts",
+        "description": "Interpreting contemporary readings from academic journals on sales force management"
+      },
+      {
+        "label": "Apply Industry Best Practices",
+        "description": "Utilizing industry insights from journal articles for practical applications in sales force management"
+      },
+      {
+        "label": "Discuss Sales Management Issues",
+        "description": "Communicating effectively about topical matters related to sales force management"
+      },
+      {
+        "label": "Assess Current Sales Strategies",
+        "description": "Analyzing and evaluating current strategies within the sales force environment"
+      },
+      {
+        "label": "Learn from Case Studies",
+        "description": "Gaining insights from real-world case studies in sales force management"
+      },
+      {
+        "label": "Develop Critical Thinking Skills",
+        "description": "Cultivating critical thinking and problem-solving skills for effective decision making in sales force management"
+      },
+      {
+        "label": "Collaborate with Peers",
+        "description": "Working together with classmates to discuss and address challenges in sales force management"
+      }
+    ]
+  },
+  {
+    "course_identification": "STAT4213",
+    "title_short_desc": "Applied Regression Analysis",
+    "inferred_skills": [
+      {
+        "label": "Analyze Multiple Regression",
+        "description": "Ability to perform statistical analysis using multiple independent variables."
+      },
+      {
+        "label": "Apply Logistic Regression",
+        "description": "Skill in using logistic regression for binary dependent variable modeling."
+      },
+      {
+        "label": "Perform Survival Analysis",
+        "description": "Ability to analyze the time to an event occurring in statistical data."
+      },
+      {
+        "label": "Utilize Proportional Hazard Models",
+        "description": "Knowledge of models that relate the hazard rate of an event to one or more covariates."
+      },
+      {
+        "label": "Analyze Time Series Data",
+        "description": "Ability to analyze and interpret time series data over a sequence of observations."
+      },
+      {
+        "label": "Manage SAS Software",
+        "description": "Proficiency in using SAS software for statistical analysis."
+      }
+    ]
+  },
+  {
+    "course_identification": "STAT5213",
+    "title_short_desc": "Applied Regression Analysis",
+    "inferred_skills": [
+      {
+        "label": "Multiple Regression Analysis",
+        "description": "Analyze relationships between multiple variables using regression models"
+      },
+      {
+        "label": "Logistic Regression",
+        "description": "Model binary outcomes using logistic regression techniques"
+      },
+      {
+        "label": "Survival Analysis",
+        "description": "Analyze time-to-event data and survival probabilities"
+      },
+      {
+        "label": "Proportional Hazard Models",
+        "description": "Model the hazard rate as a function of covariates over time"
+      },
+      {
+        "label": "Time Series Analysis",
+        "description": "Analyze and model sequential data to identify patterns and trends"
+      },
+      {
+        "label": "SAS Data Analysis",
+        "description": "Apply statistical analysis using the SAS software package"
+      }
+    ]
+  },
+  {
+    "course_identification": "STAT2113",
+    "title_short_desc": "Statistical Methods",
+    "inferred_skills": [
+      {
+        "label": "Apply Experimental Statistics",
+        "description": "Students learn to utilize basic experimental statistical methods."
+      },
+      {
+        "label": "Estimate Statistically",
+        "description": "Learning to estimate data through various methods."
+      },
+      {
+        "label": "Test Significance",
+        "description": "Students learn how to test the significance of results in statistical analyses."
+      },
+      {
+        "label": "Understand Probability",
+        "description": "Gaining a comprehension of probability concepts as they relate to statistics."
+      },
+      {
+        "label": "Apply Linear Regression",
+        "description": "Students learn how to apply linear regression techniques for data analysis."
+      },
+      {
+        "label": "Understand Correlation",
+        "description": "Gaining a comprehension of correlation and its role in statistical analyses."
+      }
+    ]
+  },
+  {
+    "course_identification": "STAT5103",
+    "title_short_desc": "Applied Experimental Design",
+    "inferred_skills": [
+      {
+        "label": "Understand Experiment Basics",
+        "description": "Grasp the fundamental concepts of experiments and experimental error"
+      },
+      {
+        "label": "Analyze One-Way Classifications",
+        "description": "Ability to analyze variation in one-way classifications"
+      },
+      {
+        "label": "Analyze Two-Way Classifications",
+        "description": "Competence in analyzing two-way classifications"
+      },
+      {
+        "label": "Analyze Three-Way Classifications",
+        "description": "Ability to analyze variation in three-way classifications"
+      },
+      {
+        "label": "Apply Nonparametric Statistics",
+        "description": "Skill in utilizing nonparametric statistics for analysis"
+      }
+    ]
+  },
+  {
+    "course_identification": "STAT4103",
+    "title_short_desc": "Applied Experimental Design",
+    "inferred_skills": [
+      {
+        "label": "Understand Experimental Error",
+        "description": "Develop the ability to grasp the inherent errors in experimental designs."
+      },
+      {
+        "label": "Analyze One-way Classification",
+        "description": "Learn how to analyze and interpret one-way classification experiments."
+      },
+      {
+        "label": "Analyze Two-way Classification",
+        "description": "Gain proficiency in analyzing and interpreting two-way classification experiments."
+      },
+      {
+        "label": "Analyze Three-way Classification",
+        "description": "Develop the ability to analyze and interpret three-way classification experiments."
+      },
+      {
+        "label": "Apply Analysis of Covariance",
+        "description": "Learn how to use analysis of covariance in experimental designs."
+      },
+      {
+        "label": "Understand Nested Designs",
+        "description": "Gain understanding of nested and incomplete block designs in experiments."
+      },
+      {
+        "label": "Perform Statistical Analysis",
+        "description": "Develop the ability to perform statistical analysis in experimental design contexts."
+      }
+    ]
   }
 ]

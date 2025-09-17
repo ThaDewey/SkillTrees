@@ -1,0 +1,2 @@
+Error on index %i 
+See aggregated log for output: output\all_extractors_output.log 

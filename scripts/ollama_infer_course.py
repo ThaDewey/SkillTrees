@@ -8,8 +8,10 @@ import re
 
 # Config
 MODEL = "mistral"  # change if you use a different local model name
-OUT_FILE = Path(r"d:\Projects\Web\SkillTrees\output\ollama_course_skills.json")
-SRC_FILE = Path(r"d:\Projects\Web\SkillTrees\UCOInfo\full Course Desription.json")
+# Resolve project root relative to this script (scripts/..)
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+OUT_FILE = PROJECT_ROOT / "output" / "ollama_course_skills.json"
+SRC_FILE = PROJECT_ROOT / "UCOInfo" / "full Course Desription.json"
 NUM_SKILLS = 8
 
 PROMPT_TEMPLATE = (

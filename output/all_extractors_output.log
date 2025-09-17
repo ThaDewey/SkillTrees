@@ -1,0 +1,800 @@
+================================================== 
+Run started: Tue 09/16/2025 15:50:58.40 
+================================================== 
+--- Index 0: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: ENG5673
+Prompt (truncated): {"course_identification": "ENG5673", "title_short_desc": "Young Adult Literature", "course_text_narrative": "Young Adult Literature examines the history and evolution of young adult literature and the ways in which these texts affect an adolescent audience.  Students will read theory and scholarship to broaden their understanding of this dynamic field.", "instruction": "You are an assistant that e ...
+
+Course ENG5673 already in master file, skipping
+Index 0 completed successfully 
+--- Index 0: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 1: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: ENG4673
+Prompt (truncated): {"course_identification": "ENG4673", "title_short_desc": "Young Adult Literature", "course_text_narrative": "Young Adult Literature examines the history and evoluation of young adult literature and the ways in which these texts affect an adolescent audience.  Students will read theory and scholarship to broaden their understanding of this dynamic field.  Prerequisite(s):  ENG 1113 and 1213.", "ins ...
+
+Course ENG4673 already in master file, skipping
+Index 1 completed successfully 
+--- Index 1: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 2: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CSDY4283
+Prompt (truncated): {"course_identification": "CSDY4283", "title_short_desc": "Writing the Short Story", "course_text_narrative": "Writing the Short Story requires students to produce short fiction and complete writing assignments designed to strengthen writing skills.  Emphasis is given to contemporary examples of the short story form and the elements of fiction.  Prerequisite(s):  ENG 1113, ENG 1213, and CSDY 3273. ...
+
+Course CSDY4283 already in master file, skipping
+Index 2 completed successfully 
+--- Index 2: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 3: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CSDY4273
+Prompt (truncated): {"course_identification": "CSDY4273", "title_short_desc": "Writing The Novel", "course_text_narrative": "Writing the Novel provides advanced instruction in the craft of writing a novel intended for publication through the study of published novels and workshop-styles critique of student-generated novel installments. This course may be taken a maximum of three times for credit.", "instruction": "Yo ...
+
+Course CSDY4273 already in master file, skipping
+Index 3 completed successfully 
+--- Index 3: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 4: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CSDY4583
+Prompt (truncated): {"course_identification": "CSDY4583", "title_short_desc": "Writing SciFi/Fantasy", "course_text_narrative": "Writing Science Fiction and Fantasy is an intensive, workshop-based creative writing course that provides students with a comprehensive overview of the history, composition, revision and marketing of works of science fiction and fantasy literature.  This course may be taken three times for  ...
+
+Course CSDY4583 already in master file, skipping
+Index 4 completed successfully 
+--- Index 4: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 5: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CSDY5583
+Prompt (truncated): {"course_identification": "CSDY5583", "title_short_desc": "Writing SciFi/Fantasy", "course_text_narrative": "Writing Science Fiction and Fantasy is an intensive, workshop-based creative writing course that provides students with a comprehensive overview of the history, composition, revision and marketing of works of science fiction and fantasy literature.", "instruction": "You are an assistant tha ...
+
+Course CSDY5583 already in master file, skipping
+Index 5 completed successfully 
+--- Index 5: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 6: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CSDY5313
+Prompt (truncated): {"course_identification": "CSDY5313", "title_short_desc": "Writing Mystery/Adventure", "course_text_narrative": "Writing Mystery and Adventure requires students to read popular and classic Mystery/Adventure stories and write creative papers in both genres. Students will research and compare historical and contemporary works and prepare a scholarly paper analyzing additional works of a contemporary ...
+
+Course CSDY5313 already in master file, skipping
+Index 6 completed successfully 
+--- Index 6: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 7: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CSDY5533
+Prompt (truncated): {"course_identification": "CSDY5533", "title_short_desc": "Writing For Television", "course_text_narrative": "Writing for Television requires students to read television scripts, view and analyze television shows, and write creatively in the television genre.  Prerequisite(s):  Enrollment open to Creative Writing majors only.", "instruction": "You are an assistant that extracts concrete learning S ...
+
+Course CSDY5533 already in master file, skipping
+Index 7 completed successfully 
+--- Index 7: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 8: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: ENG4643
+Prompt (truncated): {"course_identification": "ENG4643", "title_short_desc": "Writing for Nonprofits", "course_text_narrative": "Writing for Nonprofits addresses the technical writing skills necessary for work in a nonprofit organization. Students will learn about the wide variety of writing situations and audiences they will encounter as part of a nonprofit, including writing for grants, applications, fundraising, n ...
+
+Course ENG4643 already in master file, skipping
+Index 8 completed successfully 
+--- Index 8: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 9: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: ENG5393
+Prompt (truncated): {"course_identification": "ENG5393", "title_short_desc": "Writing for Nonprofits", "course_text_narrative": "Writing for Nonprofits addresses the technical writing skills necessary for work in a nonprofit organization. Students will learn about the wide variety of writing situations and audiences they will encounter as part of a nonprofit, including writing for grants, applications, fundraising, n ...
+
+Course ENG5393 already in master file, skipping
+Index 9 completed successfully 
+--- Index 9: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 10: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CSDY3363
+Prompt (truncated): {"course_identification": "CSDY3363", "title_short_desc": "Writing for Movies/TV/Stage", "course_text_narrative": "Writing for Movies, Television, and Stage is an intensive, workshop-based creative writing course that provides students with a comprehensive overview of the history, composition, revision, and marketing of dramatic writing, with specific attention to the writing of screenplays, telep ...
+
+Course CSDY3363 already in master file, skipping
+Index 10 completed successfully 
+--- Index 10: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 11: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CJ1313
+Prompt (truncated): {"course_identification": "CJ1313", "title_short_desc": "Writing for CJ Professionals", "course_text_narrative": "Writing for Criminal Justice Professionals focuses on the unique types of writing required in the criminal justice field, including but not limited to research papers, investigative and prosecutorial reports, press releases, search warrants, and probation reports.  Emphasis will be pla ...
+
+Course CJ1313 already in master file, skipping
+Index 11 completed successfully 
+--- Index 11: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 12: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CSDY5413
+Prompt (truncated): {"course_identification": "CSDY5413", "title_short_desc": "Writing For Children", "course_text_narrative": "Writing for Children and Young Adults teaches students to write for various age groups from early childhood through young adults. The course considers the history of writing for youth and the psychology of learning to read. This course focuses on the study of award-winning books and authors  ...
+
+Course CSDY5413 already in master file, skipping
+Index 12 completed successfully 
+--- Index 12: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 13: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CSDY4413
+Prompt (truncated): {"course_identification": "CSDY4413", "title_short_desc": "Writing For Children", "course_text_narrative": "Writing for children allows students to try writing for various age groups from infants through young adults.  The course looks at the history of writing for children and the psychology of learning to read.  Award winning books and authors will be studied, and the habits of successful writin ...
+
+Course CSDY4413 already in master file, skipping
+Index 13 completed successfully 
+--- Index 13: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 14: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CSDY4723
+Prompt (truncated): {"course_identification": "CSDY4723", "title_short_desc": "Writing Comic Bks/Graph Novels", "course_text_narrative": "Writing Comic Books and Graphic Novels is an intensive, workshop-based creative writing course that provides students with a comprehensive overview of all aspects of the history, composition, revision, and marketing of comic books and graphic novels.  This course may be taken three ...
+
+Course CSDY4723 already in master file, skipping
+Index 14 completed successfully 
+--- Index 14: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 15: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CSDY5723
+Prompt (truncated): {"course_identification": "CSDY5723", "title_short_desc": "Writing Comic Bks/Graph Novels", "course_text_narrative": "Writing Comic Books and Graphic Novels is an intensive, workshop-based creative writing course that provide students with a comprehensive overview of all aspects of the history, composition, revision, and marketing of comic books and graphic novels.  This course may be taken three  ...
+
+Course CSDY5723 already in master file, skipping
+Index 15 completed successfully 
+--- Index 15: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 16: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CSDY5423
+Prompt (truncated): {"course_identification": "CSDY5423", "title_short_desc": "Writing Comedy and Satire", "course_text_narrative": "Writing Comedy and Satire provides students with a comprehensive overview of contemporary comic and satiric writing.  Students enrolled in this course will read contemporary comic and satiric literature, will study and pratice the techniques of effective comic and satiric writing, and w ...
+
+Course CSDY5423 already in master file, skipping
+Index 16 completed successfully 
+--- Index 16: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 17: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CSDY4423
+Prompt (truncated): {"course_identification": "CSDY4423", "title_short_desc": "Writing Comedy and Satire", "course_text_narrative": "Writing Comedy and Satire provides students with a comprehensive overview of contemporary comic and satiric writing.  Students enrolled in this course will read contemporary comic and satiric literature, will study and practice the techniques of effective comic and satiric writing, and  ...
+
+Course CSDY4423 already in master file, skipping
+Index 17 completed successfully 
+--- Index 17: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 18: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CSDY3333
+Prompt (truncated): {"course_identification": "CSDY3333", "title_short_desc": "Writers on Writing", "course_text_narrative": "Writers on Writing is a course on poetics, the theory and study of literary composition. Students will read, analyze, discuss, and apply major statements, written by a diverse group of creative writers across several literary periods, on the art and craft of creative writing. Prerequisite(s):  ...
+
+Course CSDY3333 already in master file, skipping
+Index 18 completed successfully 
+--- Index 18: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 19: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HUM4113
+Prompt (truncated): {"course_identification": "HUM4113", "title_short_desc": "World Religions", "course_text_narrative": "World Religions is an interdisciplinary course that examines the diverse phenomena of humanity's various religious practices and beliefs.  Cultural and intercultural parallels will be drawn, and similarities and differences distinguished.  Through an exposure to the diverse means by which religion ...
+
+Course HUM4113 already in master file, skipping
+Index 19 completed successfully 
+--- Index 19: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 20: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HUM5103
+Prompt (truncated): {"course_identification": "HUM5103", "title_short_desc": "World Religions", "course_text_narrative": "World Religions examines the diverse phenomena of humanities's various religious practices and beliefs.  Cultural and intercultural parallels will be drawn, and similarities and differences distinguished.  Through an exposure to the diverse means by which religions are made manifest, students will ...
+
+Course HUM5103 already in master file, skipping
+Index 20 completed successfully 
+--- Index 20: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 21: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: ENG3213
+Prompt (truncated): {"course_identification": "ENG3213", "title_short_desc": "World Literature II", "course_text_narrative": "World Literature II examines literary texts and traditions from Africa, the Americas, Asia, Australia, Europe, and Oceania that were composed since 1600. Texts are studied with special attention to their distinct historical and cultural contexts and to the complex patterns of interaction and i ...
+
+Course ENG3213 already in master file, skipping
+Index 21 completed successfully 
+--- Index 21: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 22: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: ENG3193
+Prompt (truncated): {"course_identification": "ENG3193", "title_short_desc": "World Literature I", "course_text_narrative": "World Literature I examines literary texts and traditions from Africa, the Americas, Asia, and Europe that were composed prior to 1600. Texts are studied with special attention to their distinct historical and cultural contexts and to the complex patterns of interaction and influence among worl ...
+
+Course ENG3193 already in master file, skipping
+Index 22 completed successfully 
+--- Index 22: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 23: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HIST1023
+Prompt (truncated): {"course_identification": "HIST1023", "title_short_desc": "World History II", "course_text_narrative": "World History II introduces students to political, social, and cultural connections and developments in world history since 1450.", "instruction": "You are an assistant that extracts concrete learning SKILLS from a course title and course description. Given the course title and description, list ...
+
+Course HIST1023 already in master file, skipping
+Index 23 completed successfully 
+--- Index 23: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 24: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HIST1013
+Prompt (truncated): {"course_identification": "HIST1013", "title_short_desc": "World History I", "course_text_narrative": "World History I introduces students to political, social, and cultural connections and developments in world history to 1450.", "instruction": "You are an assistant that extracts concrete learning SKILLS from a course title and course description. Given the course title and description, list up t ...
+
+Course HIST1013 already in master file, skipping
+Index 24 completed successfully 
+--- Index 24: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 25: start Tue 09/16/2025 15:50:58.40 --- 
+Exception in thread Thread-2 (_readerthread):
+Traceback (most recent call last):
+  File "C:\Python313\Lib\threading.py", line 1041, in _bootstrap_inner
+    self.run()
+    ~~~~~~~~^^
+  File "C:\Python313\Lib\threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\subprocess.py", line 1612, in _readerthread
+    buffer.append(fh.read())
+                  ~~~~~~~^^
+  File "C:\Python313\Lib\encodings\cp1252.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x8f in position 481: character maps to <undefined>
+Sending prompt to Ollama for course: HIST3423
+Prompt (truncated): {"course_identification": "HIST3423", "title_short_desc": "Women's History: European", "course_text_narrative": "Women's History: European investigates the historical and cultural roles of women from early modern Europe to the mid twentieth century.  As we analyze both representative individuals and general trends, topics will include theories of women's history, changing roles, rights, and respon ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HIST3423 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 25 completed successfully 
+--- Index 25: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 26: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HIST4453
+Prompt (truncated): {"course_identification": "HIST4453", "title_short_desc": "Women's History: China", "course_text_narrative": "Women's History: China explores the history and culture of women in China from ancient through modern times, with emphasis on the agency of women in the face of Confucianism, Daoism, Buddhism, Communism, and state-sponsored Capitalism.  Prerequisite(s):  ENG 1113 and ENG 1213 with sophomor ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HIST4453 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 26 completed successfully 
+--- Index 26: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 27: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HIST5453
+Prompt (truncated): {"course_identification": "HIST5453", "title_short_desc": "Women's History: China", "course_text_narrative": "Women's History: China explores the history and culture of women in China from ancient through modern times, with emphasis on the agency of women in the face of Confucianism, Daoism, Buddhism, Communism, and state-sponsored Capitalism.", "instruction": "You are an assistant that extracts c ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HIST5453 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 27 completed successfully 
+--- Index 27: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 28: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HIST4413
+Prompt (truncated): {"course_identification": "HIST4413", "title_short_desc": "Women/Gender in Native America", "course_text_narrative": "Women/Gender in Native America examines the varied historical experiences of Native women within the broader context of changing gender roles in indigenous communities in North America.  Prerequisite(s):  HIST 1483 or 1493 and sophomore standing or above.", "instruction": "You are  ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HIST4413 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 28 completed successfully 
+--- Index 28: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 29: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HIST5413
+Prompt (truncated): {"course_identification": "HIST5413", "title_short_desc": "Women/Gender in Native America", "course_text_narrative": "Women/Gender in Native America examines the varied historical experiences of Native women within the broader context of changing gender roles in indigenous communities in North America.", "instruction": "You are an assistant that extracts concrete learning SKILLS from a course titl ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HIST5413 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 29 completed successfully 
+--- Index 29: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 30: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HUM5143
+Prompt (truncated): {"course_identification": "HUM5143", "title_short_desc": "Women, Witches, and Relition", "course_text_narrative": "Women, Witches and Religion examines the phenomenon of women when her worldview lies outside the norm for adult females of her period.  It explores as well society's responses in their historical, literary, psychological and philosophical/religious dimensions from the biblical period  ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HUM5143 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 30 completed successfully 
+--- Index 30: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 31: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: SPAN4303
+Prompt (truncated): {"course_identification": "SPAN4303", "title_short_desc": "Women Writing In Span America", "course_text_narrative": "Women Writing in Spanish America provides a comprehensive overview of literature by women writers from diverse periods and geographic regions of Central and South America, Mexico, and the Caribbean.  Concepts introduced include issues influencing women's roles in Spanish America, su ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for SPAN4303 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 31 completed successfully 
+--- Index 31: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 32: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HUM5243
+Prompt (truncated): {"course_identification": "HUM5243", "title_short_desc": "Women in the Humanities", "course_text_narrative": "Women in the Humanities examines the phenomenon of the historical unfolding story of women's place in the evolution of Western civilization from prehistory to the present.  Bringing together aspects of political, economic, religious, intellectual, artistic, and social history, it traces th ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HUM5243 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 32 completed successfully 
+--- Index 32: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 33: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HIST4423
+Prompt (truncated): {"course_identification": "HIST4423", "title_short_desc": "Women in the American West", "course_text_narrative": "Women in the American West traces regional identity, mobility, and cultural representations in an effort to understanding how women's diverse perspectives shaped the American West.  Prerequisite(s):  HIST 1483 or 1493 and sophoore standing or above.", "instruction": "You are an assista ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HIST4423 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 33 completed successfully 
+--- Index 33: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 34: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HIST5423
+Prompt (truncated): {"course_identification": "HIST5423", "title_short_desc": "Women in the American West", "course_text_narrative": "Women in the American West traces regional identity, mobility, and cultural representations in an effort to understand how women's diverse perspectives shaped the American West.", "instruction": "You are an assistant that extracts concrete learning SKILLS from a course title and course ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HIST5423 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 34 completed successfully 
+--- Index 34: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 35: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MCOM5313
+Prompt (truncated): {"course_identification": "MCOM5313", "title_short_desc": "Women in Media", "course_text_narrative": "Women in Media focuses on women as journalism professionals and as subjects of the media. With the backdrop of history, statistics, and input from guest speakers, we will discuss past, current, and possible future issues related to those two main areas. Admission to Graduate Program required.", "i ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MCOM5313 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 35 completed successfully 
+--- Index 35: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 36: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MCOM4313
+Prompt (truncated): {"course_identification": "MCOM4313", "title_short_desc": "Women in Media", "course_text_narrative": "Women in Media focuses on women as journalism professionals and as subjects of the media.  With the backdrop of history, statistics and input from guest speakers, we will discuss past, current and possible future issues related to those two main areas. This course relies heavily on students' opini ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MCOM4313 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 36 completed successfully 
+--- Index 36: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 37: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: ENG5683
+Prompt (truncated): {"course_identification": "ENG5683", "title_short_desc": "Women in Literature", "course_text_narrative": "Women in Literature examines literature written by women and highlights the importance of gender in evaluating English, American, and world literature and literary cirticism by women writers.", "instruction": "You are an assistant that extracts concrete learning SKILLS from a course title and  ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for ENG5683 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 37 completed successfully 
+--- Index 37: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 38: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MCOM3533
+Prompt (truncated): {"course_identification": "MCOM3533", "title_short_desc": "Women and Leadership", "course_text_narrative": "Women and Leadership will critically examine historical and contemporary leadership challenges and opportunities facing women.  A major focus of the center on strategies for change and success.  This course is cross-listed with LEAD 3533 and credit may not be earned for both MCOM 3533 and LE ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MCOM3533 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 38 completed successfully 
+--- Index 38: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 39: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CJ4533
+Prompt (truncated): {"course_identification": "CJ4533", "title_short_desc": "White Collar Crime", "course_text_narrative": "White Collar Crime will broaden students' understanding of crime by focusing specifically on this type of crime.  Emphasis will be placed on the following: definitional debates about white collar crime, the complex nature of victimization, offender sentencing issues, and difficulties inherent in ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for CJ4533 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 39 completed successfully 
+--- Index 39: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 40: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HUM4323
+Prompt (truncated): {"course_identification": "HUM4323", "title_short_desc": "When God was a Woman", "course_text_narrative": "When God was a Woman examines the historical and cultural phenomena of religious traditions involving the worship of Goddesses, in particular those outside the monotheistic male-oriented Abrahamic faith.  Literary, historical, psychological, philosophical and religious responses to and interp ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HUM4323 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 40 completed successfully 
+--- Index 40: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 41: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: FRSC5553
+Prompt (truncated): {"course_identification": "FRSC5553", "title_short_desc": "WMD Forensics", "course_text_narrative": "Weapons of Mass Destruction (WMD) Forensics will cover chemical, biological, radiological, nuclear, and explosive (CBRNE) agents associated with domestic and international terrorism events.  Students will be introduced to crime scene processing involving CBRNE events and the corresponding laborator ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for FRSC5553 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 41 completed successfully 
+--- Index 41: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 42: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: FRSC4553
+Prompt (truncated): {"course_identification": "FRSC4553", "title_short_desc": "WMD Forensics", "course_text_narrative": "Weapons of Mass Destruction (WMD) Forensics will cover chemical, biological, radiological, nuclear, and explosive (CBRNE) agents associated with domestic and international terrorism events.  Students will be introduced to crime scene processing involving CBRNE events and the corresponding laborator ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for FRSC4553 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 42 completed successfully 
+--- Index 42: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 43: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: THRT3513
+Prompt (truncated): {"course_identification": "THRT3513", "title_short_desc": "Voice, Speech, and Dialect", "course_text_narrative": "Voice, Speech, and Dialect is a studio course designed to explore a wide range of vocal techniques for the purpose of performance, including the fundamentals of developing a stage dialect.  The course is focused on improving vocal clarity, expressiveness and projection, as well as buil ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for THRT3513 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 43 completed successfully 
+--- Index 43: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 44: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: THRT2233
+Prompt (truncated): {"course_identification": "THRT2233", "title_short_desc": "Voice and Movement 2", "course_text_narrative": "Voice and Movement 2 continues to examine the disciplines and practices introduced in Voice and Movement 1.  The primary focus is now controlling and using resonance to enhance expressive intonation.  Group work is introduced for more physical control and text analysis is introduced with spe ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for THRT2233 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 44 completed successfully 
+--- Index 44: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 45: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: THRT1613
+Prompt (truncated): {"course_identification": "THRT1613", "title_short_desc": "Voice and Movement 1", "course_text_narrative": "Voice and Movement 1 is the fundamental, laboratory course familiarizing the actor with proper breathing, resonance and articulation.  Students will engage in floor exercises and theatre games to relax the body, eliminate accumulated posture and breathing dysfunctions and begin practicing ap ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for THRT1613 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 45 completed successfully 
+--- Index 45: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 46: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: ENG1253
+Prompt (truncated): {"course_identification": "ENG1253", "title_short_desc": "Vocabulary Building", "course_text_narrative": "Vocabulary Building examines prefixes, suffixes, and etymologies as a means of increasing students' reading comprehension and writing competency.", "instruction": "You are an assistant that extracts concrete learning SKILLS from a course title and course description. Given the course title and ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for ENG1253 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 46 completed successfully 
+--- Index 46: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 47: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MCOM3033
+Prompt (truncated): {"course_identification": "MCOM3033", "title_short_desc": "Video News II", "course_text_narrative": "Video News II is the study of reporting, writing and editing news.  Emphasis is on researching stories, the use of electronic news-gathering equipment, writing and reporting style, and on-air presentation of completed stories.  Prerequisite(s):  ENG 1113, ENG 1213, MCOM 1113, MCOM 1133 and (MCOM 20 ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MCOM3033 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 47 completed successfully 
+--- Index 47: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 48: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MCOM2203
+Prompt (truncated): {"course_identification": "MCOM2203", "title_short_desc": "Video News I", "course_text_narrative": "Video News I addresses theories and practices of news gathering and writing for video-based reporting.  Students generate content and create team-driven newscasts and video-driven content.  Prerequisite(s):  ENG 1113, ENG 1213, MCOM 1133 and MCOM 2033.  Enrollment open to Mass Communication majors." ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MCOM2203 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 48 completed successfully 
+--- Index 48: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 49: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MCOM3243
+Prompt (truncated): {"course_identification": "MCOM3243", "title_short_desc": "Video Field Production", "course_text_narrative": "Video Field Production is a study of various creative forms of storytelling concentrating on the production of feature stories.  Students will incorporate the critical elements of videography, sound, editing, writing, directing, and producing to tell the most compelling stories possible ac ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MCOM3243 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 49 completed successfully 
+--- Index 49: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 50: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MCOM3013
+Prompt (truncated): {"course_identification": "MCOM3013", "title_short_desc": "Video Editing", "course_text_narrative": "Video Editing focuses specifically on essential video editing techniques. The course provides a dynamic range of video editing projects that will build the skills of students through the industry standard in video editing software. Prerequisite(s): ENG 1113, ENG 1213, MCOM 1113, and MCOM 2033.", "i ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MCOM3013 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 50 completed successfully 
+--- Index 50: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 51: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MCOM4433
+Prompt (truncated): {"course_identification": "MCOM4433", "title_short_desc": "Victims and the Media", "course_text_narrative": "Victims and the Media is an intensive study of the interpersonal and psychological effects of trauma and the impact of media coverage on victims, journalists and communications professionals.  Prerequisite(s): ENG 1113, ENG 1213, MCOM 1113 and (MCOM 1133 or MCOM 1173) and junior or senior s ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MCOM4433 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 51 completed successfully 
+--- Index 51: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 52: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CJ4323
+Prompt (truncated): {"course_identification": "CJ4323", "title_short_desc": "Victimology", "course_text_narrative": "Victimology is designed to provide a complete and integrated study of victimization, including a comprehensive review of the history and theories of victimology, the interaction of crime victims with others in the criminal justice system, an in-depth examination of current as well as classical works in ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for CJ4323 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 52 completed successfully 
+--- Index 52: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 53: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: ECON5363
+Prompt (truncated): {"course_identification": "ECON5363", "title_short_desc": "Market Structure/Reg/Antitrust", "course_text_narrative": "Use of theory, case studies and legal precedents to investigate alternative forms of industrial organization, with emphasis placed on underlying structure, market performance/conduct, social welfare implications, and policy alternatives such as regulation and antitrust. Prerequisit ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for ECON5363 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 53 completed successfully 
+--- Index 53: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 54: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: ECON5103
+Prompt (truncated): {"course_identification": "ECON5103", "title_short_desc": "Microeconomic Analysis", "course_text_narrative": "Use of economic theory and analysis in the solution of business and public policy problems using demand and cost estimation and analysis, economic forecasting, and cost/benefit analysis. Investigation of various forms of competitive and noncompetitive behavior. Prerequisite(s): Completed a ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for ECON5103 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 54 completed successfully 
+--- Index 54: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 55: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HIST1483
+Prompt (truncated): {"course_identification": "HIST1483", "title_short_desc": "History Of U.S. To 1877", "course_text_narrative": "US History to 1877 is a survey of US history from the colonial period through the Civil War.", "instruction": "You are an assistant that extracts concrete learning SKILLS from a course title and course description. Given the course title and description, list up to 8 distinct, actionable  ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HIST1483 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 55 completed successfully 
+--- Index 55: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 56: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HIST1493
+Prompt (truncated): {"course_identification": "HIST1493", "title_short_desc": "History Of U.S. Since 1877", "course_text_narrative": "US History since 1877 is a survey of US history from the post-bellum period to the present.", "instruction": "You are an assistant that extracts concrete learning SKILLS from a course title and course description. Given the course title and description, list up to 8 distinct, actionabl ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HIST1493 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 56 completed successfully 
+--- Index 56: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 57: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: POL4363
+Prompt (truncated): {"course_identification": "POL4363", "title_short_desc": "Urban Sustainability", "course_text_narrative": "Urban Sustainability is the study of the relationship between local political processes and the pursuit of sustainable development in Oklahoma as well as worldwide.  This class focuses on the theoretical underpinnings of sustainability and sustainable development as applied in the urban conte ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for POL4363 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 57 completed successfully 
+--- Index 57: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 58: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: POL5363
+Prompt (truncated): {"course_identification": "POL5363", "title_short_desc": "Urban Sustainability", "course_text_narrative": "Urban Sustainability is the study of the relationship between local political processes and the pursuit of sustainable development in Oklahoma as well as worldwide.  This class focuses on the theoretical underpinnings of sustainability and sustainable development as applied in the urban conte ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for POL5363 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 58 completed successfully 
+--- Index 58: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 59: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: POL5173
+Prompt (truncated): {"course_identification": "POL5173", "title_short_desc": "Urban Planning and Politics", "course_text_narrative": "Urban Planning and Politics is a comprehensive survey of American law of land use planning and controls, with emphasis on the law of nuisance; restrictive covenants, planning, zoning and subdivision controls; and recent innovations in land use controls.", "instruction": "You are an ass ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for POL5173 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 59 completed successfully 
+--- Index 59: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 60: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: POL5013
+Prompt (truncated): {"course_identification": "POL5013", "title_short_desc": "Urban History of Policy/Admin", "course_text_narrative": "Urban History of Policy/Admin is the study of contemporary political, social, and economical institutions and environment of urban areas, placed in a historical context.", "instruction": "You are an assistant that extracts concrete learning SKILLS from a course title and course descr ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for POL5013 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 60 completed successfully 
+--- Index 60: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 61: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: POL5183
+Prompt (truncated): {"course_identification": "POL5183", "title_short_desc": "Urban Government And Policy", "course_text_narrative": "Urban Government and Policy examines the administrative and political environment of municipal governments in the U.S. with emphasis on Oklahoma governments.", "instruction": "You are an assistant that extracts concrete learning SKILLS from a course title and course description. Given  ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for POL5183 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 61 completed successfully 
+--- Index 61: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 62: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: GEO4733
+Prompt (truncated): {"course_identification": "GEO4733", "title_short_desc": "Urban GIS", "course_text_narrative": "Urban GIS offers advanced geographic information system techniques applied to urban and socio-economic issues including urban and regional planning, urban ecology, and demographic analysis. Prerequisite(s):  GEO 3103 or GEO 4113. Junior standing or above.", "instruction": "You are an assistant that extr ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for GEO4733 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 62 completed successfully 
+--- Index 62: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 63: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: GEO5733
+Prompt (truncated): {"course_identification": "GEO5733", "title_short_desc": "Urban GIS", "course_text_narrative": "Urban GIS offers advanced geographic information system techniques applied to urban and socio-economic issues including urban and regional planning, urban ecology, and demographic analysis.", "instruction": "You are an assistant that extracts concrete learning SKILLS from a course title and course descr ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for GEO5733 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 63 completed successfully 
+--- Index 63: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 64: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: SFTY5412
+Prompt (truncated): {"course_identification": "SFTY5412", "title_short_desc": "Hazard Communication", "course_text_narrative": "Upon completion of this course, the student will be familiar with the principles of hazard and risk communication, the principles of design and delivery of hazard training programs, and the elements of an acceptable hazard communication program.   Prerequisite(s):  SFTY 3433.", "instruction" ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for SFTY5412 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 64 completed successfully 
+--- Index 64: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 65: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: SFTY4412
+Prompt (truncated): {"course_identification": "SFTY4412", "title_short_desc": "Hazard Communication", "course_text_narrative": "Upon completion of this course, the student will be familiar with the principles of hazard and risk communication, the principles of design and delivery of hazard training programs, and the elements of an acceptable hazard communication program.   Prerequisite(s):  SFTY 3433 and junior or se ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for SFTY4412 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 65 completed successfully 
+--- Index 65: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 66: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MPER2010
+Prompt (truncated): {"course_identification": "MPER2010", "title_short_desc": "University Choir", "course_text_narrative": "University Choir provides a non-auditioned opportunity for musically talented students to develop their vocal talents rehearsing and performing a wide variety of mixed choral literature.", "instruction": "You are an assistant that extracts concrete learning SKILLS from a course title and course  ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MPER2010 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 66 completed successfully 
+--- Index 66: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 67: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MPER2111
+Prompt (truncated): {"course_identification": "MPER2111", "title_short_desc": "University Choir", "course_text_narrative": "University Choir provides a non-auditioned opportunity for musically talented students to develop their vocal talents rehearsing and performing a wide variety of mixed choral literature.", "instruction": "You are an assistant that extracts concrete learning SKILLS from a course title and course  ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MPER2111 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 67 completed successfully 
+--- Index 67: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 68: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HIST4873
+Prompt (truncated): {"course_identification": "HIST4873", "title_short_desc": "United States since 1945", "course_text_narrative": "United States since 1945 examines the political, social, economic, and cultural changes in the United States from World War II to the present.  Prerequisite(s):  HIST 1483 or 1493 and sophomore standing or above.", "instruction": "You are an assistant that extracts concrete learning SKIL ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HIST4873 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 68 completed successfully 
+--- Index 68: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 69: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HIST5873
+Prompt (truncated): {"course_identification": "HIST5873", "title_short_desc": "United States since 1945", "course_text_narrative": "United States since 1945 examines the political, social, economic, and cultural changes in the United States from World War II to the present.", "instruction": "You are an assistant that extracts concrete learning SKILLS from a course title and course description. Given the course title  ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HIST5873 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 69 completed successfully 
+--- Index 69: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 70: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: PHED5602
+Prompt (truncated): {"course_identification": "PHED5602", "title_short_desc": "PE&Rec Except Child", "course_text_narrative": "Understanding motor characteristics and assessing motor development of the exceptional child; development and adaptation of physical education and recreation programs; and field and/or laboratory experiences. ", "instruction": "You are an assistant that extracts concrete learning SKILLS from  ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for PHED5602 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 70 completed successfully 
+--- Index 70: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 71: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MPER3341
+Prompt (truncated): {"course_identification": "MPER3341", "title_short_desc": "Jazz Ensemble", "course_text_narrative": "UCO Jazz Ensembles provide students with technical guidance in ensemble and solo performance while also exposing them to the wide range of styles necessary to perform jazz and commercial music on a professional level.", "instruction": "You are an assistant that extracts concrete learning SKILLS fro ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MPER3341 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 71 completed successfully 
+--- Index 71: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 72: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MPER5611
+Prompt (truncated): {"course_identification": "MPER5611", "title_short_desc": "Jazz Ensemble", "course_text_narrative": "UCO Jazz Ensembles provide graduate students with in-depth technical guidance in ensemble and solo performance while also developing advanced proficiency in a wide range of styles necessary to perform jazz and commercial music on a professional level.  This course may be taken four (4) times for cr ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MPER5611 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 72 completed successfully 
+--- Index 72: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 73: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MCOM4413
+Prompt (truncated): {"course_identification": "MCOM4413", "title_short_desc": "TV Documentary Production", "course_text_narrative": "TV Documentary Production is a study of the field and functions of the full-length television documentary including the history of documentaries in broadcasting, scripting techniques, production design and video, audio and editing techniques used in documentaries.  Prerequisite(s):  ENG ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MCOM4413 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 73 completed successfully 
+--- Index 73: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 74: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HIST4653
+Prompt (truncated): {"course_identification": "HIST4653", "title_short_desc": "Tudor-Stuart England", "course_text_narrative": "Tudor-Stuart England covers important political, military, cultural, and social developments in England from Henry VII to Queen Anne (1485 to 1714).  Prerequisite(s):  ENG 1113 and ENG 1213 with junior or senior standing.", "instruction": "You are an assistant that extracts concrete learning ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HIST4653 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 74 completed successfully 
+--- Index 74: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 75: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HIST5653
+Prompt (truncated): {"course_identification": "HIST5653", "title_short_desc": "Tudor-Stuart England", "course_text_narrative": "Tudor-Stuart England covers important political, military, cultural, and social developments in England from Henry VII to Queen Anne (1485 to 1714).", "instruction": "You are an assistant that extracts concrete learning SKILLS from a course title and course description. Given the course titl ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HIST5653 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 75 completed successfully 
+--- Index 75: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 76: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: SPED4322
+Prompt (truncated): {"course_identification": "SPED4322", "title_short_desc": "Trends & Issues in Special Ed", "course_text_narrative": "Trends and Issues in Special Education is a course that will address medical trends, litigation, legislation, controversial issues, curricular development and best practices.  It is designed to provide a means of investigation into the review of relevant research, societal changes a ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for SPED4322 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 76 completed successfully 
+--- Index 76: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 77: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: SAS5633
+Prompt (truncated): {"course_identification": "SAS5633", "title_short_desc": "Trauma Counseling", "course_text_narrative": "Trauma Counseling is an extensive review of individual counseling and therapeutic processes involving the treatment of abuse and trauma. Topics include psychoanalytic, behavioral, existential, and humanistic perspectives, in addition to cognitive behavioral approaches. Select theorists are highl ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for SAS5633 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 77 completed successfully 
+--- Index 77: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 78: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MCOM5423
+Prompt (truncated): {"course_identification": "MCOM5423", "title_short_desc": "Trauma & Leadership in Comm", "course_text_narrative": "Trauma and Leadership in Communications addresses how trauma affects professionals in the communications industry. It explores reactions to and ethical considerations of workplace trauma. Proactive approaches in anticipating traumatic events are highlighted. Admission to Graduate Prog ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MCOM5423 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 78 completed successfully 
+--- Index 78: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 79: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CMSC4173
+Prompt (truncated): {"course_identification": "CMSC4173", "title_short_desc": "Translator Design", "course_text_narrative": "Translator Design introduces the principles, tools and techniques used to design a programming language compiler.  Topics covered include lexical, syntax, and semantic analysis, finite automata, regular expressions, LL and LR grammars, type systems and checkers, code generation, interpreters, o ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for CMSC4173 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 79 completed successfully 
+--- Index 79: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 80: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CMSC5073
+Prompt (truncated): {"course_identification": "CMSC5073", "title_short_desc": "Translator Design", "course_text_narrative": "Translator Design introduces students to the principles, tools and techniques used in designing a programming language compiler.  Topics covered include lexical, syntax, and semantic analysis, finite automata, regualar expressions, LL and LR grammars, type systems and checkers, code generation, ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for CMSC5073 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 80 completed successfully 
+--- Index 80: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 81: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CJ1563
+Prompt (truncated): {"course_identification": "CJ1563", "title_short_desc": "Traffic & Accident Invest", "course_text_narrative": "Traffic and Accident Investigation is an in-depth look at the laws governing vehicles and traffic in the state of Oklahoma along with specifics on accident investigation.  Legal examination of Title 47 will focus on enforcement-related statutes.  Accident investigation topics include:  re ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for CJ1563 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 81 completed successfully 
+--- Index 81: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 82: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HIST4863
+Prompt (truncated): {"course_identification": "HIST4863", "title_short_desc": "Hist Of Modern Southeast Asia", "course_text_narrative": "Traditional cultures and religions; impact of western colonialisms; nationalist movements and formation of nations; development of representative governments; and contemporary roles in international relations. ", "instruction": "You are an assistant that extracts concrete learning S ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HIST4863 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 82 completed successfully 
+--- Index 82: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 83: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: HIST5863
+Prompt (truncated): {"course_identification": "HIST5863", "title_short_desc": "Hist Of Modern Southeast Asia", "course_text_narrative": "Traditional cultures and religions; impact of western colonialism; nationalist movements and formation of nations; development of representative governments; and contemporary roles in international relations. ", "instruction": "You are an assistant that extracts concrete learning SK ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for HIST5863 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 83 completed successfully 
+--- Index 83: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 84: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: ECON3203
+Prompt (truncated): {"course_identification": "ECON3203", "title_short_desc": "Intermediate Microeconomics", "course_text_narrative": "Topics of this course include:  analysis of behavior of consumers, firms, resource owners, and public entities; theoretical models of industrial organization and performance; identification and analysis of potential market failures and government interventions; development of efficien ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for ECON3203 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 84 completed successfully 
+--- Index 84: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 85: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MATH2013
+Prompt (truncated): {"course_identification": "MATH2013", "title_short_desc": "Structures Of Mathematics", "course_text_narrative": "Topics include the structure of number systems, operations, properties, ordering, functions and number theory beginning with natural numbers and extending through the set of all real numbers.  This course is specifically designed for elementary education, special education, and early ch ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MATH2013 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 85 completed successfully 
+--- Index 85: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 86: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CHEM4325
+Prompt (truncated): {"course_identification": "CHEM4325", "title_short_desc": "Clinical Chemistry II", "course_text_narrative": "Topics in this course include the theory and laboratory methodology of analytical biochemistry, instrumentation, laboratory mathematics, routine, and special procedures, and medical significance. Prerequisite(s):  Appropriate premedical technology curriculum.", "instruction": "You are an as ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for CHEM4325 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 86 completed successfully 
+--- Index 86: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 87: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MATH5563
+Prompt (truncated): {"course_identification": "MATH5563", "title_short_desc": "Introduction To Graph Theory", "course_text_narrative": "Topics in this course include the structure of graphs, trees, connectivity, planarity, colorability of graphs, digraphs, matrices associated with a graph, and the automorphism group of a graph.  Graph theoretic modeling and applications to engineering, computer science, and data stru ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MATH5563 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 87 completed successfully 
+--- Index 87: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 88: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: CHEM4351
+Prompt (truncated): {"course_identification": "CHEM4351", "title_short_desc": "Topics In Medical Technology", "course_text_narrative": "Topics in this course include the principles and practices of the medical laboratory including basic management, special education methodology, and special projects in selected areas.  Prerequisite(s): Appropriate premedical technology curriculum.", "instruction": "You are an assista ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for CHEM4351 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 88 completed successfully 
+--- Index 88: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 89: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: STAT5253
+Prompt (truncated): {"course_identification": "STAT5253", "title_short_desc": "Quality Control", "course_text_narrative": "Topics in this course include random samples, frequency distributions of sample data, sampling distributions, sampling acceptance plans, rectifying inspection, and the general theory of control charts.  Prerequisite(s):  STAT 4113 or 5113 and 4303.", "instruction": "You are an assistant that extr ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for STAT5253 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 89 completed successfully 
+--- Index 89: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 90: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MATH5413
+Prompt (truncated): {"course_identification": "MATH5413", "title_short_desc": "Differential Equations", "course_text_narrative": "Topics in this course include partial differential equations, elliptic, hyperbolic, and parabolic equations, separation of variables, special functions, eigen function expressions, and the existence and uniqueness of solutions.  Prerequisite(s):  MATH 5363.", "instruction": "You are an ass ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MATH5413 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 90 completed successfully 
+--- Index 90: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 91: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: STAT5423
+Prompt (truncated): {"course_identification": "STAT5423", "title_short_desc": "Data Fitting", "course_text_narrative": "Topics in this course include fitting data to a linear equation, a polynomial, an orthogonal polynomial, and an exponential growth curve.  Piecewise polygonal fitting will also be discussed.  Prerequisite(s):  CMSC 1613 and STAT 2113 with a minimum grade of \"C\".", "instruction": "You are an assist ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for STAT5423 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 91 completed successfully 
+--- Index 91: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 92: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: STAT5303
+Prompt (truncated): {"course_identification": "STAT5303", "title_short_desc": "Non-Parametric Statistics", "course_text_narrative": "Topics in this course include distribution-free statistics, techniques of hypothesis testing with data drawn from a population that is not distributed in a particular manner, the binomial test, the sign test, the median test, and the Cochran Q test.  Prerequisite(s):  STAT 2113 with a m ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for STAT5303 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 92 completed successfully 
+--- Index 92: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 93: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: ECON4513
+Prompt (truncated): {"course_identification": "ECON4513", "title_short_desc": "Labor Econ & Public Policy", "course_text_narrative": "Topics in this course include development of neoclassical labor market theory with in-depth investigation of the determination of hours of work and wages; study of the impact of unions and government policy such as affirmative action, minimum wages, and immigration on labor markets; co ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for ECON4513 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 93 completed successfully 
+--- Index 93: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 94: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: MBA5632
+Prompt (truncated): {"course_identification": "MBA5632", "title_short_desc": "Topics in Sales Force Mgmt", "course_text_narrative": "Topics in Sales Force Management will cover timely issues in sales force management.  Contemporary readings from academic and industry journals will be used to discuss current issues and trends in sales force management.  Prerequisite(s):  Enrollment open to MBA Business Administration  ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for MBA5632 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 94 completed successfully 
+--- Index 94: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 95: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: STAT4213
+Prompt (truncated): {"course_identification": "STAT4213", "title_short_desc": "Applied Regression Analysis", "course_text_narrative": "Topics for this course will include multiple regression, logistic regression, survival analysis, proportional hazard models, and time series analysis.  Data will be analyzed using SAS.  Prerequisite(s):  STAT 2113 with a minimum grade of \"C\".", "instruction": "You are an assistant t ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for STAT4213 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 95 completed successfully 
+--- Index 95: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 96: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: STAT5213
+Prompt (truncated): {"course_identification": "STAT5213", "title_short_desc": "Applied Regression Analysis", "course_text_narrative": "Topics for this course will include multiple regression, logistic regression, survival analysis, proportional hazard models, and time series analysis.  Data will be analyzed using SAS.  Prerequisite(s):  STAT 2113 with a minimum grade of \"C\".", "instruction": "You are an assistant t ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for STAT5213 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 96 completed successfully 
+--- Index 96: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 97: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: STAT2113
+Prompt (truncated): {"course_identification": "STAT2113", "title_short_desc": "Statistical Methods", "course_text_narrative": "Topics for this course include basic experimental statistics, methods of estimation, tests of significance, probability, linear regression, and correlation.  Credit cannot be earned for both STAT 2103 and STAT 2113.  Prerequisite(s):  MATH 1453 or MATH 1513 or high school Algebra II each with ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for STAT2113 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 97 completed successfully 
+--- Index 97: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 98: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: STAT5103
+Prompt (truncated): {"course_identification": "STAT5103", "title_short_desc": "Applied Experimental Design", "course_text_narrative": "Topics for this course include basic concepts of experiments and experimental error, analysis of variance of one-, two-, and three-way classifications, and nonparametic statistics. Prerequisite(s):  STAT 2113 with a minimum grade of \"C\".", "instruction": "You are an assistant that e ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for STAT5103 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 98 completed successfully 
+--- Index 98: end Tue 09/16/2025 15:50:58.40 --- 
+--- Index 99: start Tue 09/16/2025 15:50:58.40 --- 
+Sending prompt to Ollama for course: STAT4103
+Prompt (truncated): {"course_identification": "STAT4103", "title_short_desc": "Applied Experimental Design", "course_text_narrative": "Topics for this course include basic concepts of experiments and experimental error, analysis of variance of one-, two-, and three-way classification, analysis of covariance, and nested and incomplete block designs.  Prerequisite(s):  STAT 2113 with a minimum grade of \"C\".", "instru ...
+
+Using ollama executable: C:\Users\cece\AppData\Local\Programs\Ollama\ollama.EXE
+Appended result for STAT4103 to C:\Users\cece\Projects\Web\SkillTrees\output\ollama_course_skills.json
+Index 99 completed successfully 
+--- Index 99: end Tue 09/16/2025 15:50:58.40 --- 
+'%i' is not recognized as an internal or external command,
+operable program or batch file.
+--- Index %i: end Wed 09/17/2025 10:46:09.56 --- 
+ERROR: script not found: C:\Users\cece\Projects\Web\SkillTrees\scripts\ollama_infer_course.py 
+================================================== 
+Run started: Wed 09/17/2025 10:46:12.11 
+================================================== 

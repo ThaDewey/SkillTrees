@@ -1,0 +1,9 @@
+Explanation notes: runExtractAll.bat contains additional features compared to runExtractSkills100.bat:
+- dynamic course count detection
+- aggregated logging
+- UTF-8 enforcement
+- console (Tee) mode
+- safe temp file for count
+- error logging
+- robust path handling
+Simpler script can be provided if desired.

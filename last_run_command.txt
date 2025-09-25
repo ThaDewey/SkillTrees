@@ -1,0 +1,8 @@
+Last recommended run command saved.
+PowerShell:
+  Set-Location 'C:\Users\cece\Projects\Web\SkillTrees'
+  .\runAllExtractors.bat
+
+Cmd:
+  cd /d C:\Users\cece\Projects\Web\SkillTrees
+  runAllExtractors.bat

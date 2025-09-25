@@ -1,2 +1,729 @@
 Error on index %i 
 See aggregated log for output: output\all_extractors_output.log 
+--- Index 134 (DES2333) ---
+ {"course_identification": "DES2333",
+ "title_short_desc": "Visualization I",
+ "inferred_skills": [
+   {"label": "Rendering Techniques", "description": "Applying digital techniques to create visual representations of designs"},
+   {"label": "Model Building", "description": "Constructing three-dimensional models for design visualization"},
+   {"label": "Perspective Drawing", "description": "Creating drawn images that depict a 3D scene from a single viewpoint"},
+   {"label": "Color Board Creation", "description": "Designing color schemes and palettes for interior spaces"},
+   {"label": "Written Communication", "description": "Composing clear, concise texts to explain design concepts"},
+   {"label": "Oral Presentation", "description": "Delivering effective presentations about design projects"},
+   {"label": "Visual Communication Analysis", "description": "Evaluating the effectiveness of visual communication in design"},
+   {"label": "Design Documentation", "description": "Preparing accurate, detailed records of design projects}"]}
+
+
+
+--- Index 171 (ENGR3421) ---
+ {"course_identification": "ENGR3421",
+ "title_short_desc": "Analog Electronics Laboratory",
+ "inferred_skills": [
+   {"label": "Design Analog Circuits", "description": "Designing various analog electronic circuits for practical applications"},
+   {"label": "Build Electronic Circuitry", "description": "Constructing analog electronic circuits using components like diodes, transistors, and operational amplifiers"},
+   {"label": "Analyze Electronic Circuits", "description": "Analyzing the performance of designed and built analog electronic circuits"},
+   {"label": "Apply BJT Theory", "description": "Using knowledge of bipolar junction transistors in circuit design and analysis"},
+   {"label": "Apply FET Theory", "description": "Utilizing field effect transistor theory for circuit design and analysis"},
+   {"label": "Lab Safety Protocols", "description": "Following safety guidelines and protocols in a laboratory setting"},
+   {"label": "Document Work Procedures", "description": "Recording the process, steps, and outcomes of experiments conducted during lab work"},
+   {"label": "Troubleshoot Circuit Issues", "description": "Identifying and resolving issues that may arise in built analog electronic circuits}"]
+
+
+
+--- Index 339 (FIN3113) ---
+ {
+  "course_identification": "FIN3113",
+  "title_short_desc": "Credit & Collections",
+  "inferred_skills": [
+    {
+      "label": "Analyze Credit Information",
+      "description": "Obtaining and interpreting data for credit decisions"
+    },
+    {
+      "label": "Comprehend Credit Laws",
+      "description": "Understanding federal and state credit laws"
+      // Add more skills as needed, up to 8
+    ]
+}
+
+
+
+--- Index 361 (FMCD5023) ---
+ {"course_identification": "FMCD5023",
+ "title_short_desc": "Theories In Fam & Ch Studies",
+ "inferred_skills": [
+   {"label": "Understand Major Theories", "description": "Analyze and comprehend key theories in family and child development"},
+   {"label": "Apply Theoretical Approaches", "description": "Implement major theoretical approaches to the study of family and child development"},
+   {"label": "Evaluate Theoretical Frameworks", "description": "Critically assess various theoretical frameworks in family and child studies"},
+   {"label": "Compare Theoretical Models", "description": "Compare and contrast different theoretical models in family and child development"},
+   {"label": "Integrate Theories and Research", "description": "Synthesize theories and research findings in family and child studies"},
+   {"label": "Critique Theoretical Applications", "description": "Assess the practical application of theories in family and child development contexts"},
+   {"label": "Relate Theories to Real-World Scenarios", "description": "Apply theoretical concepts to real-life situations in family and child studies"},
+   {"label": "Develop Theoretical Argumentation", "description": "Formulate well-supported arguments based on selected theories in family and child development}"]
+}
+
+
+
+--- Index 689 (DES5433) ---
+ {
+"course_identification": "DES5433",
+"title_short_desc": "Design & Illustration Practice",
+"inferred_skills": [
+    {"label": "Identify Target Audience", "description": "Determining the appropriate audience for design and illustration work"},
+    {"label": "Commission Acquisition", "description": "Securing design or illustration commissions in public or commercial sectors"},
+    {"label": "Design Development", "description": "Creating designs or illustrations for a target audience},
+    {"label": "Project Management", "description": "Managing design and illustration projects to completion before graduation"},
+    {"label": "Design Application", "description": "Applying theoretical concepts in the business of design and illustration"},
+    {"label": "Peer Guidance", "description": "Receiving guidance from graduate peers during design and illustration projects"},
+    {"label": "Instructor Guidance", "description": "Receiving guidance from instructors during design and illustration projects"}
+]
+}
+
+
+
+--- Index 737 (MPER2421) ---
+ {"course_identification": "MPER2421",
+ "title_short_desc": "Orchestra Wind Study",
+ "inferred_skills": [
+    {"label":"Interpret Orchestral Literature", "description":"Ability to accurately perform standard orchestral literature."},
+    {"label":"Collaborate in Symphonic Orchestra", "description":"Skill in working effectively as part of a professional-style symphony orchestra."},
+    {"label":"Enhance Orchestral Performance Skills", "description":"Improving skills for full participation in an orchestral setting."},
+    {"label":"Develop Orchestral Interpretation Skills", "description":"Growing ability to understand and perform orchestral music."},
+    {"label":"Master Standard Repertoire", "description":"Achievement of proficiency in performing standard orchestral repertoire."},
+    {"label":"Participate in Full Orchestra Experience", "description":"Experience of being a member of a full symphony orchestra simulating professional life."},
+    {"label":"Improve Orchestral Wind Performance", "description":"Enhancing wind instrument skills specifically for an orchestral setting."},
+    {"label":"Repeat Course for Credit", "description":"Ability to take the course multiple times to earn credit (up to 8 times)".}
+ ]
+}
+
+
+
+--- Index 1022 (MPER4521) ---
+ {"course_identification": "MPER4521",
+ title_short_desc": "Collaborative Piano III",
+ "inferred_skills": [
+  {
+   "label": "Perform Collaboratively",
+   "description": "Demonstrate proficiency in performing with vocal and instrumental partners"
+  },
+  {
+   "label": "Analyze Advanced Lieder",
+   "description": "Interpret complex lieder and art-song repertoire"
+  },
+  {
+   "label": "Master Arias",
+   "description": "Perform arias with appropriate style and technique"
+  },
+  {
+   "label": "Reduce Orchestral Compositions",
+   "description": "Transcribe orchestral works into piano reductions"
+  },
+  {
+   "label": "Play Instrumental Solos",
+   "description": "Perform instrumental solos with proficiency"
+  },
+  {
+   "label": "Rehearse for Recital",
+   "description": "Prepare for public performances through coaching and rehearsals"
+  },
+  {
+   "label": "Present Masterclass Performances",
+   "description": "Perform in masterclasses for peer and faculty critique"
+  },
+  {
+   "label": "Assess Jury Presentations",
+   "description": "Evaluate own performances and receive feedback during jury sessions"
+  }
+ ]
+}
+
+
+
+--- Index 1112 (PHED3522) ---
+ {
+  "course_identification": "PHED3522",
+  "title_short_desc": "Fitness Applications for PE",
+  "inferred_skills": [
+    {
+      "label": "Evaluate Nutrition",
+      "description": "Assess students' understanding of nutrition and its impact on health"
+    },
+    {
+      "label": "Analyze Obesity Factors",
+      "description": "Examine factors contributing to obesity in students"
+    },
+    {
+      "label": "Implement Assessment Techniques",
+      "description": "Apply innovative assessment methods for lifetime wellness evaluation"
+    },
+    {
+      "label": "Design Teaching Strategies",
+      "description": "Plan teaching techniques focusing on nutrition, obesity, and health indicators"
+    },
+    {
+      "label": "Teach Lifetime Wellness",
+      "description": "Instruct students about lifetime wellness principles and practices"
+    },
+    {
+      "label": "Apply Innovative Teaching",
+      "description": "Utilize innovative teaching methods in the classroom setting"
+    },
+    {
+      "label": "Assess Lifetime Wellness Skills",
+      "description": "Evaluate students' skills related to lifetime wellness and health indicators"
+    },
+    {
+      "label": "Prerequisite Awareness",
+      "description": "Understand the prerequisites for this course (PHED 2012)" // This skill is included as it meets requirement #5, but it should be noted that it is not an actionable skill for the student.
+    }
+  ]
+}
+
+
+
+--- Index 1344 (FMKT3233) ---
+ {"course_identification": "FMKT3233",
+ "title_short_desc": "Decorative Textiles",
+ "inferred_skills": [
+   {"label": "Identify Symbolism in Fabrics", "description": "Understanding the symbolic meanings behind various decorative fabrics"},
+   {"label": "Assess Durability of Textiles", "description": "Evaluating the longevity and resilience of different decorative textiles"},
+   {"label": "Match Design with Suitability", "description": "Pairing decorative fabrics with appropriate design contexts in interior design and apparel fashions"},
+   {"label": "Analyze Textile Characteristics", "description": "Examining the qualities of decorative textiles, including their aesthetics and functionality"},
+   {"label": "Apply Decorative Textile Knowledge", "description": "Utilizing knowledge of decorative fabrics in practical design projects or applications},
+   {"label": "Investigate Design Trends", "description": "Researching and exploring current and historical trends in decorative textiles for interior design and apparel fashions"},
+   {"label": "Critique Decorative Textile Designs", "description": "Analyzing and critiquing the design elements of various decorative textiles},
+   {"label": "Compose Design Concepts with Decorative Fabrics", "description": "Developing and implementing creative design concepts that incorporate decorative fabrics}
+ ]
+}
+
+
+
+--- Index 1415 (DES5123) ---
+ {
+"course_identification": "DES5123",
+"title_short_desc": "History of Graphic Design II",
+"inferred_skills": [
+    {"label": "Research Historical Art", "description": "Investigate the history of art and graphic design from Victorian to WWI"},
+    {"label": "Analyze Art Movements", "description": "Understand various art and design movements, styles, and their impact"},
+    {"label": "Identify Key Artists", "description": "Recognize significant artists and designers in the field of art and graphic design"},
+    {"label": "Present Historical Findings", "description": "Communicate historical research findings to a Design Graduate Committee"},
+    {"label": "Historical Research Analysis", "description": "Analyze and interpret historical data related to art and graphic design"},
+    {"label": "Historical Design Investigation", "description": "Explore the shared histories of art and graphic design from Victorian to WWI"},
+    {"label": "Design Project Presentation", "description": "Prepare and present a major historical design project"},
+    {"label": "Artistic Style Identification", "description": "Identify and categorize artistic styles throughout history}
+]
+}
+
+
+
+--- Index 1454 (ESFR5203) ---
+ {
+"course_identification": "ESFR5203",
+"title_short_desc": "Adv Contemp Learning Sciences",
+"inferred_skills": [
+    {"label": "Analyze Learning Principles", "description": "Identifying the fundamental concepts of learning and human development"},
+    {"label": "Explore Motivation Factors", "description": "Investigating elements that affect student motivation in educational settings"},
+    {"label": "Evaluate Theoretical Perspectives", "description": "Assessing different theoretical viewpoints on learning and motivation"},
+    {"label": "Apply Research Findings", "description": "Utilizing research outcomes to inform educational decisions and strategies"},
+    {"label": "Design Student-Centered Learning", "description": "Creating student-focused learning environments based on current theories"},
+    {"label": "Clinical Experience Application", "description": "Applying course concepts to real classroom settings during clinical experiences in secondary schools"},
+    {"label": "Identify Secondary Students' Needs", "description": "Recognizing and addressing the educational needs of secondary students"},
+    {"label": "Design Instruction for Secondary Students", "description": "Developing learning materials tailored for secondary school learners}
+]
+}
+
+
+
+--- Index 1625 (FMCD5793) ---
+ {
+"course_identification": "FMCD5793",
+"title_short_desc": "Capstone in Family Science",
+"inferred_skills": [
+    {"label": "Apply Theories in Practice", "description": "Utilizing graduate study theories in family sciences during work experience"},
+    {"label": "Integrate Knowledge Practically", "description": "Combining knowledge gained from graduate studies with real-world professional settings"},
+    {"label": "Supervised Work Experience", "description": "Working under the guidance of a professional in a family science setting"},
+    {"label": "Professional Collaboration", "description": "Learning to collaborate effectively with professionals in the field of family sciences"},
+    {"label": "Field-Specific Application", "description": "Applying knowledge specifically to the field of Family Life Education"},
+    {"label": "Practical Problem Solving", "description": "Solving practical problems using theories and knowledge from graduate studies"},
+    {"label": "Professional Development", "description": "Preparing for a career in family sciences through supervised work experience},
+    {"label": "Client-Centered Service Delivery", "description": "Providing family services that are centered around client needs and expectations"}
+]
+}
+
+
+
+--- Index 1718 (NTRN5174) ---
+ {"course_identification": "NTRN5174",
+   "title_short_desc": "Medical Nutrition Therapy",
+   "inferred_skills": [
+      {
+         "label": "Integrate Nutrition",
+         "description": "Combine nutrition, biochemistry, physiology and pharmacology for disease treatment"
+      },
+      {
+         "label": "Apply Medical Therapy",
+         "description": "Use medical nutrition therapy in the management of diseases"
+      },
+      {
+         "label": "Analyze Disease Treatment",
+         "description": "Examine different diseases and their treatment methods with nutrition"
+      },
+      {
+         "label": "Apply Biochemistry Principles",
+         "description": "Use biochemistry principles in the context of medical nutrition therapy"
+      },
+      {
+         "label": "Understand Physiology Impact",
+         "description": "Comprehend how physiology affects nutritional treatment for diseases"
+      },
+      {
+         "label": "Apply Pharmacology Principles",
+         "description": "Utilize pharmacology principles in the context of medical nutrition therapy"
+      },
+      {
+         "label": "Disease-specific Nutrition Planning",
+         "description": "Design nutrition plans tailored to specific diseases"
+      },
+      {
+         "label": "Nutrition Therapy Application",
+         "description": "Apply medical nutrition therapy in practical scenarios"
+   ]}
+
+
+
+--- Index 1736 (DANC3433) ---
+ {
+  "course_identification": "DANC3433",
+  "title_short_desc": "Dance Composition",
+  "inferred_skills": [
+    {
+      "label": "Design Principles",
+      "description": "Applying principles of basic design in dance composition"
+    },
+    {
+      "label": "Space Management",
+      "description": "Managing space effectively in dance compositions"
+    },
+    {
+      "label": "Time Management",
+      "description": "Understanding and manipulating time in dance compositions"
+    },
+    {
+      "label": "Energy Application",
+      "description": "Utilizing energy appropriately in dance compositions"
+    },
+    {
+      "label": "Motion Control",
+      "description": "Manipulating and controlling motion in dance compositions"
+    },
+    {
+      "label": "Space-Time Composition",
+      "description": "Creating compositions that effectively combine space and time"
+    },
+    {
+      "label": "Energy-Motion Balance",
+      "description": "Achieving balance between energy and motion in dance compositions"
+    },
+    {
+      "label": "Dance Composition Replacement",
+      "description": "Understanding the principles of DANC 2991 replacement in this course"
+    ]
+}
+
+
+
+--- Index 1828 (MGMT3453) ---
+ {
+"course_identification": "MGMT3453",
+"title_short_desc": "Contemporary Issues in HR MGMT",
+"inferred_skills": [
+  {"label": "Analyze HR Developments", "description": "Understanding key developments and biographies that shaped the field of Human Resource Management"},
+  {"label": "Forecast HR Future", "description": "Recognizing future trends and changes in employment and HR management"},
+  {"label": "Apply HR Strategy", "description": "Implementing strategies for human resource management"},
+  {"label": "Select Talent Effectively", "description": "Improving employee selection processes for talent management"},
+  {"label": "Comply with HR Regulations", "description": "Understanding and adhering to compliance requirements in HR management"},
+  {"label": "Evaluate Employee Development", "description": "Assessing the effectiveness of employee development programs"},
+  {"label": "Integrate Theory & Practice", "description": "Combining theoretical understanding with practical applications for HR management"},
+  {"label": "Adapt to Future Work Environments", "description": "Preparing for and embracing changes in work environments}
+]
+}
+
+
+
+--- Index 1837 (HLTH5523) ---
+ {
+  "course_identification": "HLTH5523",
+  "title_short_desc": "Phy Activity & Public Health",
+  "inferred_skills": [
+    {
+      "label": "Understand PA Recommendations",
+      "description": "Student will learn to understand and interpret current physical activity recommendations for public health."
+    },
+    {
+      "label": "Identify Trends in Inactivity",
+      "description": "Student will learn to identify and analyze trends in physical inactivity within populations."
+    },
+    {
+      "label": "Assess Health Outcomes of PA",
+      "description": "Student will learn to assess the beneficial effects of physical activity on various health-related outcomes."
+    },
+    {
+      "label": "Examine Determinants of PA",
+      "description": "Student will learn to examine and analyze determinants influencing physical activity."
+    },
+    {
+      "label": "Evaluate Measurement Methods",
+      "description": "Student will learn to evaluate various methods used to measure physical activity."
+    },
+    {
+      "label": "Develop Promotion Strategies",
+      "description": "Student will learn to develop strategies to promote physical activity in individuals and populations."
+    },
+    {
+      "label": "Analyze Public Health Issues",
+      "description": "Student will learn to analyze physical activity issues as they relate to public health."
+  ]
+}
+
+
+
+--- Index 1942 (IME5013) ---
+ {"course_identification": "IME5013",
+ "title_short_desc": "Young Adult Library Resources",
+ "inferred_skills": [
+  {"label": "Evaluate Literature", "description": "Critically appraise literature suitable for young adult library collections"},
+  {"label": "Foster Reading Habits", "description": "Encourage and promote lifelong reading practices in young adults"},
+  {"label": "Apply Intellectual Freedom", "description": "Utilize intellectual freedom principles in library resource selection"},
+  {"label": "Explore Genres", "description": "Investigate various genres relevant to young adult literature"},
+  {"label": "Analyze Themes", "description": "Understand and interpret themes found within young adult literature"},
+  {"label": "Assess Literary Aspects", "description": "Critically evaluate literary aspects of young adult texts"},
+  {"label": "Integrate Curriculum", "description": "Incorporate young adult literature into school curricula},
+  {"label": "Develop Literature Experiences", "description": "Design meaningful literature experiences for young adult learners"}
+ ]
+}
+
+
+
+--- Index 2177 (THRT4881) ---
+ {"course_identification": "THRT4881",
+ "title_short_desc": "Exit Portfolio",
+ "inferred_skills": [
+   {"label": "Career Planning", "description": "Analyzing career goals, timelines and strategies"},
+   {"label": "Portfolio Development", "description": "Continuous refinement of a professional quality portfolio"},
+   {"label": "Interview Preparation", "description": "Workshopping and implementing methods to improve interview techniques"},
+   {"label": "Presentation Skills", "description": "Preparing for and presenting a final collection of work to department members"},
+   {"label": "Goal Clarification", "description": "Clarifying career goals and objectives"},
+   {"label": "Timeline Management", "description": "Managing career timelines effectively"},
+   {"label": "Professional Workshopping", "description": "Workshopping professional skills for improvement"},
+   {"label": "Portfolio Presentation", "description": "Developing the ability to present a portfolio professionally}"]}
+
+
+
+--- Index 2264 (PSY4683) ---
+ {
+"course_identification": "PSY4683",
+"title_short_desc": "Forum in Cog/Bio/Behavior Psy",
+"inferred_skills": [
+    {"label": "Explore Cognitive Processes", "description": "Understand and analyze various cognitive processes such as memory and attention"},
+    {"label": "Understand Biological Underpinnings", "description": "Comprehend the biological factors influencing psychological phenomena"},
+    {"label": "Analyze Behavioral Effects", "description": "Evaluate how our psychological makeup impacts our behavior"},
+    {"label": "Explore Intersection Areas", "description": "Investigate and discuss the intersection of cognitive, biological, and behavioral psychology"},
+    {"label": "Theoretical Analysis", "description": "Develop skills in theoretical analysis of psychological concepts"},
+    {"label": "Experiential Learning", "description": "Gain practical experience through experimental learning"},
+    {"label": "Empirical Evaluation", "description": "Apply empirical methods to evaluate psychological phenomena"},
+]
+}
+
+
+
+--- Index 2570 (READ5863) ---
+ {
+"course_identification": "READ5863",
+"title_short_desc": "Rdg Asmn & Tier III Intrvnt",
+"inferred_skills": [
+  {
+    "label": "Identify Reading Difficulties",
+    "description": "Accurately identify children with marked reading difficulties"
+  },
+  {
+    "label": "Apply Diagnostic Data",
+    "description": "Design and customize reading instruction gleaned from diagnostic data"
+  },
+  {
+    "label": "Diagnose Reading Disabilities",
+    "description": "Learn to diagnose reading disabilities in Tier III"
+  },
+  {
+    "label": "Implement Reading Assessments",
+    "description": "Implement reading assessments in Response to Intervention Three-Tier Reading Model"
+  },
+  {
+    "label": "Design Instructional Strategies",
+    "description": "Design instructional strategies for Tier III in the Response to Intervention Three-Tier Reading Model"
+  },
+  {
+    "label": "Apply Reading Strategies",
+    "description": "Implement instructional reading strategies for Tier III students"
+  },
+  {
+    "label": "Analyze Diagnostic Data",
+    "description": "Analyze diagnostic data to design and customize reading instruction"
+  },
+  {
+    "label": "Apply Instructional Sequence",
+    "description": "Understand the sequence of courses in the Response to Intervention Three-Tier Reading Model"
+]
+}
+
+
+
+--- Index 2575 (SFTY3353) ---
+ {
+"course_identification": "SFTY3353",
+"title_short_desc": "Radiation Safety",
+"inferred_skills": [
+    {
+        "label": "Identify Radiation Sources",
+        "description": "Recognize the origins of both ionizing and non-ionizing radiation."
+    },
+    {
+        "label": "Understand Health Effects",
+        "description": "Comprehend the potential health impacts of radiation exposure."
+    },
+    {
+        "label": "Apply Protective Methods",
+        "description": "Utilize protective strategies in industrial settings to reduce radiation effects."
+    },
+    {
+        "label": "Study Nuclear Radiation",
+        "description": "Learn about the properties and characteristics of nuclear radiation."
+    },
+    {
+        "label": "Analyze X-ray Properties",
+        "description": "Explore the properties and uses of X-rays."
+    },
+    {
+        "label": "Investigate Microwave Characteristics",
+        "description": "Gain knowledge about microwaves, including their unique properties."
+    },
+    {
+        "label": "Explore Laser Light Properties",
+        "description": "Learn about the properties and applications of laser light."
+    },
+    {
+        "label": "Follow Prerequisites",
+        "description": "Demonstrate mastery of SFTY 2503, with a grade of C or better."
+        // This skill is included to follow the requirements, but it's not an actionable skill for the student as stated in requirement #1.
+    }
+]
+}
+
+
+
+--- Index 2963 (ART3073) ---
+ {"course_identification": "ART3073",
+ "[{\"label\":\"Wheel-thrown forms\",\"description\":\"Learning to create pottery using a potter's wheel\"}, {\"label\":\"Clay body preparation\",\"description\":\"Understanding techniques for preparing and formulating clay bodies\"}, {\"label\":\"Glaze firing\",\"description\":\"Introduction to glaze firing techniques in ceramics\"}, {\"label\":\"Beginning pottery techniques\",\"description\":\"Learning basic pottery making techniques\"}"}
+
+
+
+--- Index 3214 (DANC3582) ---
+ {
+  "course_identification": "DANC3582",
+  "title_short_desc": "Dance Film",
+  "inferred_skills": [
+    {
+      "label": "Choreograph for Camera",
+      "description": "Ability to shape and frame dance movements for film"
+    },
+    {
+      "label": "Articulate Vision",
+      "description": "Ability to cultivate and express personal artistic vision"
+    },
+    {
+      "label": "Movement Studies",
+      "description": "Ability to participate in movement studies for film-making"
+    },
+    {
+      "label": "Film-Making Skills",
+      "description": "Ability to learn editing, camera, and compositional skills"
+    },
+    {
+      "label": "Seminar Discussion",
+      "description": "Ability to participate in seminar discussions related to dance film"
+    },
+    {
+      "label": "Viewing Assignments",
+      "description": "Ability to complete viewing assignments related to dance film"
+    },
+    {
+      "label": "Unique Film Creation",
+      "description": "Ability to create a unique dance film"
+  ]
+}
+
+
+
+--- Index 3336 (GENS5970) ---
+ {"course_identification": "GENS5970",
+ "title_short_desc": "Study Tour",
+ "inferred_skills": [
+    {"label": "Cultural Awareness", "description": "Recognizing and understanding cultural differences during international travel"},
+    {"label": "Planning Skills", "description": "Organizing logistics for an effective study tour"},
+    {"label": "Research Skills", "description": "Investigating local history, customs, and institutions"},
+    {"label": "Observation Skills", "description": "Analyzing social and cultural phenomena in the host country"},
+    {"label": "Communication Skills", "description": "Collaborating with fellow students and hosts during the tour"},
+    {"label": "Adaptability", "description": "Responding to unexpected challenges that may arise during travel"},
+    {"label": "Critical Thinking", "description": "Evaluating the impact of cultural differences on global issues"},
+    {"label": "Documentation Skills", "description": "Creating reports or presentations about the study tour experience}"]}
+
+
+
+--- Index 3621 (SPAN5960) ---
+ {"course_identification": "SPAN5960",
+ "title_short_desc": "Institute In Spanish",
+ "inferred_skills": [
+   {"label": "Analyze Spanish Narratives", "description": "Develop the ability to dissect and interpret stories in Spanish."},
+   {"label": "Speak Fluent Spanish", "description": "Improve conversational fluency in Spanish."},
+   {"label": "Write in Spanish", "description": "Cultivate the skill of writing coherent texts in Spanish."},
+   {"label": "Understand Advanced Spanish Grammar", "description": "Gain a comprehensive understanding of complex Spanish grammatical structures."},
+   {"label": "Critically Evaluate Spanish Literature", "description": "Learn to critically analyze and evaluate Spanish literary works."},
+   {"label": "Improve Listening Comprehension in Spanish", "description": "Enhance the skill of comprehending spoken Spanish."},
+   {"label": "Develop Cultural Awareness of Spain", "description": "Grow awareness and appreciation for Spanish culture."},
+   {"label": "Translate Spanish to English", "description": "Learn to translate Spanish texts accurately into English."}
+ ]
+
+
+
+--- Index 3939 (MUED4940) ---
+ {"course_identification": "MUED4940",
+ "title_short_desc": "Field Study in Music Education",
+ "inferred_skills": [
+   {"label": "Conduct Field Research", "description": "Students learn to execute field research within the realm of music education."},
+   {"label": "Analyze Music Education Practices", "description": "Students develop competency in analyzing various practices in music education."},
+   {"label": "Design Field Study Methods", "description": "Students learn to create methods for conducting field studies in music education."},
+   {"label": "Evaluate Field Study Results", "description": "Students gain ability to evaluate findings from field studies in music education."},
+   {"label": "Collaborate with Music Educators", "description": "Students improve their collaboration skills while working with music educators."},
+   {"label": "Apply Music Education Theories", "description": "Students learn to apply relevant theories to real-world music education scenarios."},
+   {"label": "Document Field Study Findings", "description": "Students develop the ability to document findings from their field studies effectively."},
+   {"label": "Present Research Findings", "description": "Students learn to articulate and present their research findings in a clear and coherent manner."}
+ ]
+
+
+
+--- Index 4118 (ESFR5970) ---
+ {
+"course_identification": "ESFR5970",
+"title_short_desc": "Study Tour",
+"inferred_skills": [
+  {"label": "Analyze Cultural Differences", "description": "Identify and compare cultural nuances in various destinations"},
+  {"label": "Planning & Organizing", "description": "Plan and organize a successful study tour itinerary"},
+  {"label": "Cross-Cultural Communication", "description": "Effectively communicate with people from diverse cultural backgrounds"},
+  {"label": "Historical Interpretation", "description": "Understand and interpret historical sites visited during the tour"},
+  {"label": "Team Collaboration", "description": "Work effectively in a group to achieve common study tour goals"},
+  {"label": "Adaptability", "description": "Adjust plans to accommodate unexpected events or challenges during the tour"},
+  {"label": "Presentation Skills", "description": "Deliver informative and engaging presentations about visited sites"},
+  {"label": "Global Awareness", "description": "Gain a broader understanding of global issues through firsthand experiences}
+]
+}
+
+
+
+--- Index 4183 (ART4900) ---
+ {"course_identification": "ART4900",
+ "title_short_desc": "Practicum In Art",
+ "inferred_skills": [
+    {"label": "Art Practical Application", "description": "Applying artistic techniques and theories in real-world scenarios"},
+    {"label": "Art Education Pedagogy", "description": "Developing teaching strategies for art education"},
+    {"label": "Critique Artworks", "description": "Analyzing and critiquing various artworks within the department's field of study"},
+    {"label": "Professional Studio Practice", "description": "Operating a professional art studio environment"},
+    {"label": "Artistic Problem Solving", "description": "Addressing complex issues through artistic solutions"},
+    {"label": "Artistic Collaboration", "description": "Working collaboratively with peers on art projects"},
+    {"label": "Art Exhibition Preparation", "description": "Organizing and preparing for public art exhibitions"},
+    {"label": "Artistic Presentation Skills", "description": "Communicating artistic ideas effectively through presentations}"]
+}
+
+
+
+--- Index 4552 (READ4930) ---
+ {"course_identification": "READ4930",
+ "title_short_desc": "Individual Study In Reading",
+ "inferred_skills": [
+   {"label": "Analyze Reading Materials", "description": "Develops the ability to critically evaluate various texts within the field of study."},
+   {"label": "Identify Literary Devices", "description": "Learns to recognize and interpret literary devices used in written works."},
+   {"label": "Apply Reading Strategies", "description": "Acquires effective reading strategies for comprehension and analysis."},
+   {"label": "Critique Reading Comprehension", "description": "Develops skills to critique and evaluate their own reading comprehension."},
+   {"label": "Conduct Research Using Texts", "description": "Learns how to conduct research using the materials being read as primary sources."},
+   {"label": "Apply Reading Techniques", "description": "Improves ability to apply different reading techniques to various texts."},
+   {"label": "Analyze Literary Context", "description": "Develops skills to analyze the historical, cultural, and literary context of a work."},
+   {"label": "Develop Personal Reading Habits", "description": "Fosters good reading habits for personal development and academic success."}
+ ]
+
+
+
+--- Index 4583 (IME4960) ---
+ {"course_identification": "IME4960",
+ "title_short_desc": "Institute",
+ "inferred_skills": [
+   {"label": "Study Departmental Field", "description": "Demonstrate understanding of the department's area of study"},
+   {"label": "Subject Matter Analysis", "description": "Explore and analyze subject matter within the department's field"},
+   {"label": "Skill Application", "description": "Apply skills relevant to the department's field of study"},
+   {"label": "Credit Variation", "description": "Differentiate between course credit durations ranging from 1 to 4 hours}
+ ]}
+
+
+
+--- Index 4844 (UCOL1212) ---
+ {"course_identification": "UCOL1212",
+ "title_short_desc": "Blueprint Business",
+ "inferred_skills": [
+   {"label": "Career Readiness Development", "description": "Learning to enhance professional skills for the job market"},
+   {"label": "Transformative Learning Practice", "description": "Exploring new and innovative learning methods"},
+   {"label": "Perspective Analysis", "description": "Understanding different perspectives and biases in a discipline"},
+   {"label": "Self-Management Skills", "description": "Improving personal abilities for effective self-management"},
+   {"label": "Community Connection", "description": "Building relationships and connections within the business community"},
+   {"label": "Applications Mastery", "description": "Gaining proficiency in practical applications of business concepts"},
+   {"label": "Scope Understanding", "description": "Comprehending the boundaries and extent of a given business field"},
+   {"label": "Innovation Application", "description": "Utilizing creative problem-solving techniques to innovate in business"}]
+
+
+
+--- Index 4989 (SAS5353) ---
+ {"course_identification": "SAS5353",
+Title_short_desc": "Advanced Group Dynamics",
+"inferred_skills": [
+    {
+        "label": "Apply Substance Abuse Theories",
+        "description": "Understand and apply theories specific to substance abuse group therapy."
+    },
+    {
+        "label": "Explore Mental Health Issues",
+        "description": "Investigate mental health issues in the context of group dynamics."
+    },
+    {
+        "label": "Facilitate Group Leadership",
+        "description": "Develop skills to lead effective group therapy sessions."
+    },
+    {
+        "label": "Evaluate Ethical Standards",
+        "description": "Assess ethical considerations in group therapy sessions."
+    },
+    {
+        "label": "Understand Legal Aspects",
+        "description": "Gain knowledge of legal implications related to group therapy."
+    },
+    {
+        "label": "Analyze Group Treatment Outcomes",
+        "description": "Examine and analyze the outcomes of group treatment in substance abuse and mental health."
+    },
+    {
+        "label": "Conduct Research on Best Practices",
+        "description": "Learn about best practices for group therapy and conduct research to support these practices."
+    },
+    {
+        "label": "Role-play Group Scenarios",
+        "description": "Participate in role play simulations of group leadership situations."
+    }
+]}
+
+
+

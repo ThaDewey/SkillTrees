@@ -1,0 +1,23 @@
+Commands I recommended to check run status:
+
+1) Tail aggregated log live (PowerShell):
+   Get-Content .\output\all_extractors_output.log -Wait
+
+2) Snapshot last 200 lines:
+   Get-Content .\output\all_extractors_output.log -Tail 200
+
+3) Show last completed index:
+   Select-String -Path .\output\all_extractors_output.log -Pattern 'Index (\\d+) completed successfully' | ForEach-Object { [int]$_.Matches[0].Groups[1].Value } | Select-Object -Last 1
+
+4) Show most recent start marker:
+   Select-String -Path .\output\all_extractors_output.log -Pattern '--- Index (\\d+): start' | ForEach-Object { $_.Matches[0].Groups[1].Value } | Select-Object -Last 1
+
+5) Check for running processes (Python/Ollama):
+   Get-Process -Name python,py,ollama -ErrorAction SilentlyContinue | Select-Object Id, ProcessName, CPU, StartTime
+
+6) Check last exit code if run in same PowerShell session:
+   $LASTEXITCODE
+
+How to stop (if needed):
+- Ctrl+C in the terminal where the batch is running.
+- Or find PID and Stop-Process -Id <PID> -Force

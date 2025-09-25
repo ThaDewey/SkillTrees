@@ -1,0 +1,28 @@
+This file was created by the assistant to document run instructions for runAllExtractors.bat
+
+How to run (PowerShell):
+1) Open PowerShell and change to repo root:
+   Set-Location 'C:\Users\cece\Projects\Web\SkillTrees'
+2) Confirm the batch exists:
+   Test-Path .\runAllExtractors.bat
+3) Run it:
+   .\runAllExtractors.bat
+   
+
+How to run (cmd):
+1) Open Command Prompt and change to repo root:
+   cd /d C:\Users\cece\Projects\Web\SkillTrees
+2) Run:
+   runAllExtractors.bat
+
+Check logs:
+   Get-Content .\output\all_extractors_output.log -Tail 200
+   Get-Content .\output\ollama_course_skills_errors.txt -Tail 200
+
+Run a single index manually (for testing):
+   py -3 .\scripts\ollama_infer_course.py 25
+
+Troubleshooting tips:
+- If you see "py not found", install Python or call your python executable directly (python or python3).
+- If the batch reports "Source file not found", ensure UCOInfo\full Course Desription.json exists and is valid JSON.
+- Double-clicking the .bat in Explorer will also run it (opens a cmd window).
